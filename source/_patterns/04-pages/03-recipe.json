@@ -1,0 +1,11 @@
+{
+  "title" : "RECIPE",
+	"bodyClass": "recipe-page",
+	"url" : "http://emerils.com",
+	"headline" : {
+		"short" : "This is the title."
+	},
+	"excerpt" : {
+		"medium" : "Located in a renovated warehouse with a bright yellow stucco facade, large French door windows, and second floor balcony, NOLA is Emeril's casual and funky restaurant in the French Quarter.  The eclectic menu at NOLA showcases rustic Louisiana and Southern cooking featuring local and regional ingredients and a few unexpected ethnic twists."
+	}
+}

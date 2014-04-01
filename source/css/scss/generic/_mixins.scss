@@ -1,0 +1,235 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
+	Usage: @include font-size(1, large);
+*/
+@mixin font-size( $decimal-size, $keyword: null ) {
+  @if $keyword{ font-size: $keyword; }
+  @else { font-size: $decimal-size * $base-font-multiplier * 16px;}
+  font-size: $decimal-size * 1rem;
+}
+
+// ============================================================
+//
+// @mixin rel()
+//
+// @param property       : margin-top, border-top-left-radius, padding-bottom, (any property that accepts 1 value)
+// @param value          : value in px
+// @param context        : relative font size. default: $fontpx
+//
+//===================================
+//
+// Example, base font size is 14px:
+//
+// @include rel(margin-top, 5, $font14);
+//  => margin-top: 0.35em;
+
+// @include rel(margin, 16 auto 0 auto, 16);
+//  => margin: 1em auto 0 auto;
+//
+// ============================================================
+@mixin rel($property, $value, $context: $fontpx) {
+  $length: length($value);
+  @if type-of($value) == "number" {
+    $value: strip-unit($value);
+    #{$property}: ($value/$context + 0em);
+  } @else {
+    // Create list to append values to.
+    $allvalues: ();
+    @each $singleValue in $value {
+      @if $singleValue == 0 or type-of($singleValue) != "number" {
+        // Append 0 as is or strings such as 'auto'.
+        $allvalues: append($allvalues, $singleValue);
+      } @else {
+        $allvalues: append($allvalues, ( strip-unit($singleValue) / $context ) + 0em);
+      }
+    }
+    #{$property}: $allvalues;
+  }
+}
+
+// ============================================================
+//
+// @mixin rem($property, $sizeValue)
+// -Outputs rem and fallback px values
+//
+// @param property       : font-size, padding-bottom, (any property that accepts 1 value)
+// @param sizeValue          : value in px
+//
+//===================================
+//
+// Example, rembase size is 14px:
+//
+// @include rem-all('font-size', 16);
+//  => font-size: 16px;
+//     font-size: 1.14286rem;
+//
+// ============================================================
+@mixin rem($property, $sizeValue: $rembase) {
+  $length: length($sizeValue);
+  @if type-of($sizeValue) == "number" {
+    #{$property}: strip-unit($sizeValue) + px;
+    #{$property}: (strip-unit($sizeValue)/$rembase) + rem;
+  } @else {
+    // Create list to append values to.
+    $allvalues: ();
+    $allvaluespx: ();
+    @each $singleValue in $sizeValue {
+      @if $singleValue == 0 or type-of($singleValue) != "number" {
+        // Append 0 as is or strings such as 'auto'.
+        $allvaluespx: append($allvaluespx, $singleValue);
+        $allvalues: append($allvalues, $singleValue);
+      } @else {
+        $allvaluespx: append($allvaluespx, $singleValue + 0px);
+        $allvalues: append($allvalues, ( strip-unit($singleValue) / $rembase) + 0rem);
+      }
+    }
+    #{$property}: $allvaluespx;
+    #{$property}: $allvalues;
+  }
+}
+
+// ============================================================
+//
+// @mixin triangle()
+//
+// @param width           :  px, em
+// @param height          :  px, em
+// @param direction       :  up, down, left, right
+// @param color           :  hex, rgb
+//
+//===================================
+//
+// Example:
+//
+// @include triangle(40px, 30px, down, #e88565);
+//
+// ============================================================
+@mixin triangle($width: 20px, $height: 20px, $direction: up, $color: red) {
+ 	@if $direction == "left" {
+		border-top: $height/2 solid transparent;
+    border-bottom: $height/2 solid transparent;
+    border-right: $width solid $color;
+	}
+	@else if $direction == "right" {
+		border-top: $height/2 solid transparent;
+    border-bottom: $height/2 solid transparent;
+    border-left: $width solid $color;
+	}
+	@else if $direction == "up" {
+		border-left: $width/2 solid transparent;
+    border-right: $width/2 solid transparent;
+    border-bottom: $height solid $color;
+	}
+	@else if $direction == "down" {
+		border-left: $width/2 solid transparent;
+    border-right: $width/2 solid transparent;
+    border-top: $height solid $color;
+	}
+ 	height: 0;
+	width: 0;
+}
+
+// Mixin for simpler inline-block
+// ------------------
+@mixin inline-block-ie7 {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+// Mixin for selection markup
+// ------------------
+@mixin selection($background, $color, $element:false) {
+	@if($element) {
+		&::-moz-selection{ background:$background; color:$color; text-shadow:none; }
+		&::selection { background:$background; color:$color; text-shadow:none; }
+	} @else {
+		::-moz-selection{ background:$background; color:$color; text-shadow:none; }
+		::selection { background:$background; color:$color; text-shadow:none; }
+	}
+}
+
+// Mixin for reset list
+// ------------------
+@mixin reset-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+// Mixin for placeholder styling
+// ------------------
+@mixin placeHolder($color) {
+	&::-webkit-input-placeholder { color:$color; }
+	&:-moz-placeholder { color:$color; }
+}
+
+// Webkit-style focus
+// ------------------
+@mixin tab-focus {
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+
+// Center-align a block level element
+// ----------------------------------
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Misc
+-----------------------------*/
+@mixin divider {
+  @include rem(margin-bottom, 30);
+  &:after {
+    content: '';
+    width: 30%;
+    display: block;
+    @include rel(margin, 16 auto 24);
+    border-bottom: 1px solid rgba(black, .1);
+  }
+}
+
+// add css3 prefix
+@mixin css3($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  #{$property}: #{$value};
+}
+@mixin trans {
+  -webkit-transition: all .3s ease-in-out; // If we need a different transtion we can add an argument.
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+@mixin no-trans {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+// Remove the unit from a number
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
