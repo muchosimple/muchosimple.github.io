@@ -27,4 +27,4 @@ output_style = :compressed
 # sass-convert -R --from scss --to sass css scss && rm -rf sass && mv scss sass
 
 #remove sass-cache
-sass_options = {:cache => false}
+#sass_options = {:cache => false}
