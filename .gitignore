@@ -1,3 +1,6 @@
 .DS_Store
+._*
+
+# Ignore paths that contain generated content.
 public/
-source/.sass-cache/
+source/.sass-cache
