@@ -2,34 +2,57 @@
     $NAVIGATION
 \*------------------------------------*/
 
-.nav {
-	clear: both;
-	overflow: hidden;
-	max-height: 0;
-	
+.primary-nav {
+	@include rem(padding, 12 0 20);
 	a {
 		display: block;
-		padding: $pad;
-		border-top: 1px solid $gray-light-2;
+		background-color: $white;
+		text-align: center;
+		line-height: 1;
+		@include rem(padding, 17);
 	}
-
-	&.active {
-		max-height: 40em;
+	a span {
+		font-family: $font-secondary;
+		font-size: rem(52);
 	}
-
 	@media all and (min-width: $bp-med) {
 		max-height: none;
 		float: right;
 		clear: none;
-
 		li {
 			float: left;
 		}
-
 		a {
 			border: 0;
 		}
-		
+	}
+}
+
+.secondary-nav {
+	background-color: $oreilly-gray;
+	text-align: center;
+	color: $white;
+	@include rem(padding, 25 20 10);
+	.nav-title {
+		@include rem(margin-bottom, 20);
+	}
+	a {
+		@extend .btn;
+		@include rem(margin, 0 5 16);
+	}
+}
+
+.nav-wrap {
+	clear: both;
+	overflow: hidden;
+	position: absolute;
+	top: rem(-700);
+	z-index: 45;
+	width: 100%;
+	background-color: $white;
+	@include trans;
+	.menu-is-active & {
+		top: $mobile-header-height;
 	}
 }
 

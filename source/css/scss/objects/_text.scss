@@ -1,21 +1,53 @@
-//Intro text
+// Intro text
 .intro {
-	font-size: $font-size-med-2;
-	font-weight: bold;
+	font-size: rem(18);
+	margin-bottom: rem(8);
 }
 
-//Pullquote
+// Dek
+.dek {
+	font-size: rem(18);
+}
+
+// Pullquote
 .pullquote {
 	font-family: $font-secondary;
 	font-size: $font-size-large;
 }
 
-//Caption 
+// Kicker
+.kicker {
+	font-size: rem(12);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+// Breadcrumb
+.breadcrumb {
+  color: $white;
+  background-color: $oreilly-gray;
+  display: inline-block;
+  padding: rem(7);
+  font-size: rem(13);
+  @include rem(margin, 0 6 10 0);
+}
+
+// Date/time
+.date {
+	font-size: rem(12);
+	text-transform: uppercase;
+	color: $gray-light-4;
+	letter-spacing: 1px;
+	margin-bottom: rem(4);
+	display: inline-block;
+}
+
+// Caption
 .caption {
 	font-style: italic;
 }
 
-//Passages of text
+// Passages of text
 .text {
 	a {
 		text-decoration: underline;

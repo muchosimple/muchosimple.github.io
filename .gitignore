@@ -1,6 +1,8 @@
+*/.htpasswd
+.htpasswd
+*/.htaccess
+.htaccess
 .DS_Store
-._*
-
-# Ignore paths that contain generated content.
-public/
-source/.sass-cache
+# Ignore sass cache generated files
+**/.sass-cache
+**/.sass-cache/*

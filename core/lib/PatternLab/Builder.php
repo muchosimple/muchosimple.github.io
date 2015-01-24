@@ -1,7 +1,7 @@
 <?php
 
 /*!
- * Pattern Lab Builder Class - v0.7.10
+ * Pattern Lab Builder Class - v0.7.12
  *
  * Copyright (c) 2013-2014 Dave Olsen, http://dmolsen.com
  * Licensed under the MIT license
@@ -23,7 +23,7 @@ class Builder {
 	* Also, create the config if it doesn't already exist
 	*/
 	public function __construct($config = array()) {
-		
+				
 		// making sure the config isn't empty
 		if (empty($config)) {
 			print "A set of configuration options is required to use Pattern Lab.\n";
@@ -34,7 +34,7 @@ class Builder {
 		foreach ($config as $key => $value) {
 			
 			// if the variables are array-like make sure the properties are validated/trimmed/lowercased before saving
-			$arrayKeys = array("ie","id","patternStates","styleGuideExcludes");
+			$arrayKeys = array("ie","id","patternStates","styleGuideExcludes","currentVersion");
 			if (in_array($key,$arrayKeys)) {
 				$values = explode(",",$value);
 				array_walk($values,'PatternLab\Builder::trim');
@@ -64,9 +64,9 @@ class Builder {
 		
 		// set-up the source & public dirs
 		$this->sp = "/../../../source/_patterns".DIRECTORY_SEPARATOR;
-		$this->pp = "/../../../public/patterns".DIRECTORY_SEPARATOR;
+		$this->pp = "/../../../".$this->currentVersion[0]."/patterns".DIRECTORY_SEPARATOR;
 		$this->sd = __DIR__."/../../../source";
-		$this->pd = __DIR__."/../../../public";
+		$this->pd = __DIR__."/../../../".$this->currentVersion[0];
 		
 		// provide the default for enable CSS. performance hog so it should be run infrequently
 		$this->enableCSS    = false;

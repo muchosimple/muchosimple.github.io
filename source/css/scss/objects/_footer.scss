@@ -3,37 +3,93 @@
 \*------------------------------------*/
 .footer {
 	clear: both;
-	overflow: hidden;
-	background: $gray-dark-2;
+	background: $oreilly-gray;
 	color: $white;
 	line-height: 1.2;
-
+	margin-bottom: rem(12);
+	position: relative;
+	@extend .cf;
 	a {
 		color: $gray-light;
 	}
+	.gi {
+  	border-bottom: 4px solid $white;
+  	margin-bottom: rem(40);
+  	@include rem(padding, 10 0 40);
+  	&:last-child {
+  	  border-bottom: none;
+    	margin-bottom: rem(10);
+  	}
+	}
+	.logo-link {
+  	@extend .t-bkg;
+  	display: inline-block;
+  	float: none;
+  	max-width: rem(110);
+  	margin-left: rem(-16);
+  	@include rem(padding, 8 14);
+	}
+	.img-wrap {
+  	margin-bottom: rem(12);
+	}
 }
 
-//Footer Nav
-.nav-footer {
-	margin: (-$pad) (-$pad) $space;
-
-	li {
-		border-bottom: 1px solid $gray-dark;
-
-		@media all and (min-width: $bp-med) {
-			border: 0;
-			float: left;
-		}
-	}
-
-	a {
-		display: block;
-		padding: $pad;
-	}
+.box-title {
+	margin-bottom: rem(30);
 }
 
+// About Us
+.box-about-us {
+  a {
+    display: block;
+    @include rem(padding, 4 10 14);
+  }
+}
+
+// Social
+.box-social {
+  ul {
+    margin: 0 auto;
+    width: rem(300);
+  }
+  li {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: rem(10);
+  }
+  .icon {
+    display: block;
+    height: rem(80);
+    width: rem(80);
+    padding: rem(20);
+    margin: 0 auto;
+  }
+  .s-youtube {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.legal {
+  a {
+    font-size: rem(11);
+  }
+}
 .copyright {
+  font-size: rem(11);
+  margin-bottom: rem(4);
 	@media all and (min-width: $bp-med) {
 		float: right;
 	}
+}
+
+.tarsier {
+  position: absolute;
+  right: rem(10);
+  bottom: rem(-40);
+  width: rem(180);
+  @include trans;
+  &:hover {
+    bottom: rem(-20);
+  }
 }

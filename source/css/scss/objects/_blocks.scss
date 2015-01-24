@@ -1,18 +1,27 @@
-/* Generic Placeholder Brick: REMOVE FOR PRODUCTION */
-.brick {
-	background: #dcdddc;
-	padding: $pad-double;
-	text-align: center;
-	font-weight: bold;
-	border-bottom: 1px solid $gray-light-2;
-}
 
-/* Block */
+// Block
 .block {
 	overflow: hidden;
-
 	p:last-child {
 		margin-bottom: 0;
+	}
+	.byline {
+		span {
+			font-weight: bold;
+			font-size: rem(12);
+		}
+	}
+	.b-title,
+	.kicker {
+		display: block;
+		margin-bottom: rem(5);
+	}
+	.b-title {
+		font-weight: bold;
+		font-size: rem(16);
+	}
+	.dek {
+		font-size: rem(13);
 	}
 }
 
@@ -20,19 +29,31 @@
 	line-height: 1.2;
 }
 
-/* Hero Block */
+// Hero Block
 .block-hero {
 	margin-bottom: $space-half;
-
+	.breadcrumb {
+  	color: $white;
+  	&:hover {
+    	color: $white;
+  	}
+	}
 	.b-thumb {
 		img {
 			display: block;
 		}
 	}
-
+	.b-title {
+  	font-family: $font-secondary;
+  	font-size: rem(35);
+  	font-weight: 100;
+	}
+	.dek {
+  	font-size: rem(18);
+  	line-height: 1.3;
+	}
 	@media all and (min-width: $bp-large) {
 		position: relative;
-
 		.b-text {
 			position: absolute;
 			bottom: 0;
@@ -45,44 +66,47 @@
 	}
 }
 
-/* Block Thumbnail with Headline */
+// Block Thumbnail with Headline
 .block-thumb {
 	display: table;
 	width: 100%;
 	border-collapse: collapse;
-
 	.b-inner {
 		display: table-row;
 		vertical-align: top;
   		overflow: hidden;
 	}
-
 	.b-thumb {
-		@media all and (min-width: $bp-small-2) {
-			display: table-cell;
-			vertical-align: top;	
-	  		width: 30%;
-	  		max-width: 10em;
-
-	 		img {
-	 			display: block;
-				  width: 100%;
-				  height: auto;
-	 		}
+		display: table-cell;
+		vertical-align: top;
+  		width: 30%;
+  		max-width: 10em;
+ 		img {
+ 			display: block;
+			  width: 100%;
+			  height: auto;
  		}
 	}
-
 	.b-text {
-		@media all and (min-width: $bp-small-2) {
-			display: table-cell;
-			width: 70%;
-			padding: 0 $pad;
-		}
+		display: table-cell;
+		width: 70%;
+		padding: 0 $pad;
+	}
+	// Blocks with image on the right or no image at all
+	&.block-align-right,
+	&.block-no-img {
+  	.b-text {
+    	padding-left: 0;
+  	}
+	}
+	&.block-align-right {
+  	.b-thumb {
+  	  padding-top: rem(8);
+  	}
 	}
 }
 
-
-/* Block Headline Summary */
+// Block Headline Summary
 .block-headline-summary {
 	a {
 		display: block;
@@ -90,49 +114,48 @@
 	}
 }
 
-/* Block Inset */
+// Block Inset
 .block-inset {
 	position: relative;
-
-	.b-thumb {
-		position: relative;
-		z-index: 0;
-
-		img {
-			display: block;
-		}
-	}
-}
-
-/* Hero Block */
-.block-inset {
-	margin-bottom: $space-half;
-	position: relative;
-
 	.headline {
-		font-size: 1.1em;
+		font-size: rem(28);
+		@include rem(margin-bottom, 10);
 	}
-
 	.b-text {
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		background: $dim;
+		height: 100%;
+		text-align: center;
+		background: rgba($black, .35);
 		color: $white;
-		padding: $pad-half;
+		padding: rem(20);
+		display: flex;
+  	align-items: center;
+  	justify-content: center;
+	}
+	.unify {
+		position: relative;
+	}
+	.byline {
+		color: $white;
+		font-size: rem(14);
+	}
+	.kicker {
+		opacity: .75;
+		@include rem(margin-bottom, 14);
 	}
 }
 
-/* Block Thumb with Summary */
-.block-thumb-summary {
-	.b-thumb {
-		float: left;
-		width: 50%;
-	}
-
-	.b-text {
-		margin-left: 50%;
-		padding: $pad-half;
-	}
+// Block Headline
+.block-headline {
+  .b-title {
+    font-weight: bold;
+  }
+  .date-city {
+    color: $gray;
+    font-size: rem(13);
+  }
 }
+

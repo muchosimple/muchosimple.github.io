@@ -1,33 +1,8 @@
-/*------------------------------------*\
-    $TABLE OF CONTENTS
-    based generally on Harry Roberts excellent CSS Guidelines https://github.com/csswizardry/CSS-Guidelines
-\*------------------------------------*/
-/**
- * VARIABLES..............................Declarations of Sass variables
- * .....Colors
- * .....Typography
- * .....Layout
- * .....Defaults
- * .....Breakpoints
- * MIXINS.................................Sass mixins
- * RESET..................................Set reset defaults
- * GLOBAL CLASSES.........................Set reset defaults
- * GLOBAL ELEMENTS........................Establish global styles
- * .....Main
- * .....Headings
- * .....Text-related elements (p, blockquote, lists)
- * .....Defaults
- * .....Breakpoints
- * TYPOGRAPHY-------------------------
- * MEDIA------------------------------
- * LAYOUT-----------------------------
- * NAVIGATION-------------------------
- * TOC To Be Continued
- */
-
+@import "bourbon";
 @import "scss/generic/variables";
 @import "scss/generic/mixins";
 @import "scss/generic/reset";
+@import "neat";
 
 /*------------------------------------*\
     $GLOBAL ELEMENTS
@@ -41,12 +16,15 @@
 @import "scss/base/media";
 @import "scss/base/forms";
 @import "scss/base/tables";
+@import "scss/base/fonts";
 @import "scss/base/animation";
+
 
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
 @import "scss/objects/layout";
+
 
 /*------------------------------------*\
     $PAGE STRUCTURE
@@ -56,10 +34,12 @@
 @import "scss/objects/main";
 @import "scss/objects/footer";
 
+
 /*------------------------------------*\
     $TEXT Styles
 \*------------------------------------*/
 @import "scss/objects/text";
+
 
 /*------------------------------------*\
     $COMPONENTS
@@ -75,3 +55,5 @@
 @import "scss/objects/article";
 @import "scss/objects/comments";
 @import "scss/objects/messaging";
+
+

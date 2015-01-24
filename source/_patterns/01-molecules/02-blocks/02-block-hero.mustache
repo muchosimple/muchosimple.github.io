@@ -1,10 +1,25 @@
 <div class="block block-hero">
-	<a href="{{ url }}" class="b-inner">
-		<div class="b-thumb">
-			{{> atoms-landscape-16x9 }} 
-		</div>
-		<div class="b-text">
-			<h2 class="b-title">{{ headline.medium }}</h2>
-		</div>
-	</a>
-</div>
+  <div class="b-inner">
+    {{# nope }}
+  	<a href="{{ url }}" class="b-link">
+  		<div class="b-thumb">
+  			{{> atoms-landscape-16x9 }}
+  		</div> <!-- /.b-thumb -->
+  	</a> <!-- /.b-link -->
+  	{{/ nope }}
+		<div class="b-text pad">
+		  {{# breadcrumb }}
+        {{> molecules-breadcrumb }}
+      {{/ breadcrumb }}
+			<h2 class="b-title"><a href="{{ url }}">{{ headline.medium }}</a></h2>
+			{{# byline }}
+        {{> molecules-byline }}
+      {{/ byline }}
+      {{# dek }}
+      <div class="dek">
+        <p>{{ dek }}</p>
+      </div> <!-- /.dek -->
+      {{/ dek }}
+		</div> <!-- /.b-text -->
+	</div> <!-- /.b-inner -->
+</div> <!-- /.block-hero -->

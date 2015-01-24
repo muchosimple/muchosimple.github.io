@@ -1,0 +1,11 @@
+&lt;div class=&quot;block block-headline&quot;&gt;
+	&lt;a href=&quot;{{ url }}&quot; class=&quot;b-inner&quot;&gt;
+    {{# date }}
+      {{&gt; atoms-time }}
+    {{/ date }}
+		&lt;h2 class=&quot;b-title&quot;&gt;{{ title }}&lt;/h2&gt;
+    {{# byline }}
+      {{&gt; molecules-byline }}
+    {{/ byline }}
+	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
+&lt;/div&gt; &lt;!-- /.block-headline --&gt;

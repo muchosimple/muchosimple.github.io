@@ -1,0 +1,11 @@
+<form action="{{ url }}" method="post" class="inline-form search-form input-form">
+  <fieldset>
+    <legend class="is-vishidden">Search</legend>
+    <label for="search-field" class="is-vishidden">Search</label>
+    <input type="search" placeholder="Search" id="search-field" class="input-field search-field" />
+    <button class="submit t-bkg rounded">
+      {{> atoms-magnifying-glass }}
+    	<span class="is-vishidden">Search</span>
+    </button> <!-- /.search-submit -->
+  </fieldset>
+</form> <!-- /.search-form -->

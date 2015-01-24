@@ -2,19 +2,8 @@
     $MIXINS
 \*------------------------------------*/
 
-/* CSS Transition
-	Usage: @include transition(width,0.3s,ease-out);
- */
-@mixin transition($transition-property, $transition-time, $method) {
-	-webkit-transition: $transition-property $transition-time $method;
-	-moz-transition: $transition-property $transition-time $method;
-	-ms-transition: $transition-property $transition-time $method;
-	-o-transition: $transition-property $transition-time $method;
-	transition: $transition-property $transition-time $method;
-}
-
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
-	Usage: @include font-size(1, large);
+  Usage: @include font-size(1, large);
 */
 @mixin font-size( $decimal-size, $keyword: null ) {
   @if $keyword{ font-size: $keyword; }
@@ -67,13 +56,13 @@
 // -Outputs rem and fallback px values
 //
 // @param property       : font-size, padding-bottom, (any property that accepts 1 value)
-// @param sizeValue          : value in px
+// @param sizeValue      : value in px
 //
 //===================================
 //
 // Example, rembase size is 14px:
 //
-// @include rem-all('font-size', 16);
+// @include rem('font-size', 16);
 //  => font-size: 16px;
 //     font-size: 1.14286rem;
 //
@@ -104,6 +93,40 @@
 
 // ============================================================
 //
+// @source: http://alwaystwisted.com/post.php?s=2013-04-01-my-media-query-mixin
+//
+// @mixin mq($point, $IE9: false, $query1: min, $query2: width)
+// -Outputs media query with fallback no media query support
+//
+// @param $point       : pixel value for your major or minor breakpoint
+// @param $query1      : this is for either min, max, min-device, or max-device defining the first part of the media query. Predefined as min.
+// @param $query2      : this if for either width or height defining the second part of the media query. Predefined as max
+// @param $IE9         : predefined as false, changing this to true would include the IE9 conditional class of CSS
+//
+//===================================
+//
+// Example:
+//
+// .example {
+//   @include mq(320) {
+//     width: 100%;
+//   }
+// }
+//
+// ============================================================
+@mixin mq($point, $query1: min, $query2: width, $IE9: false) {
+  @if $IE9 == true{
+    .lt-ie9 & {
+      @content;
+    }
+  }
+  @media (#{$query1}-#{$query2}: $point) {
+    @content;
+  }
+}
+
+// ============================================================
+//
 // @mixin triangle()
 //
 // @param width           :  px, em
@@ -119,79 +142,89 @@
 //
 // ============================================================
 @mixin triangle($width: 20px, $height: 20px, $direction: up, $color: red) {
- 	@if $direction == "left" {
-		border-top: $height/2 solid transparent;
+  @if $direction == "left" {
+    border-top: $height/2 solid transparent;
     border-bottom: $height/2 solid transparent;
     border-right: $width solid $color;
-	}
-	@else if $direction == "right" {
-		border-top: $height/2 solid transparent;
+  }
+  @if $direction == "right" {
+    border-top: $height/2 solid transparent;
     border-bottom: $height/2 solid transparent;
     border-left: $width solid $color;
-	}
-	@else if $direction == "up" {
-		border-left: $width/2 solid transparent;
+  }
+  //@if $direction == "up" {
+    border-left: $width/2 solid transparent;
     border-right: $width/2 solid transparent;
     border-bottom: $height solid $color;
-	}
-	@else if $direction == "down" {
-		border-left: $width/2 solid transparent;
+  //}
+  @if $direction == "down" {
+    border-left: $width/2 solid transparent;
     border-right: $width/2 solid transparent;
     border-top: $height solid $color;
-	}
- 	height: 0;
-	width: 0;
+  }
+  height: 0;
+  width: 0;
 }
 
 // Mixin for simpler inline-block
 // ------------------
 @mixin inline-block-ie7 {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
 
 // Mixin for selection markup
 // ------------------
 @mixin selection($background, $color, $element:false) {
-	@if($element) {
-		&::-moz-selection{ background:$background; color:$color; text-shadow:none; }
-		&::selection { background:$background; color:$color; text-shadow:none; }
-	} @else {
-		::-moz-selection{ background:$background; color:$color; text-shadow:none; }
-		::selection { background:$background; color:$color; text-shadow:none; }
-	}
+  @if($element) {
+    &::-moz-selection{ background:$background; color:$color; text-shadow:none; }
+    &::selection { background:$background; color:$color; text-shadow:none; }
+  } @else {
+    ::-moz-selection{ background:$background; color:$color; text-shadow:none; }
+    ::selection { background:$background; color:$color; text-shadow:none; }
+  }
 }
 
 // Mixin for reset list
 // ------------------
 @mixin reset-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 // Mixin for placeholder styling
 // ------------------
 @mixin placeHolder($color) {
-	&::-webkit-input-placeholder { color:$color; }
-	&:-moz-placeholder { color:$color; }
+  &::-webkit-input-placeholder { color:$color; }
+  &:-moz-placeholder { color:$color; }
 }
 
 // Webkit-style focus
 // ------------------
 @mixin tab-focus {
-	outline: thin dotted #333;
-	outline: 5px auto -webkit-focus-ring-color;
-	outline-offset: -2px;
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 
 // Center-align a block level element
 // ----------------------------------
 @mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Vertically center an element
+// ----------------------------------
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* Misc
@@ -207,6 +240,42 @@
   }
 }
 
+// convert to em
+@function em($target, $context: $fontpx) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0em;
+}
+
+@mixin bg-gradient($height: 150) {
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include rem(height, $height);
+    @include background-image(linear-gradient(rgba(black, 0), black 100%));
+  }
+}
+
+/**
+ * Mixin scrollbar
+ */
+@mixin scrollbar($size, $primary, $secondary: lighten($primary, 25%)) {
+  ::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $primary;
+  }
+  ::-webkit-scrollbar-track {
+    background: $secondary;
+  }
+}
+
 // add css3 prefix
 @mixin css3($property, $value) {
   -webkit-#{$property}: #{$value};
@@ -216,7 +285,7 @@
   #{$property}: #{$value};
 }
 @mixin trans {
-  -webkit-transition: all .3s ease-in-out; // If we need a different transtion we can add an argument.
+  -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
@@ -232,4 +301,49 @@
 // Remove the unit from a number
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);
+}
+
+// Spinning loader animation
+@mixin spinner($color: $white, $size: 30) {
+  margin: 0 auto;
+  border: 6px solid rgba($color,.15);
+  border-top: 6px solid rgba($color,.8);
+  @include rem(height, $size);
+  @include rem(width, $size);
+  @include border-radius(100%);
+  @include animation(rotation .6s infinite linear);
+}
+
+// Clearfix
+@mixin cf {
+  .cf {
+    *zoom: 1;
+  }
+  .cf:before, .cf:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+
+  .cf:after {
+    clear: both;
+  }
+}
+
+@mixin v-center {
+  @include display(flex);
+  @include align-items(center);
+}
+@mixin vh-center {
+  @include v-center;
+  @include justify-content(center);
+}
+
+// Table layout
+@mixin table {
+  display: table;
+  width: 100%;
+}
+@mixin t-cell {
+  display: table-cell;
+  width: 50%;
 }

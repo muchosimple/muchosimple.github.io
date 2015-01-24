@@ -18,9 +18,9 @@ label {
 }
 
 button, input, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
-    margin: 0 1px 0;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0 1px 0;
 }
 
 input, textarea {
@@ -36,24 +36,24 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
 button, input[type="submit"] {
 	padding: $pad-half;
 	background: $gray-dark;
-	border: 1px solid $gray;
+	border: none;
 	cursor: pointer;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-    width: auto;
-    margin-right: 0.3em;
+  width: auto;
+  margin-right: 0.3em;
 }
 
 input[type="search"] {
-    -webkit-appearance: none;
-    border-radius: 0;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 //Form Field Container
@@ -65,7 +65,7 @@ input[type="search"]::-webkit-search-decoration {
 	fieldset, .inline-container {
 		position: relative;
 	}
-	
+
 	input[type=submit], button, .btn {
 		font-size: $font-size-small-2;
 		padding: 0.65rem 1.3rem;
@@ -98,14 +98,64 @@ input[type="search"]::-webkit-search-decoration {
     $SPECIFIC FORMS
 \*------------------------------------*/
 
-/* Search Form */
-.search-field {
-	padding-right: 3em;
+// Header/nav search
+.search-form {
+	overflow: hidden;
+	width: 100%;
+	@media all and (min-width: $bp-med) {
+		float: right;
+		max-height: none;
+		margin: 0.65em 0.5em 0 0;
+	}
+	.search-field {
+		background-color: $gray-light;
+		border: none;
+		font-size: rem(20);
+		margin: 0;
+		@include rem(padding, 13);
+	}
+	.submit {
+		border: none;
+		margin: 0;
+		width: rem(50);
+		text-align: center;
+		@include rem(padding, 14 12 12);
+		&:hover {
+			background-color: inherit;
+		}
+	}
 }
-.inline-form .search-submit {
-	background: none;
-	padding: 0.78em 1em;
-	border: 0;
-	border-left: 1px solid $gray;
-	color: $gray;
+
+// Input form
+.input-form {
+  .input-field {
+    background-color: $white;
+    padding: rem(10);
+    font-size: rem(14);
+    border: $border-style;
+  }
+  .submit {
+    height: rem(30);
+    width: rem(30);
+    padding: rem(7);
+    top: rem(5);
+    right: rem(6);
+    svg {
+      height: rem(20);
+      width: rem(20);
+    }
+  }
+}
+
+// Newsletter form
+.newsletter-form {
+  legend {
+    font-weight: 100;
+    font-size: rem(20);
+    margin-bottom: rem(16);
+    line-height: 1.3;
+  }
+  .input-field {
+    border: none;
+  }
 }

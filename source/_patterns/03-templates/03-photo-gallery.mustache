@@ -1,0 +1,21 @@
+<div class="page-{{ bodyClass }}" id="page">
+	{{> organisms-header }}
+	<div role="main">
+		{{# hero-primary }}
+		  {{> molecules-block-hero }}
+		{{/ hero-primary }}
+		<div class="l-two-col">
+			<div class="l-main">
+				<section class="blocks">
+					{{# hero-blocks }}
+						{{> molecules-block-inset }}
+					{{/ hero-blocks }}
+				</section> <!-- /.blocks -->
+				{{!> organisms-iot }}
+			</div> <!-- /.l-main-->
+			<div class="l-sidebar">
+			</div> <!-- /.l-sidebar-->
+		</div> <!-- /.two-col-->
+	</div> <!-- /role=main-->
+	{{> organisms-footer }}
+</div> <!-- /.page -->

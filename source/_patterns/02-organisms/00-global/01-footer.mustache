@@ -1,7 +1,33 @@
-<!-- Begin Footer -->
-<footer class="footer" role="contentinfo">
+<footer class="footer pad" role="contentinfo">
 	<div class="lc">
-		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
-	</div>
-</footer>
-<!-- End Footer -->
+	  <div class="g">
+	    <div class="gi box-newsletter">
+        {{!> molecules-newsletter }}
+	    </div> <!-- /.gi -->
+	    <div class="gi box-about-us center">
+	      <h3 class="box-title">About Us</h3>
+        <!-- <ul>
+          <li><a href="{{ url }}">Our History</a></li>
+          <li><a href="{{ url }}">Our Faith</a></li>
+          <li><a href="{{ url }}">Prayer Requests</a></li>
+          <li><a href="{{ url }}">Contact Us</a></li>
+        </ul> -->
+	    </div> <!-- /.gi -->
+	    <div class="gi box-social center">
+        <h3 class="box-title">Find Us</h3>
+        <ul>
+          <li><a class="icon s-facebook" href="{{ url }}">{{> atoms-facebook }}</a></li>
+          <li><a class="icon s-twitter" href="{{ url }}">{{> atoms-twitter }}</a></li>
+          <li><a class="icon s-youtube" href="{{ url }}">{{> atoms-youtube }}</a></li>
+          <li><a class="icon s-google" href="{{ url }}">{{> atoms-google }}</a></li>
+        </ul>
+	    </div> <!-- /.gi -->
+	  </div> <!-- /.g -->
+	</div> <!-- /.lc -->
+	<div class="legal">
+	  <!-- <div class="img-wrap">{{> atoms-logo }}</div> -->
+  	<p class="copyright">&copy; 2014, GoNOLA.com.</p>
+  	<a href="{{ url }}">Terms of Service</a> <br>
+  	<a href="{{ url }}">Privacy Policy</a>
+	</div> <!-- /.legal -->
+</footer> <!-- /.footer -->

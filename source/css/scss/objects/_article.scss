@@ -6,9 +6,9 @@
 }
 
 .byline {
-	font-size: $font-size-small-2;
-	font-style: italic;
+	font-size: rem(12);
 	margin-bottom: $space-half;
+	color: $gray-dark;
 }
 
 //Social Share
