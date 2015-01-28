@@ -1,7 +1,7 @@
 <header class="header cf" role="banner">
   {{> molecules-search }}
   <div class="header-inner t-bkg">
-    <a href="#nav" class="nav-toggler js-toggle" data-toggled="header" data-prefix="main-nav">
+    <a href="#nav" class="nav-toggler js-toggle" data-toggled="header, .overlay" data-prefix="main-nav">
       <span class="nt-inner">
         <span class="is-vishidden">Menu</span>
         <span></span>
@@ -14,5 +14,6 @@
   </div> <!-- /.header-inner -->
   <div class="nav-wrap">
     {{> molecules-primary-nav }}
+    {{> molecules-secondary-nav }}
   </div> <!-- /.nav-wrap -->
 </header> <!-- .header -->

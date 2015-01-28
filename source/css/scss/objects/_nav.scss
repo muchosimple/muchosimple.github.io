@@ -2,29 +2,40 @@
     $NAVIGATION
 \*------------------------------------*/
 
+.nav-wrap {
+	clear: both;
+	overflow: hidden;
+	z-index: 20;
+	width: 90%;
+	max-width: rem(300);
+	background-color: $white;
+	position: absolute;
+	left: rem(-301);
+	height: 100%;
+	z-index: 1000;
+	@include trans;
+	a {
+		display: block;
+		line-height: 1;
+		font-family: $font-secondary;
+		@include rem(padding, 11 6);
+	}
+}
+.main-nav-is-active {
+	.nav-wrap {
+		left: 0;
+	}
+}
+
 .primary-nav {
+	margin-bottom: $space-half;
 	li {
 		position: relative;
 	}
 	a {
-		display: block;
 		background-color: $gray-very-light;
-		line-height: 1;
-		font-family: $font-secondary;
-		font-size: rem(20);
 		border-bottom: $border-style;
-		@include rem(padding, 11 6);
-	}
-	@media all and (min-width: $bp-med) {
-		max-height: none;
-		float: right;
-		clear: none;
-		li {
-			float: left;
-		}
-		a {
-			border: 0;
-		}
+		font-size: rem(20);
 	}
 	.aw {
 		height: 100%;
@@ -37,9 +48,27 @@
 		text-align: center;
 	}
 	.arrow {
-		@include trans();
+		@include trans;
 		@include transform(rotate(0deg));
 	}
+}
+
+// Secondary Nav
+.secondary-nav {
+	a {
+		color: $black;
+		font-size: rem(18);
+	}
+}
+.l-padded a {
+	border-top: $border-style;
+	border-bottom: $border-style;
+	padding-top: rem(17);
+	padding-bottom: rem(17);
+	margin: rem(6) 0;
+}
+.l-alt a {
+	color: $gray-med-2;
 }
 
 // Sub-navigation
@@ -60,17 +89,6 @@
 	}
 	.arrow {
 		@include transform(rotate(180deg));
-	}
-}
-
-.nav-wrap {
-	clear: both;
-	overflow: hidden;
-	z-index: 20;
-	width: 100%;
-	background-color: $white;
-	@include trans;
-	.menu-is-active & {
 	}
 }
 
