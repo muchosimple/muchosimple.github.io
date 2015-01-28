@@ -1,15 +1,18 @@
 <header class="header cf" role="banner">
-  <div class="header-inner t-bkg"> 
+  {{> molecules-search }}
+  <div class="header-inner t-bkg">
+    <a href="#nav" class="nav-toggler js-toggle" data-toggled="header" data-prefix="main-nav">
+      <span class="nt-inner">
+        <span class="is-vishidden">Menu</span>
+        <span></span>
+      </span> <!-- /.nt-inner -->
+    </a> <!-- /.nav-toggler -->
     {{> atoms-logo }}
-    <a href="#nav" class="nav-toggle js-toggle" data-toggled="header" data-prefix="menu">
-      <span class="is-vishidden">Menu</span>
-      <span class="icon icon-menu"></span>
-      <span class="icon icon-x"></span>
-    </a>
+    <a href="#search" class="search-toggler js-toggle" data-toggled="header" data-prefix="search">
+      <span class="icon icon--small icon-magnifying-glass">{{> atoms-magnifying-glass }}</span>
+    </a> <!-- /.search-toggler -->
   </div> <!-- /.header-inner -->
-  <div class="nav-wrap"> 
-    {{!> molecules-primary-nav }}
-    {{!> molecules-search }}
-    {{!> molecules-secondary-nav }}
+  <div class="nav-wrap">
+    {{> molecules-primary-nav }}
   </div> <!-- /.nav-wrap -->
 </header> <!-- .header -->

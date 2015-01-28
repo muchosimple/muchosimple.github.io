@@ -25,7 +25,6 @@
 // Breadcrumb
 .breadcrumb {
   color: $white;
-  background-color: $oreilly-gray;
   display: inline-block;
   padding: rem(7);
   font-size: rem(13);
@@ -51,21 +50,18 @@
 .text {
 	a {
 		text-decoration: underline;
+		color: $blue;
 	}
-
 	ul {
 		list-style: disc;
 		margin: 0 0 $space 1.2em;
-
 		ul {
 			margin-bottom: 0;
 		}
 	}
-
 	ol {
 		list-style: decimal;
 		margin: 0 0 $space 1.5em;
-
 		ol {
 			margin-bottom: 0;
 		}

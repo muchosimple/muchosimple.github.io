@@ -1,6 +1,11 @@
 /* Text-Related Elements */
 p {
 	margin-bottom: $space;
+  color: $gray-dark-3;
+  a {
+    text-decoration: underline;
+    color: $blue;
+  }
 }
 
 /* Blockquote */

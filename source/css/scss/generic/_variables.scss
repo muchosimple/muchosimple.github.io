@@ -3,42 +3,33 @@
 \*------------------------------------*/
 
 // Grid & baseline setup
-
-$susy: (
-  debug: (
-      image: show,
-      color: blue,
-      output: overlay,
-      toggle: top right,
-    ),
-);
-
-$column: 95px;
-$gutter: 20px;
-$grid-columns: 8;
-$fontpx: 16; //  Font size (px) baseline applied to <body> and converted to %.
-$defaultpx: 16; //  browser default px used for media queries
-$rembase: 16; //  16px = 1.00rem
-$max-width: em(1390) !default;
+$column: 92px;
+$gutter: 12px;
+$grid-columns: 12;
+$fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
+$defaultpx: 16; // Browser default px used for media queries
+$rembase: 16; // 16px = 1.00rem
+$max-width: em(1215) !default;
 $inner-max-width: (1080/$fontpx) + 0em;
 $inner-max-small: (900/$defaultpx) + 0em;
 
-$visual-grid: true !default;
+$visual-grid: false !default;
 $visual-grid-color: #E6F6FF !default;
 $visual-grid-opacity: 0.8 !default;
 $visual-grid-index: front !default;
 
 // Colors
-$gray: #808080;
-$gray-light: darken(#f9f9f9, 2);
-$gray-light-2: #eee;
-$gray-light-3: #ddd;
-$gray-light-4: #B7B7B7;
-$gray-med: #666;
-$gray-med-2: darken($gray-med, 8);
-$gray-dark: #4D4D4F;
-$gray-dark-2: #131313;
-$gray-dark-3: #2a2c2c;
+$gray: #c9c9c9;
+$gray-light: #f7fbfa;
+$gray-light-2: #f6f6f6;
+$gray-light-3: #eaeeed;
+$gray-light-4: #dddddd;
+$gray-very-light: #fafafa;
+$gray-med: #a7a7a7;
+$gray-med-2: #909090;
+$gray-dark: #707070;
+$gray-dark-2: #252525;
+$gray-dark-3: #252525;
 $white: #fff;
 $black: #000;
 $dim: rgba(0,0,0,0.5);
@@ -49,13 +40,12 @@ $information: #000db5;
 $feaux-black: #393939;
 
 // Style Colors
-$oreilly-gray: #363838;
-$oreilly-red: #b9002d;
-
-// Other Colors
-$red-violet: #D00DA2;
-$yellow: #FFB317;
-$yellow-light: #fffbae;
+$red: #e31e30;
+$pink: #ef4e74;
+$pink-light: #f06793;
+$blue-dark: #264770;
+$blue: #0074bc;
+$blue-light: #479cd6;
 
 // Social Colors
 $twitter-blue: #13C4F8;
@@ -66,8 +56,8 @@ $youtube-red: #b31217;
 $google-red: $youtube-red;
 
 // Typography
-$font: 'Open Sans', "Helvetica", "Arial", sans-serif;
-$font-secondary: "URW Typewriter Thin Regular", monospace, serif;
+$font: "ff-dagny-web-pro", "Helvetica", "Arial", sans-serif;
+$font-secondary: "futura-pt", "Helvetica", "Arial", sans-serif;
 $sans: "Helvetica", "Arial", sans-serif;
 $serif: Georgia, Times, "Times New Roman", serif;
 $monospace: Menlo, Monaco, 'Courier New', 'Courier', monospace;
@@ -78,7 +68,7 @@ $font-size-med: 1em;
 $font-size-med-2: 1.0625em;
 $font-size-large: 1.4375em;
 
-// Defaults
+// Default Spacing/Padding
 $space: rem(20);
 $space-and-half: $space*1.5;
 $space-double: $space*2;
@@ -90,11 +80,12 @@ $pad-double: $pad*2;
 $pad-half: $pad/2;
 $pad-quarter: $pad/4;
 
-// Borders
+// Border Styles
 $border-med: 6px;
 $border-thick: 8px;
 $border-opacity: 1px solid rgba($white, .4);
-$border-style: 1px solid $gray-light-3;
+$border-style: 1px solid $gray-light-4;
+$border-style-white: 1px solid $white;
 $border-style-dark: 1px solid $gray;
 
 // Breakpoints (legacy)
@@ -144,43 +135,24 @@ $px1500: (1500/$defaultpx) + 0em;
 $px-max: $max-width;
 $px-max-plus: (1400/$defaultpx) + 0em;
 
-// Layout vars
+// Common Breakpoints
+$larger-break: (1206/$defaultpx) + 0em;
+$large-break: (1024/$defaultpx) + 0em; // Tablet Landscape, Desktop
+$medium-break: $px800; // Tablet Portrait
+$small-break: $px750;  // Mobile Landscape
+$micro-break: $px450;  // Mobile Portrait
+
 $nav-breakout: $px500;
 $nav-breakout-med: $px800;
 $nav-breakout-large: $px1050;
 
-$first-break: $px600;
-$second-break: $px750;
-$third-break: $px1000;
-
-// Top/Bottom padding
-$tb-pad: rem(30);
-
-// Padding around block
-$block-padding: $pad;
-
-$section-col1: rem(322);
-$article-max-width: rem(750);
-$article-left-space: rem(160);
-
-$icon-small: rem(20);
+// Icon Sizing
+$icon-small: 20px;
 $icon-med: rem(30);
 $icon-large: rem(42);
 $icon-big: rem(65);
-$form-btn-width: rem(50);
-$header-search-height: rem(52);
 
-$feat-conf-text-width: rem(450);
-
-// Article main aside width and right push
-$aside-width: rem(300);
-$aside-push-width: rem(370);
-
-// Used for max-widths and smaller breakpoints
-$nav-breakout-val: $px600;
-$nav-breakout-med-val: $px850;
-$nav-breakout-large-val: $px1050;
-
+// Element Specific Dimensions
 $ad-300: (330/$defaultpx) + 0em; // Ads that are 300px wide for fixed positioning
 $sub-nav-toggle-height: 65;
 $mobile-header-height: (50/$defaultpx) + 0em;

@@ -1,9 +1,10 @@
 [class^="icon-"], [class*=" icon-"], .icon {
   background-size: 100%;
   background-position: center center;
+  display: inline-block;
 }
 
-.icon-round {
+.icon--round {
   width: rem(20);
   height: rem(20);
   border-radius: 50%;
@@ -19,6 +20,11 @@
     width: rem(12);
     height: rem(12);
   }
+}
+
+.icon--small {
+  width: $icon-small;
+  height: $icon-small;
 }
 
 .more {

@@ -1,55 +1,97 @@
-.header {
-}
+
 .header-inner {
 	@extend .cf;
 	position: relative;
 	z-index: 50;
+	border-bottom: $border-style;
 	height: $mobile-header-height;
 }
 
 .logo-link {
-	float: left;
-	display: inline-block;
-	max-width: rem(180);
+	display: block;
+	max-width: rem(188);
 	line-height: 1;
-	@include rem(padding, 12);
+	margin: 0 auto;
+	@include rem(padding, 16 12 13);
 	@media all and (min-width: $bp-med) {
 		max-width: 9rem;
 	}
 }
 
-.nav-toggle {
-	float: right;
-	display: block;
-	width: rem(58);
-	@include rem(padding, 0 10);
-	@media all and (min-width: $bp-med) {
-		display: none;
-	}
-	@media all and (max-width: 17em) {
-		padding-left: 0.2rem;
-		padding-right: 0.2rem;
-	}
-	.icon {
-		display: block;
-		width: 100%;
-		height: $mobile-header-height;
-	}
-	.icon-x {
-		display: none;
-		background-size: 60%;
-	}
-	.menu-is-active & {
-		.icon-menu {
-			display: none;
-		}
-		.icon-x {
-			display: block;
-		}
-	}
+.nav-toggler {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: rem(4);
+  @include rem(left, 4);
+  @include rem(width, 40);
+  @include rem(height, 40);
+  @include rem(padding, 8);
+  @include mq($px500) {
+    @include rem(right, 16);
+  }
+  @include mq($nav-breakout-med) {
+    display: none;
+  }
+}
+.nt-inner {
+  position: relative;
+}
+.nt-inner span,
+.nt-inner span:before,
+.nt-inner span:after {
+  cursor: pointer;
+  width: 22px;
+  height: 3px;
+  background-color: $black;
+  position: absolute;
+  display: block;
+  content: '';
+  top: rem(12);
+  @include trans;
+}
+.nt-inner span:before {
+  top: rem(-7);
+}
+.nt-inner span:after {
+  top: rem(7);
+}
+.csstransforms {
+  .main-nav-is-active .nt-inner {
+    span {
+      background-color: transparent;
+      &:before,
+      &:after {
+        top: 0;
+        left: 0;
+        display: block;
+        @include transform(rotate(45deg));
+      }
+      &:after {
+        @include transform(rotate(-45deg));
+      }
+    }
+  }
 }
 
-
-
-
-
+.search-toggler {
+	display: block;
+	position: absolute;
+	z-index: 10;
+	top: rem(6);
+	text-align: right;
+	@include rem(right, 4);
+	@include rem(width, 40);
+	@include rem(height, 38);
+	@include rem(padding, 8);
+	.icon-magnifying-glass {
+		background: none;
+	}
+	path {
+		fill: $black;
+		@include trans;
+	}
+}
+.search-is-active .search-toggler path {
+  fill: $gray-med;
+}

@@ -102,28 +102,43 @@ input[type="search"]::-webkit-search-decoration {
 .search-form {
 	overflow: hidden;
 	width: 100%;
+  border-bottom: $border-style;
+  @include trans;
+  height: rem(50);
+  margin-top: rem(-51);
+  .search-is-active & {
+    margin-top: 0;
+  }
 	@media all and (min-width: $bp-med) {
 		float: right;
 		max-height: none;
 		margin: 0.65em 0.5em 0 0;
 	}
 	.search-field {
-		background-color: $gray-light;
+		background-color: $white;
 		border: none;
 		font-size: rem(20);
 		margin: 0;
-		@include rem(padding, 13);
+    font-family: $serif;
+    font-style: italic;
+    font-weight: 100;
+		padding: rem(13);
 	}
 	.submit {
 		border: none;
 		margin: 0;
 		width: rem(50);
 		text-align: center;
-		@include rem(padding, 14 12 12);
+    background-color: $blue-light;
+    line-height: 0;
+		@include rem(padding, 13);
 		&:hover {
 			background-color: inherit;
 		}
 	}
+  path {
+    fill: $white;
+  }
 }
 
 // Input form

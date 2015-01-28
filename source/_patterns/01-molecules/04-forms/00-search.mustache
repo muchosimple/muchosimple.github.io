@@ -2,7 +2,9 @@
   <fieldset>
     <legend class="is-vishidden">Search</legend>
     <label for="search-field" class="is-vishidden">Search</label>
-    <input type="search" placeholder="Search The Life Church" id="search-field" class="search-field" />
+    <div class="field-wrap search-field-wrap">
+      <input type="search" placeholder="Search" id="search-field" class="search-field" />
+    </div> <!-- /.search-field-wrap -->
     <button class="submit t-bkg">
       {{> atoms-magnifying-glass }}
     	<span class="is-vishidden">Search</span>

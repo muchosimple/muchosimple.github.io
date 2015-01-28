@@ -1,13 +1,13 @@
-/* Links */ 
+/* Links */
 a {
 	text-decoration: none;
 	outline: 0;
-	
+	color: $pink;
 	&:hover, &:focus {
-		color: $gray;
+		color: darken($pink, 10);
 	}
   p {
-    color: $gray-dark;
+    color: $black;
   }
 }
 

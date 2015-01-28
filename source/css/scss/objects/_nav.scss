@@ -3,17 +3,17 @@
 \*------------------------------------*/
 
 .primary-nav {
-	@include rem(padding, 12 0 20);
+	li {
+		position: relative;
+	}
 	a {
 		display: block;
-		background-color: $white;
-		text-align: center;
+		background-color: $gray-very-light;
 		line-height: 1;
-		@include rem(padding, 17);
-	}
-	a span {
 		font-family: $font-secondary;
-		font-size: rem(52);
+		font-size: rem(20);
+		border-bottom: $border-style;
+		@include rem(padding, 11 6);
 	}
 	@media all and (min-width: $bp-med) {
 		max-height: none;
@@ -26,49 +26,64 @@
 			border: 0;
 		}
 	}
+	.aw {
+		height: 100%;
+		position: absolute;
+		width: rem(44);
+		padding-top: rem(8);
+		z-index: 10;
+		top: 0;
+		right: 0;
+		text-align: center;
+	}
+	.arrow {
+		@include trans();
+		@include transform(rotate(0deg));
+	}
 }
 
-.secondary-nav {
-	background-color: $oreilly-gray;
-	text-align: center;
-	color: $white;
-	@include rem(padding, 25 20 10);
-	.nav-title {
-		@include rem(margin-bottom, 20);
-	}
+// Sub-navigation
+.nav-sub {
+	display: none;
 	a {
-		@extend .btn;
-		@include rem(margin, 0 5 16);
+		color: $black;
+		padding-left: $pad;
+	}
+}
+.l-top.is-active {
+	a {
+		border-bottom: $border-style-white;
+		background-color: $gray-light-3;
+	}
+	.nav-sub {
+		display: block;
+	}
+	.arrow {
+		@include transform(rotate(180deg));
 	}
 }
 
 .nav-wrap {
 	clear: both;
 	overflow: hidden;
-	position: absolute;
-	top: rem(-700);
-	z-index: 45;
+	z-index: 20;
 	width: 100%;
 	background-color: $white;
 	@include trans;
 	.menu-is-active & {
-		top: $mobile-header-height;
 	}
 }
 
-//Pagination
+// Pagination
 .pagination {
 	overflow: hidden;
-
 	li {
 		float: left;
 		border-right: 1px solid $gray-light-2;
-
 		&:last-child {
 			border: 0;
 		}
 	}
-
 	a {
 		padding: $pad;
 	}
