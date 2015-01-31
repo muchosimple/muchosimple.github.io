@@ -99,18 +99,45 @@ input[type="search"]::-webkit-search-decoration {
 \*------------------------------------*/
 
 // Header/nav search
+.search-overlay {
+  @include overlay;
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: rem(12);
+  }
+  .icon {
+    display: none;
+    background: none;
+  }
+  path {
+    fill: $white;
+  }
+  .search-is-active & {
+    background-color: $overlay;
+    z-index: 100000;
+    .icon {
+      display: block;
+    }
+  }
+}
 .search-form {
 	overflow: hidden;
-	width: 100%;
-  border-bottom: $border-style;
+	width: 96%;
   @include trans;
-  height: rem(50);
-  margin-top: rem(-51);
-  position: relative;
-  z-index: 1002;
+  height: rem($mobile-header-height);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 2%;
+  opacity: 0;
   background-color: $white;
   .search-is-active & {
     margin-top: 0;
+    top: rem($mobile-header-height);
+    opacity: 1;
+    z-index: 100002;
   }
 	@media all and (min-width: $bp-med) {
 		float: right;

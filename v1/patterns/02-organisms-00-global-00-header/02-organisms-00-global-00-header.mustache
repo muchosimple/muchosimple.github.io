@@ -1,5 +1,4 @@
 &lt;header class=&quot;header cf&quot; role=&quot;banner&quot;&gt;
-  {{&gt; molecules-search }}
   &lt;div class=&quot;header-inner t-bkg&quot;&gt;
     &lt;a href=&quot;#nav&quot; class=&quot;nav-toggler js-toggle&quot; data-toggled=&quot;header, .overlay&quot; data-prefix=&quot;main-nav&quot;&gt;
       &lt;span class=&quot;nt-inner&quot;&gt;
@@ -8,12 +7,20 @@
       &lt;/span&gt; &lt;!-- /.nt-inner --&gt;
     &lt;/a&gt; &lt;!-- /.nav-toggler --&gt;
     {{&gt; atoms-logo }}
-    &lt;a href=&quot;#search&quot; class=&quot;search-toggler js-toggle&quot; data-toggled=&quot;header&quot; data-prefix=&quot;search&quot;&gt;
-      &lt;span class=&quot;icon icon--small icon-magnifying-glass&quot;&gt;{{&gt; atoms-magnifying-glass }}&lt;/span&gt;
+    &lt;a href=&quot;#search&quot; class=&quot;search-toggler js-toggle&quot; data-toggled=&quot;header&quot; data-prefix=&quot;search&quot; data-remove=&quot;main-nav-is-active&quot;&gt;
+      &lt;span class=&quot;icon icon--small icon-magnifying-glass&quot;&gt;&lt;/span&gt;
     &lt;/a&gt; &lt;!-- /.search-toggler --&gt;
   &lt;/div&gt; &lt;!-- /.header-inner --&gt;
   &lt;div class=&quot;nav-wrap&quot;&gt;
-    {{&gt; molecules-primary-nav }}
-    {{&gt; molecules-secondary-nav }}
+    &lt;div class=&quot;nav-wrap-inner&quot;&gt;
+      {{&gt; molecules-primary-nav }}
+      {{&gt; molecules-secondary-nav }}
+    &lt;/div&gt; &lt;!-- /.nav-wrap-inner --&gt;
   &lt;/div&gt; &lt;!-- /.nav-wrap --&gt;
+  &lt;div class=&quot;search-overlay&quot;&gt;
+    &lt;a href=&quot;#close-search&quot; class=&quot;close js-toggle&quot; data-toggled=&quot;header&quot; data-prefix=&quot;search&quot;&gt;
+      &lt;span class=&quot;icon icon--small icon-x&quot;&gt;{{&gt; atoms-x }}&lt;/span&gt;
+    &lt;/a&gt; &lt;!-- /.search-toggler --&gt;
+    {{&gt; molecules-search }}
+  &lt;/div&gt; &lt;!-- /.search-overlay --&gt;
 &lt;/header&gt; &lt;!-- .header --&gt;

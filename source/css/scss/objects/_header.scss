@@ -2,10 +2,10 @@
 .header-inner {
 	@extend .cf;
 	position: relative;
-	z-index: 1001;
+	z-index: 1006;
 	background-color: $white;
 	border-bottom: $border-style;
-	height: $mobile-header-height;
+	height: rem($mobile-header-height);
 }
 
 .logo-link {
@@ -43,7 +43,7 @@
 .nt-inner span:after {
   cursor: pointer;
   width: 22px;
-  height: 3px;
+  height: rem(2.5);
   background-color: $black;
   position: absolute;
   display: block;
@@ -79,20 +79,10 @@
 	display: block;
 	position: absolute;
 	z-index: 10;
-	top: rem(6);
+	top: rem(7);
 	text-align: right;
 	@include rem(right, 4);
 	@include rem(width, 40);
 	@include rem(height, 38);
 	@include rem(padding, 8);
-	.icon-magnifying-glass {
-		background: none;
-	}
-	path {
-		fill: $black;
-		@include trans;
-	}
-}
-.search-is-active .search-toggler path {
-  fill: $gray-med;
 }

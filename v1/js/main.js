@@ -47,32 +47,6 @@
   var $body = $('body');
 
   /*
-   * Add Active Classes
-   *
-   * @description:
-   *  add specific classes based on data-attr of clicked element
-   *
-   * @requires:
-   *  'js-add' class and a data-attr with the element to be
-   *  toggled's class name both applied to the clicked element
-   *
-   * @example usage:
-   *  <span class="js-add" data-target="add-class" data-prefix="open">Open</span>
-   *  <div class="add-class">This get the added class</div>
-   *
-   */
-  $('.js-add').on('click', function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    var $this = $(this),
-        $targetPrefix = $this.data('prefix') || 'this',
-        $target = $('.' + $this.data('target'));
-
-    $this.addClass($targetPrefix + '-is-active')
-    $target.addClass($targetPrefix + '-is-active');
-  });
-
-  /*
    * Toggle Active Classes
    *
    * @description:
@@ -96,6 +70,11 @@
 
     $this.toggleClass($togglePrefix + '-is-active')
     $toggled.toggleClass($togglePrefix + '-is-active');
+
+    // Remove a class on another element, if needed.
+    if ($this.data('remove')) {
+      $('.' + $this.data('remove')).removeClass($this.data('remove'));
+    }
   });
 
   // Toggle parent class
@@ -106,9 +85,17 @@
     $this.parent().toggleClass('is-active');
   });
 
-  // Close main menu when clicked outside
-  $('.container').on('click touchstart', function(){
-    $('.rick-ross, .nav-toggler').removeClass('main-nav-is-active');
+  // Reset subnav when main menu is reopened.
+  $('.nav-toggler').on('click touchstart', function(){
+    $('.l-top').delay(600).queue(function() {
+      $(this).removeClass('is-active');
+      $(this).dequeue();
+    });
+  });
+
+  // Close main menu when clicked outside.
+  $('.main-nav-is-active.overlay').on('click touchstart', function(){
+    $('.main-nav-is-active').removeClass('main-nav-is-active');
   });
 
   // Toggle hovered classes

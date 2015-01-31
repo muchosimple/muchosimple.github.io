@@ -38,6 +38,7 @@ $valid: #089e00;
 $warning: #fff664;
 $information: #000db5;
 $feaux-black: #393939;
+$overlay: rgba($black, .9);
 
 // Style Colors
 $red: #e31e30;
@@ -155,7 +156,7 @@ $icon-big: rem(65);
 // Element Specific Dimensions
 $ad-300: (330/$defaultpx) + 0em; // Ads that are 300px wide for fixed positioning
 $sub-nav-toggle-height: 65;
-$mobile-header-height: (50/$defaultpx) + 0em;
+$mobile-header-height: 50;
 $wide-header-height: (57/$defaultpx) + 0em;
 $split-col1: (354/$defaultpx) + 0em; // Right padding for split layout with fixed sidebar
 $split-col2: (320/$defaultpx) + 0em; // Fixed width of right column
