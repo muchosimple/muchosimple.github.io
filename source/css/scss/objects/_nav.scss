@@ -48,12 +48,13 @@
 	.aw {
 		height: 100%;
 		position: absolute;
-		width: rem(44);
-		padding-top: rem(8);
+		width: rem(140);
+		padding-top: rem(12);
+		padding-right: rem(14);
 		z-index: 10;
 		top: 0;
 		right: 0;
-		text-align: center;
+		text-align: right;
 	}
 	.arrow {
 		@include trans;
@@ -97,7 +98,7 @@
 		display: block;
 	}
 	.arrow {
-		@include transform(rotate(180deg));
+		@include transform(rotate(90deg));
 	}
 }
 
