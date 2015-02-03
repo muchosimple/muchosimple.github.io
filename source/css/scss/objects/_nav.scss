@@ -2,6 +2,10 @@
     $NAVIGATION
 \*------------------------------------*/
 
+.top-hat {
+	position: relative;
+	z-index: 1005;
+}
 .nav-wrap {
 	clear: both;
 	overflow: auto;
@@ -24,6 +28,9 @@
 }
 .nav-wrap-inner {
 	padding-top: rem($mobile-header-height);
+	@include mq($medium-break) {
+		padding-top: rem($mobile-header-height + $top-hat-height);
+	}
 }
 .main-nav-is-active {
 	.nav-wrap {

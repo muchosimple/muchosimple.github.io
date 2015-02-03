@@ -119,6 +119,7 @@ $px650: (650/$defaultpx) + 0em;
 $px700: (700/$defaultpx) + 0em;
 $px750: (750/$defaultpx) + 0em;
 $px800: (800/$defaultpx) + 0em;
+$px801: (801/$defaultpx) + 0em;
 $px850: (850/$defaultpx) + 0em;
 $break-into-columns: (850/$defaultpx) + 0em;
 $px900: (900/$defaultpx) + 0em;
@@ -139,7 +140,7 @@ $px-max-plus: (1400/$defaultpx) + 0em;
 // Common Breakpoints
 $larger-break: (1206/$defaultpx) + 0em;
 $large-break: (1024/$defaultpx) + 0em; // Tablet Landscape, Desktop
-$medium-break: $px800; // Tablet Portrait
+$medium-break: $px801; // Tablet Portrait
 $small-break: $px750;  // Mobile Landscape
 $micro-break: $px450;  // Mobile Portrait
 
@@ -155,7 +156,7 @@ $icon-big: rem(65);
 
 // Element Specific Dimensions
 $ad-300: (330/$defaultpx) + 0em; // Ads that are 300px wide for fixed positioning
-$sub-nav-toggle-height: 65;
+$top-hat-height: 35;
 $mobile-header-height: 50;
 $wide-header-height: (57/$defaultpx) + 0em;
 $split-col1: (354/$defaultpx) + 0em; // Right padding for split layout with fixed sidebar

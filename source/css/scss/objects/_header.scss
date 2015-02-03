@@ -6,6 +6,7 @@
 	background-color: $white;
 	border-bottom: $border-style;
 	height: rem($mobile-header-height);
+  margin-bottom: $space-half;
 }
 
 .logo-link {
@@ -14,9 +15,6 @@
 	line-height: 1;
 	margin: 0 auto;
 	@include rem(padding, 16 12 13);
-	@media all and (min-width: $bp-med) {
-		max-width: 9rem;
-	}
 }
 
 .nav-toggler {
@@ -30,9 +28,6 @@
   @include rem(padding, 8);
   @include mq($px500) {
     @include rem(right, 16);
-  }
-  @include mq($nav-breakout-med) {
-    display: none;
   }
 }
 .nt-inner {
@@ -85,4 +80,24 @@
 	@include rem(width, 40);
 	@include rem(height, 38);
 	@include rem(padding, 8);
+}
+
+.ad-leaderboard {
+  margin-bottom: $space-half;
+}
+.ad-block {
+  @include center-block;
+}
+.ad-300x50 {
+  width: rem(300);
+  @include mq($px750) {
+    display: none;
+  }
+}
+.ad-728x90 {
+  width: rem(728);
+  display: none;
+  @include mq($px750) {
+    display: block;
+  }
 }

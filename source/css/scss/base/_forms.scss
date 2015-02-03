@@ -119,6 +119,8 @@ input[type="search"]::-webkit-search-decoration {
     z-index: 100000;
     .icon {
       display: block;
+      height: rem(18);
+      width: rem(18);
     }
   }
 }
@@ -138,12 +140,10 @@ input[type="search"]::-webkit-search-decoration {
     top: rem($mobile-header-height);
     opacity: 1;
     z-index: 100002;
+    @include mq($medium-break) {
+      top: rem($mobile-header-height + $top-hat-height);
+    }
   }
-	@media all and (min-width: $bp-med) {
-		float: right;
-		max-height: none;
-		margin: 0.65em 0.5em 0 0;
-	}
 	.search-field {
 		background-color: $white;
 		border: none;

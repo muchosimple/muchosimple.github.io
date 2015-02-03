@@ -61,7 +61,7 @@
    *  <div class="toggled-class">This element's class will be toggled</div>
    *
    */
-  $('.js-toggle').on('click touchstart', function(e){
+  $('.js-toggle').on('click', function(e){
     e.preventDefault();
     e.stopPropagation();
     var $this = $(this),
@@ -78,7 +78,7 @@
   });
 
   // Toggle parent class
-  $('.js-toggle-parent').on('click touchstart', function(e){
+  $('.js-toggle-parent').on('click', function(e){
     e.preventDefault();
     var $this = $(this);
 
@@ -86,7 +86,7 @@
   });
 
   // Reset subnav when main menu is reopened.
-  $('.nav-toggler').on('click touchstart', function(){
+  $('.nav-toggler').on('click', function(){
     $('.l-top').delay(600).queue(function() {
       $(this).removeClass('is-active');
       $(this).dequeue();
@@ -94,7 +94,7 @@
   });
 
   // Close main menu when clicked outside.
-  $('.main-nav-is-active.overlay').on('click touchstart', function(){
+  $('.main-nav-is-active.overlay').on('click', function(){
     $('.main-nav-is-active').removeClass('main-nav-is-active');
   });
 
