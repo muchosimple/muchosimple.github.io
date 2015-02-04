@@ -26,6 +26,10 @@
   width: $icon-small;
   height: $icon-small;
 }
+.icon--large {
+  width: $icon-large;
+  height: $icon-large;
+}
 
 .more {
   .icon-plus {
@@ -39,3 +43,47 @@
   }
 }
 
+.icon-facebook {
+  background-color: $facebook-blue;
+  border: 1px solid $facebook-blue;
+  &:hover {
+    background-color: $white;
+    border-color: $facebook-blue;
+    path {
+      fill: $facebook-blue;
+    }
+  }
+}
+.icon-twitter {
+  background-color: $twitter-blue;
+  border: 1px solid $twitter-blue;
+  &:hover {
+    background-color: $white;
+    border-color: $twitter-blue;
+    path {
+      fill: $twitter-blue;
+    }
+  }
+}
+.icon-instagram {
+  background-color: $instagram-brown;
+  border: 1px solid $instagram-brown;
+  &:hover {
+    background-color: $white;
+    border-color: $instagram-brown;
+    path {
+      fill: $instagram-brown;
+    }
+  }
+}
+.icon-pinterest {
+  background-color: $pinterest-red;
+  border: 1px solid $pinterest-red;
+  &:hover {
+    background-color: $white;
+    border-color: $pinterest-red;
+    path {
+      fill: $pinterest-red;
+    }
+  }
+}

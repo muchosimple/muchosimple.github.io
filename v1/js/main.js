@@ -46,6 +46,20 @@
 
   var $body = $('body');
 
+  var toggleClasses = function(element) {
+    var $this = element,
+        $togglePrefix = $this.data('prefix') || 'this',
+        $toggled = $('.' + $this.data('toggled'));
+
+    $this.toggleClass($togglePrefix + '-is-active');
+    $toggled.toggleClass($togglePrefix + '-is-active');
+
+    // Remove a class on another element, if needed.
+    if ($this.data('remove')) {
+      $('.' + $this.data('remove')).removeClass($this.data('remove'));
+    }
+  };
+
   /*
    * Toggle Active Classes
    *
@@ -61,24 +75,14 @@
    *  <div class="toggled-class">This element's class will be toggled</div>
    *
    */
-  $('.js-toggle').on('click', function(e){
+  $('.js-toggle').on('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
-    var $this = $(this),
-        $togglePrefix = $this.data('prefix') || 'this',
-        $toggled = $('.' + $this.data('toggled'));
-
-    $this.toggleClass($togglePrefix + '-is-active')
-    $toggled.toggleClass($togglePrefix + '-is-active');
-
-    // Remove a class on another element, if needed.
-    if ($this.data('remove')) {
-      $('.' + $this.data('remove')).removeClass($this.data('remove'));
-    }
+    toggleClasses($(this));
   });
 
   // Toggle parent class
-  $('.js-toggle-parent').on('click', function(e){
+  $('.js-toggle-parent').on('click', function(e) {
     e.preventDefault();
     var $this = $(this);
 
@@ -86,23 +90,35 @@
   });
 
   // Reset subnav when main menu is reopened.
-  $('.nav-toggler').on('click', function(){
-    $('.l-top').delay(600).queue(function() {
+  $('.nav-toggler').on('click', function() {
+    $('.l-top').delay(300).queue(function() {
       $(this).removeClass('is-active');
       $(this).dequeue();
     });
   });
 
   // Close main menu when clicked outside.
-  $('.main-nav-is-active.overlay').on('click', function(){
+  $('.nav-wrap').on('click', function(e) {
+    e.stopPropagation();
+  });
+  $(document).on('click', function(e) {
     $('.main-nav-is-active').removeClass('main-nav-is-active');
   });
 
   // Toggle hovered classes
-  $('.js-hover').on('mouseenter mouseleave', function(e){
+  $('.js-hover').on('mouseenter mouseleave', function(e) {
     e.preventDefault();
-    var $this = $(this);
-    $this.toggleClass('is-hovered');
+    toggleClasses($(this));
+  });
+
+  // Center align the sub-navigation on main nav at wider widths.
+  $('.horiz-nav').find('.l-top').on('mouseenter mouseleave', function() {
+    var $this = $(this),
+        $thisWidth = $this.outerWidth(),
+        $subNav = $this.find('.nav-sub'),
+        $subNavWidth = $subNav.outerWidth();
+
+    $subNav.css('left', - ($subNavWidth - $thisWidth) / 2);
   });
 
   // Smooth scroll to anchor

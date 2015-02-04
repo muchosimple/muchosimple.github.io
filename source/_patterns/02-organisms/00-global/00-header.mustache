@@ -1,16 +1,24 @@
 <div class="top-hat">{{> molecules-top-hat }}</div>
 <header class="header cf" role="banner">
   <div class="header-inner t-bkg">
-    <a href="#nav" class="nav-toggler js-toggle" data-toggled="header, .overlay" data-prefix="main-nav">
-      <span class="nt-inner">
-        <span class="is-vishidden">Menu</span>
-        <span></span>
-      </span> <!-- /.nt-inner -->
-    </a> <!-- /.nav-toggler -->
-    {{> atoms-logo }}
-    <a href="#search" class="search-toggler js-toggle" data-toggled="header" data-prefix="search" data-remove="main-nav-is-active">
-      <span class="icon icon--small icon-magnifying-glass"></span>
-    </a> <!-- /.search-toggler -->
+    <div class="lc">
+      <a href="#nav" class="nav-toggler js-toggle" data-toggled="header, .overlay" data-prefix="main-nav">
+        <span class="nt-inner">
+          <span class="is-vishidden">Menu</span>
+          <span></span>
+        </span> <!-- /.nt-inner -->
+      </a> <!-- /.nav-toggler -->
+      {{> atoms-logo }}
+      {{> molecules-util-nav }}
+      <div class="horiz-nav">
+        {{# wide-nav }}
+          {{> molecules-primary-nav }}
+        {{/ wide-nav }}
+      </div> <!-- /.horiz-nav -->
+      <a href="#search" class="search-toggler js-toggle h-hide" data-toggled="header" data-prefix="search" data-remove="main-nav-is-active">
+        <span class="icon icon--small icon-magnifying-glass"></span>
+      </a> <!-- /.search-toggler -->
+    </div> <!-- /.lc -->
   </div> <!-- /.header-inner -->
   <div class="nav-wrap">
     <div class="nav-wrap-inner">

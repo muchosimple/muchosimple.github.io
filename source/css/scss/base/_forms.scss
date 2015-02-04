@@ -135,14 +135,17 @@ input[type="search"]::-webkit-search-decoration {
   left: 2%;
   opacity: 0;
   background-color: $white;
+  @include mq($medium-break) {
+    width: rem(600);
+    right: rem(50);
+    left: auto;
+    height: rem(75);
+  }
   .search-is-active & {
     margin-top: 0;
     top: rem($mobile-header-height);
     opacity: 1;
     z-index: 100002;
-    @include mq($medium-break) {
-      top: rem($mobile-header-height + $top-hat-height);
-    }
   }
 	.search-field {
 		background-color: $white;
@@ -153,6 +156,10 @@ input[type="search"]::-webkit-search-decoration {
     font-style: italic;
     font-weight: 100;
 		padding: rem(13);
+    @include mq($medium-break) {
+      padding: rem(23);
+      font-size: rem(26);
+    }
 	}
 	.submit {
 		border: none;
@@ -165,6 +172,10 @@ input[type="search"]::-webkit-search-decoration {
 		&:hover {
 			background-color: $blue;
 		}
+    @include mq($medium-break) {
+      padding: rem(21);
+      width: rem(75);
+    }
 	}
   path {
     fill: $white;

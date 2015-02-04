@@ -29,7 +29,7 @@
 .nav-wrap-inner {
 	padding-top: rem($mobile-header-height);
 	@include mq($medium-break) {
-		padding-top: rem($mobile-header-height + $top-hat-height);
+		padding-top: rem(123);
 	}
 }
 .main-nav-is-active {
@@ -44,16 +44,18 @@
 
 .primary-nav {
 	margin-bottom: $space-half;
-	li {
+	.l-top {
 		position: relative;
+		> a {
+			background-color: $gray-very-light;
+		}
 	}
 	a {
-		background-color: $gray-very-light;
 		border-bottom: $border-style;
 		font-size: rem(20);
 	}
 	.aw {
-		height: 100%;
+		height: rem(42);
 		position: absolute;
 		width: rem(140);
 		padding-top: rem(12);
@@ -66,6 +68,132 @@
 	.arrow {
 		@include trans;
 		@include transform(rotate(0deg));
+	}
+}
+
+// Horizontal Nav (at wider breakpoints)
+.horiz-nav {
+	display: none;
+	text-align: center;
+	@include mq($medium-break) {
+		display: block;
+	}
+	.primary-nav {
+		margin-bottom: 0;
+	}
+	.aw {
+		display: none;
+	}
+	.l-top {
+		display: inline-block;
+		padding-left: 1.6%;
+		padding-right: 1.6%;
+		vertical-align: top;
+		@include mq($px900) {
+			padding-left: 2%;
+			padding-right: 2%;
+		}
+		@include mq($larger-break) {
+			padding-left: 2.3%;
+			padding-right: 2.3%;
+		}
+		> a {
+			background-color: transparent;
+		}
+		a {
+			text-transform: uppercase;
+			color: $black;
+			text-align: center;
+			border-bottom: none;
+			display: block;
+			font-size: rem(17);
+			font-weight: 500;
+			font-family: $font-secondary;
+			padding: rem(4) rem(6) rem(8);
+			&:hover {
+				color: $pink;
+			}
+		}
+		&.is-hovered {
+			> a {
+				color: $pink;
+			}
+		}
+		&:hover {
+			.nav-sub {
+				display: block;
+			}
+		}
+	}
+	.nav-sub {
+		position: absolute;
+		left: 0;
+		top: rem(37);
+		border: $border-style;
+		background-color: $gray-very-light;
+		width: rem(180);
+		padding-top: rem(4);
+		padding-bottom: rem(4);
+		&:before,
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: rem(-8);
+			left: 50%;
+			margin-left: rem(-7);
+			z-index: 10;
+			@extend .arrow--up;
+			border-bottom-color: $gray-very-light;
+		}
+		&:before {
+			z-index: 8;
+			top: rem(-9);
+			border-bottom-color: $gray;
+		}
+	}
+	.l-sub {
+		a {
+			text-transform: none;
+			display: block;
+			padding: rem(7);
+			font-size: rem(16);
+			font-weight: normal;
+		}
+	}
+	.l-follow {
+		.nav-sub {
+			width: rem(300);
+			padding-bottom: 0;
+			@include mq($larger-break) {
+				background-color: transparent;
+				top: auto;
+				border: none;
+				bottom: rem(24);
+				&:before,
+				&:after {
+					display: none;
+				}
+				.icon {
+					width: rem(35);
+					height: rem(35);
+					padding: rem(5);
+				}
+			}
+		}
+	}
+}
+
+// Hide elements with .h-hide class when hovering over the "Follow" nav link.
+@include mq($larger-break) {
+	.h-hide {
+		@include trans;
+		opacity: 1;
+	}
+	.header.follow-is-active {
+		.h-hide {
+			opacity: 0;
+		}
 	}
 }
 
@@ -96,16 +224,121 @@
 		padding-left: rem(25);
 	}
 }
+// Sub-nav is open
 .l-top.is-active {
+	background-color: $gray-light-3;
+	> a {
+		background-color: $gray-light-3;
+	}
 	a {
 		border-bottom: $border-style-white;
-		background-color: $gray-light-3;
 	}
 	.nav-sub {
 		display: block;
 	}
 	.arrow {
 		@include transform(rotate(90deg));
+	}
+}
+.l-follow.is-active {
+	.l-sub a {
+		border-bottom: none;
+	}
+}
+
+// Follow social icons
+.l-follow {
+	.icon {
+		padding: rem(8);
+		background-image: none;
+	}
+	.l-sub {
+		display: inline-block;
+		margin-right: rem(4);
+		&:last-child {
+			margin-right: 0;
+		}
+		a {
+			padding: $pad-half;
+		}
+	}
+}
+
+// Subscribe CM pop out
+.subscribe-pop {
+	a > span {
+		position: relative;
+		z-index: 10;
+	}
+	.pop-out {
+		display: none;
+		position: absolute;
+		top: 0;
+		z-index: 0;
+		padding: rem(24) rem(6) rem(6);
+		width: rem(340);
+		background-color: $gray-light-3;
+		right: rem(8);
+		@include mq($large-break) {
+			right: rem(20);
+		}
+	}
+	&:hover {
+		.pop-out {
+			display: block;
+		}
+	}
+}
+
+// Utility Nav
+.util-nav {
+	display: none;
+	position: absolute;
+	right: rem(50);
+	top: rem(10);
+	text-align: center;
+	width: rem(150);
+	z-index: 100;
+	border: 1px solid transparent;
+	@include mq($medium-break) {
+		display: block;
+	}
+	@include mq($large-break) {
+		right: rem(10);
+	}
+	&.util-is-active {
+		border: $border-style;
+		li {
+			display: block;
+		}
+		a {
+			border-bottom: $border-style;
+		}
+	}
+	li {
+		display: none;
+	}
+	.li-vis {
+		display: block;
+		a {
+			background-color: $white;
+			color: $pink;
+		}
+	}
+	a {
+		display: block;
+		line-height: 1;
+		padding: rem(10) 0 rem(9);
+		font-family: $font-secondary;
+		font-size: rem(15);
+		background-color: $gray-very-light;
+		color: $black;
+		&:hover {
+			color: $pink;
+		}
+	}
+	li:last-child a {
+		border-bottom: none;
 	}
 }
 
