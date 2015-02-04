@@ -145,5 +145,35 @@
 		"hide-class" : "h-hide",
 		"hover-class" : "js-hover",
 		"subscribe-class" : "subscribe-pop"
-	}
+	},
+	"story-blocks" : [
+		{
+			"block-class" : "table-layout",
+			"img" : {
+    		"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/ubp9Y/abc/v6hQx/ubp9Y-WXa-150x100.jpg"
+    	},
+  		"title" : "Reader's Top 20 Recipes"
+		},
+		{
+			"block-class" : "table-layout",
+			"img" : {
+    		"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/ubFjH/abc/pLnLI/ubFjH-WXa-150x100.jpg"
+    	},
+  		"title" : "4 Organized Women Spill Their Secrets"
+		},
+		{
+			"block-class" : "table-layout",
+			"img" : {
+    		"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/ubjLT/abc/pMH00/ubjLT-WXa-150x100.jpg"
+    	},
+  		"title" : "15-Minute Dinner Recipes"
+		},
+		{
+			"block-class" : "table-layout subscription-block",
+			"img" : {
+    		"src": "http://cl.ly/image/2p0E2W283Z1C/download/Image%202015-02-03%20at%209.19.27%20PM.png"
+    	},
+  		"title" : "Get Real Simple <br> Only $1.29 and issue"
+		}
+	]
 }

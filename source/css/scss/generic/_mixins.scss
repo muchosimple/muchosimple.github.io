@@ -347,7 +347,26 @@
   display: table-cell;
   width: 50%;
 }
+@mixin table-layout($left-width: 40%, $right-width: 60%) {
+  .b-inner {
+    @include table;
+    overflow: visible;
+  }
+  .b-thumb {
+    @include t-cell;
+    width: $left-width;
+    padding: 0;
+  }
+  .b-text {
+    @include t-cell;
+    width: $right-width;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0 0 0 $pad-half;
+  }
+}
 
+// Fixed transparent 100% width and height
 @mixin overlay {
   position: fixed;
   background-color: $black;

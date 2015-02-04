@@ -117,6 +117,9 @@ input[type="search"]::-webkit-search-decoration {
   .search-is-active & {
     background-color: $overlay;
     z-index: 100000;
+    @include mq($px950) {
+      background-color: $overlay-light;
+    }
     .icon {
       display: block;
       height: rem(18);

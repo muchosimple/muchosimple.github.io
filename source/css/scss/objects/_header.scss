@@ -7,8 +7,39 @@
 	border-bottom: $border-style;
 	height: rem($mobile-header-height);
   margin-bottom: $space-half;
+  @include transition(height .15s ease-in-out, background-color .15s ease-in-out);
   @include mq($medium-break) {
     height: auto;
+  }
+  @include mq($px950) {
+    margin-bottom: 0;
+  }
+  + div {
+    @include mq($medium-break) {
+      @include trans;
+      height: 0;
+    }
+  }
+}
+.header-inner.sticky-is-active {
+  top: 0;
+  height: rem($mobile-header-sticky-height);
+  background-color: rgba($white, .75);
+  .logo-link {
+    padding-top: rem(10);
+    padding-bottom: rem(7);
+    max-width: rem(188);
+  }
+  .nav-toggler {
+    top: rem(-2);
+  }
+  .search-toggler {
+    top: rem(1);
+  }
+  + div {
+    @include mq($medium-break) {
+      height: rem($mobile-header-sticky-height) !important;
+    }
   }
 }
 
@@ -17,6 +48,7 @@
 	max-width: rem(188);
 	line-height: 1;
 	margin: 0 auto;
+  @include transition(padding .15s ease-in-out, max-width .15s ease-in-out);
 	@include rem(padding, 16 12 13);
   @include mq($medium-break) {
     max-width: rem(270);

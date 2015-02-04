@@ -1,0 +1,17 @@
+.section {
+  position: relative;
+  margin-bottom: $space;
+}
+
+// Featured Stories
+.featured-stories {
+  display: none;
+  @include mq($px950) {
+    display: block;
+  }
+  @include mq($large-break, max) {
+    .b-title {
+      font-size: rem(16);
+    }
+  }
+}

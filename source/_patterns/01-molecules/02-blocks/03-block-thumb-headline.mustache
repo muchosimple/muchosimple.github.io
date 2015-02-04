@@ -1,10 +1,8 @@
-<div class="block block-thumb {{ block-class }} {{# block-align-right }} block-align-right {{/ block-align-right }} {{# block-align-left }} block-align-left {{/ block-align-left }} {{# block-no-img }} block-no-img {{/ block-no-img }}">
+<div class="block block-thumb {{ block-class }}">
 	<a href="{{ url }}" class="b-inner">
-		{{# block-align-left }}
-  		<div class="b-thumb">
-  			<div class="img-wrap">{{> atoms-square }}</div>
-  		</div> <!-- /.b-thumb -->
-    {{/ block-align-left }}
+		<div class="b-thumb">
+			<div class="img-wrap">{{> atoms-image }}</div>
+		</div> <!-- /.b-thumb -->
 		<div class="b-text">
       {{# date }}
         {{> atoms-time }}
@@ -12,23 +10,15 @@
       {{# kicker }}
         {{> molecules-kicker }}
       {{/ kicker }}
-			<h2 class="b-title">{{ title }}</h2>
+			<h2 class="b-title"><span>{{{ title }}}</span></h2>
       {{# byline }}
         {{> molecules-byline }}
       {{/ byline }}
-      {{# price }}
-        <span class="price">{{ price }}</span>
-      {{/ price }}
       {{# dek }}
       <div class="dek">
         <p>{{ dek }}</p>
       </div> <!-- /.dek -->
       {{/ dek }}
 		</div> <!-- /.b-text -->
-		{{# block-align-right }}
-  		<div class="b-thumb">
-  			{{> atoms-square }}
-  		</div> <!-- /.b-thumb -->
-    {{/ block-align-right }}
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->

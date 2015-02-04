@@ -13,7 +13,7 @@
 	width: 90%;
 	max-width: rem(300);
 	background-color: $white;
-	position: absolute;
+	position: fixed;
 	left: rem(-301);
 	z-index: 1002;
 	top: 0;
@@ -22,7 +22,6 @@
 	a {
 		display: block;
 		line-height: 1;
-		font-family: $font-secondary;
 		@include rem(padding, 11 14);
 	}
 }
@@ -32,6 +31,17 @@
 		padding-top: rem(123);
 	}
 }
+.header-is-sticky {
+	.nav-wrap-inner {
+	  padding-top: rem($mobile-header-sticky-height);
+	}
+	.horiz-nav {
+		display: none;
+	}
+	.util-nav {
+		display: none;
+	}
+}
 .main-nav-is-active {
 	.nav-wrap {
 		left: 0;
@@ -39,6 +49,9 @@
 	&.overlay {
 	  background-color: $overlay;
 	  z-index: 1000;
+	  @include mq($medium-break) {
+			background-color: $overlay-light;
+	  }
 	}
 }
 
@@ -75,6 +88,9 @@
 .horiz-nav {
 	display: none;
 	text-align: center;
+	opacity: 1;
+	position: relative;
+	@include trans;
 	@include mq($medium-break) {
 		display: block;
 	}
@@ -108,7 +124,6 @@
 			display: block;
 			font-size: rem(17);
 			font-weight: 500;
-			font-family: $font-secondary;
 			padding: rem(4) rem(6) rem(8);
 			&:hover {
 				color: $pink;
@@ -300,6 +315,8 @@
 	width: rem(150);
 	z-index: 100;
 	border: 1px solid transparent;
+	@include trans;
+	opacity: 1;
 	@include mq($medium-break) {
 		display: block;
 	}
@@ -329,7 +346,6 @@
 		display: block;
 		line-height: 1;
 		padding: rem(10) 0 rem(9);
-		font-family: $font-secondary;
 		font-size: rem(15);
 		background-color: $gray-very-light;
 		color: $black;

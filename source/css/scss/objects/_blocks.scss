@@ -17,12 +17,19 @@
 		margin-bottom: rem(5);
 	}
 	.b-title {
-		font-weight: bold;
-		font-size: rem(16);
+    font-weight: normal;
+		font-size: rem(18);
 	}
 	.dek {
 		font-size: rem(13);
 	}
+}
+
+// Block title hover style
+.b-inner:hover {
+  .b-title span {
+    border-bottom: $border-style-dark;
+  }
 }
 
 .headline {
@@ -74,17 +81,17 @@
 	.b-inner {
 		display: table-row;
 		vertical-align: top;
-  		overflow: hidden;
+  	overflow: hidden;
 	}
 	.b-thumb {
 		display: table-cell;
 		vertical-align: top;
-  		width: 30%;
-  		max-width: 10em;
+		width: 30%;
+		max-width: 10em;
  		img {
  			display: block;
-			  width: 100%;
-			  height: auto;
+		  width: 100%;
+		  height: auto;
  		}
 	}
 	.b-text {
@@ -92,18 +99,18 @@
 		width: 70%;
 		padding: 0 $pad;
 	}
-	// Blocks with image on the right or no image at all
-	&.block-align-right,
-	&.block-no-img {
-  	.b-text {
-    	padding-left: 0;
-  	}
-	}
-	&.block-align-right {
-  	.b-thumb {
-  	  padding-top: rem(8);
-  	}
-	}
+  &.table-layout {
+    @include table-layout(50%, 50%);
+  }
+}
+
+.subscription-block {
+  &.table-layout {
+    .b-thumb {
+      max-width: rem(100);
+    }
+    @include table-layout(29%, 71%);
+  }
 }
 
 // Block Headline Summary

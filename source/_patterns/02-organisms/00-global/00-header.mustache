@@ -15,11 +15,14 @@
           {{> molecules-primary-nav }}
         {{/ wide-nav }}
       </div> <!-- /.horiz-nav -->
-      <a href="#search" class="search-toggler js-toggle h-hide" data-toggled="header" data-prefix="search" data-remove="main-nav-is-active">
-        <span class="icon icon--small icon-magnifying-glass"></span>
-      </a> <!-- /.search-toggler -->
+      <span class="h-hide">
+        <a href="#search" class="search-toggler js-toggle" data-toggled="header" data-prefix="search" data-remove="main-nav-is-active">
+          <span class="icon icon--small icon-magnifying-glass"></span>
+        </a> <!-- /.search-toggler -->
+      </span> <!-- /.h-hide -->
     </div> <!-- /.lc -->
   </div> <!-- /.header-inner -->
+  {{> organisms-featured-stories }}
   <div class="nav-wrap">
     <div class="nav-wrap-inner">
       {{> molecules-primary-nav }}

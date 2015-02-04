@@ -39,6 +39,7 @@ $warning: #fff664;
 $information: #000db5;
 $feaux-black: #393939;
 $overlay: rgba($black, .9);
+$overlay-light: rgba($black, .8);
 
 // Style Colors
 $red: #e31e30;
@@ -58,8 +59,8 @@ $youtube-red: #b31217;
 $google-red: $youtube-red;
 
 // Typography
-$font: "ff-dagny-web-pro", "Helvetica", "Arial", sans-serif;
-$font-secondary: "futura-pt", "Helvetica", "Arial", sans-serif;
+$font: "futura-pt", "Helvetica", "Arial", sans-serif;
+$font-secondary: "ff-dagny-web-pro", "Helvetica", "Arial", sans-serif;
 $sans: "Helvetica", "Arial", sans-serif;
 $serif: Georgia, Times, "Times New Roman", serif;
 $monospace: Menlo, Monaco, 'Courier New', 'Courier', monospace;
@@ -71,12 +72,12 @@ $font-size-med-2: 1.0625em;
 $font-size-large: 1.4375em;
 
 // Default Spacing/Padding
-$space: rem(20);
+$space: rem(18);
 $space-and-half: $space*1.5;
 $space-double: $space*2;
 $space-quad: $space*4;
 $space-half: $space/2;
-$pad: rem(20);
+$pad: rem(18);
 $pad-and-half: $pad*1.5;
 $pad-double: $pad*2;
 $pad-half: $pad/2;
@@ -159,6 +160,7 @@ $icon-big: rem(65);
 $ad-300: (330/$defaultpx) + 0em; // Ads that are 300px wide for fixed positioning
 $top-hat-height: 35;
 $mobile-header-height: 50;
+$mobile-header-sticky-height: 38;
 $wide-header-height: (57/$defaultpx) + 0em;
 $split-col1: (354/$defaultpx) + 0em; // Right padding for split layout with fixed sidebar
 $split-col2: (320/$defaultpx) + 0em; // Fixed width of right column
