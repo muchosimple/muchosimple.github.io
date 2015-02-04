@@ -315,8 +315,6 @@
 	width: rem(150);
 	z-index: 100;
 	border: 1px solid transparent;
-	@include trans;
-	opacity: 1;
 	@include mq($medium-break) {
 		display: block;
 	}
