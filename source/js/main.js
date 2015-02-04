@@ -121,6 +121,19 @@
     $subNav.css('left', - ($subNavWidth - $thisWidth) / 2);
   });
 
+  // Focus the main header search on toggle click.
+  $('.search-toggler').on('click', function(){
+    $('.search-form .search-field').focus();
+  });
+
+  // Remove input after search overlay is closed.
+  $('.search-overlay .close').on('click', function(){
+    $('.search-form .search-field').delay(300).queue(function() {
+      $(this).val("");
+      $(this).dequeue();
+    });
+  });
+
   // Smooth scroll to anchor
 
   // $('a[href*=#]:not([href=#])').click(function() {
