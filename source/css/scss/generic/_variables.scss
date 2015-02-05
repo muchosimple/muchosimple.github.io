@@ -9,8 +9,8 @@ $grid-columns: 12;
 $fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
 $defaultpx: 16; // Browser default px used for media queries
 $rembase: 16; // 16px = 1.00rem
-$max-width: em(1215) !default;
-$inner-max-width: (1080/$fontpx) + 0em;
+$max-width: em(1245) !default;
+$inner-max-width: (1044/$fontpx) + 0em;
 $inner-max-small: (900/$defaultpx) + 0em;
 
 $visual-grid: false !default;
@@ -151,8 +151,8 @@ $nav-breakout-med: $px800;
 $nav-breakout-large: $px1050;
 
 // Icon Sizing
-$icon-small: 20px;
-$icon-med: rem(30);
+$icon-small: rem(24);
+$icon-medium: rem(30);
 $icon-large: rem(40);
 $icon-big: rem(65);
 

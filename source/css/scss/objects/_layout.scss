@@ -2,12 +2,15 @@
     $LAYOUT
 \*------------------------------------*/
 
-/* Layout Container */
+// Layout Containers
 .lc {
 	max-width: $max-width;
 	margin: 0 auto;
 	position: relative;
-	//padding: $pad-half;
+	padding: 0 $pad-half;
+}
+.lc-inner { // To be used in conjunction with .lc
+	max-width: $inner-max-width;
 }
 
 .pad {
@@ -140,6 +143,47 @@
 			}
 			&:nth-of-type(4n+1) {
 				clear: left;
+			}
+		}
+	}
+}
+
+/* Grid 5up */
+.g-5up {
+	> .gi {
+		float: left;
+		width: 50%;
+		&:nth-of-type(2n+1) {
+			clear: both;
+		}
+		&:last-child {
+			width: 100%;
+		}
+	}
+	@include mq($px550) {
+		> .gi {
+			float: left;
+			width: 33.3333%;
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+			&:nth-of-type(4) {
+				clear: left;
+			}
+			&:last-child {
+				width: 33.3333%;
+			}
+		}
+	}
+	@include mq($medium-break) {
+		> .gi {
+			width: 20%;
+			&:nth-of-type(2n+1),
+			&:nth-of-type(4) {
+				clear: none;
+			}
+			&:last-child {
+				width: 20%;
 			}
 		}
 	}

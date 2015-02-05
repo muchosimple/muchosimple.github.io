@@ -21,14 +21,24 @@
     height: rem(12);
   }
 }
+.no-bg {
+  background-image: none;
+}
 
 .icon--small {
   width: $icon-small;
   height: $icon-small;
+  padding: rem(2);
+}
+.icon--medium {
+  width: $icon-medium;
+  height: $icon-medium;
+  padding: rem(4);
 }
 .icon--large {
   width: $icon-large;
   height: $icon-large;
+  padding: rem(8);
 }
 
 .more {

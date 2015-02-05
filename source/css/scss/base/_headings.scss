@@ -1,31 +1,30 @@
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
+h1, h2, h3, h4, h5 {
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
 h1, .alpha   {
-	line-height: 1.2;
-  font-size: rem(65);
+  font-size: rem(48);
   font-weight: 100;
-  font-family: $font-secondary;
 }
 
 h2, .beta    {
-	line-height: 1.2;
 }
 
 h3, .gamma   {
-	line-height: 1.2;
-	font-weight: 600;
-	text-transform: uppercase;
-  letter-spacing: 1px;
   font-size: rem(17);
 }
 
 h4, .delta   {
-
+  font-size: rem(15);
+  margin-bottom: rem(14);
 }
 
 h5, .epsilon {
-  @extend .gamma;
-  font-size: rem(15);
+  font-size: rem(14);
 }
 
 h6, .zeta    {
