@@ -1,0 +1,11 @@
+.sidebar {
+	max-width: rem($sidebar-width);
+  @include center-block;
+	> .block,
+	> .section {
+		margin-bottom: rem(42);
+	}
+  @include mq($medium-break) {
+    float: right;
+  }
+}

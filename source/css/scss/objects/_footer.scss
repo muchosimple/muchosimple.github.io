@@ -2,12 +2,19 @@
     $FOOTER
 \*------------------------------------*/
 .footer {
+  clear: both;
   .logo-link {
     margin-bottom: $space-half;
     @include mq($medium-break) {
       margin-bottom: $space-and-half;
     }
   }
+}
+.sub--large {
+  height: rem(375);
+  text-align: center;
+  background: image-url("pattern_contemporary-china.png");
+  margin-bottom: $space;
 }
 // Footer grid
 .f-g {
@@ -16,14 +23,25 @@
     margin-bottom: $space-and-half;
   }
 }
+.f-gi-title {
+  margin-bottom: rem(16);
+}
 // Footer grid item
 .f-gi {
   margin-bottom: $space-half;
+  @include mq($medium-break) {
+    &.gi {
+      width: 21%;
+    }
+    &:first-child {
+      width: 17%;
+    }
+  }
   a {
     font-family: $serif;
     font-size: rem(13);
     display: block;
-    padding-bottom: rem(3);
+    padding: rem(3) 0;
     color: $gray-dark;
     &:hover {
       color: $pink;

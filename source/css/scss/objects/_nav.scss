@@ -146,7 +146,7 @@
 		top: rem(37);
 		border: $border-style;
 		background-color: $gray-very-light;
-		width: rem(180);
+		width: rem(220);
 		padding-top: rem(4);
 		padding-bottom: rem(4);
 		&:before,
@@ -287,7 +287,7 @@
 		top: 0;
 		z-index: 0;
 		padding: rem(24) rem(6) rem(6);
-		width: rem(340);
+		width: rem(440);
 		background-color: $gray-light-3;
 		right: rem(8);
 		@include mq($large-break) {
@@ -308,7 +308,7 @@
 	right: rem(50);
 	top: rem(10);
 	text-align: center;
-	width: rem(150);
+	width: rem(170);
 	z-index: 100;
 	border: 1px solid transparent;
 	@include mq($medium-break) {

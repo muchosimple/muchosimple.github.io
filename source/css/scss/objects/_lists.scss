@@ -1,7 +1,7 @@
 .bottom {
-	margin-bottom: rem(16);
-  padding-bottom: rem(16);
-  border-bottom: $border-style;
+	margin-bottom: $space;
+  padding-bottom: $pad;
+  border-bottom: $border-style-light;
 }
 
 .inline-list {
@@ -33,26 +33,15 @@
 // Headline list-style
 .headline-list {
 	margin-bottom: $space;
-	&.flush {
-		margin: 0;
-	}
+  li {
+    margin-bottom: $space;
+  }
 	h4 {
 		font-weight: normal;
 	}
-	li {
-		border-top: $border-style;
-	}
 	a {
   	display: block;
-  	padding-top: rem(18);
-  	padding-bottom: rem(18);
-  	text-transform: uppercase;
-  	letter-spacing: rem(1px);
-  	font-size: rem(15);
-  	font-weight: 600;
-	}
-	.icon {
-  	margin-left: rem(14);
+  	font-size: rem(18);
 	}
 }
 

@@ -11,24 +11,35 @@
 			font-size: rem(12);
 		}
 	}
-	.b-title,
 	.kicker {
 		display: block;
 		margin-bottom: rem(5);
-	}
-	.b-title {
-    font-weight: normal;
-		font-size: rem(18);
 	}
 	.dek {
 		font-size: rem(13);
 	}
 }
 
+.b-title,
+.title a {
+  color: $black;
+  font-weight: normal;
+  font-size: rem(22);
+}
 // Block title hover style
 .b-inner:hover {
-  .b-title span {
-    border-bottom: $border-style-dark;
+  .b-title {
+    color: $pink;
+    span {
+      @include underline;
+    }
+  }
+}
+.b-title a:hover,
+.title a:hover {
+  color: $pink;
+  span {
+    @include underline;
   }
 }
 
@@ -75,32 +86,25 @@
 
 // Block Thumbnail with Headline
 .block-thumb {
-	display: table;
 	width: 100%;
-	border-collapse: collapse;
 	.b-inner {
-		display: table-row;
-		vertical-align: top;
   	overflow: hidden;
 	}
 	.b-thumb {
-		display: table-cell;
-		vertical-align: top;
-		width: 30%;
-		max-width: 10em;
- 		img {
- 			display: block;
-		  width: 100%;
-		  height: auto;
- 		}
-	}
-	.b-text {
-		display: table-cell;
-		width: 70%;
-		padding: 0 $pad;
+
 	}
   &.table-layout {
     @include table-layout(50%, 50%);
+  }
+}
+
+// Block with flipped title and image
+.block-flipped {
+  .b-inner {
+    display: table;
+  }
+  .b-thumb {
+    display: table-footer-group;
   }
 }
 
@@ -109,7 +113,7 @@
     .b-thumb {
       max-width: rem(100);
     }
-    @include table-layout(29%, 71%);
+    @include table-layout(28%, 72%);
   }
 }
 

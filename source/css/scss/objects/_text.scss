@@ -41,9 +41,35 @@
 	display: inline-block;
 }
 
+// Styled Number
+.number {
+	border: $border-style-dark;
+	font-size: rem(18);
+	font-weight: 500;
+	color: $black;
+	width: rem(33);
+	height: rem(33);
+	display: block;
+	padding: rem(2) rem(10) 0;
+}
+
 // Caption
 .caption {
 	font-style: italic;
+}
+
+// Make text a serif font
+.t-serif {
+	font-family: $serif;
+}
+
+// Text Sizing
+.text--s {
+	font-size: rem(11);
+}
+
+.upper {
+  text-transform: uppercase;
 }
 
 // Passages of text

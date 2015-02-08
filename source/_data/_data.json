@@ -171,9 +171,82 @@
 		{
 			"block-class" : "table-layout subscription-block",
 			"img" : {
-    		"src": "http://cl.ly/image/2p0E2W283Z1C/download/Image%202015-02-03%20at%209.19.27%20PM.png"
+    		"src": "http://cl.ly/image/3y2X3K043q3z/download/Image%202015-02-08%20at%2012.02.26%20PM.png"
     	},
   		"title" : "Get Real Simple <br> Only $1.29 and issue"
 		}
-	]
+	],
+  "daily-finds" : [
+    {
+      "block-class" : "block-flipped",
+      "img" : {
+        "src": "http://placehold.it/160x190"
+      },
+      "title" : "6 Smart Hairstyling Tools"
+    }
+  ],
+  "most-shared" : [
+    {
+      "block-class" : "",
+      "img" : {
+        "src": "http://placehold.it/132x157"
+      },
+      "number" : "1",
+      "title" : "11 Apple Pie-Inspired Recipes That Almost Beat the Real Thing"
+    },
+    {
+      "block-class" : "",
+      "img" : {
+        "src": "http://placehold.it/132x157"
+      },
+      "number" : "2",
+      "title" : "24 Beauty Products We Can't Live Without"
+    },
+    {
+      "block-class" : "",
+      "img" : {
+        "src": "http://placehold.it/132x157"
+      },
+      "number" : "3",
+      "title" : "5 Small Ways to Show Compassion"
+    },
+    {
+      "block-class" : "",
+      "img" : {
+        "src": "http://placehold.it/132x157"
+      },
+      "number" : "4",
+      "title" : "All-Star Household Cleaners"
+    },
+    {
+      "block-class" : "",
+      "img" : {
+        "src": "http://placehold.it/132x157"
+      },
+      "number" : "5",
+      "title" : "They Mean Business: 8 Fall Pices for the Office"
+    }
+  ],
+  "from-partners" : [
+    {
+      "title" : "Lessons Learned From Touring Airbnb's Tiniest Homes",
+      "partner" : "HuffPost Home - The Huffington Post"
+    },
+    {
+      "title" : "Chunky Knits are a Thing -- Here's How to Decorate With Them",
+      "partner" : "The Nest Blog"
+    },
+    {
+      "title" : "Ikea's New Designer Collection Will Surprise You",
+      "partner" : "POPSUGAR Home"
+    },
+    {
+      "title" : "HIV-related deaths still high but declining among blacks, CDC says",
+      "partner" : "FOXNews.com"
+    },
+    {
+      "title" : "A Designer Shares Her Master-Bathroom Wish List (12 photos)",
+      "partner" : "Houzz"
+    }
+  ]
 }

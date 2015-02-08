@@ -3,15 +3,64 @@
   margin-bottom: $space;
 }
 
+.s-title {
+  text-transform: uppercase;
+  padding-bottom: rem(6);
+  border-bottom: $border-style-light;
+  margin-bottom: rem(16);
+  text-align: center;
+}
+
 // Featured Stories
 .featured-stories {
   display: none;
+  .gi {
+    padding-left: 0;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
   @include mq($px950) {
     display: block;
   }
-  @include mq($large-break, max) {
-    .b-title {
-      font-size: rem(16);
+  .b-title {
+    font-size: rem(16);
+    color: $pink;
+    line-height: 1.2;
+    @include mq($large-break) {
+      font-size: rem(18);
     }
+  }
+}
+
+// Daily Finds
+.daily-finds {
+  text-align: center;
+  .block {
+    max-width: rem(170);
+    @include center-block;
+  }
+}
+
+// Most Shared
+.most-shared {
+  .bi {
+    padding-left: rem(50);
+    position: relative;
+  }
+  .b-text {
+
+  }
+  .number {
+    position: absolute;
+    left: 0;
+  }
+}
+
+// From our Partners
+.from-partners {
+  .text--s {
+    color: $gray-med;
+    font-family: $sans;
   }
 }

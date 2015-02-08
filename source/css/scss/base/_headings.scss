@@ -1,32 +1,33 @@
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, h2, h3, h4, h5 {
-  line-height: 1.2;
+  line-height: 1.1;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
-h1, .alpha   {
+h1, .alpha {
   font-size: rem(48);
   font-weight: 100;
 }
 
-h2, .beta    {
+h2, .beta {
 }
 
-h3, .gamma   {
-  font-size: rem(17);
+h3, .gamma {
+  font-size: rem(18);
 }
 
-h4, .delta   {
-  font-size: rem(15);
-  margin-bottom: rem(14);
+h4, .delta {
+  line-height: 1.2;
+  font-size: rem(16);
 }
 
 h5, .epsilon {
   font-size: rem(14);
 }
 
-h6, .zeta    {
+h6, .zeta {
 
 }
 

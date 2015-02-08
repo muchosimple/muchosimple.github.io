@@ -88,6 +88,7 @@ $border-med: 6px;
 $border-thick: 8px;
 $border-opacity: 1px solid rgba($white, .4);
 $border-style: 1px solid $gray-light-4;
+$border-style-light: 1px solid $gray-light-3;
 $border-style-white: 1px solid $white;
 $border-style-dark: 1px solid $gray;
 
@@ -149,6 +150,8 @@ $micro-break: $px450;  // Mobile Portrait
 $nav-breakout: $px500;
 $nav-breakout-med: $px800;
 $nav-breakout-large: $px1050;
+
+$sidebar-width: 300;
 
 // Icon Sizing
 $icon-small: rem(24);
