@@ -24,7 +24,7 @@
 .title a {
   color: $black;
   font-weight: normal;
-  font-size: rem(22);
+  font-size: rem(21);
 }
 // Block title hover style
 .b-inner:hover {
@@ -102,6 +102,9 @@
 .block-flipped {
   .b-inner {
     display: table;
+  }
+  .b-title {
+    margin-bottom: rem(6);
   }
   .b-thumb {
     display: table-footer-group;

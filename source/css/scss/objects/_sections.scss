@@ -27,7 +27,7 @@
     color: $pink;
     line-height: 1.2;
     @include mq($large-break) {
-      font-size: rem(18);
+      font-size: rem(17);
     }
   }
 }
@@ -67,7 +67,7 @@
 // Follow Footer
 .follow-footer {
   border-top: $border-style;
-  padding-top: rem(22);
+  padding-top: rem(24);
   margin-bottom: $space-double;
   .s-title {
     border-bottom: none;
