@@ -145,28 +145,14 @@
 	}
 }
 
-/* Grid 4up */
+// Grid 4up
 .g-4up {
-	@include mq($micro-break) {
-		> .gi {
-			float: left;
-			width: 50%;
-			&:nth-of-type(2n+1) {
-				clear: both;
-			}
-		}
-	}
-	@include mq($larger-break) {
-		> .gi {
-			width: 25%;
-			&:nth-of-type(2n+1) {
-				clear: none;
-			}
-			&:nth-of-type(4n+1) {
-				clear: left;
-			}
-		}
-	}
+	@include g-4up;
+}
+
+// Grid 4up with
+.g-4up-v2 {
+	@include g-4up($micro-break, $larger-break);
 }
 
 /* Grid 5up */
