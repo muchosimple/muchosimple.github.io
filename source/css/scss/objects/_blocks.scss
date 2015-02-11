@@ -262,16 +262,25 @@
     font-style: italic;
     font-size: rem(15);
     color: $gray-med-2;
+    &:after {
+      content: "•";
+      display: inline-block;
+      margin: 0 rem(5);
+    }
   }
   p {
     font-family: $serif;
     font-style: italic;
     font-size: rem(15);
-    line-height: 1.4;
+    line-height: 1.45;
     margin: 0;
     a {
-      color: $twitter-blue;
+      color: $blue-light;
       text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: $blue;
+      }
     }
   }
 }
