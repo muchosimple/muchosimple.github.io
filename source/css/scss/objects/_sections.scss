@@ -4,7 +4,6 @@
 }
 
 .s-title {
-  text-transform: uppercase;
   padding-bottom: rem(6);
   border-bottom: $border-style-light;
   margin-bottom: rem(16);
@@ -62,5 +61,24 @@
   .text--s {
     color: $gray-med;
     font-family: $sans;
+  }
+}
+
+// Follow Footer
+.follow-footer {
+  border-top: $border-style;
+  padding-top: rem(22);
+  margin-bottom: $space-double;
+  .s-title {
+    border-bottom: none;
+    font-size: rem(28);
+    font-weight: normal;
+    color: $blue-light;
+    padding-bottom: 0;
+  }
+  .gi {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: $space-half;
   }
 }

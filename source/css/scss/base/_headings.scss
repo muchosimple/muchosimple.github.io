@@ -36,3 +36,9 @@ h6, .zeta {
 	font-family: $font-secondary;
 	font-weight: normal;
 }
+
+.heading {
+  text-transform: uppercase;
+  font-size: rem(18);
+  margin-bottom: rem(12);
+}

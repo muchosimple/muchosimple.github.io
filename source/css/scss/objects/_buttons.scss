@@ -34,3 +34,26 @@
 .text-btn {
 	font-style: italic;
 }
+
+// Button with shading
+.btn-3d {
+	cursor: pointer;
+	text-shadow: 0 1px $white;
+	display: block;
+	text-align: center;
+	border: $border-style;
+	margin: rem(10) $space-half 0;
+	height: rem(32);
+	border-radius: rem(2);
+	text-decoration: none;
+	font-family: $sans;
+	font-weight: bold;
+	font-size: rem(13);
+	color: $gray-dark;
+	line-height: rem(32);
+	vertical-align: top;
+	@include background-image(linear-gradient($white, $gray-light-2));
+	&:hover {
+		background: $white;
+	}
+}

@@ -10,7 +10,8 @@
 }
 
 // Pullquote
-.pullquote {
+.pullquote,
+p {
 	font-family: $font-secondary;
 	font-size: $font-size-large;
 }

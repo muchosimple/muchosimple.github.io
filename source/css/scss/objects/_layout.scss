@@ -46,6 +46,27 @@
 	}
 }
 
+// Fluid left content column with static right rail
+.primary {
+	width: 100%;
+	@include mq($medium-break) {
+		float: left;
+		margin-right: rem(-$sidebar-width - 50);
+	}
+}
+.primary-inner {
+	@include mq($medium-break) {
+		margin-right: rem($sidebar-width + 50);
+	}
+}
+.secondary {
+	width: rem($sidebar-width);
+	@include center-block;
+	@include mq($medium-break) {
+		float: right;
+	}
+}
+
 
 /*------------------------------------*\
     $GRIDS
@@ -126,7 +147,7 @@
 
 /* Grid 4up */
 .g-4up {
-	@media all and (min-width: $bp-med) {
+	@include mq($micro-break) {
 		> .gi {
 			float: left;
 			width: 50%;
@@ -135,7 +156,7 @@
 			}
 		}
 	}
-	@media all and (min-width: $bp-large) {
+	@include mq($larger-break) {
 		> .gi {
 			width: 25%;
 			&:nth-of-type(2n+1) {
