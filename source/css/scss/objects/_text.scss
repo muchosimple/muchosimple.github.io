@@ -17,10 +17,16 @@ p {
 }
 
 // Kicker
-.kicker {
-	font-size: rem(12);
-	letter-spacing: 1px;
+.kicker a {
+	font-size: rem(15);
 	text-transform: uppercase;
+	color: $gray-med;
+	&:last-child {
+		color: $pink;
+	}
+}
+.divider {
+	margin: 0 rem(4);
 }
 
 // Breadcrumb

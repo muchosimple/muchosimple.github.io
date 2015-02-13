@@ -1,8 +1,12 @@
-//Article
+// Article
 .article-header {
 	h1 {
 		font-size: 2.5em;
 	}
+}
+
+.title {
+	margin-bottom: rem(14);
 }
 
 .byline {
@@ -11,24 +15,20 @@
 	color: $gray-dark;
 }
 
-//Social Share
-.social-share {
+// Social Share & Content Utilities
+.social-share,
+.content-utility {
+	float: left;
 	overflow: hidden;
 	margin-bottom: $space;
-
 	li {
 		float: left;
-		margin-right: $space-half;
+		margin-right: $space;
 	}
-
 	a {
-		background: $gray-dark;
-		color: $white;
 		display: block;
-		padding: $pad-half;
-
-		&:hover {
-			background: $gray;
-		}
 	}
+}
+.social-share {
+	margin-right: rem(20);
 }
