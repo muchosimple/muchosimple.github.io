@@ -6,7 +6,7 @@
 
 // Grid & baseline setup
 $column: 92px;
-$gutter: 12px;
+$gutter: 10px;
 $grid-columns: 12;
 $fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
 $defaultpx: 16; // Browser default px used for media queries
@@ -15,10 +15,10 @@ $max-width: em(1245) !default;
 $inner-max-width: (1044/$fontpx) + 0em;
 $inner-max-small: (900/$defaultpx) + 0em;
 
-$visual-grid: false !default;
-$visual-grid-color: #E6F6FF !default;
-$visual-grid-opacity: 0.8 !default;
-$visual-grid-index: front !default;
+// $visual-grid: false !default;
+// $visual-grid-color: #E6F6FF !default;
+// $visual-grid-opacity: 0.8 !default;
+// $visual-grid-index: front !default;
 
 // Colors
 $gray: #c9c9c9;
