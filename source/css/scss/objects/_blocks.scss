@@ -21,7 +21,7 @@
 }
 
 .b-title,
-.title a {
+.recirc-headline a {
   color: $black;
   font-weight: normal;
   font-size: rem(21);
@@ -36,15 +36,11 @@
   }
 }
 .b-title a:hover,
-.title a:hover {
+.recirc-headline a:hover {
   color: $pink;
   span {
     @include underline;
   }
-}
-
-.headline {
-	line-height: 1.2;
 }
 
 // Hero Block
