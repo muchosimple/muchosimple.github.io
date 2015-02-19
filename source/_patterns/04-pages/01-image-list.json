@@ -1,6 +1,11 @@
 {
 	"title" : "13 Healthy Soup Recipes",
 	"bodyClass" : "image-list",
-  "kicker" : "Food",
-  "sub-kicker" : "Recipes"
+  "image-list-head" : [
+    {
+      "kicker" : "Food",
+      "sub-kicker" : "Recipes",
+      "title" : "13 Healthy Soup Recipes"
+    }
+  ]
 }

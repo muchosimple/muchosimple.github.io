@@ -6,13 +6,15 @@
 
 				<section class="section gallery">
 					<header class="content-header cf">
-						{{> molecules-kicker }}
-						<h1 class="title">13 Healthy Soup Recipes</h1>
-						<div class="content-tools">
-							{{> molecules-social-share }}
-							{{> molecules-content-utility }}
-						</div> <!-- /.content-tools -->
-					</header> <!-- /.content-header -->
+						{{# image-list-head }}
+							{{> molecules-kicker }}
+							<h1 class="title">{{ title }}</h1>
+							<div class="content-tools">
+								{{> molecules-social-share }}
+								{{> molecules-content-utility }}
+							</div> <!-- /.content-tools -->
+						</header> <!-- /.content-header -->
+					{{/ image-list-head }}
 				</section> <!-- /.gallery -->
 
 				{{> organisms-follow-footer }}
