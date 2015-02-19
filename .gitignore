@@ -3,6 +3,11 @@
 */.htaccess
 .htaccess
 .DS_Store
+
+# Sublime Text project files
+*.sublime-workspace
+*.sublime-project
+
 # Ignore sass cache generated files
 **/.sass-cache
 **/.sass-cache/*

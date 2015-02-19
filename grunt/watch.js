@@ -1,10 +1,7 @@
 module.exports = {
-  options: {
-    livereload: true,
-  },
-  sass: {
+  compass: {
     files: ["<%= paths.src.css %>/**/*.scss"],
-    tasks: ["sass:dist"],
+    tasks: ["compass"],
     options: {
       "spawn": true,
     }
@@ -15,6 +12,9 @@ module.exports = {
     options: {
       "spawn": true,
     }
+  },
+  options: {
+    livereload: true,
   },
   html: {
     files: [
