@@ -90,6 +90,20 @@
     #{$property}: $allvalues;
   }
 }
+// ============================================================
+//
+// Convert pixels to rems
+//
+// Example:
+//
+// .example {
+//   width: rem(1); // 16px
+// }
+// Assumes $rembase is the font-size of <html>
+// ============================================================
+@function rem($pixels) {
+  @return ($pixels / $rembase) * 1rem;
+}
 
 // ============================================================
 //
