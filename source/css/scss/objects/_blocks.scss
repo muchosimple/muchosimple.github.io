@@ -24,8 +24,9 @@
   font-weight: normal;
   font-size: rem(21);
 }
-// Block title hover style
-.b-inner:hover {
+// Block title hover styles
+// Blocks that are wrapped in an <a>
+a.b-inner:hover {
   .b-title {
     color: $pink;
     span {
@@ -33,6 +34,7 @@
     }
   }
 }
+// Blocks where the <a> is inside the .b-title or .recirc-headline
 .b-title a:hover,
 .recirc-headline a:hover {
   color: $pink;
@@ -198,7 +200,7 @@
       margin-top: rem(80);
     }
   }
-  .b-title a {
+  .b-title {
     font-size: rem(26);
     font-weight: bold;
   }

@@ -102,16 +102,16 @@
 	}
 	.l-top {
 		display: inline-block;
-		padding-left: 1.6%;
-		padding-right: 1.6%;
+		padding-left: 1.7%;
+		padding-right: 1.7%;
 		vertical-align: top;
 		@include mq($px900) {
-			padding-left: 2%;
-			padding-right: 2%;
+			padding-left: 2.2%;
+			padding-right: 2.2%;
 		}
 		@include mq($larger-break) {
-			padding-left: 2.3%;
-			padding-right: 2.3%;
+			padding-left: 2.45%;
+			padding-right: 2.45%;
 		}
 		> a {
 			background-color: transparent;
@@ -122,9 +122,9 @@
 			text-align: center;
 			border-bottom: none;
 			display: block;
-			font-size: rem(17);
+			font-size: rem(16);
 			font-weight: 500;
-			padding: rem(4) rem(6) rem(8);
+			padding: rem(4) rem(6) rem(10);
 			&:hover {
 				color: $pink;
 			}
@@ -143,7 +143,7 @@
 	.nav-sub {
 		position: absolute;
 		left: 0;
-		top: rem(37);
+		top: auto;
 		border: $border-style;
 		background-color: $gray-very-light;
 		width: rem(220);
