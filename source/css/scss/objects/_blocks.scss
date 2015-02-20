@@ -166,6 +166,9 @@
     @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
       float: left;
     }
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      margin-top: rem(30);
+    }
     @include mq($large-break) {
       margin-top: rem(50);
     }
@@ -184,6 +187,9 @@
       display: block;
       width: 32%;
       float: left;
+    }
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      margin-top: rem(30);
     }
     @include mq($large-break) {
       margin-top: rem(50);

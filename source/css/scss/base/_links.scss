@@ -9,6 +9,12 @@ a {
     color: $gray-dark-2;
   }
 }
+a.alt {
+  color: $blue-light;
+  &:hover {
+    @include underline;
+  }
+}
 
 .more {
   text-align: center;

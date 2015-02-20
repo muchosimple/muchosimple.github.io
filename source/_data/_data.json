@@ -180,7 +180,7 @@
     {
       "block-class" : "block-flipped",
       "img" : {
-        "src": "http://placehold.it/160x190"
+        "src": "http://placeimg.com/160/190/people"
       },
       "title" : "6 Smart Hairstyling Tools"
     }
@@ -189,7 +189,7 @@
     {
       "block-class" : "",
       "img" : {
-        "src": "http://placehold.it/132x157"
+        "src": "http://lorempixel.com/132/157/food"
       },
       "number" : "1",
       "title" : "11 Apple Pie-Inspired Recipes That Almost Beat the Real Thing"
@@ -197,7 +197,7 @@
     {
       "block-class" : "",
       "img" : {
-        "src": "http://placehold.it/132x157"
+        "src": "http://lorempixel.com/132/157/fashion"
       },
       "number" : "2",
       "title" : "24 Beauty Products We Can't Live Without"
@@ -205,7 +205,7 @@
     {
       "block-class" : "",
       "img" : {
-        "src": "http://placehold.it/132x157"
+        "src": "http://lorempixel.com/132/157/city"
       },
       "number" : "3",
       "title" : "5 Small Ways to Show Compassion"
@@ -213,7 +213,7 @@
     {
       "block-class" : "",
       "img" : {
-        "src": "http://placehold.it/132x157"
+        "src": "http://placeimg.com/132/157/nature"
       },
       "number" : "4",
       "title" : "All-Star Household Cleaners"
@@ -221,7 +221,7 @@
     {
       "block-class" : "",
       "img" : {
-        "src": "http://placehold.it/132x157"
+        "src": "http://placeimg.com/132/157/arch"
       },
       "number" : "5",
       "title" : "They Mean Business: 8 Fall Pices for the Office"

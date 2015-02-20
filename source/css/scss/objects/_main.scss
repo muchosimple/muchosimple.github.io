@@ -4,7 +4,7 @@
 [role=main] {
 	overflow: hidden;
   padding-top: $pad;
-  @include mq($micro-break) {
+  @include mq($medium-break) {
     padding-top: $pad-double;
   }
 }

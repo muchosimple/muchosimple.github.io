@@ -34,7 +34,7 @@
 .headline-list {
 	margin-bottom: $space;
   li {
-    margin-bottom: $space;
+    margin-bottom: rem(14);
   }
 	h4 {
 		font-weight: normal;
@@ -42,6 +42,10 @@
 	a {
   	display: block;
   	font-size: rem(18);
+    color: $black;
+    &:hover {
+      color: $pink;
+    }
 	}
 }
 

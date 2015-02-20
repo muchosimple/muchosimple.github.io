@@ -1,0 +1,16 @@
+&lt;section class=&quot;sponsor-header&quot;&gt;
+  &lt;div class=&quot;spons-wrap&quot;&gt;
+    &lt;div class=&quot;spons-inner&quot;&gt;
+      &lt;h4 class=&quot;spons-title&quot;&gt;{{ sponsor-title }} &lt;span class=&quot;arrow--down&quot;&gt;&lt;/span&gt;&lt;/h4&gt;
+      &lt;div class=&quot;spons-menu&quot;&gt;
+        &lt;ul class=&quot;headline-list spons-list&quot;&gt;
+          {{# sponsor-list }}
+            &lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ title }}&lt;/a&gt;&lt;/li&gt;
+          {{/ sponsor-list }}
+        &lt;/ul&gt; &lt;!-- /.spons-list --&gt;
+        &lt;a href=&quot;{{ url }}&quot; class=&quot;upper alt&quot;&gt;See All&lt;/a&gt;
+      &lt;/div&gt; &lt;!-- /.spons-menu --&gt;
+    &lt;/div&gt; &lt;!-- /.spons-inner --&gt;
+    &lt;div class=&quot;spons-by&quot;&gt;&lt;span class=&quot;text--tiny&quot;&gt;sponsored by&lt;/span&gt; {{&gt; atoms-image }}&lt;/div&gt;
+  &lt;/div&gt; &lt;!-- /.spons-wrap --&gt;
+&lt;/section&gt; &lt;!-- /.sponsor-header --&gt;

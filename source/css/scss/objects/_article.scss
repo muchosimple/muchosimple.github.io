@@ -97,9 +97,11 @@
 		@include mq($large-break) {
 			width: 60%;
 		}
-	}
-	.ad-300x250 {
-		margin-bottom: $space-double;
+		// Can't have 2 hr's back to back. This should only happen if an ad doesn't
+		// fill it's slot.
+		+ hr {
+			display: none;
+		}
 	}
 }
 

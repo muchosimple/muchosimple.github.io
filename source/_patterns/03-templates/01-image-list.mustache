@@ -1,7 +1,9 @@
 <div class="page">
 	{{> organisms-header }}
 	<div class="main cf lc" role="main" aria-live="polite">
-
+		{{# sponsored }}
+			{{> molecules-sponsor-header }}
+		{{/ sponsored }}
 		<div class="primary">
 			<section class="primary-inner">
 				<article class="article article-image-list" itemscope itemtype="http://schema.org/Article">
@@ -22,7 +24,7 @@
 						</header> <!-- /.article-header -->
 					{{/ image-list-head }}
 
-					<div class="ad-block ad-300x250 block center hide-med hide-large hide-larger">
+					<div class="ad-block ad-300x250 block center hide-med hide-large hide-larger space-double-btm">
 					  <a href=""><img src="http://s1.2mdn.net/viewad/4579100/300x250_Brand_Banner.jpg"></a>
 					</div> <!-- /.ad-300x250 -->
 

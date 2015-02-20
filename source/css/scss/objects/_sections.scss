@@ -88,3 +88,80 @@
 
 // Gallery
 
+// Sponsor Header Section
+.sponsor-header {
+  text-align: center;
+  @include mq($medium-break) {
+    margin-top: -$space;
+  }
+}
+.spons-wrap {
+  @include center-block;
+  margin-bottom: rem(30);
+  position: relative;
+  z-index: 10;
+}
+.spons-title {
+  text-transform: uppercase;
+  color: $white;
+  background-color: $red;
+  font-size: rem(17);
+  padding: rem(5) rem(10) rem(4);
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  z-index: 11;
+  span {
+    border-top-color: $white;
+    border-width: rem(6);
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: rem(-2);
+  }
+}
+.spons-by {
+  text-align: center;
+  margin-bottom: rem(4);
+  display: inline-block;
+  span {
+    font-family: $sans;
+    color: $gray-dark;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  @include mq($small-break) {
+    display: inline-block;
+  }
+}
+.spons-inner {
+  cursor: pointer;
+  background-color: $white;
+  position: relative;
+  display: inline-block;
+  margin: 0 rem(4) $space-half;
+}
+.spons-inner:hover {
+  box-shadow: 0 0 4px rgba($black, .5);
+  .spons-menu {
+    display: inline-block;
+  }
+}
+.spons-menu {
+  display: none;
+  text-align: left;
+  padding: $pad rem(20);
+  background-color: $white;
+  //border: $border-style;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  margin-top: -1px;
+  z-index: 10;
+  box-shadow: 0 0 4px rgba($black, .5);
+}
