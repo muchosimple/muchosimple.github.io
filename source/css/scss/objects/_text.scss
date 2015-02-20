@@ -1,22 +1,18 @@
-// Intro text
-.intro {
-	font-size: rem(18);
-	margin-bottom: rem(8);
-}
-
 // Dek
 .dek {
-	font-size: rem(18);
+
 }
 
 // Pullquote
-.pullquote,
-p {
+.pullquote {
 	font-family: $font-secondary;
 	font-size: $font-size-large;
 }
 
 // Kicker
+.kicker {
+	margin-bottom: rem(6);
+}
 .kicker a {
 	font-size: rem(15);
 	text-transform: uppercase;
@@ -24,7 +20,11 @@ p {
 	&:last-child {
 		color: $pink;
 	}
+	&:hover {
+		@include underline;
+	}
 }
+// Divides kicker links
 .divider {
 	margin: 0 rem(4);
 }
@@ -40,12 +40,8 @@ p {
 
 // Date/time
 .date {
-	font-size: rem(12);
-	text-transform: uppercase;
-	color: $gray-light-4;
-	letter-spacing: 1px;
-	margin-bottom: rem(4);
-	display: inline-block;
+	font-size: rem(18);
+	color: $gray-med;
 }
 
 // Styled Number
@@ -59,6 +55,35 @@ p {
 	display: block;
 	padding: rem(2.5) rem(11) 0;
 	text-align: center;
+}
+.number--large {
+	display: block;
+	text-align: center;
+	color: $pink;
+	margin-bottom: $space-half;
+	line-height: 1;
+	display: table-cell;
+	vertical-align: middle;
+	width: rem(80);
+	font-family: $font-secondary;
+	&.double-digit {
+		width: rem(95);
+	}
+	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+		margin-bottom: 0;
+		width: rem(100);
+		&.double-digit {
+			width: rem(110);
+		}
+	}
+}
+.listicle-number {
+	font-size: rem(72);
+	font-weight: 100;
+}
+.df-number {
+	font-size: rem(64);
+	font-weight: bold;
 }
 
 // Caption
@@ -76,6 +101,19 @@ p {
 	font-size: rem(11);
 }
 
+// Photo Credit
+.credit {
+	display: block;
+	text-align: right;
+	font-family: $serif;
+	font-style: italic;
+	color: $gray-med;
+	font-size: rem(12);
+	line-height: 1;
+	padding-bottom: rem(2);
+}
+
+// Uppercase Text
 .upper {
   text-transform: uppercase;
 }
@@ -83,8 +121,7 @@ p {
 // Passages of text
 .text {
 	a {
-		text-decoration: underline;
-		color: $blue;
+		color: $blue-light;
 	}
 	ul {
 		list-style: disc;

@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    $ADS
+\*------------------------------------*/
+
+.ad-leaderboard {
+  margin-bottom: $space-half;
+  .ad-300x50 {
+    @include mq($px750) {
+      display: none;
+    }
+  }
+  .ad-728x90 {
+    display: none;
+    @include mq($px750) {
+      display: block;
+    }
+  }
+}
+.ad-block {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.ad-300x50 {
+  width: rem(300);
+}
+.ad-728x90 {
+  width: rem(728);
+}
+
+// Ads that appear within article list-types
+.ad-instream {
+	position: relative;
+	padding-top: $pad;
+	padding-bottom: $pad;
+	line-height: 0;
+	margin: rem(-45) 0;
+	@include mq($px700) {
+		margin-bottom: -$space-double;
+	}
+}

@@ -123,23 +123,3 @@
     @include rem(top, 46);
   }
 }
-
-.ad-leaderboard {
-  margin-bottom: $space-half;
-}
-.ad-block {
-  @include center-block;
-}
-.ad-300x50 {
-  width: rem(300);
-  @include mq($px750) {
-    display: none;
-  }
-}
-.ad-728x90 {
-  width: rem(728);
-  display: none;
-  @include mq($px750) {
-    display: block;
-  }
-}

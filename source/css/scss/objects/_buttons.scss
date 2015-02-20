@@ -1,6 +1,7 @@
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
+
 .btn {
 	display: inline-block;
 	color: $white;
@@ -19,11 +20,11 @@
 	}
 }
 
-.btn-small {
+.btn--small {
 	padding: $pad-half;
 }
 
-.btn-large {
+.btn--large {
 	padding: $pad-half;
 	text-transform: uppercase;
 	background: $gray;
@@ -33,6 +34,25 @@
 
 .text-btn {
 	font-style: italic;
+}
+
+.btn--rounded {
+	border-radius: rem(7);
+	border: rem(1.5) solid $gray-med;
+	background-color: $white;
+	color: $black;
+	line-height: 1;
+	padding: $pad-half;
+	text-transform: uppercase;
+	font-size: rem(12);
+	font-weight: bold;
+	height: $icon-medium;
+	display: inline-block;
+	&:hover {
+	  background-color: $blue;
+	  border-color: $blue;
+		color: $white;
+	}
 }
 
 // Button with shading

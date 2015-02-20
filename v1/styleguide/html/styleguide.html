@@ -355,12 +355,14 @@
 					<div id="atoms-time" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-02-text-04-time/00-atoms-02-text-04-time.html" class="patternLink" data-patternpartial="atoms-time">Time</a></h2>
 						<div class="sg-pattern-body">
-							<time class="date" datetime="2013-04-06T12:32+00:00"></time>
+							<time class="date" datetime="2013-04-06T12:32+00:00" itemprop="datePublished" pubdate></time>
+
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;time class=&quot;date&quot; datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;&lt;/time&gt;
+										&lt;time class=&quot;date&quot; datetime=&quot;2013-04-06T12:32+00:00&quot; itemprop=&quot;datePublished&quot; pubdate&gt;&lt;/time&gt;
+
 									</code>
 								</pre>
 							</div>
@@ -1224,15 +1226,49 @@ p q r s t u v w x y z { | } ~
 							</div>
 						</div>
 					</div>
-					<div id="molecules-byline" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-00-text-00-byline/01-molecules-00-text-00-byline.html" class="patternLink" data-patternpartial="molecules-byline">Byline</a></h2>
+					<div id="atoms-print" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-09-icons-12-print/00-atoms-09-icons-12-print.html" class="patternLink" data-patternpartial="atoms-print">Print</a></h2>
 						<div class="sg-pattern-body">
-							<div class="byline">by <span>Author Name</span></div>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M382 147V5H117v142H5v265h112v83h265v-83h113V147H382zM356 32v115H144V32h212zM117 289v97H32V174h436v212h-86v-97H117zm27 179V315h212v153H144z"/></svg>
+
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;byline&quot;&gt;by &lt;span&gt;Author Name&lt;/span&gt;&lt;/div&gt;
+										&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 500 500&quot; enable-background=&quot;new 0 0 500 500&quot;&gt;&lt;path d=&quot;M382 147V5H117v142H5v265h112v83h265v-83h113V147H382zM356 32v115H144V32h212zM117 289v97H32V174h436v212h-86v-97H117zm27 179V315h212v153H144z&quot;/&gt;&lt;/svg&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="atoms-mail" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-09-icons-13-mail/00-atoms-09-icons-13-mail.html" class="patternLink" data-patternpartial="atoms-mail">Mail</a></h2>
+						<div class="sg-pattern-body">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M4 403V97h492v306H4zm462-31V138.3L250 277.7 34 138.3V372h432zM250.5 243.2L430.6 127H70.4l180.1 116.2z"/></svg>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 500 500&quot; enable-background=&quot;new 0 0 500 500&quot;&gt;&lt;path d=&quot;M4 403V97h492v306H4zm462-31V138.3L250 277.7 34 138.3V372h432zM250.5 243.2L430.6 127H70.4l180.1 116.2z&quot;/&gt;&lt;/svg&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-byline" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-00-text-00-byline/01-molecules-00-text-00-byline.html" class="patternLink" data-patternpartial="molecules-byline">Byline</a></h2>
+						<div class="sg-pattern-body">
+							<div class="byline" itemprop="author">By <span></span></div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;byline&quot; itemprop=&quot;author&quot;&gt;By &lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+
 									</code>
 								</pre>
 							</div>
@@ -1329,13 +1365,13 @@ p q r s t u v w x y z { | } ~
 					<div id="molecules-kicker" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-00-text-05-kicker/01-molecules-00-text-05-kicker.html" class="patternLink" data-patternpartial="molecules-kicker">Kicker</a></h2>
 						<div class="sg-pattern-body">
-							<div class="kicker"><a href="#"></a> </div>
+							<div class="kicker"><a itemprop="articleSection" href="#"></a> </div>
 
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;kicker&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;/a&gt; &lt;/div&gt;
+										&lt;div class=&quot;kicker&quot;&gt;&lt;a itemprop=&quot;articleSection&quot; href=&quot;#&quot;&gt;&lt;/a&gt; &lt;/div&gt;
 
 									</code>
 								</pre>
@@ -1541,7 +1577,7 @@ p q r s t u v w x y z { | } ~
 						<div class="sg-pattern-body">
 							<div class="block block-headline">
 	<a href="#" class="b-inner">
-		<h2 class="b-title">Pattern Lab</h2>
+		<h3 class="b-title">Pattern Lab</h3>
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-headline -->
 
@@ -1556,7 +1592,7 @@ p q r s t u v w x y z { | } ~
 									<code>
 										&lt;div class=&quot;block block-headline&quot;&gt;
 	&lt;a href=&quot;#&quot; class=&quot;b-inner&quot;&gt;
-		&lt;h2 class=&quot;b-title&quot;&gt;Pattern Lab&lt;/h2&gt;
+		&lt;h3 class=&quot;b-title&quot;&gt;Pattern Lab&lt;/h3&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-headline --&gt;
 
@@ -1607,7 +1643,7 @@ p q r s t u v w x y z { | } ~
 </div>
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
-			<h2 class="b-title"><span>Pattern Lab</span></h2>
+			<h3 class="b-title"><span>Pattern Lab</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -1630,7 +1666,7 @@ p q r s t u v w x y z { | } ~
 &lt;/div&gt;
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;Pattern Lab&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;Pattern Lab&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -1645,18 +1681,20 @@ p q r s t u v w x y z { | } ~
 						<div class="sg-pattern-body">
 							<div class="block block-headline">
 	<a href="#">
-		<h2 class="b-title">Pattern Lab</h2>
+		<h3 class="b-title">Pattern Lab</h3>
 	</a>
 </div> <!-- /.block-headline -->
+
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
 										&lt;div class=&quot;block block-headline&quot;&gt;
 	&lt;a href=&quot;#&quot;&gt;
-		&lt;h2 class=&quot;b-title&quot;&gt;Pattern Lab&lt;/h2&gt;
+		&lt;h3 class=&quot;b-title&quot;&gt;Pattern Lab&lt;/h3&gt;
 	&lt;/a&gt;
 &lt;/div&gt; &lt;!-- /.block-headline --&gt;
+
 									</code>
 								</pre>
 							</div>
@@ -1671,12 +1709,14 @@ p q r s t u v w x y z { | } ~
 			<img src="../../images/fpo_4x3.png" alt="4x3 Image" />		</div> <!-- /.b-thumb -->
 		<div class="b-text">
       <div class="unify">
-        <div class="kicker"><a href="#"></a> </div>
-  			<h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
-        <div class="byline">by <span>Author Name</span></div>      </div> <!-- /.unify -->
+        <div class="kicker"><a itemprop="articleSection" href="#"></a> </div>
+  			<h3 class="headline">Lorem ipsum dolor sit (37 characters)</h3>
+        <div class="byline" itemprop="author">By <span></span></div>
+      </div> <!-- /.unify -->
 		</div> <!-- /.b-text -->
 	</a> <!-- /.inner -->
 </div> <!-- /.block-inset -->
+
 							<div class="sg-code" style="display: none">
 									<div class="sg-code-contains">
 										This pattern contains: 
@@ -1693,12 +1733,72 @@ p q r s t u v w x y z { | } ~
 			&lt;img src=&quot;../../images/fpo_4x3.png&quot; alt=&quot;4x3 Image&quot; /&gt;		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
       &lt;div class=&quot;unify&quot;&gt;
-        &lt;div class=&quot;kicker&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;/a&gt; &lt;/div&gt;
-  			&lt;h2 class=&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;/h2&gt;
-        &lt;div class=&quot;byline&quot;&gt;by &lt;span&gt;Author Name&lt;/span&gt;&lt;/div&gt;      &lt;/div&gt; &lt;!-- /.unify --&gt;
+        &lt;div class=&quot;kicker&quot;&gt;&lt;a itemprop=&quot;articleSection&quot; href=&quot;#&quot;&gt;&lt;/a&gt; &lt;/div&gt;
+  			&lt;h3 class=&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;/h3&gt;
+        &lt;div class=&quot;byline&quot; itemprop=&quot;author&quot;&gt;By &lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt; &lt;!-- /.unify --&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-inset --&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-block-listicle-item" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-02-blocks-06-block-listicle-item/01-molecules-02-blocks-06-block-listicle-item.html" class="patternLink" data-patternpartial="molecules-block-listicle-item">Block Listicle Item</a></h2>
+						<div class="sg-pattern-body">
+							<div class="block block-listicle-item ">
+	<div class="b-inner cf">
+    <div class="b-head">
+      <span class="listicle-number number--large "></span>
+		  <h2 class="b-title"><span><a href="#">Pattern Lab</a></span></h2>
+    </div> <!-- /.b-head -->
+    <div class="b-thumb">
+      <a href="#"><div class="img-wrap">
+  <img src="" alt="" />
+</div> <!-- /.img-wrap -->
+</a>
+    </div> <!-- /.b-thumb -->
+    <div class="b-text">
+      <div class="dek text">
+        <p></p>
+        <p>Get the </p>
+      </div> <!-- /.dek -->
+		</div> <!-- /.b-text -->
+	</div> <!-- /.b-inner -->
+</div> <!-- /.block-listicle-item -->
+
+							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/01-molecules-03-media-01-image-with-caption/01-molecules-03-media-01-image-with-caption.html"><code>molecules-image-with-caption</code></a>
+									</div>
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;block block-listicle-item &quot;&gt;
+	&lt;div class=&quot;b-inner cf&quot;&gt;
+    &lt;div class=&quot;b-head&quot;&gt;
+      &lt;span class=&quot;listicle-number number--large &quot;&gt;&lt;/span&gt;
+		  &lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;&lt;a href=&quot;#&quot;&gt;Pattern Lab&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;/div&gt; &lt;!-- /.b-head --&gt;
+    &lt;div class=&quot;b-thumb&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;div class=&quot;img-wrap&quot;&gt;
+  &lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt; &lt;!-- /.img-wrap --&gt;
+&lt;/a&gt;
+    &lt;/div&gt; &lt;!-- /.b-thumb --&gt;
+    &lt;div class=&quot;b-text&quot;&gt;
+      &lt;div class=&quot;dek text&quot;&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;p&gt;Get the &lt;/p&gt;
+      &lt;/div&gt; &lt;!-- /.dek --&gt;
+		&lt;/div&gt; &lt;!-- /.b-text --&gt;
+	&lt;/div&gt; &lt;!-- /.b-inner --&gt;
+&lt;/div&gt; &lt;!-- /.block-listicle-item --&gt;
+
 									</code>
 								</pre>
 							</div>
@@ -1721,6 +1821,30 @@ p q r s t u v w x y z { | } ~
 										&lt;figure&gt;
 	&lt;img src=&quot;../../images/fpo_4x3.png&quot; alt=&quot;4x3 Image&quot; /&gt;	&lt;figcaption&gt;This is an example of an image with a caption. Photo captions, also known as cutlines, are a few lines of text used to explain or elaborate on published photographs.&lt;/figcaption&gt;
 &lt;/figure&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-image-with-caption" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-03-media-01-image-with-caption/01-molecules-03-media-01-image-with-caption.html" class="patternLink" data-patternpartial="molecules-image-with-caption">Image With Caption</a></h2>
+						<div class="sg-pattern-body">
+							<div class="img-wrap">
+  <img src="" alt="" />
+</div> <!-- /.img-wrap -->
+
+							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/00-atoms-04-images-09-image/00-atoms-04-images-09-image.html"><code>atoms-image</code></a>
+									</div>
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;img-wrap&quot;&gt;
+  &lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt; &lt;!-- /.img-wrap --&gt;
+
 									</code>
 								</pre>
 							</div>
@@ -2320,20 +2444,35 @@ p q r s t u v w x y z { | } ~
 						<div class="sg-pattern-body">
 							<div class="social-share">
 	<ul class="ss-list">
-    <li class="ss-item"><a href="#"><span class="no-bg icon rounded icon-twitter icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500"><path fill="#fff" d="M389.9 458.5l.9 15-15.2-1.8c-55.4-7.1-103.8-31.1-145-71.3l-20.1-20-5.2 14.7c-11 32.9-4 67.7 18.9 91 12.1 12.9 9.4 14.8-11.6 7.1-7.3-2.4-13.7-4.3-14.3-3.4-2.1 2.2 5.2 30.1 11 41.2 7.9 15.4 24.1 30.4 41.8 39.4l14.9 7-17.7.3c-17.1 0-17.7.3-15.8 6.8 6.1 20 30.2 41.2 57 50.4l18.9 6.4-16.5 9.8c-24.4 14.1-53 22.1-81.6 22.7-13.7.3-25 1.5-25 2.5 0 3.1 37.2 20.3 58.8 27.1 64.9 20 141.9 11.4 199.8-22.8 41.1-24.3 82.2-72.6 101.4-119.3 10.3-24.9 20.7-70.4 20.7-92.2 0-14.1.9-16 18-32.9 10.1-9.8 19.5-20.6 21.3-23.7 3-5.8 2.7-5.8-12.8-.6-25.9 9.2-29.6 8-16.8-5.8 9.5-9.9 20.7-27.7 20.7-32.9 0-.9-4.6.6-9.7 3.4-5.5 3.1-17.7 7.7-26.8 10.5l-16.5 5.2-14.9-10.2c-8.2-5.5-19.8-11.7-25.9-13.5-15.5-4.3-39.3-3.7-53.3 1.2-38.1 14-62.1 49.6-59.4 88.7z"/></svg>
-</span></a></li>
-    <li class="ss-item"><a href="#"><span class="no-bg icon rounded icon-facebook icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500"><path fill="#fff" d="M435.9 758V547h57.3l7.5-72.7h-64.8l.1-36.4c0-19 1.8-29.2 28.6-29.2h35.8V336H443c-68.9 0-93.1 35.3-93.1 94.6v43.6H307V547h43v211h85.9z"/></svg>
-</span></a></li>
-    <li class="ss-item"><a href="#"><span class="no-bg icon rounded icon-pinterest icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500"><path fill="#fff" d="M224.6 475.6c0 45.1 16.6 85.2 52.1 100.3 5.8 2.5 11.1.1 12.7-6.6 1.1-4.6 4-16.3 5.2-21.1 1.8-6.6 1-8.9-3.7-14.6-10.2-12.4-16.8-28.6-16.8-51.5 0-66.3 48-125.6 125.1-125.6 68.3 0 105.8 43 105.8 100.5 0 75.6-32.5 139.5-80.6 139.5-26.6 0-46.5-22.7-40.1-50.5 7.6-33.2 22.5-69.1 22.5-93 0-21.5-11.2-39.4-34.3-39.4-27.2 0-49 29-49 67.9 0 24.8 8.1 41.6 8.1 41.6S303.9 644.5 299 665.8c-9.7 42.4-1.5 94.4-.7 99.6.4 3.1 4.3 3.9 6.1 1.6 2.5-3.3 34.9-44.6 45.8-85.8 3.1-11.6 17.9-72.1 17.9-72.1 8.9 17.3 34.7 32.7 62.1 32.7 81.8 0 137.2-76.9 137.2-179.8 0-77.8-63.9-150.3-160.9-150.3-120.9 0-181.9 89.4-181.9 163.9z"/></svg>
-</span></a></li>
+    <li class="ss-item">
+      <a class="ss-link" href="#">
+        <span class="ss-count">2k</span>
+        <span class="no-bg icon rounded icon-facebook icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500"><path fill="#fff" d="M435.9 758V547h57.3l7.5-72.7h-64.8l.1-36.4c0-19 1.8-29.2 28.6-29.2h35.8V336H443c-68.9 0-93.1 35.3-93.1 94.6v43.6H307V547h43v211h85.9z"/></svg>
+</span>
+      </a> <!-- /.ss-link -->
+    </li> <!-- /.ss-item -->
+    <li class="ss-item">
+      <a class="ss-link" href="#">
+        <span class="ss-count">936</span>
+        <span class="no-bg icon rounded icon-twitter icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500"><path fill="#fff" d="M389.9 458.5l.9 15-15.2-1.8c-55.4-7.1-103.8-31.1-145-71.3l-20.1-20-5.2 14.7c-11 32.9-4 67.7 18.9 91 12.1 12.9 9.4 14.8-11.6 7.1-7.3-2.4-13.7-4.3-14.3-3.4-2.1 2.2 5.2 30.1 11 41.2 7.9 15.4 24.1 30.4 41.8 39.4l14.9 7-17.7.3c-17.1 0-17.7.3-15.8 6.8 6.1 20 30.2 41.2 57 50.4l18.9 6.4-16.5 9.8c-24.4 14.1-53 22.1-81.6 22.7-13.7.3-25 1.5-25 2.5 0 3.1 37.2 20.3 58.8 27.1 64.9 20 141.9 11.4 199.8-22.8 41.1-24.3 82.2-72.6 101.4-119.3 10.3-24.9 20.7-70.4 20.7-92.2 0-14.1.9-16 18-32.9 10.1-9.8 19.5-20.6 21.3-23.7 3-5.8 2.7-5.8-12.8-.6-25.9 9.2-29.6 8-16.8-5.8 9.5-9.9 20.7-27.7 20.7-32.9 0-.9-4.6.6-9.7 3.4-5.5 3.1-17.7 7.7-26.8 10.5l-16.5 5.2-14.9-10.2c-8.2-5.5-19.8-11.7-25.9-13.5-15.5-4.3-39.3-3.7-53.3 1.2-38.1 14-62.1 49.6-59.4 88.7z"/></svg>
+</span>
+      </a> <!-- /.ss-link -->
+    </li> <!-- /.ss-item -->
+    <li class="ss-item">
+      <a class="ss-link" href="#">
+        <span class="ss-count">782</span>
+        <span class="no-bg icon rounded icon-pinterest icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500"><path fill="#fff" d="M224.6 475.6c0 45.1 16.6 85.2 52.1 100.3 5.8 2.5 11.1.1 12.7-6.6 1.1-4.6 4-16.3 5.2-21.1 1.8-6.6 1-8.9-3.7-14.6-10.2-12.4-16.8-28.6-16.8-51.5 0-66.3 48-125.6 125.1-125.6 68.3 0 105.8 43 105.8 100.5 0 75.6-32.5 139.5-80.6 139.5-26.6 0-46.5-22.7-40.1-50.5 7.6-33.2 22.5-69.1 22.5-93 0-21.5-11.2-39.4-34.3-39.4-27.2 0-49 29-49 67.9 0 24.8 8.1 41.6 8.1 41.6S303.9 644.5 299 665.8c-9.7 42.4-1.5 94.4-.7 99.6.4 3.1 4.3 3.9 6.1 1.6 2.5-3.3 34.9-44.6 45.8-85.8 3.1-11.6 17.9-72.1 17.9-72.1 8.9 17.3 34.7 32.7 62.1 32.7 81.8 0 137.2-76.9 137.2-179.8 0-77.8-63.9-150.3-160.9-150.3-120.9 0-181.9 89.4-181.9 163.9z"/></svg>
+</span>
+      </a> <!-- /.ss-link -->
+    </li> <!-- /.ss-item -->
   </ul> <!-- /.ss-list -->
 </div> <!-- /.social-share -->
 
 							<div class="sg-code" style="display: none">
 									<div class="sg-code-contains">
 										This pattern contains: 
-											<a href="../../patterns/00-atoms-09-icons-04-twitter/00-atoms-09-icons-04-twitter.html"><code>atoms-twitter</code></a>
 											<a href="../../patterns/00-atoms-09-icons-03-facebook/00-atoms-09-icons-03-facebook.html"><code>atoms-facebook</code></a>
+											<a href="../../patterns/00-atoms-09-icons-04-twitter/00-atoms-09-icons-04-twitter.html"><code>atoms-twitter</code></a>
 											<a href="../../patterns/00-atoms-09-icons-11-pinterest/00-atoms-09-icons-11-pinterest.html"><code>atoms-pinterest</code></a>
 									</div>
 								<h3 class="sg-code-head">HTML</h3>
@@ -2341,12 +2480,27 @@ p q r s t u v w x y z { | } ~
 									<code>
 										&lt;div class=&quot;social-share&quot;&gt;
 	&lt;ul class=&quot;ss-list&quot;&gt;
-    &lt;li class=&quot;ss-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;no-bg icon rounded icon-twitter icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;146 290 500 500&quot; enable-background=&quot;new 146 290 500 500&quot;&gt;&lt;path fill=&quot;#fff&quot; d=&quot;M389.9 458.5l.9 15-15.2-1.8c-55.4-7.1-103.8-31.1-145-71.3l-20.1-20-5.2 14.7c-11 32.9-4 67.7 18.9 91 12.1 12.9 9.4 14.8-11.6 7.1-7.3-2.4-13.7-4.3-14.3-3.4-2.1 2.2 5.2 30.1 11 41.2 7.9 15.4 24.1 30.4 41.8 39.4l14.9 7-17.7.3c-17.1 0-17.7.3-15.8 6.8 6.1 20 30.2 41.2 57 50.4l18.9 6.4-16.5 9.8c-24.4 14.1-53 22.1-81.6 22.7-13.7.3-25 1.5-25 2.5 0 3.1 37.2 20.3 58.8 27.1 64.9 20 141.9 11.4 199.8-22.8 41.1-24.3 82.2-72.6 101.4-119.3 10.3-24.9 20.7-70.4 20.7-92.2 0-14.1.9-16 18-32.9 10.1-9.8 19.5-20.6 21.3-23.7 3-5.8 2.7-5.8-12.8-.6-25.9 9.2-29.6 8-16.8-5.8 9.5-9.9 20.7-27.7 20.7-32.9 0-.9-4.6.6-9.7 3.4-5.5 3.1-17.7 7.7-26.8 10.5l-16.5 5.2-14.9-10.2c-8.2-5.5-19.8-11.7-25.9-13.5-15.5-4.3-39.3-3.7-53.3 1.2-38.1 14-62.1 49.6-59.4 88.7z&quot;/&gt;&lt;/svg&gt;
-&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;ss-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;no-bg icon rounded icon-facebook icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;146 290 500 500&quot; enable-background=&quot;new 146 290 500 500&quot;&gt;&lt;path fill=&quot;#fff&quot; d=&quot;M435.9 758V547h57.3l7.5-72.7h-64.8l.1-36.4c0-19 1.8-29.2 28.6-29.2h35.8V336H443c-68.9 0-93.1 35.3-93.1 94.6v43.6H307V547h43v211h85.9z&quot;/&gt;&lt;/svg&gt;
-&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;ss-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;no-bg icon rounded icon-pinterest icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;146 290 500 500&quot; enable-background=&quot;new 146 290 500 500&quot;&gt;&lt;path fill=&quot;#fff&quot; d=&quot;M224.6 475.6c0 45.1 16.6 85.2 52.1 100.3 5.8 2.5 11.1.1 12.7-6.6 1.1-4.6 4-16.3 5.2-21.1 1.8-6.6 1-8.9-3.7-14.6-10.2-12.4-16.8-28.6-16.8-51.5 0-66.3 48-125.6 125.1-125.6 68.3 0 105.8 43 105.8 100.5 0 75.6-32.5 139.5-80.6 139.5-26.6 0-46.5-22.7-40.1-50.5 7.6-33.2 22.5-69.1 22.5-93 0-21.5-11.2-39.4-34.3-39.4-27.2 0-49 29-49 67.9 0 24.8 8.1 41.6 8.1 41.6S303.9 644.5 299 665.8c-9.7 42.4-1.5 94.4-.7 99.6.4 3.1 4.3 3.9 6.1 1.6 2.5-3.3 34.9-44.6 45.8-85.8 3.1-11.6 17.9-72.1 17.9-72.1 8.9 17.3 34.7 32.7 62.1 32.7 81.8 0 137.2-76.9 137.2-179.8 0-77.8-63.9-150.3-160.9-150.3-120.9 0-181.9 89.4-181.9 163.9z&quot;/&gt;&lt;/svg&gt;
-&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;ss-item&quot;&gt;
+      &lt;a class=&quot;ss-link&quot; href=&quot;#&quot;&gt;
+        &lt;span class=&quot;ss-count&quot;&gt;2k&lt;/span&gt;
+        &lt;span class=&quot;no-bg icon rounded icon-facebook icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;146 290 500 500&quot; enable-background=&quot;new 146 290 500 500&quot;&gt;&lt;path fill=&quot;#fff&quot; d=&quot;M435.9 758V547h57.3l7.5-72.7h-64.8l.1-36.4c0-19 1.8-29.2 28.6-29.2h35.8V336H443c-68.9 0-93.1 35.3-93.1 94.6v43.6H307V547h43v211h85.9z&quot;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+      &lt;/a&gt; &lt;!-- /.ss-link --&gt;
+    &lt;/li&gt; &lt;!-- /.ss-item --&gt;
+    &lt;li class=&quot;ss-item&quot;&gt;
+      &lt;a class=&quot;ss-link&quot; href=&quot;#&quot;&gt;
+        &lt;span class=&quot;ss-count&quot;&gt;936&lt;/span&gt;
+        &lt;span class=&quot;no-bg icon rounded icon-twitter icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;146 290 500 500&quot; enable-background=&quot;new 146 290 500 500&quot;&gt;&lt;path fill=&quot;#fff&quot; d=&quot;M389.9 458.5l.9 15-15.2-1.8c-55.4-7.1-103.8-31.1-145-71.3l-20.1-20-5.2 14.7c-11 32.9-4 67.7 18.9 91 12.1 12.9 9.4 14.8-11.6 7.1-7.3-2.4-13.7-4.3-14.3-3.4-2.1 2.2 5.2 30.1 11 41.2 7.9 15.4 24.1 30.4 41.8 39.4l14.9 7-17.7.3c-17.1 0-17.7.3-15.8 6.8 6.1 20 30.2 41.2 57 50.4l18.9 6.4-16.5 9.8c-24.4 14.1-53 22.1-81.6 22.7-13.7.3-25 1.5-25 2.5 0 3.1 37.2 20.3 58.8 27.1 64.9 20 141.9 11.4 199.8-22.8 41.1-24.3 82.2-72.6 101.4-119.3 10.3-24.9 20.7-70.4 20.7-92.2 0-14.1.9-16 18-32.9 10.1-9.8 19.5-20.6 21.3-23.7 3-5.8 2.7-5.8-12.8-.6-25.9 9.2-29.6 8-16.8-5.8 9.5-9.9 20.7-27.7 20.7-32.9 0-.9-4.6.6-9.7 3.4-5.5 3.1-17.7 7.7-26.8 10.5l-16.5 5.2-14.9-10.2c-8.2-5.5-19.8-11.7-25.9-13.5-15.5-4.3-39.3-3.7-53.3 1.2-38.1 14-62.1 49.6-59.4 88.7z&quot;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+      &lt;/a&gt; &lt;!-- /.ss-link --&gt;
+    &lt;/li&gt; &lt;!-- /.ss-item --&gt;
+    &lt;li class=&quot;ss-item&quot;&gt;
+      &lt;a class=&quot;ss-link&quot; href=&quot;#&quot;&gt;
+        &lt;span class=&quot;ss-count&quot;&gt;782&lt;/span&gt;
+        &lt;span class=&quot;no-bg icon rounded icon-pinterest icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;146 290 500 500&quot; enable-background=&quot;new 146 290 500 500&quot;&gt;&lt;path fill=&quot;#fff&quot; d=&quot;M224.6 475.6c0 45.1 16.6 85.2 52.1 100.3 5.8 2.5 11.1.1 12.7-6.6 1.1-4.6 4-16.3 5.2-21.1 1.8-6.6 1-8.9-3.7-14.6-10.2-12.4-16.8-28.6-16.8-51.5 0-66.3 48-125.6 125.1-125.6 68.3 0 105.8 43 105.8 100.5 0 75.6-32.5 139.5-80.6 139.5-26.6 0-46.5-22.7-40.1-50.5 7.6-33.2 22.5-69.1 22.5-93 0-21.5-11.2-39.4-34.3-39.4-27.2 0-49 29-49 67.9 0 24.8 8.1 41.6 8.1 41.6S303.9 644.5 299 665.8c-9.7 42.4-1.5 94.4-.7 99.6.4 3.1 4.3 3.9 6.1 1.6 2.5-3.3 34.9-44.6 45.8-85.8 3.1-11.6 17.9-72.1 17.9-72.1 8.9 17.3 34.7 32.7 62.1 32.7 81.8 0 137.2-76.9 137.2-179.8 0-77.8-63.9-150.3-160.9-150.3-120.9 0-181.9 89.4-181.9 163.9z&quot;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+      &lt;/a&gt; &lt;!-- /.ss-link --&gt;
+    &lt;/li&gt; &lt;!-- /.ss-item --&gt;
   &lt;/ul&gt; &lt;!-- /.ss-list --&gt;
 &lt;/div&gt; &lt;!-- /.social-share --&gt;
 
@@ -2442,33 +2596,54 @@ p q r s t u v w x y z { | } ~
 						<div class="sg-pattern-body">
 							<div class="content-utility">
 	<ul class="cu-list">
-    <li class="cu-item"><a href="#"><span class="no-bg icon rounded icon-twitter icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500"><path fill="#fff" d="M389.9 458.5l.9 15-15.2-1.8c-55.4-7.1-103.8-31.1-145-71.3l-20.1-20-5.2 14.7c-11 32.9-4 67.7 18.9 91 12.1 12.9 9.4 14.8-11.6 7.1-7.3-2.4-13.7-4.3-14.3-3.4-2.1 2.2 5.2 30.1 11 41.2 7.9 15.4 24.1 30.4 41.8 39.4l14.9 7-17.7.3c-17.1 0-17.7.3-15.8 6.8 6.1 20 30.2 41.2 57 50.4l18.9 6.4-16.5 9.8c-24.4 14.1-53 22.1-81.6 22.7-13.7.3-25 1.5-25 2.5 0 3.1 37.2 20.3 58.8 27.1 64.9 20 141.9 11.4 199.8-22.8 41.1-24.3 82.2-72.6 101.4-119.3 10.3-24.9 20.7-70.4 20.7-92.2 0-14.1.9-16 18-32.9 10.1-9.8 19.5-20.6 21.3-23.7 3-5.8 2.7-5.8-12.8-.6-25.9 9.2-29.6 8-16.8-5.8 9.5-9.9 20.7-27.7 20.7-32.9 0-.9-4.6.6-9.7 3.4-5.5 3.1-17.7 7.7-26.8 10.5l-16.5 5.2-14.9-10.2c-8.2-5.5-19.8-11.7-25.9-13.5-15.5-4.3-39.3-3.7-53.3 1.2-38.1 14-62.1 49.6-59.4 88.7z"/></svg>
-</span></a></li>
-    <li class="cu-item"><a href="#"><span class="no-bg icon rounded icon-facebook icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500"><path fill="#fff" d="M435.9 758V547h57.3l7.5-72.7h-64.8l.1-36.4c0-19 1.8-29.2 28.6-29.2h35.8V336H443c-68.9 0-93.1 35.3-93.1 94.6v43.6H307V547h43v211h85.9z"/></svg>
-</span></a></li>
-    <li class="cu-item"><a href="#"><span class="no-bg icon rounded icon-pinterest icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500"><path fill="#fff" d="M224.6 475.6c0 45.1 16.6 85.2 52.1 100.3 5.8 2.5 11.1.1 12.7-6.6 1.1-4.6 4-16.3 5.2-21.1 1.8-6.6 1-8.9-3.7-14.6-10.2-12.4-16.8-28.6-16.8-51.5 0-66.3 48-125.6 125.1-125.6 68.3 0 105.8 43 105.8 100.5 0 75.6-32.5 139.5-80.6 139.5-26.6 0-46.5-22.7-40.1-50.5 7.6-33.2 22.5-69.1 22.5-93 0-21.5-11.2-39.4-34.3-39.4-27.2 0-49 29-49 67.9 0 24.8 8.1 41.6 8.1 41.6S303.9 644.5 299 665.8c-9.7 42.4-1.5 94.4-.7 99.6.4 3.1 4.3 3.9 6.1 1.6 2.5-3.3 34.9-44.6 45.8-85.8 3.1-11.6 17.9-72.1 17.9-72.1 8.9 17.3 34.7 32.7 62.1 32.7 81.8 0 137.2-76.9 137.2-179.8 0-77.8-63.9-150.3-160.9-150.3-120.9 0-181.9 89.4-181.9 163.9z"/></svg>
-</span></a></li>
+    <li class="cu-item">
+      <a class="cu-link" href="#">
+        <span class="no-bg icon rounded icon--standard icon-print icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M382 147V5H117v142H5v265h112v83h265v-83h113V147H382zM356 32v115H144V32h212zM117 289v97H32V174h436v212h-86v-97H117zm27 179V315h212v153H144z"/></svg>
+</span>
+      </a> <!-- /.cu-link -->
+    </li> <!-- /.cu-item -->
+    <li class="cu-item">
+      <a class="cu-link" href="#">
+        <span class="no-bg icon rounded icon--standard icon-mail icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M4 403V97h492v306H4zm462-31V138.3L250 277.7 34 138.3V372h432zM250.5 243.2L430.6 127H70.4l180.1 116.2z"/></svg>
+</span>
+      </a> <!-- /.cu-link -->
+    </li> <!-- /.cu-item -->
+    <li class="cu-item cu-save">
+      <a class="cu-link" href="#">
+        <span class="btn--rounded btn-save">Save</span>
+      </a> <!-- /.cu-link -->
+    </li> <!-- /.cu-item -->
   </ul> <!-- /.cu-list -->
 </div> <!-- /.content-utility -->
 
 							<div class="sg-code" style="display: none">
 									<div class="sg-code-contains">
 										This pattern contains: 
-											<a href="../../patterns/00-atoms-09-icons-04-twitter/00-atoms-09-icons-04-twitter.html"><code>atoms-twitter</code></a>
-											<a href="../../patterns/00-atoms-09-icons-03-facebook/00-atoms-09-icons-03-facebook.html"><code>atoms-facebook</code></a>
-											<a href="../../patterns/00-atoms-09-icons-11-pinterest/00-atoms-09-icons-11-pinterest.html"><code>atoms-pinterest</code></a>
+											<a href="../../patterns/00-atoms-09-icons-12-print/00-atoms-09-icons-12-print.html"><code>atoms-print</code></a>
+											<a href="../../patterns/00-atoms-09-icons-13-mail/00-atoms-09-icons-13-mail.html"><code>atoms-mail</code></a>
 									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
 										&lt;div class=&quot;content-utility&quot;&gt;
 	&lt;ul class=&quot;cu-list&quot;&gt;
-    &lt;li class=&quot;cu-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;no-bg icon rounded icon-twitter icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;146 290 500 500&quot; enable-background=&quot;new 146 290 500 500&quot;&gt;&lt;path fill=&quot;#fff&quot; d=&quot;M389.9 458.5l.9 15-15.2-1.8c-55.4-7.1-103.8-31.1-145-71.3l-20.1-20-5.2 14.7c-11 32.9-4 67.7 18.9 91 12.1 12.9 9.4 14.8-11.6 7.1-7.3-2.4-13.7-4.3-14.3-3.4-2.1 2.2 5.2 30.1 11 41.2 7.9 15.4 24.1 30.4 41.8 39.4l14.9 7-17.7.3c-17.1 0-17.7.3-15.8 6.8 6.1 20 30.2 41.2 57 50.4l18.9 6.4-16.5 9.8c-24.4 14.1-53 22.1-81.6 22.7-13.7.3-25 1.5-25 2.5 0 3.1 37.2 20.3 58.8 27.1 64.9 20 141.9 11.4 199.8-22.8 41.1-24.3 82.2-72.6 101.4-119.3 10.3-24.9 20.7-70.4 20.7-92.2 0-14.1.9-16 18-32.9 10.1-9.8 19.5-20.6 21.3-23.7 3-5.8 2.7-5.8-12.8-.6-25.9 9.2-29.6 8-16.8-5.8 9.5-9.9 20.7-27.7 20.7-32.9 0-.9-4.6.6-9.7 3.4-5.5 3.1-17.7 7.7-26.8 10.5l-16.5 5.2-14.9-10.2c-8.2-5.5-19.8-11.7-25.9-13.5-15.5-4.3-39.3-3.7-53.3 1.2-38.1 14-62.1 49.6-59.4 88.7z&quot;/&gt;&lt;/svg&gt;
-&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;cu-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;no-bg icon rounded icon-facebook icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;146 290 500 500&quot; enable-background=&quot;new 146 290 500 500&quot;&gt;&lt;path fill=&quot;#fff&quot; d=&quot;M435.9 758V547h57.3l7.5-72.7h-64.8l.1-36.4c0-19 1.8-29.2 28.6-29.2h35.8V336H443c-68.9 0-93.1 35.3-93.1 94.6v43.6H307V547h43v211h85.9z&quot;/&gt;&lt;/svg&gt;
-&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;cu-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;no-bg icon rounded icon-pinterest icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;146 290 500 500&quot; enable-background=&quot;new 146 290 500 500&quot;&gt;&lt;path fill=&quot;#fff&quot; d=&quot;M224.6 475.6c0 45.1 16.6 85.2 52.1 100.3 5.8 2.5 11.1.1 12.7-6.6 1.1-4.6 4-16.3 5.2-21.1 1.8-6.6 1-8.9-3.7-14.6-10.2-12.4-16.8-28.6-16.8-51.5 0-66.3 48-125.6 125.1-125.6 68.3 0 105.8 43 105.8 100.5 0 75.6-32.5 139.5-80.6 139.5-26.6 0-46.5-22.7-40.1-50.5 7.6-33.2 22.5-69.1 22.5-93 0-21.5-11.2-39.4-34.3-39.4-27.2 0-49 29-49 67.9 0 24.8 8.1 41.6 8.1 41.6S303.9 644.5 299 665.8c-9.7 42.4-1.5 94.4-.7 99.6.4 3.1 4.3 3.9 6.1 1.6 2.5-3.3 34.9-44.6 45.8-85.8 3.1-11.6 17.9-72.1 17.9-72.1 8.9 17.3 34.7 32.7 62.1 32.7 81.8 0 137.2-76.9 137.2-179.8 0-77.8-63.9-150.3-160.9-150.3-120.9 0-181.9 89.4-181.9 163.9z&quot;/&gt;&lt;/svg&gt;
-&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;cu-item&quot;&gt;
+      &lt;a class=&quot;cu-link&quot; href=&quot;#&quot;&gt;
+        &lt;span class=&quot;no-bg icon rounded icon--standard icon-print icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 500 500&quot; enable-background=&quot;new 0 0 500 500&quot;&gt;&lt;path d=&quot;M382 147V5H117v142H5v265h112v83h265v-83h113V147H382zM356 32v115H144V32h212zM117 289v97H32V174h436v212h-86v-97H117zm27 179V315h212v153H144z&quot;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+      &lt;/a&gt; &lt;!-- /.cu-link --&gt;
+    &lt;/li&gt; &lt;!-- /.cu-item --&gt;
+    &lt;li class=&quot;cu-item&quot;&gt;
+      &lt;a class=&quot;cu-link&quot; href=&quot;#&quot;&gt;
+        &lt;span class=&quot;no-bg icon rounded icon--standard icon-mail icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 500 500&quot; enable-background=&quot;new 0 0 500 500&quot;&gt;&lt;path d=&quot;M4 403V97h492v306H4zm462-31V138.3L250 277.7 34 138.3V372h432zM250.5 243.2L430.6 127H70.4l180.1 116.2z&quot;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+      &lt;/a&gt; &lt;!-- /.cu-link --&gt;
+    &lt;/li&gt; &lt;!-- /.cu-item --&gt;
+    &lt;li class=&quot;cu-item cu-save&quot;&gt;
+      &lt;a class=&quot;cu-link&quot; href=&quot;#&quot;&gt;
+        &lt;span class=&quot;btn--rounded btn-save&quot;&gt;Save&lt;/span&gt;
+      &lt;/a&gt; &lt;!-- /.cu-link --&gt;
+    &lt;/li&gt; &lt;!-- /.cu-item --&gt;
   &lt;/ul&gt; &lt;!-- /.cu-list --&gt;
 &lt;/div&gt; &lt;!-- /.content-utility --&gt;
 
@@ -2650,7 +2825,7 @@ p q r s t u v w x y z { | } ~
 </div>
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
-			<h2 class="b-title"><span>Reader's Top 20 Recipes</span></h2>
+			<h3 class="b-title"><span>Reader's Top 20 Recipes</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -2662,7 +2837,7 @@ p q r s t u v w x y z { | } ~
 </div>
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
-			<h2 class="b-title"><span>4 Organized Women Spill Their Secrets</span></h2>
+			<h3 class="b-title"><span>4 Organized Women Spill Their Secrets</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -2674,7 +2849,7 @@ p q r s t u v w x y z { | } ~
 </div>
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
-			<h2 class="b-title"><span>15-Minute Dinner Recipes</span></h2>
+			<h3 class="b-title"><span>15-Minute Dinner Recipes</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -2686,7 +2861,7 @@ p q r s t u v w x y z { | } ~
 </div>
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
-			<h2 class="b-title"><span>Get Real Simple <br> Only $1.29 and issue</span></h2>
+			<h3 class="b-title"><span>Get Real Simple <br> Only $1.29 and issue</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -2826,8 +3001,8 @@ p q r s t u v w x y z { | } ~
     </form> <!-- /.search-form -->
   </div> <!-- /.search-overlay -->
   <div class="ad-blocks ad-leaderboard">
-    <a href="" class="ad-block ad-300x50"><img src="http://placehold.it/300x50"></a>
-    <a href="" class="ad-block ad-728x90"><img src="http://placehold.it/728x90"></a>
+    <div class="ad-block ad-300x50"><a href=""><img src="http://cdn.creative.medialytics.com/raw_assets/servo_prod/campaigns/CA-KS2PC8D/creatives/CR-CDTH2C5/versions/1/MBAN%20UnstopablesTargetiMedia%20FreshScentspiration%20xxxx%20320x50%201415%203%20Static.jpg.jpg"></a></div>
+    <div class="ad-block ad-728x90"><a href=""><img src="https://s0.2mdn.net/viewad/4111931/jcrew_weddings_unisex_text_728x90_wedding_event_sp15_feb_v1.gif"></a></div>
   </div> <!-- /.ad-leaderboard -->
 </header> <!-- .header -->
 
@@ -2998,7 +3173,7 @@ p q r s t u v w x y z { | } ~
 &lt;/div&gt;
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;Reader's Top 20 Recipes&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;Reader's Top 20 Recipes&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -3010,7 +3185,7 @@ p q r s t u v w x y z { | } ~
 &lt;/div&gt;
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;4 Organized Women Spill Their Secrets&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;4 Organized Women Spill Their Secrets&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -3022,7 +3197,7 @@ p q r s t u v w x y z { | } ~
 &lt;/div&gt;
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;15-Minute Dinner Recipes&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;15-Minute Dinner Recipes&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -3034,7 +3209,7 @@ p q r s t u v w x y z { | } ~
 &lt;/div&gt;
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;Get Real Simple &lt;br&gt; Only $1.29 and issue&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;Get Real Simple &lt;br&gt; Only $1.29 and issue&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -3174,8 +3349,8 @@ p q r s t u v w x y z { | } ~
     &lt;/form&gt; &lt;!-- /.search-form --&gt;
   &lt;/div&gt; &lt;!-- /.search-overlay --&gt;
   &lt;div class=&quot;ad-blocks ad-leaderboard&quot;&gt;
-    &lt;a href=&quot;&quot; class=&quot;ad-block ad-300x50&quot;&gt;&lt;img src=&quot;http://placehold.it/300x50&quot;&gt;&lt;/a&gt;
-    &lt;a href=&quot;&quot; class=&quot;ad-block ad-728x90&quot;&gt;&lt;img src=&quot;http://placehold.it/728x90&quot;&gt;&lt;/a&gt;
+    &lt;div class=&quot;ad-block ad-300x50&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://cdn.creative.medialytics.com/raw_assets/servo_prod/campaigns/CA-KS2PC8D/creatives/CR-CDTH2C5/versions/1/MBAN%20UnstopablesTargetiMedia%20FreshScentspiration%20xxxx%20320x50%201415%203%20Static.jpg.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;ad-block ad-728x90&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;https://s0.2mdn.net/viewad/4111931/jcrew_weddings_unisex_text_728x90_wedding_event_sp15_feb_v1.gif&quot;&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt; &lt;!-- /.ad-leaderboard --&gt;
 &lt;/header&gt; &lt;!-- .header --&gt;
 
@@ -3374,8 +3549,8 @@ p q r s t u v w x y z { | } ~
 						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-00-global-02-sidebar/02-organisms-00-global-02-sidebar.html" class="patternLink" data-patternpartial="organisms-sidebar">Sidebar</a></h2>
 						<div class="sg-pattern-body">
 							<aside class="sidebar" role="complementary">
-  <div class="ad-block ad-300x250 block">
-    <a href=""><img src="http://placehold.it/300x250"></a>
+  <div class="ad-block ad-300x250 block hide-small hide-medium">
+    <a href=""><img src="http://s1.2mdn.net/viewad/3521978/SINS_WebBanner_300x250.jpg"></a>
   </div> <!-- /.ad-300x250 -->
   <section class="section daily-finds">
     <header class="s-header">
@@ -3388,7 +3563,7 @@ p q r s t u v w x y z { | } ~
 </div>
 	  		</div> <!-- /.b-thumb -->
 	  		<div class="b-text">
-	  			<h2 class="b-title"><span>6 Smart Hairstyling Tools</span></h2>
+	  			<h3 class="b-title"><span>6 Smart Hairstyling Tools</span></h3>
 	  		</div> <!-- /.b-text -->
 	  	</a> <!-- /.b-inner -->
 	  </div> <!-- /.block-thumb -->
@@ -3406,7 +3581,7 @@ p q r s t u v w x y z { | } ~
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
         <span class="rounded number">1</span>
-			<h2 class="b-title"><span>11 Apple Pie-Inspired Recipes That Almost Beat the Real Thing</span></h2>
+			<h3 class="b-title"><span>11 Apple Pie-Inspired Recipes That Almost Beat the Real Thing</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -3419,7 +3594,7 @@ p q r s t u v w x y z { | } ~
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
         <span class="rounded number">2</span>
-			<h2 class="b-title"><span>24 Beauty Products We Can't Live Without</span></h2>
+			<h3 class="b-title"><span>24 Beauty Products We Can't Live Without</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -3432,7 +3607,7 @@ p q r s t u v w x y z { | } ~
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
         <span class="rounded number">3</span>
-			<h2 class="b-title"><span>5 Small Ways to Show Compassion</span></h2>
+			<h3 class="b-title"><span>5 Small Ways to Show Compassion</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -3445,7 +3620,7 @@ p q r s t u v w x y z { | } ~
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
         <span class="rounded number">4</span>
-			<h2 class="b-title"><span>All-Star Household Cleaners</span></h2>
+			<h3 class="b-title"><span>All-Star Household Cleaners</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -3458,7 +3633,7 @@ p q r s t u v w x y z { | } ~
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
         <span class="rounded number">5</span>
-			<h2 class="b-title"><span>They Mean Business: 8 Fall Pices for the Office</span></h2>
+			<h3 class="b-title"><span>They Mean Business: 8 Fall Pices for the Office</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -3466,7 +3641,7 @@ p q r s t u v w x y z { | } ~
     </ol> <!-- /.block-list -->
   </section> <!-- /.most-shared -->
   <div class="ad-block ad-sub-offer block">
-    <a href=""><img src="http://placehold.it/300x150"></a>
+    <a href=""><img src="http://pagead2.googlesyndication.com/simgad/15229186113044141373"></a>
   </div> <!-- /.ad-300x250 -->
   <section class="section from-partners">
     <header class="s-header">
@@ -3496,7 +3671,7 @@ p q r s t u v w x y z { | } ~
     </ul> <!-- /.ul -->
   </section> <!-- /.from-partners -->
   <div class="ad-block ad-300x250 block">
-    <a href=""><img src="http://placehold.it/300x250"></a>
+    <a href=""><img src="http://pagead2.googlesyndication.com/simgad/8242591116261255559"></a>
   </div> <!-- /.ad-300x250 -->
 </aside> <!-- /.sidebar -->
 
@@ -3511,8 +3686,8 @@ p q r s t u v w x y z { | } ~
 								<pre class="sg-code-html">
 									<code>
 										&lt;aside class=&quot;sidebar&quot; role=&quot;complementary&quot;&gt;
-  &lt;div class=&quot;ad-block ad-300x250 block&quot;&gt;
-    &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://placehold.it/300x250&quot;&gt;&lt;/a&gt;
+  &lt;div class=&quot;ad-block ad-300x250 block hide-small hide-medium&quot;&gt;
+    &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://s1.2mdn.net/viewad/3521978/SINS_WebBanner_300x250.jpg&quot;&gt;&lt;/a&gt;
   &lt;/div&gt; &lt;!-- /.ad-300x250 --&gt;
   &lt;section class=&quot;section daily-finds&quot;&gt;
     &lt;header class=&quot;s-header&quot;&gt;
@@ -3525,7 +3700,7 @@ p q r s t u v w x y z { | } ~
 &lt;/div&gt;
 	  		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 	  		&lt;div class=&quot;b-text&quot;&gt;
-	  			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;6 Smart Hairstyling Tools&lt;/span&gt;&lt;/h2&gt;
+	  			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;6 Smart Hairstyling Tools&lt;/span&gt;&lt;/h3&gt;
 	  		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	  	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 	  &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -3543,7 +3718,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
         &lt;span class=&quot;rounded number&quot;&gt;1&lt;/span&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;11 Apple Pie-Inspired Recipes That Almost Beat the Real Thing&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;11 Apple Pie-Inspired Recipes That Almost Beat the Real Thing&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -3556,7 +3731,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
         &lt;span class=&quot;rounded number&quot;&gt;2&lt;/span&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;24 Beauty Products We Can't Live Without&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;24 Beauty Products We Can't Live Without&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -3569,7 +3744,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
         &lt;span class=&quot;rounded number&quot;&gt;3&lt;/span&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;5 Small Ways to Show Compassion&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;5 Small Ways to Show Compassion&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -3582,7 +3757,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
         &lt;span class=&quot;rounded number&quot;&gt;4&lt;/span&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;All-Star Household Cleaners&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;All-Star Household Cleaners&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -3595,7 +3770,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
         &lt;span class=&quot;rounded number&quot;&gt;5&lt;/span&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;They Mean Business: 8 Fall Pices for the Office&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;They Mean Business: 8 Fall Pices for the Office&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -3603,7 +3778,7 @@ p q r s t u v w x y z { | } ~
     &lt;/ol&gt; &lt;!-- /.block-list --&gt;
   &lt;/section&gt; &lt;!-- /.most-shared --&gt;
   &lt;div class=&quot;ad-block ad-sub-offer block&quot;&gt;
-    &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://placehold.it/300x150&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://pagead2.googlesyndication.com/simgad/15229186113044141373&quot;&gt;&lt;/a&gt;
   &lt;/div&gt; &lt;!-- /.ad-300x250 --&gt;
   &lt;section class=&quot;section from-partners&quot;&gt;
     &lt;header class=&quot;s-header&quot;&gt;
@@ -3633,7 +3808,7 @@ p q r s t u v w x y z { | } ~
     &lt;/ul&gt; &lt;!-- /.ul --&gt;
   &lt;/section&gt; &lt;!-- /.from-partners --&gt;
   &lt;div class=&quot;ad-block ad-300x250 block&quot;&gt;
-    &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://placehold.it/300x250&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://pagead2.googlesyndication.com/simgad/8242591116261255559&quot;&gt;&lt;/a&gt;
   &lt;/div&gt; &lt;!-- /.ad-300x250 --&gt;
 &lt;/aside&gt; &lt;!-- /.sidebar --&gt;
 
@@ -3781,13 +3956,6 @@ p q r s t u v w x y z { | } ~
 		</form>		<ul class="comment-list">
 				<li class="comment-container">
 					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/any/grayscale" alt="Avatar" />						<h4 class="comment-name"><a href="#">Freyr Hines</a></h4>
-					</div>
-					<div class="comment-text">
-						<p>Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.</p>
-					</div>
-				</li>				<li class="comment-container">
-					<div class="comment-meta">
 		<img src="http://placeimg.com/100/100/arch" alt="Avatar" />						<h4 class="comment-name"><a href="#">Fergus Althuis</a></h4>
 					</div>
 					<div class="comment-text">
@@ -3795,24 +3963,31 @@ p q r s t u v w x y z { | } ~
 					</div>
 				</li>				<li class="comment-container">
 					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/any" alt="Avatar" />						<h4 class="comment-name"><a href="#">Bertil Aaij</a></h4>
+		<img src="http://placeimg.com/100/100/any/grayscale" alt="Avatar" />						<h4 class="comment-name"><a href="#">Freyr Hines</a></h4>
 					</div>
 					<div class="comment-text">
-						<p>Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people. Like pit bulls. The dog of dogs. Pit bull can be the right man's best friend... or the wrong man's worst enemy. You going to give me a dog for a pet, give me a pit bull.</p>
+						<p>Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.</p>
 					</div>
 				</li>				<li class="comment-container">
 					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/tech/sepia" alt="Avatar" />						<h4 class="comment-name"><a href="#">Matthias Macguinness</a></h4>
+		<img src="http://placeimg.com/100/100/people/sepia" alt="Avatar" />						<h4 class="comment-name"><a href="#">Aquila Achterkamp</a></h4>
 					</div>
 					<div class="comment-text">
-						<p>Sugar plum wafer soufflé ice cream. Wafer topping biscuit pie gummi bears topping. Gummies toffee powder applicake oat cake cookie. Bear claw candy tootsie roll fruitcake danish applicake candy canes macaroon. Liquorice tiramisu danish cotton candy gummies. Tiramisu dessert gummi bears macaroon sweet roll jelly-o gummi bears marzipan.</p>
+						<p>Queso caerphilly cheesecake. Parmesan chalk and cheese port-salut port-salut babybel cottage cheese cheesy grin pepper jack. Croque monsieur paneer st. agur blue cheese emmental airedale monterey jack bavarian bergkase cheese triangles. Halloumi parmesan.</p>
 					</div>
 				</li>				<li class="comment-container">
 					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/animals" alt="Avatar" />						<h4 class="comment-name"><a href="#">Duane Wilms</a></h4>
+		<img src="http://placeimg.com/100/100/any/sepia" alt="Avatar" />						<h4 class="comment-name"><a href="#">Jacobus Sneiders</a></h4>
 					</div>
 					<div class="comment-text">
-						<p>Fanny pack ullamco et veniam semiotics. Shoreditch PBR reprehenderit cliche, magna Tonx aesthetic. Narwhal photo booth DIY aute post-ironic anim. Vice cliche brunch est before they sold out fap, street art Odd Future fashion axe messenger bag nihil Tonx tattooed. Nihil hashtag incididunt, do eu art party Banksy jean shorts four loko typewriter.</p>
+						<p>I find your lack of faith disturbing. A tremor in the Force. The last time I felt it was in the presence of my old master. Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. The plans you refer to will soon be back in our hands.</p>
+					</div>
+				</li>				<li class="comment-container">
+					<div class="comment-meta">
+		<img src="http://placeimg.com/100/100/people/grayscale" alt="Avatar" />						<h4 class="comment-name"><a href="#">Frans Keegan</a></h4>
+					</div>
+					<div class="comment-text">
+						<p>Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.</p>
 					</div>
 				</li>		</ul>
 	</div>
@@ -3860,13 +4035,6 @@ p q r s t u v w x y z { | } ~
 		&lt;/form&gt;		&lt;ul class=&quot;comment-list&quot;&gt;
 				&lt;li class=&quot;comment-container&quot;&gt;
 					&lt;div class=&quot;comment-meta&quot;&gt;
-		&lt;img src=&quot;http://placeimg.com/100/100/any/grayscale&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Freyr Hines&lt;/a&gt;&lt;/h4&gt;
-					&lt;/div&gt;
-					&lt;div class=&quot;comment-text&quot;&gt;
-						&lt;p&gt;Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.&lt;/p&gt;
-					&lt;/div&gt;
-				&lt;/li&gt;				&lt;li class=&quot;comment-container&quot;&gt;
-					&lt;div class=&quot;comment-meta&quot;&gt;
 		&lt;img src=&quot;http://placeimg.com/100/100/arch&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Fergus Althuis&lt;/a&gt;&lt;/h4&gt;
 					&lt;/div&gt;
 					&lt;div class=&quot;comment-text&quot;&gt;
@@ -3874,24 +4042,31 @@ p q r s t u v w x y z { | } ~
 					&lt;/div&gt;
 				&lt;/li&gt;				&lt;li class=&quot;comment-container&quot;&gt;
 					&lt;div class=&quot;comment-meta&quot;&gt;
-		&lt;img src=&quot;http://placeimg.com/100/100/any&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Bertil Aaij&lt;/a&gt;&lt;/h4&gt;
+		&lt;img src=&quot;http://placeimg.com/100/100/any/grayscale&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Freyr Hines&lt;/a&gt;&lt;/h4&gt;
 					&lt;/div&gt;
 					&lt;div class=&quot;comment-text&quot;&gt;
-						&lt;p&gt;Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people. Like pit bulls. The dog of dogs. Pit bull can be the right man's best friend... or the wrong man's worst enemy. You going to give me a dog for a pet, give me a pit bull.&lt;/p&gt;
+						&lt;p&gt;Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.&lt;/p&gt;
 					&lt;/div&gt;
 				&lt;/li&gt;				&lt;li class=&quot;comment-container&quot;&gt;
 					&lt;div class=&quot;comment-meta&quot;&gt;
-		&lt;img src=&quot;http://placeimg.com/100/100/tech/sepia&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Matthias Macguinness&lt;/a&gt;&lt;/h4&gt;
+		&lt;img src=&quot;http://placeimg.com/100/100/people/sepia&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Aquila Achterkamp&lt;/a&gt;&lt;/h4&gt;
 					&lt;/div&gt;
 					&lt;div class=&quot;comment-text&quot;&gt;
-						&lt;p&gt;Sugar plum wafer souffl&eacute; ice cream. Wafer topping biscuit pie gummi bears topping. Gummies toffee powder applicake oat cake cookie. Bear claw candy tootsie roll fruitcake danish applicake candy canes macaroon. Liquorice tiramisu danish cotton candy gummies. Tiramisu dessert gummi bears macaroon sweet roll jelly-o gummi bears marzipan.&lt;/p&gt;
+						&lt;p&gt;Queso caerphilly cheesecake. Parmesan chalk and cheese port-salut port-salut babybel cottage cheese cheesy grin pepper jack. Croque monsieur paneer st. agur blue cheese emmental airedale monterey jack bavarian bergkase cheese triangles. Halloumi parmesan.&lt;/p&gt;
 					&lt;/div&gt;
 				&lt;/li&gt;				&lt;li class=&quot;comment-container&quot;&gt;
 					&lt;div class=&quot;comment-meta&quot;&gt;
-		&lt;img src=&quot;http://placeimg.com/100/100/animals&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Duane Wilms&lt;/a&gt;&lt;/h4&gt;
+		&lt;img src=&quot;http://placeimg.com/100/100/any/sepia&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Jacobus Sneiders&lt;/a&gt;&lt;/h4&gt;
 					&lt;/div&gt;
 					&lt;div class=&quot;comment-text&quot;&gt;
-						&lt;p&gt;Fanny pack ullamco et veniam semiotics. Shoreditch PBR reprehenderit cliche, magna Tonx aesthetic. Narwhal photo booth DIY aute post-ironic anim. Vice cliche brunch est before they sold out fap, street art Odd Future fashion axe messenger bag nihil Tonx tattooed. Nihil hashtag incididunt, do eu art party Banksy jean shorts four loko typewriter.&lt;/p&gt;
+						&lt;p&gt;I find your lack of faith disturbing. A tremor in the Force. The last time I felt it was in the presence of my old master. Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. The plans you refer to will soon be back in our hands.&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;				&lt;li class=&quot;comment-container&quot;&gt;
+					&lt;div class=&quot;comment-meta&quot;&gt;
+		&lt;img src=&quot;http://placeimg.com/100/100/people/grayscale&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Frans Keegan&lt;/a&gt;&lt;/h4&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;comment-text&quot;&gt;
+						&lt;p&gt;Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.&lt;/p&gt;
 					&lt;/div&gt;
 				&lt;/li&gt;		&lt;/ul&gt;
 	&lt;/div&gt;
@@ -3921,7 +4096,7 @@ p q r s t u v w x y z { | } ~
 </div>
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
-			<h2 class="b-title"><span>Reader's Top 20 Recipes</span></h2>
+			<h3 class="b-title"><span>Reader's Top 20 Recipes</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -3933,7 +4108,7 @@ p q r s t u v w x y z { | } ~
 </div>
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
-			<h2 class="b-title"><span>4 Organized Women Spill Their Secrets</span></h2>
+			<h3 class="b-title"><span>4 Organized Women Spill Their Secrets</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -3945,7 +4120,7 @@ p q r s t u v w x y z { | } ~
 </div>
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
-			<h2 class="b-title"><span>15-Minute Dinner Recipes</span></h2>
+			<h3 class="b-title"><span>15-Minute Dinner Recipes</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -3957,7 +4132,7 @@ p q r s t u v w x y z { | } ~
 </div>
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
-			<h2 class="b-title"><span>Get Real Simple <br> Only $1.29 and issue</span></h2>
+			<h3 class="b-title"><span>Get Real Simple <br> Only $1.29 and issue</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -3982,7 +4157,7 @@ p q r s t u v w x y z { | } ~
 &lt;/div&gt;
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;Reader's Top 20 Recipes&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;Reader's Top 20 Recipes&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -3994,7 +4169,7 @@ p q r s t u v w x y z { | } ~
 &lt;/div&gt;
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;4 Organized Women Spill Their Secrets&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;4 Organized Women Spill Their Secrets&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -4006,7 +4181,7 @@ p q r s t u v w x y z { | } ~
 &lt;/div&gt;
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;15-Minute Dinner Recipes&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;15-Minute Dinner Recipes&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -4018,7 +4193,7 @@ p q r s t u v w x y z { | } ~
 &lt;/div&gt;
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;Get Real Simple &lt;br&gt; Only $1.29 and issue&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;Get Real Simple &lt;br&gt; Only $1.29 and issue&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -4045,7 +4220,7 @@ p q r s t u v w x y z { | } ~
 </div>
 	  		</div> <!-- /.b-thumb -->
 	  		<div class="b-text">
-	  			<h2 class="b-title"><span>6 Smart Hairstyling Tools</span></h2>
+	  			<h3 class="b-title"><span>6 Smart Hairstyling Tools</span></h3>
 	  		</div> <!-- /.b-text -->
 	  	</a> <!-- /.b-inner -->
 	  </div> <!-- /.block-thumb -->
@@ -4070,7 +4245,7 @@ p q r s t u v w x y z { | } ~
 &lt;/div&gt;
 	  		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 	  		&lt;div class=&quot;b-text&quot;&gt;
-	  			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;6 Smart Hairstyling Tools&lt;/span&gt;&lt;/h2&gt;
+	  			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;6 Smart Hairstyling Tools&lt;/span&gt;&lt;/h3&gt;
 	  		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	  	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 	  &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -4097,7 +4272,7 @@ p q r s t u v w x y z { | } ~
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
         <span class="rounded number">1</span>
-			<h2 class="b-title"><span>11 Apple Pie-Inspired Recipes That Almost Beat the Real Thing</span></h2>
+			<h3 class="b-title"><span>11 Apple Pie-Inspired Recipes That Almost Beat the Real Thing</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -4110,7 +4285,7 @@ p q r s t u v w x y z { | } ~
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
         <span class="rounded number">2</span>
-			<h2 class="b-title"><span>24 Beauty Products We Can't Live Without</span></h2>
+			<h3 class="b-title"><span>24 Beauty Products We Can't Live Without</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -4123,7 +4298,7 @@ p q r s t u v w x y z { | } ~
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
         <span class="rounded number">3</span>
-			<h2 class="b-title"><span>5 Small Ways to Show Compassion</span></h2>
+			<h3 class="b-title"><span>5 Small Ways to Show Compassion</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -4136,7 +4311,7 @@ p q r s t u v w x y z { | } ~
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
         <span class="rounded number">4</span>
-			<h2 class="b-title"><span>All-Star Household Cleaners</span></h2>
+			<h3 class="b-title"><span>All-Star Household Cleaners</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -4149,7 +4324,7 @@ p q r s t u v w x y z { | } ~
 		</div> <!-- /.b-thumb -->
 		<div class="b-text">
         <span class="rounded number">5</span>
-			<h2 class="b-title"><span>They Mean Business: 8 Fall Pices for the Office</span></h2>
+			<h3 class="b-title"><span>They Mean Business: 8 Fall Pices for the Office</span></h3>
 		</div> <!-- /.b-text -->
 	</a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -4178,7 +4353,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
         &lt;span class=&quot;rounded number&quot;&gt;1&lt;/span&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;11 Apple Pie-Inspired Recipes That Almost Beat the Real Thing&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;11 Apple Pie-Inspired Recipes That Almost Beat the Real Thing&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -4191,7 +4366,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
         &lt;span class=&quot;rounded number&quot;&gt;2&lt;/span&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;24 Beauty Products We Can't Live Without&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;24 Beauty Products We Can't Live Without&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -4204,7 +4379,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
         &lt;span class=&quot;rounded number&quot;&gt;3&lt;/span&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;5 Small Ways to Show Compassion&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;5 Small Ways to Show Compassion&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -4217,7 +4392,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
         &lt;span class=&quot;rounded number&quot;&gt;4&lt;/span&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;All-Star Household Cleaners&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;All-Star Household Cleaners&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;
@@ -4230,7 +4405,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
 		&lt;div class=&quot;b-text&quot;&gt;
         &lt;span class=&quot;rounded number&quot;&gt;5&lt;/span&gt;
-			&lt;h2 class=&quot;b-title&quot;&gt;&lt;span&gt;They Mean Business: 8 Fall Pices for the Office&lt;/span&gt;&lt;/h2&gt;
+			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;They Mean Business: 8 Fall Pices for the Office&lt;/span&gt;&lt;/h3&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;

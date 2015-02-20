@@ -1,28 +1,85 @@
-<div class="page" id="page">
+<div class="page">
 	{{> organisms-header }}
-	<div class="main cf lc" role="main">
-		<div class="primary">
-			<div class="primary-inner">
+	<div class="main cf lc" role="main" aria-live="polite">
 
-				<section class="section gallery">
-					<header class="content-header cf">
-						{{# image-list-head }}
+		<div class="primary">
+			<section class="primary-inner">
+				<article class="article article-image-list" itemscope itemtype="http://schema.org/Article">
+
+					{{# image-list-head }}
+						<header class="article-header cf">
 							{{> molecules-kicker }}
-							<h1 class="lead-headline">{{ title }}</h1>
-							<div class="content-tools">
+							<h1 class="lead-headline" itemprop="headline">{{ title }}</h1>
+							<h2 class="lead-subtitle" itemprop="alternativeHeadline">{{ subtitle }}</h2>
+							<div class="article-meta">
+								{{> molecules-byline }}
+								{{> atoms-time }}
+							</div> <!-- /.article-details -->
+							<div class="article-tools">
 								{{> molecules-social-share }}
 								{{> molecules-content-utility }}
-							</div> <!-- /.content-tools -->
-						</header> <!-- /.content-header -->
+							</div> <!-- /.article-tools -->
+						</header> <!-- /.article-header -->
 					{{/ image-list-head }}
-				</section> <!-- /.gallery -->
 
+					<div class="ad-block ad-300x250 block center hide-med hide-large hide-larger">
+					  <a href=""><img src="http://s1.2mdn.net/viewad/4579100/300x250_Brand_Banner.jpg"></a>
+					</div> <!-- /.ad-300x250 -->
+
+					<section class="section article-body" itemprop="articleBody">
+						<div class="listicle bright-orange">
+							{{# listicle-items-1 }}
+								{{> molecules-block-listicle-item }}
+								<hr>
+							{{/ listicle-items-1 }}
+
+							<div class="ad-blocks ad-responsive ad-instream">
+							  <div class="ad-block ad-300x250 hide-larger"><a href=""><img src="http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg"></a></div>
+							  <div class="ad-block ad-728x90 hide-large hide-med hide-small"><a href=""><img src="http://s1.2mdn.net/viewad/3340030/clx_clb_e40024_value-oxi_rev_728x90.jpg"></a></div>
+							</div> <!-- /.ad-responsive -->
+
+							<hr>
+
+							{{# listicle-items-2 }}
+								{{> molecules-block-listicle-item }}
+								<hr>
+							{{/ listicle-items-2 }}
+
+							<div class="ad-blocks ad-responsive ad-instream">
+							  <div class="ad-block ad-300x250 hide-larger"><a href=""><img src="http://pagead2.googlesyndication.com/simgad/12306033109011099436"></a></div>
+							  <div class="ad-block ad-728x90 hide-large hide-med hide-small"><a href=""><img src="http://a.adroll.com/a/2R6/Q6H/2R6Q6H2CKNDZNDBVZHJZAT.jpg"></a></div>
+							</div> <!-- /.ad-responsive -->
+
+							<hr>
+
+							{{# listicle-items-3 }}
+								{{> molecules-block-listicle-item }}
+								<hr>
+							{{/ listicle-items-3 }}
+
+							<div class="ad-blocks ad-responsive ad-instream">
+							  <div class="ad-block ad-300x250 hide-larger"><a href=""><img src="https://s1.2mdn.net/viewad/3950987/PayAttention_Backup_300x250.jpg"></a></div>
+							  <div class="ad-block ad-728x90 hide-large hide-med hide-small"><a href=""><img src="https://s1.2mdn.net/viewad/3950987/PayAttention_Backup_728x90.jpg"></a></div>
+							</div> <!-- /.ad-responsive -->
+
+							<hr>
+
+							{{# listicle-items-4 }}
+								{{> molecules-block-listicle-item }}
+							{{/ listicle-items-4 }}
+
+						</div> <!-- /.listicle -->
+					</section> <!-- /.article-body -->
+
+				</article> <!-- /.gallery -->
 				{{!> organisms-follow-footer }}
-			</div> <!-- /.primary-inner -->
+			</section> <!-- /.primary-inner -->
 		</div> <!-- /.primary -->
+
 		<div class="secondary">
     	{{> organisms-sidebar }}
     </div> <!-- /.secondary -->
+
 	</div><!-- /role=main -->
 	{{> organisms-footer }}
 </div> <!-- /.page -->

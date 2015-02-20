@@ -3,5 +3,8 @@
 \*------------------------------------*/
 [role=main] {
 	overflow: hidden;
-  padding-top: $pad-double;
+  padding-top: $pad;
+  @include mq($micro-break) {
+    padding-top: $pad-double;
+  }
 }

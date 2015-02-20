@@ -67,19 +67,22 @@ $GLOBAL CLASSES
 
 // Display Classes
 .hide-small {
-  @media all and (max-width: $px750) {
+  @include mq($medium-break, max) {
     display: none;
   }
 }
-
 .hide-med {
-  @media all and (min-width: $px750) and (max-width: $px1200) {
+  @media all and (min-width: $medium-break) and (max-width: $large-break) {
     display: none;
   }
 }
-
 .hide-large {
-  @media all and (min-width: $px1200) {
+  @media all and (min-width: $large-break) and (max-width: $larger-break) {
+    display: none;
+  }
+}
+.hide-larger {
+  @media all and (min-width: $larger-break) {
     display: none;
   }
 }
@@ -152,4 +155,82 @@ $GLOBAL CLASSES
 // Borders
 .b-btm {
   border-bottom: $border-style;
+}
+
+// Number Colors Palette Classes
+.strong-blue .number--large {
+  color: $strong-blue;
+}
+.soft-red .number--large {
+  color: $soft-red;
+}
+.vivid-red .number--large {
+  color: $vivid-red;
+}
+.bright-orange .number--large {
+  color: $bright-orange;
+}
+.grayish-cyan .number--large {
+  color: $grayish-cyan;
+}
+.dark-gray .number--large {
+  color: $dark-gray;
+}
+
+// Spacing/Padding
+.pad {
+  padding: $pad;
+}
+.space {
+  margin: $space;
+}
+.pad-l-2x {
+  padding-left: $pad-double;
+}
+.pad-r-2x {
+  padding-right: $pad-double;
+}
+.pad-lr {
+  padding: 0 $pad;
+}
+.pad-b {
+  padding-bottom: $pad;
+}
+.pad-b-2x {
+  padding-bottom: $pad-double;
+}
+.space-tb-2x {
+  margin-top: $space-double;
+  margin-bottom: $space-double;
+}
+.space-t-2x-b {
+  margin-top: $pad-double;
+  margin-bottom: $space;
+}
+.space-r {
+  margin-right: $space;
+}
+.space-half-r {
+  margin-right: $space-half;
+}
+.space-and-half-btm {
+  margin-bottom: $space-and-half;
+}
+.space-half-btm {
+  margin-bottom: $space-half;
+}
+.space-btm {
+  margin-bottom: $space;
+}
+.no-space {
+  margin: 0;
+}
+.no-space-btm {
+  margin-bottom: 0;
+}
+.no-space-top {
+  margin-top: 0;
+}
+.no-pad-l {
+  padding-left: 0;
 }

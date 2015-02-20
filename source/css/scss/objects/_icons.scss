@@ -4,21 +4,18 @@
   display: inline-block;
 }
 
-.icon--round {
-  width: rem(20);
-  height: rem(20);
-  border-radius: 50%;
-  display: inline-block;
-  line-height: .8;
-  vertical-align: text-bottom;
-  font-size: rem(16);
-  @include rem(padding, 4);
-  &.icon {
-    background-size: 50%;
+.icon--standard {
+  border: 1px solid $gray-med;
+  background-color: $white;
+  path {
+    shape-rendering: auto;
   }
-  svg {
-    width: rem(12);
-    height: rem(12);
+  &:hover {
+    background-color: $blue;
+    border-color: $blue;
+    path {
+      fill: $white;
+    }
   }
 }
 .no-bg {

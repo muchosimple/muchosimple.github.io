@@ -1,17 +1,25 @@
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
-h1, h2, h3, h4, h5 {
+h1, h3, h4, h5 {
   line-height: 1.1;
   font-weight: 500;
   margin-bottom: 0;
 }
 
 h1, .alpha {
-  font-size: rem(48);
   font-weight: 100;
+  font-size: rem(30);
+  @include mq($micro-break) {
+    font-size: rem(38);
+  }
+  @include mq($small-break) {
+    font-size: rem(44);
+  }
 }
 
 h2, .beta {
+  font-size: rem(24);
+  line-height: 1.2;
 }
 
 h3, .gamma {

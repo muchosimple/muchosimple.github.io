@@ -3,9 +3,15 @@ p {
 	margin-bottom: $space;
   color: $gray-dark-2;
   font-family: $serif;
+  font-size: rem(17);
+  @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+    font-size: rem(18);
+  }
   a {
-    text-decoration: underline;
-    color: $blue;
+    color: $blue-light;
+  }
+  a:hover {
+    @include underline;
   }
 }
 
@@ -18,10 +24,12 @@ blockquote {
 
 /* Horizontal Rule */
 hr {
-	border: 0;
-  height: 2px;
-  background: $gray-light-2;
-  margin: $space-double 0;
+	height: 1px;
+  border: none;
+  background-color: $gray-light-3;
+  margin-top: $space-double;
+  margin-bottom: $space-double;
+  @include center-block;
 }
 
 abbr {

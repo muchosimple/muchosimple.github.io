@@ -11,7 +11,7 @@ $grid-columns: 12;
 $fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
 $defaultpx: 16; // Browser default px used for media queries
 $rembase: 16; // 16px = 1.00rem
-$max-width: em(1245) !default;
+$max-width: em(1216) !default;
 $inner-max-width: (1044/$fontpx) + 0em;
 $inner-max-small: (900/$defaultpx) + 0em;
 
@@ -60,12 +60,20 @@ $pinterest-red: #FF423E;
 $youtube-red: #b31217;
 $google-red: $youtube-red;
 
+// Numbers Color Palette
+$strong-blue: #0074cb;
+$soft-red: #f04e74;
+$vivid-red: #e31e30;
+$bright-orange: #f68c3d;
+$grayish-cyan: #97a8a5;
+$dark-gray: #252525;
+
 // Typography
-$font: "Brown Pro", "Helvetica", "Arial", sans-serif;
-$font-secondary: "marr-sans-real-simple", "Helvetica", "Arial", sans-serif;
+$font: "Brown Pro", "Verdana", "Arial", sans-serif;
+$font-secondary: "marr-sans-real-simple", "Arial", "Helvetica" sans-serif;
 $sans: "Helvetica", "Arial", sans-serif;
 $serif: Georgia, Times, "Times New Roman", serif;
-$monospace: Menlo, Monaco, 'Courier New', 'Courier', monospace;
+$monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
 
 $font-size-small: 0.75em;
 $font-size-small-2: 0.875em;
@@ -142,7 +150,7 @@ $px1500: (1500/$defaultpx) + 0em;
 $px-max: $max-width;
 $px-max-plus: (1400/$defaultpx) + 0em;
 
-// Common Breakpoints
+// Common RS Breakpoints
 $larger-break: (1206/$defaultpx) + 0em;
 $large-break: (1024/$defaultpx) + 0em; // Tablet Landscape, Desktop
 $medium-break: $px801; // Tablet Portrait
