@@ -41,8 +41,8 @@
 	border: rem(1.5) solid $gray-med;
 	background-color: $white;
 	color: $black;
-	line-height: 1;
-	padding: $pad-half;
+	line-height: 1.29;
+	padding: rem(7) $pad-half;
 	text-transform: uppercase;
 	font-size: rem(12);
 	font-weight: bold;

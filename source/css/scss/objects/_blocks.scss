@@ -182,9 +182,10 @@ a.b-inner:hover {
     margin-bottom: $space-half;
     display: table-cell;
     vertical-align: middle;
-    padding-bottom: $pad-half;
+    padding-top: rem(4);
     @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
       margin-bottom: rem(4);
+      padding-top: 0;
       padding-bottom: 0;
       display: block;
       width: 32%;
