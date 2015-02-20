@@ -42,11 +42,11 @@
 	background-color: $white;
 	color: $black;
 	line-height: 1.29;
-	padding: rem(7) $pad-half;
+	padding: rem(7) $pad-half rem(6);
 	text-transform: uppercase;
 	font-size: rem(12);
 	font-weight: bold;
-	height: $icon-medium;
+	//height: $icon-medium;
 	display: inline-block;
 	&:hover {
 	  background-color: $blue;
