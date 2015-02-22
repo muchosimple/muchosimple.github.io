@@ -151,7 +151,7 @@
   $('.js-open-mail').on('click', function(e) {
     e.preventDefault();
     if (!$('.load').html().length) {
-      $('.load').fadeIn().load('/v1/patterns/01-molecules-04-forms-04-email-friend/01-molecules-04-forms-04-email-friend.html .email-friend-wrap', function() {
+      $('.load').show().load('/v1/patterns/01-molecules-04-forms-04-email-friend/01-molecules-04-forms-04-email-friend.html .email-friend-wrap', function() {
           // Make the close functionality available to newly loaded elements.
           closeOverlay();
           // Load reCAPTCHA script
