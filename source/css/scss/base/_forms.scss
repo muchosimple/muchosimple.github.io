@@ -252,6 +252,7 @@ input[type="search"]::-webkit-search-decoration {
   width: rem(290);
   position: absolute;
   left: 50%;
+  top: 20%;
   z-index: 105050;
   margin-left: rem(-145);
   @include mq($micro-break) {
