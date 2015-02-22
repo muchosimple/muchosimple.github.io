@@ -1,5 +1,11 @@
 <div class="img-wrap">
-  {{> atoms-image }}
+  {{# large-image }}
+    <a href="{{ large-image }}" class="enlarge">
+  {{/ large-image }}
+    {{> atoms-image }}
+  {{# large-image }}
+    </a>
+  {{/ large-image }}
   {{# credit }}
     <span class="credit">Photo by {{ credit }}</span>
   {{/ credit }}

@@ -156,6 +156,15 @@ $GLOBAL CLASSES
   z-index: 100005;
 }
 
+// Image lightbox
+.image-lightbox {
+  position: fixed;
+  z-index: 9999;
+  -ms-touch-action: none;
+  touch-action: none;
+  box-shadow: 0 0 20px rgba($black, .4);
+}
+
 // Borders
 .b-btm {
   border-bottom: $border-style;
