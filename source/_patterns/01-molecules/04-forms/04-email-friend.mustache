@@ -1,7 +1,6 @@
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<div class="email-friend">
-	<div class="email-friend-inner">
-		<a href="#close" class="icon icon-x icon--med no-bg js-toggle-parent">{{> atoms-x }}</a>
+<div class="email-friend-wrap">
+	<div class="email-friend">
+		<a href="#close" class="icon icon-x icon--small no-bg js-close">{{> atoms-x }}</a>
 		<form method="post" action="{{ url }}" class="email-friend-form">
 			<fieldset>
 				<header class="form-head">
@@ -34,6 +33,6 @@
 					<a href="" class="lower text--m">Privacy Policy</a>
 				</footer> <!-- /.form-foot -->
 			</fieldset>
-		</form>
-	</div> <!-- /.email-friend-inner -->
-</div> <!-- /.email-friend -->
+		</form> <!-- /.email-friend-form -->
+	</div> <!-- /.email-friend -->
+</div> <!-- /.email-friend-wrap -->

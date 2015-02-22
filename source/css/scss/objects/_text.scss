@@ -132,6 +132,9 @@
 .text {
 	a {
 		color: $blue-light;
+		&:hover {
+			@include underline;
+		}
 	}
 	ul {
 		list-style: disc;

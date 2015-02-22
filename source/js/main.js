@@ -122,20 +122,46 @@
   });
 
   // Focus the main header search on toggle click.
-  $('.search-toggler').on('click', function(){
+  $('.search-toggler').on('click', function() {
     $('.search-form .search-field').focus();
   });
 
   // Remove input after search overlay is closed.
-  $('.search-overlay .close').on('click', function(){
+  $('.search-overlay .close').on('click', function() {
     $('.search-form .search-field').delay(300).queue(function() {
       $(this).val("");
       $(this).dequeue();
     });
   });
 
-  // Smooth scroll to anchor
+  // Anytime the overlay is active, click on it or an element with '.js-close'
+  // to close it.
+  var closeOverlay = function() {
+    $('.js-close, .overlay-active').on('click', function(e) {
+      e.preventDefault();
+      $('.load').fadeOut().empty();
+      $('.overlay').removeClass('overlay-active');
+      console.log("asdf");
+    });
+  };
+  // Init
+  closeOverlay();
 
+  // Load Email a Friend form.
+  $('.js-open-mail').on('click', function(e) {
+    e.preventDefault();
+    if (!$('.load').html().length) {
+      $('.load').fadeIn().load('/v1/patterns/01-molecules-04-forms-04-email-friend/01-molecules-04-forms-04-email-friend.html .email-friend-wrap', function() {
+          // Make the close functionality available to newly loaded elements.
+          closeOverlay();
+          // Load reCAPTCHA script
+          $.getScript('https://www.google.com/recaptcha/api.js');
+        });
+      $('.overlay').addClass('overlay-active');
+    }
+  });
+
+  // Smooth scroll to anchor
   // $('a[href*=#]:not([href=#])').click(function() {
   //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
   //     var target = $(this.hash);

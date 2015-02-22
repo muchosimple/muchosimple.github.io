@@ -45,7 +45,6 @@
 		
 
 		<!-- End Pattern Lab -->
-
 	</head>
 	<body class="body body-body">
 		<div id="fb-root"></div>
@@ -289,10 +288,9 @@
 					<div id="molecules-email-friend" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-forms-04-email-friend/01-molecules-04-forms-04-email-friend.html" class="patternLink" data-patternpartial="molecules-email-friend">Email Friend</a></h2>
 						<div class="sg-pattern-body">
-							<script src='https://www.google.com/recaptcha/api.js'></script>
-<div class="email-friend">
-	<div class="email-friend-inner">
-		<a href="#close" class="icon icon-x icon--med no-bg js-toggle-parent"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500">
+							<div class="email-friend-wrap">
+	<div class="email-friend">
+		<a href="#close" class="icon icon-x icon--small no-bg js-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500">
   <title>Close</title>
   <path d="M643.5 337.2l-44.7-44.7L396 495.3 193.3 292.5l-44.8 44.7L351.3 540 148.5 742.8l44.8 44.7L396 584.8l202.8 202.7 44.7-44.7L440.8 540z"/>
   <!--[if lte IE 8]>
@@ -334,9 +332,9 @@
 					<a href="" class="lower text--m">Privacy Policy</a>
 				</footer> <!-- /.form-foot -->
 			</fieldset>
-		</form>
-	</div> <!-- /.email-friend-inner -->
-</div> <!-- /.email-friend -->
+		</form> <!-- /.email-friend-form -->
+	</div> <!-- /.email-friend -->
+</div> <!-- /.email-friend-wrap -->
 
 							<div class="sg-code" style="display: none">
 									<div class="sg-code-contains">
@@ -346,10 +344,9 @@
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;script src='https://www.google.com/recaptcha/api.js'&gt;&lt;/script&gt;
-&lt;div class=&quot;email-friend&quot;&gt;
-	&lt;div class=&quot;email-friend-inner&quot;&gt;
-		&lt;a href=&quot;#close&quot; class=&quot;icon icon-x icon--med no-bg js-toggle-parent&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;146 290 500 500&quot; enable-background=&quot;new 146 290 500 500&quot;&gt;
+										&lt;div class=&quot;email-friend-wrap&quot;&gt;
+	&lt;div class=&quot;email-friend&quot;&gt;
+		&lt;a href=&quot;#close&quot; class=&quot;icon icon-x icon--small no-bg js-close&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;146 290 500 500&quot; enable-background=&quot;new 146 290 500 500&quot;&gt;
   &lt;title&gt;Close&lt;/title&gt;
   &lt;path d=&quot;M643.5 337.2l-44.7-44.7L396 495.3 193.3 292.5l-44.8 44.7L351.3 540 148.5 742.8l44.8 44.7L396 584.8l202.8 202.7 44.7-44.7L440.8 540z&quot;/&gt;
   &lt;!--[if lte IE 8]&gt;
@@ -391,9 +388,9 @@
 					&lt;a href=&quot;&quot; class=&quot;lower text--m&quot;&gt;Privacy Policy&lt;/a&gt;
 				&lt;/footer&gt; &lt;!-- /.form-foot --&gt;
 			&lt;/fieldset&gt;
-		&lt;/form&gt;
-	&lt;/div&gt; &lt;!-- /.email-friend-inner --&gt;
-&lt;/div&gt; &lt;!-- /.email-friend --&gt;
+		&lt;/form&gt; &lt;!-- /.email-friend-form --&gt;
+	&lt;/div&gt; &lt;!-- /.email-friend --&gt;
+&lt;/div&gt; &lt;!-- /.email-friend-wrap --&gt;
 
 									</code>
 								</pre>
@@ -415,6 +412,7 @@
   <script src="../../js/source/global.js" type="text/javascript"></script>
   <script src="../../js/js-tests.js" type="text/javascript"></script>
 
+  <div class="load"></div>
   <div class="overlay"></div>
 
   <!--DO NOT REMOVE-->
