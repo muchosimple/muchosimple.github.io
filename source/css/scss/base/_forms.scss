@@ -236,7 +236,7 @@ input[type="search"]::-webkit-search-decoration {
 // Email a Friend Form
 .email-friend-wrap {
   position: fixed;
-  z-index: 100010;
+  z-index: 105000;
   width: 100%;
   height: 100%;
   left: 0;
@@ -252,6 +252,7 @@ input[type="search"]::-webkit-search-decoration {
   width: rem(290);
   position: absolute;
   left: 50%;
+  z-index: 105050;
   margin-left: rem(-145);
   @include mq($micro-break) {
     width: rem(350);
