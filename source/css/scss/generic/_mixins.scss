@@ -90,9 +90,10 @@
     #{$property}: $allvalues;
   }
 }
+
 // ============================================================
 //
-// Convert pixels to rems
+// Convert pixels to rems, with IE fallback using $support.
 //
 // Example:
 //
@@ -101,8 +102,14 @@
 // }
 // Assumes $rembase is the font-size of <html>
 // ============================================================
-@function rem($pixels) {
-  @return ($pixels / $rembase) * 1rem;
+$supported: true !default;
+@function rem($pixels, $support: $supported) {
+  @if $support == true {
+    @return ($pixels / $rembase) * 1rem;
+  }
+  @else {
+    @return $pixels + 0px;
+  }
 }
 
 // ============================================================

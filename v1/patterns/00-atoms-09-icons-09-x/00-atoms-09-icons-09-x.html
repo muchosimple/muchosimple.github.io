@@ -21,6 +21,14 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="../../../source/css/style.css?0" media="all" />
 
+		<!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!-->
+			<link rel="stylesheet" href="../../css/style.css?0" media="all" />
+		<!--<![endif]-->
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" type="text/javascript"></script>
+		<![endif]-->
+
 		<link rel="stylesheet" href="http://img5.timeinc.net/hat/css/style.css">
 		<script src="http://img5.timeinc.net/hat/js/time-hat.js"></script>
 
@@ -48,7 +56,15 @@
 		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=185394191650949&version=v2.0";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500"><path d="M643.5 337.2l-44.7-44.7L396 495.3 193.3 292.5l-44.8 44.7L351.3 540 148.5 742.8l44.8 44.7L396 584.8l202.8 202.7 44.7-44.7L440.8 540z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500">
+  <title>Close</title>
+  <path d="M643.5 337.2l-44.7-44.7L396 495.3 193.3 292.5l-44.8 44.7L351.3 540 148.5 742.8l44.8 44.7L396 584.8l202.8 202.7 44.7-44.7L440.8 540z"/>
+  <!--[if lte IE 8]>
+  <foreignObject>
+    <img src="../../images/svg/output/png/x.png" alt="Close" class="no-svg-png">
+  </foreignObject>
+  <![endif]-->
+</svg>
 
   <script src="../../js/source/global.js" type="text/javascript"></script>
   <script src="../../js/js-tests.js" type="text/javascript"></script>
@@ -61,7 +77,7 @@
 		// handle injection of items from PHP
 		var patternPartial = "atoms-x";
 		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"}];
+		var lineageR       = [{"lineagePattern":"molecules-email-friend","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-04-email-friend\/01-molecules-04-forms-04-email-friend.html"},{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

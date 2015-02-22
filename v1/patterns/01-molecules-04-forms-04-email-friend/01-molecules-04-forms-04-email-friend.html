@@ -56,15 +56,54 @@
 		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=185394191650949&version=v2.0";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="175.5 -92.5 500 500" enable-background="new 175.5 -92.5 500 500">
-  <title>Search</title>
-  <path d="M490.1 259.9l-2.8 2.1c-33.2 24.3-74 37.7-115.1 37.7-107.8 0-195.5-87.6-195.5-195.4C176.8 52 197.1 2.9 234-34c37-36.9 86.1-57.2 138.3-57.2 107.7 0 195.4 87.7 195.4 195.5 0 40.8-13.4 81.7-37.7 115l-2.1 2.8 146.4 146.3-37.8 37.8-146.4-146.3zm-118-297.7c-37.9 0-73.5 14.8-100.4 41.7C244.8 30.7 230 66.3 230 104.3c0 78.3 63.7 142 142 142s142-63.7 142-142S450.5-37.8 372.1-37.8z"/>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<div class="email-friend">
+	<div class="email-friend-inner">
+		<a href="#close" class="icon icon-x icon--med no-bg js-toggle-parent"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500">
+  <title>Close</title>
+  <path d="M643.5 337.2l-44.7-44.7L396 495.3 193.3 292.5l-44.8 44.7L351.3 540 148.5 742.8l44.8 44.7L396 584.8l202.8 202.7 44.7-44.7L440.8 540z"/>
   <!--[if lte IE 8]>
   <foreignObject>
-    <img src="../../images/svg/output/png/magnifying-glass.png" alt="Search" class="no-svg-png">
+    <img src="../../images/svg/output/png/x.png" alt="Close" class="no-svg-png">
   </foreignObject>
   <![endif]-->
 </svg>
+</a>
+		<form method="post" action="#" class="email-friend-form">
+			<fieldset>
+				<header class="form-head">
+					<legend class="form-title gamma upper">Email a Friend</legend>
+					<p class="text--m">Email "10 Delicious Recipes for Leftover Wine | Real Simple" will be e-mailed to the address(es) below.</p>
+				</header> <!-- /.form-head -->
+				<div class="field-container field-recipients-email">
+					<label class="is-vishidden" for="recipients-email">Recipient's Email</label>
+					<input id="recipients-email" type="text" placeholder="Recipient's Email (required)" />
+					<span class="field-desc">You can enter multiple e-mail(s), separated by a comma (maximum of 5)</span>
+				</div> <!-- /.field-recipients-email -->
+				<div class="field-container field-your-email">
+					<label class="is-vishidden" for="your-email">Your Email</label>
+					<input id="your-email" type="text" placeholder="Your Email (required)" />
+				</div> <!-- /.field-your-email -->
+				<div class="field-container field-first-name">
+					<label class="is-vishidden" for="your-first-name">Your first name</label>
+					<input id="your-first-name" type="text" placeholder="Your first name (required)" />
+				</div> <!-- /.field-first-name -->
+				<div class="field-container field-message">
+					<label for="message-field">Add a message <span>(500 character limit)</span></label>
+					<textarea id="message-field" rows="5" placeholder="Write your message here"></textarea>
+				</div> <!-- /.field-message -->
+				<div class="field-container field-recaptcha">
+					<label for="message-field">Are you human? <span>(required)</span></label>
+					<div class="g-recaptcha" data-sitekey="6LcxdwITAAAAADonTKwaAqfeJcTZ0uwE8Jhcl4YH"></div>
+				</div> <!-- /.field-recaptcha -->
+				<footer class="form-foot text">
+					<button class="btn">Send</button>
+					<a href="" class="lower text--m">Privacy Policy</a>
+				</footer> <!-- /.form-foot -->
+			</fieldset>
+		</form>
+	</div> <!-- /.email-friend-inner -->
+</div> <!-- /.email-friend -->
 
   <script src="../../js/source/global.js" type="text/javascript"></script>
   <script src="../../js/js-tests.js" type="text/javascript"></script>
@@ -75,9 +114,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "atoms-magnifying-glass";
-		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"molecules-search","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-00-search\/01-molecules-04-forms-00-search.html"},{"lineagePattern":"molecules-search-secondary","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-03-search-secondary\/01-molecules-04-forms-03-search-secondary.html"}];
+		var patternPartial = "molecules-email-friend";
+		var lineage        = [{"lineagePattern":"atoms-x","lineagePath":"..\/..\/patterns\/00-atoms-09-icons-09-x\/00-atoms-09-icons-09-x.html"}];
+		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

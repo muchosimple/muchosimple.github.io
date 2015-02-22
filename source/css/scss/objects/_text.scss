@@ -97,6 +97,9 @@
 }
 
 // Text Sizing
+.text--m {
+	font-size: rem(14);
+}
 .text--s {
 	font-size: rem(11);
 }
@@ -119,6 +122,10 @@
 // Uppercase Text
 .upper {
   text-transform: uppercase;
+}
+// Lowercase Text
+.lower {
+	text-transform: lowercase;
 }
 
 // Passages of text

@@ -6,6 +6,11 @@ form ol, form ul {
 	margin-left: 0;
 }
 
+legend {
+  margin-bottom: rem(6);
+  font-weight: bold;
+}
+
 fieldset {
 	border: 0;
 	padding: 0;
@@ -14,7 +19,13 @@ fieldset {
 
 label {
 	display: block;
-	padding-bottom: $space-half;
+  font-size: rem(14);
+  font-family: $serif;
+  font-style: italic;
+  margin-bottom: rem(2);
+  span {
+    color: $gray-med;
+  }
 }
 
 button, input, select, textarea {
@@ -25,8 +36,11 @@ button, input, select, textarea {
 
 input, textarea {
 	width: 100%;
-	border: 1px solid $gray;
-	padding: $pad-half 0.65rem;
+	border: 1px solid $gray-med-2;
+	padding: rem(12);
+  font-size: rem(14);
+  font-family: $serif;
+  font-style: italic;
 }
 
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
@@ -65,7 +79,6 @@ input[type="search"]::-webkit-search-decoration {
 	fieldset, .inline-container {
 		position: relative;
 	}
-
 	input[type=submit], button, .btn {
 		font-size: $font-size-small-2;
 		padding: 0.65rem 1.3rem;
@@ -217,4 +230,45 @@ input[type="search"]::-webkit-search-decoration {
   .input-field {
     border: none;
   }
+}
+
+// Email a Friend Form
+.email-friend {
+  background-color: $gray-light-2;
+  max-width: rem(350);
+  padding: rem(20);
+  margin-top: 30px;
+  box-shadow: 0 0 5px rgba($black, .5);
+  @include center-block;
+  .form-foot {
+    text-align: center;
+    .btn {
+      display: block;
+      margin-bottom: $space-half;
+      @include center-block;
+    }
+  }
+}
+.email-friend-inner {
+  position: relative;
+  .icon-x {
+    position: absolute;
+    right: 0;
+    top: 0;
+    path {
+      fill: $black;
+    }
+  }
+}
+.field-desc {
+  color: $gray-med;
+  font-style: italic;
+  font-size: rem(12);
+  font-family: $serif;
+  padding: rem(6);
+  padding-bottom: 0;
+  display: block;
+}
+.field-recaptcha {
+  margin-bottom: rem(22);
 }
