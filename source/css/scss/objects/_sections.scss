@@ -5,7 +5,6 @@
 
 .s-title {
   padding-bottom: rem(6);
-  border-bottom: $border-style-light;
   margin-bottom: rem(16);
   text-align: center;
 }
@@ -47,12 +46,72 @@
     padding-left: rem(50);
     position: relative;
   }
-  .b-text {
-
-  }
   .number {
     position: absolute;
     left: 0;
+  }
+}
+
+// You Might Like / You May Also Like (Outbrain)
+.you-might-like,
+.you-may-also-like {
+  .OUTBRAIN {
+    max-width: rem(350);
+    @include center-block;
+    @include mq($px650) {
+      max-width: rem(270);
+    }
+  }
+  .ob_org_header {
+    display: none;
+  }
+  .ob-tcolor {
+    color: $black;
+  }
+  .ob-lcolor {
+    color: $gray-med;
+  }
+  .item-link-container {
+    float: none;
+    width: 48.5%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: $space-half;
+    &:nth-of-type(odd) {
+      margin-right: 1.25%;
+    }
+  }
+  .SB_2 .strip-img {
+    width: 100%;
+    height: auto;
+  }
+  .SB_2 .item-container {
+    height: auto;
+  }
+  .SB_2 .ob-rec-link-img {
+    float: none;
+    margin-bottom: rem(4);
+    max-height: rem(90);
+    overflow: hidden;
+    position: relative;
+  }
+  .SB_2 .item-container-ad .paid-distribution {
+    top: rem(73);
+  }
+  .SB_2 .ob-text-content {
+    padding-left: 0;
+  }
+  .SB_2 .strip-rec-link-title {
+    @extend .delta;
+    margin-bottom: rem(2);
+  }
+  .SB_2 .strip-rec-link-source {
+    font-family: $sans;
+    font-size: rem(11);
+    line-height: 1;
+  }
+  .SB_2 .ob_what {
+    padding: 0;
   }
 }
 

@@ -1,11 +1,35 @@
 .sidebar {
-	max-width: rem($sidebar-width);
   @include center-block;
 	> .block,
 	> .section {
-		margin-bottom: rem(42);
+		margin-bottom: $space-and-half;
+    padding-bottom: $pad-and-half;
+    border-bottom: $border-style-light;
+    &:last-child {
+      border-bottom: none;
+    }
 	}
   @include mq($medium-break) {
     float: right;
+  }
+  @include mq($px650, max) {
+    max-width: rem(450);
+    @include center-block;
+  }
+  @media (min-width: $px650) and (max-width: $medium-break) {
+    > .section {
+      width: rem($sidebar-width);
+    }
+    .daily-finds,
+    .most-shared {
+      float: left;
+      clear: left;
+    }
+    .you-might-like,
+    .ad-sub-offer,
+    .you-may-also-like,
+    .ad-300x250 {
+      float: right;
+    }
   }
 }

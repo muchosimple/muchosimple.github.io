@@ -95,6 +95,9 @@
 .t-serif {
 	font-family: $serif;
 }
+.t-sans {
+	font-family: $sans;
+}
 
 // Text Sizing
 .text--m {
@@ -105,6 +108,10 @@
 }
 .text--tiny {
 	font-size: rem(9);
+}
+
+.light {
+	color: $gray-med;
 }
 
 // Photo Credit

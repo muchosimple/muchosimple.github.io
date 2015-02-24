@@ -1,7 +1,6 @@
 .bottom {
 	margin-bottom: $space;
   padding-bottom: $pad;
-  border-bottom: $border-style-light;
 }
 
 .inline-list {
@@ -23,9 +22,12 @@
 // Block List
 .block-list {
 	> li {
-		@extend .bottom;
+		margin-bottom: $space;
+    padding-bottom: $pad;
 		&:last-child {
 			margin-bottom: 0;
+      border-bottom: none;
+      padding-bottom: 0;
 		}
 	}
 }

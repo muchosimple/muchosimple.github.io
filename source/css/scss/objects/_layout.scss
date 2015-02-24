@@ -73,10 +73,11 @@
 	}
 }
 .secondary {
-	width: rem($sidebar-width);
+	max-width: rem(650);
 	@include center-block;
 	@include mq($medium-break) {
 		float: right;
+		width: rem($sidebar-width);
 	}
 }
 
