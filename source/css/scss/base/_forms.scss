@@ -242,6 +242,7 @@ input[type="search"]::-webkit-search-decoration {
   left: 0;
   top: 0;
   overflow: auto;
+  display: none;
 }
 .email-friend {
   background-color: $gray-light-2;
