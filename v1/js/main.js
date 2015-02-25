@@ -166,30 +166,6 @@
     selector: 'class="image-lightbox"'
   });
 
-  // Sticky header
-  $('.header-inner').stick_in_parent({
-    parent: 'body',
-    sticky_class: 'sticky-is-active',
-    offset_top: '-.5'
-  });
-
-  $('.header-inner').stick_in_parent().on('sticky_kit:stick', function(e) {
-    $('.header').addClass('header-is-sticky');
-  }).on('sticky_kit:unstick', function(e) {
-    $('.header').removeClass('header-is-sticky');
-  });
-
-  // Sticky right rail ad
-  if (getWidth >= 801) {
-    window.onload = function() {
-      $('.ad-sticky').stick_in_parent({
-        parent: '.main',
-        sticky_class: 'sticky-is-active',
-        offset_top: 40,
-        spacer: false
-      });
-    };
-  }
 
   // Smooth scroll to anchor
   // $('a[href*=#]:not([href=#])').click(function() {
