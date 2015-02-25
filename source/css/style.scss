@@ -42,6 +42,12 @@
 
 
 /*------------------------------------*\
+    $VENDOR
+\*------------------------------------*/
+@import "scss/objects/vendor";
+
+
+/*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
 @import "scss/objects/ads";
@@ -56,7 +62,6 @@
 @import "scss/objects/article";
 @import "scss/objects/comments";
 @import "scss/objects/messaging";
-
 @import "scss/base/global-classes";
 
 

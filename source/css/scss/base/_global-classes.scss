@@ -36,6 +36,12 @@ $GLOBAL CLASSES
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+// Inner wrapper for images to adjust off line-height.
+.img-inner {
+  line-height: 0;
+  display: block;
+}
+
 // Floats
 .right {
   float: right;

@@ -3,6 +3,7 @@
 	"bodyClass" : "image-list",
   "image-list-head" : [
     {
+      "has-social-count" : "true",
       "kicker" : "Home",
       "sub-kicker" : "Decorating",
       "title" : "10 DIY Fall Wreaths That Are Way Better Than a Welcome Mat",
@@ -21,11 +22,12 @@
       "b-thumb" : [
         {
           "img": {
-            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/owl-wreath.jpg?itok=47VNQrsj",
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/owl-wreath.jpg",
             "alt": "Lacquer and Linen"
           },
+          "credit" : "Lacquer and Linen",
           "large-image" : "http://assets.skiptomylou.org/wp-content/uploads/2014/09/Burlap-wreath.jpg",
-          "credit" : "Lacquer and Linen"
+          "social-tools" : "true"
         }
       ],
       "hr-class" : "hr--m"
@@ -39,9 +41,11 @@
       "b-thumb" : [
         {
           "img": {
-            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/monogram-wreath.jpg?itok=w39MReG_",
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/monogram-wreath.jpg",
             "alt": "Tidy Mom"
-          }
+          },
+          "large-image" : "http://placehold.it/650/700.jpg",
+          "social-tools" : "true"
         }
       ],
       "hr-class" : "hr--m"
@@ -57,7 +61,9 @@
           "img": {
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/hydrangea-wreath.jpg?itok=Hc4I9-b2",
             "alt": "A Night Owl"
-          }
+          },
+          "large-image" : "http://placehold.it/850/700.jpg",
+          "social-tools" : "true"
         }
       ],
       "hr-class" : "hr--s"
@@ -76,7 +82,8 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/ruffled-wreath.jpg?itok=xmkXmLp0",
             "alt": "Positively Splendid"
           },
-          "credit" : "Positively Splendid"
+          "credit" : "Positively Splendid",
+          "social-tools" : "true"
         }
       ],
       "hr-class" : "hr--m"
@@ -93,7 +100,9 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/ombre-rosette-wreath_0.jpg?itok=2UoT9250",
             "alt": "Flamingo Toes"
           },
-          "credit" : "Flamingo Toes"
+          "credit" : "Flamingo Toes",
+          "large-image" : "http://placehold.it/700/700.jpg",
+          "social-tools" : "true"
         }
       ],
       "hr-class" : "hr--m"
@@ -109,7 +118,8 @@
           "img": {
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/burlap-wreath.jpg?itok=ktpZdjSe",
             "alt": "Craftaholics Anonymous"
-          }
+          },
+          "social-tools" : "true"
         }
       ],
       "hr-class" : "hr--s"
@@ -127,7 +137,8 @@
           "img": {
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/corn-husk-bow-wreath.jpg?itok=iPMY0B-W",
             "alt": "The Cards We Drew"
-          }
+          },
+          "social-tools" : "true"
         }
       ],
       "hr-class" : "hr--m"
@@ -144,7 +155,9 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/straw-wreath_0.jpg?itok=MQTdUgVA",
             "alt": "Echoes of Laughter"
           },
-          "credit" : "Echoes of Laughter"
+          "credit" : "Echoes of Laughter",
+          "large-image" : "http://placehold.it/550/800.jpg",
+          "social-tools" : "true"
         }
       ],
       "hr-class" : "hr--m"
@@ -160,7 +173,9 @@
           "img": {
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/paper-wreath.jpg?itok=elhHaicG",
             "alt": "Make Life Lovely"
-          }
+          },
+          "large-image" : "http://placehold.it/650/800.jpg",
+          "social-tools" : "true"
         }
       ],
       "hr-class" : "hr--s"
@@ -180,7 +195,8 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/mason-jar-wreath.jpg?itok=BEe7zODR",
             "alt": "Tater Tots and Jello"
           },
-          "credit" : "Tater Tots and Jello"
+          "credit" : "Tater Tots and Jello",
+          "social-tools" : "true"
         }
       ]
     }

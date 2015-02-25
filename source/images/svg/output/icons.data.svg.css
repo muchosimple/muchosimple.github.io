@@ -28,7 +28,7 @@
 
 .icon-play { background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2231.7%22%20height%3D%2252.8%22%20viewBox%3D%2247%2078.3%2031.7%2052.8%22%20enable-background%3D%22new%2047%2078.3%2031.7%2052.8%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M47%2078.3l31.7%2026.4L47%20131%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
 
-.icon-plus { background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2238%22%20height%3D%2238%22%20viewBox%3D%2245%2045%2038%2038%22%20enable-background%3D%22new%2045%2045%2038%2038%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M67.4%2060.6V45h-6.8v15.6H45v6.8h15.6V83h6.8V67.4H83v-6.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
+.icon-plus { background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20enable-background%3D%22new%200%200%20500%20500%22%3E%3Cpath%20d%3D%22M271%20229V28h-42v201H28v42h201v201h42V271h201v-42z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
 
 .icon-print { background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20enable-background%3D%22new%200%200%20500%20500%22%3E%3Cpath%20d%3D%22M382%20147V5H117v142H5v265h112v83h265v-83h113V147H382zM356%2032v115H144V32h212zM117%20289v97H32V174h436v212h-86v-97H117zm27%20179V315h212v153H144z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
 

@@ -245,25 +245,34 @@ a.b-inner:hover {
   }
   .b-title {
     @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
-      width: 60%;
+      width: 55%;
     }
     @include mq($large-break) {
+      width: 60%;
+    }
+    @include mq($larger-break) {
       width: 65%;
     }
   }
   .b-text {
     @include mq($micro-break) {
-      width: 60%;
+      width: 55%;
     }
     @include mq($large-break) {
+      width: 60%;
+    }
+    @include mq($larger-break) {
       width: 65%;
     }
   }
   .b-thumb {
     @include mq($micro-break) {
-      width: 40%;
+      width: 45%;
     }
     @include mq($large-break) {
+      width: 40%;
+    }
+    @include mq($larger-break) {
       width: 35%;
     }
   }

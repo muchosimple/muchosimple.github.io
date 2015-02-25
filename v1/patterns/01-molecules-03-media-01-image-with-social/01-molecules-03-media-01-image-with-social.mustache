@@ -1,14 +1,25 @@
 &lt;div class=&quot;img-wrap&quot;&gt;
-  {{# large-image }}
-    &lt;a href=&quot;{{ large-image }}&quot; class=&quot;enlarge&quot;&gt;
-  {{/ large-image }}
-    {{&gt; atoms-image }}
-  {{# large-image }}
-    &lt;/a&gt;
-  {{/ large-image }}
-  {{# social-tools }}
+  &lt;div class=&quot;img-inner&quot;&gt;
+    {{# social-tools }}
+      &lt;div class=&quot;has-social&quot;&gt;
+    {{/ social-tools }}
 
-  {{/ social-tools }}
+    {{&gt; atoms-image }}
+
+    {{# social-tools }}
+      &lt;div class=&quot;img-overlay o-social&quot;&gt;{{&gt; molecules-social-share }}&lt;/div&gt;
+    {{/ social-tools }}
+
+    {{# large-image }}
+      &lt;div class=&quot;img-overlay o-enlarge&quot;&gt;
+        &lt;a href=&quot;{{ large-image }}&quot; class=&quot;enlarge no-bg icon rounded icon--standard icon--medium&quot;&gt;{{&gt; atoms-plus }}&lt;/a&gt;
+      &lt;/div&gt; &lt;!-- /.img-overlay --&gt;
+    {{/ large-image }}
+
+    {{# social-tools }}
+      &lt;/div&gt; &lt;!-- /.has-social --&gt;
+    {{/ social-tools }}
+  &lt;/div&gt; &lt;!-- /.img-inner --&gt;
   {{# credit }}
     &lt;span class=&quot;credit&quot;&gt;Photo by {{ credit }}&lt;/span&gt;
   {{/ credit }}

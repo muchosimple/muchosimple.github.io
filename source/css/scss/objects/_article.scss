@@ -105,5 +105,30 @@
 
 }
 
+// Social Sharing Image Overlay
+.has-social {
+	position: relative;
+	overflow: hidden;
+	&:hover {
+		.img-overlay {
+			bottom: 0;
+		}
+	}
+}
+.img-overlay {
+	position: absolute;
+	bottom: rem(-50);
+	left: 0;
+	z-index: 10;
+	padding: $pad-half;
+	@include transition(bottom, .3s, $cubic-bezier);
+	.social-share {
+		margin: 0;
+	}
+}
+.o-enlarge {
+	left: auto;
+	right: 0;
+}
 
 

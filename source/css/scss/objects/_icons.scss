@@ -8,6 +8,7 @@
   border: 1px solid $gray-med;
   background-color: $white;
   path {
+    fill: $black;
     shape-rendering: auto;
   }
   &:hover {
