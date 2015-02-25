@@ -35,11 +35,6 @@
 // Ads that appear within article list-types
 .ad-instream {
 	position: relative;
-	padding-top: $pad;
-	padding-bottom: $pad;
 	line-height: 0;
-	margin: rem(-45) 0;
-	@include mq($px700) {
-		margin-bottom: -$space-double;
-	}
+  margin-bottom: rem(20);
 }

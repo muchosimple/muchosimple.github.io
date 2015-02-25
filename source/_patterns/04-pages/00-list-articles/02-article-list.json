@@ -14,121 +14,44 @@
   "listicle-items-1" : [
     {
       "number" : "1",
-      "title" : "Autumn Wreath",
-      "dek" : "Raid your craft closet and the store for fun, seasonal add-ons that will make your door the envy of the neighborhood. If you can’t find every item that this blogger uses in her wreath, customize it based on your taste, and your supplies. The feathers, though, are easy to make—they’re just paper.",
-      "cta" : "tutorial at <a href=\"\">Lacquer and Linen</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/owl-wreath.jpg?itok=47VNQrsj",
-        "alt": "Lacquer and Linen"
-      },
-      "large-image" : "http://assets.skiptomylou.org/wp-content/uploads/2014/09/Burlap-wreath.jpg",
-      "credit" : "Lacquer and Linen"
+      "block-class" : "block-article-list-item",
+      "title" : "Before a Stressful Event, Stage a Mental Dress Rehearsal",
+      "dek" : "<p>In surgery, you don’t have the luxury of wondering, What if this doesn’t work? It has to work. That’s why, the night before a big procedure, I run through the entire thing like a movie in my head. I also visualize what I’ll do in the event of major complications—which can make a huge difference. During a recent operation, my team encountered a problem when a hole opened in the vena cava, the largest vein in the body, during the removal of an attached tumor. It’s a terrifying situation: The person could bleed to death in minutes. But I had considered this possibility beforehand. So when the vein ruptured, I knew exactly what to do and quickly restored control. And I’m happy to report, the patient is doing fine.</p><p>Thomas Heffernan is a cancer surgeon in Dallas.</p>",
+      "b-thumb" : [
+        {
+          "img": {
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/0111/airplane-sunset_300.jpg?itok=ypMO-5N0",
+            "alt": "Before a Stressful Event, Stage a Mental Dress Rehearsal"
+          },
+          "credit" : "Getty Images/ Martin Harvey"
+        }
+      ]
     },
     {
       "number" : "2",
-      "title" : "Monogram Wreath",
-      "dek" : "Make your door décor personal this season by painting a wooden letter to attach to your wreath. This crafter went with a fun, polka-dot pattern, and the large letter balances out the flowers and ribbon on the opposite side of the wreath. Get the kids involved with this one—ask them what they want the family colors or pattern to be, then reflect that in the monogram!",
-      "cta" : "tutorial at <a href=\"\">Tidy Mom</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/monogram-wreath.jpg?itok=w39MReG_",
-        "alt": "Tidy Mom"
-      },
-      "credit" : "Tidy Mom"
+      "block-class" : "block-article-list-item block--no-img",
+      "title" : "Address the Most Urgent Need First",
+      "dek" : "<p>During my 21 years as an air-traffic controller, I’ve had a number of unexpected things happen, from a bomb threat to a helicopter pilot telling me that he had lost his engine and needed to land right away. I always remember what a veteran controller once told me: “It’s always going to get crazy—just don’t get flustered by it. Prioritize as you go, and that way you’ll get through the decision-making process.” It’s crucial to discern between a real emergency and something that can wait. For example, a departing flight that cannot get its gear to retract is less critical than an aircraft with smoke in the cockpit. For me, safety trumps efficiency every time.</p><p>Cherie Hitt is a supervisory air-traffic controller at the world’s busiest airport, Hartsfield-Jackson Atlanta International.</p>"
     },
     {
       "number" : "3",
-      "title" : "Hydrangea Wreath",
-      "dek" : "This flowery wreath is deceptively simple—the base itself is just a cardboard floral craft ring. This blogger’s color scheme is particularly fall-friendly, and fake flowers mean that you don’t have to worry about your festive door decoration shriveling up and drying out.",
-      "cta" : "tutorial at <a href=\"\">A Night Owl</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/hydrangea-wreath.jpg?itok=Hc4I9-b2",
-        "alt": "A Night Owl"
-      },
-      "credit" : "A Night Owl"
+      "block-class" : "block-article-list-item block--no-img",
+      "title" : "Listen",
+      "dek" : "<p>You can’t succeed in improv if you go onstage and just start telling jokes. You have to be flexible and pay attention to what people are saying so a scene doesn’t go astray. When you watch talented performers, you can see that they’re committed to the reality that’s being created onstage. In moments when they might not know what to say, they lean on their fellow cast members for more information. Often the group mind is more intelligent than any one given perspective. Yes, even yours.</p><p>Matt Walsh is a cofounder of the Upright Citizens Brigade improv sketch-comedy troupe. He lives in Los Angeles.</p>"
     }
   ],
   "listicle-items-2" : [
     {
       "number" : "4",
-      "title" : "Ruffled Wreath",
-      "dek" : "This picture-perfect wreath is so pretty and feminine—we love the use of buttons and brooches as rosette centers. One caveat: You need a sewing machine for the ruffle effect. If you don’t have one, you can simply wrap the fabric around the wreath base—the color scheme and embellishments are enough to make this wreath look welcoming.",
-      "cta" : "tutorial at <a href=\"\">Positively Splendid</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/ruffled-wreath.jpg?itok=xmkXmLp0",
-        "alt": "Positively Splendid"
-      },
-      "credit" : "Positively Splendid"
+      "block-class" : "block-article-list-item block--no-img",
+      "title" : "Know When to Take a Breather",
+      "dek" : "<p>Sometimes during a performance, a tiger will do something potentially dangerous that’s not in the routine. When that happens, I offer verbal reassurance (“OK, calm down”), almost like you would to a pet or a toddler. If that doesn’t work, I try offering red meat (really). But if a cat becomes threatening, I leave the ring so she can relax, even if that leads to an awkward pause in the show. The idea of “the show must go on” is important in the circus community, but I’ve learned not to let that mantra dictate my behavior.</p><p>Tabayara Maluenda is an exotic-animal trainer with Ringling Bros. and Barnum & Bailey Circus.</p>"
     },
     {
       "number" : "5",
-      "title" : "Ombré Rosette Wreath",
-      "dek" : "It seems like rosette embellishments are a must-have for fall wreaths, and this blogger has a step-by-step guide to making them. Pro tip: She advises ripping the fabric into strips, because the frayed edges add to a more rustic look. For the base, you need a grapevine wreath, which you can purchase at your local craft store (here’s one from <a href=\"\">Michaels</a>).",
-      "cta" : "tutorial at <a href=\"\">Flamingo Toes</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/ombre-rosette-wreath_0.jpg?itok=2UoT9250",
-        "alt": "Flamingo Toes"
-      },
-      "credit" : "Flamingo Toes"
-    },
-    {
-      "number" : "6",
-      "title" : "Burlap Wreath",
-      "dek" : "The best part about this incredibly simple wreath is that the floral embellishments can be changed according to the season—you can attach snowflakes in the winter, or brighter flowers in the spring. This crafter repurposed old hair clips to make the flowers easy to detach.",
-      "cta" : "tutorial at <a href=\"\">Craftaholics Anonymous</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/burlap-wreath.jpg?itok=ktpZdjSe",
-        "alt": "Craftaholics Anonymous"
-      },
-      "credit" : "Craftaholics Anonymous"
-    }
-  ],
-  "listicle-items-3" : [
-    {
-      "number" : "7",
-      "title" : "Cornhusk Bow Wreath",
-      "dek" : "Everyone talks about how to turn pumpkins and gourds into seasonal décor, but what about cornhusks? The deep purple husk is a nice finishing touch to a simple fabric wreath—and would be a pretty, seasonal embellishment on a wreath of any style. You can find cornhusks at craft stores, grocery stores, or even farmers markets.",
-      "cta" : "tutorial at <a href=\"\">The Cards We Drew</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/corn-husk-bow-wreath.jpg?itok=iPMY0B-W",
-        "alt": "The Cards We Drew"
-      },
-      "credit" : "The Cards We Drew"
-    },
-    {
-      "number" : "8",
-      "title" : "Fall Straw Wreath",
-      "dek" : "This straw wreath (you can see it poking through the ribbon!) reminds us of our favorite parts of fall: pumpkin picking and hayrides. The off-center cluster of flowers is eye-catching without being too hectic or distracting, which is perfect for a glass window.",
-      "cta" : "tutorial at <a href=\"\">Echoes of Laughter</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/straw-wreath_0.jpg?itok=MQTdUgVA",
-        "alt": "Echoes of Laughter"
-      },
-      "credit" : "Echoes of Laughter"
-    },
-    {
-      "number" : "9",
-      "title" : "Paper Wreath",
-      "dek" : "Don’t let the look of this project stress you out—the blogger used a scalloped paper punch as a shortcut, although you do have to glue them on individually. The rest of the materials are ones you probably have at home—like paper, a pencil, and a glue gun. Seriously, it’s that simple!",
-      "cta" : "tutorial at <a href=\"\">Make Life Lovely</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/paper-wreath.jpg?itok=elhHaicG",
-        "alt": "Make Life Lovely"
-      },
-      "credit" : "Make Life Lovely"
-    }
-  ],
-  "listicle-items-4" : [
-    {
-      "number" : "10",
-      "number-class" : "double-digit",
-      "title" : "Washi Tape Wreath",
-      "dek" : "Although this bright and colorful wreath is billed for Halloween, you can use different colors or patterns of tape around the lids to make it appropriate all season long. Start stocking up on old jars so that you don’t have to buy them at the store. Neighbors or friends might have old ones lying around!",
-      "cta" : "tutorial at <a href=\"\">Tater Tots and Jello</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/mason-jar-wreath.jpg?itok=BEe7zODR",
-        "alt": "Tater Tots and Jello"
-      },
-      "credit" : "Tater Tots and Jello"
+      "block-class" : "block-article-list-item block--no-img",
+      "title" : "Block Out Anything Unnecessary",
+      "dek" : "<p>Most of my pressure-filled moments come when big news breaks. On these days, there is so much information to consider that you can’t process it all fast enough to react at the speed of the market. Knowing that I have other people as a backup—to give me a market opinion or help out when I get stuck—helps me make confident, truly informed decisions. When the market starts moving really quickly, I’ll call out, “What’s going on?” My trusted team shouts information at me while I continue to trade and make decisions. Sometimes I close my eyes and breathe—just to clear my head of outside distractions. I know how to decipher my colleagues’ tone of voice and the specific words they use in order to make a lightning-quick decision. This is important, because in my line of work, there are no do-overs.</p><p>Doreen Mogavero is the founder and the CEO of—as well as a floor broker for—Mogavero Lee & Co., a boutique brokerage firm in New York City.</p>"
     }
   ]
 }

@@ -135,6 +135,17 @@
 	text-transform: lowercase;
 }
 
+// Horizontal Rules
+.hr--l {
+	margin-bottom: rem(70);
+}
+.hr--m {
+	margin-bottom: rem(50);
+}
+.hr--s {
+	margin-bottom: rem(20);
+}
+
 // Passages of text
 .text {
 	a {

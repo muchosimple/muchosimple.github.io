@@ -49,9 +49,6 @@ a.b-inner:hover {
 	.b-inner {
   	overflow: hidden;
 	}
-	.b-thumb {
-
-	}
   &.table-layout {
     @include table-layout(50%, 50%);
   }
@@ -135,12 +132,10 @@ a.b-inner:hover {
 // Listicle Blocks
 .block-listicle-item {
   position: relative;
-  margin-bottom: $space-double;
-  @include mq($px700) {
-    margin-bottom: rem(35);
-  }
+  margin-bottom: rem(45);
   .b-thumb {
     margin-bottom: rem(10);
+    text-align: center;
     @include mq($micro-break) {
       width: 50%;
       float: right;
@@ -154,9 +149,13 @@ a.b-inner:hover {
       width: 54%;
     }
   }
+  .img-wrap {
+    display: inline-block;
+  }
   .b-head {
     display: table;
     width: 100%;
+    margin-bottom: rem(6);
     @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
       display: inline;
     }
@@ -167,12 +166,13 @@ a.b-inner:hover {
     padding-top: rem(3);
     @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
       float: left;
+      margin-top: rem(10);
     }
     @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
       margin-top: rem(30);
     }
     @include mq($large-break) {
-      margin-top: rem(50);
+      margin-top: rem(40);
     }
     @include mq($larger-break) {
       margin-top: rem(80);
@@ -184,18 +184,22 @@ a.b-inner:hover {
     vertical-align: middle;
     padding-top: rem(4);
     @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+      margin-top: rem(10);
       margin-bottom: rem(4);
       padding-top: 0;
       padding-bottom: 0;
       display: block;
-      width: 32%;
+      width: 50%;
       float: left;
+      margin-right: rem(-100);
+      padding-right: rem(110);
     }
     @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
       margin-top: rem(30);
     }
     @include mq($large-break) {
-      margin-top: rem(50);
+      width: 46%;
+      margin-top: rem(40);
     }
     @include mq($larger-break) {
       margin-top: rem(80);
@@ -207,15 +211,60 @@ a.b-inner:hover {
   }
   .b-text {
     @include mq($micro-break) {
-      padding-right: rem(10);
+      padding-right: $pad;
       width: 50%;
     }
-    @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
-      padding-right: $pad;
-    }
+    // @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+    //   padding-right: $pad;
+    // }
     @include mq($large-break) {
       padding-right: $pad-and-half;
       width: 46%;
+    }
+  }
+  &.block--no-img {
+    .b-title {
+      width: auto;
+      float: none;
+    }
+    .b-text {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+}
+// Blocks of mostly text with some smaller images
+.block-article-list-item {
+  margin-bottom: rem(70);
+  &:last-child {
+    margin-bottom: rem(50);
+  }
+  .b-title,
+  .number--large {
+    margin-top: 0;
+  }
+  .b-title {
+    @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+      width: 60%;
+    }
+    @include mq($large-break) {
+      width: 65%;
+    }
+  }
+  .b-text {
+    @include mq($micro-break) {
+      width: 60%;
+    }
+    @include mq($large-break) {
+      width: 65%;
+    }
+  }
+  .b-thumb {
+    @include mq($micro-break) {
+      width: 40%;
+    }
+    @include mq($large-break) {
+      width: 35%;
     }
   }
 }

@@ -5,7 +5,7 @@
 .lead-headline {
 	margin-bottom: rem(10);
 	@include mq($micro-break) {
-		margin-bottom: $space;
+		margin-bottom: rem(12);
 	}
 }
 .lead-subtitle {
@@ -87,15 +87,12 @@
 }
 
 // Image List Articles (Listicles)
-.article-image-list {
+.article-list-type  {
 	hr {
-		margin-bottom: rem(45);
-		width: 80%;
-		@include mq($px700, max) {
-			margin-top: rem(45);
-		}
+		margin-top: 0;
+		width: 70%;
 		@include mq($large-break) {
-			width: 60%;
+			width: 50%;
 		}
 		// Can't have 2 hr's back to back. This should only happen if an ad doesn't
 		// fill it's slot.
@@ -103,6 +100,9 @@
 			display: none;
 		}
 	}
+}
+.article-image-list {
+
 }
 
 

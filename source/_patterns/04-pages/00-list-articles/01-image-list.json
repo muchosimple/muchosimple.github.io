@@ -15,106 +15,155 @@
     {
       "number" : "1",
       "title" : "Autumn Wreath",
-      "dek" : "Raid your craft closet and the store for fun, seasonal add-ons that will make your door the envy of the neighborhood. If you can’t find every item that this blogger uses in her wreath, customize it based on your taste, and your supplies. The feathers, though, are easy to make—they’re just paper.",
+      "block-class" : "block-image-list-item",
+      "dek" : "<p>Raid your craft closet and the store for fun, seasonal add-ons that will make your door the envy of the neighborhood. If you can’t find every item that this blogger uses in her wreath, customize it based on your taste, and your supplies. The feathers, though, are easy to make—they’re just paper.</p>",
       "cta" : "tutorial at <a href=\"\">Lacquer and Linen</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/owl-wreath.jpg?itok=47VNQrsj",
-        "alt": "Lacquer and Linen"
-      },
-      "large-image" : "http://assets.skiptomylou.org/wp-content/uploads/2014/09/Burlap-wreath.jpg",
-      "credit" : "Lacquer and Linen"
+      "b-thumb" : [
+        {
+          "img": {
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/owl-wreath.jpg?itok=47VNQrsj",
+            "alt": "Lacquer and Linen"
+          },
+          "large-image" : "http://assets.skiptomylou.org/wp-content/uploads/2014/09/Burlap-wreath.jpg",
+          "credit" : "Lacquer and Linen"
+        }
+      ],
+      "hr-class" : "hr--m"
     },
     {
       "number" : "2",
       "title" : "Monogram Wreath",
-      "dek" : "Make your door décor personal this season by painting a wooden letter to attach to your wreath. This crafter went with a fun, polka-dot pattern, and the large letter balances out the flowers and ribbon on the opposite side of the wreath. Get the kids involved with this one—ask them what they want the family colors or pattern to be, then reflect that in the monogram!",
+      "block-class" : "block-image-list-item",
+      "dek" : "<p>Make your door décor personal this season by painting a wooden letter to attach to your wreath. This crafter went with a fun, polka-dot pattern, and the large letter balances out the flowers and ribbon on the opposite side of the wreath. Get the kids involved with this one—ask them what they want the family colors or pattern to be, then reflect that in the monogram!</p>",
       "cta" : "tutorial at <a href=\"\">Tidy Mom</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/monogram-wreath.jpg?itok=w39MReG_",
-        "alt": "Tidy Mom"
-      },
-      "credit" : "Tidy Mom"
+      "b-thumb" : [
+        {
+          "img": {
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/monogram-wreath.jpg?itok=w39MReG_",
+            "alt": "Tidy Mom"
+          }
+        }
+      ],
+      "hr-class" : "hr--m"
     },
     {
       "number" : "3",
       "title" : "Hydrangea Wreath",
-      "dek" : "This flowery wreath is deceptively simple—the base itself is just a cardboard floral craft ring. This blogger’s color scheme is particularly fall-friendly, and fake flowers mean that you don’t have to worry about your festive door decoration shriveling up and drying out.",
+      "block-class" : "block-image-list-item",
+      "dek" : "<p>This flowery wreath is deceptively simple—the base itself is just a cardboard floral craft ring. This blogger’s color scheme is particularly fall-friendly, and fake flowers mean that you don’t have to worry about your festive door decoration shriveling up and drying out.</p>",
       "cta" : "tutorial at <a href=\"\">A Night Owl</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/hydrangea-wreath.jpg?itok=Hc4I9-b2",
-        "alt": "A Night Owl"
-      },
-      "credit" : "A Night Owl"
+      "b-thumb" : [
+        {
+          "img": {
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/hydrangea-wreath.jpg?itok=Hc4I9-b2",
+            "alt": "A Night Owl"
+          }
+        }
+      ],
+      "hr-class" : "hr--s"
     }
   ],
   "listicle-items-2" : [
     {
       "number" : "4",
       "title" : "Ruffled Wreath",
-      "dek" : "This picture-perfect wreath is so pretty and feminine—we love the use of buttons and brooches as rosette centers. One caveat: You need a sewing machine for the ruffle effect. If you don’t have one, you can simply wrap the fabric around the wreath base—the color scheme and embellishments are enough to make this wreath look welcoming.",
+      "block-class" : "block-image-list-item",
+      "dek" : "<p>This picture-perfect wreath is so pretty and feminine—we love the use of buttons and brooches as rosette centers. One caveat: You need a sewing machine for the ruffle effect. If you don’t have one, you can simply wrap the fabric around the wreath base—the color scheme and embellishments are enough to make this wreath look welcoming.</p>",
       "cta" : "tutorial at <a href=\"\">Positively Splendid</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/ruffled-wreath.jpg?itok=xmkXmLp0",
-        "alt": "Positively Splendid"
-      },
-      "credit" : "Positively Splendid"
+      "b-thumb" : [
+        {
+          "img": {
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/ruffled-wreath.jpg?itok=xmkXmLp0",
+            "alt": "Positively Splendid"
+          },
+          "credit" : "Positively Splendid"
+        }
+      ],
+      "hr-class" : "hr--m"
     },
     {
       "number" : "5",
       "title" : "Ombré Rosette Wreath",
-      "dek" : "It seems like rosette embellishments are a must-have for fall wreaths, and this blogger has a step-by-step guide to making them. Pro tip: She advises ripping the fabric into strips, because the frayed edges add to a more rustic look. For the base, you need a grapevine wreath, which you can purchase at your local craft store (here’s one from <a href=\"\">Michaels</a>).",
+      "block-class" : "block-image-list-item",
+      "dek" : "<p>It seems like rosette embellishments are a must-have for fall wreaths, and this blogger has a step-by-step guide to making them. Pro tip: She advises ripping the fabric into strips, because the frayed edges add to a more rustic look. For the base, you need a grapevine wreath, which you can purchase at your local craft store (here’s one from <a href=\"\">Michaels</a>).</p>",
       "cta" : "tutorial at <a href=\"\">Flamingo Toes</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/ombre-rosette-wreath_0.jpg?itok=2UoT9250",
-        "alt": "Flamingo Toes"
-      },
-      "credit" : "Flamingo Toes"
+      "b-thumb" : [
+        {
+          "img": {
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/ombre-rosette-wreath_0.jpg?itok=2UoT9250",
+            "alt": "Flamingo Toes"
+          },
+          "credit" : "Flamingo Toes"
+        }
+      ],
+      "hr-class" : "hr--m"
     },
     {
       "number" : "6",
       "title" : "Burlap Wreath",
-      "dek" : "The best part about this incredibly simple wreath is that the floral embellishments can be changed according to the season—you can attach snowflakes in the winter, or brighter flowers in the spring. This crafter repurposed old hair clips to make the flowers easy to detach.",
-      "cta" : "tutorial at <a href=\"\">Craftaholics Anonymous</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/burlap-wreath.jpg?itok=ktpZdjSe",
-        "alt": "Craftaholics Anonymous"
-      },
-      "credit" : "Craftaholics Anonymous"
+      "block-class" : "block-image-list-item",
+      "dek" : "<p>The best part about this incredibly simple wreath is that the floral embellishments can be changed according to the season—you can attach snowflakes in the winter, or brighter flowers in the spring. This crafter repurposed old hair clips to make the flowers easy to detach.",
+      "cta" : "tutorial at <a href=\"\">Craftaholics Anonymous</a>.</p>",
+      "b-thumb" : [
+        {
+          "img": {
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/burlap-wreath.jpg?itok=ktpZdjSe",
+            "alt": "Craftaholics Anonymous"
+          }
+        }
+      ],
+      "hr-class" : "hr--s"
     }
   ],
   "listicle-items-3" : [
     {
       "number" : "7",
       "title" : "Cornhusk Bow Wreath",
-      "dek" : "Everyone talks about how to turn pumpkins and gourds into seasonal décor, but what about cornhusks? The deep purple husk is a nice finishing touch to a simple fabric wreath—and would be a pretty, seasonal embellishment on a wreath of any style. You can find cornhusks at craft stores, grocery stores, or even farmers markets.",
+      "block-class" : "block-image-list-item",
+      "dek" : "<p>Everyone talks about how to turn pumpkins and gourds into seasonal décor, but what about cornhusks? The deep purple husk is a nice finishing touch to a simple fabric wreath—and would be a pretty, seasonal embellishment on a wreath of any style. You can find cornhusks at craft stores, grocery stores, or even farmers markets.</p>",
       "cta" : "tutorial at <a href=\"\">The Cards We Drew</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/corn-husk-bow-wreath.jpg?itok=iPMY0B-W",
-        "alt": "The Cards We Drew"
-      },
-      "credit" : "The Cards We Drew"
+      "b-thumb" : [
+        {
+          "img": {
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/corn-husk-bow-wreath.jpg?itok=iPMY0B-W",
+            "alt": "The Cards We Drew"
+          }
+        }
+      ],
+      "hr-class" : "hr--m"
     },
     {
       "number" : "8",
       "title" : "Fall Straw Wreath",
-      "dek" : "This straw wreath (you can see it poking through the ribbon!) reminds us of our favorite parts of fall: pumpkin picking and hayrides. The off-center cluster of flowers is eye-catching without being too hectic or distracting, which is perfect for a glass window.",
+      "block-class" : "block-image-list-item",
+      "dek" : "<p>This straw wreath (you can see it poking through the ribbon!) reminds us of our favorite parts of fall: pumpkin picking and hayrides. The off-center cluster of flowers is eye-catching without being too hectic or distracting, which is perfect for a glass window.</p>",
       "cta" : "tutorial at <a href=\"\">Echoes of Laughter</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/straw-wreath_0.jpg?itok=MQTdUgVA",
-        "alt": "Echoes of Laughter"
-      },
-      "credit" : "Echoes of Laughter"
+      "b-thumb" : [
+        {
+          "img": {
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/straw-wreath_0.jpg?itok=MQTdUgVA",
+            "alt": "Echoes of Laughter"
+          },
+          "credit" : "Echoes of Laughter"
+        }
+      ],
+      "hr-class" : "hr--m"
     },
     {
       "number" : "9",
       "title" : "Paper Wreath",
-      "dek" : "Don’t let the look of this project stress you out—the blogger used a scalloped paper punch as a shortcut, although you do have to glue them on individually. The rest of the materials are ones you probably have at home—like paper, a pencil, and a glue gun. Seriously, it’s that simple!",
+      "block-class" : "block-image-list-item",
+      "dek" : "<p>Don’t let the look of this project stress you out—the blogger used a scalloped paper punch as a shortcut, although you do have to glue them on individually. The rest of the materials are ones you probably have at home—like paper, a pencil, and a glue gun. Seriously, it’s that simple!</p>",
       "cta" : "tutorial at <a href=\"\">Make Life Lovely</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/paper-wreath.jpg?itok=elhHaicG",
-        "alt": "Make Life Lovely"
-      },
-      "credit" : "Make Life Lovely"
+      "b-thumb" : [
+        {
+          "img": {
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/paper-wreath.jpg?itok=elhHaicG",
+            "alt": "Make Life Lovely"
+          }
+        }
+      ],
+      "hr-class" : "hr--s"
     }
   ],
   "listicle-items-4" : [
@@ -122,13 +171,18 @@
       "number" : "10",
       "number-class" : "double-digit",
       "title" : "Washi Tape Wreath",
-      "dek" : "Although this bright and colorful wreath is billed for Halloween, you can use different colors or patterns of tape around the lids to make it appropriate all season long. Start stocking up on old jars so that you don’t have to buy them at the store. Neighbors or friends might have old ones lying around!",
+      "block-class" : "block-image-list-item",
+      "dek" : "<p>Although this bright and colorful wreath is billed for Halloween, you can use different colors or patterns of tape around the lids to make it appropriate all season long. Start stocking up on old jars so that you don’t have to buy them at the store. Neighbors or friends might have old ones lying around!</p>",
       "cta" : "tutorial at <a href=\"\">Tater Tots and Jello</a>.",
-      "img": {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/mason-jar-wreath.jpg?itok=BEe7zODR",
-        "alt": "Tater Tots and Jello"
-      },
-      "credit" : "Tater Tots and Jello"
+      "b-thumb" : [
+        {
+          "img": {
+            "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/mason-jar-wreath.jpg?itok=BEe7zODR",
+            "alt": "Tater Tots and Jello"
+          },
+          "credit" : "Tater Tots and Jello"
+        }
+      ]
     }
   ]
 }

@@ -2,15 +2,19 @@
 	<div class="b-inner cf">
     <div class="b-head">
       <span class="listicle-number number--large {{ number-class }}">{{ number }}</span>
-		  <h2 class="b-title">{{{ title }}}</h2>
+      <h2 class="b-title">{{{ title }}}</h2>
     </div> <!-- /.b-head -->
-    <div class="b-thumb">
-      {{> molecules-image-with-caption }}
-    </div> <!-- /.b-thumb -->
+    {{# b-thumb }}
+      <div class="b-thumb">
+        {{> molecules-image-with-caption }}
+      </div> <!-- /.b-thumb -->
+    {{/ b-thumb }}
     <div class="b-text">
       <div class="dek text">
-        <p>{{{ dek }}}</p>
-        <p>Get the {{{ cta }}}</p>
+        {{{ dek }}}
+        {{# cta }}
+          <p>Get the {{{ cta }}}</p>
+        {{/ cta }}
       </div> <!-- /.dek -->
 		</div> <!-- /.b-text -->
 	</div> <!-- /.b-inner -->

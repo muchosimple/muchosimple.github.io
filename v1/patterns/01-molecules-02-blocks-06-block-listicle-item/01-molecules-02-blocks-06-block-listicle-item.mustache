@@ -2,15 +2,19 @@
 	&lt;div class=&quot;b-inner cf&quot;&gt;
     &lt;div class=&quot;b-head&quot;&gt;
       &lt;span class=&quot;listicle-number number--large {{ number-class }}&quot;&gt;{{ number }}&lt;/span&gt;
-		  &lt;h2 class=&quot;b-title&quot;&gt;{{{ title }}}&lt;/h2&gt;
+      &lt;h2 class=&quot;b-title&quot;&gt;{{{ title }}}&lt;/h2&gt;
     &lt;/div&gt; &lt;!-- /.b-head --&gt;
-    &lt;div class=&quot;b-thumb&quot;&gt;
-      {{&gt; molecules-image-with-caption }}
-    &lt;/div&gt; &lt;!-- /.b-thumb --&gt;
+    {{# b-thumb }}
+      &lt;div class=&quot;b-thumb&quot;&gt;
+        {{&gt; molecules-image-with-caption }}
+      &lt;/div&gt; &lt;!-- /.b-thumb --&gt;
+    {{/ b-thumb }}
     &lt;div class=&quot;b-text&quot;&gt;
       &lt;div class=&quot;dek text&quot;&gt;
-        &lt;p&gt;{{{ dek }}}&lt;/p&gt;
-        &lt;p&gt;Get the {{{ cta }}}&lt;/p&gt;
+        {{{ dek }}}
+        {{# cta }}
+          &lt;p&gt;Get the {{{ cta }}}&lt;/p&gt;
+        {{/ cta }}
       &lt;/div&gt; &lt;!-- /.dek --&gt;
 		&lt;/div&gt; &lt;!-- /.b-text --&gt;
 	&lt;/div&gt; &lt;!-- /.b-inner --&gt;

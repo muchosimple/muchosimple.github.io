@@ -49,7 +49,9 @@
 // Fluid left content column with static right rail
 .primary {
 	width: 100%;
-	margin-bottom: rem(60);
+	margin-bottom: rem(40);
+	padding-bottom: rem(30);
+	border-bottom: $border-style-light;
 	@include mq($medium-break) {
 		float: left;
 		margin-right: rem(-$sidebar-width - 50);
