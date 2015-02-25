@@ -52,7 +52,7 @@
   }
 }
 
-// You Might Like / You May Also Like (Outbrain)
+// You Might Like (Outbrain)
 .you-might-like,
 .you-may-also-like {
   .OUTBRAIN {
@@ -79,6 +79,11 @@
     margin-bottom: $space-half;
     &:nth-of-type(odd) {
       margin-right: 1.25%;
+    }
+    &:hover {
+      .strip-rec-link-title {
+        color: $pink;
+      }
     }
   }
   .SB_2 .strip-img {
@@ -112,6 +117,36 @@
   }
   .SB_2 .ob_what {
     padding: 0;
+  }
+}
+
+// You May Also Like (Zergnet 3rd Party code. Hence the !importants)
+// Wrapping it all in .you-may-also-like for the extra specificity.
+.you-may-also-like {
+  #zerglayout {
+    margin-bottom: rem(-12) !important;
+  }
+  #zergnet-widget-29000 .zergheadline a {
+    font-family: $font !important;
+    font-weight: normal !important;
+    font-size: rem(16) !important;
+  }
+  #zergnet-widget-29000 .zergentity {
+    margin-top: 0 !important;
+    margin-bottom: $space !important;
+  }
+  #zergnet-widget-29000 .zergentity:nth-of-type(1) {
+    margin-left: rem(12) !important;
+    margin-right: rem(4) !important;
+  }
+  #zergnet-widget-29000 .zergentity:nth-of-type(2) {
+    margin-left: rem(6) !important;
+    margin-right: rem(9) !important;
+  }
+  .zergentity:hover {
+    a {
+      color: $pink !important;
+    }
   }
 }
 
