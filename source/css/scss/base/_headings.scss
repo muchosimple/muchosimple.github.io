@@ -9,6 +9,7 @@ h1, h3, h4, h5 {
 h1, .alpha {
   font-weight: 100;
   font-size: rem(30);
+  letter-spacing: -1px;
   @include mq($micro-break) {
     font-size: rem(38);
   }
