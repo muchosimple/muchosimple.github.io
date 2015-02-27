@@ -154,17 +154,18 @@
 			content: "";
 			display: block;
 			position: absolute;
-			top: rem(-8);
 			left: 50%;
 			margin-left: rem(-7);
+			@include triangle(up, 8px, $gray-very-light);
+		}
+		&:after {
 			z-index: 10;
-			@extend .arrow--up;
-			border-bottom-color: $gray-very-light;
+			top: rem(-16);
 		}
 		&:before {
 			z-index: 8;
-			top: rem(-9);
-			border-bottom-color: $gray;
+			top: rem(-17);
+			@include triangle(up, 8px, $gray);
 		}
 	}
 	.l-sub {

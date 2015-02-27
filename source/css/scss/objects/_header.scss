@@ -67,6 +67,7 @@
   @include rem(padding, 8);
   @include mq($large-break) {
     top: auto;
+    left: rem(8);
     bottom: rem(-3);
   }
 }
