@@ -1,7 +1,7 @@
 <div class="block block-listicle-item {{ block-class }}">
 	<div class="b-inner cf">
     <div class="b-head">
-      <span class="listicle-number number--large {{ number-class }}">{{ number }}</span>
+      <span class="number--large {{ number-class }}">{{ number }}</span>
       <h2 class="b-title">{{{ title }}}</h2>
     </div> <!-- /.b-head -->
     {{# b-thumb }}
@@ -15,6 +15,9 @@
         {{# cta }}
           <p>Get the {{{ cta }}}</p>
         {{/ cta }}
+        {{# alt-credit }}
+          <span class="credit align-left">Photo by {{ alt-credit }}</span>
+        {{/ alt-credit }}
       </div> <!-- /.dek -->
 		</div> <!-- /.b-text -->
 	</div> <!-- /.b-inner -->

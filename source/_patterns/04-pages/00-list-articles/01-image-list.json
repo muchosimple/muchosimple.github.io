@@ -15,6 +15,7 @@
   "listicle-items-1" : [
     {
       "number" : "1",
+      "number-class" : "listicle-number",
       "title" : "Autumn Wreath",
       "block-class" : "block-image-list-item",
       "dek" : "<p>Raid your craft closet and the store for fun, seasonal add-ons that will make your door the envy of the neighborhood. If you can’t find every item that this blogger uses in her wreath, customize it based on your taste, and your supplies. The feathers, though, are easy to make—they’re just paper.</p>",
@@ -34,6 +35,7 @@
     },
     {
       "number" : "2",
+      "number-class" : "listicle-number",
       "title" : "Monogram Wreath",
       "block-class" : "block-image-list-item",
       "dek" : "<p>Make your door décor personal this season by painting a wooden letter to attach to your wreath. This crafter went with a fun, polka-dot pattern, and the large letter balances out the flowers and ribbon on the opposite side of the wreath. Get the kids involved with this one—ask them what they want the family colors or pattern to be, then reflect that in the monogram!</p>",
@@ -52,6 +54,7 @@
     },
     {
       "number" : "3",
+      "number-class" : "listicle-number",
       "title" : "Hydrangea Wreath",
       "block-class" : "block-image-list-item",
       "dek" : "<p>This flowery wreath is deceptively simple—the base itself is just a cardboard floral craft ring. This blogger’s color scheme is particularly fall-friendly, and fake flowers mean that you don’t have to worry about your festive door decoration shriveling up and drying out.</p>",
@@ -72,6 +75,7 @@
   "listicle-items-2" : [
     {
       "number" : "4",
+      "number-class" : "listicle-number",
       "title" : "Ruffled Wreath",
       "block-class" : "block-image-list-item",
       "dek" : "<p>This picture-perfect wreath is so pretty and feminine—we love the use of buttons and brooches as rosette centers. One caveat: You need a sewing machine for the ruffle effect. If you don’t have one, you can simply wrap the fabric around the wreath base—the color scheme and embellishments are enough to make this wreath look welcoming.</p>",
@@ -90,6 +94,7 @@
     },
     {
       "number" : "5",
+      "number-class" : "listicle-number",
       "title" : "Ombré Rosette Wreath",
       "block-class" : "block-image-list-item",
       "dek" : "<p>It seems like rosette embellishments are a must-have for fall wreaths, and this blogger has a step-by-step guide to making them. Pro tip: She advises ripping the fabric into strips, because the frayed edges add to a more rustic look. For the base, you need a grapevine wreath, which you can purchase at your local craft store (here’s one from <a href=\"\">Michaels</a>).</p>",
@@ -109,6 +114,7 @@
     },
     {
       "number" : "6",
+      "number-class" : "listicle-number",
       "title" : "Burlap Wreath",
       "block-class" : "block-image-list-item",
       "dek" : "<p>The best part about this incredibly simple wreath is that the floral embellishments can be changed according to the season—you can attach snowflakes in the winter, or brighter flowers in the spring. This crafter repurposed old hair clips to make the flowers easy to detach.",
@@ -128,6 +134,7 @@
   "listicle-items-3" : [
     {
       "number" : "7",
+      "number-class" : "listicle-number",
       "title" : "Cornhusk Bow Wreath",
       "block-class" : "block-image-list-item",
       "dek" : "<p>Everyone talks about how to turn pumpkins and gourds into seasonal décor, but what about cornhusks? The deep purple husk is a nice finishing touch to a simple fabric wreath—and would be a pretty, seasonal embellishment on a wreath of any style. You can find cornhusks at craft stores, grocery stores, or even farmers markets.</p>",
@@ -145,6 +152,7 @@
     },
     {
       "number" : "8",
+      "number-class" : "listicle-number",
       "title" : "Fall Straw Wreath",
       "block-class" : "block-image-list-item",
       "dek" : "<p>This straw wreath (you can see it poking through the ribbon!) reminds us of our favorite parts of fall: pumpkin picking and hayrides. The off-center cluster of flowers is eye-catching without being too hectic or distracting, which is perfect for a glass window.</p>",
@@ -164,6 +172,7 @@
     },
     {
       "number" : "9",
+      "number-class" : "listicle-number",
       "title" : "Paper Wreath",
       "block-class" : "block-image-list-item",
       "dek" : "<p>Don’t let the look of this project stress you out—the blogger used a scalloped paper punch as a shortcut, although you do have to glue them on individually. The rest of the materials are ones you probably have at home—like paper, a pencil, and a glue gun. Seriously, it’s that simple!</p>",
@@ -184,7 +193,7 @@
   "listicle-items-4" : [
     {
       "number" : "10",
-      "number-class" : "double-digit",
+      "number-class" : "listicle-number double-digit",
       "title" : "Washi Tape Wreath",
       "block-class" : "block-image-list-item",
       "dek" : "<p>Although this bright and colorful wreath is billed for Halloween, you can use different colors or patterns of tape around the lids to make it appropriate all season long. Start stocking up on old jars so that you don’t have to buy them at the store. Neighbors or friends might have old ones lying around!</p>",

@@ -1,7 +1,3 @@
-// Dek
-.dek {
-
-}
 
 // Pullquote
 .pullquote {
@@ -61,19 +57,28 @@
 	text-align: center;
 	color: $pink;
 	margin-bottom: $space-half;
-	line-height: 1;
+	line-height: 1.1;
 	display: table-cell;
 	vertical-align: middle;
 	width: rem(80);
+	max-width: rem(80);
+	min-width: rem(80); // min and max are for when using flexbox
 	font-family: $font-secondary;
+	padding-top: rem(4);
 	&.double-digit {
 		width: rem(95);
+		max-width: rem(95);
 	}
 	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+		padding-top: 0;
 		margin-bottom: 0;
 		width: rem(100);
+		max-width: rem(100);
+		min-width: rem(100);
 		&.double-digit {
 			width: rem(110);
+			max-width: rem(110);
+			min-width: rem(110);
 		}
 	}
 }
@@ -82,8 +87,36 @@
 	font-weight: 100;
 }
 .df-number {
+	position: relative;
 	font-size: rem(64);
 	font-weight: bold;
+	padding-top: rem(15);
+	margin-right: $space-half;
+	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+		width: rem(70);
+		max-width: rem(70);
+		min-width: rem(70);
+		&.double-digit {
+			width: rem(80);
+			max-width: rem(80);
+			min-width: rem(80);
+		}
+	}
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+	}
+	&:before {
+		top: 0;
+		border-top: $border-style-dark;
+	}
+	&:before {
+		bottom: 0;
+		border-bottom: $border-style-dark;
+	}
 }
 
 // Caption

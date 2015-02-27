@@ -2,7 +2,7 @@
 .header-inner {
 	@extend .cf;
 	position: relative;
-	z-index: 1006;
+	z-index: 5000001; // Appear over ads
 	background-color: $white;
 	border-bottom: $border-style;
 	height: rem($mobile-header-height);
@@ -72,9 +72,12 @@
   }
 }
 .nt-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  @include mq($large-break) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 .nt-inner span,
 .nt-inner span:before,

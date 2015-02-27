@@ -54,16 +54,13 @@ a.b-inner:hover {
   }
 }
 
-// Block with flipped title and image
-.block-flipped {
-  .b-inner {
-    display: table;
-  }
-  .b-title {
-    margin-bottom: rem(6);
+// Block with flipped copy and image
+.block--flipped {
+  .b-text {
+    float: right;
   }
   .b-thumb {
-    display: table-footer-group;
+    float: left;
   }
 }
 // Featured Stories headband subscription block (at the end)
@@ -163,7 +160,6 @@ a.b-inner:hover {
   .number--large {
     display: table-cell;
     vertical-align: middle;
-    padding-top: rem(3);
     @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
       float: left;
       margin-top: rem(10);
@@ -182,7 +178,7 @@ a.b-inner:hover {
     margin-bottom: $space-half;
     display: table-cell;
     vertical-align: middle;
-    padding-top: rem(4);
+    //padding-top: rem(4);
     @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
       margin-top: rem(10);
       margin-bottom: rem(4);
@@ -214,9 +210,6 @@ a.b-inner:hover {
       padding-right: $pad;
       width: 50%;
     }
-    // @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
-    //   padding-right: $pad;
-    // }
     @include mq($large-break) {
       padding-right: $pad-and-half;
       width: 46%;
@@ -234,7 +227,8 @@ a.b-inner:hover {
   }
 }
 // Blocks of mostly text with some smaller images
-.block-article-list-item {
+.block-article-list-item,
+.daily-finds-list-type {
   margin-bottom: rem(70);
   &:last-child {
     margin-bottom: rem(50);
@@ -277,115 +271,84 @@ a.b-inner:hover {
     }
   }
 }
+// Daily Find list
+.daily-finds-list-type {
+  .number--large {
+    display: block;
+    float: left;
+    margin-right: $space;
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      position: absolute;
+      left: 0;
+      top: rem(50);
+      z-index: 10;
+    }
+  }
+  .b-head {
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      display: inline;
+    }
+  }
+  .b-title {
+    display: block;
+    padding-left: rem(90);
+    @include mq($px600) {
+      width: auto;
+    }
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      float: right;
+      width: 50%;
+      padding-right: 0;
+      margin-right: 0;
+      margin-top: $space;
+      padding-left: $pad;
+      padding-top: $pad-and-half;
+    }
+    @include mq($large-break) {
+      padding-right: 0;
+      padding-left: $pad-and-half;
+    }
+  }
+  .b-thumb {
+    @include mq($micro-break) {
+      float: left;
+    }
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      width: 50%;
+      padding-left: rem(80);
+    }
+  }
+  .b-text {
+    @include mq($micro-break) {
+      float: right;
+      padding-right: 0;
+      padding-left: $pad;
+      padding-top: $pad-and-half;
+    }
+    @include mq($large-break) {
+      padding-right: 0;
+      padding-left: $pad-and-half;
+    }
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      padding-top: rem(6);
+      width: 50%;
+    }
+  }
+}
+// Use flexbox to align number and title.
+.flexbox {
+  .daily-finds-list-type {
+    .b-head {
+      @media (max-width: $px700), (min-width: $medium-break) and (max-width: $px950) {
+        @include flexbox;
+        @include align-items(center);
+      }
+    }
+    .b-title {
+      @media (max-width: $px700), (min-width: $medium-break) and (max-width: $px950) {
+        padding-left: 0;
+      }
+    }
+  }
+}
 
-// Block Social Feed
-// .block-social-feed {
-//   border-radius: rem(4);
-//   box-shadow: 0 0 rem(3) rgba($black, .2);
-//   width: rem(196);
-//   height: rem(240);
-//   padding: rem(3);
-//   @include center-block;
-//   .b-content {
-//     height: rem(185);
-//     margin-bottom: rem(6);
-//     overflow: hidden;
-//   }
-//   .icon {
-//     margin-left: rem(4);
-//   }
-//   .icon-logo-instagram {
-//     width: rem(80);
-//     height: rem(26);
-//     vertical-align: middle;
-//   }
-//   .icon-logo-facebook {
-//     width: rem(66);
-//     height: rem(28);
-//     vertical-align: top;
-//   }
-//   .icon-logo-pinterest {
-//     width: rem(60);
-//     height: rem(30);
-//     vertical-align: top;
-//   }
-//   .icon-logo-twitter {
-//     width: rem(20);
-//     height: rem(21);
-//     vertical-align: middle;
-//   }
-// }
-// .feed-pinterest {
-//   .pin-account {
-//     display: table;
-//     width: 100%;
-//     margin-bottom: rem(6);
-//   }
-//   .avatar {
-//     width: rem(40);
-//     height: rem(40);
-//     border-radius: rem(3);
-//     display: block;
-//     display: table-cell;
-//   }
-//   .accountname {
-//     display: table-cell;
-//     vertical-align: middle;
-//     font-family: $sans;
-//     font-weight: bold;
-//     font-size: rem(13);
-//     padding-left: rem(6);
-//     color: $gray-dark-2;
-//     padding-top: rem(2);
-//   }
-//   .b-thumbs {
-//     overflow: scroll;
-//     height: rem(140);
-//   }
-//   .pin-img {
-//     display: block;
-//     margin-bottom: rem(4);
-//     img {
-//       width: 100%;
-//     }
-//   }
-// }
-// .feed-twitter {
-//   .b-text {
-//     padding: $pad-half $pad-half 0;
-//   }
-//   .author-details {
-//     margin-bottom: $space-half;
-//     font-size: rem(14);
-//     color: $gray-dark;
-//   }
-//   .timestamp {
-//     font-family: $sans;
-//   }
-//   .screenname {
-//     font-family: $serif;
-//     font-style: italic;
-//     font-size: rem(15);
-//     color: $gray-med-2;
-//     &:after {
-//       content: "•";
-//       display: inline-block;
-//       margin: 0 rem(5);
-//     }
-//   }
-//   p {
-//     font-family: $serif;
-//     font-style: italic;
-//     font-size: rem(15);
-//     line-height: 1.45;
-//     margin: 0;
-//     a {
-//       color: $blue-light;
-//       text-decoration: none;
-//       &:hover {
-//         text-decoration: underline;
-//         color: $blue;
-//       }
-//     }
-//   }
-// }
