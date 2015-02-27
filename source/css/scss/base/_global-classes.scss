@@ -155,7 +155,7 @@ $GLOBAL CLASSES
 }
 .overlay-active {
   background-color: rgba($black, .8);
-  z-index: 100000;
+  z-index: 5000010; // Appear over ads
 }
 .load {
   display: none;
