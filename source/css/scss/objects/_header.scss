@@ -67,11 +67,13 @@
   @include rem(padding, 8);
   @include mq($large-break) {
     top: auto;
-    bottom: rem(2);
+    bottom: rem(-3);
   }
 }
 .nt-inner {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .nt-inner span,
 .nt-inner span:before,
