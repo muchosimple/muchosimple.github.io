@@ -122,6 +122,8 @@
 // Caption
 .caption {
 	font-style: italic;
+	font-size: rem(15);
+	color: $gray-dark;
 }
 
 // Make text a serif font
@@ -154,6 +156,10 @@
 
 .light {
 	color: $gray-med;
+}
+
+.more-links {
+	margin-bottom: $space-double;
 }
 
 // Photo Credit
@@ -191,22 +197,34 @@
 
 // Passages of text
 .text {
-	a {
-		color: $blue-light;
-		&:hover {
-			@include underline;
-		}
+	@include text-styles;
+	h2, h3, h4 {
+		font-family: $font-secondary;
+		font-weight: normal;
+		text-shadow: 0 0 0 $black;
 	}
-	ul {
+	h2 {
+		font-size: rem(22);
+	}
+	h3 {
+		font-size: rem(20);
+	}
+	> ul {
 		list-style: disc;
-		margin: 0 0 $space 1.2em;
+		margin: 0 0 rem(22) 1.2em;
+		li {
+			margin-bottom: $space-half;
+		}
 		ul {
 			margin-bottom: 0;
 		}
 	}
-	ol {
+	> ol {
 		list-style: decimal;
-		margin: 0 0 $space 1.5em;
+		margin: 0 0 rem(22) 1.5em;
+		li {
+			margin-bottom: $space-half;
+		}
 		ol {
 			margin-bottom: 0;
 		}

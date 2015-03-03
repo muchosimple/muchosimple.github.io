@@ -55,52 +55,10 @@
 		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=185394191650949&version=v2.0";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
-<p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla sem a urna porttitor fringilla. Nulla eget justo felis. </p>
+<div class="more-links">
+  <span class="upper space-half-r">More:</span> <a href="">Health</a>, <a href="">Nutrition</a>, <a href="">Cooking</a>
+</div> <!-- /.more-links -->
 
-<p><a href="#">Aliquam erat volutpat.</a> Mauris vulputate scelerisque feugiat. Cras a erat a diam venenatis aliquam. Sed tempus, purus ac pretium varius, risus orci sagittis purus, quis auctor libero magna nec magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas eros dolor, rutrum eu sollicitudin eu, commodo at leo. Suspendisse potenti. Sed eu nibh sit amet quam auctor feugiat vel et risus. Maecenas eu urna adipiscing neque dictum mollis suscipit in augue. Praesent pulvinar condimentum sagittis. Maecenas laoreet neque non eros consectetur fringilla. Donec vitae risus leo, vitae pharetra ipsum. Sed placerat eros eget elit iaculis semper. Aliquam congue blandit orci ac pretium.</p>
-
-<img src="../../images/fpo_16x9.png" alt="16x9 Image" />
-<p>Aliquam ultrices cursus mauris, eget volutpat justo mattis nec. Sed a orci turpis. Aliquam aliquet placerat dui, consectetur tincidunt leo tristique et. Vivamus enim nisi, blandit a venenatis quis, convallis et arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris libero sapien, placerat in sodales eu, tempor quis dui. Vivamus egestas faucibus pulvinar. Maecenas eget diam nunc. Phasellus at sem eros, ac suscipit neque. Phasellus sollicitudin libero a odio dignissim scelerisque. Aliquam purus nulla, tempor eget ullamcorper quis, rhoncus non dui.
-</p>
-
-<blockquote>
-	<p></p>
-</blockquote>
-<p>Cras at fringilla ipsum. Donec nec libero eget est blandit dignissim a eu ante. Morbi augue nulla, luctus eu sagittis vel, malesuada ut felis. Aliquam erat volutpat. Morbi malesuada augue ac massa hendrerit fermentum. Integer scelerisque lacus a dolor convallis lobortis. Curabitur mollis ante in massa ultricies dignissim.
-</p>
-
-<div class="text">
-	<ul>
-		<li>This is a list item in an unordered list</li>
-		<li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
-		<li>
-			Lists can be nested inside of each other
-			<ul>
-				<li>This is a nested list item</li>
-				<li>This is another nested list item in an unordered list</li>
-			</ul>
-		</li>
-		<li>This is the last list item</li>
-	</ul>
-</div>
-<div class="text">
-	<ol>
-		<li>This is a list item in an ordered list</li>
-		<li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
-		<li>
-			Lists can be nested inside of each other
-			<ol>
-				<li>This is a nested list item</li>
-				<li>This is another nested list item in an ordered list</li>
-			</ol>
-		</li>
-		<li>This is the last list item</li>
-	</ol>
-</div>
-<p>Donec posuere fringilla nunc, vitae venenatis diam scelerisque vel. Nullam vitae mauris magna. Mauris et diam quis justo volutpat tincidunt congue nec magna. Curabitur vitae orci elit. Ut mollis massa id magna vestibulum consequat. Proin rutrum lectus justo, sit amet tincidunt est. Vivamus vitae lacinia risus.
-</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, suscipit repellendus nulla accusantium deserunt sed explicabo voluptate sapiente ratione inventore molestiae nihil earum repellat quia odit vitae perspiciatis aliquam amet?</p>
   <!-- <script src="../../js/source/global.js" type="text/javascript"></script> -->
   <script src="../../js/jquery-2.0.0b2.js" type="text/javascript"></script>
   <script src="../../js/plugins.js" type="text/javascript"></script>
@@ -115,9 +73,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "organisms-article-body";
-		var lineage        = [{"lineagePattern":"atoms-landscape-16x9","lineagePath":"..\/..\/patterns\/00-atoms-04-images-02-landscape-16x9\/00-atoms-04-images-02-landscape-16x9.html"},{"lineagePattern":"atoms-blockquote","lineagePath":"..\/..\/patterns\/00-atoms-02-text-02-blockquote\/00-atoms-02-text-02-blockquote.html"},{"lineagePattern":"atoms-unordered","lineagePath":"..\/..\/patterns\/00-atoms-03-lists-00-unordered\/00-atoms-03-lists-00-unordered.html"},{"lineagePattern":"atoms-ordered","lineagePath":"..\/..\/patterns\/00-atoms-03-lists-01-ordered\/00-atoms-03-lists-01-ordered.html"}];
-		var lineageR       = [{"lineagePattern":"templates-article","lineagePath":"..\/..\/patterns\/03-templates-02-article\/03-templates-02-article.html"}];
+		var patternPartial = "molecules-more-links";
+		var lineage        = [];
+		var lineageR       = [{"lineagePattern":"templates-article-list","lineagePath":"..\/..\/patterns\/03-templates-02-article-list\/03-templates-02-article-list.html"},{"lineagePattern":"templates-daily-finds","lineagePath":"..\/..\/patterns\/03-templates-03-daily-finds\/03-templates-03-daily-finds.html"},{"lineagePattern":"templates-article","lineagePath":"..\/..\/patterns\/03-templates-04-article\/03-templates-04-article.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

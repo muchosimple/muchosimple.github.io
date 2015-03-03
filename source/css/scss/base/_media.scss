@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    $MEDIA ELEMENTS
+		$MEDIA ELEMENTS
 \*------------------------------------*/
 
 // Flexible Media
@@ -8,7 +8,7 @@ img, video, object, svg {
 	height: auto;
 }
 svg {
-  max-height: 100%;
+	max-height: 100%;
 }
 iframe {
 	margin-bottom: $space;
@@ -16,7 +16,7 @@ iframe {
 figure {
 	margin-bottom: $space;
 	img {
-		margin-bottom: $space-half;
+		//margin-bottom: $space-half;
 	}
 }
 figcaption {

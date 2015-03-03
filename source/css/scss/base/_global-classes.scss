@@ -15,10 +15,6 @@ $GLOBAL CLASSES
   clear: both;
 }
 
-.center {
-  text-align: center;
-}
-
 // Completely remove from the flow and screen readers.
 .is-hidden {
   display: none !important;
@@ -40,6 +36,10 @@ $GLOBAL CLASSES
 .img-inner {
   line-height: 0;
   display: block;
+  margin-bottom: rem(6);
+}
+.img-wrap {
+  line-height: 1.2;
 }
 
 // Floats
@@ -47,12 +47,10 @@ $GLOBAL CLASSES
   float: right;
   padding: 0 0 $pad $pad;
 }
-
 .right-search {
   float: right;
   padding: 0 0 $pad 0;
 }
-
 .left {
   float: left;
   padding: 0 $pad $pad 0;
@@ -62,11 +60,10 @@ $GLOBAL CLASSES
 .align-right {
   text-align: right;
 }
-
-.align-center {
+.align-center,
+.center {
   text-align: center;
 }
-
 .align-left {
   text-align: left;
 }

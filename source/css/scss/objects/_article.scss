@@ -2,6 +2,9 @@
 .article-header {
 	margin-bottom: $space;
 }
+.article-body {
+	 margin-bottom: rem(50);
+}
 .lead-headline {
 	margin-bottom: rem(10);
 	@include mq($micro-break) {
@@ -26,6 +29,34 @@
 		margin-bottom: $space-half;
 	}
 }
+
+// Figures within Articles
+.figure {
+	text-align: left;
+	padding-top: rem(6);
+	@include center-block;
+	.caption,
+	.credit {
+		display: inline;
+		line-height: 1.2;
+	}
+}
+// Figure Placement
+.figure--right {
+	@include mq($micro-break) {
+		float: right;
+		width: 50%;
+		margin-left: $space;
+	}
+}
+// Figure Sizing
+.figure--l {
+	max-width: rem(436);
+	@include mq($large-break) {
+		width: 60%;
+	}
+}
+
 // Article byline and date format
 .article-meta {
 	margin-bottom: rem(12);
@@ -54,6 +85,9 @@
 	overflow: hidden;
 	margin-bottom: $space;
 	vertical-align: bottom;
+	@include mq($large-break) {
+		margin-bottom: $space-half;
+	}
 	li {
 		display: inline-block;
 		margin-right: rem(10);
@@ -88,6 +122,7 @@
 
 // Image List Articles (Listicles)
 .article-list-type  {
+	padding-top: $pad-half;
 	hr {
 		margin-top: 0;
 		width: 70%;
@@ -103,9 +138,6 @@
 	.newsletter-form {
 		margin-bottom: rem(70);
 	}
-}
-.article-image-list {
-
 }
 
 // Social Sharing Image Overlay
@@ -133,5 +165,7 @@
 	left: auto;
 	right: 0;
 }
+
+// Article: Standard Layout
 
 

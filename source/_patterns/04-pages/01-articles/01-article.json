@@ -1,28 +1,30 @@
 {
-	"title" : "Top 10 Trails You Have To Hike Before You Die",
+	"title" : "5 Healthy Reasons to Eat an Apple Today",
 	"bodyClass": "article",
-	"author" : {
-		"first-name" : "Julianne",
-		"last-name" : "McCormick"
-	},
-	"img": {
-		"landscape-4x3": {
-			"src": "../../images/sample/landscape-16x9-mountains.jpg",
-			"alt": "Mountains"
-		},
-		"landscape-16x9": {
-			"src": "../../images/sample/landscape-16x9-mountains.jpg",
-			"alt": "Mountains"	
-		}
-	},
-	"inset-blocks" : [
+	"article-head" : [
 		{
-			"headline" : "This is the headline for the inset block"
+			"has-social-count" : "true",
+			"kicker" : "Health",
+			"sub-kicker" : "Nutrition",
+			"title" : "5 Healthy Reasons to Eat an Apple Today",
+			"subtitle" : "As if you needed one more excuse to go apple picking this season—the classic fruit comes with a host of health benefits.",
+			"byline" : "Abigail Wise",
+			"date" : "April 22, 2015"
 		}
 	],
-	"latest-block" : [
+	"article-body" : [
 		{
-			"headline" : "This is the headline for the latest block"
+			"img1" : [
+				{
+					"img": {
+						"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1401/pistachio-fig_300_0.jpg?itok=MMXSUOYC",
+						"alt": "Apples"
+					},
+					"caption" : "In addition to tasting good, apples may increase your brainpower.",
+					"credit" : "Sean Gallup/Getty Images",
+					"social-tools" : "true"
+				}
+			]
 		}
 	]
 }

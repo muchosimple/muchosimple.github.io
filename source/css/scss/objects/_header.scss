@@ -32,6 +32,9 @@
   }
   .nav-toggler {
     top: rem(-2);
+    @include mq($large-break) {
+      top: rem(5);
+    }
   }
   .search-toggler {
     top: rem(-1);

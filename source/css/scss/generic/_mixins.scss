@@ -460,3 +460,21 @@ $supported: true !default;
     }
   }
 }
+
+// General Text Styles
+@mixin text-styles {
+  color: $gray-dark-2;
+  font-family: $serif;
+  font-size: rem(17);
+  line-height: 1.5;
+  @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+    font-size: rem(18);
+  }
+  a {
+    color: $blue-light;
+  }
+  a:hover {
+    @include underline;
+  }
+}
+
