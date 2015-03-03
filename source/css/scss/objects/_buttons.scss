@@ -1,8 +1,9 @@
 /*------------------------------------*\
-    $BUTTONS
+		$BUTTONS
 \*------------------------------------*/
 
-.btn {
+.btn,
+button {
 	display: inline-block;
 	color: $blue-light;
 	line-height: 1.4;
@@ -52,8 +53,8 @@
 	//height: $icon-medium;
 	display: inline-block;
 	&:hover {
-	  background-color: $blue;
-	  border-color: $blue;
+		background-color: $blue;
+		border-color: $blue;
 		color: $white;
 	}
 }

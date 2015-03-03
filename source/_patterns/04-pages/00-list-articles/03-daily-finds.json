@@ -1,6 +1,6 @@
 {
-	"title" : "6 Great Unisex Products You Might Just Fight Over",
-	"bodyClass" : "article-list",
+  "title" : "6 Great Unisex Products You Might Just Fight Over",
+  "bodyClass" : "article-list",
   "article-list-head" : [
     {
       "has-social-count" : "true",
@@ -26,7 +26,6 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/malingoetz-pep-shampoo.jpg?itok=7uQRhHzI",
             "alt": "Malin + Goetz Peppermint Shampoo"
           },
-          "large-image" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/0111/airplane-sunset_300.jpg",
           "social-tools" : "true"
         }
       ]
@@ -45,7 +44,6 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/barbasol-original.jpg?itok=PYjCmuA2",
             "alt": "Barbasol"
           },
-          "large-image" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/0111/airplane-sunset_300.jpg",
           "social-tools" : "true"
         }
       ]
@@ -64,7 +62,6 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/jackblack-bodywash.jpg?itok=ujO0dxoZ",
             "alt": "Malin + Goetz Peppermint Shampoo"
           },
-          "large-image" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/0111/airplane-sunset_300.jpg",
           "social-tools" : "true"
         }
       ]
@@ -84,7 +81,6 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/kiehls-lip-balm.jpg?itok=16Q8d-93",
             "alt": "Kiehl’s Facial Fuel"
           },
-          "large-image" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/0111/airplane-sunset_300.jpg",
           "social-tools" : "true"
         }
       ]
@@ -102,7 +98,6 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/marvis-toothpaste.jpg?itok=7lhdNSBM",
             "alt": "Marvis Whitening Mint Toothpaste"
           },
-          "large-image" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/0111/airplane-sunset_300.jpg",
           "social-tools" : "true"
         }
       ]
@@ -120,7 +115,6 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/clinique-moisture-gel.jpg?itok=lqsA56se",
             "alt": "Clinique Dramatically Different Moisturizing Gel"
           },
-          "large-image" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/0111/airplane-sunset_300.jpg",
           "social-tools" : "true"
         }
       ]

@@ -27,11 +27,11 @@
 
 // Breadcrumb
 .breadcrumb {
-  color: $white;
-  display: inline-block;
-  padding: rem(7);
-  font-size: rem(13);
-  @include rem(margin, 0 6 10 0);
+	color: $white;
+	display: inline-block;
+	padding: rem(7);
+	font-size: rem(13);
+	@include rem(margin, 0 6 10 0);
 }
 
 // Date/time
@@ -89,7 +89,7 @@
 .df-number {
 	position: relative;
 	font-size: rem(64);
-	font-weight: bold;
+	//font-weight: bold;
 	padding-top: rem(15);
 	margin-right: $space-half;
 	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
@@ -133,14 +133,23 @@
 }
 
 // Text Sizing
-.text--m {
-	font-size: rem(14);
+.text--tiny {
+	font-size: rem(9);
 }
 .text--s {
 	font-size: rem(11);
 }
-.text--tiny {
-	font-size: rem(9);
+.text--m {
+	font-size: rem(14);
+}
+.text--l {
+	font-size: rem(20);
+}
+.text--xl {
+	font-size: rem(28);
+}
+.text--xxl {
+	font-size: rem(40);
 }
 
 .light {
@@ -162,7 +171,7 @@
 
 // Uppercase Text
 .upper {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 // Lowercase Text
 .lower {

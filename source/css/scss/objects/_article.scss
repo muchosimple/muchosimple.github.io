@@ -15,8 +15,8 @@
 	margin-bottom: $space;
 	color: $gray-dark-2;
 	@include mq($micro-break) {
-	  font-size: rem(24);
-	  margin-bottom: $space-half;
+		font-size: rem(24);
+		margin-bottom: $space-half;
 	}
 }
 .byline {
@@ -92,13 +92,16 @@
 		margin-top: 0;
 		width: 70%;
 		@include mq($large-break) {
-			width: 50%;
+			width: 60%;
 		}
 		// Can't have 2 hr's back to back. This should only happen if an ad doesn't
 		// fill it's slot.
 		+ hr {
 			display: none;
 		}
+	}
+	.newsletter-form {
+		margin-bottom: rem(70);
 	}
 }
 .article-image-list {

@@ -1,6 +1,6 @@
 {
-	"title" : "10 DIY Fall Wreaths That Are Way Better Than a Welcome Mat",
-	"bodyClass" : "image-list",
+  "title" : "10 DIY Fall Wreaths That Are Way Better Than a Welcome Mat",
+  "bodyClass" : "image-list",
   "image-list-head" : [
     {
       "has-social-count" : "true",
@@ -27,7 +27,6 @@
             "alt": "Lacquer and Linen"
           },
           "credit" : "Lacquer and Linen",
-          "large-image" : "http://assets.skiptomylou.org/wp-content/uploads/2014/09/Burlap-wreath.jpg",
           "social-tools" : "true"
         }
       ],
@@ -46,7 +45,6 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/monogram-wreath.jpg",
             "alt": "Tidy Mom"
           },
-          "large-image" : "http://placehold.it/650/700.jpg",
           "social-tools" : "true"
         }
       ],
@@ -65,7 +63,6 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/hydrangea-wreath.jpg?itok=Hc4I9-b2",
             "alt": "A Night Owl"
           },
-          "large-image" : "http://placehold.it/850/700.jpg",
           "social-tools" : "true"
         }
       ],
@@ -106,7 +103,6 @@
             "alt": "Flamingo Toes"
           },
           "credit" : "Flamingo Toes",
-          "large-image" : "http://placehold.it/700/700.jpg",
           "social-tools" : "true"
         }
       ],
@@ -164,7 +160,6 @@
             "alt": "Echoes of Laughter"
           },
           "credit" : "Echoes of Laughter",
-          "large-image" : "http://placehold.it/550/800.jpg",
           "social-tools" : "true"
         }
       ],
@@ -183,7 +178,6 @@
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/paper-wreath.jpg?itok=elhHaicG",
             "alt": "Make Life Lovely"
           },
-          "large-image" : "http://placehold.it/650/800.jpg",
           "social-tools" : "true"
         }
       ],

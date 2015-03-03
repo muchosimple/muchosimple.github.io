@@ -1,13 +1,13 @@
-<form action="{{ url }}" method="post" class="inline-form newsletter-form input-form">
+<form action="{{ url }}" method="post" class="inline-form newsletter-form">
   <fieldset>
-    <legend>Sign up and be the first to know about what matters most to you.</legend>
-    <label for="newsletter-scope" class="is-vishidden">Sign up for our newsletter</label>
+    <legend class="alt-heading">Daily Finds Newsletter</legend>
+    <p class="dek">Get new daily finds delivered to your inbox!</p>
     <div class="inline-container">
-   		<input type="newsletter" placeholder="E-mail address" id="newsletter-field" class="input-field newsletter-field" />
-    	<button class="submit t-bkg rounded">
-      {{> atoms-arrow }}
-    	<span class="is-vishidden">Sign Me Up</span>
-    </button> <!-- /.search-submit -->
+      <input type="newsletter" placeholder="Enter your email" id="newsletter-field" class="roomy input-field newsletter-field" />
+      <div class="btn-wrap">
+       <button class="submit roomy">Sign Up</button>
+       <a href="{{ url }}" class="text--s center light t-sans">privacy policy</a>
+      </div> <!-- /.btn-wrap -->
     </div> <!-- /.inline-container -->
   </fieldset>
 </form> <!-- /.newsletter-form -->

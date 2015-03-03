@@ -1,6 +1,6 @@
 {
-	"title" : "5 Ways to Stay Cool Under Pressure",
-	"bodyClass" : "article-list",
+  "title" : "5 Ways to Stay Cool Under Pressure",
+  "bodyClass" : "article-list",
   "article-list-head" : [
     {
       "has-social-count" : "true",
@@ -26,7 +26,6 @@
             "alt": "Before a Stressful Event, Stage a Mental Dress Rehearsal"
           },
           "credit" : "Getty Images/ Martin Harvey",
-          "large-image" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/0111/airplane-sunset_300.jpg",
           "social-tools" : "true"
         }
       ]

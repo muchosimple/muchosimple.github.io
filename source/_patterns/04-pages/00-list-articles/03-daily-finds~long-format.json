@@ -1,0 +1,125 @@
+{
+  "long-format" : [
+    {
+      "article-list-head" : [
+        {
+          "has-social-count" : "true",
+          "kicker" : "Home",
+          "sub-kicker" : "Daily Finds",
+          "title" : "6 Helpful Holiday Storage Containers",
+          "subtitle" : "When the holidays come to a close, it’s (unfortunately) also time to tackle the clean up. Turn to these vessels to keep your seasonal décor safely contained until next year.",
+          "byline" : "Jessica Fecteau",
+          "date" : "December 12, 2014"
+        }
+      ],
+      "listicle-items-1" : [
+        {
+          "number" : "1",
+          "number-class" : "df-number",
+          "block-class" : "block-df-list-item",
+          "title" : "Quilted Red Wreath Bag",
+          "dek" : "<p>You won’t be left guessing which decoration sits within this storage bag thanks to the convenient see-through panel. The 24-inch bag fits the average wreath and has interior clips to make sure everything stays in place.</p>",
+          "cta" : "<strong>$20</strong>, <a href=\"\">crateandbarrel.com</a>.",
+          "b-thumb" : [
+            {
+              "img": {
+                "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/quilted-wreath-bag.jpg?itok=5DPSJuO5",
+                "alt": "Quilted Red Wreath Bag"
+              },
+              "social-tools" : "true"
+            }
+          ]
+        },
+        {
+          "number" : "2",
+          "number-class" : "df-number",
+          "block-class" : "block-df-list-item",
+          "title" : "Ornament Storage Chest",
+          "dek" : "<p>Store up to 54 ornaments in this three-drawer case that comes with handles on the sides for easy transport from the attic to the tree.</p>",
+          "cta" : "<strong>$2</strong>, at <a href=\"\">stacksandstacks.com</a>.",
+          "alt-credit" : "barbasol.com",
+          "b-thumb" : [
+            {
+              "img": {
+                "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/ornament-storage-box.jpg?itok=N623o4KI",
+                "alt": "Ornament Storage Chest"
+              },
+              "social-tools" : "true"
+            }
+          ]
+        },
+        {
+          "number" : "3",
+          "number-class" : "df-number",
+          "block-class" : "block-df-list-item",
+          "title" : "Real Simple® Holiday Gift Wrap Under Bed Wrapping Paper Storage",
+          "dek" : "<p>Corral all your holiday wrapping supplies within this festive, soft-sided box. With pockets for bows and bags, slots for ribbon spools, and a section for rolls a-plenty, everything you need will be right at hand.</p>",
+          "cta" : "<strong>$26</strong>, <a href=\"\">bedbathandbeyond.com</a>.",
+          "alt-credit" : "nordstrom.com",
+          "b-thumb" : [
+            {
+              "img": {
+                "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/under-bed-wrap-storage.png?itok=hBmexWSa",
+                "alt": "Real Simple® Holiday Gift Wrap Under Bed Wrapping Paper Storage"
+              },
+              "social-tools" : "true"
+            }
+          ]
+        }
+      ],
+      "listicle-items-2" : [
+        {
+          "number" : "4",
+          "number-class" : "df-number",
+          "block-class" : "block-df-list-item",
+          "title" : "Seasons Holiday Tree Rolling Storage Duffel",
+          "dek" : "<p>Taking down the artificial tree is only half the battle. Make storing it a snap with this wheeled bag equipped with adjustable straps, buckles and a padded exterior.</p>",
+          "cta" : "<strong>$119</strong>, <a href=\"\">homedepot.com</a>.",
+          "b-thumb" : [
+            {
+              "img": {
+                "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/seasons-tree-duffel.jpg?itok=Wy-vszbW",
+                "alt": "Seasons Holiday Tree Rolling Storage Duffel"
+              },
+              "social-tools" : "true"
+            }
+          ]
+        },
+        {
+          "number" : "5",
+          "number-class" : "df-number",
+          "block-class" : "block-df-list-item",
+          "title" : "Holiday Dinner Plate Storage Box",
+          "dek" : "<p>Stow away your extra party plates or even fine china until next year’s holiday feast in this protective carrier. It even folds flat while your plates are in use during the season.</p>",
+          "cta" : "<strong>$13.50</strong>, <a href=\"\">organizeit.com</a>.",
+          "b-thumb" : [
+            {
+              "img": {
+                "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/holiday-plate-storage.jpg?itok=pRou8wwf",
+                "alt": "Holiday Dinner Plate Storage Box"
+              },
+              "social-tools" : "true"
+            }
+          ]
+        },
+        {
+          "number" : "6",
+          "number-class" : "df-number",
+          "block-class" : "block-df-list-item",
+          "title" : "Holiday 4-Drawer Storage Chest",
+          "dek" : "<p>At just over two feet tall, this unit can hold up to 32 ornaments within the four slotted drawers. Organize them by color or type (heirloom, decorative, fragile) to make decorating the tree a hassle-free event next year.</p>",
+          "cta" : "<strong>$126</strong>, <a href=\"\">kohls.com</a>.",
+          "b-thumb" : [
+            {
+              "img": {
+                "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/neuhome-chest.jpg?itok=flN_Nr0S",
+                "alt": "Holiday 4-Drawer Storage Chest"
+              },
+              "social-tools" : "true"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
