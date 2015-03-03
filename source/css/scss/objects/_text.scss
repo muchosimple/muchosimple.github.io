@@ -66,8 +66,7 @@
 	font-family: $font-secondary;
 	padding-top: rem(4);
 	&.double-digit {
-		width: rem(95);
-		max-width: rem(95);
+		padding-right: rem(6);
 	}
 	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
 		padding-top: 0;
@@ -75,11 +74,6 @@
 		width: rem(100);
 		max-width: rem(100);
 		min-width: rem(100);
-		&.double-digit {
-			width: rem(110);
-			max-width: rem(110);
-			min-width: rem(110);
-		}
 	}
 }
 .listicle-number {
@@ -89,18 +83,12 @@
 .df-number {
 	position: relative;
 	font-size: rem(64);
-	//font-weight: bold;
 	padding-top: rem(15);
 	margin-right: $space-half;
 	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
 		width: rem(70);
 		max-width: rem(70);
 		min-width: rem(70);
-		&.double-digit {
-			width: rem(80);
-			max-width: rem(80);
-			min-width: rem(80);
-		}
 	}
 	&:before,
 	&:after {
