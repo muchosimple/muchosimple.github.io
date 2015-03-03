@@ -178,14 +178,13 @@
 
 // Sponsor Header Section
 .sponsor-header {
-  text-align: center;
   @include mq($medium-break) {
     margin-top: -$space;
   }
 }
 .spons-wrap {
   @include center-block;
-  margin-bottom: rem(30);
+  margin-bottom: rem(6);
   position: relative;
   z-index: 10;
 }
@@ -232,7 +231,7 @@
   background-color: $white;
   position: relative;
   display: inline-block;
-  margin: 0 rem(4) $space-half;
+  margin: 0 rem(4) $space-half 0;
 }
 .spons-inner:hover {
   box-shadow: 0 0 4px rgba($black, .5);
