@@ -56,6 +56,12 @@
 		width: 60%;
 	}
 }
+.figure--m {
+	max-width: rem(300);
+	@include mq($large-break) {
+		width: 37%;
+	}
+}
 
 // Article byline and date format
 .article-meta {

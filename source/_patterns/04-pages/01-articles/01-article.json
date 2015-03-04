@@ -14,8 +14,9 @@
 	],
 	"article-body" : [
 		{
-			"img1" : [
+			"img-large" : [
 				{
+					"figure-size" : "figure--l",
 					"img": {
 						"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1401/pistachio-fig_300_0.jpg?itok=MMXSUOYC",
 						"alt": "Apples"
