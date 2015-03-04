@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    $LAYOUT
+		$LAYOUT
 \*------------------------------------*/
 
 // Layout Containers
@@ -8,6 +8,26 @@
 	margin: 0 auto;
 	position: relative;
 	padding: 0 $pad-half;
+	@include mq($medium-break) {
+		padding-left: $pad;
+		padding-right: $pad;
+		.nav-toggler {
+			left: $pad;
+		}
+		.search-toggler {
+			right: $pad;
+		}
+	}
+	@include mq($large-break) {
+		padding-left: $pad-and-half;
+		padding-right: $pad-and-half;
+		.nav-toggler {
+			left: $pad-and-half;
+		}
+		.search-toggler {
+			right: $pad-and-half;
+		}
+	}
 }
 .lc-inner { // To be used in conjunction with .lc
 	max-width: $inner-max-width;
@@ -18,7 +38,7 @@
 }
 
 /*------------------------------------*\
-    $TEMPLATES
+		$TEMPLATES
 \*------------------------------------*/
 
 /* Two Column Layout */
@@ -86,7 +106,7 @@
 
 
 /*------------------------------------*\
-    $GRIDS
+		$GRIDS
 \*------------------------------------*/
 
 /* Grid Container */

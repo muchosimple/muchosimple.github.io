@@ -11,7 +11,7 @@ $grid-columns: 12;
 $fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
 $defaultpx: 16; // Browser default px used for media queries
 $rembase: 16; // 16px = 1.00rem
-$max-width: em(1216) !default;
+$max-width: em(1270) !default; // Takes into account left and right padding.
 $inner-max-width: (1044/$fontpx) + 0em;
 $inner-max-small: (900/$defaultpx) + 0em;
 

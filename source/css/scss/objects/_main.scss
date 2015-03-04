@@ -2,7 +2,7 @@
     $MAIN CONTENT AREA
 \*------------------------------------*/
 [role=main] {
-	overflow: hidden;
+  overflow: hidden;
   padding-top: $pad;
   -webkit-transform: translate(0);
   @include mq($medium-break) {
