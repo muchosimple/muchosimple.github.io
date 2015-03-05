@@ -55,15 +55,34 @@
 		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=185394191650949&version=v2.0";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
-<ol class="pagination">
-	<li class="current"><a href="#">1</a></li>
-	<li><a href="#">2</a></li>
-	<li><a href="#">3</a></li>
-	<li><a href="#">4</a></li>
-	<li><a href="#">5</a></li>
-	<li><a href="#">6</a></li>
-	<li><a href="#">7</a></li>
-</ol>
+<div class="pagination">
+  <a href="#" class="no-bg no-bdr icon rounded icon-arrow-left icon--standard icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+  <title>Left Arrow</title>
+  <path d="M344.5 5.3l31.7 31.6L163.1 250l213.1 213.1-31.7 31.6L99.8 250z"/>
+  <!--[if lte IE 8]>
+  <foreignObject>
+    <img src="../../images/svg/output/png/arrow-left.png" alt="Left Arrow" class="no-svg-png">
+  </foreignObject>
+  <![endif]-->
+</svg>
+</a>
+  <ol class="page-list">
+    <li class="page-item"><a class="rounded" href="#">1</a></li>
+    <li class="page-item"><a class="rounded" href="#">2</a></li>
+    <li class="page-item current">3</li>
+  </ol> <!-- /.page-list -->
+  <a href="#" class="no-bg no-bdr icon rounded icon-arrow-right icon--standard icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+  <title>Right Arrow</title>
+  <path d="M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z"/>
+  <!--[if lte IE 8]>
+  <foreignObject>
+    <img src="../../images/svg/output/png/arrow-right.png" alt="Right Arrow" class="no-svg-png">
+  </foreignObject>
+  <![endif]-->
+</svg>
+</a>
+</div> <!-- /.pagination -->
+
   <!-- <script src="../../js/source/global.js" type="text/javascript"></script> -->
   <script src="../../js/jquery-2.0.0b2.js" type="text/javascript"></script>
   <script src="../../js/plugins.js" type="text/javascript"></script>
@@ -79,8 +98,8 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "molecules-pagination";
-		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"organisms-comment-thread","lineagePath":"..\/..\/patterns\/02-organisms-02-comments-00-comment-thread\/02-organisms-02-comments-00-comment-thread.html"}];
+		var lineage        = [{"lineagePattern":"atoms-arrow-left","lineagePath":"..\/..\/patterns\/00-atoms-09-icons-16-arrow-left\/00-atoms-09-icons-16-arrow-left.html"},{"lineagePattern":"atoms-arrow-right","lineagePath":"..\/..\/patterns\/00-atoms-09-icons-15-arrow-right\/00-atoms-09-icons-15-arrow-right.html"}];
+		var lineageR       = [{"lineagePattern":"organisms-comment-thread","lineagePath":"..\/..\/patterns\/02-organisms-02-comments-00-comment-thread\/02-organisms-02-comments-00-comment-thread.html"},{"lineagePattern":"templates-article","lineagePath":"..\/..\/patterns\/03-templates-04-article\/03-templates-04-article.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

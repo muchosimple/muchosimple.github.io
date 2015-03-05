@@ -3,12 +3,24 @@
 	margin-bottom: $space;
 }
 .article-body {
-	 margin-bottom: rem(50);
+	 margin-bottom: rem(40);
 }
 .lead-headline {
 	margin-bottom: rem(10);
 	@include mq($micro-break) {
 		margin-bottom: rem(12);
+	}
+}
+// Smaller header version. Used on paginated pages.
+.compact-header {
+	padding-bottom: $pad-and-half;
+	margin-bottom: $space-and-half;
+	border-bottom: $border-style;
+	.kicker {
+		margin-bottom: $space-and-half;
+	}
+	.lead-headline {
+		font-size: rem(22);
 	}
 }
 .lead-subtitle {

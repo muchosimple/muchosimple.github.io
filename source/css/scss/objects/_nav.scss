@@ -356,14 +356,33 @@
 // Pagination
 .pagination {
 	overflow: hidden;
+	text-align: center;
+	margin-bottom: $space-and-half;
+	.page-list {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.icon {
+		vertical-align: middle;
+	}
 	li {
 		float: left;
-		border-right: 1px solid $gray-light-2;
-		&:last-child {
-			border: 0;
+		margin: $space-half;
+	}
+	.page-item a,
+	.current {
+		@extend .icon--medium;
+		color: $gray-med;
+		display: block;
+		font-family: $font;
+	}
+	.page-item a {
+		&:hover {
+			background-color: $blue;
+			color: $white;
 		}
 	}
-	a {
-		padding: $pad;
+	.current {
+		color: $black;
 	}
 }

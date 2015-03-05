@@ -1,8 +1,10 @@
 {
 	"title" : "5 Healthy Reasons to Eat an Apple Today",
 	"bodyClass": "article",
+	"more-links" : true,
 	"article-head" : [
 		{
+			"has-head-meta" : true,
 			"has-social-count" : "true",
 			"kicker" : "Health",
 			"sub-kicker" : "Nutrition",
