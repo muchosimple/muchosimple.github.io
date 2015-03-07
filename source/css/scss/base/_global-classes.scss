@@ -229,10 +229,14 @@ $GLOBAL CLASSES
 .pad-lr {
   padding: 0 $pad;
 }
-.pad-b {
+.pad-btm {
   padding-bottom: $pad;
 }
-.pad-b-2x {
+.pad-tb {
+  padding-bottom: $pad;
+  padding-top: $pad;
+}
+.pad-btm-2x {
   padding-bottom: $pad-double;
 }
 .space-tb-2x {

@@ -252,5 +252,28 @@
   ],
   "nl-title" : "Real Simple Newsletters",
   "nl-dek" : "Get tips and inspiration delivered to your inbox!",
-  "nl-options" : true
+  "nl-options" : true,
+  "also-blocks" : [
+    {
+      "block-class" : "block-stacked",
+      "img" : {
+        "src": "http://placeimg.com/225/150/people"
+      },
+      "title" : "8 Smart Cleaning Techniques"
+    },
+    {
+      "block-class" : "block-stacked",
+      "img" : {
+        "src": "http://placeimg.com/225/150/nature"
+      },
+      "title" : "15 Of The Rarest (And Most Mind Blowing) Photographs In History"
+    },
+    {
+      "block-class" : "block-stacked",
+      "img" : {
+        "src": "http://placeimg.com/225/150/tech"
+      },
+      "title" : "6 Clever Items to Simplify Your Life"
+    }
+  ]
 }

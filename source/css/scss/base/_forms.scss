@@ -97,19 +97,25 @@ input[type="search"]::-webkit-search-decoration {
   padding: 0 $pad-half;
   margin-bottom: 0;
   @include mq($micro-break) {
-    padding-left: $pad;
-    padding-right: $pad;
+    &:first-child {
+      padding-right: $pad-half;
+      padding-left: $pad;
+    }
+    &:last-child {
+      padding-right: $pad;
+      padding-left: $pad-half;
+    }
   }
 }
 .cl-left {
   @include mq($micro-break) {
-    width: 35%;
+    width: 37%;
     float: left;
   }
 }
 .cl-right {
   @include mq($micro-break) {
-    width: 65%;
+    width: 63%;
     float: right;
   }
 }

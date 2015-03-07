@@ -2,6 +2,9 @@
   <header class="s-header">
     <h3 class="s-title heading">Also On Real Simple</h3>
   </header> <!-- /.s-header -->
-  <div class="OUTBRAIN" data-src="http://www.realsimple.com/home-organizing" data-widget-id="AR_9" data-ob-template="realsimple" ></div>
-  <script type="text/javascript" async="async" src="http://widgets.outbrain.com/outbrain.js"></script>
+  <div class="cf-blocks also-blocks cf">
+    {{# also-blocks }}
+      {{> molecules-block-thumb-headline }}
+    {{/ also-blocks }}
+  </div> <!-- /.cf-blocks -->
 </section> <!-- /.also-on-rs -->
