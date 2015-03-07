@@ -193,6 +193,26 @@ $GLOBAL CLASSES
   color: $dark-gray;
 }
 
+// Absolute Positioning Elements
+.p-abs {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  background-color: $white;
+}
+.p-btm {
+  top: auto;
+  bottom: 0;
+}
+
+// Centered <hr> styles
+.h-center {
+  width: $hr-width;
+  background-color: lighten($gray-light-4, 4);
+  @include center-block;
+}
+
 // Spacing/Padding
 .pad {
   padding: $pad;

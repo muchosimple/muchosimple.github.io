@@ -119,7 +119,7 @@
   }
 }
 
-// You May Also Like (Zergnet 3rd Party code. Hence the !importants)
+// You May Also Like in Sidebar (Zergnet 3rd Party code. Hence the !importants)
 // Wrapping it all in .you-may-also-like for the extra specificity.
 .you-may-also-like {
   #zerglayout {
@@ -157,22 +157,156 @@
   }
 }
 
-// Follow Footer
-.follow-footer {
-  border-top: $border-style;
-  padding-top: rem(34);
+// Content Footer
+.content-footer {
+  padding-top: $pad-half;
   margin-bottom: $space-double;
   .s-title {
     border-bottom: none;
-    padding-bottom: 0;
+    padding-bottom: rem(6);
   }
   .g-4up-v2 {
     max-width: rem(830);
+    margin-bottom: $space-double;
   }
   .gi {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: $space-half;
+  }
+  .feed-title {
+    margin-bottom: rem(6);
+  }
+  .newsletter-form {
+    margin-bottom: rem(45);
+  }
+}
+
+// You Might Like in Content Footer (Outbrain)
+.you-might-like-footer {
+  .ob_org_header {
+    display: none;
+  }
+  .ob-tcolor {
+    color: $black;
+  }
+  .ob-lcolor {
+    color: $gray-med;
+  }
+  .AR_9.ob_strip_container {
+    max-width: rem(225);
+    overflow: visible;
+    @include center-block;
+    @include mq($px500) {
+      max-width: rem(495);
+    }
+    @include mq($large-break) {
+      max-width: none;
+      text-align: center;
+    }
+  }
+  .AR_9 .ob_container_recs a {
+    float: none;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: rem(15);
+    max-width: rem(225);
+    @media (min-width: $px500) and (max-width: $large-break) {
+      width: 49%;
+      float: right;
+      &:nth-child(odd) {
+        clear: left;
+        float: left;
+      }
+    }
+    @include mq($large-break) {
+      width: 30%;
+      margin-right: 4%;
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+    }
+    @include mq($larger-break) {
+      margin-right: 4.5%;
+    }
+    @include mq($max-width) {
+      margin-right: 5%;
+    }
+    &:hover {
+      .strip-rec-link-title {
+        color: $pink;
+      }
+    }
+  }
+  .AR_9 .strip-img {
+    width: auto;
+    height: auto;
+  }
+  .AR_9 .ob_container_recs {
+    position: relative;
+  }
+  .AR_9 .ob_container_recs .item-container {
+    margin-bottom: 0;
+    padding-right: 0;
+    float: none;
+    width: auto;
+  }
+  .AR_9 .strip-rec-link-title {
+    @extend .delta;
+    margin-bottom: rem(4);
+  }
+  .AR_9 .strip-rec-link-source {
+    font-family: $sans;
+    font-size: rem(11);
+    line-height: 1;
+  }
+  .AR_9 .ob_container_shadow_outer {
+    display: none;
+  }
+  .AR_9 .ob_what {
+    padding: 0;
+    @include mq($larger-break) {
+      padding-right: $pad;
+    }
+  }
+}
+
+// Real Simple Apps
+.rs-apps {
+  max-width: rem(600);
+  @include center-block;
+  .alt-heading {
+    margin-bottom: rem(25);
+  }
+}
+.app-item {
+  margin-bottom: $space-half;
+  @include mq($medium-break) {
+    margin-bottom: rem(5);
+  }
+}
+.app-link{
+  display: table;
+  width: 100%;
+  .app-img {
+    display: table-cell;
+    width: rem(85);
+    @include mq($micro-break) {
+      vertical-align: middle;
+    }
+  }
+  strong {
+    display: block;
+    color: $black;
+  }
+  p {
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+  .unify {
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -244,7 +378,6 @@
   text-align: left;
   padding: $pad rem(20);
   background-color: $white;
-  //border: $border-style;
   left: 0;
   width: 100%;
   position: absolute;

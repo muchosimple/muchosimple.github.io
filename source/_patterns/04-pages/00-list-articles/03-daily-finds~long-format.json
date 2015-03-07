@@ -1,6 +1,9 @@
 {
   "long-format" : [
     {
+      "nl-title" : "Daily Finds Newsletter",
+      "nl-dek" : "Get new daily finds delivered to your inbox!",
+      "nl-options" : false,
       "article-list-head" : [
         {
           "has-social-count" : "true",

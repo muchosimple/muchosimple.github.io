@@ -92,6 +92,75 @@ input[type="search"]::-webkit-search-decoration {
   }
 }
 
+// Checkbox List
+.check-list {
+  padding: 0 $pad-half;
+  margin-bottom: 0;
+  @include mq($micro-break) {
+    padding-left: $pad;
+    padding-right: $pad;
+  }
+}
+.cl-left {
+  @include mq($micro-break) {
+    width: 35%;
+    float: left;
+  }
+}
+.cl-right {
+  @include mq($micro-break) {
+    width: 65%;
+    float: right;
+  }
+}
+.cl-item {
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  text-align: left;
+  position: relative;
+  label {
+    font-style: normal;
+    font-size: rem(16);
+    padding-left: rem(25);
+    @include mq($micro-break) {
+      font-size: rem(17);
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]+ label span {
+    width: rem(17);
+    height: rem(17);
+    border: 1px solid $gray-med;
+    background-color: $white;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: rem(4.5);
+    svg {
+      visibility: hidden;
+      padding: 1px 0 2px;
+    }
+  }
+  input[type="checkbox"]+ label:hover span {
+    background-color: $gray;
+    svg {
+      visibility: visible;
+    }
+  }
+  input[type="checkbox"]:checked + label span {
+    svg {
+      visibility: visible;
+      path {
+        fill: $pink;
+      }
+    }
+  }
+}
+
+
 /* Validation */
 .has-error {
   border-color: $error;

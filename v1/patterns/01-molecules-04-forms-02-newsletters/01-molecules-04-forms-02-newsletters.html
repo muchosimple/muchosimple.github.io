@@ -55,10 +55,76 @@
 		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=185394191650949&version=v2.0";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
-<form action="#" method="post" class="inline-form newsletter-form">
+<form action="#" method="post" class="inline-form newsletter-form ">
   <fieldset>
-    <legend class="alt-heading">Daily Finds Newsletter</legend>
-    <p class="dek">Get new daily finds delivered to your inbox!</p>
+    <legend class="alt-heading">Real Simple Newsletters</legend>
+    <p class="dek">Get tips and inspiration delivered to your inbox!</p>
+      <div class="field-container field-options cf">
+        <ul class="check-list cl-left">
+          <li class="cl-item"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"><label for="checkbox1"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+  <title>Check</title>
+  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
+  <!--[if lte IE 8]>
+  <foreignObject>
+    <img src="../../images/svg/output/png/check.png" alt="Check" class="no-svg-png">
+  </foreignObject>
+  <![endif]-->
+</svg>
+</span> Weekly Tips</label></li>
+          <li class="cl-item"><input id="checkbox2" name="checkbox" type="checkbox"><label for="checkbox2"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+  <title>Check</title>
+  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
+  <!--[if lte IE 8]>
+  <foreignObject>
+    <img src="../../images/svg/output/png/check.png" alt="Check" class="no-svg-png">
+  </foreignObject>
+  <![endif]-->
+</svg>
+</span> Daily Finds</label></li>
+          <li class="cl-item"><input id="checkbox3" name="checkbox" type="checkbox"><label for="checkbox3"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+  <title>Check</title>
+  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
+  <!--[if lte IE 8]>
+  <foreignObject>
+    <img src="../../images/svg/output/png/check.png" alt="Check" class="no-svg-png">
+  </foreignObject>
+  <![endif]-->
+</svg>
+</span> Daily Recipe</label></li>
+        </ul> <!-- /.cl-left -->
+        <ul class="check-list cl-right">
+          <li class="cl-item"><input id="checkbox4" name="checkbox" type="checkbox"><label for="checkbox4"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+  <title>Check</title>
+  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
+  <!--[if lte IE 8]>
+  <foreignObject>
+    <img src="../../images/svg/output/png/check.png" alt="Check" class="no-svg-png">
+  </foreignObject>
+  <![endif]-->
+</svg>
+</span> Beauty &amp; Fashion Solutions</label></li>
+          <li class="cl-item"><input id="checkbox5" name="checkbox" type="checkbox"><label for="checkbox5"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+  <title>Check</title>
+  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
+  <!--[if lte IE 8]>
+  <foreignObject>
+    <img src="../../images/svg/output/png/check.png" alt="Check" class="no-svg-png">
+  </foreignObject>
+  <![endif]-->
+</svg>
+</span> Real Simple Weddings</label></li>
+          <li class="cl-item"><input id="checkbox6" name="checkbox" type="checkbox"><label for="checkbox6"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+  <title>Check</title>
+  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
+  <!--[if lte IE 8]>
+  <foreignObject>
+    <img src="../../images/svg/output/png/check.png" alt="Check" class="no-svg-png">
+  </foreignObject>
+  <![endif]-->
+</svg>
+</span> Kick-Start Your Wedding Planning</label></li>
+        </ul> <!-- /.cl-right -->
+      </div> <!-- /.field-options -->
     <div class="inline-container">
       <input type="newsletter" placeholder="Enter your email" id="newsletter-field" class="roomy input-field newsletter-field" />
       <div class="btn-wrap">
@@ -83,9 +149,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-newsletter";
-		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"templates-daily-finds","lineagePath":"..\/..\/patterns\/03-templates-03-daily-finds\/03-templates-03-daily-finds.html"}];
+		var patternPartial = "molecules-newsletters";
+		var lineage        = [{"lineagePattern":"atoms-check","lineagePath":"..\/..\/patterns\/00-atoms-09-icons-17-check\/00-atoms-09-icons-17-check.html"}];
+		var lineageR       = [{"lineagePattern":"organisms-content-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-03-content-footer\/02-organisms-00-global-03-content-footer.html"},{"lineagePattern":"templates-daily-finds","lineagePath":"..\/..\/patterns\/03-templates-03-daily-finds\/03-templates-03-daily-finds.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

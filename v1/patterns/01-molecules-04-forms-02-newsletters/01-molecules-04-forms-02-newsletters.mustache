@@ -1,0 +1,27 @@
+&lt;form action=&quot;{{ url }}&quot; method=&quot;post&quot; class=&quot;inline-form newsletter-form {{ nl-class }}&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend class=&quot;alt-heading&quot;&gt;{{ nl-title }}&lt;/legend&gt;
+    &lt;p class=&quot;dek&quot;&gt;{{ nl-dek }}&lt;/p&gt;
+    {{# nl-options }}
+      &lt;div class=&quot;field-container field-options cf&quot;&gt;
+        &lt;ul class=&quot;check-list cl-left&quot;&gt;
+          &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox1&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;&lt;label for=&quot;checkbox1&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Weekly Tips&lt;/label&gt;&lt;/li&gt;
+          &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox2&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox2&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Daily Finds&lt;/label&gt;&lt;/li&gt;
+          &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox3&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox3&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Daily Recipe&lt;/label&gt;&lt;/li&gt;
+        &lt;/ul&gt; &lt;!-- /.cl-left --&gt;
+        &lt;ul class=&quot;check-list cl-right&quot;&gt;
+          &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox4&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox4&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Beauty &amp;amp; Fashion Solutions&lt;/label&gt;&lt;/li&gt;
+          &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox5&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox5&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Real Simple Weddings&lt;/label&gt;&lt;/li&gt;
+          &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox6&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox6&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Kick-Start Your Wedding Planning&lt;/label&gt;&lt;/li&gt;
+        &lt;/ul&gt; &lt;!-- /.cl-right --&gt;
+      &lt;/div&gt; &lt;!-- /.field-options --&gt;
+    {{/ nl-options }}
+    &lt;div class=&quot;inline-container&quot;&gt;
+      &lt;input type=&quot;newsletter&quot; placeholder=&quot;Enter your email&quot; id=&quot;newsletter-field&quot; class=&quot;roomy input-field newsletter-field&quot; /&gt;
+      &lt;div class=&quot;btn-wrap&quot;&gt;
+       &lt;button class=&quot;submit roomy&quot;&gt;Sign Up&lt;/button&gt;
+       &lt;a href=&quot;{{ url }}&quot; class=&quot;text--s center light t-sans&quot;&gt;privacy policy&lt;/a&gt;
+      &lt;/div&gt; &lt;!-- /.btn-wrap --&gt;
+    &lt;/div&gt; &lt;!-- /.inline-container --&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt; &lt;!-- /.newsletter-form --&gt;
