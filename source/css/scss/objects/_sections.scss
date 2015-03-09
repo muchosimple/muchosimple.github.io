@@ -44,6 +44,8 @@
   .bi {
     padding-left: rem(50);
     position: relative;
+    max-width: rem(265);
+    margin-left: auto;
   }
   .number {
     position: absolute;
