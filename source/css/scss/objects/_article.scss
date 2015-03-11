@@ -120,9 +120,9 @@
 	}
 }
 .social-share {
-	margin-right: rem(14);
+	//margin-right: rem(14);
 	@include mq($micro-break) {
-		margin-right: rem(20);
+		//margin-right: rem(20);
 	}
 }
 .ss-link .icon {

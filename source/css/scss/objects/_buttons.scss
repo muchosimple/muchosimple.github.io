@@ -42,20 +42,19 @@ button {
 
 .btn--rounded {
 	border-radius: rem(7);
-	border: rem(1.5) solid $gray-med;
-	background-color: $white;
-	color: $black;
-	line-height: 1.2;
+	border: 1px solid $blue-light;
+	background-color: $blue-light;
+	color: $white;
+	line-height: 1.1;
 	padding: rem(7) $pad-half rem(6);
 	text-transform: uppercase;
-	font-size: rem(12);
-	font-weight: bold;
+	font-size: rem(14);
+	font-weight: 400;
 	//height: $icon-medium;
 	display: inline-block;
 	&:hover {
-		background-color: $blue;
-		border-color: $blue;
-		color: $white;
+		background-color: $white;
+		color: $blue-light;
 	}
 }
 

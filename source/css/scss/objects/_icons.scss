@@ -5,17 +5,16 @@
 }
 
 .icon--standard {
-  border: 1px solid $gray-med;
-  background-color: $white;
+  border: 1px solid $blue-light;
+  background-color: $blue-light;
   path {
-    fill: $black;
-    shape-rendering: auto;
+    fill: $white;
   }
   &:hover {
-    background-color: $blue;
-    border-color: $blue;
+    background-color: $white;
     path {
-      fill: $white;
+      fill: $blue-light;
+      shape-rendering: auto;
     }
   }
 }

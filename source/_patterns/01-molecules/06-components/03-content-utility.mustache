@@ -1,10 +1,11 @@
 <div class="content-utility">
-	<ul class="cu-list">
+  <ul class="cu-list">
     <li class="cu-item">
       <a class="cu-link" href="{{ url }}">
         <span class="no-bg icon rounded icon--standard icon-print icon--medium">{{> atoms-print }}</span>
       </a> <!-- /.cu-link -->
     </li> <!-- /.cu-item -->
+    {{# nope }}
     <li class="cu-item">
       <a class="cu-link" href="{{ url }}">
         <span class="no-bg icon rounded icon--standard icon-mail icon--medium js-open-mail">{{> atoms-mail }}</span>
@@ -15,5 +16,6 @@
         <span class="btn--rounded btn-save">Save</span>
       </a> <!-- /.cu-link -->
     </li> <!-- /.cu-item -->
+    {{/ nope }}
   </ul> <!-- /.cu-list -->
 </div> <!-- /.content-utility -->
