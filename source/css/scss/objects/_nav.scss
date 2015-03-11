@@ -147,8 +147,8 @@
 		border: $border-style;
 		background-color: $gray-very-light;
 		width: rem(220);
-		padding-top: rem(4);
-		padding-bottom: rem(4);
+		padding-top: rem(14);
+		padding-bottom: rem(14);
 		&:before,
 		&:after {
 			content: "";
@@ -172,7 +172,7 @@
 		a {
 			text-transform: none;
 			display: block;
-			padding: rem(7);
+			padding: rem(9) rem(7);
 			font-size: rem(16);
 			font-weight: normal;
 		}
