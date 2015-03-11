@@ -45,12 +45,11 @@
 
 // Figures within Articles
 .figure {
-	text-align: left;
+	text-align: right;
 	padding-top: rem(6);
 	@include center-block;
 	.caption,
 	.credit {
-		display: inline;
 		line-height: 1.2;
 	}
 }
@@ -60,6 +59,11 @@
 		float: right;
 		width: 50%;
 		margin-left: $space;
+	}
+	@include mq($medium-break) {
+		// Negative indent the right aligned article images to extend beyonf the
+		// article content column to allow for more room for text.
+		margin-right: rem(-25);
 	}
 }
 // Figure Sizing
