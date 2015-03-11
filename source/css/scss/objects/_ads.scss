@@ -4,6 +4,7 @@
 
 .ad-leaderboard {
   margin-bottom: $space-half;
+  text-align: center;
   .ad-300x50 {
     @include mq($px750) {
       display: none;
@@ -34,7 +35,7 @@
 
 // Ads that appear within article list-types
 .ad-instream {
-	position: relative;
-	line-height: 0;
+  position: relative;
+  line-height: 0;
   margin-bottom: rem(20);
 }
