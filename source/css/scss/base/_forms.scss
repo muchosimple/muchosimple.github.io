@@ -109,13 +109,13 @@ input[type="search"]::-webkit-search-decoration {
 }
 .cl-left {
   @include mq($micro-break) {
-    width: 37%;
+    width: 42%;
     float: left;
   }
 }
 .cl-right {
   @include mq($micro-break) {
-    width: 63%;
+    width: 58%;
     float: right;
   }
 }
@@ -127,7 +127,7 @@ input[type="search"]::-webkit-search-decoration {
   label {
     font-style: normal;
     font-size: rem(16);
-    padding-left: rem(25);
+    padding-left: rem(27);
     @include mq($micro-break) {
       font-size: rem(17);
     }
