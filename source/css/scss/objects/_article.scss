@@ -17,10 +17,11 @@
 	margin-bottom: $space-and-half;
 	border-bottom: $border-style;
 	.kicker {
-		margin-bottom: $space-and-half;
+		margin-bottom: rem(17);
 	}
 	.lead-headline {
 		font-size: rem(22);
+		margin-bottom: rem(18);
 	}
 }
 .lead-subtitle {
