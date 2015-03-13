@@ -463,10 +463,10 @@ $supported: true !default;
 @mixin text-styles {
   color: $gray-dark-2;
   font-family: $serif;
-  font-size: rem(17);
-  line-height: 1.5;
-  @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
-    font-size: rem(18);
+  line-height: 1.7;
+  font-size: rem(18);
+  @include mq($medium-break) {
+    line-height: 1.5;
   }
   a {
     color: $blue-light;

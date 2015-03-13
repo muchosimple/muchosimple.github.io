@@ -5,6 +5,9 @@
 .ad-leaderboard {
   margin-bottom: $space-half;
   text-align: center;
+  div {
+    text-align: center;
+  }
   .ad-300x50 {
     @include mq($px750) {
       display: none;
@@ -21,6 +24,9 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  div {
+    text-align: center;
+  }
   a {
     display: block;
     line-height: 0;
