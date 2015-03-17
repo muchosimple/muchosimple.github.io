@@ -1,0 +1,38 @@
+&lt;div class=&quot;page&quot;&gt;
+	{{&gt; organisms-header }}
+	&lt;div class=&quot;main cf lc&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
+		{{# sponsored }}
+			{{&gt; molecules-sponsor-header }}
+		{{/ sponsored }}
+		&lt;div class=&quot;primary&quot;&gt;
+			&lt;section class=&quot;primary-inner&quot;&gt;
+				&lt;article class=&quot;article article-gallery {{ article-class }}&quot; itemscope itemtype=&quot;http://schema.org/Article&quot;&gt;
+
+					{{# article-head }}
+						&lt;header class=&quot;article-header {{ header-class }} cf&quot;&gt;
+							{{&gt; molecules-kicker }}
+							&lt;h1 class=&quot;lead-headline&quot; itemprop=&quot;headline&quot;&gt;{{ title }}&lt;/h1&gt;
+							&lt;div class=&quot;article-tools&quot;&gt;
+								{{&gt; molecules-social-share }}
+								{{&gt; molecules-content-utility }}
+							&lt;/div&gt; &lt;!-- /.article-tools --&gt;
+						&lt;/header&gt; &lt;!-- /.article-header --&gt;
+					{{/ article-head }}
+
+					&lt;section class=&quot;section gallery-container&quot; itemprop=&quot;articleBody&quot;&gt;
+
+					&lt;/section&gt; &lt;!-- /.gallery-container --&gt;
+
+				&lt;/article&gt; &lt;!-- /.article-gallery --&gt;
+
+				{{&gt; organisms-content-footer }}
+			&lt;/section&gt; &lt;!-- /.primary-inner --&gt;
+		&lt;/div&gt; &lt;!-- /.primary --&gt;
+
+		&lt;div class=&quot;secondary&quot;&gt;
+			{{&gt; organisms-sidebar }}
+		&lt;/div&gt; &lt;!-- /.secondary --&gt;
+
+	&lt;/div&gt;&lt;!-- /role=main --&gt;
+	{{&gt; organisms-footer }}
+&lt;/div&gt; &lt;!-- /.page --&gt;

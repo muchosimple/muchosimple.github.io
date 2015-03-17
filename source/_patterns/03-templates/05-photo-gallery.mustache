@@ -1,0 +1,38 @@
+<div class="page">
+	{{> organisms-header }}
+	<div class="main cf lc" role="main" aria-live="polite">
+		{{# sponsored }}
+			{{> molecules-sponsor-header }}
+		{{/ sponsored }}
+		<div class="primary">
+			<section class="primary-inner">
+				<article class="article article-gallery {{ article-class }}" itemscope itemtype="http://schema.org/Article">
+
+					{{# article-head }}
+						<header class="article-header {{ header-class }} cf">
+							{{> molecules-kicker }}
+							<h1 class="lead-headline" itemprop="headline">{{ title }}</h1>
+							<div class="article-tools">
+								{{> molecules-social-share }}
+								{{> molecules-content-utility }}
+							</div> <!-- /.article-tools -->
+						</header> <!-- /.article-header -->
+					{{/ article-head }}
+
+					<section class="section gallery-container" itemprop="articleBody">
+
+					</section> <!-- /.gallery-container -->
+
+				</article> <!-- /.article-gallery -->
+
+				{{> organisms-content-footer }}
+			</section> <!-- /.primary-inner -->
+		</div> <!-- /.primary -->
+
+		<div class="secondary">
+			{{> organisms-sidebar }}
+		</div> <!-- /.secondary -->
+
+	</div><!-- /role=main -->
+	{{> organisms-footer }}
+</div> <!-- /.page -->

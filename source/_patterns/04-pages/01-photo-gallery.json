@@ -1,0 +1,30 @@
+{
+	"title" : "13 Healthy Soup Recipes to Try Now",
+	"bodyClass": "photo-gallery",
+	"more-links" : true,
+	"article-head" : [
+		{
+			"has-head-meta" : true,
+			"has-social-count" : "true",
+			"kicker" : "Food",
+			"sub-kicker" : "Recipes",
+			"title" : "13 Healthy Soup Recipes to Try Now"
+		}
+	],
+	"article-body" : [
+		{
+			"img-large" : [
+				{
+					"figure-size" : "figure--l",
+					"img": {
+						"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1401/pistachio-fig_300_0.jpg?itok=MMXSUOYC",
+						"alt": "Apples"
+					},
+					"caption" : "In addition to tasting good, apples may increase your brainpower.",
+					"credit" : "Sean Gallup/Getty Images",
+					"social-tools" : "true"
+				}
+			]
+		}
+	]
+}
