@@ -7,10 +7,9 @@
 	max-width: $max-width;
 	margin: 0 auto;
 	position: relative;
-	padding: 0 $pad-half;
+	padding-left: $pad;
+	padding-right: $pad;
 	@include mq($medium-break) {
-		padding-left: $pad;
-		padding-right: $pad;
 		.nav-toggler {
 			left: $pad;
 		}
@@ -69,8 +68,8 @@
 // Fluid left content column with static right rail
 .primary {
 	width: 100%;
-	margin-bottom: rem(30);
-	padding-bottom: rem(20);
+	margin-bottom: $space;
+	padding-bottom: $pad;
 	@include mq($medium-break) {
 		float: left;
 		margin-right: rem(-$sidebar-width - 50);
@@ -83,8 +82,8 @@
 	}
 }
 .primary-inner {
-	padding-bottom: rem(30);
-	border-bottom: $border-style-light;
+	padding-bottom: $pad;
+	//border-bottom: $border-style-light;
 	@include mq($medium-break) {
 		margin-right: rem($sidebar-width + 50);
 	}

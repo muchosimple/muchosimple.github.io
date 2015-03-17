@@ -42,6 +42,8 @@ input, textarea {
   font-size: rem(14);
   font-family: $serif;
   font-style: italic;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
 }
 // Pad input fields
 input.roomy {
@@ -147,7 +149,7 @@ input[type="search"]::-webkit-search-decoration {
     top: rem(4.5);
     svg {
       visibility: hidden;
-      padding: 1px 0 2px;
+      padding: 2px;
     }
   }
   input[type="checkbox"]+ label:hover span {
@@ -288,7 +290,7 @@ input[type="search"]::-webkit-search-decoration {
     border-color: $gray-light-4;
     background-color: lighten($gray-light-2, 10);
     @include mq($px500, max) {
-      margin-bottom: $space-half;
+      margin-bottom: rem(24);
     }
   }
   .inline-container {

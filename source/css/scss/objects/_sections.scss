@@ -161,8 +161,10 @@
 
 // Content Footer
 .content-footer {
-  padding-top: $pad-half;
   margin-bottom: $space-double;
+  @include mq($medium-break) {
+    padding-top: $pad-half;
+  }
   .s-title {
     border-bottom: none;
     padding-bottom: rem(6);

@@ -147,7 +147,7 @@
 }
 
 .more-links {
-	margin-bottom: $space-double;
+	//margin-bottom: $space-double;
 }
 
 // Photo Credit
@@ -173,7 +173,10 @@
 
 // Horizontal Rules
 .hr--l {
-	margin-bottom: rem(70);
+	margin-bottom: rem(35);
+	@include mq($medium-break) {
+		margin-bottom: rem(70);
+	}
 }
 .hr--m {
 	margin-bottom: rem(50);
