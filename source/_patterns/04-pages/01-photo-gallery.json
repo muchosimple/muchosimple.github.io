@@ -1,30 +1,98 @@
 {
-	"title" : "13 Healthy Soup Recipes to Try Now",
+	"title" : "Best Slow-Cooker Soup and Stew Recipes",
 	"bodyClass": "photo-gallery",
 	"more-links" : true,
+	"has-featured-stories" : false,
 	"article-head" : [
 		{
 			"has-head-meta" : true,
 			"has-social-count" : "true",
 			"kicker" : "Food",
 			"sub-kicker" : "Recipes",
-			"title" : "13 Healthy Soup Recipes to Try Now"
+			"title" : "Best Slow-Cooker Soup and Stew Recipes"
 		}
 	],
-	"article-body" : [
+	"slides" : [
 		{
-			"img-large" : [
-				{
-					"figure-size" : "figure--l",
-					"img": {
-						"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1401/pistachio-fig_300_0.jpg?itok=MMXSUOYC",
-						"alt": "Apples"
-					},
-					"caption" : "In addition to tasting good, apples may increase your brainpower.",
-					"credit" : "Sean Gallup/Getty Images",
-					"social-tools" : "true"
-				}
-			]
+			"is-welcome-slide" : true,
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1202/beef-bean-chili_300.jpg?itok=qWgkI1u9",
+				"alt" : "Beef Bean Chili"
+			},
+			"credit" : "Marcus Nilsson",
+			"social-tools" : "true",
+			"slide-intro" : "Warm up with these easy recipes for comforting, no-fuss meals. Try one of these top-notch recipes for stews, tacos, lasagna, and more.",
+			"byline" : "Abigail Wise"
+		},
+		{
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/0111/white-bean-soup_300.jpg?itok=J341YBCW",
+				"alt" : "Slow-Cooker White Bean Soup With Andouille and Collards"
+			},
+			"credit" : "Marcus Nilsson",
+			"social-tools" : "true",
+			"slide-title" : "Slow-Cooker White Bean Soup With Andouille and Collards",
+			"slide-dek" : "Simple, tasty, and filling, this soup will quickly become a regular addition to your dinner lineup. <a target=\"_blank\" href=\"\" sl-processed=\"1\">Get the recipe</a>"
+		},
+		{
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0403/beef_300.jpg?itok=tXZ6rcAv",
+				"alt" : "Slow-Cooker Classic Beef Stew"
+			},
+			"credit" : "Susie Cushner",
+			"social-tools" : "true",
+			"slide-title" : "Slow-Cooker Classic Beef Stew",
+			"slide-dek" : "A Moroccan meal is a cinch to prepare—just toss the lamb, apricots, olives, vegetables, and spices in your slow cooker, then serve with couscous when the ingredients are ready. <a target=\"_blank\" href=\"\" sl-processed=\"1\"><br><br>Get the recipe</a>"
+		},
+		{
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1008/chicken-past-soup_300.jpg?itok=lgzBAgf4",
+				"alt" : "Slow-Cooker Chicken and Pasta Soup"
+			},
+			"credit" : "Romulo Yanes",
+			"social-tools" : "true",
+			"slide-title" : "Slow-Cooker Chicken and Pasta Soup",
+			"slide-dek" : "Soothe your soul with a classic chicken soup that includes tender pasta, carrots, and celery. <a target=\"_blank\" href=\"\" sl-processed=\"1\"><br><br>Get the recipe</a>"
+		},
+		{
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0801/beans-1_300.jpg?itok=rqjiE7MV",
+				"alt" : "Slow-Cooker Beer-Braised Pork and Black Bean Soup"
+			},
+			"credit" : "Anson Smart",
+			"social-tools" : "true",
+			"slide-title" : "Slow-Cooker Beer-Braised Pork and Black Bean Soup",
+			"slide-dek" : "Top this hearty soup with sour cream, fresh salsa, and cilantro. <a target=\"_blank\" href=\"\" sl-processed=\"1\"><br><br>Get the recipe</a>"
+		},
+		{
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/0111/chicken-biscuit_300.jpg?itok=IBQZgIt8",
+				"alt" : "Slow-Cooker Creamy Chicken With Biscuits"
+			},
+			"credit" : "José Picayo",
+			"social-tools" : "true",
+			"slide-title" : "Slow-Cooker Creamy Chicken With Biscuits",
+			"slide-dek" : "Poultry seasoning—a mix of dried thyme, sage, marjoram, and rosemary—gives an instant boost to this old-fashioned meal. <a target=\"_blank\" href=\"\" sl-processed=\"1\"><br><br>Get the recipe</a>"
+		},
+		{
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0403/pea-soup_300.jpg?itok=rqHFPcpc",
+				"alt" : "Slow-Cooker Smoky Pea Soup"
+			},
+			"credit" : "Susie Cushner",
+			"social-tools" : "true",
+			"slide-title" : "Slow-Cooker Smoky Pea Soup",
+			"slide-dek" : "Ham hocks lend their meaty, smoky flavor to the entire dish. <a target=\"_blank\" href=\"\" sl-processed=\"1\"><br><br>Get the recipe</a>"
+		},
+		{
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0403/seafood-gumbo_300.jpg?itok=CtRbmHh6",
+				"alt" : "Slow-Cooker Seafood Gumbo"
+			},
+			"credit" : "Susie Cushner",
+			"social-tools" : "true",
+			"slide-title" : "Slow-Cooker Seafood Gumbo",
+			"slide-dek" : "Abundant shrimp, crab, okra, and bacon make this soup a wholesome meal-in-a-bowl. <a target=\"_blank\" href=\"\" sl-processed=\"1\"><br><br>Get the recipe</a>"
 		}
 	]
 }

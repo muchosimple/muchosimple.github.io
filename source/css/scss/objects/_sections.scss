@@ -11,6 +11,7 @@
 // Featured Stories
 .featured-stories {
   display: none;
+  margin-bottom: 0;
   .gi {
     padding-left: 0;
     &:last-child {
@@ -46,6 +47,10 @@
     position: relative;
     max-width: rem(265);
     margin-left: auto;
+    margin-bottom: rem(14);
+  }
+  .block {
+    padding-bottom: rem(4);
   }
   .number {
     position: absolute;

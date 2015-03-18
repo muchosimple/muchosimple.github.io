@@ -20,7 +20,11 @@
 					{{/ article-head }}
 
 					<section class="section gallery-container" itemprop="articleBody">
-
+						<div class="gallery js-gallery">
+							{{# slides }}
+								{{> molecules-gallery-slide }}
+							{{/ slides }}
+						</div> <!-- /.gallery -->
 					</section> <!-- /.gallery-container -->
 
 				</article> <!-- /.article-gallery -->

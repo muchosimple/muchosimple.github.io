@@ -20,7 +20,11 @@
 					{{/ article-head }}
 
 					&lt;section class=&quot;section gallery-container&quot; itemprop=&quot;articleBody&quot;&gt;
-
+						&lt;div class=&quot;gallery js-gallery&quot;&gt;
+							{{# slides }}
+								{{&gt; molecules-gallery-slide }}
+							{{/ slides }}
+						&lt;/div&gt; &lt;!-- /.gallery --&gt;
 					&lt;/section&gt; &lt;!-- /.gallery-container --&gt;
 
 				&lt;/article&gt; &lt;!-- /.article-gallery --&gt;

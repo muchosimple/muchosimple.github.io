@@ -2,6 +2,8 @@
   "title" : "Pattern Lab",
   "htmlClass": "pl",
   "bodyClass": "body",
+  "has-featured-stories" : true,
+  "is-welcome-slide" : false,
   "img": {
     "landscape-4x3": {
       "src": "../../images/fpo_4x3.png",

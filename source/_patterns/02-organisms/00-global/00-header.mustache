@@ -22,7 +22,9 @@
       </span> <!-- /.h-hide -->
     </div> <!-- /.lc -->
   </div> <!-- /.header-inner -->
-  {{> organisms-featured-stories }}
+  {{# has-featured-stories }}
+    {{> organisms-featured-stories }}
+  {{/ has-featured-stories }}
   <div class="nav-wrap">
     <div class="nav-wrap-inner">
       {{> molecules-primary-nav }}

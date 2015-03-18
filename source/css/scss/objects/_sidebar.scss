@@ -1,4 +1,5 @@
 .secondary {
+  padding-top: rem(34);
   @include mq($medium-break, max) {
     display: none;
   }

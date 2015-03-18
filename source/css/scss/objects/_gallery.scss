@@ -1,0 +1,65 @@
+// Gallery
+.gallery-container {
+  margin-top: rem(-12);
+}
+.gallery {
+  padding-bottom: $pad;
+}
+.slide-img {
+  margin-bottom: $space;
+  @include mq($micro-break) {
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+  }
+}
+.slide-text {
+  @include mq($micro-break) {
+    width: 50%;
+    float: left;
+    padding-left: $pad-and-half;
+  }
+  @include mq($large-break) {
+    padding-left: $pad-double;
+  }
+  // Attempting to capture WYSIWYG entered links and style them like sitewide
+  // buttons. The most common "Get the Recipe" link all seem to have the
+  // "sl-processed" attribute on them. Just in case there's any other links
+  // within the slide dek, only look for the last one.
+  a[sl-processed]:last-child {
+    br {
+      display: none;
+    }
+    @extend .btn;
+    padding-left: $pad;
+    padding-right: $pad;
+    margin-top: $space-and-half;
+    display: block;
+    max-width: rem(170);
+    &:hover {
+      background-image: none;
+      &:after {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path fill="#{$white}" d="M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z"/></svg>');
+      }
+    }
+    &:after {
+      content: '';
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path fill="#{$blue-light}" d="M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z"/></svg>');
+      display: inline-block;
+      vertical-align: text-top;
+      height: rem(16);
+      width: rem(16);
+      margin-left: rem(4);
+    }
+  }
+}
+.slide-intro {
+  .dek {
+    @media (min-width: $micro-break) and (max-width: $px650), (min-width: $medium-break) and (max-width: $large-break) {
+      font-size: rem(20);
+    }
+  }
+  .byline {
+    margin-bottom: $space-and-half;
+  }
+}
