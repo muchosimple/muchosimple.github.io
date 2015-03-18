@@ -12,20 +12,19 @@
 			"title" : "Best Slow-Cooker Soup and Stew Recipes"
 		}
 	],
-	"slides" : [
-		{
-			"is-welcome-slide" : true,
-			"img" : {
-				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1202/beef-bean-chili_300.jpg?itok=qWgkI1u9",
-				"alt" : "Beef Bean Chili"
-			},
-			"credit" : "Marcus Nilsson",
-			"social-tools" : "true",
-			"slide-intro" : "Warm up with these easy recipes for comforting, no-fuss meals. Try one of these top-notch recipes for stews, tacos, lasagna, and more.",
-			"byline" : "Abigail Wise",
-			"is-lazy" : false,
-			"lazy-slide" : true
+	"welcome-slide" : {
+		"img" : {
+			"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1202/beef-bean-chili_300.jpg?itok=qWgkI1u9",
+			"alt" : "Beef Bean Chili"
 		},
+		"credit" : "Marcus Nilsson",
+		"social-tools" : "true",
+		"slide-intro" : "Warm up with these easy recipes for comforting, no-fuss meals. Try one of these top-notch recipes for stews, tacos, lasagna, and more.",
+		"byline" : "Abigail Wise",
+		"is-lazy" : false,
+		"no-lazy" : true
+	},
+	"slides" : [
 		{
 			"img" : {
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/0111/white-bean-soup_300.jpg?itok=J341YBCW",
@@ -36,7 +35,7 @@
 			"slide-title" : "Slow-Cooker White Bean Soup With Andouille and Collards",
 			"slide-dek" : "Simple, tasty, and filling, this soup will quickly become a regular addition to your dinner lineup. <a target=\"_blank\" href=\"\" sl-processed=\"1\">Get the recipe</a>",
 			"is-lazy" : false,
-			"lazy-slide" : true
+			"no-lazy" : true
 		},
 		{
 			"img" : {

@@ -4,6 +4,11 @@
 }
 .gallery {
   padding-bottom: $pad;
+  margin-bottom: $space-half;
+}
+.js .slides {
+  // Show slides once slider is initialized.
+  display: none;
 }
 .slide-img {
   margin-bottom: $space;
@@ -69,11 +74,16 @@
 }
 
 // Carousel Styles
+.js .carousel-item-list {
+  // Show carousel once carousel is initialized.
+  display: none;
+}
 .carousel {
   position: relative;
   max-width: rem(700);
   padding: rem(5) rem(6);
   background-color: $beige;
+  @include center-block;
   .owl-buttons {
     div {
       position: absolute;

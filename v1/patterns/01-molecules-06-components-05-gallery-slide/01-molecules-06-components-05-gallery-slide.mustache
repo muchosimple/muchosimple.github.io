@@ -3,20 +3,9 @@
     &lt;div class=&quot;slide-img&quot;&gt;
       {{&gt; molecules-image-with-social }}
     &lt;/div&gt; &lt;!-- /.slide-img --&gt;
-
-    {{# is-welcome-slide }}
-      &lt;div class=&quot;slide-intro slide-text&quot;&gt;
-        &lt;p class=&quot;dek&quot;&gt;{{ slide-intro }}&lt;/p&gt;
-        {{&gt; molecules-byline }}
-        &lt;a href=&quot;&quot; class=&quot;btn btn--start&quot;&gt;Start &lt;span class=&quot;icon icon-arrow-right no-bg&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/span&gt;&lt;/a&gt;
-      &lt;/div&gt; &lt;!-- /.slide-intro --&gt;
-    {{/ is-welcome-slide }}
-    {{^ is-welcome-slide }}
-      &lt;div class=&quot;slide-text text&quot;&gt;
-        &lt;h2 class=&quot;slide-title&quot;&gt;{{ slide-title }}&lt;/h2&gt;
-        &lt;p&gt;{{{ slide-dek }}}&lt;/p&gt;
-      &lt;/div&gt; &lt;!-- /.slide-text --&gt;
-    {{/ is-welcome-slide }}
-
+    &lt;div class=&quot;slide-text text&quot;&gt;
+      &lt;h2 class=&quot;slide-title&quot;&gt;{{ slide-title }}&lt;/h2&gt;
+      &lt;p&gt;{{{ slide-dek }}}&lt;/p&gt;
+    &lt;/div&gt; &lt;!-- /.slide-text --&gt;
   &lt;/div&gt; &lt;!-- /.slide-inner --&gt;
 &lt;/article&gt; &lt;!-- /.slide --&gt;
