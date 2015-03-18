@@ -1,1 +1,12 @@
-<img src="{{ img.src }}" itemprop="image" alt="{{ img.alt }}" />
+{{# is-lazy }}
+  <img class="lazy" data-original="{{ img.src }}" itemprop="image" alt="{{ img.alt }}" />
+  <noscript><img src="{{ img.src }}" alt="{{ img.alt }}"></noscript>
+{{/ is-lazy }}
+
+{{# no-lazy }}
+  <img src="{{ img.src }}" itemprop="image" alt="{{ img.alt }}" />
+{{/ no-lazy }}
+
+{{# lazy-slide }}
+  <img class="lazyOwl" data-src="{{ img.src }}" itemprop="image" alt="{{ img.alt }}" />
+{{/ lazy-slide }}

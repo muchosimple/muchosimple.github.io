@@ -20,11 +20,20 @@
 					{{/ article-head }}
 
 					<section class="section gallery-container" itemprop="articleBody">
-						<div class="gallery js-gallery">
-							{{# slides }}
-								{{> molecules-gallery-slide }}
-							{{/ slides }}
+						<div class="gallery">
+							<div class="slides js-slides">
+								{{# slides }}
+									{{> molecules-gallery-slide }}
+								{{/ slides }}
+							</div> <!-- /.slides -->
 						</div> <!-- /.gallery -->
+						<div class="carousel">
+							<ul class="carousel-item-list js-carousel">
+								{{# carousel-items }}
+									{{> molecules-carousel-item }}
+								{{/ carousel-items }}
+							</ul> <!-- /.carousel-item-list -->
+						</div> <!-- /.carousel -->
 					</section> <!-- /.gallery-container -->
 
 				</article> <!-- /.article-gallery -->

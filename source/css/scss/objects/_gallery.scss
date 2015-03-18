@@ -1,4 +1,4 @@
-// Gallery
+// Gallery Slides Styles
 .gallery-container {
   margin-top: rem(-12);
 }
@@ -12,6 +12,9 @@
     float: left;
     margin-bottom: 0;
   }
+  @include mq($large-break) {
+    width: 53%;
+  }
 }
 .slide-text {
   @include mq($micro-break) {
@@ -20,6 +23,7 @@
     padding-left: $pad-and-half;
   }
   @include mq($large-break) {
+    width: 47%;
     padding-left: $pad-double;
   }
   // Attempting to capture WYSIWYG entered links and style them like sitewide
@@ -63,3 +67,65 @@
     margin-bottom: $space-and-half;
   }
 }
+
+// Carousel Styles
+.carousel {
+  position: relative;
+  max-width: rem(700);
+  padding: rem(5) rem(6);
+  background-color: $beige;
+  .owl-buttons {
+    div {
+      position: absolute;
+      top: 50%;
+      margin-top: -$icon-medium/2;
+      &:hover {
+        path {
+          fill: $white;
+        }
+      }
+    }
+    .icon {
+      background-color: $beige;
+      @extend .rounded;
+      width: $icon-medium;
+      height: $icon-medium;
+      padding-top: rem(5);
+      padding-bottom: rem(5);
+    }
+  }
+  .owl-prev {
+    left: rem(-22);
+    .icon {
+      padding-left: rem(2);
+      padding-right: rem(6);
+    }
+  }
+  .owl-next {
+    right: rem(-22);
+    .icon {
+      padding-left: rem(6);
+      padding-right: rem(2);
+    }
+  }
+  .owl-carousel .owl-wrapper-outer {
+    z-index: 100;
+  }
+}
+.carousel-item {
+  margin: rem(3);
+  border: 2px solid transparent;
+  &:hover {
+    box-shadow: 0 0 0 1px $white;
+  }
+  img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  a {
+    display: block;
+  }
+}
+
+

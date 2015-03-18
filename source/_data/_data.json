@@ -4,6 +4,9 @@
   "bodyClass": "body",
   "has-featured-stories" : true,
   "is-welcome-slide" : false,
+  "is-lazy" : true,
+  "no-lazy" : false,
+  "lazy-slide" : false,
   "img": {
     "landscape-4x3": {
       "src": "../../images/fpo_4x3.png",

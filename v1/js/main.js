@@ -44,6 +44,11 @@
 
   // SITE SPECIFIC JS ------------------------------//
 
+  // Lazy load images.
+  $('img.lazy').show().lazyload({
+    threshold: 300
+  });
+
   var $body = $('body');
 
   var toggleClasses = function(element) {
