@@ -97,8 +97,8 @@
     });
   });
 
-  // Close main menu when clicked outside.
-  $('.nav-wrap').on('click', function(e) {
+  // Stop propagation when clicked on these elements.
+  $('.nav-wrap, .search-form').on('click', function(e) {
     e.stopPropagation();
   });
   $(document).on('click', function(e) {
@@ -126,8 +126,10 @@
     $('.search-form .search-field').focus();
   });
 
-  // Remove input after search overlay is closed.
-  $('.search-overlay .close').on('click', function() {
+  // Remove input after search overlay is closed and close search overlay.
+  $('.search-overlay .close, .search-overlay').on('click', function() {
+    // Specific for active search overlay.
+    $('.header').removeClass('search-is-active');
     $('.search-form .search-field').delay(300).queue(function() {
       $(this).val("");
       $(this).dequeue();

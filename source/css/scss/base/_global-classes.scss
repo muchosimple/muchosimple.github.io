@@ -152,7 +152,7 @@ $GLOBAL CLASSES
 }
 .overlay-active {
   background-color: rgba($black, .8);
-  z-index: 5000010; // Appear over ads
+  z-index: 50000010; // Appear over ads and Time Hat
 }
 .load {
   display: none;

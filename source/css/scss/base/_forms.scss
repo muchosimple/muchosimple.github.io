@@ -200,7 +200,7 @@ input[type="search"]::-webkit-search-decoration {
   }
   .search-is-active & {
     background-color: $overlay;
-    z-index: 5000010; // Appear over ads @TODO: Refactor to one z-index for overlays
+    z-index: 50000010; // Appear over ads and Time Hat @TODO: Refactor to one z-index for overlays
     @include mq($px950) {
       background-color: $overlay-light;
     }
@@ -255,6 +255,9 @@ input[type="search"]::-webkit-search-decoration {
     text-align: center;
     background-color: $blue-light;
     line-height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     @include rem(padding, 13);
     &:hover {
       background-color: $blue;
