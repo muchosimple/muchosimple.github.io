@@ -210,10 +210,6 @@
 .carousel-item {
   margin: rem(3);
   border: 2px solid transparent;
-  &.active-item,
-  &:hover {
-    box-shadow: 0 0 0 1px $white;
-  }
   img {
     width: 100%;
     display: block;
@@ -222,6 +218,10 @@
   a {
     display: block;
   }
+}
+.owl-item.active-item .carousel-item,
+.carousel-item:hover {
+  box-shadow: 0 0 0 1px $white;
 }
 // Starter carousel item
 .carousel-start {

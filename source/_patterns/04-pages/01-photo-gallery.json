@@ -126,7 +126,7 @@
 	"carousel-items" : [
 		{
 			"is-starter-item" : true,
-			"carousel-item-class" : "carousel-start active-item",
+			"carousel-item-class" : "carousel-start",
 			"img" : {
 				"src" : "http://placehold.it/1x1",
 				"alt" : "Start"

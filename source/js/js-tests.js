@@ -6,7 +6,6 @@ var galleryNext = '<span class="icon icon-arrow-right no-bg"><span class="is-vis
 var $slides = $('.js-slides');
 $slides.show().owlCarousel({
   singleItem: true,
-  //navigation: true,
   pagination: false,
   lazyLoad: true,
   rewindNav: false,
@@ -19,19 +18,6 @@ $slides.show().owlCarousel({
   afterAction: afterAction
 });
 
-// Function called after every slide advance.
-function afterAction(){
-  $('.slide-count').find('.slide-index').text(this.currentItem);
-}
-
-// Custom navigation events
-$('.js-slide-hover-next, .js-btn--gallery-start').click(function(){
-  $slides.trigger('owl.next');
-});
-$('.js-slide-hover-prev').click(function(){
-  $slides.trigger('owl.prev');
-});
-
 // Carousel init
 var $carousel = $('.js-carousel');
 $carousel.show().owlCarousel({
@@ -42,5 +28,64 @@ $carousel.show().owlCarousel({
   lazyEffect: false,
   addClassActive: true,
   mouseDrag: false,
-  navigationText: [galleryPrev, galleryNext]
+  navigationText: [galleryPrev, galleryNext],
+  afterInit: function(el){
+    el.find('.owl-item').eq(0).addClass('active-item');
+  }
 });
+
+// Function called after every slide advance.
+function afterAction(){
+  var current = this.currentItem;
+  // Update slide count.
+  $('.slide-count').find('.slide-index').text(current);
+
+  $('.js-carousel').find('.owl-item').removeClass('active-item').eq(current).addClass('active-item');
+  if ($('.js-carousel').data('owlCarousel') !== undefined){
+    centerCarousel(current)
+  }
+}
+
+$('.js-carousel').on('click', '.owl-item', function(e){
+  e.preventDefault();
+  var number = $(this).data('owlItem');
+  $slides.trigger('owl.goTo', number);
+});
+
+function centerCarousel(number){
+  var carouselVisible = $carousel.data('owlCarousel').owl.visibleItems;
+  var num = number;
+  var found = false;
+  for (var i in carouselVisible){
+    if (num === carouselVisible[i]){
+      var found = true;
+    }
+  }
+
+  if (found === false){
+    if (num > carouselVisible[carouselVisible.length - 1]){
+      $carousel.trigger('owl.goTo', num - carouselVisible.length + 2)
+    }
+    else{
+      if(num - 1 === -1){
+        num = 0;
+      }
+      $carousel.trigger('owl.goTo', num);
+    }
+  }
+  else if (num === carouselVisible[carouselVisible.length - 1]){
+    $carousel.trigger('owl.goTo', carouselVisible[1])
+  }
+  else if (num === carouselVisible[0]){
+    $carousel.trigger('owl.goTo', num - 1)
+  }
+}
+
+// Custom navigation events
+$('.js-slide-hover-next, .js-btn--gallery-start').click(function(){
+  $slides.trigger('owl.next');
+});
+$('.js-slide-hover-prev').click(function(){
+  $slides.trigger('owl.prev');
+});
+
