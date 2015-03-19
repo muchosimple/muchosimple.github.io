@@ -20,7 +20,8 @@ $slides.show().owlCarousel({
   mouseDrag: false,
   touchDrag: false,
   navigationText: [galleryPrev, galleryNext],
-  afterAction: afterAction
+  afterAction: afterAction,
+  afterInit: afterInit
 });
 
 // Carousel init
@@ -35,7 +36,7 @@ function initCarousel(){
       lazyEffect: false,
       addClassActive: true,
       mouseDrag: false,
-      itemsCustom: [[0,8], [801,4], [900,5], [950,6], [1140,7], [1130,8]],
+      itemsCustom: [[0,8], [801,4], [900,5], [950,6], [1045,7], [1130,8]],
       navigationText: [galleryPrev, galleryNext],
       afterInit: function(el){
         el.find('.owl-item').eq(0).addClass('active-item');
@@ -56,6 +57,34 @@ function afterAction(){
   $('.js-carousel').find('.owl-item').removeClass('active-item').eq(current).addClass('active-item');
   if ($('.js-carousel').data('owlCarousel') !== undefined){
     centerCarousel(current)
+  }
+
+  // Update pushstate with atomic url.
+  if (history && history.pushState) {
+    var hash = $slides.find('.owl-item').eq(current).find('.slide').attr('data-url');
+    window.history.pushState(null, null, hash);
+  }
+}
+
+// Once the gallery is loaded, check the url for a url segment that matches a
+// slide data-url and advance to that slide.
+function afterInit() {
+  //var slideData = $slides.data('owlCarousel');
+  var href = $(location).attr('href');
+  var slideUrl = href.substr(href.lastIndexOf('?') + 1);
+  if (slideUrl.length) {
+    var slideIndex = $slides.find('[data-url="?' + slideUrl + '"]').parent().index();
+    $slides.trigger('owl.goTo', slideIndex);
+  }
+}
+
+// Detect the pushstate and update slide.
+window.onpopstate = function(event) {
+  if (event.state) {
+    // history changed because of pushState/replaceState
+  } else {
+    // history changed because of a page load
+    afterInit();
   }
 }
 
