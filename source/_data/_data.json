@@ -3,6 +3,7 @@
   "htmlClass": "pl",
   "bodyClass": "body",
   "has-featured-stories" : true,
+  "is-welcome-slide" : false,
   "is-lazy" : true,
   "no-lazy" : false,
   "lazy-slide" : false,

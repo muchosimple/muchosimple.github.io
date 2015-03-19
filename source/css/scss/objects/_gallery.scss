@@ -6,12 +6,92 @@
   padding-bottom: $pad;
   margin-bottom: $space-half;
 }
+
+// Previous/Next arrows that appear over main image on hover.
+.hover-slide-navigation {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  margin-top: rem(-30);
+  z-index: 20;
+  opacity: 0;
+  @include transition(opacity .2s ease-out);
+  .icon {
+    width: rem(42);
+    height: rem(60);
+    padding-top: rem(12);
+    background-color: rgba($black, .5);
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    &:hover {
+      background-color: $black;
+    }
+    path {
+      fill :$white;
+    }
+  }
+  .icon-arrow-right {
+    right: 0;
+    padding-right: rem(3);
+    padding-left: rem(4);
+  }
+  .icon-arrow-left {
+    left: 0;
+    padding-right: rem(4);
+    padding-left: rem(3);
+  }
+}
+// Always show on touch devices.
+.touch .hover-slide-navigation {
+  opacity: 1;
+}
+// Slide navigation within the text section of slide.
+.slide-navigation {
+  margin-bottom: rem(20);
+  display: inline-block;
+  .icon {
+    margin-right: rem(6);
+    vertical-align: middle;
+    cursor: pointer;
+  }
+}
+// Slide counter
+.slide-count {
+  display: inline-block;
+  color: $gray-med;
+  font-weight: 400;
+  font-size: rem(17);
+  vertical-align: middle;
+  padding: 0 rem(4);
+}
+
+// Show/Hide next/prev depending on active slide position.
+.owl-item.active:first-child {
+  .slide-img .icon-arrow-left {
+    display: none;
+  }
+  .slide-text .icon-arrow-left {
+    @extend .icon--disabled;
+  }
+}
+.owl-item.active:last-child {
+  .slide-img .icon-arrow-right {
+    display: none;
+  }
+  .slide-text .icon-arrow-right {
+    @extend .icon--disabled;
+  }
+}
+
 .js .slides {
   // Show slides once slider is initialized.
   display: none;
 }
 .slide-img {
   margin-bottom: $space;
+  position: relative;
   @include mq($micro-break) {
     width: 50%;
     float: left;
@@ -19,6 +99,11 @@
   }
   @include mq($large-break) {
     width: 53%;
+  }
+  &:hover {
+    .hover-slide-navigation {
+      opacity: 1;
+    }
   }
 }
 .slide-text {
@@ -125,6 +210,7 @@
 .carousel-item {
   margin: rem(3);
   border: 2px solid transparent;
+  &.active-item,
   &:hover {
     box-shadow: 0 0 0 1px $white;
   }
@@ -137,5 +223,23 @@
     display: block;
   }
 }
-
+// Starter carousel item
+.carousel-start {
+  border: 2px solid $blue-light;
+  text-align: center;
+  position: relative;
+  a {
+    color: $blue-light;
+    overflow: hidden;
+  }
+  img {
+    opacity: 0;
+  }
+  span {
+    position: absolute;
+    left: rem(19);
+    top: rem(30);
+    font-size: rem(14);
+  }
+}
 

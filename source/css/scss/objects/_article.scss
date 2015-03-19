@@ -172,6 +172,10 @@
 		}
 	}
 }
+// Display them for touch devices.
+.touch .has-social {
+	bottom: 0;
+}
 .img-overlay {
 	position: absolute;
 	bottom: rem(-50);

@@ -4,22 +4,32 @@ var galleryNext = '<span class="icon icon-arrow-right no-bg"><span class="is-vis
 
 // Gallery init
 var $slides = $('.js-slides');
-$('.btn--gallery-start').click(function(e) {
-  e.preventDefault();
-  // Hide starter slide.
-  $(this).parents('.slide-starter').hide();
-  // Load and show slides.
-  $slides.show().owlCarousel({
-    singleItem: true,
-    //navigation: true,
-    pagination: false,
-    lazyLoad: true,
-    rewindNav: false,
-    slideSpeed: 0,
-    navigationText: [galleryPrev, galleryNext],
-    beforeMove: function() {
-    }
-  });
+$slides.show().owlCarousel({
+  singleItem: true,
+  //navigation: true,
+  pagination: false,
+  lazyLoad: true,
+  rewindNav: false,
+  slideSpeed: 0,
+  lazyEffect: false,
+  addClassActive: true,
+  mouseDrag: false,
+  touchDrag: false,
+  navigationText: [galleryPrev, galleryNext],
+  afterAction: afterAction
+});
+
+// Function called after every slide advance.
+function afterAction(){
+  $('.slide-count').find('.slide-index').text(this.currentItem);
+}
+
+// Custom navigation events
+$('.js-slide-hover-next, .js-btn--gallery-start').click(function(){
+  $slides.trigger('owl.next');
+});
+$('.js-slide-hover-prev').click(function(){
+  $slides.trigger('owl.prev');
 });
 
 // Carousel init
@@ -29,5 +39,8 @@ $carousel.show().owlCarousel({
   lazyLoad: true,
   navigation: true,
   rewindNav: false,
+  lazyEffect: false,
+  addClassActive: true,
+  mouseDrag: false,
   navigationText: [galleryPrev, galleryNext]
 });

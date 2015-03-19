@@ -21,30 +21,12 @@
 
 					<section class="section gallery-container" itemprop="articleBody">
 						<div class="gallery">
-
-							<article class="slide slide-starter">
-								<div class="slide-inner cf">
-									{{# welcome-slide }}
-										<div class="slide-img">
-											{{> molecules-image-with-social }}
-										</div> <!-- /.slide-img -->
-										<div class="slide-intro slide-text">
-											<p class="dek">{{ slide-intro }}</p>
-											{{> molecules-byline }}
-											<a href="" class="btn btn--gallery-start">Start <span class="icon icon-arrow-right no-bg">{{> atoms-arrow-right }}</span></a>
-										</div> <!-- /.slide-intro -->
-									{{/ welcome-slide }}
-								</div> <!-- /.slide-inner -->
-							</article> <!-- /.slide -->
-
 							<div class="slides js-slides">
 								{{# slides }}
 									{{> molecules-gallery-slide }}
 								{{/ slides }}
 							</div> <!-- /.slides -->
-
 						</div> <!-- /.gallery -->
-
 						<div class="carousel">
 							<ul class="carousel-item-list js-carousel">
 								{{# carousel-items }}
@@ -52,7 +34,6 @@
 								{{/ carousel-items }}
 							</ul> <!-- /.carousel-item-list -->
 						</div> <!-- /.carousel -->
-
 					</section> <!-- /.gallery-container -->
 
 				</article> <!-- /.article-gallery -->

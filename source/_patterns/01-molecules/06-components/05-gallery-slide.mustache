@@ -1,11 +1,33 @@
 <article class="slide {{ slide-class }}">
   <div class="slide-inner cf">
     <div class="slide-img">
+      <div class="hover-slide-navigation">
+        <span class="icon no-bg icon-arrow-left js-slide-hover-prev">{{> atoms-arrow-left }}</span>
+        <span class="icon no-bg icon-arrow-right js-slide-hover-next">{{> atoms-arrow-right }}</span>
+      </div> <!-- /.hover-slide-navigation -->
       {{> molecules-image-with-social }}
     </div> <!-- /.slide-img -->
-    <div class="slide-text text">
-      <h2 class="slide-title">{{ slide-title }}</h2>
-      <p>{{{ slide-dek }}}</p>
-    </div> <!-- /.slide-text -->
+
+    {{# is-welcome-slide }}
+      <div class="slide-intro slide-text">
+        <p class="dek">{{ slide-intro }}</p>
+        {{> molecules-byline }}
+        <div class="btn btn--gallery-start js-btn--gallery-start">Start <span class="icon icon-arrow-right no-bg">{{> atoms-arrow-right }}</span></div>
+      </div> <!-- /.slide-intro -->
+    {{/ is-welcome-slide }}
+    {{^ is-welcome-slide }}
+      <div class="slide-text">
+        <div class="slide-navigation">
+          <span class="icon no-bg rounded icon-arrow-left icon--alt icon--medium js-slide-hover-prev">{{> atoms-arrow-left }}</span>
+          <span class="icon no-bg rounded icon-arrow-right icon--alt icon--medium js-slide-hover-next">{{> atoms-arrow-right }}</span>
+          <div class="slide-count"><span class="slide-index"></span> of 8</div>
+        </div> <!-- /.slide-navigation -->
+        <div class="text">
+          <h2 class="slide-title">{{ slide-title }}</h2>
+          <p>{{{ slide-dek }}}</p>
+        </div>
+      </div> <!-- /.slide-text -->
+    {{/ is-welcome-slide }}
+
   </div> <!-- /.slide-inner -->
 </article> <!-- /.slide -->

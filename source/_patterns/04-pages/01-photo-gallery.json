@@ -12,19 +12,20 @@
 			"title" : "Best Slow-Cooker Soup and Stew Recipes"
 		}
 	],
-	"welcome-slide" : {
-		"img" : {
-			"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1202/beef-bean-chili_300.jpg?itok=qWgkI1u9",
-			"alt" : "Beef Bean Chili"
-		},
-		"credit" : "Marcus Nilsson",
-		"social-tools" : "true",
-		"slide-intro" : "Warm up with these easy recipes for comforting, no-fuss meals. Try one of these top-notch recipes for stews, tacos, lasagna, and more.",
-		"byline" : "Abigail Wise",
-		"is-lazy" : false,
-		"no-lazy" : true
-	},
 	"slides" : [
+		{
+			"is-welcome-slide" : true,
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1202/beef-bean-chili_300.jpg?itok=qWgkI1u9",
+				"alt" : "Beef Bean Chili"
+			},
+			"credit" : "Marcus Nilsson",
+			"social-tools" : "true",
+			"slide-intro" : "Warm up with these easy recipes for comforting, no-fuss meals. Try one of these top-notch recipes for stews, tacos, lasagna, and more.",
+			"byline" : "Abigail Wise",
+			"is-lazy" : false,
+			"lazy-slide" : true
+		},
 		{
 			"img" : {
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/0111/white-bean-soup_300.jpg?itok=J341YBCW",
@@ -35,7 +36,7 @@
 			"slide-title" : "Slow-Cooker White Bean Soup With Andouille and Collards",
 			"slide-dek" : "Simple, tasty, and filling, this soup will quickly become a regular addition to your dinner lineup. <a target=\"_blank\" href=\"\" sl-processed=\"1\">Get the recipe</a>",
 			"is-lazy" : false,
-			"no-lazy" : true
+			"lazy-slide" : true
 		},
 		{
 			"img" : {
@@ -99,6 +100,18 @@
 		},
 		{
 			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1111/bean-stew_300.jpg?itok=jMtnA9IE",
+				"alt" : "Slow-Cooker White Bean and Kielbasa Stew"
+			},
+			"credit" : "Sang An",
+			"social-tools" : "true",
+			"slide-title" : "Slow-Cooker White Bean and Kielbasa Stew",
+			"slide-dek" : "This is a great dish to freeze and keep on hand for last-minute lunches and dinners. <a target=\"_blank\" href=\"\" sl-processed=\"1\"><br><br>Get the recipe</a>",
+			"is-lazy" : false,
+			"lazy-slide" : true
+		},
+		{
+			"img" : {
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0403/seafood-gumbo_300.jpg?itok=CtRbmHh6",
 				"alt" : "Slow-Cooker Seafood Gumbo"
 			},
@@ -112,17 +125,11 @@
 	],
 	"carousel-items" : [
 		{
+			"is-starter-item" : true,
+			"carousel-item-class" : "carousel-start active-item",
 			"img" : {
-				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_thumbnail/public/image/images/1202/beef-bean-chili_300.jpg?itok=q_Xxl4E1",
-				"alt" : "Slow-Cooker Seafood Gumbo"
-			},
-			"is-lazy" : false,
-			"lazy-slide" : true
-		},
-		{
-			"img" : {
-				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_thumbnail/public/image/images/1202/chicken-potpie_300.jpg?itok=oCN40ql0",
-				"alt" : "Slow-Cooker Seafood Gumbo"
+				"src" : "http://placehold.it/1x1",
+				"alt" : "Start"
 			},
 			"is-lazy" : false,
 			"lazy-slide" : true
@@ -130,7 +137,7 @@
 		{
 			"img" : {
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_thumbnail/public/image/images/0111/white-bean-soup_300.jpg?itok=ua-g66We",
-				"alt" : "Slow-Cooker Seafood Gumbo"
+				"alt" : "Slow-Cooker White Bean Soup With Andouille and Collards"
 			},
 			"is-lazy" : false,
 			"lazy-slide" : true
@@ -138,7 +145,7 @@
 		{
 			"img" : {
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_thumbnail/public/image/images/food-recipes/recipe-collections/0403/beef_300.jpg?itok=Jygrdmcq",
-				"alt" : "Slow-Cooker Seafood Gumbo"
+				"alt" : "Slow-Cooker Classic Beef Stew"
 			},
 			"is-lazy" : false,
 			"lazy-slide" : true
@@ -146,7 +153,7 @@
 		{
 			"img" : {
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_thumbnail/public/image/images/1008/chicken-past-soup_300.jpg?itok=w9hriqkj",
-				"alt" : "Slow-Cooker Seafood Gumbo"
+				"alt" : "Slow-Cooker Chicken and Pasta Soup"
 			},
 			"is-lazy" : false,
 			"lazy-slide" : true
@@ -154,7 +161,7 @@
 		{
 			"img" : {
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_thumbnail/public/image/images/food-recipes/recipe-collections/0801/beans-1_300.jpg?itok=Kxi-mwkI",
-				"alt" : "Slow-Cooker Seafood Gumbo"
+				"alt" : "Slow-Cooker Beer-Braised Pork and Black Bean Soup"
 			},
 			"is-lazy" : false,
 			"lazy-slide" : true
@@ -162,15 +169,7 @@
 		{
 			"img" : {
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_thumbnail/public/image/images/0111/chicken-biscuit_300.jpg?itok=k-Jh33sI",
-				"alt" : "Slow-Cooker Seafood Gumbo"
-			},
-			"is-lazy" : false,
-			"lazy-slide" : true
-		},
-		{
-			"img" : {
-				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_thumbnail/public/image/images/0111/chicken-biscuit_300.jpg?itok=k-Jh33sI",
-				"alt" : "Slow-Cooker Seafood Gumbo"
+				"alt" : "Slow-Cooker Creamy Chicken With Biscuits"
 			},
 			"is-lazy" : false,
 			"lazy-slide" : true
@@ -178,7 +177,15 @@
 		{
 			"img" : {
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_thumbnail/public/image/images/food-recipes/recipe-collections/0403/pea-soup_300.jpg?itok=cyawioEn",
-				"alt" : "Slow-Cooker Seafood Gumbo"
+				"alt" : "Slow-Cooker Smoky Pea Soup"
+			},
+			"is-lazy" : false,
+			"lazy-slide" : true
+		},
+		{
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_thumbnail/public/image/images/1111/bean-stew_300.jpg?itok=wp3m7ZUK",
+				"alt" : "Slow-Cooker White Bean and Kielbasa Stew"
 			},
 			"is-lazy" : false,
 			"lazy-slide" : true

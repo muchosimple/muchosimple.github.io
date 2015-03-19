@@ -18,6 +18,35 @@
     }
   }
 }
+.icon--alt {
+  border: 1px solid $gray-med;
+  background-color: $white;
+  path {
+    fill: $black;
+  }
+  &:hover {
+    border-color: $blue-light;
+    background-color: $blue-light;
+    path {
+      fill: $white;
+      shape-rendering: auto;
+    }
+  }
+}
+.icon--disabled {
+  cursor: default;
+  border-color: $gray;
+  path {
+    fill: $gray;
+  }
+  &:hover {
+    border-color: $gray;
+    background-color: $white;
+    path {
+      fill: $gray;
+    }
+  }
+}
 .no-bg {
   background-image: none;
 }

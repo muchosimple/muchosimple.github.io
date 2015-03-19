@@ -36,6 +36,7 @@
   text-align: center;
   .block {
     max-width: rem(170);
+    padding-bottom: rem(4);
     @include center-block;
   }
 }
