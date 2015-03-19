@@ -128,7 +128,7 @@
 			"is-starter-item" : true,
 			"carousel-item-class" : "carousel-start",
 			"img" : {
-				"src" : "http://placehold.it/1x1",
+				"src" : "http://placehold.it/75x75",
 				"alt" : "Start"
 			},
 			"is-lazy" : false,

@@ -92,7 +92,8 @@
 .slide-img {
   margin-bottom: $space;
   position: relative;
-  @include mq($micro-break) {
+  display: inline-block;
+  @media (min-width: $px500) and (max-width: $medium-break), (min-width: $px850) {
     width: 50%;
     float: left;
     margin-bottom: 0;
@@ -107,7 +108,7 @@
   }
 }
 .slide-text {
-  @include mq($micro-break) {
+  @media (min-width: $px500) and (max-width: $medium-break), (min-width: $px850) {
     width: 50%;
     float: left;
     padding-left: $pad-and-half;
@@ -149,7 +150,7 @@
 }
 .slide-intro {
   .dek {
-    @media (min-width: $micro-break) and (max-width: $px650), (min-width: $medium-break) and (max-width: $large-break) {
+    @media (min-width: $px500) and (max-width: $px650), (min-width: $medium-break) and (max-width: $large-break) {
       font-size: rem(20);
     }
   }
@@ -164,6 +165,10 @@
   display: none;
 }
 .carousel {
+  @include mq($small-break, max) {
+    // Only display the carousel if there's enough room.
+    display: none;
+  }
   position: relative;
   max-width: rem(700);
   padding: rem(5) rem(6);
@@ -209,18 +214,19 @@
 }
 .carousel-item {
   margin: rem(3);
-  border: 2px solid transparent;
   img {
-    width: 100%;
     display: block;
     height: auto;
+    width: 100%;
+    border: 2px solid transparent;
   }
   a {
     display: block;
   }
 }
-.owl-item.active-item .carousel-item,
-.carousel-item:hover {
+.owl-item.active-item img,
+.owl-item.active-item .carousel-start,
+.carousel-item:hover img {
   box-shadow: 0 0 0 1px $white;
 }
 // Starter carousel item
@@ -237,8 +243,12 @@
   }
   span {
     position: absolute;
-    left: rem(19);
-    top: rem(30);
+    width: rem(40);
+    height: rem(12);
+    left: 50%;
+    margin-left: rem(-20);
+    top: 50%;
+    margin-top: rem(-6);
     font-size: rem(14);
   }
 }
