@@ -15,6 +15,7 @@
 	"slides" : [
 		{
 			"is-welcome-slide" : true,
+			"slide-class" : "slide--start",
 			"img" : {
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1202/beef-bean-chili_300.jpg?itok=qWgkI1u9",
 				"alt" : "Beef Bean Chili"
@@ -129,6 +130,41 @@
 			"slide-dek" : "Abundant shrimp, crab, okra, and bacon make this soup a wholesome meal-in-a-bowl. <a target=\"_blank\" href=\"\" sl-processed=\"1\"><br><br>Get the recipe</a>",
 			"is-lazy" : false,
 			"lazy-slide" : true
+		}
+	],
+	"last-slide" : [
+		{
+			"data-url" : "?end",
+			"picturefill" : true,
+			"end-slide-blocks" : [
+				{
+					"block-class" : "block-stacked",
+					"img" : {
+						"src-m": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/cooking-tips/0412/choco-mix_300.jpg?itok=FyCShMKT",
+						"src-s": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/food-recipes/cooking-tips/0412/choco-mix_300.jpg?itok=FyCShMKT",
+						"alt" : "8 Buzz-Worthy Coffee and Espresso Dessert Recipes"
+					},
+					"title" : "8 Buzz-Worthy Coffee and Espresso Dessert Recipes"
+				},
+				{
+					"block-class" : "block-stacked",
+					"img" : {
+						"src-m": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/0111/chicken-nicoise-salad2_300.jpg?itok=2I_PAGH_",
+						"src-s": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/0111/chicken-nicoise-salad2_300.jpg?itok=2I_PAGH_",
+						"alt" : "31 Vegetarian Recipes"
+					},
+					"title" : "31 Vegetarian Recipes So Satisfying You’ll Want to Go Meatless for an Entire Month"
+				},
+				{
+					"block-class" : "block-stacked",
+					"img" : {
+						"src-m": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/apple-pie-pancakes.jpg?itok=fOwI1_ke",
+						"src-s": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/apple-pie-pancakes.jpg?itok=fOwI1_ke",
+						"alt" : "11 Apple Pie-Inspired Recipes"
+					},
+					"title" : "11 Apple Pie-Inspired Recipes That Almost Beat The Real Thing"
+				}
+			]
 		}
 	],
 	"carousel-items" : [

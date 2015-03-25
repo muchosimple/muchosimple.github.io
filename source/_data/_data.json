@@ -1,5 +1,5 @@
 {
-  "title" : "Pattern Lab",
+  "title" : "Real Simple | Pattern Lab",
   "htmlClass": "pl",
   "bodyClass": "body",
   "has-featured-stories" : true,
@@ -7,6 +7,8 @@
   "is-lazy" : true,
   "no-lazy" : false,
   "lazy-slide" : false,
+  "img-break-l" : "1200",
+  "img-break-m" : "700",
   "img": {
     "landscape-4x3": {
       "src": "../../images/fpo_4x3.png",

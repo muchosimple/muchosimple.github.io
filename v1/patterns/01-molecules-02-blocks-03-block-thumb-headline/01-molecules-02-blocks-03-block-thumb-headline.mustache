@@ -1,9 +1,16 @@
 &lt;div class=&quot;block block-thumb {{ block-class }}&quot;&gt;
-	&lt;a href=&quot;{{ url }}&quot; class=&quot;b-inner&quot;&gt;
-		&lt;div class=&quot;b-thumb&quot;&gt;
-			&lt;div class=&quot;img-wrap&quot;&gt;{{&gt; atoms-image }}&lt;/div&gt;
-		&lt;/div&gt; &lt;!-- /.b-thumb --&gt;
-		&lt;div class=&quot;b-text&quot;&gt;
+  &lt;a href=&quot;{{ url }}&quot; class=&quot;b-inner&quot;&gt;
+    &lt;div class=&quot;b-thumb&quot;&gt;
+      &lt;div class=&quot;img-wrap&quot;&gt;
+        {{# picturefill }}
+          {{&gt; atoms-picturefill }}
+        {{/ picturefill }}
+        {{^ picturefill }}
+          {{&gt; atoms-image }}
+        {{/ picturefill }}
+      &lt;/div&gt; &lt;!-- /.img-wrap --&gt;
+    &lt;/div&gt; &lt;!-- /.b-thumb --&gt;
+    &lt;div class=&quot;b-text&quot;&gt;
       {{# date }}
         {{&gt; atoms-time }}
       {{/ date }}
@@ -13,7 +20,7 @@
       {{# number }}
         &lt;span class=&quot;rounded number&quot;&gt;{{ number }}&lt;/span&gt;
       {{/ number }}
-			&lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;{{{ title }}}&lt;/span&gt;&lt;/h3&gt;
+      &lt;h3 class=&quot;b-title&quot;&gt;&lt;span&gt;{{{ title }}}&lt;/span&gt;&lt;/h3&gt;
       {{# byline }}
         {{&gt; molecules-byline }}
       {{/ byline }}
@@ -22,6 +29,6 @@
         &lt;p&gt;{{ dek }}&lt;/p&gt;
       &lt;/div&gt; &lt;!-- /.dek --&gt;
       {{/ dek }}
-		&lt;/div&gt; &lt;!-- /.b-text --&gt;
-	&lt;/a&gt; &lt;!-- /.b-inner --&gt;
+    &lt;/div&gt; &lt;!-- /.b-text --&gt;
+  &lt;/a&gt; &lt;!-- /.b-inner --&gt;
 &lt;/div&gt; &lt;!-- /.block-thumb --&gt;

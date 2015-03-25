@@ -1,9 +1,16 @@
 <div class="block block-thumb {{ block-class }}">
-	<a href="{{ url }}" class="b-inner">
-		<div class="b-thumb">
-			<div class="img-wrap">{{> atoms-image }}</div>
-		</div> <!-- /.b-thumb -->
-		<div class="b-text">
+  <a href="{{ url }}" class="b-inner">
+    <div class="b-thumb">
+      <div class="img-wrap">
+        {{# picturefill }}
+          {{> atoms-picturefill }}
+        {{/ picturefill }}
+        {{^ picturefill }}
+          {{> atoms-image }}
+        {{/ picturefill }}
+      </div> <!-- /.img-wrap -->
+    </div> <!-- /.b-thumb -->
+    <div class="b-text">
       {{# date }}
         {{> atoms-time }}
       {{/ date }}
@@ -13,7 +20,7 @@
       {{# number }}
         <span class="rounded number">{{ number }}</span>
       {{/ number }}
-			<h3 class="b-title"><span>{{{ title }}}</span></h3>
+      <h3 class="b-title"><span>{{{ title }}}</span></h3>
       {{# byline }}
         {{> molecules-byline }}
       {{/ byline }}
@@ -22,6 +29,6 @@
         <p>{{ dek }}</p>
       </div> <!-- /.dek -->
       {{/ dek }}
-		</div> <!-- /.b-text -->
-	</a> <!-- /.b-inner -->
+    </div> <!-- /.b-text -->
+  </a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->

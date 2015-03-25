@@ -66,7 +66,28 @@
   vertical-align: middle;
   padding: 0 rem(4);
 }
-
+.slide-controls {
+  @include mq($px600, max) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  @include mq($px600) {
+    max-width: rem(348);
+    float: right;
+    width: 100%;
+  }
+}
+.slide-inner {
+  position: relative;
+  @include mq($px600, max) {
+    padding-top: rem(45);
+  }
+}
+.slide--start .slide-inner {
+  padding-top: 0;
+}
 // Show/Hide next/prev depending on active slide position.
 .owl-item.active:first-child {
   .slide-img .icon-arrow-left {
@@ -80,7 +101,8 @@
   .slide-img .icon-arrow-right {
     display: none;
   }
-  .slide-text .icon-arrow-right {
+  .slide-text .icon-arrow-right,
+  .slide--end .icon-arrow-right {
     @extend .icon--disabled;
   }
 }
@@ -92,7 +114,7 @@
 .slide-img {
   margin-bottom: $space;
   position: relative;
-  display: inline-block;
+  text-align: center;
   @media (min-width: $px500) and (max-width: $medium-break), (min-width: $px850) {
     width: 50%;
     float: left;
@@ -100,6 +122,9 @@
   }
   @include mq($large-break) {
     width: 53%;
+  }
+  .img-wrap {
+    display: inline-block;
   }
   &:hover {
     .hover-slide-navigation {
@@ -116,6 +141,9 @@
   @include mq($large-break) {
     width: 47%;
     padding-left: $pad-double;
+  }
+  .text {
+    clear: both;
   }
   // Attempting to capture WYSIWYG entered links and style them like sitewide
   // buttons. The most common "Get the Recipe" link all seem to have the
@@ -252,4 +280,61 @@
     font-size: rem(14);
   }
 }
-
+.replay {
+  float: right;
+  &:hover {
+    .icon {
+      @include transform(rotate(360deg));
+    }
+  }
+  .icon {
+    margin-right: rem(4);
+    @include transform(rotate(0));
+    @include transition(transform .3s ease-in-out);
+  }
+  span {
+    vertical-align: middle;
+  }
+}
+// Ending Slide
+.slide--end {
+  .slide-inner {
+    margin-bottom: $space;
+  }
+  .more-title {
+    margin-bottom: $space-half;
+    @include mq($px500) {
+      float: left;
+      padding-top: rem(12);
+      margin-bottom: 0;
+    }
+  }
+  .block {
+    @include mq($px500) {
+      float: left;
+      width: 31%;
+      margin-right: 3.5%;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    @media (min-width: $px400) and (max-width: $px500) {
+      @include table-layout(30%, 70%);
+      margin-bottom: $space;
+    }
+  }
+  .b-thumb {
+    img {
+      width: 100%;
+    }
+  }
+  .b-title {
+    font-size: rem(18);
+    @media (min-width: $px400) and (max-width: $px500), (min-width: $larger-break) {
+      font-size: rem(20);
+    }
+  }
+}
+.end-slide-blocks {
+  clear: both;
+}

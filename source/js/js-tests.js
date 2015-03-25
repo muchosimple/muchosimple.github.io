@@ -7,8 +7,10 @@ $(window).resize(function() {
 var galleryPrev = '<span class="icon icon-arrow-left no-bg"><span class="is-vishidden">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M344.5 5.3l31.7 31.6L163.1 250l213.1 213.1-31.7 31.6L99.8 250z"/></svg></span>';
 var galleryNext = '<span class="icon icon-arrow-right no-bg"><span class="is-vishidden">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z"/></svg></span>';
 
-// Gallery init
 var $slides = $('.js-slides');
+var $carousel = $('.js-carousel');
+
+// Gallery init
 $slides.show().owlCarousel({
   singleItem: true,
   pagination: false,
@@ -25,7 +27,6 @@ $slides.show().owlCarousel({
 });
 
 // Carousel init
-var $carousel = $('.js-carousel');
 function initCarousel(){
   if (viewportWidth >= 750) {
     $carousel.show().owlCarousel({
@@ -111,7 +112,7 @@ function centerCarousel(number){
       $carousel.trigger('owl.goTo', num - carouselVisible.length + 2)
     }
     else{
-      if(num - 1 === -1){
+      if (num - 1 === -1){
         num = 0;
       }
       $carousel.trigger('owl.goTo', num);
@@ -131,5 +132,9 @@ $('.js-slide-hover-next, .js-btn--gallery-start').click(function(){
 });
 $('.js-slide-hover-prev').click(function(){
   $slides.trigger('owl.prev');
+});
+$('.js-replay').click(function(e){
+  e.preventDefault();
+  $slides.trigger('owl.goTo', 0);
 });
 

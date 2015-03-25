@@ -17,11 +17,10 @@
     {{/ is-welcome-slide }}
     {{^ is-welcome-slide }}
       &lt;div class=&quot;slide-text&quot;&gt;
-        &lt;div class=&quot;slide-navigation&quot;&gt;
-          &lt;span class=&quot;icon no-bg rounded icon-arrow-left icon--alt icon--medium js-slide-hover-prev&quot;&gt;{{&gt; atoms-arrow-left }}&lt;/span&gt;
-          &lt;span class=&quot;icon no-bg rounded icon-arrow-right icon--alt icon--medium js-slide-hover-next&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/span&gt;
-          &lt;div class=&quot;slide-count&quot;&gt;&lt;span class=&quot;slide-index&quot;&gt;&lt;/span&gt; of 8&lt;/div&gt;
-        &lt;/div&gt; &lt;!-- /.slide-navigation --&gt;
+        &lt;div class=&quot;slide-controls&quot;&gt;
+          {{&gt; molecules-slide-counter }}
+          &lt;a href=&quot;{{ url }}&quot; class=&quot;replay js-replay&quot;&gt;&lt;span class=&quot;icon icon-replay icon--alt rounded icon--medium&quot;&gt;{{&gt; atoms-replay }}&lt;/span&gt; &lt;span class=&quot;light&quot;&gt;Replay&lt;/span&gt;&lt;/a&gt;
+        &lt;/div&gt; &lt;!-- /.slide-controls --&gt;
         &lt;div class=&quot;text&quot;&gt;
           &lt;h2 class=&quot;slide-title&quot;&gt;{{ slide-title }}&lt;/h2&gt;
           &lt;p&gt;{{{ slide-dek }}}&lt;/p&gt;

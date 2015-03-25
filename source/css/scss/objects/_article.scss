@@ -174,7 +174,9 @@
 }
 // Display them for touch devices.
 .touch .has-social {
-	bottom: 0;
+	.img-overlay {
+		bottom: 0;
+	}
 }
 .img-overlay {
 	position: absolute;
