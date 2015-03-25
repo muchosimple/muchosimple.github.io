@@ -302,10 +302,10 @@
     margin-bottom: $space;
   }
   .more-title {
-    margin-bottom: $space-half;
-    @include mq($px500) {
+    margin-bottom: rem(12);
+    @include mq($px600) {
       float: left;
-      padding-top: rem(12);
+      padding-top: rem(10);
       margin-bottom: 0;
     }
   }
@@ -318,7 +318,7 @@
         margin-right: 0;
       }
     }
-    @media (min-width: $px400) and (max-width: $px500) {
+    @include mq($px500, max) {
       @include table-layout(30%, 70%);
       margin-bottom: $space;
     }

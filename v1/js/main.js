@@ -1,6 +1,29 @@
 /* MAIN JS
 --------------------------------------------*/
 
+// check window width
+var getWidth = function() {
+  var width;
+  if (document.body && document.body.offsetWidth) {
+    width = document.body.offsetWidth;
+  }
+  if (document.compatMode === 'CSS1Compat' &&
+      document.documentElement &&
+      document.documentElement.offsetWidth ) {
+     width = document.documentElement.offsetWidth;
+  }
+  if (window.innerWidth) {
+     width = window.innerWidth;
+  }
+  return width;
+};
+window.onload = function() {
+  getWidth();
+}
+window.onresize = function() {
+  getWidth();
+}
+
 (function($){
 
   // BASE SETUP ------------------------------------//
@@ -17,30 +40,6 @@
       px900 = 900,
       px1000 = 1000,
       pxmax = 1320;
-
-  // check window width
-  var getWidth = function() {
-    var width;
-    if (document.body && document.body.offsetWidth) {
-      width = document.body.offsetWidth;
-    }
-    if (document.compatMode === 'CSS1Compat' &&
-        document.documentElement &&
-        document.documentElement.offsetWidth ) {
-       width = document.documentElement.offsetWidth;
-    }
-    if (window.innerWidth) {
-       width = window.innerWidth;
-    }
-    return width;
-  };
-  window.onload = function() {
-    getWidth();
-  }
-  window.onresize = function() {
-    getWidth();
-  }
-
 
   // SITE SPECIFIC JS ------------------------------//
 

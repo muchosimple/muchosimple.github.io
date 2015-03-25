@@ -1,8 +1,17 @@
 var viewportWidth = $(window).width();
-$(window).resize(function() {
+
+function resizeDelay(){
   viewportWidth = $(window).width();
   initCarousel();
-});
+
+  // Update slide controls width on resize.
+  updateSlideControls();
+}
+var wait;
+window.onresize = function(){
+  clearTimeout(wait);
+  wait = setTimeout(resizeDelay, 100);
+};
 
 var galleryPrev = '<span class="icon icon-arrow-left no-bg"><span class="is-vishidden">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M344.5 5.3l31.7 31.6L163.1 250l213.1 213.1-31.7 31.6L99.8 250z"/></svg></span>';
 var galleryNext = '<span class="icon icon-arrow-right no-bg"><span class="is-vishidden">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z"/></svg></span>';
@@ -77,6 +86,24 @@ function afterInit() {
     var slideIndex = $slides.find('[data-url="?' + slideUrl + '"]').parent().index();
     $slides.trigger('owl.goTo', slideIndex);
   }
+  // Update slide controls width on gallery init.
+  updateSlideControls();
+}
+
+// Update size of end slide prev/next controls. Since the end slide doesn't
+// follow the same structure of a normal slide, we have to get the width of the
+// controls from a previous slide and apply it to the end slide controls in
+// order to keep it in the same click position.
+function updateSlideControls() {
+  var $endSlideControls = $('.slide--end').find('.slide-controls');
+  if ($('.slide-text').length && getWidth() >= 600) {
+    var slideControlsWidth = $('.slide-text').find('.slide-controls').width();
+    // Add width to the slide controld for the end slide.
+    $endSlideControls.css('width', slideControlsWidth);
+  }
+  else {
+    $endSlideControls.removeAttr('style');
+  }
 }
 
 // Detect the pushstate and update slide.
@@ -137,4 +164,3 @@ $('.js-replay').click(function(e){
   e.preventDefault();
   $slides.trigger('owl.goTo', 0);
 });
-
