@@ -19,10 +19,10 @@ var getWidth = function() {
 };
 window.onload = function() {
   getWidth();
-}
+};
 window.onresize = function() {
   getWidth();
-}
+};
 
 (function($){
 

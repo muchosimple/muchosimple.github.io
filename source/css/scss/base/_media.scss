@@ -9,6 +9,7 @@ img, video, object, svg {
 }
 svg {
 	max-height: 100%;
+	width: 99.9% //FF cutting off fix.
 }
 iframe {
 	margin-bottom: $space;
