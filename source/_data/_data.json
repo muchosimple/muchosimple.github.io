@@ -10,9 +10,6 @@
   "img-break-l" : "1200",
   "img-break-m" : "700",
   "rs-site-nav-id" : "rs-hamburger-primary-nav",
-  "wide-nav" : {
-    "rs-site-nav-id" : "rs-site-nav"
-  },
   "img": {
     "landscape-4x3": {
       "src": "../../images/fpo_4x3.png",
@@ -156,7 +153,8 @@
   "wide-nav" : {
     "hide-class" : "h-hide",
     "hover-class" : "js-hover",
-    "subscribe-class" : "subscribe-pop"
+    "subscribe-class" : "subscribe-pop",
+    "rs-site-nav-id" : "rs-site-nav"
   },
   "story-blocks" : [
     {
