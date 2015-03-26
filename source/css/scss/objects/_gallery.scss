@@ -296,6 +296,24 @@
     vertical-align: middle;
   }
 }
+.see-all--grid {
+  float: right;
+  padding-top: rem(4);
+  &:hover {
+    .light {
+      color: $dark-gray;
+    }
+    path {
+      fill: $dark-gray;
+    }
+  }
+  .icon {
+    vertical-align: middle;
+  }
+  .light {
+    vertical-align: bottom;
+  }
+}
 // Ending Slide
 .slide--end {
   .slide-inner {
