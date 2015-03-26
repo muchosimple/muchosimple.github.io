@@ -31,8 +31,8 @@ $slides.show().owlCarousel({
   mouseDrag: false,
   touchDrag: false,
   navigationText: [galleryPrev, galleryNext],
-  afterAction: afterAction,
-  afterInit: afterInit
+  afterAction: afterActionGallery,
+  afterInit: afterInitGallery
 });
 
 // Carousel init
@@ -48,9 +48,7 @@ function initCarousel(){
       mouseDrag: false,
       itemsCustom: [[0,8], [801,4], [900,5], [950,6], [1045,7], [1130,8]],
       navigationText: [galleryPrev, galleryNext],
-      afterInit: function(el){
-        el.find('.owl-item').eq(0).addClass('active-item');
-      }
+      afterInit: afterInitCarousel
     });
   }
 }
@@ -58,15 +56,15 @@ function initCarousel(){
 initCarousel();
 
 // Function called after every slide advance.
-function afterAction(){
+function afterActionGallery(){
   var current = this.currentItem;
   // Update slide count.
   $('.slide-count').find('.slide-index').text(current);
 
   // Update active item class.
-  $('.js-carousel').find('.owl-item').removeClass('active-item').eq(current).addClass('active-item');
-  if ($('.js-carousel').data('owlCarousel') !== undefined){
-    centerCarousel(current)
+  $carousel.find('.owl-item').removeClass('active-item').eq(current).addClass('active-item');
+  if ($carousel.data('owlCarousel') !== undefined){
+    centerCarousel(current);
   }
 
   // Update pushstate with atomic url.
@@ -76,16 +74,25 @@ function afterAction(){
   }
 }
 
-// Once the gallery is loaded, check the url for a url segment that matches a
-// slide data-url and advance to that slide.
-function afterInit() {
-  //var slideData = $slides.data('owlCarousel');
+// Get the current slide number.
+function getSlideIndex() {
+  // var slideData = $slides.data('owlCarousel');
   var href = $(location).attr('href');
   var slideUrl = href.substr(href.lastIndexOf('?') + 1);
   if (slideUrl.length) {
     var slideIndex = $slides.find('[data-url="?' + slideUrl + '"]').parent().index();
-    $slides.trigger('owl.goTo', slideIndex);
   }
+  if (slideIndex < 0) {
+    slideIndex = 0
+  }
+  return slideIndex;
+}
+
+// Once the gallery is loaded, check the url for a url segment that matches a
+// slide data-url and advance to that slide.
+function afterInitGallery() {
+  // Get current slide number.
+  $slides.trigger('owl.goTo', getSlideIndex());
   // Update slide controls width on gallery init.
   updateSlideControls();
 }
@@ -109,15 +116,23 @@ function updateSlideControls() {
 // Detect the pushstate and update slide.
 window.onpopstate = function(event) {
   if (event.state) {
-    // history changed because of pushState/replaceState
+    // History changed because of pushState/replaceState
   } else {
-    // history changed because of a page load
-    afterInit();
+    // History changed because of a page load
+    afterInitGallery();
   }
 }
 
+// Callback function for when the carousel has been initialized.
+function afterInitCarousel() {
+  // Update active item class.
+  $carousel.find('.owl-item').removeClass('active-item').eq(getSlideIndex()).addClass('active-item');
+  // Move to that active item.
+  $carousel.trigger('owl.goTo', getSlideIndex());
+}
+
 // Update the slide position.
-$('.js-carousel').on('click', '.owl-item', function(e){
+$carousel.on('click', '.owl-item', function(e){
   e.preventDefault();
   var number = $(this).data('owlItem');
   $slides.trigger('owl.goTo', number);
