@@ -11,3 +11,5 @@
 # Ignore sass cache generated files
 **/.sass-cache
 **/.sass-cache/*
+
+/node_modules/*
