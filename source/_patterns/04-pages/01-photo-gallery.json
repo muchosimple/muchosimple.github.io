@@ -72,7 +72,7 @@
 			"data-url" : "",
 			"is-ad-slide" : true,
 			"is-normal-slide" : false,
-			"slide-class" : "slide--ad"
+			"slide-class" : "slide--ad slide--alt"
 		},
 		{
 			"data-url" : "?slow-cooker-beer-pork-black-bean-soup",
@@ -143,7 +143,7 @@
 			"data-url" : "",
 			"is-ad-slide" : true,
 			"is-normal-slide" : false,
-			"slide-class" : "slide--ad"
+			"slide-class" : "slide--ad slide--alt"
 		},
 		{
 			"data-url" : "?slow-cooker-open-face-pork",
@@ -247,7 +247,7 @@
 			"lazy-slide" : true
 		},
 		{
-			"slide-num" : "4",
+			"slide-num" : "5",
 			"img" : {
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_thumbnail/public/image/images/food-recipes/recipe-collections/0801/beans-1_300.jpg?itok=Kxi-mwkI",
 				"alt" : "Slow-Cooker Beer-Braised Pork and Black Bean Soup"

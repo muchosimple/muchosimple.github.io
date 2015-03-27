@@ -61,6 +61,7 @@
         lazyEffect: false,
         addClassActive: true,
         mouseDrag: false,
+        scrollPerPage: true,
         itemsCustom: [[0,8], [801,4], [900,5], [950,6], [1045,7], [1130,8]],
         navigationText: [galleryPrev, galleryNext],
         afterInit: afterInitCarousel
@@ -122,12 +123,12 @@
     updateSlideControls();
   }
 
-  // Update size of end slide prev/next controls. Since the end slide doesn't
-  // follow the same structure of a normal slide, we have to get the width of the
-  // controls from a previous slide and apply it to the end slide controls in
-  // order to keep it in the same click position.
+  // Update size of the prev/next controls for irregular slides. Since those
+  // slides doesn't follow the same structure of a normal slide, we have to
+  // get the width of the controls from a previous slide and apply it to the
+  // slide controls in order to keep it in the same click position.
   function updateSlideControls() {
-    var $endSlideControls = $('.slide--end').find('.slide-controls');
+    var $endSlideControls = $('.slide--alt').find('.slide-controls');
     if ($('.slide-text').length && getWidth() >= 600) {
       var slideControlsWidth = $('.slide-text').find('.slide-controls').width();
       // Add width to the slide controld for the end slide.
