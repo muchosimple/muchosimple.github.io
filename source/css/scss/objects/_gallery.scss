@@ -290,6 +290,7 @@
   }
   .icon {
     margin-right: rem(4);
+    overflow: visible;
     @include transform(rotate(0));
     @include transition(transform .3s ease-in-out);
   }
@@ -361,5 +362,16 @@
   .ad-block-wrap {
     padding-top: $pad-double;
     clear: both;
+  }
+}
+// "See All"  Grid View
+.gallery-grid {
+  @include flexbox;
+  @include flex-flow(row wrap);
+  @include align-content(flex-end);
+  .gi {
+    @include flexbox;
+    @include flex-grow(1);
+    width: rem(160);
   }
 }

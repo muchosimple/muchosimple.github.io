@@ -309,5 +309,87 @@
 			"is-lazy" : false,
 			"lazy-slide" : true
 		}
+	],
+	"gallery-grid" : [
+		{
+			"slide-num" : "1",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/0111/white-bean-soup_300.jpg?itok=ua-g66We",
+				"alt" : "Slow-Cooker White Bean Soup With Andouille and Collards"
+			},
+			"title" : "Slow-Cooker White Bean Soup With Andouille and Collards"
+		},
+		{
+			"slide-num" : "2",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/food-recipes/recipe-collections/0403/beef_300.jpg?itok=Jygrdmcq",
+				"alt" : "Slow-Cooker Classic Beef Stew"
+			},
+			"ititle" : "Slow-Cooker Classic Beef Stew"
+		},
+		{
+			"slide-num" : "3",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1008/chicken-past-soup_300.jpg?itok=w9hriqkj",
+				"alt" : "Slow-Cooker Chicken and Pasta Soup"
+			},
+			"title" : "Slow-Cooker Chicken and Pasta Soup"
+		},
+		{
+			"slide-num" : "5",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/food-recipes/recipe-collections/0801/beans-1_300.jpg?itok=Kxi-mwkI",
+				"alt" : "Slow-Cooker Beer-Braised Pork and Black Bean Soup"
+			},
+			"title" : "Slow-Cooker Beer-Braised Pork and Black Bean Soup"
+		},
+		{
+			"slide-num" : "6",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/0111/chicken-biscuit_300.jpg?itok=k-Jh33sI",
+				"alt" : "Slow-Cooker Creamy Chicken With Biscuits"
+			},
+			"title" : "Slow-Cooker Creamy Chicken With Biscuits"
+		},
+		{
+			"slide-num" : "7",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/food-recipes/recipe-collections/0403/pea-soup_300.jpg?itok=cyawioEn",
+				"alt" : "Slow-Cooker Split Pea Soup"
+			},
+			"title" : "Slow-Cooker Split Pea Soup"
+		},
+		{
+			"slide-num" : "8",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1111/bean-stew_300.jpg?itok=wp3m7ZUK",
+				"alt" : "Slow-Cooker White Bean and Kielbasa Stew"
+			},
+			"title" : "Slow-Cooker White Bean and Kielbasa Stew"
+		},
+		{
+			"slide-num" : "9",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/food-recipes/recipe-collections/0403/seafood-gumbo_300.jpg?itok=-u9YZkws",
+				"alt" : "Slow-Cooker Seafood Gumbo"
+			},
+			"title" : "Slow-Cooker Seafood Gumbo"
+		},
+		{
+			"slide-num" : "11",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1202/pulled-pork-sandwiches-300.jpg?itok=754lO_Hz",
+				"alt" : "Slow-Cooker White Bean and Kielbasa Stew"
+			},
+			"title" : "Slow-Cooker White Bean and Kielbasa Stew"
+		},
+		{
+			"slide-num" : "12",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1202/spaghetti-bolognese_300.jpg?itok=nhqnEOGS",
+				"alt" : "Slow-Cooker Spaghetti Bolognese"
+			},
+			"title" : "Slow-Cooker Spaghetti Bolognese"
+		}
 	]
 }
