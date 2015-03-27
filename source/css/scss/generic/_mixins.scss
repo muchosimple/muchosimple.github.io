@@ -351,12 +351,18 @@ $supported: true !default;
 }
 
 @mixin v-center {
-  @include display(flex);
+  @include flexbox;
   @include align-items(center);
 }
 @mixin vh-center {
   @include v-center;
   @include justify-content(center);
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  @include transform(translateY(-50%));
 }
 
 // Table layout

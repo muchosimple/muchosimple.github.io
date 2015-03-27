@@ -68,6 +68,10 @@ $GLOBAL CLASSES
   text-align: left;
 }
 
+.v-align {
+  @include vh-center;
+}
+
 // Display Classes
 .hide-small {
   @include mq($medium-break, max) {
