@@ -81,6 +81,7 @@
 }
 .slide-inner {
   position: relative;
+  width: 100%;
   @include mq($px600, max) {
     padding-top: rem(45);
   }
@@ -355,4 +356,10 @@
 }
 .end-slide-blocks {
   clear: both;
+}
+.slide--ad {
+  .ad-block-wrap {
+    padding-top: $pad-double;
+    clear: both;
+  }
 }

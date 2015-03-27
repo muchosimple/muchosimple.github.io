@@ -61,6 +61,7 @@
         lazyEffect: false,
         addClassActive: true,
         mouseDrag: false,
+        scrollPerPage: true,
         itemsCustom: [[0,8], [801,4], [900,5], [950,6], [1045,7], [1130,8]],
         navigationText: [galleryPrev, galleryNext],
         afterInit: afterInitCarousel
@@ -70,10 +71,16 @@
   // Init
   initCarousel();
 
+  var slidesMinusAds;
+
   // Function called after every slide advance.
   function afterActionGallery(){
-    var current = this.currentItem;
-    // Update slide count.
+    slidesMinusAds = $('.slides .owl-item.active').prevAll('.owl-item').find('.slide--ad').length;
+    // var current = this.currentItem;
+    // Get slide index with filtered out ad slides.
+    var current = this.currentItem - slidesMinusAds;
+
+    // Update counter.
     $('.slide-count').find('.slide-index').text(current);
 
     // Update active item class.
@@ -84,12 +91,12 @@
 
     // Update pushstate with atomic url.
     if (history && history.pushState) {
-      var hash = $slides.find('.owl-item').eq(current).find('.slide').attr('data-url');
+      var hash = $slides.find('.owl-item').eq(this.currentItem).find('.slide').attr('data-url');
       window.history.pushState(null, null, hash);
     }
 
     // Refresh refreshable ads.
-    refreshAds();
+    refreshAds('.js-ad-refresh, .owl-item.active .ad-300x250');
   }
 
   // Get the current slide number.
@@ -98,7 +105,8 @@
     var href = $(location).attr('href');
     var slideUrl = href.substr(href.lastIndexOf('?') + 1);
     if (slideUrl.length) {
-      var slideIndex = $slides.find('[data-url="?' + slideUrl + '"]').parent().index();
+      // Slide index with filtered out ad slides.
+      var slideIndex = $slides.find('[data-url="?' + slideUrl + '"]').parent().index() - $('.slides .owl-item.active').prevAll('.owl-item').find('.slide--ad').length;
     }
     if (slideIndex < 0) {
       slideIndex = 0
@@ -115,12 +123,12 @@
     updateSlideControls();
   }
 
-  // Update size of end slide prev/next controls. Since the end slide doesn't
-  // follow the same structure of a normal slide, we have to get the width of the
-  // controls from a previous slide and apply it to the end slide controls in
-  // order to keep it in the same click position.
+  // Update size of the prev/next controls for irregular slides. Since those
+  // slides doesn't follow the same structure of a normal slide, we have to
+  // get the width of the controls from a previous slide and apply it to the
+  // slide controls in order to keep it in the same click position.
   function updateSlideControls() {
-    var $endSlideControls = $('.slide--end').find('.slide-controls');
+    var $endSlideControls = $('.slide--alt').find('.slide-controls');
     if ($('.slide-text').length && getWidth() >= 600) {
       var slideControlsWidth = $('.slide-text').find('.slide-controls').width();
       // Add width to the slide controld for the end slide.
@@ -152,7 +160,7 @@
   // Update the slide position.
   $carousel.on('click', '.owl-item', function(e){
     e.preventDefault();
-    var number = $(this).data('owlItem');
+    var number = $(this).find('.carousel-item').data('slide');
     $slides.trigger('owl.goTo', number);
   });
 
@@ -200,13 +208,13 @@
 })();
 
 // Trigger an ad refresh.
-function refreshAds() {
-  var $ad = $('.js-ad-refresh').find('img');
+function refreshAds(ad) {
+  var $ad = $(ad).find('img');
   var randomColor = Math.floor(Math.random()*16777215).toString(16);
   $ad.each(function(){
     var adSrc = $(this).attr('src');
     $(this).attr('src', adSrc).css({'border-width' : '5px', 'border-style' : 'solid', 'border-color' : '#' + randomColor});
   });
 
-  console.log("AD REFRESH");
+  //console.log("AD REFRESH");
 }

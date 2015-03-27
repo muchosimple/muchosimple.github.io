@@ -1,12 +1,15 @@
 <article class="slide {{ slide-class }}" data-url="{{ data-url }}">
   <div class="slide-inner cf">
-    <div class="slide-img">
-      <div class="hover-slide-navigation">
-        <span class="icon no-bg icon-arrow-left js-slide-hover-prev">{{> atoms-arrow-left }}</span>
-        <span class="icon no-bg icon-arrow-right js-slide-hover-next">{{> atoms-arrow-right }}</span>
-      </div> <!-- /.hover-slide-navigation -->
-      {{> molecules-image-with-social }}
-    </div> <!-- /.slide-img -->
+
+    {{^ is-ad-slide }}
+      <div class="slide-img">
+        <div class="hover-slide-navigation">
+          <span class="icon no-bg icon-arrow-left js-slide-hover-prev">{{> atoms-arrow-left }}</span>
+          <span class="icon no-bg icon-arrow-right js-slide-hover-next">{{> atoms-arrow-right }}</span>
+        </div> <!-- /.hover-slide-navigation -->
+        {{> molecules-image-with-social }}
+      </div> <!-- /.slide-img -->
+    {{/ is-ad-slide }}
 
     {{# is-welcome-slide }}
       <div class="slide-intro slide-text">
@@ -15,7 +18,8 @@
         <div class="btn btn--gallery-start js-btn--gallery-start">Start <span class="icon icon-arrow-right no-bg">{{> atoms-arrow-right }}</span></div>
       </div> <!-- /.slide-intro -->
     {{/ is-welcome-slide }}
-    {{^ is-welcome-slide }}
+
+    {{# is-normal-slide }}
       <div class="slide-text">
         <div class="slide-controls">
           {{> molecules-slide-counter }}
@@ -26,7 +30,20 @@
           <p>{{{ slide-dek }}}</p>
         </div>
       </div> <!-- /.slide-text -->
-    {{/ is-welcome-slide }}
+    {{/ is-normal-slide }}
+
+    {{# is-ad-slide }}
+      <div class="slide-controls">
+        <div class="slide-navigation">
+          <span class="icon no-bg rounded icon-arrow-left icon--alt icon--medium js-slide-hover-prev">{{> atoms-arrow-left }}</span>
+          <span class="icon no-bg rounded icon-arrow-right icon--alt icon--medium js-slide-hover-next">{{> atoms-arrow-right }}</span>
+          <div class="slide-count">Skip Ad</div>
+        </div> <!-- /.slide-navigation -->
+      </div> <!-- /.slide-controls -->
+      <div class="ad-block-wrap">
+        {{> atoms-ad-slide-300x250 }}
+      </div> <!-- /.ad-block-wrap -->
+    {{/ is-ad-slide }}
 
   </div> <!-- /.slide-inner -->
 </article> <!-- /.slide -->

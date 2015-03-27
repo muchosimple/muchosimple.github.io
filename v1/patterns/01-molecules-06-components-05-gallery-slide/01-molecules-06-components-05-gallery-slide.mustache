@@ -1,12 +1,15 @@
 &lt;article class=&quot;slide {{ slide-class }}&quot; data-url=&quot;{{ data-url }}&quot;&gt;
   &lt;div class=&quot;slide-inner cf&quot;&gt;
-    &lt;div class=&quot;slide-img&quot;&gt;
-      &lt;div class=&quot;hover-slide-navigation&quot;&gt;
-        &lt;span class=&quot;icon no-bg icon-arrow-left js-slide-hover-prev&quot;&gt;{{&gt; atoms-arrow-left }}&lt;/span&gt;
-        &lt;span class=&quot;icon no-bg icon-arrow-right js-slide-hover-next&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/span&gt;
-      &lt;/div&gt; &lt;!-- /.hover-slide-navigation --&gt;
-      {{&gt; molecules-image-with-social }}
-    &lt;/div&gt; &lt;!-- /.slide-img --&gt;
+
+    {{^ is-ad-slide }}
+      &lt;div class=&quot;slide-img&quot;&gt;
+        &lt;div class=&quot;hover-slide-navigation&quot;&gt;
+          &lt;span class=&quot;icon no-bg icon-arrow-left js-slide-hover-prev&quot;&gt;{{&gt; atoms-arrow-left }}&lt;/span&gt;
+          &lt;span class=&quot;icon no-bg icon-arrow-right js-slide-hover-next&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/span&gt;
+        &lt;/div&gt; &lt;!-- /.hover-slide-navigation --&gt;
+        {{&gt; molecules-image-with-social }}
+      &lt;/div&gt; &lt;!-- /.slide-img --&gt;
+    {{/ is-ad-slide }}
 
     {{# is-welcome-slide }}
       &lt;div class=&quot;slide-intro slide-text&quot;&gt;
@@ -15,7 +18,8 @@
         &lt;div class=&quot;btn btn--gallery-start js-btn--gallery-start&quot;&gt;Start &lt;span class=&quot;icon icon-arrow-right no-bg&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/span&gt;&lt;/div&gt;
       &lt;/div&gt; &lt;!-- /.slide-intro --&gt;
     {{/ is-welcome-slide }}
-    {{^ is-welcome-slide }}
+
+    {{# is-normal-slide }}
       &lt;div class=&quot;slide-text&quot;&gt;
         &lt;div class=&quot;slide-controls&quot;&gt;
           {{&gt; molecules-slide-counter }}
@@ -26,7 +30,20 @@
           &lt;p&gt;{{{ slide-dek }}}&lt;/p&gt;
         &lt;/div&gt;
       &lt;/div&gt; &lt;!-- /.slide-text --&gt;
-    {{/ is-welcome-slide }}
+    {{/ is-normal-slide }}
+
+    {{# is-ad-slide }}
+      &lt;div class=&quot;slide-controls&quot;&gt;
+        &lt;div class=&quot;slide-navigation&quot;&gt;
+          &lt;span class=&quot;icon no-bg rounded icon-arrow-left icon--alt icon--medium js-slide-hover-prev&quot;&gt;{{&gt; atoms-arrow-left }}&lt;/span&gt;
+          &lt;span class=&quot;icon no-bg rounded icon-arrow-right icon--alt icon--medium js-slide-hover-next&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/span&gt;
+          &lt;div class=&quot;slide-count&quot;&gt;Skip Ad&lt;/div&gt;
+        &lt;/div&gt; &lt;!-- /.slide-navigation --&gt;
+      &lt;/div&gt; &lt;!-- /.slide-controls --&gt;
+      &lt;div class=&quot;ad-block-wrap&quot;&gt;
+        {{&gt; atoms-ad-slide-300x250 }}
+      &lt;/div&gt; &lt;!-- /.ad-block-wrap --&gt;
+    {{/ is-ad-slide }}
 
   &lt;/div&gt; &lt;!-- /.slide-inner --&gt;
 &lt;/article&gt; &lt;!-- /.slide --&gt;
