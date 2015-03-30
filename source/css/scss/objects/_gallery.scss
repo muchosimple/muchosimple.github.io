@@ -62,7 +62,6 @@
       margin-right: rem(2);
     }
     &.icon-arrow-right {
-      margin-right: rem(3);
       @media (min-width: $px850) and (max-width: $px870) {
         margin-right: 0;
       }
@@ -398,23 +397,23 @@
   margin: 0;
   clear: both;
   overflow: visible;
+  margin-left: -2px;
+  margin-right: -4px;
   .gi {
     max-width: rem(210);
     padding: 0;
     float: left;
     width: 47.5%;
     margin-bottom: $space-and-half;
+    border: 1px solid transparent;
     &:nth-of-type(even) {
       @include mq($px450, max) {
         float: right;
       }
     }
+    &:hover,
     &.active-item {
-      padding: 2px;
-      box-shadow: 0 0 0 1px $pink;
-    }
-    &:hover {
-      box-shadow: 0 0 0 1px $pink;
+      border-color: $gray-dark;
     }
     img {
       width: 100%;
@@ -436,9 +435,17 @@
         margin-right: 0;
       }
     }
+    @include mq($large-break) {
+      width: 21%;
+      margin-right: 5.333%;
+      &:nth-child(3n+3) {
+        margin-right: 5.333%;
+      }
+    }
   }
   .b-inner {
     width: 100%;
+    padding: 2px;
     position: relative;
     display: block;
     &:hover {
