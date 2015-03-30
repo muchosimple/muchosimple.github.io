@@ -134,8 +134,27 @@
   @include mq($large-break) {
     width: 53%;
   }
-  .img-wrap {
-    display: inline-block;
+  .img-inner {
+    display: block;
+    padding-top: 119%; // 560h 470w ratio
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: lighten($beige, 10);
+  }
+  .has-social {
+    position: static;
+    overflow: visible;
+  }
+  img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+  }
+  .credit {
+    background-color: $white;
   }
   &:hover {
     .hover-slide-navigation {
