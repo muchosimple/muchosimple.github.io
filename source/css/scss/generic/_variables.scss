@@ -80,6 +80,7 @@ $monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
 
 // Amimation
 $cubic-bezier: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+$ease-out: cubic-bezier(0.300, 0.110, 0.320, 0.960);
 
 $font-size-small: 0.75em;
 $font-size-small-2: 0.875em;
@@ -140,6 +141,7 @@ $px750: (750/$defaultpx) + 0em;
 $px800: (800/$defaultpx) + 0em;
 $px801: (801/$defaultpx) + 0em;
 $px850: (850/$defaultpx) + 0em;
+$px870: (870/$defaultpx) + 0em;
 $break-into-columns: (850/$defaultpx) + 0em;
 $px900: (900/$defaultpx) + 0em;
 $px950: (950/$defaultpx) + 0em;

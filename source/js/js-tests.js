@@ -33,6 +33,7 @@
 
   var $slides = $('.js-slides');
   var $carousel = $('.js-carousel');
+  var $slideGrid = $('.gallery-grid');
 
   // Gallery init
   $slides.show().owlCarousel({
@@ -76,7 +77,7 @@
   // Function called after every slide advance.
   function afterActionGallery(){
     slidesMinusAds = $('.slides .owl-item.active').prevAll('.owl-item').find('.slide--ad').length;
-    // var current = this.currentItem;
+
     // Get slide index with filtered out ad slides.
     var current = this.currentItem - slidesMinusAds;
 
@@ -85,6 +86,8 @@
 
     // Update active item class.
     $carousel.find('.owl-item').removeClass('active-item').eq(current).addClass('active-item');
+    // Subtract one from the current slide to account for the start slide.
+    $slideGrid.find('.gi').removeClass('active-item').eq(current-1).addClass('active-item');
     if ($carousel.data('owlCarousel') !== undefined){
       centerCarousel(current);
     }
@@ -153,6 +156,9 @@
   function afterInitCarousel() {
     // Update active item class.
     $carousel.find('.owl-item').removeClass('active-item').eq(getSlideIndex()).addClass('active-item');
+    // Subtract one from the current slide to account for the start slide.
+    $slideGrid.find('.gi').removeClass('active-item').eq(getSlideIndex()-1).addClass('active-item');
+
     // Move to that active item.
     $carousel.trigger('owl.goTo', getSlideIndex());
   }
@@ -162,6 +168,19 @@
     e.preventDefault();
     var number = $(this).find('.carousel-item').data('slide');
     $slides.trigger('owl.goTo', number);
+  });
+
+  // Update the slide position.
+  $slideGrid.on('click', '.gi', function(e){
+    e.preventDefault();
+    var number = $(this).data('slide');
+    $slides.trigger('owl.goTo', number);
+    $('.gallery-container').removeClass('see-all-grid-is-active');
+  });
+
+  // Load the images when the grid is present.
+  $('.see-all--grid.js-toggle').on('click', function(){
+    $slideGrid.find('.lazy').lazyload();
   });
 
   // Move the carousel depending on which slide is active.

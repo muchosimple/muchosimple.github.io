@@ -5,6 +5,9 @@
 .gallery {
   padding-bottom: $pad;
   margin-bottom: $space-half;
+  @include mq($large-break) {
+    margin-bottom: $space-double;
+  }
 }
 
 // Previous/Next arrows that appear over main image on hover.
@@ -55,6 +58,15 @@
     margin-right: rem(6);
     vertical-align: middle;
     cursor: pointer;
+    @media (min-width: $px850) and (max-width: $px870) {
+      margin-right: rem(2);
+    }
+    &.icon-arrow-right {
+      margin-right: rem(3);
+      @media (min-width: $px850) and (max-width: $px870) {
+        margin-right: 0;
+      }
+    }
   }
 }
 // Slide counter
@@ -64,7 +76,6 @@
   font-weight: 400;
   font-size: rem(17);
   vertical-align: middle;
-  padding: 0 rem(4);
 }
 .slide-controls {
   @include mq($px600, max) {
@@ -298,7 +309,8 @@
     vertical-align: middle;
   }
 }
-.see-all--grid {
+.see-all--grid,
+.see-all--back {
   float: right;
   padding-top: rem(4);
   &:hover {
@@ -365,13 +377,94 @@
   }
 }
 // "See All"  Grid View
+.all-slides {
+  display: none;
+  .slide-navigation {
+    width: 100%;
+    display: block;
+  }
+}
+// Replace the gallery with the grid view.
+.see-all-grid-is-active {
+  .all-slides {
+    display: block;
+  }
+  .gallery,
+  .carousel {
+    display: none;
+  }
+}
 .gallery-grid {
-  @include flexbox;
-  @include flex-flow(row wrap);
-  @include align-content(flex-end);
+  margin: 0;
+  clear: both;
+  overflow: visible;
   .gi {
-    @include flexbox;
-    @include flex-grow(1);
-    width: rem(160);
+    max-width: rem(210);
+    padding: 0;
+    float: left;
+    width: 47.5%;
+    margin-bottom: $space-and-half;
+    &:nth-of-type(even) {
+      @include mq($px450, max) {
+        float: right;
+      }
+    }
+    &.active-item {
+      padding: 2px;
+      box-shadow: 0 0 0 1px $pink;
+    }
+    &:hover {
+      box-shadow: 0 0 0 1px $pink;
+    }
+    img {
+      width: 100%;
+    }
+    @media (min-width: $px450) and (max-width: $px700), (min-width: $medium-break) and (max-width: $px950) {
+      width: 31%;
+      margin-right: 3.5%;
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+    }
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      width: 23%;
+      margin-right: 2.6666%;
+      &:nth-child(3n+3) {
+        margin-right: 2.6666%;
+      }
+      &:nth-child(4n+4) {
+        margin-right: 0;
+      }
+    }
+  }
+  .b-inner {
+    width: 100%;
+    position: relative;
+    display: block;
+    &:hover {
+      .b-text {
+        bottom: 0;
+      }
+    }
+  }
+  .b-text {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    text-align: center;
+    background-color: rgba($white, .85);
+    padding: rem(27) rem(18);
+    overflow: hidden;
+    bottom: -100.5%;
+    @include transition(bottom .3s $ease-out);
+  }
+  .b-title {
+    font-size: rem(18);
+    @include vertical-align;
+    @media (max-width: $px600), (min-width: $medium-break) and (max-width: $px850), (min-width: $px950) and (max-width: $px1050)  {
+      font-size: rem(15);
+    }
   }
 }

@@ -1,14 +1,19 @@
-&lt;div class=&quot;g gallery-grid&quot;&gt;
-  {{# gallery-grid }}
-    &lt;div class=&quot;block block-gi gi {{ gi-class }}&quot; data-slide=&quot;{{ slide-num }}&quot;&gt;
-      &lt;a href=&quot;{{ url }}&quot; class=&quot;b-inner&quot;&gt;
-        &lt;div class=&quot;b-thumb&quot;&gt;
-          {{&gt; atoms-image }}
-        &lt;/div&gt; &lt;!-- /.b-thumb --&gt;
-        &lt;div class=&quot;b-text&quot;&gt;
-          &lt;h3 class=&quot;b-title&quot;&gt;{{ title }}&lt;/h3&gt;
-        &lt;/div&gt; &lt;!-- /.b-text --&gt;
-      &lt;/a&gt; &lt;!-- /.b-inner --&gt;
-    &lt;/div&gt; &lt;!-- /.block --&gt;
-  {{/ gallery-grid }}
-&lt;/div&gt; &lt;!-- /.gallery-grid --&gt;
+&lt;div class=&quot;all-slides&quot;&gt;
+  &lt;div class=&quot;slide-navigation cf&quot;&gt;
+    &lt;a href=&quot;{{ url }}&quot; class=&quot;see-all--back js-toggle&quot; data-toggled=&quot;gallery-container&quot; data-prefix=&quot;see-all-grid&quot;&gt;&lt;span class=&quot;icon icon-arrow-left-stem icon--small&quot;&gt;{{&gt; atoms-arrow-left-stem }}&lt;/span&gt; &lt;span class=&quot;light&quot;&gt;Back&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt; &lt;!-- /.slide-navigation --&gt;
+  &lt;div class=&quot;g gallery-grid cf&quot;&gt;
+    {{# gallery-grid }}
+      &lt;div class=&quot;block block-gi gi {{ gi-class }}&quot; data-slide=&quot;{{ slide-num }}&quot;&gt;
+        &lt;a href=&quot;{{ url }}&quot; class=&quot;b-inner&quot;&gt;
+          &lt;div class=&quot;b-thumb&quot;&gt;
+            {{&gt; atoms-image }}
+          &lt;/div&gt; &lt;!-- /.b-thumb --&gt;
+          &lt;div class=&quot;b-text&quot;&gt;
+            &lt;h3 class=&quot;b-title&quot;&gt;{{ title }}&lt;/h3&gt;
+          &lt;/div&gt; &lt;!-- /.b-text --&gt;
+        &lt;/a&gt; &lt;!-- /.b-inner --&gt;
+      &lt;/div&gt; &lt;!-- /.block --&gt;
+    {{/ gallery-grid }}
+  &lt;/div&gt; &lt;!-- /.gallery-grid --&gt;
+&lt;/div&gt; &lt;!-- /.all-slides --&gt;
