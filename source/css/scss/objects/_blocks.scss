@@ -130,6 +130,15 @@ a.b-inner:hover {
 .block-listicle-item {
   position: relative;
   margin-bottom: rem(45);
+  overflow: visible;
+  .has-credit {
+    position: relative;
+    .credit {
+      position: absolute;
+      bottom: rem(-14);
+      right: 0;
+    }
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -146,7 +155,7 @@ a.b-inner:hover {
       padding-top: 0;
     }
     @include mq($large-break) {
-      width: 54%;
+      width: 53%;
     }
   }
   .img-wrap {
@@ -216,7 +225,7 @@ a.b-inner:hover {
     }
     @include mq($large-break) {
       padding-right: $pad-and-half;
-      width: 46%;
+      width: 47%;
     }
   }
   &.block--no-img {
