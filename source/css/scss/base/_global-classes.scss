@@ -42,6 +42,11 @@ $GLOBAL CLASSES
   line-height: 1.2;
 }
 
+// Wrap the text I want to be kept together.
+.avoid-wrap {
+  display: inline-block;
+}
+
 // Floats
 .right {
   float: right;
