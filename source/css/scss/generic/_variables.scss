@@ -72,11 +72,11 @@ $grayish-cyan: #97a8a5;
 $dark-gray: #252525;
 
 // Typography
-$font: "Brown Pro", "Verdana", "Arial", sans-serif;
-$font-secondary: "marr-sans-real-simple", "Arial", "Helvetica" sans-serif;
-$sans: "Helvetica", "Arial", sans-serif;
+$font: "Brown Pro", Verdana, Arial, sans-serif;
+$font-secondary: marr-sans-real-simple, Arial, Helvetica sans-serif;
+$sans: Helvetica, Arial, sans-serif;
 $serif: Georgia, Times, "Times New Roman", serif;
-$monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
+$monospace: Menlo, Monaco, "Courier New", Courier, monospace;
 
 // Amimation
 $cubic-bezier: cubic-bezier(0.860, 0.000, 0.070, 1.000);

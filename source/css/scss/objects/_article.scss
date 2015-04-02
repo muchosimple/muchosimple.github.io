@@ -25,11 +25,11 @@
 	}
 }
 .lead-subtitle {
-	font-family: $font-secondary;
 	font-weight: normal;
 	font-size: rem(20);
 	margin-bottom: $space;
 	color: $gray-dark-2;
+	font-family: $font-secondary;
 	@include mq($micro-break) {
 		font-size: rem(24);
 		margin-bottom: $space-half;
