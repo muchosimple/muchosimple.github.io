@@ -6,6 +6,7 @@
   margin-top: $space;
   margin-bottom: $space-half;
   text-align: center;
+  height: rem(90);
   div {
     text-align: center;
   }
@@ -42,6 +43,7 @@
 }
 .ad-728x90 {
   width: rem(728);
+  height: rem(90);
 }
 
 // Ads that appear within article list-types
