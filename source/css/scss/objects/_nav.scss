@@ -15,7 +15,7 @@
 	background-color: $white;
 	position: fixed;
 	left: rem(-301);
-	z-index: 1002;
+	z-index: 99002;
 	top: 0;
 	height: 100%;
 	@include trans;
@@ -48,7 +48,7 @@
 	}
 	&.overlay {
 		background-color: $overlay;
-		z-index: 1000;
+		z-index: 99000;
 		@include mq($medium-break) {
 			background-color: $overlay-light;
 		}

@@ -6,17 +6,22 @@
   margin-top: $space;
   margin-bottom: $space-half;
   text-align: center;
-  height: rem(90);
+  height: rem(50);
+  @include mq($px750) {
+    height: rem(90);
+  }
   div {
     text-align: center;
   }
   .ad-300x50 {
+    height: rem(50);
     @include mq($px750) {
       display: none;
     }
   }
   .ad-728x90 {
     display: none;
+    height: rem(90);
     @include mq($px750) {
       display: block;
     }
