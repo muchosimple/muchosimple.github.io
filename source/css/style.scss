@@ -1,68 +1,73 @@
-@import "scss/bourbon/bourbon";
-@import "scss/generic/variables";
-@import "scss/generic/mixins";
-@import "scss/generic/flex";
-@import "scss/generic/reset";
-@import "scss/neat/neat";
+@import "bourbon/bourbon";
+@import "generic/variables";
+@import "generic/mixins";
+@import "generic/flex";
+@import "generic/reset";
+@import "neat/neat";
 
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
-@import "scss/base/main";
-@import "scss/base/links";
-@import "scss/base/headings";
-@import "scss/base/text";
-@import "scss/base/lists";
-@import "scss/base/media";
-@import "scss/base/forms";
-@import "scss/base/tables";
-@import "scss/base/fonts";
-@import "scss/base/animation";
+@import "base/main";
+@import "base/links";
+@import "base/headings";
+@import "base/text";
+@import "base/lists";
+@import "base/media";
+@import "base/forms";
+@import "base/tables";
+@import "base/fonts";
+@import "base/animation";
 
 
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
-@import "scss/objects/layout";
+@import "objects/layout";
 
 
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
-@import "scss/objects/header";
-@import "scss/objects/nav";
-@import "scss/objects/main";
-@import "scss/objects/sidebar";
-@import "scss/objects/footer";
+@import "objects/header";
+@import "objects/nav";
+@import "objects/main";
+@import "objects/sidebar";
+@import "objects/footer";
 
 
 /*------------------------------------*\
     $TEXT Styles
 \*------------------------------------*/
-@import "scss/objects/text";
+@import "objects/text";
 
 
 /*------------------------------------*\
     $VENDOR
 \*------------------------------------*/
-@import "scss/objects/vendor";
+@import "objects/vendor";
 
 
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-@import "scss/objects/ads";
-@import "scss/objects/icons";
-@import "scss/objects/buttons";
-@import "scss/objects/blocks";
-@import "scss/objects/lists";
-@import "scss/objects/tooltip";
-@import "scss/objects/accordion";
-@import "scss/objects/tabs";
-@import "scss/objects/sections";
-@import "scss/objects/article";
-@import "scss/objects/gallery";
-@import "scss/objects/comments";
-@import "scss/objects/messaging";
-@import "scss/base/global-classes";
+@import "objects/ads";
+@import "objects/icons";
+@import "objects/buttons";
+@import "objects/blocks";
+@import "objects/lists";
+@import "objects/tooltip";
+@import "objects/accordion";
+@import "objects/tabs";
+@import "objects/sections";
+@import "objects/article";
+@import "objects/gallery";
+@import "objects/comments";
+@import "objects/messaging";
+@import "base/global-classes";
 
+/*------------------------------------*\
+    $RS TEAM ADDITIONS
+\*------------------------------------*/
+@import "objects/rs-overrides";
+@import "objects/print";
