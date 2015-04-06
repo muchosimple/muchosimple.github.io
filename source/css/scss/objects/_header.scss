@@ -2,7 +2,7 @@
 .header-inner {
   @extend .cf;
   position: relative;
-  z-index: 5000001; // Appear over ads
+  z-index: 50000010; // Appear over ads
   background-color: $white;
   border-bottom: $border-style;
   height: rem($mobile-header-height);

@@ -4,7 +4,7 @@
 
 .top-hat {
 	position: relative;
-	z-index: 50000005; // Get over the header
+	z-index: 50000500; // Get over the header
 }
 .nav-wrap {
 	clear: both;
@@ -15,7 +15,7 @@
 	background-color: $white;
 	position: fixed;
 	left: rem(-301);
-	z-index: 99002;
+	z-index: 50000005;
 	top: 0;
 	height: 100%;
 	@include trans;
