@@ -6,23 +6,12 @@
 		{{/ sponsored }}
 		&lt;div class=&quot;primary&quot;&gt;
 			&lt;section class=&quot;primary-inner&quot;&gt;
-				&lt;article class=&quot;article article-standard {{ article-class }}&quot; itemscope itemtype=&quot;http://schema.org/Article&quot;&gt;
+				&lt;article class=&quot;article article-recipe {{ article-class }}&quot; itemscope itemtype=&quot;http://schema.org/Recipe&quot;&gt;
 
 					{{# article-head }}
 						&lt;header class=&quot;article-header {{ header-class }} cf&quot;&gt;
 							{{&gt; molecules-kicker }}
 							&lt;h1 class=&quot;lead-headline&quot; itemprop=&quot;headline&quot;&gt;{{ title }}&lt;/h1&gt;
-							{{# has-head-meta }}
-								&lt;h2 class=&quot;lead-subtitle&quot; itemprop=&quot;alternativeHeadline&quot;&gt;{{ subtitle }}&lt;/h2&gt;
-								&lt;div class=&quot;article-meta&quot;&gt;
-									{{&gt; molecules-byline }}
-									{{&gt; atoms-time }}
-								&lt;/div&gt; &lt;!-- /.article-details --&gt;
-							{{/ has-head-meta }}
-							&lt;div class=&quot;article-tools&quot;&gt;
-								{{&gt; molecules-social-share }}
-								{{&gt; molecules-content-utility }}
-							&lt;/div&gt; &lt;!-- /.article-tools --&gt;
 						&lt;/header&gt; &lt;!-- /.article-header --&gt;
 					{{/ article-head }}
 
@@ -37,10 +26,6 @@
 					&lt;/section&gt; &lt;!-- /.article-body --&gt;
 
 				&lt;/article&gt; &lt;!-- /.article-standard --&gt;
-
-				{{# more-links }}
-					{{&gt; molecules-more-links }}
-				{{/ more-links }}
 
 				{{&gt; organisms-content-footer }}
 			&lt;/section&gt; &lt;!-- /.primary-inner --&gt;

@@ -6,23 +6,12 @@
 		{{/ sponsored }}
 		<div class="primary">
 			<section class="primary-inner">
-				<article class="article article-standard {{ article-class }}" itemscope itemtype="http://schema.org/Article">
+				<article class="article article-recipe {{ article-class }}" itemscope itemtype="http://schema.org/Recipe">
 
 					{{# article-head }}
 						<header class="article-header {{ header-class }} cf">
 							{{> molecules-kicker }}
 							<h1 class="lead-headline" itemprop="headline">{{ title }}</h1>
-							{{# has-head-meta }}
-								<h2 class="lead-subtitle" itemprop="alternativeHeadline">{{ subtitle }}</h2>
-								<div class="article-meta">
-									{{> molecules-byline }}
-									{{> atoms-time }}
-								</div> <!-- /.article-details -->
-							{{/ has-head-meta }}
-							<div class="article-tools">
-								{{> molecules-social-share }}
-								{{> molecules-content-utility }}
-							</div> <!-- /.article-tools -->
 						</header> <!-- /.article-header -->
 					{{/ article-head }}
 
@@ -37,10 +26,6 @@
 					</section> <!-- /.article-body -->
 
 				</article> <!-- /.article-standard -->
-
-				{{# more-links }}
-					{{> molecules-more-links }}
-				{{/ more-links }}
 
 				{{> organisms-content-footer }}
 			</section> <!-- /.primary-inner -->
