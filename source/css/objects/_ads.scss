@@ -2,6 +2,13 @@
     $ADS
 \*------------------------------------*/
 
+.main .ad-block {
+  // Ads need to brek out of the margin for viewports smaller than 336px so
+  // they don't get cut off.
+  @include mq($px336, max) {
+    margin-left: rem(-8);
+  }
+}
 .ad-leaderboard {
   margin-top: $space;
   margin-bottom: $space-half;
@@ -42,15 +49,9 @@
 .ad-300x250 {
   width: rem(300);
   height: rem(250);
-  @include mq($px336, max) {
-    margin-left: rem(-8);
-  }
 }
 .ad-300x50 {
   width: rem(300);
-  @include mq($px336, max) {
-    margin-left: rem(-8);
-  }
 }
 .ad-728x90 {
   width: rem(728);
