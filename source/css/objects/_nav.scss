@@ -317,7 +317,7 @@
 	top: rem(10);
 	text-align: center;
 	width: rem(170);
-	z-index: 100;
+	z-index: 50000135;
 	border: 1px solid transparent;
 	@include mq($medium-break) {
 		display: block;
