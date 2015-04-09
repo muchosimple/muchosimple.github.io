@@ -1,10 +1,10 @@
 /* Links */
 a {
-	text-decoration: none;
-	color: $pink;
-	&:hover, &:focus {
-		color: darken($pink, 10);
-	}
+  text-decoration: none;
+  color: $pink;
+  &:hover, &:focus {
+    color: darken($pink, 10);
+  }
   p {
     color: $gray-dark-2;
   }
@@ -15,7 +15,9 @@ a.alt {
     @include underline;
   }
 }
-
+a img {
+  border: none;
+}
 .more {
   text-align: center;
   text-transform: uppercase;

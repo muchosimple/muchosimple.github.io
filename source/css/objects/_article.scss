@@ -116,6 +116,8 @@
 	li {
 		display: inline-block;
 		margin-right: rem(10);
+		vertical-align: bottom;
+		padding-top: rem(2);
 		@include mq($micro-break) {
 			margin-right: rem(14);
 		}
@@ -123,6 +125,9 @@
 	a {
 		display: block;
 		line-height: 1;
+	}
+	.icon {
+		vertical-align: bottom;
 	}
 }
 .social-share {

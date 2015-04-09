@@ -22,13 +22,20 @@
 	a {
 		display: block;
 		line-height: 1;
-		@include rem(padding, 11 14);
+		height: rem(45);
+		@include rem(padding, 12 14);
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			padding-top: rem(16);
+		}
 	}
 }
 .nav-wrap-inner {
 	padding-top: rem($mobile-header-height);
 	@include mq($medium-break) {
-		padding-top: rem(123);
+		padding-top: rem(125);
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			padding-top: rem(130);
+		}
 	}
 }
 .header-is-sticky {
@@ -71,7 +78,7 @@
 		height: rem(42);
 		position: absolute;
 		width: rem(140);
-		padding-top: rem(12);
+		padding-top: rem(14);
 		padding-right: rem(14);
 		z-index: 10;
 		top: 0;
