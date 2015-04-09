@@ -6,24 +6,60 @@
 		{{/ sponsored }}
 		<div class="primary">
 			<section class="primary-inner">
-				<article class="article article-recipe {{ article-class }}" itemscope itemtype="http://schema.org/Recipe">
+				<article class="article article-recipe" itemscope itemtype="http://schema.org/Recipe">
 
-					{{# article-head }}
-						<header class="article-header {{ header-class }} cf">
+					{{# recipe-head }}
+						<header class="article-header cf">
 							{{> molecules-kicker }}
-							<h1 class="lead-headline" itemprop="headline">{{ title }}</h1>
+							<h1 class="lead-headline left-halved" itemprop="name">{{ title }}</h1>
+							<div class="primary-image right-halved">
+								{{> molecules-image-with-social }}
+							</div> <!-- /.primary-image -->
+							<div class="recipe-meta left-halved">
+								<div class="five-star-wrap">
+									<div class="five-star recipe-five-star">
+										<span class="title light">Rating</span>
+										<div class="rating">
+											<span class="star star--1">&#9733;</span>
+											<span class="star star--2">&#9733;</span>
+											<span class="star star--3">&#9733;</span>
+											<span class="star star--4">&#9733;</span>
+											<span class="star star--5">&#9733;</span>
+										</div> <!-- /.rating -->
+									</div> <!-- /.five-star -->
+									<a href="" class="alt text--m">Read Reviews</a>
+								</div> <!-- /.five-star-wrap -->
+								<div class="recipe-data">
+									<ul class="dl">
+										<li><span class="dt">Serves</span> <span class="dd">2</span></li>
+										<li><span class="dt">Hands On Time</span> <span class="dd"><time datetime="PT30M" itemprop="prepTime">30 min</time></span></li>
+										<li><span class="dt">Other Time</span> <span class="dd"><time datetime="PT1H" itemprop="cookTime">1 hour</time>
+										<li><span class="dt">Total Time</span> <span class="dd"><time datetime="PT1H30M" itemprop="totalTime">1 hour 30 min</time></span></li>
+										</span></li>
+										<li><a href="" class="alt text--m">Nutritional Information</a></li>
+										<li><span class="text--s-m light">{{ date }}</span></li>
+									</ul> <!-- /.dl -->
+								</div> <!-- /.recipe-data -->
+							</div> <!-- /.recipe-meta -->
+							<div class="article-tools">
+								{{> molecules-social-share }}
+								{{> molecules-content-utility }}
+							</div> <!-- /.article-tools -->
 						</header> <!-- /.article-header -->
-					{{/ article-head }}
+					{{/ recipe-head }}
 
 					<div class="ad-block ad-300x250 block center hide-med hide-large hide-larger space-double-btm">
 						<a href=""><img src="http://s1.2mdn.net/viewad/4579100/300x250_Brand_Banner.jpg"></a>
 					</div> <!-- /.ad-300x250 -->
 
-					<section class="section article-body text" itemprop="articleBody">
-						{{# article-body }}
-							{{> organisms-article-body-standard }}
-						{{/ article-body }}
-					</section> <!-- /.article-body -->
+					<section class="section recipe-body cf">
+						{{> organisms-recipe-body }}
+					</section> <!-- /.recipe-body -->
+
+					<div class="byline byline--s" itemprop="author">By <span>Sarah Robbins</span></div>
+					<div class="more-links">
+						<span class="upper space-half-r">More:</span> <a class="alt" href="">Health</a>, <a class="alt" href="">Nutrition</a>, <a class="alt" href="">Cooking</a>
+					</div> <!-- /.more-links -->
 
 				</article> <!-- /.article-standard -->
 

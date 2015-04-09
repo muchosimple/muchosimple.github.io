@@ -2,29 +2,23 @@
 	"title" : "Whole Roasted Chicken on a Bed of Cauliflower",
 	"bodyClass": "recipe article",
 	"more-links" : true,
-	"article-head" : [
+	"byline" : "Sarah Robbins",
+	"recipe-head" : [
 		{
 			"has-head-meta" : true,
 			"has-social-count" : "true",
 			"kicker" : "Food",
 			"sub-kicker" : "Recipes",
 			"title" : "Whole Roasted Chicken on a Bed of Cauliflower",
-			"byline" : "Abigail Wise",
-			"date" : "April 22, 2015"
-		}
-	],
-	"article-body" : [
-		{
-			"img-large" : [
+			"date" : "September, 2015",
+			"img": {
+				"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1410/chicken-cauliflower_300.jpg",
+				"alt": "Whole Roasted Chicken on a Bed of Cauliflower"
+			},
+			"credit" : "Sean Gallup",
+			"social-tools" : [
 				{
-					"figure-size" : "figure--l",
-					"img": {
-						"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1410/chicken-cauliflower_300.jpg",
-						"alt": "Whole Roasted Chicken on a Bed of Cauliflower"
-					},
-					"caption" : "In addition to tasting good, apples may increase your brainpower.",
-					"credit" : "Sean Gallup/Getty Images",
-					"social-tools" : "true"
+					"has-social-count" : false
 				}
 			]
 		}
