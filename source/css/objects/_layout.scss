@@ -31,6 +31,10 @@
 .lc-inner { // To be used in conjunction with .lc
 	max-width: $inner-max-width;
 }
+.narrow {
+	max-width: rem(600);
+	@include center-block;
+}
 
 .pad {
 	@include rem(padding, 16);

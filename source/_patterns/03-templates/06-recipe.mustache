@@ -17,14 +17,18 @@
 							</div> <!-- /.primary-image -->
 							<div class="recipe-meta left-halved">
 								<div class="five-star-wrap">
-									<div class="five-star recipe-five-star">
+									<div class="five-star-rated recipe-five-star">
 										<span class="title light">Rating</span>
 										<div class="rating">
-											<span class="star star--1">&#9733;</span>
-											<span class="star star--2">&#9733;</span>
-											<span class="star star--3">&#9733;</span>
-											<span class="star star--4">&#9733;</span>
-											<span class="star star--5">&#9733;</span>
+											<span class="star star--inactive">&#9733;</span>
+											<span class="star star--inactive">&#9733;</span>
+											<span class="star star--active">&#9733;</span>
+											<span class="star star--active">&#9733;</span>
+											<span class="star star--active">&#9733;</span>
+											<span itemprop="aggregateRating" class="is-vishidden" itemscope itemtype="http://schema.org/AggregateRating">
+												<span itemprop="ratingValue">4.0</span> stars based on
+												<span itemprop="reviewCount">35</span> reviews
+											</span>
 										</div> <!-- /.rating -->
 									</div> <!-- /.five-star -->
 									<a href="" class="alt text--m">Read Reviews</a>
@@ -56,10 +60,46 @@
 						{{> organisms-recipe-body }}
 					</section> <!-- /.recipe-body -->
 
-					<div class="byline byline--s" itemprop="author">By <span>Sarah Robbins</span></div>
-					<div class="more-links">
-						<span class="upper space-half-r">More:</span> <a class="alt" href="">Health</a>, <a class="alt" href="">Nutrition</a>, <a class="alt" href="">Cooking</a>
-					</div> <!-- /.more-links -->
+					{{# recipe-footer }}
+						<footer class="article-footer">
+							<div class="byline byline--s" itemprop="author">By <span>Sarah Robbins</span></div>
+							<div class="more-links">
+								<span class="upper space-half-r">More:</span> <a class="alt" href="">Health</a>, <a class="alt" href="">Nutrition</a>, <a class="alt" href="">Cooking</a>
+							</div> <!-- /.more-links -->
+
+							<div class="recipe-utility">
+								<a href="" class="btn--util btn--util-save">
+									<span class="icon icon--disc">{{> atoms-disc }}</span>
+									<span class="btn-text">Save This Recipe</span>
+								</a> <!-- /.btn--util -->
+								<a href="" class="btn--util btn--util-all">
+									<span class="icon icon--all-list">{{> atoms-all-list }}</span>
+									<span class="btn-text">All <br> Recipes</span>
+								</a> <!-- /.btn--util -->
+								<a href="" class="btn--util btn--util-print">
+									<span class="icon icon--print-fill">{{> atoms-print-fill }}</span>
+									<span class="btn-text">Print This Recipe</span>
+								</a> <!-- /.btn--util -->
+							</div> <!-- /.recipe-utility -->
+
+							<div class="narrow">
+								<div class="five-star-wrap">
+									<div class="five-star recipe-five-star active-rating">
+										<span class="title text--l">Rate this recipe:</span>
+										<div class="rating">
+											<span class="star">&#9733;</span>
+											<span class="star">&#9733;</span>
+											<span class="star">&#9733;</span>
+											<span class="star">&#9733;</span>
+											<span class="star">&#9733;</span>
+										</div> <!-- /.rating -->
+										<span class="response">Thanks!</span>
+									</div> <!-- /.five-star -->
+								</div> <!-- /.five-star-wrap -->
+							</div> <!-- /.narrow -->
+
+						</footer> <!-- /.article-footer -->
+					{{/ recipe-footer }}
 
 				</article> <!-- /.article-standard -->
 

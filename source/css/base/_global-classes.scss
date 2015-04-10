@@ -217,6 +217,7 @@ $GLOBAL CLASSES
   width: $hr-width;
   background-color: lighten($gray-light-4, 4);
   @include center-block;
+  max-width: rem(600);
 }
 
 // Spacing/Padding

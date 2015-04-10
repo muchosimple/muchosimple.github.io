@@ -1,3 +1,5 @@
+.icon-all-list { background-image: url('png/all-list.png'); background-repeat: no-repeat; }
+
 .icon-arrow-left-stem { background-image: url('png/arrow-left-stem.png'); background-repeat: no-repeat; }
 
 .icon-arrow-left { background-image: url('png/arrow-left.png'); background-repeat: no-repeat; }
@@ -7,6 +9,8 @@
 .icon-arrow { background-image: url('png/arrow.png'); background-repeat: no-repeat; }
 
 .icon-check { background-image: url('png/check.png'); background-repeat: no-repeat; }
+
+.icon-disc { background-image: url('png/disc.png'); background-repeat: no-repeat; }
 
 .icon-facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
 
@@ -39,6 +43,8 @@
 .icon-play { background-image: url('png/play.png'); background-repeat: no-repeat; }
 
 .icon-plus { background-image: url('png/plus.png'); background-repeat: no-repeat; }
+
+.icon-print-fill { background-image: url('png/print-fill.png'); background-repeat: no-repeat; }
 
 .icon-print { background-image: url('png/print.png'); background-repeat: no-repeat; }
 

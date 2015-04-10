@@ -2,7 +2,6 @@
 	"title" : "Whole Roasted Chicken on a Bed of Cauliflower",
 	"bodyClass": "recipe article",
 	"more-links" : true,
-	"byline" : "Sarah Robbins",
 	"recipe-head" : [
 		{
 			"has-head-meta" : true,
@@ -21,6 +20,11 @@
 					"has-social-count" : false
 				}
 			]
+		}
+	],
+	"recipe-footer" : [
+		{
+			"byline" : "Sarah Robbins"
 		}
 	]
 }

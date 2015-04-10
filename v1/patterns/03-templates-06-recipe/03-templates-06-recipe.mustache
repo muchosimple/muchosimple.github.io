@@ -17,14 +17,18 @@
 							&lt;/div&gt; &lt;!-- /.primary-image --&gt;
 							&lt;div class=&quot;recipe-meta left-halved&quot;&gt;
 								&lt;div class=&quot;five-star-wrap&quot;&gt;
-									&lt;div class=&quot;five-star recipe-five-star&quot;&gt;
+									&lt;div class=&quot;five-star-rated recipe-five-star&quot;&gt;
 										&lt;span class=&quot;title light&quot;&gt;Rating&lt;/span&gt;
 										&lt;div class=&quot;rating&quot;&gt;
-											&lt;span class=&quot;star star--1&quot;&gt;&amp;#9733;&lt;/span&gt;
-											&lt;span class=&quot;star star--2&quot;&gt;&amp;#9733;&lt;/span&gt;
-											&lt;span class=&quot;star star--3&quot;&gt;&amp;#9733;&lt;/span&gt;
-											&lt;span class=&quot;star star--4&quot;&gt;&amp;#9733;&lt;/span&gt;
-											&lt;span class=&quot;star star--5&quot;&gt;&amp;#9733;&lt;/span&gt;
+											&lt;span class=&quot;star star--inactive&quot;&gt;&amp;#9733;&lt;/span&gt;
+											&lt;span class=&quot;star star--inactive&quot;&gt;&amp;#9733;&lt;/span&gt;
+											&lt;span class=&quot;star star--active&quot;&gt;&amp;#9733;&lt;/span&gt;
+											&lt;span class=&quot;star star--active&quot;&gt;&amp;#9733;&lt;/span&gt;
+											&lt;span class=&quot;star star--active&quot;&gt;&amp;#9733;&lt;/span&gt;
+											&lt;span itemprop=&quot;aggregateRating&quot; class=&quot;is-vishidden&quot; itemscope itemtype=&quot;http://schema.org/AggregateRating&quot;&gt;
+												&lt;span itemprop=&quot;ratingValue&quot;&gt;4.0&lt;/span&gt; stars based on
+												&lt;span itemprop=&quot;reviewCount&quot;&gt;35&lt;/span&gt; reviews
+											&lt;/span&gt;
 										&lt;/div&gt; &lt;!-- /.rating --&gt;
 									&lt;/div&gt; &lt;!-- /.five-star --&gt;
 									&lt;a href=&quot;&quot; class=&quot;alt text--m&quot;&gt;Read Reviews&lt;/a&gt;
@@ -56,10 +60,46 @@
 						{{&gt; organisms-recipe-body }}
 					&lt;/section&gt; &lt;!-- /.recipe-body --&gt;
 
-					&lt;div class=&quot;byline byline--s&quot; itemprop=&quot;author&quot;&gt;By &lt;span&gt;Sarah Robbins&lt;/span&gt;&lt;/div&gt;
-					&lt;div class=&quot;more-links&quot;&gt;
-						&lt;span class=&quot;upper space-half-r&quot;&gt;More:&lt;/span&gt; &lt;a class=&quot;alt&quot; href=&quot;&quot;&gt;Health&lt;/a&gt;, &lt;a class=&quot;alt&quot; href=&quot;&quot;&gt;Nutrition&lt;/a&gt;, &lt;a class=&quot;alt&quot; href=&quot;&quot;&gt;Cooking&lt;/a&gt;
-					&lt;/div&gt; &lt;!-- /.more-links --&gt;
+					{{# recipe-footer }}
+						&lt;footer class=&quot;article-footer&quot;&gt;
+							&lt;div class=&quot;byline byline--s&quot; itemprop=&quot;author&quot;&gt;By &lt;span&gt;Sarah Robbins&lt;/span&gt;&lt;/div&gt;
+							&lt;div class=&quot;more-links&quot;&gt;
+								&lt;span class=&quot;upper space-half-r&quot;&gt;More:&lt;/span&gt; &lt;a class=&quot;alt&quot; href=&quot;&quot;&gt;Health&lt;/a&gt;, &lt;a class=&quot;alt&quot; href=&quot;&quot;&gt;Nutrition&lt;/a&gt;, &lt;a class=&quot;alt&quot; href=&quot;&quot;&gt;Cooking&lt;/a&gt;
+							&lt;/div&gt; &lt;!-- /.more-links --&gt;
+
+							&lt;div class=&quot;recipe-utility&quot;&gt;
+								&lt;a href=&quot;&quot; class=&quot;btn--util btn--util-save&quot;&gt;
+									&lt;span class=&quot;icon icon--disc&quot;&gt;{{&gt; atoms-disc }}&lt;/span&gt;
+									&lt;span class=&quot;btn-text&quot;&gt;Save This Recipe&lt;/span&gt;
+								&lt;/a&gt; &lt;!-- /.btn--util --&gt;
+								&lt;a href=&quot;&quot; class=&quot;btn--util btn--util-all&quot;&gt;
+									&lt;span class=&quot;icon icon--all-list&quot;&gt;{{&gt; atoms-all-list }}&lt;/span&gt;
+									&lt;span class=&quot;btn-text&quot;&gt;All &lt;br&gt; Recipes&lt;/span&gt;
+								&lt;/a&gt; &lt;!-- /.btn--util --&gt;
+								&lt;a href=&quot;&quot; class=&quot;btn--util btn--util-print&quot;&gt;
+									&lt;span class=&quot;icon icon--print-fill&quot;&gt;{{&gt; atoms-print-fill }}&lt;/span&gt;
+									&lt;span class=&quot;btn-text&quot;&gt;Print This Recipe&lt;/span&gt;
+								&lt;/a&gt; &lt;!-- /.btn--util --&gt;
+							&lt;/div&gt; &lt;!-- /.recipe-utility --&gt;
+
+							&lt;div class=&quot;narrow&quot;&gt;
+								&lt;div class=&quot;five-star-wrap&quot;&gt;
+									&lt;div class=&quot;five-star recipe-five-star active-rating&quot;&gt;
+										&lt;span class=&quot;title text--l&quot;&gt;Rate this recipe:&lt;/span&gt;
+										&lt;div class=&quot;rating&quot;&gt;
+											&lt;span class=&quot;star&quot;&gt;&amp;#9733;&lt;/span&gt;
+											&lt;span class=&quot;star&quot;&gt;&amp;#9733;&lt;/span&gt;
+											&lt;span class=&quot;star&quot;&gt;&amp;#9733;&lt;/span&gt;
+											&lt;span class=&quot;star&quot;&gt;&amp;#9733;&lt;/span&gt;
+											&lt;span class=&quot;star&quot;&gt;&amp;#9733;&lt;/span&gt;
+										&lt;/div&gt; &lt;!-- /.rating --&gt;
+										&lt;span class=&quot;response&quot;&gt;Thanks!&lt;/span&gt;
+									&lt;/div&gt; &lt;!-- /.five-star --&gt;
+								&lt;/div&gt; &lt;!-- /.five-star-wrap --&gt;
+							&lt;/div&gt; &lt;!-- /.narrow --&gt;
+
+						&lt;/footer&gt; &lt;!-- /.article-footer --&gt;
+					{{/ recipe-footer }}
 
 				&lt;/article&gt; &lt;!-- /.article-standard --&gt;
 

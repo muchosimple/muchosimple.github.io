@@ -252,7 +252,6 @@
     </div> <!-- /.b-thumb -->
     <div class="b-text">
       <h3 class="b-title"><span>Reader's Top 20 Recipes</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
     </div> <!-- /.b-text -->
   </a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -269,7 +268,6 @@
     </div> <!-- /.b-thumb -->
     <div class="b-text">
       <h3 class="b-title"><span>4 Organized Women Spill Their Secrets</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
     </div> <!-- /.b-text -->
   </a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -286,7 +284,6 @@
     </div> <!-- /.b-thumb -->
     <div class="b-text">
       <h3 class="b-title"><span>15-Minute Dinner Recipes</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
     </div> <!-- /.b-text -->
   </a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -303,7 +300,6 @@
     </div> <!-- /.b-thumb -->
     <div class="b-text">
       <h3 class="b-title"><span>Get Real Simple <br> Only $1.29 and issue</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
     </div> <!-- /.b-text -->
   </a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -565,14 +561,18 @@
 							</div> <!-- /.primary-image -->
 							<div class="recipe-meta left-halved">
 								<div class="five-star-wrap">
-									<div class="five-star recipe-five-star">
+									<div class="five-star-rated recipe-five-star">
 										<span class="title light">Rating</span>
 										<div class="rating">
-											<span class="star star--1">&#9733;</span>
-											<span class="star star--2">&#9733;</span>
-											<span class="star star--3">&#9733;</span>
-											<span class="star star--4">&#9733;</span>
-											<span class="star star--5">&#9733;</span>
+											<span class="star star--inactive">&#9733;</span>
+											<span class="star star--inactive">&#9733;</span>
+											<span class="star star--active">&#9733;</span>
+											<span class="star star--active">&#9733;</span>
+											<span class="star star--active">&#9733;</span>
+											<span itemprop="aggregateRating" class="is-vishidden" itemscope itemtype="http://schema.org/AggregateRating">
+												<span itemprop="ratingValue">4.0</span> stars based on
+												<span itemprop="reviewCount">35</span> reviews
+											</span>
 										</div> <!-- /.rating -->
 									</div> <!-- /.five-star -->
 									<a href="" class="alt text--m">Read Reviews</a>
@@ -756,10 +756,50 @@
 						</section> <!-- /.directions -->
 					</section> <!-- /.recipe-body -->
 
-					<div class="byline byline--s" itemprop="author">By <span>Sarah Robbins</span></div>
-					<div class="more-links">
-						<span class="upper space-half-r">More:</span> <a class="alt" href="">Health</a>, <a class="alt" href="">Nutrition</a>, <a class="alt" href="">Cooking</a>
-					</div> <!-- /.more-links -->
+						<footer class="article-footer">
+							<div class="byline byline--s" itemprop="author">By <span>Sarah Robbins</span></div>
+							<div class="more-links">
+								<span class="upper space-half-r">More:</span> <a class="alt" href="">Health</a>, <a class="alt" href="">Nutrition</a>, <a class="alt" href="">Cooking</a>
+							</div> <!-- /.more-links -->
+
+							<div class="recipe-utility">
+								<a href="" class="btn--util btn--util-save">
+									<span class="icon icon--disc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><title>Save This</title><path fill="transparent" class="c" d="M399.9,18.2H76.1c-31.9,0-58,26.1-58,58v347.7c0,31.9,26.1,58,58,58h347.7c31.9,0,58-26.1,58-58V108.8
+  L399.9,18.2z"/><g><path fill="#fff" d="M423.9,494.9H76.1c-39.2,0-71.1-31.9-71.1-71.1V76.1c0-39.2,31.9-71.1,71.1-71.1h329.6l89.2,98.7v320.1
+    C494.9,463.1,463.1,494.9,423.9,494.9z M76.1,31.3c-24.7,0-44.8,20.1-44.8,44.8v347.7c0,24.7,20.1,44.8,44.8,44.8h347.7
+    c24.7,0,44.8-20.1,44.8-44.8v-310l-74.7-82.6H76.1z"/></g><path fill="#fff" d="M134,77v144.9c0,15.9,13.5,29.1,29.5,29.1h173.9c16,0,29.7-13.2,29.7-29.1V77H134z M337,221h-58V107h58V221z"/></svg>
+</span>
+									<span class="btn-text">Save This Recipe</span>
+								</a> <!-- /.btn--util -->
+								<a href="" class="btn--util btn--util-all">
+									<span class="icon icon--all-list"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>All List</title><path fill="transparent" class="c" d="M12 43h476v414H12z"/><path fill="#fff" d="M59.5 99.9h44v36.5h-44zM132.8 99.9h307.7v36.5H132.8zM59.5 363.6h44v36.5h-44zM132.8 363.6h307.7v36.5H132.8zM59.5 231.8h44v36.5h-44zM132.8 231.8h307.7v36.5H132.8zM497.3 466.1H2.7V33.9h494.5v432.2zM17.4 451.4h465.2V48.6H17.4v402.8z"/></svg>
+</span>
+									<span class="btn-text">All <br> Recipes</span>
+								</a> <!-- /.btn--util -->
+								<a href="" class="btn--util btn--util-print">
+									<span class="icon icon--print-fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Print This</title><path fill="transparent" class="c" d="M455.3 98H45.4C28.7 98 15 111.8 15 128.4v180.8c0 16.7 13.7 29.8 30.4 29.8H93V237h314v102h48.3c16.7 0 29.7-13.1 29.7-29.8V128.4c0-16.6-13-30.4-29.7-30.4z"/><path fill="#fff" d="M400.7 60.8H99.3V30.7c0-8.3 6.8-15.1 15.1-15.1h271.3c8.3 0 15.1 6.8 15.1 15.1v30.1z"/><path fill="none" d="M415 232v95h40.3c9.7 0 16.7-8.1 16.7-17.8V128.4c0-9.7-7-18.4-16.7-18.4H45.4c-9.7 0-16.4 8.7-16.4 18.4v180.8c0 9.7 6.7 17.8 16.4 17.8H86v-95h329zM109 352h283v109H109z"/><path fill="#fff" d="M455.3 86H45.4C21.8 86 3 104.8 3 128.4v180.8C3 332.8 21.8 352 45.4 352H86v-.1V483h329V351.9v.1h40.3c23.6 0 42.7-19.2 42.7-42.8V128.4c0-23.6-19.1-42.4-42.7-42.4zM392 326.8V461H109V254h283v72.8zm80-17.6c0 9.7-7 17.8-16.7 17.8H415v-95H86v95H45.4c-9.7 0-16.4-8.1-16.4-17.8V128.4c0-9.7 6.7-18.4 16.4-18.4h409.9c9.7 0 16.7 8.7 16.7 18.4v180.8z"/></svg>
+</span>
+									<span class="btn-text">Print This Recipe</span>
+								</a> <!-- /.btn--util -->
+							</div> <!-- /.recipe-utility -->
+
+							<div class="narrow">
+								<div class="five-star-wrap">
+									<div class="five-star recipe-five-star active-rating">
+										<span class="title text--l">Rate this recipe:</span>
+										<div class="rating">
+											<span class="star">&#9733;</span>
+											<span class="star">&#9733;</span>
+											<span class="star">&#9733;</span>
+											<span class="star">&#9733;</span>
+											<span class="star">&#9733;</span>
+										</div> <!-- /.rating -->
+										<span class="response">Thanks!</span>
+									</div> <!-- /.five-star -->
+								</div> <!-- /.five-star-wrap -->
+							</div> <!-- /.narrow -->
+
+						</footer> <!-- /.article-footer -->
 
 				</article> <!-- /.article-standard -->
 
@@ -782,7 +822,6 @@
           </div> <!-- /.b-thumb -->
           <div class="b-text">
             <h3 class="b-title"><span>8 Smart Cleaning Techniques</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
           </div> <!-- /.b-text -->
         </a> <!-- /.b-inner -->
       </div> <!-- /.block-thumb -->
@@ -798,7 +837,6 @@
           </div> <!-- /.b-thumb -->
           <div class="b-text">
             <h3 class="b-title"><span>15 Of The Rarest (And Most Mind Blowing) Photographs In History</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
           </div> <!-- /.b-text -->
         </a> <!-- /.b-inner -->
       </div> <!-- /.block-thumb -->
@@ -814,7 +852,6 @@
           </div> <!-- /.b-thumb -->
           <div class="b-text">
             <h3 class="b-title"><span>6 Clever Items to Simplify Your Life</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
           </div> <!-- /.b-text -->
         </a> <!-- /.b-inner -->
       </div> <!-- /.block-thumb -->
@@ -1064,7 +1101,6 @@
 	      </div> <!-- /.b-thumb -->
 	      <div class="b-text">
 	        <h3 class="b-title"><span>6 Smart Hairstyling Tools</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
 	      </div> <!-- /.b-text -->
 	    </a> <!-- /.b-inner -->
 	  </div> <!-- /.block-thumb -->
@@ -1095,7 +1131,6 @@
     <div class="b-text">
         <span class="rounded number">1</span>
       <h3 class="b-title"><span>11 Apple Pie-Inspired Recipes That Almost Beat the Real Thing</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
     </div> <!-- /.b-text -->
   </a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -1113,7 +1148,6 @@
     <div class="b-text">
         <span class="rounded number">2</span>
       <h3 class="b-title"><span>24 Beauty Products We Can't Live Without</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
     </div> <!-- /.b-text -->
   </a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -1131,7 +1165,6 @@
     <div class="b-text">
         <span class="rounded number">3</span>
       <h3 class="b-title"><span>5 Small Ways to Show Compassion</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
     </div> <!-- /.b-text -->
   </a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -1149,7 +1182,6 @@
     <div class="b-text">
         <span class="rounded number">4</span>
       <h3 class="b-title"><span>All-Star Household Cleaners</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
     </div> <!-- /.b-text -->
   </a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->
@@ -1167,7 +1199,6 @@
     <div class="b-text">
         <span class="rounded number">5</span>
       <h3 class="b-title"><span>They Mean Business: 8 Fall Pices for the Office</span></h3>
-        <div class="byline" itemprop="author">By <span>Sarah Robbins</span></div>
     </div> <!-- /.b-text -->
   </a> <!-- /.b-inner -->
 </div> <!-- /.block-thumb -->

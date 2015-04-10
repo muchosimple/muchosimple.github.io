@@ -207,35 +207,69 @@
 
 // Fivestar Ratings
 .five-star {
-	width: rem(154);
 	.title {
 		display: inline-block;
-		vertical-align: text-bottom;
-		font-size: rem(13);
+		vertical-align: bottom;
+	}
+	.response {
+		color: $blue-light;
+		vertical-align: top;
 	}
 }
 .rating {
 	unicode-bidi: bidi-override;
 	direction: rtl;
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: bottom;
+	margin-right: rem(14);
 }
 .rating > .star {
 	display: inline-block;
 	position: relative;
-	font-size: rem(20);
-	width: rem(19);
-	margin-right: -2px;
-	color: $gray-light-4;
+	font-size: rem(35);
+	width: rem(55);
+	margin-right: rem(-16);
 	cursor: pointer;
 	text-align: center;
+	line-height: 0;
 }
-.rating > .star:hover,
-.rating > .star:hover ~ .star {
-	 color: $blue-light;
+.star {
+	color: $gray-light-4;
+}
+.star--active {
+	color: $blue-light;
+}
+.star--inactive {
+	color: $gray-light-4;
+}
+.active-rating {
+	.rating > .star:hover,
+	.rating > .star:hover ~ .star {
+		 @extend .star--active;
+	}
 }
 .five-star-wrap {
 	padding-bottom: $pad;
+}
+
+// Disabled rated stars.
+.five-star-rated {
+	.title {
+		display: inline-block;
+		vertical-align: text-top;
+		font-size: rem(13);
+		margin-right: rem(4);
+	}
+	.star {
+		font-size: rem(20);
+		width: rem(19);
+		margin-right: -2px;
+	}
+	.rating {
+		vertical-align: middle;
+		margin-right: 0;
+		margin-bottom: rem(4);
+	}
 }
 
 // Headline/Image halved sections
@@ -273,7 +307,12 @@
 	}
 	.article-tools {
 		clear: both;
-		margin-bottom: $space-and-half;
+		margin-bottom: $space;
+	}
+	.narrow {
+		margin-top: rem(54);
+		padding-top: rem(48);
+		border-top: $border-style;
 	}
 }
 .recipe-meta {
@@ -366,4 +405,9 @@
 		color: $gray-med;
 		line-height: 1.75;
 	}
+}
+
+.recipe-utility {
+	text-align: center;
+	padding-top: rem(30);
 }
