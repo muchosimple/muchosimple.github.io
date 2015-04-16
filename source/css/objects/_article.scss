@@ -206,6 +206,15 @@
 }
 
 // Fivestar Ratings
+//
+// Through CSS, there is no way to select a preceding child element. However,
+// there is a way to select succeeding child elements, through the adjacent or
+// general sibling combinators. If we literally reverse the order of the
+// characters, then we can make use of the general sibling combinator to select
+// all the stars that appear before the hovered star visually, but after the
+// hovered star in the HTML.
+//
+// This method is defined here: https://css-tricks.com/star-ratings/
 .five-star {
 	margin-bottom: $space-half;
 	@include mq($medium-break) {
@@ -225,6 +234,13 @@
 		vertical-align: text-bottom;
 		display: inline-block;
 		padding-bottom: $pad-half;
+		opacity: 0;
+		@include trans;
+	}
+	&.rated {
+		.response {
+			opacity: 1;
+		}
 	}
 }
 .rating {
@@ -233,7 +249,7 @@
 	display: inline-block;
 	vertical-align: bottom;
 }
-.rating > .star {
+.rating .star {
 	display: inline-block;
 	position: relative;
 	font-size: rem(35);
@@ -252,9 +268,53 @@
 	color: $gray-light-4;
 }
 .active-rating {
-	.rating > .star:hover,
-	.rating > .star:hover ~ .star {
+	.rating .star:hover,
+	.rating .star:hover ~ .star {
 		 @extend .star--active;
+	}
+}
+// Rating: 1 Star
+.inactive-stars-4 {
+	.star {
+		@extend .star--inactive;
+	}
+	.star:nth-child(5) {
+		@extend .star--active;
+	}
+}
+// Rating: 2 Stars
+.inactive-stars-3 {
+	.star {
+		@extend .star--inactive;
+	}
+	.star:nth-child(5),
+	.star:nth-child(4) {
+		@extend .star--active;
+	}
+}
+// Rating: 3 Stars
+.inactive-stars-2 {
+	.star {
+		@extend .star--active;
+	}
+	.star:nth-child(1),
+	.star:nth-child(2) {
+		@extend .star--inactive;
+	}
+}
+// Rating: 4 Stars
+.inactive-stars-1 {
+	.star {
+		@extend .star--active;
+	}
+	.star:nth-child(1) {
+		@extend .star--inactive;
+	}
+}
+// Rating: 5 Stars
+.inactive-stars-0 {
+	.star {
+		@extend .star--active;
 	}
 }
 .five-star-wrap {

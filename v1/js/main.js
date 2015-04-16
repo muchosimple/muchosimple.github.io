@@ -202,6 +202,14 @@ window.onresize = function() {
     $('.block-video, .article, .fitvid').fitVids();
   }
 
+  // 5-star Rating
+  if ($('.five-star').length) {
+    $('.five-star').find('.star').click(function(){
+      $(this).parent().removeClass().addClass('inactive-stars-' + $(this).index());
+      $(this).parents('.five-star').addClass('rated');
+    });
+  }
+
   // Smooth scroll to anchor
   // $('a[href*=#]:not([href=#])').click(function() {
   //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

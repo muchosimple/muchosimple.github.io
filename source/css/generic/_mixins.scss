@@ -437,6 +437,7 @@ $supported: true !default;
     > .gi {
       width: 25%;
       margin-bottom: 0;
+      padding-bottom: 0;
       &:nth-of-type(2n+1) {
         clear: none;
       }
