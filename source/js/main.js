@@ -62,7 +62,18 @@ window.onresize = function() {
     if ($this.data('remove')) {
       $('.' + $this.data('remove')).removeClass($this.data('remove'));
     }
+
+    // If the toggle element trigger is opening a modal, add the .has-close
+    // class to the trigger and the close icon will also toggle the target element.
+    if ($this.hasClass('has-close')) {
+      $toggled.addClass($togglePrefix + '-is-active--with-close');
+      $('.js-close').click(function(){
+        $this.removeClass($togglePrefix + '-is-active');
+        $toggled.removeClass($togglePrefix + '-is-active');
+      });
+    }
   };
+
 
   /*
    * Toggle Active Classes

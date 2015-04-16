@@ -1,6 +1,7 @@
 // Article
 .article-header {
 	margin-bottom: $space;
+	position: relative;
 }
 .article-body {
 	margin-bottom: rem(40);
@@ -429,6 +430,42 @@
 	}
 	.cb {
 		top: rem(6);
+	}
+}
+.nutrition-info-wrap {
+	background-color: $gray-light-2;
+	padding: rem(28);
+	position: relative;
+	width: rem(300);
+	border: $border-style-dark;
+	position: absolute;
+	left: 50%;
+	margin-left: rem(-150);
+	bottom: 0;
+	box-shadow: 0 0 5px rgba($black, .3);
+	z-index: -1;
+	opacity: 0;
+	@include trans;
+	.nutrition-is-active & {
+		opacity: 1;
+		z-index: 100;
+	}
+	@include mq($small-break) {
+		width: rem(350);
+		margin-left: rem(-175);
+		bottom: auto;
+		top: 20%;
+	}
+	.icon-x {
+		position: absolute;
+		right: rem(10);
+		top: rem(10);
+		path {
+			fill: $gray-med;
+		}
+	}
+	.title {
+		margin-bottom: $space;
 	}
 }
 .recipe-info-inner {

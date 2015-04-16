@@ -89,13 +89,18 @@
 // Definition Lists
 .dl {
   li {
-    margin-bottom: rem(6);
+    margin-bottom: rem(10);
   }
 }
 .dt, .dd {
   font-size: rem(14);
-  display: inline-block;
+  display: block;
 }
 .dt {
   color: $gray-med;
+  float: left;
+  width: rem(124);
+}
+.dd {
+  padding-left: rem(124);
 }
