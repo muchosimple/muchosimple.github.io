@@ -194,6 +194,7 @@ input[type="search"]::-webkit-search-decoration {
     top: 0;
     right: 0;
     padding: rem(12);
+    display: none;
   }
   .icon {
     display: none;
@@ -213,6 +214,9 @@ input[type="search"]::-webkit-search-decoration {
       height: rem(18);
       width: rem(18);
     }
+    .close {
+      display: block;
+    }
   }
 }
 .search-form {
@@ -222,7 +226,7 @@ input[type="search"]::-webkit-search-decoration {
   height: rem($mobile-header-height);
   position: absolute;
   z-index: 10;
-  top: 0;
+  top: rem(-50);
   left: 2%;
   opacity: 0;
   background-color: $white;
