@@ -107,6 +107,7 @@ button {
 	}
 	.btn-text {
 		display: block;
+		color: $white;
 		text-transform: uppercase;
 		@include mq($px450, max) {
 			font-size: rem(12);

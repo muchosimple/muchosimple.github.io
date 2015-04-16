@@ -207,13 +207,23 @@
 
 // Fivestar Ratings
 .five-star {
+	margin-bottom: $space-half;
+	@include mq($medium-break) {
+		margin-bottom: $space;
+	}
+	.rating {
+		margin-left: rem(5);
+	}
 	.title {
 		display: inline-block;
 		vertical-align: bottom;
+		padding-bottom: rem(3);
 	}
 	.response {
 		color: $blue-light;
-		vertical-align: top;
+		vertical-align: text-bottom;
+		display: inline-block;
+		padding-bottom: $pad-half;
 	}
 }
 .rating {
@@ -221,17 +231,15 @@
 	direction: rtl;
 	display: inline-block;
 	vertical-align: bottom;
-	margin-right: rem(14);
 }
 .rating > .star {
 	display: inline-block;
 	position: relative;
 	font-size: rem(35);
 	width: rem(55);
-	margin-right: rem(-16);
+	margin-left: rem(-16);
 	cursor: pointer;
 	text-align: center;
-	line-height: 0;
 }
 .star {
 	color: $gray-light-4;
@@ -259,11 +267,14 @@
 		vertical-align: text-top;
 		font-size: rem(13);
 		margin-right: rem(4);
+		padding-bottom: 0;
 	}
 	.star {
 		font-size: rem(20);
 		width: rem(19);
+		margin-left: 0;
 		margin-right: -2px;
+		cursor: default;
 	}
 	.rating {
 		vertical-align: middle;
@@ -300,6 +311,10 @@
 }
 // Recipe
 .article-recipe {
+	// All of the text links on Recipes are blue.
+	a {
+		color: $blue-light;
+	}
 	.primary-image {
 		.img-wrap {
 			display: inline-block;

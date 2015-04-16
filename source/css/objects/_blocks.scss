@@ -411,4 +411,42 @@ a.b-inner:hover {
   overflow: hidden;
 }
 
+// Block Videos
+.block-video {
+  margin-bottom: rem(45);
+  .b-vid {
+    margin-bottom: rem(6);
+  }
+}
 
+// Special Block: Meal Planner
+.block--meal-planner {
+  margin-bottom: rem(45);
+  @include mq($micro-break) {
+    @include table-layout(45%, 55%);
+  }
+  .b-inner {
+    &:hover {
+      .b-title {
+        color: $black;
+      }
+    }
+  }
+  .b-thumb {
+    text-align: center;
+    margin-bottom: rem(6);
+  }
+  .b-title {
+    text-transform: lowercase;
+    margin-bottom: rem(6);
+    font-size: rem(26);
+    line-height: 1.15;
+    span span {
+      color: $bright-orange;
+    }
+  }
+  p {
+    font-size: rem(15);
+    line-height: 1.4;
+  }
+}

@@ -394,17 +394,15 @@ $supported: true !default;
 }
 
 // Grid with 4 items with custom breakpoints
-@mixin g-4up($bp1: $bp-med, $bp2: $bp-large) {
-  @include mq($bp1) {
-    > .gi {
-      float: left;
-      width: 50%;
-      &:nth-of-type(2n+1) {
-        clear: both;
-      }
+@mixin g-4up($bp1: $micro-break, $bp2: $bp-large) {
+  > .gi {
+    float: left;
+    width: 50%;
+    &:nth-of-type(2n+1) {
+      clear: both;
     }
   }
-  @include mq($bp2) {
+  @include mq($bp1) {
     > .gi {
       width: 25%;
       &:nth-of-type(2n+1) {

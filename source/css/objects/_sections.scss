@@ -173,6 +173,7 @@
   }
   .s-title {
     border-bottom: none;
+    display: block !important; // There's Outbrain embedded styles targeting my markup?? This is overriding the Outbrain style.
     padding-bottom: rem(6);
   }
   .g-4up-v2 {
@@ -191,22 +192,13 @@
   .feed-title {
     margin-bottom: rem(6);
   }
-  .newsletter-form {
-    margin-bottom: rem(45);
-  }
+}
+.newsletter-form {
+  margin-bottom: rem(45);
 }
 // Block Layout for Content Footer Blocks
 @mixin cf-blocks {
-  max-width: rem(225);
-  overflow: visible;
-  @include center-block;
-  @include mq($px500) {
-    max-width: rem(495);
-  }
-  @include mq($large-break) {
-    max-width: none;
-    text-align: center;
-  }
+  text-align: center;
   .block,
   .item-link-container {
     float: none;
@@ -215,33 +207,18 @@
     vertical-align: top;
     text-align: left;
     margin-bottom: $space-and-half;
-    max-width: rem(225);
-    @media (min-width: $px500) and (max-width: $large-break) {
-      width: 49%;
-      float: right;
-      &:nth-child(odd) {
-        clear: left;
-        float: left;
-      }
-      .also-blocks & {
-        &:nth-child(3) {
-          border: 3px solid red;
-        }
-      }
+    &:first-child {
+      margin-left: 0;
     }
-    @include mq($large-break) {
-      width: 30%;
-      margin-right: 4%;
-      margin-bottom: $space-double;
-      &:nth-child(3n+3) {
-        margin-right: 0;
-      }
+    @media (min-width: $px450) {
+      width: 31.8%;
+      margin-left: 2.3%;
+      margin-right: -4px;
+      display: inline-block;
     }
-    @include mq($larger-break) {
-      margin-right: 4.5%;
-    }
-    @include mq($max-width) {
-      margin-right: 5%;
+    .b-inner {
+      max-width: rem(225);
+      @include center-block;
     }
     .b-title,
     .strip-rec-link-title {
@@ -256,6 +233,9 @@
 // You Might Like in Content Footer (Outbrain)
 .you-might-like-footer {
   clear: both;
+  .s-title {
+    display: none;
+  }
   .ob_org_header {
     display: none;
   }
@@ -270,6 +250,18 @@
   }
   .strip-rec-link-title {
     display: inline;
+  }
+  .AR_9.ob-widget .ob-widget-items-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .AR_9.ob-widget .ob-dynamic-rec-link {
+    max-width: rem(225);
+    @include center-block;
+  }
+  .AR_9.ob-two-rows-strip-layout .ob-dynamic-rec-container {
+    max-width: none;
   }
   .item-link-container:hover {
     .strip-rec-link-title {
@@ -296,6 +288,9 @@
     line-height: 1;
     padding-top: rem(4);
   }
+  .AR_9.ob-two-rows-strip-layout .ob-rec-text {
+    line-height: 1.2;
+  }
   .AR_9 .ob_container_shadow_outer {
     display: none;
   }
@@ -304,15 +299,6 @@
     margin-top: rem(-25);
     @include mq($larger-break) {
       padding-right: $pad;
-    }
-  }
-}
-.also-blocks {
-  @media (min-width: $px500) and (max-width: $large-break) {
-   .block:nth-child(3) {
-      clear: both;
-      float: none;
-      @include center-block;
     }
   }
 }

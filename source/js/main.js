@@ -197,6 +197,11 @@ window.onresize = function() {
     $('.header').removeClass('header-is-sticky');
   });
 
+  // FitVids
+  if ($.fn.fitVids) {
+    $('.block-video, .article, .fitvid').fitVids();
+  }
+
   // Smooth scroll to anchor
   // $('a[href*=#]:not([href=#])').click(function() {
   //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

@@ -96,6 +96,36 @@
 										<span class="response">Thanks!</span>
 									</div> <!-- /.five-star -->
 								</div> <!-- /.five-star-wrap -->
+
+								<div class="rails-comments" id="commenting_module">
+									<h3 class="rails-comments__title" id="comments_question">What did you think about this recipe?</h3>
+									{{> organisms-comments }}
+								</div> <!-- /.rails-comments -->
+
+								{{> molecules-newsletters }}
+
+								{{# meal-planner }}
+									{{> molecules-block-thumb-headline }}
+								{{/ meal-planner }}
+
+								<div class="block block-video">
+									<div class="b-vid">
+										{{> atoms-video }}
+									</div> <!-- /.b-vid -->
+									<h3 class="b-title">How to peel garlic cloves quickly</h3>
+								</div> <!-- /.block-video -->
+
+								<section class="section more-recipes">
+									<header class="s-header">
+										<h3 class="s-title heading">More Recipes</h3>
+									</header> <!-- /.s-header -->
+									<div class="g g-4up">
+										{{# more-recipes }}
+											<div class="gi">{{> molecules-block-thumb-headline }}</div>
+										{{/ more-recipes }}
+									</div> <!-- /.g-4up -->
+								</section> <!-- /.more-recipes -->
+
 							</div> <!-- /.narrow -->
 
 						</footer> <!-- /.article-footer -->

@@ -2,6 +2,9 @@
 	"title" : "Whole Roasted Chicken on a Bed of Cauliflower",
 	"bodyClass": "recipe article",
 	"more-links" : true,
+	"nl-title" : "Daily Recipe Newsletter",
+	"nl-dek" : "Get daily recipes delivered to your inbox, plus special offers!",
+	"nl-options" : false,
 	"recipe-head" : [
 		{
 			"has-head-meta" : true,
@@ -25,6 +28,52 @@
 	"recipe-footer" : [
 		{
 			"byline" : "Sarah Robbins"
+		}
+	],
+	"meal-planner" : [
+		{
+			"block-class" : "block--meal-planner",
+			"img" : {
+				"src": "http://d.pr/i/1ldwn+"
+			},
+			"byline" : false,
+			"title" : "<span>Weeknight</span> Meal Planner",
+			"dek" : "We'll email you 5 complete dinner plans every Friday morning with our organized grocery list. Shop for the week with grocery lists organized by ingredients.",
+			"cta" : "Get Started Today!"
+		}
+	],
+	"more-recipes" : [
+		{
+			"block-class" : "",
+			"img" : {
+				"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/0906/din-chicken-quesadillas_300.jpg?itok=gBgZgcXb"
+			},
+			"byline" : false,
+			"title" : "Grilled Chicken and Spinach Quesadillas"
+		},
+		{
+			"block-class" : "",
+			"img" : {
+				"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0409/chicken-beans_300.jpg?itok=uzC5Hqdo"
+			},
+			"byline" : false,
+			"title" : "Pan-Roasted Chicken With Lemon-Garlic Green Beans"
+		},
+		{
+			"block-class" : "",
+			"img" : {
+				"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0805/chicken-cashew_300.jpg?itok=0UUBaNgv"
+			},
+			"byline" : false,
+			"title" : "Chicken and Cashews in Lettuce Wraps"
+		},
+		{
+			"block-class" : "",
+			"img" : {
+				"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0506/chicken-stroganoff-b_300.jpg?itok=Mn-MNrkg"
+			},
+			"byline" : false,
+			"title" : "Chicken Stroganoff"
 		}
 	]
 }

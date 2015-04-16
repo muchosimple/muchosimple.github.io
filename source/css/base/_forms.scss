@@ -292,6 +292,8 @@ input[type="search"]::-webkit-search-decoration {
   }
   .dek {
     margin-bottom: $space-and-half;
+    font-family: $serif;
+    font-size: rem(18);
   }
   .input-field {
     border-color: $gray-light-4;
@@ -324,7 +326,7 @@ input[type="search"]::-webkit-search-decoration {
 // Email a Friend Form
 .email-friend-wrap {
   position: fixed;
-  z-index: 5000501; // Appear over ads @TODO: Refactor to one z-index for overlays
+  z-index: 50050010; // Appear over ads @TODO: Refactor to one z-index for overlays
   width: 100%;
   height: 100%;
   left: 0;
@@ -342,7 +344,7 @@ input[type="search"]::-webkit-search-decoration {
   position: absolute;
   left: 50%;
   top: 10%;
-  z-index: 5005001; // Appear over ads @TODO: Refactor to one z-index for overlays
+  z-index: 50050510; // Appear over ads @TODO: Refactor to one z-index for overlays
   margin-left: rem(-145);
   @include mq($micro-break) {
     width: rem(350);

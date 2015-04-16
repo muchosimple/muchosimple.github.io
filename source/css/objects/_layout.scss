@@ -121,6 +121,7 @@
 /* Grid Item */
 .gi {
 	padding: $pad-half;
+	padding-top: 0;
 	img {
 		display: block;
 	}
@@ -188,6 +189,12 @@
 // Grid 4up
 .g-4up {
 	@include g-4up;
+	.b-thumb {
+		margin-bottom: rem(4);
+	}
+	.b-title {
+		font-size: rem(18);
+	}
 }
 
 // Grid 4up with

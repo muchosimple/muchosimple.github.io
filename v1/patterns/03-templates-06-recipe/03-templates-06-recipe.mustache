@@ -96,6 +96,36 @@
 										&lt;span class=&quot;response&quot;&gt;Thanks!&lt;/span&gt;
 									&lt;/div&gt; &lt;!-- /.five-star --&gt;
 								&lt;/div&gt; &lt;!-- /.five-star-wrap --&gt;
+
+								&lt;div class=&quot;rails-comments&quot; id=&quot;commenting_module&quot;&gt;
+									&lt;h3 class=&quot;rails-comments__title&quot; id=&quot;comments_question&quot;&gt;What did you think about this recipe?&lt;/h3&gt;
+									{{&gt; organisms-comments }}
+								&lt;/div&gt; &lt;!-- /.rails-comments --&gt;
+
+								{{&gt; molecules-newsletters }}
+
+								{{# meal-planner }}
+									{{&gt; molecules-block-thumb-headline }}
+								{{/ meal-planner }}
+
+								&lt;div class=&quot;block block-video&quot;&gt;
+									&lt;div class=&quot;b-vid&quot;&gt;
+										{{&gt; atoms-video }}
+									&lt;/div&gt; &lt;!-- /.b-vid --&gt;
+									&lt;h3 class=&quot;b-title&quot;&gt;How to peel garlic cloves quickly&lt;/h3&gt;
+								&lt;/div&gt; &lt;!-- /.block-video --&gt;
+
+								&lt;section class=&quot;section more-recipes&quot;&gt;
+									&lt;header class=&quot;s-header&quot;&gt;
+										&lt;h3 class=&quot;s-title heading&quot;&gt;More Recipes&lt;/h3&gt;
+									&lt;/header&gt; &lt;!-- /.s-header --&gt;
+									&lt;div class=&quot;g g-4up&quot;&gt;
+										{{# more-recipes }}
+											&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-block-thumb-headline }}&lt;/div&gt;
+										{{/ more-recipes }}
+									&lt;/div&gt; &lt;!-- /.g-4up --&gt;
+								&lt;/section&gt; &lt;!-- /.more-recipes --&gt;
+
 							&lt;/div&gt; &lt;!-- /.narrow --&gt;
 
 						&lt;/footer&gt; &lt;!-- /.article-footer --&gt;
