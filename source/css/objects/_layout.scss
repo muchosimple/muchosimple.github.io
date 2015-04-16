@@ -189,17 +189,16 @@
 // Grid 4up
 .g-4up {
 	@include g-4up;
-	.b-thumb {
-		margin-bottom: rem(4);
-	}
-	.b-title {
-		font-size: rem(18);
-	}
 }
 
 // Grid 4up with
 .g-4up-v2 {
 	@include g-4up($micro-break, $larger-break);
+}
+
+// Used for grid items that break into 4 across at smaller widths.
+.g-4up-early-break {
+	@include g-4up-early-break;
 }
 
 /* Grid 5up */

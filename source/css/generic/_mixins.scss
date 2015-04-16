@@ -394,15 +394,17 @@ $supported: true !default;
 }
 
 // Grid with 4 items with custom breakpoints
-@mixin g-4up($bp1: $micro-break, $bp2: $bp-large) {
-  > .gi {
-    float: left;
-    width: 50%;
-    &:nth-of-type(2n+1) {
-      clear: both;
+@mixin g-4up($bp1: $bp-med, $bp2: $bp-large) {
+  @include mq($bp1) {
+    > .gi {
+      float: left;
+      width: 50%;
+      &:nth-of-type(2n+1) {
+        clear: both;
+      }
     }
   }
-  @include mq($bp1) {
+  @include mq($bp2) {
     > .gi {
       width: 25%;
       &:nth-of-type(2n+1) {
@@ -411,6 +413,44 @@ $supported: true !default;
       &:nth-of-type(4n+1) {
         clear: left;
       }
+    }
+  }
+}
+
+// 4-up for shifting to 4 across early. Works best with vertical images.
+@mixin g-4up-early-break($bp1: $micro-break, $bp2: $large-break) {
+  > .gi {
+    float: left;
+    width: 50%;
+    margin-bottom: $space;
+    &:nth-of-type(2n+1) {
+      clear: both;
+    }
+  }
+  .b-thumb {
+    margin-bottom: rem(4);
+  }
+  .b-title {
+    font-size: rem(18);
+  }
+  @include mq($bp1) {
+    > .gi {
+      width: 25%;
+      margin-bottom: 0;
+      &:nth-of-type(2n+1) {
+        clear: none;
+      }
+      &:nth-of-type(4n+1) {
+        clear: left;
+      }
+    }
+    .b-title {
+      font-size: rem(16);
+    }
+  }
+  @include mq($bp2) {
+    .b-title {
+      font-size: rem(18);
     }
   }
 }

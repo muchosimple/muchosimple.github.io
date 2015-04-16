@@ -217,7 +217,8 @@
 	.title {
 		display: inline-block;
 		vertical-align: bottom;
-		padding-bottom: rem(3);
+		margin-right: $space-half;
+		padding-bottom: rem(8);
 	}
 	.response {
 		color: $blue-light;
@@ -325,8 +326,8 @@
 		margin-bottom: $space;
 	}
 	.narrow {
-		margin-top: rem(54);
-		padding-top: rem(48);
+		margin-top: rem(48);
+		padding-top: $pad-double;
 		border-top: $border-style;
 	}
 }
