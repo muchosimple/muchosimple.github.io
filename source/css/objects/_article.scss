@@ -2,6 +2,19 @@
 .article-header {
 	margin-bottom: $space;
 	position: relative;
+	&.center {
+		margin-bottom: $space-double;
+		.kicker {
+			margin-bottom: $space;
+		}
+		.lead-headline {
+			padding-top: $pad-half;
+			margin-bottom: rem(20);
+		}
+		.lead-subtitle {
+			margin-bottom: rem(24);
+		}
+	}
 }
 .article-body {
 	margin-bottom: rem(40);
@@ -520,7 +533,7 @@
 	}
 }
 
-.recipe-utility {
+.content-utilities {
 	text-align: center;
 	padding-top: rem(30);
 }

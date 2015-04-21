@@ -5,6 +5,7 @@
 	"nl-title" : "Daily Recipe Newsletter",
 	"nl-dek" : "Get daily recipes delivered to your inbox, plus special offers!",
 	"nl-options" : false,
+	"content-type" : "Recipe",
 	"recipe-head" : [
 		{
 			"has-head-meta" : true,

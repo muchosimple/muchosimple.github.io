@@ -1,0 +1,20 @@
+{
+	"title" : "Ultimate Wedding Planner",
+	"bodyClass": "checklist article",
+	"content-type" : "Checklist",
+	"checklist-head" : [
+		{
+			"has-head-meta" : true,
+			"has-social-count" : "true",
+			"kicker" : "Life",
+			"sub-kicker" : "Weddings",
+			"level-3-kicker" : "Checklists",
+			"title" : "Ultimate Wedding Planner",
+			"subtitle" : "To plan the perfect celebration, use this comprehensive wedding checklist, based on the 16-month length of the average U.S. engagement.",
+			"img": {
+				"src": "http://d.pr/i/18XHj+",
+				"alt": "Ultimate Wedding Planner"
+			}
+		}
+	]
+}

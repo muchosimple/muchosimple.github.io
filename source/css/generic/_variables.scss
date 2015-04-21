@@ -47,10 +47,11 @@ $overlay-light: rgba($black, .76);
 $red: #e31e30;
 $pink: #ef4e74;
 $pink-light: #f06793;
-$blue-light-2: #E4F0F9;
+$pink-light-2: #FEF8FA;
 $blue-dark: #264770;
 $blue: #0074bc;
 $blue-light: #479cd6;
+$blue-light-2: #E4F0F9;
 $aqua: #E3F3F1;
 $icey-blue: #FCFEFE;
 $beige: #DDDDD3;
@@ -109,6 +110,8 @@ $border-style: 1px solid $gray-light-4;
 $border-style-light: 1px solid $gray-light-3;
 $border-style-white: 1px solid $white;
 $border-style-dark: 1px solid $gray;
+$border-style-dark-2: 1px solid $gray-med-2;
+
 
 // Breakpoints (legacy)
 $bp-small: 24em; // 384px
