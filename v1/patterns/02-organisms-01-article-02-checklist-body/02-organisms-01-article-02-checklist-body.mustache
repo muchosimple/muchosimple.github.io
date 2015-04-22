@@ -1,16 +1,22 @@
-&lt;section class=&quot;section checklist-items&quot;&gt;
-  &lt;header class=&quot;s-header&quot;&gt;
-    &lt;h2 class=&quot;s-title alt-heading--pink&quot;&gt;Sixteen to Nine Months Before&lt;/h2&gt;
-  &lt;/header&gt; &lt;!-- /.s-header --&gt;
-  &lt;ol class=&quot;cl-task-list&quot;&gt;
-    &lt;li class=&quot;cl-item js-toggle&quot;&gt;
-      &lt;div class=&quot;cl-task&quot;&gt;
-        &lt;span class=&quot;cb cb--large&quot;&gt;{{&gt; atoms-check }}&lt;/span&gt;
-        &lt;strong class=&quot;has-strike text--l&quot;&gt;Start a wedding folder or binder.&lt;/strong&gt;
-      &lt;/div&gt; &lt;!-- /.cl-task --&gt;
-      &lt;div class=&quot;cl-desc text&quot;&gt;
-        &lt;p class=&quot;text--r&quot;&gt;Begin leafing through bridal, lifestyle, fashion, gardening, design, and food magazines for inspiration.&lt;/p&gt;
-      &lt;/div&gt; &lt;!-- /.cl-desc --&gt;
-    &lt;/li&gt; &lt;!-- .cl-item --&gt;
-  &lt;/ol&gt; &lt;!-- /.cl-task-list --&gt;
-&lt;/section&gt; &lt;!-- /.checklist-items --&gt;
+{{# checklist }}
+  &lt;section class=&quot;section checklist-items&quot;&gt;
+    &lt;header class=&quot;s-header&quot;&gt;
+      &lt;h2 class=&quot;s-title alt-heading--pink&quot;&gt;{{ cl-title }}&lt;/h2&gt;
+    &lt;/header&gt; &lt;!-- /.s-header --&gt;
+    &lt;ol class=&quot;cl-task-list&quot;&gt;
+      {{# cl-items }}
+        &lt;li class=&quot;cl-item js-toggle {{ cl-item-class }}&quot;&gt;
+          &lt;div class=&quot;cl-task&quot;&gt;
+            &lt;span class=&quot;cb cb--large&quot;&gt;{{&gt; atoms-check }}&lt;/span&gt;
+            &lt;strong class=&quot;has-strike text--l&quot;&gt;&lt;span&gt;{{ cl-task }}&lt;/span&gt;&lt;/strong&gt;
+          &lt;/div&gt; &lt;!-- /.cl-task --&gt;
+          {{# cl-desc }}
+            &lt;div class=&quot;cl-desc text&quot;&gt;
+              &lt;p class=&quot;text--r&quot;&gt;{{ cl-desc }}&lt;/p&gt;
+            &lt;/div&gt; &lt;!-- /.cl-desc --&gt;
+          {{/ cl-desc }}
+        &lt;/li&gt; &lt;!-- .cl-item --&gt;
+      {{/ cl-items }}
+    &lt;/ol&gt; &lt;!-- /.cl-task-list --&gt;
+  &lt;/section&gt; &lt;!-- /.checklist-items --&gt;
+{{/ checklist }}

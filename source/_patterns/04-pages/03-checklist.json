@@ -12,9 +12,107 @@
 			"title" : "Ultimate Wedding Planner",
 			"subtitle" : "To plan the perfect celebration, use this comprehensive wedding checklist, based on the 16-month length of the average U.S. engagement.",
 			"img": {
-				"src": "http://d.pr/i/18XHj+",
+				"src": "../../images/checklist-wedding.jpg",
 				"alt": "Ultimate Wedding Planner"
 			}
+		}
+	],
+	"checklist" : [
+		{
+			"cl-title" : "Sixteen to Nine Months Before",
+			"cl-items" : [
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Start a wedding folder or binder.",
+					"cl-desc" : "Begin leafing through bridal, lifestyle, fashion, gardening, design, and food magazines for inspiration."
+				},
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Work out your budget.",
+					"cl-desc" : "Determine how much you have to spend, based on your families’ contributions and your own."
+				},
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Pick your wedding party.",
+					"cl-desc" : "As soon as you’re engaged, people will start wondering who’s in."
+				},
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Start the guest list.",
+					"cl-desc" : "Make a head count database to use throughout your planning process, with columns for contact info, RSVPs, gifts, and any other relevant information. (Want to keep costs low? It may be brutal, but the best way to do it is to reduce your guest list.)"
+				},
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Hire a planner, if desired.",
+					"cl-desc" : "A planner will have relationships with—and insights about—vendors."
+				}
+			]
+		},
+		{
+			"cl-title" : "Eight Months Before",
+			"cl-items" : [
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Hire the photographer and the videographer.",
+					"cl-desc" : "No need to talk specifics yet, but be sure that the people you hire are open to doing the shots that you want."
+				},
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Book the entertainment.",
+					"cl-desc" : "Attend gigs of potential acts to see how they perform in front of audiences, then reserve your favorite."
+				},
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Meet caterers.",
+					"cl-desc" : "If your wedding venue doesn’t offer its own catering service, look for one now and hire the service this month or early next."
+				},
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Purchase a dress.",
+					"cl-desc" : "You’ll need to schedule time for at least three fittings. Veil shopping can be postponed for another two to three months."
+				}
+			]
+		},
+		{
+			"cl-title" : "Seven to Six Months Before",
+			"cl-items" : [
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Select and purchase invitations.",
+					"cl-desc" : "Hire a calligrapher, if desired. Addressing cards is time-consuming, so you need to budget accordingly."
+				},
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Start planning a honeymoon.",
+					"cl-desc" : "Make sure that your passports are up-to-date, and schedule doctors’ appointments for any shots you may need."
+				},
+				{
+					"cl-task" : "Shop for bridesmaids’ dresses."
+				},
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Meet with the officiant.",
+					"cl-desc" : "Map out the ceremony and confirm that you have all the official documents for the wedding (these vary by county and religion)."
+				},
+				{
+					"cl-task" : "Send save-the-date cards."
+				},
+				{
+					"cl-item-class" : "has-desc",
+					"cl-task" : "Reserve structural and electrical necessities.",
+					"cl-desc" : "Book portable toilets for outdoor events, extra chairs if you need them, lighting components, and so on."
+				}
+			]
+		}
+	],
+	"checklist-app" : [
+		{
+			"block-class" : "block--checklist-app",
+			"img" : {
+				"src": "http://d.pr/i/1ksyJ+"
+			},
+			"title" : "The Real Simple Checklist App",
+			"dek" : "<p>Create your own to-do lists from scratch or use the 100+ customized lists we’ve created to help you in any situation. Get the app.</p><p>With this free download, you will be able to:</p><ul><li>Get organized with 15 free Real Simple checklists</li><li>Helpful tips from Real Simple editors</li><li>Create your own custom checklists</li><li>Set reminders on tasks</li><li>Share tasks with friends and family for help</li></ul>"
 		}
 	]
 }

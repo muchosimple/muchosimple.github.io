@@ -418,6 +418,10 @@
 
 // Checklist Sections
 .checklist-items {
+  margin-bottom: rem(60);
+  &:last-child {
+    margin-bottom: 0;
+  }
   .s-title {
     margin-bottom: 0;
   }
@@ -428,7 +432,11 @@
     padding: 0;
     @include table;
     cursor: pointer;
+    min-height: rem(70);
     border-bottom: $border-style-light;
+    @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+      min-height: rem(150);
+    }
   }
 }
 .cl-item {
@@ -436,45 +444,60 @@
   &.this-is-active {
     .has-strike {
       color: $gray-med;
-      &:after {
-        width: 100%;
-      }
+      background-position: left center;
     }
     .cl-desc {
       p {
         color: $gray-med;
       }
     }
+    .cb {
+      border-color: $gray-med;
+    }
+  }
+  .cb {
+    @media (max-width: $px600), (min-width: $medium-break) and (max-width: $px950) {
+      top: $space;
+      margin-top: 0;
+    }
   }
 }
 .has-strike {
   position: relative;
-  &:after {
-    content: "";
-    position: absolute;
-    display: block;
-    left: -2px;
-    width: 0;
-    height: 2px;
-    top: 50%;
-    background-color: $gray-med-2;
-    @include transition(width .35s $cubic-bezier);
-  }
+  background-repeat: repeat-x;
+  background-size: 200% 3px;
+  background-position: right center;
+  @include linear-gradient(to left, transparent 50%, $gray-med-2 50%);
+  @include transition(all .7s $cubic-bezier);
 }
 .cl-task,
 .cl-desc {
-  display: table-cell;
-  vertical-align: middle;
+  @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 .cl-task {
   position: relative;
-  width: 53%;
-  padding: $pad $pad $pad rem(45);
+  width: 100%;
+  padding: $pad $pad $pad-half rem(45);
+}
+.has-desc {
+  .cl-task {
+    @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+      width: 53%;
+    }
+  }
 }
 .cl-desc {
-  width: 47%;
-  padding: $pad-and-half $pad;
-  background-color: $pink-light-2;
+  margin-top: rem(-6);
+  padding: 0 $pad $pad rem(45);
+  @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+    margin-top: 0;
+    width: 47%;
+    padding: $pad-and-half $pad;
+    background-color: $pink-light-2;
+  }
   p {
     margin-bottom: 0;
   }

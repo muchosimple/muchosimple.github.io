@@ -54,6 +54,12 @@ a.b-inner:hover {
   }
 }
 
+.block-thumb-dek {
+  .alt-heading {
+    margin-bottom: $space-half;
+  }
+}
+
 // Block with flipped copy and image
 .block--flipped {
   .b-text {
@@ -448,5 +454,27 @@ a.b-inner:hover {
   p {
     font-size: rem(15);
     line-height: 1.4;
+  }
+}
+
+// Special Block: Checklist App
+.block--checklist-app {
+  margin-bottom: $space;
+  @include mq($micro-break) {
+    @include table-layout(25%, 75%);
+  }
+  .b-thumb {
+    text-align: center;
+    margin-bottom: $space-half;
+  }
+  p, li {
+    font-size: rem(16);
+    line-height: 1.4;
+  }
+  li {
+    margin-bottom: rem(6);
+  }
+  ul {
+    margin-bottom: 0;
   }
 }

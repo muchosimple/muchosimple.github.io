@@ -1,0 +1,20 @@
+<div class="block block-thumb block-thumb-dek {{ block-class }}">
+  <h3 class="alt-heading center">{{ title }}</h3>
+  <a href="{{ url }}" class="b-inner">
+    <div class="b-thumb">
+      <div class="img-wrap">
+        {{# picturefill }}
+          {{> atoms-picturefill }}
+        {{/ picturefill }}
+        {{^ picturefill }}
+          {{> atoms-image }}
+        {{/ picturefill }}
+      </div> <!-- /.img-wrap -->
+    </div> <!-- /.b-thumb -->
+    <div class="b-text">
+      <div class="dek text">
+        {{{ dek }}}
+      </div> <!-- /.dek -->
+    </div> <!-- /.b-text -->
+  </a> <!-- /.b-inner -->
+</div> <!-- /.block-thumb-dek -->

@@ -16,6 +16,9 @@
 		}
 	}
 }
+.header-img {
+	margin: $space 0 $space-half;
+}
 .article-body {
 	margin-bottom: rem(40);
 }
@@ -165,6 +168,11 @@
 	text-align: center;
 	font-size: rem(11);
 	margin-bottom: rem(2);
+}
+.content-utility {
+	li:last-child {
+		margin-right: 0;
+	}
 }
 .cu-save {
 	vertical-align: top;
@@ -400,7 +408,6 @@
 		margin-bottom: $space;
 	}
 	.narrow {
-		margin-top: rem(48);
 		padding-top: $pad-double;
 		border-top: $border-style;
 	}
@@ -536,4 +543,5 @@
 .content-utilities {
 	text-align: center;
 	padding-top: rem(30);
+	margin-bottom: rem(48);
 }

@@ -11,7 +11,7 @@
 					{{# checklist-head }}
 						<header class="article-header center article-header--checklist cf">
 							{{> molecules-kicker }}
-							{{> atoms-image }}
+							<div class="header-img">{{> atoms-image }}</div>
 							<h1 class="lead-headline" itemprop="name">{{ title }}</h1>
 							<h2 class="lead-subtitle" itemprop="alternativeHeadline">{{ subtitle }}</h2>
 							<div class="article-tools">
@@ -34,9 +34,9 @@
 						{{> molecules-content-utilities }}
 
 						<div class="narrow">
-							{{# meal-planner }}
-								{{> molecules-block-thumb-headline }}
-							{{/ meal-planner }}
+							{{# checklist-app }}
+								{{> molecules-block-thumb-dek }}
+							{{/ checklist-app }}
 						</div> <!-- /.narrow -->
 
 					</footer> <!-- /.article-footer -->
