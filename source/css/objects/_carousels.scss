@@ -1,27 +1,29 @@
 // Tabbed Carousel
 .js .carousel--tabbed {
-	@include mq($px500, max) {
-		display: none;
+	display: none;
+	@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
+		display: block;
 	}
 }
 .carousel--tabbed {
 	margin-bottom: $space;
 	position: relative;
 	@include center-block;
-	@include mq($px500) {
+	@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 		padding: 35.8%;
 	}
 }
 .c-tabbed {
-	@include mq($px500, max) {
-		position: relative;
+	position: relative;
+	@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
+		position: static;
 	}
 	img {
 		width: 100%;
 	}
 	.img-wrap {
 		width: 100%;
-		@include mq($px500) {
+		@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 			width: 60%;
 			position: absolute;
 			right: 0;
@@ -34,7 +36,7 @@
 	&.this-is-active {
 		.c-tab {
 			&:after {
-				@include mq($px500) {
+				@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 					width: 110%;
 				}
 			}
@@ -57,7 +59,7 @@
 	background-color: rgba($white, .8);
 	z-index: 10;
 	width: 100%;
-	@include mq($px500) {
+	@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 		height: 25%;
 		width: 14%;
 		top: 0;
@@ -67,7 +69,7 @@
 		width: 40%;
 	}
 	&:after {
-		@include mq($px500) {
+		@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 			content: "";
 			display: block;
 			width: 100%;
@@ -81,7 +83,7 @@
 		}
 	}
 }
-@include mq($px500) {
+@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 	.c-item-2 .c-tab {
 		top: 25%;
 	}
@@ -101,12 +103,15 @@
 	font-weight: 300;
 	font-size: rem(18);
 	padding: $pad;
-	@include mq($px500) {
+	@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 		padding: 0;
 		@include vertical-align;
 	}
 	@media (min-width: $px700) and (max-width: $medium-break), (min-width: $large-break) {
 		font-size: rem(22);
+	}
+	@media (min-width: $medium-break) and (max-width: $large-break) {
+		font-size: rem(26);
 	}
 	@include mq($larger-break) {
 		font-size: rem(24);

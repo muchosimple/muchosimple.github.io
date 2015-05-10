@@ -258,7 +258,7 @@ window.onresize = function() {
     // On resize, if the viewport is below 500px, clear the interval and
     // remove active classes.
     $(window).resize(function(){
-      if (getWidth() < 500) {
+      if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
         clearInterval(carouselTimer);
         $tabbedCarousel.find('.c-item').removeClass('this-is-active');
       }
@@ -266,7 +266,7 @@ window.onresize = function() {
   }
 
   // Init the carousel.
-  if (getWidth() < 500) {
+  if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
     initHomeCarouselSmall();
   }
   else {
@@ -275,7 +275,7 @@ window.onresize = function() {
 
   // Update carousel functionality on window resize.
   $(window).resize(function(){
-    if (getWidth() < 500) {
+    if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
       // Start the Owl carousel.
       initHomeCarouselSmall();
     }

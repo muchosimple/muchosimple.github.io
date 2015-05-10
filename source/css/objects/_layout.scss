@@ -33,7 +33,10 @@
 }
 .lc-inner--l {
 	@include center-block;
-	max-width: $inner-max-width-large;
+	max-width: rem(800);
+	@include mq($large-break) {
+		max-width: $inner-max-width-large;
+	}
 }
 .narrow {
 	max-width: rem(600);
