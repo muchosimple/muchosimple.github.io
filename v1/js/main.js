@@ -221,21 +221,68 @@ window.onresize = function() {
   }
 
   // Home Tabbed Carousel
-  var $tabbedCarousel = $('.js-carousel--tabbed'),
-      interval = 4000,
-      carouselTimer = setInterval(animateCarousel, interval);
+  var $tabbedCarousel = $('.js-carousel--tabbed');
 
-  // Gallery init
-  $tabbedCarousel.find('.c-item:first').addClass('this-is-active');
-  function animateCarousel(){
-    $tabbedCarousel.find('.c-item').removeClass('this-is-active');
-    $tabbedCarousel.find('.c-item:first').removeClass('this-is-active').next('.c-item').addClass('this-is-active').end().appendTo('.js-carousel--tabbed');
+  // Owl gallery (smaller viewports)
+  function initHomeCarouselSmall() {
+    $tabbedCarousel.show().owlCarousel({
+      autoPlay: 4000,
+      slideSpeed: 300,
+      paginationSpeed: 400,
+      singleItem: true,
+      pagination: true,
+      stopOnHover: true,
+      beforeMove: function(el) {
+        el.find('img.lazy').show().lazyload();
+      }
+    });
   }
-  // Disable animation when tabs are interacted with.
-  $tabbedCarousel.find('.c-tab').hover(function(e){
-    clearInterval(carouselTimer);
-    $tabbedCarousel.find('.c-item').removeClass('this-is-active');
-    $(this).parents().addClass('this-is-active');
+
+  // Custom tabbed gallery (wider viewports)
+  function initHomeCarouselWide() {
+    var interval = 4000,
+        carouselTimer = setInterval(animateCarousel, interval);
+
+    $tabbedCarousel.find('.c-item:first').addClass('this-is-active');
+    function animateCarousel(){
+      $tabbedCarousel.find('.c-item').removeClass('this-is-active');
+      $tabbedCarousel.find('.c-item:first').removeClass('this-is-active').next('.c-item').addClass('this-is-active').end().appendTo('.js-carousel--tabbed');
+    }
+    // Disable animation when tabs are interacted with.
+    $tabbedCarousel.find('.c-tab').hover(function(e){
+      clearInterval(carouselTimer);
+      $tabbedCarousel.find('.c-item').removeClass('this-is-active');
+      $(this).parents().addClass('this-is-active');
+    });
+    // On resize, if the viewport is below 500px, clear the interval and
+    // remove active classes.
+    $(window).resize(function(){
+      if (getWidth() < 500) {
+        clearInterval(carouselTimer);
+        $tabbedCarousel.find('.c-item').removeClass('this-is-active');
+      }
+    });
+  }
+
+  // Init the carousel.
+  if (getWidth() < 500) {
+    initHomeCarouselSmall();
+  }
+  else {
+    initHomeCarouselWide();
+  }
+
+  // Update carousel functionality on window resize.
+  $(window).resize(function(){
+    if (getWidth() < 500) {
+      // Start the Owl carousel.
+      initHomeCarouselSmall();
+    }
+    else {
+      // Start the tabbed carousel and destroy the Owl carousel.
+      $tabbedCarousel.data('owlCarousel').destroy();
+      initHomeCarouselWide();
+    }
   });
 
   // Smooth scroll to anchor

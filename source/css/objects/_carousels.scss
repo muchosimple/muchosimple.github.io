@@ -1,10 +1,11 @@
 // Tabbed Carousel
 .js .carousel--tabbed {
-	//display: none;
+	@include mq($px500, max) {
+		display: none;
+	}
 }
 .carousel--tabbed {
 	margin-bottom: $space-double;
-	padding-top: 102.5%;
 	position: relative;
 	@include center-block;
 	@include mq($px500) {
@@ -12,56 +13,58 @@
 	}
 }
 .c-tabbed {
-	//position: relative;
+	@include mq($px500, max) {
+		position: relative;
+	}
 	img {
 		width: 100%;
 	}
 	.img-wrap {
-		width: 86%;
-		position: absolute;
-		right: 0;
-		top: 0;
-		z-index: 0;
-		opacity: 0;
-		@include transition(opacity .3s $cubic-bezier);
+		width: 100%;
 		@include mq($px500) {
 			width: 60%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 0;
+			opacity: 0;
+			@include transition(opacity .3s $cubic-bezier);
 		}
 	}
 	&.this-is-active {
 		.c-tab {
-			@include mq($px500, max) {
-				width: 100%;
-				.c-title {
-					display: block;
-				}
-			}
 			&:after {
-				//width: 130%;
 				@include mq($px500) {
 					width: 110%;
 				}
 			}
 		}
-		.c-title,
-		.c-num {
-			color: $pink;
-		}
 		.img-wrap {
 			opacity: 1;
+		}
+	}
+	&:hover,
+	&.this-is-active {
+		.c-title {
+			@include mq($px500, max) {
+				color: $pink;
+			}
 		}
 	}
 }
 .c-tab {
 	position: absolute;
 	left: 0;
-	top: 0;
+	bottom: 0;
 	background-color: rgba($white, .8);
 	z-index: 10;
-	height: 25%;
-	width: 14%;
-	border-bottom: $border-style;
+	width: 100%;
 	@include mq($px500) {
+		height: 25%;
+		width: 14%;
+		top: 0;
+		bottom: auto;
+		border-bottom: $border-style;
 		padding-right: $pad;
 		width: 40%;
 	}
@@ -80,45 +83,29 @@
 		}
 	}
 }
-.c-item-2 .c-tab {
-	top: 25%;
+@include mq($px500) {
+	.c-item-2 .c-tab {
+		top: 25%;
+	}
+	.c-item-3 .c-tab {
+		top: 50%;
+	}
+	.c-item-4 .c-tab {
+		top: 75%;
+		border-bottom: none;
+	}
 }
-.c-item-3 .c-tab {
-	top: 50%;
-}
-.c-item-4 .c-tab {
-	top: 75%;
-	border-bottom: none;
-}
-.c-num,
 .c-title {
 	position: relative;
 	z-index: 15;
 	font-size: rem(18);
 	color: $black;
-	@include vertical-align;
-}
-.c-num {
-	font-size: rem(24);
-	display: block;
-	float: left;
-	padding-left: $pad-half;
-	margin-right: 12%;
-	@include mq($px450) {
-		margin-right: 14%;
-	}
-	@include mq($px500) {
-		display: none;
-	}
-}
-.c-title {
-	display: none;
 	font-weight: 300;
 	font-size: rem(18);
-	padding-right: $pad-half;
+	padding: $pad;
 	@include mq($px500) {
-		display: block;
-		padding-right: 0;
+		padding: 0;
+		@include vertical-align;
 	}
 	@media (min-width: $px700) and (max-width: $medium-break) {
 		font-size: rem(22);

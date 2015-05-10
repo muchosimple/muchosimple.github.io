@@ -13,7 +13,9 @@
 			},
 			"social-tools" : false,
 			"tab-title" : "40 Living Room Decorating Ideas",
-			"has-link" : true
+			"has-link" : true,
+			"no-lazy" : true,
+			"is-lazy" : false
 		},
 		{
 			"item-num" : "2",
