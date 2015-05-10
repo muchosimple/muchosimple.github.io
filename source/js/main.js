@@ -233,7 +233,7 @@ window.onresize = function() {
       pagination: true,
       stopOnHover: true,
       beforeMove: function(el) {
-        el.find('img.lazy').show().lazyload();
+        //el.find('img.lazy').show().lazyload();
       }
     });
   }
@@ -247,6 +247,7 @@ window.onresize = function() {
     function animateCarousel(){
       $tabbedCarousel.find('.c-item').removeClass('this-is-active');
       $tabbedCarousel.find('.c-item:first').removeClass('this-is-active').next('.c-item').addClass('this-is-active').end().appendTo('.js-carousel--tabbed');
+      //$tabbedCarousel.find('img.lazy').lazyload();
     }
     // Disable animation when tabs are interacted with.
     $tabbedCarousel.find('.c-tab').hover(function(e){

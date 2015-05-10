@@ -1,6 +1,6 @@
 {
 	"title" : "Real Simple",
-	"bodyClass": "home-page",
+	"bodyClass": "home-page main--no-pad",
 	"content-type" : "Home",
 	"has-featured-stories" : false,
 	"has-994x250" : true,
@@ -11,6 +11,7 @@
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/work-life/entertainment/0603/collections-books_300.jpg?itok=EBnsMR7-",
 				"alt" : "40 Living Room Decorating Ideas"
 			},
+			"url" : "http://yahoo.com",
 			"social-tools" : false,
 			"tab-title" : "40 Living Room Decorating Ideas",
 			"has-link" : true,
@@ -23,9 +24,12 @@
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/muscovado-brownies.jpg?itok=r5CbD453",
 				"alt" : "5 Irresistibly Delicious (and Surprisingly Wholesome) Baked Treats"
 			},
+			"url" : "http://google.com",
 			"social-tools" : false,
 			"tab-title" : "5 Irresistibly Delicious Baked Treats",
-			"has-link" : true
+			"has-link" : true,
+			"no-lazy" : true,
+			"is-lazy" : false
 		},
 		{
 			"item-num" : "3",
@@ -33,9 +37,12 @@
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/173160556.jpg?itok=TA4TCF_j",
 				"alt" : "7 Habits of People Who Don't Stress Over the Little Things"
 			},
+			"url" : "http://etsy.com",
 			"social-tools" : false,
 			"tab-title" : "7 Habits of People Who Don't Stress",
-			"has-link" : true
+			"has-link" : true,
+			"no-lazy" : true,
+			"is-lazy" : false
 		},
 		{
 			"item-num" : "4",
@@ -43,9 +50,12 @@
 				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1104/spaghett_egg_300.jpg?itok=L1MaN6ud",
 				"alt" : "20-Minute Dinner Recipes"
 			},
+			"url" : "http://ebay.com",
 			"social-tools" : false,
 			"tab-title" : "20-Minute Dinner Recipes",
-			"has-link" : true
+			"has-link" : true,
+			"no-lazy" : true,
+			"is-lazy" : false
 		}
 	],
 	"tip" : [

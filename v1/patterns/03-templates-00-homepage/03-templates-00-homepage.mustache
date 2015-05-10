@@ -1,28 +1,30 @@
 &lt;div class=&quot;page&quot;&gt;
   {{&gt; organisms-header }}
+  &lt;hr class=&quot;no-space&quot;&gt;
   &lt;div class=&quot;main cf lc&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
+    &lt;div class=&quot;lc-inner--l&quot;&gt;
+      &lt;div class=&quot;shift-left&quot;&gt;
+        &lt;div class=&quot;shift-left-inner&quot;&gt;
+          &lt;div class=&quot;carousel--tabbed js-carousel--tabbed&quot;&gt;
+            {{# home-carousel }}
+              &lt;div class=&quot;c-item c-tabbed c-item-{{ item-num }}&quot;&gt;
+                {{&gt; molecules-image-with-social }}
+                &lt;a href=&quot;{{ url }}&quot; class=&quot;c-tab&quot;&gt;
+                  &lt;h2 class=&quot;c-title&quot;&gt;{{ tab-title }}&lt;/h2&gt;
+                &lt;/a&gt; &lt;!-- /.c-tab --&gt;
+              &lt;/div&gt; &lt;!-- /.c-item --&gt;
+            {{/ home-carousel }}
+          &lt;/div&gt; &lt;!-- /.carousel--tabbed --&gt;
+        &lt;/div&gt; &lt;!-- /.shift-left-inner --&gt;
+      &lt;/div&gt; &lt;!-- /.shift-left --&gt;
 
-    &lt;div class=&quot;shift-left&quot;&gt;
-      &lt;div class=&quot;shift-left-inner&quot;&gt;
-        &lt;div class=&quot;carousel--tabbed js-carousel--tabbed&quot;&gt;
-          {{# home-carousel }}
-            &lt;div class=&quot;c-item c-tabbed c-item-{{ item-num }}&quot;&gt;
-              {{&gt; molecules-image-with-social }}
-              &lt;a href=&quot;&quot; class=&quot;c-tab&quot;&gt;
-                &lt;h2 class=&quot;c-title&quot;&gt;{{ tab-title }}&lt;/h2&gt;
-              &lt;/a&gt; &lt;!-- /.c-tab --&gt;
-            &lt;/div&gt; &lt;!-- /.c-item --&gt;
-          {{/ home-carousel }}
-        &lt;/div&gt; &lt;!-- /.carousel--tabbed --&gt;
-      &lt;/div&gt; &lt;!-- /.shift-left-inner --&gt;
-    &lt;/div&gt; &lt;!-- /.shift-left --&gt;
-
-    &lt;div class=&quot;shift-right&quot;&gt;
-      {{# tip }}
-        {{&gt; molecules-block-thumb-headline }}
-      {{/ tip }}
-      {{&gt; atoms-ad-300x250 }}
-    &lt;/div&gt; &lt;!-- /.shift-right --&gt;
+      &lt;div class=&quot;shift-right&quot;&gt;
+        {{# tip }}
+          {{&gt; molecules-block-thumb-headline }}
+        {{/ tip }}
+        {{&gt; atoms-ad-300x250 }}
+      &lt;/div&gt; &lt;!-- /.shift-right --&gt;
+    &lt;/div&gt; &lt;!-- /.lc-inner--l --&gt;
 
   &lt;/div&gt;&lt;!-- /role=main --&gt;
   {{&gt; organisms-footer }}

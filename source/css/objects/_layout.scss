@@ -31,6 +31,10 @@
 .lc-inner { // To be used in conjunction with .lc
 	max-width: $inner-max-width;
 }
+.lc-inner--l {
+	@include center-block;
+	max-width: $inner-max-width-large;
+}
 .narrow {
 	max-width: rem(600);
 	@include center-block;
@@ -101,6 +105,31 @@
 .secondary {
 	max-width: rem(650);
 	@include center-block;
+	@include mq($medium-break) {
+		float: right;
+		width: rem($sidebar-width);
+	}
+}
+
+// Wide left column, and static width right column.
+.shift-left {
+	width: 100%;
+	@include mq($medium-break) {
+		float: left;
+		margin-right: rem(-$sidebar-width);
+	}
+}
+.shift-left-inner {
+	@include mq($medium-break) {
+		margin-right: rem($sidebar-width + 20);
+	}
+	@include mq($px1200) {
+		margin-right: rem($sidebar-width + 40);
+	}
+}
+.shift-right {
+	position: relative;
+	z-index: 10;
 	@include mq($medium-break) {
 		float: right;
 		width: rem($sidebar-width);

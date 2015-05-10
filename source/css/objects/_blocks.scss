@@ -483,6 +483,7 @@ a.b-inner:hover {
 .block-tip {
   max-width: rem(228);
   @include center-block;
+  padding-top: $pad;
   margin-bottom: $space-double;
   .kicker {
     margin-bottom: $space-half;

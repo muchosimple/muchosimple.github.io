@@ -1,28 +1,30 @@
 <div class="page">
   {{> organisms-header }}
+  <hr class="no-space">
   <div class="main cf lc" role="main" aria-live="polite">
+    <div class="lc-inner--l">
+      <div class="shift-left">
+        <div class="shift-left-inner">
+          <div class="carousel--tabbed js-carousel--tabbed">
+            {{# home-carousel }}
+              <div class="c-item c-tabbed c-item-{{ item-num }}">
+                {{> molecules-image-with-social }}
+                <a href="{{ url }}" class="c-tab">
+                  <h2 class="c-title">{{ tab-title }}</h2>
+                </a> <!-- /.c-tab -->
+              </div> <!-- /.c-item -->
+            {{/ home-carousel }}
+          </div> <!-- /.carousel--tabbed -->
+        </div> <!-- /.shift-left-inner -->
+      </div> <!-- /.shift-left -->
 
-    <div class="shift-left">
-      <div class="shift-left-inner">
-        <div class="carousel--tabbed js-carousel--tabbed">
-          {{# home-carousel }}
-            <div class="c-item c-tabbed c-item-{{ item-num }}">
-              {{> molecules-image-with-social }}
-              <a href="" class="c-tab">
-                <h2 class="c-title">{{ tab-title }}</h2>
-              </a> <!-- /.c-tab -->
-            </div> <!-- /.c-item -->
-          {{/ home-carousel }}
-        </div> <!-- /.carousel--tabbed -->
-      </div> <!-- /.shift-left-inner -->
-    </div> <!-- /.shift-left -->
-
-    <div class="shift-right">
-      {{# tip }}
-        {{> molecules-block-thumb-headline }}
-      {{/ tip }}
-      {{> atoms-ad-300x250 }}
-    </div> <!-- /.shift-right -->
+      <div class="shift-right">
+        {{# tip }}
+          {{> molecules-block-thumb-headline }}
+        {{/ tip }}
+        {{> atoms-ad-300x250 }}
+      </div> <!-- /.shift-right -->
+    </div> <!-- /.lc-inner--l -->
 
   </div><!-- /role=main -->
   {{> organisms-footer }}

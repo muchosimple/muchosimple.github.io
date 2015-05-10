@@ -5,7 +5,7 @@
 	}
 }
 .carousel--tabbed {
-	margin-bottom: $space-double;
+	margin-bottom: $space;
 	position: relative;
 	@include center-block;
 	@include mq($px500) {
@@ -27,8 +27,8 @@
 			right: 0;
 			top: 0;
 			z-index: 0;
-			opacity: 0;
-			@include transition(opacity .3s $cubic-bezier);
+			display: none;
+			//@include transition(opacity .3s $cubic-bezier);
 		}
 	}
 	&.this-is-active {
@@ -40,15 +40,13 @@
 			}
 		}
 		.img-wrap {
-			opacity: 1;
+			display: block;
 		}
 	}
 	&:hover,
 	&.this-is-active {
 		.c-title {
-			@include mq($px500, max) {
-				color: $pink;
-			}
+			color: $pink;
 		}
 	}
 }
@@ -107,11 +105,10 @@
 		padding: 0;
 		@include vertical-align;
 	}
-	@media (min-width: $px700) and (max-width: $medium-break) {
+	@media (min-width: $px700) and (max-width: $medium-break), (min-width: $large-break) {
 		font-size: rem(22);
 	}
-}
-
-.shift-right {
-	clear: both;
+	@include mq($larger-break) {
+		font-size: rem(24);
+	}
 }
