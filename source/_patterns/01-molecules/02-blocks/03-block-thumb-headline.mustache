@@ -1,4 +1,7 @@
 <div class="block block-thumb {{ block-class }}">
+  {{# kicker }}
+    {{> molecules-kicker }}
+  {{/ kicker }}
   <a href="{{ url }}" class="b-inner">
     <div class="b-thumb">
       <div class="img-wrap">
@@ -14,9 +17,6 @@
       {{# date }}
         {{> atoms-time }}
       {{/ date }}
-      {{# kicker }}
-        {{> molecules-kicker }}
-      {{/ kicker }}
       {{# number }}
         <span class="rounded number">{{ number }}</span>
       {{/ number }}

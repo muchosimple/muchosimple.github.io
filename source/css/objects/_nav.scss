@@ -35,6 +35,12 @@
 		padding-top: rem(125);
 		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 			padding-top: rem(130);
+			.body-home-page & {
+				padding-top: rem(141);
+			}
+		}
+		.body-home-page & {
+			padding-top: rem(136);
 		}
 	}
 }
@@ -109,12 +115,12 @@
 	}
 	.l-top {
 		display: inline-block;
-		padding-left: 1.7%;
-		padding-right: 1.7%;
+		padding-left: 1.4%;
+		padding-right: 1.4%;
 		vertical-align: top;
 		@include mq($px900) {
-			padding-left: 2.2%;
-			padding-right: 2.2%;
+			padding-left: 2%;
+			padding-right: 2%;
 		}
 		@include mq($larger-break) {
 			padding-left: 2.45%;
@@ -188,6 +194,7 @@
 		.nav-sub {
 			width: rem(300);
 			padding-bottom: 0;
+			padding-top: rem(6);
 			@include mq($larger-break) {
 				background-color: transparent;
 				top: auto;
@@ -279,6 +286,18 @@
 		}
 		a {
 			padding: $pad-half;
+		}
+	}
+}
+// Make the space between the icons less so they don't overlap the larger
+// home page logo.
+.body-home-page {
+	.l-follow {
+		a {
+			@include mq($larger-break) {
+				padding-left: 1px;
+				padding-right: 1px;
+			}
 		}
 	}
 }

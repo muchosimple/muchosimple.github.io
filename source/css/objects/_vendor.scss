@@ -44,6 +44,27 @@
 .owl-controls .owl-buttons div{
   cursor: pointer;
 }
+.owl-pagination {
+  text-align: center;
+  padding: $pad-half;
+}
+.owl-page {
+  display: inline-block;
+  span {
+    border-radius: 50%;
+    display: inline-block;
+    font-size: rem(20);
+    margin: 0 rem(7);
+    height: rem(20);
+    width: rem(20);
+    background-color: $gray-light-3;
+  }
+  &.active {
+    span {
+      background-color: $gray;
+    }
+  }
+}
 .owl-controls {
   -webkit-user-select: none;
   -khtml-user-select: none;

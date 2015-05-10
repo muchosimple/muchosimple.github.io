@@ -478,3 +478,13 @@ a.b-inner:hover {
     margin-bottom: 0;
   }
 }
+
+// Tip
+.block-tip {
+  max-width: rem(228);
+  @include center-block;
+  margin-bottom: $space-double;
+  .kicker {
+    margin-bottom: $space-half;
+  }
+}

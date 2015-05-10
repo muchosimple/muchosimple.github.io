@@ -4,7 +4,15 @@
       <div class="has-social">
     {{/ social-tools }}
 
+    {{# has-link }}
+      <a href="{{ url }}" class="img-link">
+    {{/ has-link }}
+
     {{> atoms-image }}
+
+    {{# has-link }}
+      </a>
+    {{/ has-link }}
 
     {{# social-tools }}
       <div class="img-overlay o-social">{{> molecules-social-share }}</div>

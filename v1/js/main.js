@@ -74,7 +74,6 @@ window.onresize = function() {
     }
   };
 
-
   /*
    * Toggle Active Classes
    *
@@ -220,6 +219,24 @@ window.onresize = function() {
       $(this).parents('.five-star').addClass('rated');
     });
   }
+
+  // Home Tabbed Carousel
+  var $tabbedCarousel = $('.js-carousel--tabbed'),
+      interval = 4000,
+      carouselTimer = setInterval(animateCarousel, interval);
+
+  // Gallery init
+  $tabbedCarousel.find('.c-item:first').addClass('this-is-active');
+  function animateCarousel(){
+    $tabbedCarousel.find('.c-item').removeClass('this-is-active');
+    $tabbedCarousel.find('.c-item:first').removeClass('this-is-active').next('.c-item').addClass('this-is-active').end().appendTo('.js-carousel--tabbed');
+  }
+  // Disable animation when tabs are interacted with.
+  $tabbedCarousel.find('.c-tab').hover(function(e){
+    clearInterval(carouselTimer);
+    $tabbedCarousel.find('.c-item').removeClass('this-is-active');
+    $(this).parents().addClass('this-is-active');
+  });
 
   // Smooth scroll to anchor
   // $('a[href*=#]:not([href=#])').click(function() {

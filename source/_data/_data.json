@@ -10,6 +10,8 @@
   "img-break-l" : "1200",
   "img-break-m" : "700",
   "rs-site-nav-id" : "rs-hamburger-primary-nav",
+  "has-994x250" : false,
+  "has-link" : false,
   "img": {
     "landscape-4x3": {
       "src": "../../images/fpo_4x3.png",

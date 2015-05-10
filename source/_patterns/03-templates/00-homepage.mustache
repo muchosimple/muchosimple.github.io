@@ -1,7 +1,30 @@
-<div class="page" id="page">
-	{{> organisms-header }}
-	<div class="main cf lc" role="main">
-    {{> organisms-sidebar }}
-	</div><!-- /role=main -->
-	{{> organisms-footer }}
+<div class="page">
+  {{> organisms-header }}
+  <div class="main cf lc" role="main" aria-live="polite">
+
+    <div class="shift-left">
+      <div class="shift-left-inner">
+        <div class="carousel--tabbed js-carousel--tabbed">
+          {{# home-carousel }}
+            <div class="c-item c-tabbed c-item-{{ item-num }}">
+              {{> molecules-image-with-social }}
+              <a href="" class="c-tab">
+                <span class="c-num">{{ item-num }}</span>
+                <h2 class="c-title">{{ tab-title }}</h2>
+              </a> <!-- /.c-tab -->
+            </div> <!-- /.c-item -->
+          {{/ home-carousel }}
+        </div> <!-- /.carousel--tabbed -->
+      </div> <!-- /.shift-left-inner -->
+    </div> <!-- /.shift-left -->
+
+    <div class="shift-right">
+      {{# tip }}
+        {{> molecules-block-thumb-headline }}
+      {{/ tip }}
+      {{> atoms-ad-300x250 }}
+    </div> <!-- /.shift-right -->
+
+  </div><!-- /role=main -->
+  {{> organisms-footer }}
 </div> <!-- /.page -->

@@ -14,12 +14,12 @@
   @include mq($px950) {
     margin-bottom: 0;
   }
-  + div {
-    @include mq($medium-break) {
-      @include trans;
-      height: 0;
-    }
-  }
+  // + div {
+  //   @include mq($medium-break) {
+  //     @include trans;
+  //     height: 0;
+  //   }
+  // }
 }
 .header-inner.sticky-is-active {
   top: 0;
@@ -42,11 +42,11 @@
   .search-toggler {
     top: rem(-1);
   }
-  + div {
-    @include mq($medium-break) {
-      height: rem($mobile-header-sticky-height) !important;
-    }
-  }
+  // + div {
+  //   @include mq($medium-break) {
+  //     height: rem($mobile-header-sticky-height) !important;
+  //   }
+  // }
 }
 
 .logo-link {
@@ -64,6 +64,15 @@
     padding-bottom: rem(7);
     svg {
       max-height: rem(32);
+    }
+  }
+}
+// Make the header logo bigger for the home page.
+.body-home-page .header .logo-link {
+  @include mq($medium-break) {
+    max-width: rem(385);
+    svg {
+      max-height: rem(48);
     }
   }
 }
@@ -140,5 +149,8 @@
   @include rem(padding, 8);
   @include mq($large-break) {
     @include rem(top, 46);
+    .body-home-page & {
+      @include rem(top, 60);
+    }
   }
 }

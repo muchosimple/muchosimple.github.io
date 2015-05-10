@@ -25,6 +25,9 @@
 }
 .f-gi-title {
   margin-bottom: rem(16);
+  @media (max-width: $px350), (min-width: $medium-break) and (max-width: $px850) {
+    font-size: rem(14);
+  }
 }
 // Footer grid item
 .f-gi {

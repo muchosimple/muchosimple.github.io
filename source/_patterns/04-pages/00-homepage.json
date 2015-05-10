@@ -1,135 +1,61 @@
 {
-	"title" : "Home Page",
-	"bodyClass": "home",
-	"emergency" : false,
-	"hero" : [
+	"title" : "Real Simple",
+	"bodyClass": "home-page",
+	"content-type" : "Home",
+	"has-featured-stories" : false,
+	"has-994x250" : true,
+	"home-carousel" : [
 		{
-			"img": {
-				"landscape-16x9": {
-					"src": "../../images/sample/landscape-16x9-mountains.jpg",
-					"alt": "Mountains"	
-				}
+			"item-num" : "1",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/work-life/entertainment/0603/collections-books_300.jpg?itok=EBnsMR7-",
+				"alt" : "40 Living Room Decorating Ideas"
 			},
-			"headline" : {
-				"medium" : "Top 10 mountain ranges for hiking"
-			}
+			"social-tools" : false,
+			"tab-title" : "40 Living Room Decorating Ideas",
+			"has-link" : true
+		},
+		{
+			"item-num" : "2",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/muscovado-brownies.jpg?itok=r5CbD453",
+				"alt" : "5 Irresistibly Delicious (and Surprisingly Wholesome) Baked Treats"
+			},
+			"social-tools" : false,
+			"tab-title" : "5 Irresistibly Delicious Baked Treats",
+			"has-link" : true
+		},
+		{
+			"item-num" : "3",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/173160556.jpg?itok=TA4TCF_j",
+				"alt" : "7 Habits of People Who Don't Stress Over the Little Things"
+			},
+			"social-tools" : false,
+			"tab-title" : "7 Habits of People Who Don't Stress",
+			"has-link" : true
+		},
+		{
+			"item-num" : "4",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1104/spaghett_egg_300.jpg?itok=L1MaN6ud",
+				"alt" : "20-Minute Dinner Recipes"
+			},
+			"social-tools" : false,
+			"tab-title" : "20-Minute Dinner Recipes",
+			"has-link" : true
 		}
 	],
-	"touts" : [
+	"tip" : [
 		{
-			"img": {
-				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-climber.jpg",
-					"alt": "Climber"	
-				}
+			"block-class" : "center block-tip",
+			"kicker" : "Cooking Tips",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/ucNBN/abc/pMw3Y/ucNBN-wZS-225x150.jpg"
 			},
-			"headline" : {
-				"short" : "Extreme climbing tips"
-			}
-		},
-		{
-			"img": {
-				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-stream.jpg",
-					"alt": "Stream hiking"	
-				}
-			},
-			"headline" : {
-				"short" : "Stream hiking"
-			}
-		},
-		{
-			"img": {
-				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-climbers.jpg",
-					"alt": "Explore hiking trails"	
-				}
-			},
-			"headline" : {
-				"short" : "Explore hiking trails"
-			}
-		}
-	],
-	"latest-posts" : [
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-river.jpg",
-					"alt": "Post Thumbnail"	
-				}
-			},
-			"headline" : {
-				"short" : "Navigate the Allegheny River"
-			},
-			"exerpt" : {
-				"medium" : "The Allegheny River is a principal tributary of the Ohio River; it is located in the Eastern United States. The Allegheny River joins with the Monongahela River to form the Ohio River at the Point of Point State Park in Downtown Pittsburgh, Pennsylvania."
-			}
-		},
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-ivy.jpg",
-					"alt": "Ivy"	
-				}
-			},
-			"headline" : {
-				"short" : "How to detect and avoid poison ivy"
-			},
-			"exerpt" : {
-				"medium" : "Toxicodendron radicans, commonly known as poison ivy is a poisonous North American plant that is well known for its production of urushiol"
-			}
-		},
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-yosemite.jpg",
-					"alt": "Yosemite"	
-				}
-			},
-			"headline" : {
-				"short" : "Top 10 hiking mountains"
-			},
-			"exerpt" : {
-				"medium" : "Yosemite National Park is a United States National Park spanning eastern portions of Tuolumne, Mariposa and Madera counties in the central eastern portion of the U.S. state of California."
-			}
-		},
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-fire.jpg",
-					"alt": "Fire"	
-				}
-			},
-			"headline" : {
-				"short" : "How to build a campfire"
-			},
-			"exerpt" : {
-				"medium" : "A campfire is a fire lit at a campsite, to serve the following functions: light, warmth, a beacon, an insect and/or apex predator deterrent, to cook, and for a psychological sense of security. "
-			}
-		},
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-gear.jpg",
-					"alt": "Camping Gear"	
-				}
-			},
-			"headline" : {
-				"short" : "Pick the right camping gear"
-			},
-			"exerpt" : {
-				"medium" : "The equipment used in camping varies with the particular type of camping. For instance, in survival camping the equipment consists of small items which have the purpose of helping the camper in providing food, heat and safety."
-			}
-		}
-	],
-	"inset-blocks" : [
-		{
-			"headline" : "This is the headline for the inset block"
-		}
-	],
-	"latest-block" : [
-		{
-			"headline" : "This is the headline for the latest block"
+			"title" : "You've Been Making Pasta All Wrong"
 		}
 	]
 }

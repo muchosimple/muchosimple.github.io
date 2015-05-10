@@ -28,6 +28,22 @@
     }
   }
 }
+.ad-994x250 {
+  display: none;
+  @include mq($px1000) {
+    display: block;
+  }
+}
+.has-994x250 {
+  margin-top: rem(8);
+  margin-bottom: rem(8);
+  .ad-300x50 {
+    display: block;
+    @include mq($px1000) {
+      display: none;
+    }
+  }
+}
 .ad-block {
   margin-left: auto;
   margin-right: auto;
