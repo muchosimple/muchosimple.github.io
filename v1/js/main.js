@@ -253,7 +253,7 @@ window.onresize = function() {
     $tabbedCarousel.find('.c-tab').hover(function(e){
       clearInterval(carouselTimer);
       $tabbedCarousel.find('.c-item').removeClass('this-is-active');
-      $(this).parents().addClass('this-is-active');
+      $(this).parents('.c-item').addClass('this-is-active');
     });
     // On resize, if the viewport is below 500px, clear the interval and
     // remove active classes.
