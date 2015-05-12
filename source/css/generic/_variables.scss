@@ -15,6 +15,7 @@ $max-width: em(1270) !default; // Takes into account left and right padding.
 $inner-max-width: (1044/$fontpx) + 0em;
 $inner-max-width-large: (1150/$fontpx) + 0em;
 $inner-max-small: (900/$defaultpx) + 0em;
+$inner-max-width-medium: (970/$defaultpx) + 0em;
 
 // $visual-grid: false !default;
 // $visual-grid-color: #E6F6FF !default;
@@ -56,6 +57,7 @@ $blue-light-2: #E4F0F9;
 $aqua: #E3F3F1;
 $icey-blue: #FCFEFE;
 $beige: #DDDDD3;
+$cream: #F6F4EE;
 
 // Social Colors
 $twitter-blue: #13C4F8;

@@ -38,6 +38,10 @@
 		max-width: $inner-max-width-large;
 	}
 }
+.lc-inner--m {
+	@include center-block;
+	max-width: $inner-max-width-medium;
+}
 .narrow {
 	max-width: rem(600);
 	@include center-block;

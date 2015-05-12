@@ -1,8 +1,8 @@
 <div class="page">
   {{> organisms-header }}
   <hr class="no-space">
-  <div class="main cf lc" role="main" aria-live="polite">
-    <div class="lc-inner--l">
+  <div class="main cf" role="main" aria-live="polite">
+    <div class="lc lc-inner--l cf page--top">
       <div class="shift-left">
         <div class="shift-left-inner">
           <div class="carousel--tabbed js-carousel--tabbed">
@@ -25,6 +25,50 @@
         {{> atoms-ad-300x250 }}
       </div> <!-- /.shift-right -->
     </div> <!-- /.lc-inner--l -->
+
+    <section class="section promo-strip">
+      <div class="lc-inner--m">
+        <div class="g g-3up">
+          {{# promo-strip }}
+            <div class="gi">
+              {{> molecules-block-thumb-headline }}
+            </div> <!-- /.gi -->
+          {{/ promo-strip }}
+        </div> <!-- /.g-3up -->
+      </div> <!-- /.lc-inner--m -->
+    </section> <!-- /.promo-strip -->
+
+    <div class="lc">
+      <div class="primary">
+        <div class="primary-inner">
+          <section class="section content-modules">
+            {{# content-modules-1 }}
+              {{> molecules-block-thumb-headline }}
+            {{/ content-modules-1 }}
+          </section> <!-- /.content-modules -->
+          <hr class="space-btm no-space-top">
+          {{> organisms-follow-footer }}
+          <hr class="space-half-top">
+          <section class="section content-modules">
+            {{# content-modules-2 }}
+              {{> molecules-block-thumb-headline }}
+            {{/ content-modules-2 }}
+          </section> <!-- /.content-modules -->
+        </div> <!-- /.primary-inner -->
+      </div> <!-- /.primary -->
+
+      <div class="secondary no-pad-top">
+        <aside class="sidebar sidebar--alt" role="complementary">
+          {{# subscription-promo }}
+            {{> molecules-block-thumb-headline }}
+          {{/ subscription-promo }}
+          {{> organisms-daily-finds }}
+          <div class="ad-block ad-300x600 block">
+            <a href=""><img src="http://s1.2mdn.net/viewad/3521978/SINS_WebBanner_300x600.jpg"></a>
+          </div> <!-- /.ad-300x250 -->
+        </aside> <!-- /.sidebar -->
+      </div> <!-- /.secondary -->
+    </div> <!-- /.lc -->
 
   </div><!-- /role=main -->
   {{> organisms-footer }}

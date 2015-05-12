@@ -16,6 +16,11 @@
     margin-bottom: rem(5);
   }
 }
+.b-text {
+  .kicker {
+    margin-top: $space-half;
+  }
+}
 
 .b-title,
 .b-title a,
@@ -24,9 +29,15 @@
   font-weight: normal;
   font-size: rem(21);
 }
+.bigger-title {
+  .b-title,
+  .b-title a {
+    font-size: rem(26);
+  }
+}
 // Block title hover styles
 // Blocks that are wrapped in an <a>
-a.b-inner:hover {
+.b-inner:hover {
   .b-title {
     color: $pink;
     span {
@@ -372,9 +383,10 @@ a.b-inner:hover {
 .block-social-feed {
   width: rem(190);
   height: rem(190);
-  overflow: auto;
+  overflow: hidden;
   position: relative;
   border: $border-style-light;
+  margin-top: rem(5);
   @include center-block;
   .b-content {
 
@@ -484,8 +496,25 @@ a.b-inner:hover {
   max-width: rem(228);
   @include center-block;
   padding-top: $pad;
-  margin-bottom: $space-double;
+  margin-bottom: rem(19);
   .kicker {
     margin-bottom: $space-half;
+  }
+}
+
+// Content Modules (Home & Channel stacked blocks)
+.content-module {
+  @include mq($px600) {
+    @include table-layout(40%, 60%);
+    margin-bottom: rem(30);
+  }
+  .kicker {
+    margin-top: 0;
+  }
+  .b-title {
+    margin-bottom: $space-half;
+    @include mq($px600) {
+      font-size: rem(26);
+    }
   }
 }

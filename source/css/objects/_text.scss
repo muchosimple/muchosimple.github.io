@@ -1,8 +1,15 @@
-.dek {
+.dek,
+.alt-dek p {
 	font-family: $font-secondary;
 	font-size: rem(24);
 	line-height: 1.35;
 	margin-bottom: $space-half;
+}
+.alt-dek p {
+	font-family: $font-secondary;
+	font-size: rem(20);
+	line-height: 1.2;
+	color: $gray-med-2;
 }
 
 // Pullquote
@@ -12,7 +19,8 @@
 }
 
 // Kicker
-.kicker {
+.kicker,
+.sponsor {
 	margin-bottom: rem(6);
 }
 .kicker a {
@@ -25,6 +33,17 @@
 	&:hover {
 		@include underline;
 	}
+}
+// Sponsor
+.sponsor {
+	a {
+		font-size: rem(15);
+		text-transform: uppercase;
+		color: $gray-med-2;
+	}
+}
+.sponsor span {
+	color: $blue;
 }
 // Divides kicker links
 .divider {

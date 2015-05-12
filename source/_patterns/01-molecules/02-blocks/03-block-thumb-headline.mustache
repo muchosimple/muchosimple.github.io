@@ -1,9 +1,21 @@
 <div class="block block-thumb {{ block-class }}">
-  {{# kicker }}
+  {{# kicker-top }}
     {{> molecules-kicker }}
-  {{/ kicker }}
+  {{/ kicker-top }}
+
+  {{# kicker-btm }}
+  <div class="b-inner">
+  {{/ kicker-btm }}
+  {{^ kicker-btm }}
   <a href="{{ url }}" class="b-inner">
+  {{/ kicker-btm }}
+
     <div class="b-thumb">
+
+      {{# kicker-btm }}
+      <a href="{{ url }}">
+      {{/ kicker-btm }}
+
       <div class="img-wrap">
         {{# picturefill }}
           {{> atoms-picturefill }}
@@ -12,6 +24,11 @@
           {{> atoms-image }}
         {{/ picturefill }}
       </div> <!-- /.img-wrap -->
+
+      {{# kicker-btm }}
+      </a>
+      {{/ kicker-btm }}
+
     </div> <!-- /.b-thumb -->
     <div class="b-text">
       {{# date }}
@@ -20,12 +37,29 @@
       {{# number }}
         <span class="rounded number">{{ number }}</span>
       {{/ number }}
-      <h3 class="b-title"><span>{{{ title }}}</span></h3>
+
+      {{# kicker-btm }}
+        {{> molecules-kicker }}
+        {{# is_sponsored }}
+          {{> molecules-sponsor }}
+        {{/ is_sponsored }}
+      {{/ kicker-btm }}
+
+      {{# kicker-btm }}
+      <a href="{{ url }}">
+      {{/ kicker-btm }}
+
+      <h3 class="b-title {{ title-class }}"><span>{{{ title }}}</span></h3>
+
+      {{# kicker-btm }}
+      </a>
+      {{/ kicker-btm }}
+
       {{# byline }}
         {{> molecules-byline }}
       {{/ byline }}
       {{# dek }}
-      <div class="dek">
+      <div class="dek {{ dek-class }}">
         <p>{{ dek }}</p>
       </div> <!-- /.dek -->
       {{/ dek }}
@@ -33,5 +67,12 @@
         <span class="cta">{{ cta }}</span>
       {{/ cta }}
     </div> <!-- /.b-text -->
+
+  {{# kicker-btm }}
+  </div> <!-- /.b-inner -->
+  {{/ kicker-btm }}
+  {{^ kicker-btm }}
   </a> <!-- /.b-inner -->
+  {{/ kicker-btm }}
+
 </div> <!-- /.block-thumb -->

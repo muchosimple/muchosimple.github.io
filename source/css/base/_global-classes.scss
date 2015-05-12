@@ -77,6 +77,10 @@ $GLOBAL CLASSES
   @include vh-center;
 }
 
+.mw-300 {
+  max-width: rem(300);
+}
+
 // Display Classes
 .hide-small {
   @include mq($medium-break, max) {
@@ -269,6 +273,9 @@ $GLOBAL CLASSES
 .space-half-btm {
   margin-bottom: $space-half;
 }
+.space-half-top {
+  margin-top: $space-half;
+}
 .space-btm {
   margin-bottom: $space;
 }
@@ -283,4 +290,7 @@ $GLOBAL CLASSES
 }
 .no-pad-l {
   padding-left: 0;
+}
+.no-pad-top {
+  padding-top: 0;
 }
