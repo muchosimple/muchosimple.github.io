@@ -22,6 +22,11 @@
   }
 }
 
+.has-video .img-wrap {
+  position: relative;
+  display: inline-block;
+}
+
 .b-title,
 .b-title a,
 .recirc-headline a {
@@ -43,6 +48,9 @@
     span {
       @include underline;
     }
+  }
+  .icon-play {
+    opacity: 1;
   }
 }
 // Blocks where the <a> is inside the .b-title or .recirc-headline
@@ -516,5 +524,20 @@
     @include mq($px600) {
       font-size: rem(26);
     }
+  }
+}
+
+// Media Block (with Video)
+.block-media {
+  text-align: center;
+  .b-text {
+    margin-bottom: rem(10);
+    width: 80%;
+    max-width: rem(560);
+    @include center-block;
+  }
+  .b-title {
+    font-size: rem(26);
+    margin-bottom: rem(8);
   }
 }

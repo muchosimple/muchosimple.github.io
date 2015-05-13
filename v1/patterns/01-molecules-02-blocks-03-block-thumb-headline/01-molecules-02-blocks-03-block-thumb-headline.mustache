@@ -23,6 +23,11 @@
         {{^ picturefill }}
           {{&gt; atoms-image }}
         {{/ picturefill }}
+
+        {{# is-video }}
+          &lt;span class=&quot;icon icon-play icon--big rounded&quot;&gt;{{&gt; atoms-play }}&lt;/span&gt;
+        {{/ is-video}}
+
       &lt;/div&gt; &lt;!-- /.img-wrap --&gt;
 
       {{# kicker-btm }}

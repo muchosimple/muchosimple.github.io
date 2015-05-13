@@ -302,6 +302,11 @@
     }
   }
 }
+.follow-footer {
+  .s-title {
+    margin-bottom: $space-half;
+  }
+}
 // Real Simple Apps
 .rs-apps {
   max-width: rem(600);
@@ -502,8 +507,15 @@
     margin-bottom: 0;
   }
 }
+
 .page--top {
   margin-bottom: rem(3);
+}
+.page--btm {
+  clear: both;
+  padding-left: $pad-double;
+  padding-right: $pad-double;
+  margin-bottom: $space-double;
 }
 .promo-strip {
   clear: both;
@@ -513,8 +525,20 @@
   padding: $pad-and-half $pad $pad-half;
 }
 
-.follow-footer {
-  .s-title {
-    margin-bottom: $space-half;
+// Video module section (currently on the home page)
+.video-module {
+  @include mq($px600) {
+    float: left;
+    width: 80%;
+    padding-right: $pad-double;
+  }
+}
+.video-blocks {
+  .block {
+    margin-bottom: $space;
+  }
+  @include mq($px600) {
+    float: right;
+    width: 20%;
   }
 }

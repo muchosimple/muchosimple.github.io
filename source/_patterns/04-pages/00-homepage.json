@@ -106,8 +106,9 @@
 	],
 	"content-modules-1" : [
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module has-video",
 			"dek-class" : "alt-dek",
+			"is-video" : true,
 			"kicker-btm" : true,
 			"kicker" : "Home",
 			"img" : {
@@ -193,9 +194,10 @@
 			"dek" : "Create order out of chaos with creative, low-cost—or, even better, no-cost!—DIY ideas."
 		},
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module has-video",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
+			"is-video" : true,
 			"kicker" : "Home & Organizing",
 			"img" : {
 				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGs/n/14cWKI/abc/10BjhK/14cWKI-wZS-320x215.jpg",
@@ -259,6 +261,52 @@
 				"alt" : "12 Pretty Floral-Printed Picks"
 			},
 			"title" : "12 Pretty Floral-Printed Picks"
+		}
+	],
+	"video" : [
+		{
+			"kicker" : "Entertaining",
+			"img" : {
+				"src" : "http://d.pr/i/16gNE+",
+				"alt" : "How to Entertain on a Budget"
+			},
+			"title" : "How to Entertain on a Budget",
+			"dek" : "Want to entertain friends without spending a fortune? These tips will save money without looking like you’re skimping."
+		}
+	],
+	"video-blocks" : [
+		{
+			"block-class" : "block-flipped center has-video",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/372x/n/wqPcg/abc/y6ZwH/wqPcg-wZS-225x150.jpg",
+				"alt" : "Creating a Comfy Home"
+			},
+			"title" : "Creating a Comfy Home"
+		},
+		{
+			"block-class" : "block-flipped center has-video",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uaOLx/abc/ztMof/uaOLx-wZS-225x150.jpg",
+				"alt" : "14 Living-Room and Dining-Room Makeovers"
+			},
+			"title" : "14 Living-Room and Dining-Room Makeovers"
+		},
+		{
+			"block-class" : "block-flipped center has-video",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/MYGs/n/urs0k/abc/11FonS/urs0k-wZS-225x150.jpg",
+				"alt" : "How to: Cook Like a Real Simple Editor"
+			},
+			"title" : "How to: Cook Like a Real Simple Editor"
 		}
 	]
 }

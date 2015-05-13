@@ -1,0 +1,26 @@
+<div class="block block-media has-video {{ block-class }}">
+  {{# kicker }}
+    {{> molecules-kicker }}
+  {{/ kicker }}
+  <a href="{{ url }}" class="b-inner">
+    <div class="b-text">
+      <h3 class="b-title {{ title-class }}"><span>{{{ title }}}</span></h3>
+      {{# dek }}
+      <div class="dek alt-dek {{ dek-class }}">
+        <p>{{ dek }}</p>
+      </div> <!-- /.dek -->
+      {{/ dek }}
+    </div> <!-- /.b-text -->
+    <div class="b-thumb">
+      <div class="img-wrap">
+        {{# picturefill }}
+          {{> atoms-picturefill }}
+        {{/ picturefill }}
+        {{^ picturefill }}
+          {{> atoms-image }}
+        {{/ picturefill }}
+        <span class="icon icon-play icon--big rounded">{{> atoms-play }}</span>
+      </div> <!-- /.img-wrap -->
+    </div> <!-- /.b-thumb -->
+  </a> <!-- /.b-inner -->
+</div> <!-- /.block-media -->

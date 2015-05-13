@@ -69,6 +69,24 @@
   height: $icon-large;
   padding: rem(8);
 }
+.icon--big {
+  width: $icon-big;
+  height: $icon-big;
+  padding: rem(2);
+}
+
+.icon-play {
+  position: absolute;
+  left: 50%;
+  margin-left: -$icon-big / 2;
+  top: 50%;
+  margin-top: -$icon-big / 2;
+  z-index: 10;
+  opacity: .8;
+  padding: 0;
+  box-shadow: 0 0 3px rgba($black, .5);
+  @include trans;
+}
 
 // Fixed upper right button (usually a close button)
 .icon--fixed {

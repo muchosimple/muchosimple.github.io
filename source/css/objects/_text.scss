@@ -219,6 +219,13 @@
 .hr--s {
 	margin-bottom: rem(20);
 }
+.hr--s,
+.hr--m,
+.hr--l {
+	max-width: rem(600);
+	margin-left: auto;
+	margin-right: auto;
+}
 
 // Passages of text
 .text {

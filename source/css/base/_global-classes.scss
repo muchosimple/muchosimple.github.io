@@ -15,6 +15,10 @@ $GLOBAL CLASSES
   clear: both;
 }
 
+.clear {
+  clear: both;
+}
+
 // Completely remove from the flow and screen readers.
 .is-hidden {
   display: none !important;
@@ -240,8 +244,17 @@ $GLOBAL CLASSES
 .pad-lr {
   padding: 0 $pad;
 }
+.pad-lr-2x {
+  padding: 0 $pad-double;
+}
 .pad-btm {
   padding-bottom: $pad;
+}
+.pad-top {
+  padding-top: $pad;
+}
+.pad-half-top {
+  padding-top: $pad-half;
 }
 .pad-tb {
   padding-bottom: $pad;
@@ -255,7 +268,7 @@ $GLOBAL CLASSES
   margin-bottom: $space-double;
 }
 .space-t-2x-b {
-  margin-top: $pad-double;
+  margin-top: $space-double;
   margin-bottom: $space;
 }
 .space-r {
@@ -294,3 +307,7 @@ $GLOBAL CLASSES
 .no-pad-top {
   padding-top: 0;
 }
+.no-pad-btm {
+  padding-bottom: 0;
+}
+

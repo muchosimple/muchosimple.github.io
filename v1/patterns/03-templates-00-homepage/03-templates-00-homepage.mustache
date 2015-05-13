@@ -38,9 +38,9 @@
       &lt;/div&gt; &lt;!-- /.lc-inner--m --&gt;
     &lt;/section&gt; &lt;!-- /.promo-strip --&gt;
 
-    &lt;div class=&quot;lc&quot;&gt;
-      &lt;div class=&quot;primary&quot;&gt;
-        &lt;div class=&quot;primary-inner&quot;&gt;
+    &lt;div class=&quot;lc cf&quot;&gt;
+      &lt;div class=&quot;primary no-space-btm no-pad-btm&quot;&gt;
+        &lt;div class=&quot;primary-inner no-space-btm&quot;&gt;
           &lt;section class=&quot;section content-modules&quot;&gt;
             {{# content-modules-1 }}
               {{&gt; molecules-block-thumb-headline }}
@@ -68,7 +68,30 @@
           &lt;/div&gt; &lt;!-- /.ad-300x250 --&gt;
         &lt;/aside&gt; &lt;!-- /.sidebar --&gt;
       &lt;/div&gt; &lt;!-- /.secondary --&gt;
+      &lt;hr class=&quot;no-space-top space-double-btm clear lc-inner--l&quot;&gt;
     &lt;/div&gt; &lt;!-- /.lc --&gt;
+
+    &lt;div class=&quot;lc lc-inner--l cf page--btm&quot;&gt;
+      &lt;div class=&quot;video-module&quot;&gt;
+        {{# video }}
+          {{&gt; molecules-block-media }}
+        {{/ video }}
+      &lt;/div&gt; &lt;!-- /.video-module --&gt;
+      &lt;div class=&quot;video-blocks&quot;&gt;
+        {{# video-blocks }}
+          {{&gt; molecules-block-thumb-headline }}
+        {{/ video-blocks }}
+      &lt;/div&gt; &lt;!-- /.video-blocks --&gt;
+    &lt;/div&gt; &lt;!-- /.lc-inner--l --&gt;
+
+    &lt;div class=&quot;lc lc-inner space-double-btm pad-half-top&quot;&gt;
+      &lt;hr class=&quot;hr--s space-btm&quot;&gt;
+      &lt;div class=&quot;ad-blocks ad-responsive ad-instream&quot;&gt;
+        &lt;div class=&quot;ad-block ad-300x250 hide-larger&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class=&quot;ad-block ad-728x90 hide-large hide-med hide-small&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://s1.2mdn.net/viewad/3340030/clx_clb_e40024_value-oxi_rev_728x90.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt; &lt;!-- /.ad-responsive --&gt;
+      &lt;hr class=&quot;hr--l space-half-top&quot;&gt;
+    &lt;/div&gt; &lt;!-- /.lc-inner --&gt;
 
   &lt;/div&gt;&lt;!-- /role=main --&gt;
   {{&gt; organisms-footer }}

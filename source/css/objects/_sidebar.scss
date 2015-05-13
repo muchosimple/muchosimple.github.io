@@ -26,6 +26,10 @@
     border-bottom: none;
     margin-bottom: 0;
   }
+  > .block:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   .subscribe-promo {
     border-bottom: none;
     margin-bottom: $space;
