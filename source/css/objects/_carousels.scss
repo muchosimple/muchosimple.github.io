@@ -6,8 +6,8 @@
 	}
 }
 .carousel--tabbed {
-	margin-bottom: $space;
 	position: relative;
+	margin-bottom: rem(12);
 	@include center-block;
 	@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 		padding: 35.8%;

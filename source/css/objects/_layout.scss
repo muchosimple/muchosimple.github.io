@@ -33,10 +33,7 @@
 }
 .lc-inner--l {
 	@include center-block;
-	max-width: rem(800);
-	@include mq($large-break) {
-		max-width: $inner-max-width-large;
-	}
+	max-width: $inner-max-width-large;
 }
 .lc-inner--m {
 	@include center-block;
@@ -198,25 +195,16 @@
 
 /* Grid 3up */
 .g-3up {
-	@media all and (min-width: $bp-med) {
+	.b-title {
+		@include mq($px600, max) {
+			font-size: rem(18);
+		}
+	}
+	@media all and (min-width: $px400) {
 		> .gi {
 			float: left;
 			width: 50%;
-			&:nth-of-type(2n+1) {
-				clear: left;
-			}
-		}
-	}
-
-	@media all and (min-width: $bp-large) {
-		> .gi {
 			width: 33.3333333%;
-			&:nth-of-type(2n+1) {
-				clear: none;
-			}
-			&:nth-of-type(3n+1) {
-				clear: left;
-			}
 		}
 	}
 }

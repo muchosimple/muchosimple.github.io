@@ -510,12 +510,17 @@
 
 .page--top {
   margin-bottom: rem(3);
+  @include mq($large-break, max) {
+    max-width: rem(800);
+  }
 }
 .page--btm {
   clear: both;
   padding-left: $pad-double;
   padding-right: $pad-double;
-  margin-bottom: $space-double;
+  @include mq($px600) {
+    margin-bottom: $space-double;
+  }
 }
 .promo-strip {
   clear: both;
@@ -523,21 +528,65 @@
   background-color: $cream;
   margin-bottom: $space-double;
   padding: $pad-and-half $pad $pad-half;
+  .block {
+    @include center-block;
+  }
 }
 
 // Video module section (currently on the home page)
 .video-module {
-  @include mq($px600) {
+  margin-bottom: rem(10);
+  @include mq($medium-break) {
     float: left;
     width: 80%;
     padding-right: $pad-double;
   }
 }
 .video-blocks {
+  text-align: center;
   .block {
     margin-bottom: $space;
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    @include mq($px500, max) {
+      &:first-child {
+        float: left;
+      }
+      &:nth-child(even) {
+        float: right;
+      }
+      &:nth-child(3) {
+        clear: both;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    @media (min-width: $px500) and (max-width: $medium-break) {
+      float: left;
+      width: 32%;
+      margin-right: 2%;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    @include mq($medium-break) {
+      width: 100%;
+      display: block;
+    }
   }
-  @include mq($px600) {
+  .icon-play {
+    @include mq($large-break, max) {
+      width: $icon-large;
+      height: $icon-large;
+      margin-left: -$icon-large / 2;
+      margin-top: -$icon-large / 2;
+    }
+  }
+  .b-title {
+    font-size: rem(16);
+  }
+  @include mq($medium-break) {
     float: right;
     width: 20%;
   }
