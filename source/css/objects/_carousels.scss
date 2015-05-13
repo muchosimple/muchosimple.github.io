@@ -11,6 +11,8 @@
 	@include center-block;
 	@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 		padding: 35.8%;
+	}
+	@include mq($large-break) {
 		margin-bottom: 0;
 	}
 }

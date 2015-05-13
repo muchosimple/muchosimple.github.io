@@ -518,7 +518,7 @@
   clear: both;
   padding-left: $pad-double;
   padding-right: $pad-double;
-  @include mq($px600) {
+  @include mq($medium-break) {
     margin-bottom: $space-double;
   }
 }
