@@ -12,3 +12,9 @@
     }
   }
 }
+.main--half-pad .main {
+  padding-top: $pad-half;
+  @include mq($medium-break) {
+    padding-top: 0;
+  }
+}

@@ -1,6 +1,6 @@
 {
 	"title" : "Real Simple",
-	"bodyClass": "home-page main--no-pad",
+	"bodyClass": "home-page main--half-pad main--no-pad",
 	"content-type" : "Home",
 	"has-featured-stories" : false,
 	"has-994x250" : true,
