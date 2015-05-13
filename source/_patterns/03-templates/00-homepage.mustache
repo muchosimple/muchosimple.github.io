@@ -1,6 +1,10 @@
 <div class="page">
   {{> organisms-header }}
-  <hr class="no-space">
+
+  {{# has-top-ad }}
+    <hr class="no-space">
+  {{/ has-top-ad }}
+
   <div class="main cf" role="main" aria-live="polite">
     <div class="lc lc-inner--l cf page--top">
       <div class="shift-left">
@@ -38,6 +42,21 @@
       </div> <!-- /.lc-inner--m -->
     </section> <!-- /.promo-strip -->
 
+    {{# has-btm-ad }}
+      <div class="lc-inner--m">
+        <div class="advertisement advertisement-responsive-leaderboard ad-blocks ad-leaderboard {{# has-994x250 }} has-994x250 {{/ has-994x250 }}">
+          <div class="ad-block ad-300x50 js-ad-refresh"><a href=""><img src="http://cdn.creative.medialytics.com/raw_assets/servo_prod/campaigns/CA-KS2PC8D/creatives/CR-CDTH2C5/versions/1/MBAN%20UnstopablesTargetiMedia%20FreshScentspiration%20xxxx%20320x50%201415%203%20Static.jpg.jpg"></a></div>
+          {{# has-994x250 }}
+            <div class="ad-block ad-994x250"><a href=""><img src="http://s0.2mdn.net/4764406/994x250_OWO_OpeningMay29-UPDATED.jpg" width="994" height="250" border="0"></a></div>
+          {{/ has-994x250 }}
+          {{^ has-994x250 }}
+            <div class="ad-block ad-728x90 js-ad-refresh"><a href=""><img src="http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKDjt-P9LBABGAEyCHdr0udyiur2"></a></div>
+          {{/ has-994x250 }}
+        </div> <!-- /.ad-leaderboard -->
+        <hr class="space-and-half-btm space-and-half-top">
+      </div> <!-- /.lc-inner--m -->
+    {{/ has-btm-ad }}
+
     <div class="lc cf">
       <div class="primary no-space-btm no-pad-btm">
         <div class="primary-inner no-space-btm">
@@ -46,9 +65,30 @@
               {{> molecules-block-thumb-headline }}
             {{/ content-modules-1 }}
           </section> <!-- /.content-modules -->
-          <hr class="space-btm no-space-top">
-          {{> organisms-follow-footer }}
-          <hr class="space-half-top">
+
+          {{# has-follow }}
+            <hr class="space-btm no-space-top">
+            {{> organisms-follow-footer }}
+            <hr class="space-half-top">
+          {{/ has-follow }}
+
+          {{# has-video-strip }}
+            <hr class="space-and-half-btm no-space-top">
+            <section class="section video-strip">
+              <header class="s-header">
+                <h3 class="s-title heading">Entertaining Ideas</h3>
+              </header> <!-- /.s-header -->
+              <div class="g g-3up">
+                {{# video-strip }}
+                  <div class="gi">
+                    {{> molecules-block-thumb-headline }}
+                  </div> <!-- /.gi -->
+                {{/ video-strip }}
+              </div> <!-- /.g-3up -->
+            </section> <!-- /.video-strip -->
+            <hr class="space-half-top">
+          {{/ has-video-strip }}
+
           <section class="section content-modules">
             {{# content-modules-2 }}
               {{> molecules-block-thumb-headline }}

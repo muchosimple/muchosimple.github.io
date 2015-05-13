@@ -12,6 +12,7 @@
   "rs-site-nav-id" : "rs-hamburger-primary-nav",
   "has-994x250" : false,
   "has-link" : false,
+  "has-top-ad" : true,
   "img": {
     "landscape-4x3": {
       "src": "../../images/fpo_4x3.png",

@@ -591,3 +591,21 @@
     width: 20%;
   }
 }
+
+// Video horizontal strip
+.video-strip {
+  .dek p {
+    font-size: rem(18);
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      font-size: rem(20);
+    }
+  }
+  .icon-play {
+    @media (min-width: $px400) and (max-width: $px700), (min-width: $medium-break) and (max-width: $px950) {
+      width: $icon-large;
+      height: $icon-large;
+      margin-left: -$icon-large / 2;
+      margin-top: -$icon-large / 2;
+    }
+  }
+}

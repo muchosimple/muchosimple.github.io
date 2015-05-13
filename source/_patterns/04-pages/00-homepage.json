@@ -4,6 +4,10 @@
 	"content-type" : "Home",
 	"has-featured-stories" : false,
 	"has-994x250" : true,
+	"has-follow" : false,
+	"has-video-strip" : true,
+	"has-btm-ad" : true,
+	"has-top-ad" : false,
 	"home-carousel" : [
 		{
 			"item-num" : "1",
@@ -303,10 +307,42 @@
 			"is-lazy" : false,
 			"is-video" : true,
 			"img" : {
-				"src": "http://images.outbrain.com/imageserver/v2/s/MYGs/n/urs0k/abc/11FonS/urs0k-wZS-225x150.jpg",
+				"src": "http://images.outbrain.com/imageserver/v2/s/3731/n/x33c0/abc/rQcfI/x33c0-wZS-225x150.jpg",
 				"alt" : "How to: Cook Like a Real Simple Editor"
 			},
 			"title" : "How to: Cook Like a Real Simple Editor"
+		}
+	],
+	"video-strip" : [
+		{
+			"block-class" : "block-flipped center has-video",
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/3731/n/x33c0/abc/rQcfI/x33c0-wZS-225x150.jpg",
+				"alt" : "How to Cook Pasta 101"
+			},
+			"title" : "How to Cook Pasta 101",
+			"runtime" : "4 min"
+		},
+		{
+			"block-class" : "block-flipped center has-video",
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/3731/n/wtUez/abc/rIm0M/wtUez-wZS-225x150.jpg",
+				"alt" : "Chef's Way, Real Way"
+			},
+			"title" : "Chef's Way, Real Way",
+			"runtime" : "2 min"
+		},
+		{
+			"block-class" : "block-flipped center has-video",
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uaGzT/abc/wsFwH/uaGzT-wZS-225x150.jpg",
+				"alt" : "Design Your Own Wallpaper"
+			},
+			"title" : "Design Your Own Wallpaper",
+			"runtime" : "3 min"
 		}
 	]
 }

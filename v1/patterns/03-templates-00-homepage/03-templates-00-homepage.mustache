@@ -1,6 +1,10 @@
 &lt;div class=&quot;page&quot;&gt;
   {{&gt; organisms-header }}
-  &lt;hr class=&quot;no-space&quot;&gt;
+
+  {{# has-top-ad }}
+    &lt;hr class=&quot;no-space&quot;&gt;
+  {{/ has-top-ad }}
+
   &lt;div class=&quot;main cf&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
     &lt;div class=&quot;lc lc-inner--l cf page--top&quot;&gt;
       &lt;div class=&quot;shift-left&quot;&gt;
@@ -38,6 +42,21 @@
       &lt;/div&gt; &lt;!-- /.lc-inner--m --&gt;
     &lt;/section&gt; &lt;!-- /.promo-strip --&gt;
 
+    {{# has-btm-ad }}
+      &lt;div class=&quot;lc-inner--m&quot;&gt;
+        &lt;div class=&quot;advertisement advertisement-responsive-leaderboard ad-blocks ad-leaderboard {{# has-994x250 }} has-994x250 {{/ has-994x250 }}&quot;&gt;
+          &lt;div class=&quot;ad-block ad-300x50 js-ad-refresh&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://cdn.creative.medialytics.com/raw_assets/servo_prod/campaigns/CA-KS2PC8D/creatives/CR-CDTH2C5/versions/1/MBAN%20UnstopablesTargetiMedia%20FreshScentspiration%20xxxx%20320x50%201415%203%20Static.jpg.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+          {{# has-994x250 }}
+            &lt;div class=&quot;ad-block ad-994x250&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://s0.2mdn.net/4764406/994x250_OWO_OpeningMay29-UPDATED.jpg&quot; width=&quot;994&quot; height=&quot;250&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+          {{/ has-994x250 }}
+          {{^ has-994x250 }}
+            &lt;div class=&quot;ad-block ad-728x90 js-ad-refresh&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKDjt-P9LBABGAEyCHdr0udyiur2&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+          {{/ has-994x250 }}
+        &lt;/div&gt; &lt;!-- /.ad-leaderboard --&gt;
+        &lt;hr class=&quot;space-and-half-btm space-and-half-top&quot;&gt;
+      &lt;/div&gt; &lt;!-- /.lc-inner--m --&gt;
+    {{/ has-btm-ad }}
+
     &lt;div class=&quot;lc cf&quot;&gt;
       &lt;div class=&quot;primary no-space-btm no-pad-btm&quot;&gt;
         &lt;div class=&quot;primary-inner no-space-btm&quot;&gt;
@@ -46,9 +65,30 @@
               {{&gt; molecules-block-thumb-headline }}
             {{/ content-modules-1 }}
           &lt;/section&gt; &lt;!-- /.content-modules --&gt;
-          &lt;hr class=&quot;space-btm no-space-top&quot;&gt;
-          {{&gt; organisms-follow-footer }}
-          &lt;hr class=&quot;space-half-top&quot;&gt;
+
+          {{# has-follow }}
+            &lt;hr class=&quot;space-btm no-space-top&quot;&gt;
+            {{&gt; organisms-follow-footer }}
+            &lt;hr class=&quot;space-half-top&quot;&gt;
+          {{/ has-follow }}
+
+          {{# has-video-strip }}
+            &lt;hr class=&quot;space-and-half-btm no-space-top&quot;&gt;
+            &lt;section class=&quot;section video-strip&quot;&gt;
+              &lt;header class=&quot;s-header&quot;&gt;
+                &lt;h3 class=&quot;s-title heading&quot;&gt;Entertaining Ideas&lt;/h3&gt;
+              &lt;/header&gt; &lt;!-- /.s-header --&gt;
+              &lt;div class=&quot;g g-3up&quot;&gt;
+                {{# video-strip }}
+                  &lt;div class=&quot;gi&quot;&gt;
+                    {{&gt; molecules-block-thumb-headline }}
+                  &lt;/div&gt; &lt;!-- /.gi --&gt;
+                {{/ video-strip }}
+              &lt;/div&gt; &lt;!-- /.g-3up --&gt;
+            &lt;/section&gt; &lt;!-- /.video-strip --&gt;
+            &lt;hr class=&quot;space-half-top&quot;&gt;
+          {{/ has-video-strip }}
+
           &lt;section class=&quot;section content-modules&quot;&gt;
             {{# content-modules-2 }}
               {{&gt; molecules-block-thumb-headline }}
