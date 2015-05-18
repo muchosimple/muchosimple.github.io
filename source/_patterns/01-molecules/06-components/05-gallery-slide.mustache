@@ -15,7 +15,7 @@
       <div class="slide-intro slide-text">
         <p class="dek">{{ slide-intro }}</p>
         {{> molecules-byline }}
-        <a href="" class="btn btn--gallery-start js-btn--gallery-start">Start <span class="icon icon-arrow-right no-bg">{{> atoms-arrow-right }}</span></a>
+        <a href="{{ url }}" class="btn btn--gallery-start js-btn--gallery-start">Start <span class="icon icon-arrow-right no-bg">{{> atoms-arrow-right }}</span></a>
       </div> <!-- /.slide-intro -->
     {{/ is-welcome-slide }}
 
@@ -35,8 +35,8 @@
     {{# is-ad-slide }}
       <div class="slide-controls">
         <div class="slide-navigation">
-          <span class="icon no-bg rounded icon-arrow-left icon--alt icon--medium js-slide-hover-prev">{{> atoms-arrow-left }}</span>
-          <span class="icon no-bg rounded icon-arrow-right icon--alt icon--medium js-slide-hover-next">{{> atoms-arrow-right }}</span>
+          <a href="{{ url }}" class="icon no-bg rounded icon-arrow-left icon--alt icon--medium js-slide-hover-prev">{{> atoms-arrow-left }}</a>
+          <a href="{{ url }}" class="icon no-bg rounded icon-arrow-right icon--alt icon--medium js-slide-hover-next">{{> atoms-arrow-right }}</a>
           <div class="slide-count">Skip Ad</div>
         </div> <!-- /.slide-navigation -->
       </div> <!-- /.slide-controls -->

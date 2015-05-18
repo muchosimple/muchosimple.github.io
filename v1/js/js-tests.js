@@ -62,6 +62,7 @@
         lazyEffect: false,
         addClassActive: true,
         mouseDrag: false,
+        pagination: false,
         scrollPerPage: true,
         itemsCustom: [[0,8], [801,4], [900,5], [950,6], [1045,7], [1130,8]],
         navigationText: [galleryPrev, galleryNext],
@@ -214,10 +215,12 @@
   }
 
   // Custom navigation events
-  $('.js-slide-hover-next, .js-btn--gallery-start').click(function(){
+  $('.js-slide-hover-next, .js-btn--gallery-start').click(function(e){
+    e.preventDefault();
     $slides.trigger('owl.next');
   });
-  $('.js-slide-hover-prev').click(function(){
+  $('.js-slide-hover-prev').click(function(e){
+    e.preventDefault();
     $slides.trigger('owl.prev');
   });
   $('.js-replay').click(function(e){
