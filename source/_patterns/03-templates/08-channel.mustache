@@ -1,0 +1,85 @@
+<div class="page">
+  {{> organisms-header }}
+
+  <div class="main cf" role="main" aria-live="polite">
+    <div class="page-header lc">
+      <h1 class="page-title center">{{ page-title }}</h1>
+    </div> <!-- /.page-header -->
+    <div class="lc lc-inner cf space-btm channel--feature">
+      <section class="section promo-blocks-w-hero cf">
+        {{# top-promo-blocks }}
+          <div class="col1 col1--hero">
+            {{# col1-hero }}
+              {{> molecules-block-thumb-headline }}
+            {{/ col1-hero }}
+          </div> <!-- /.col1--hero -->
+          <div class="col2 cf">
+            {{# col2-promo-blocks }}
+              {{> molecules-block-thumb-headline }}
+            {{/ col2-promo-blocks }}
+          </div> <!-- .col2 -->
+          <div class="col3 cf">
+            {{# col3-promo-blocks }}
+              {{> molecules-block-thumb-headline }}
+            {{/ col3-promo-blocks }}
+          </div> <!-- .col3 -->
+        {{/ top-promo-blocks }}
+      </section> <!-- /.promo-blocks-w-hero -->
+      <hr class="hr--xl space-double-btm no-space-top">
+    </div> <!-- /.lc-inner -->
+
+    <div class="lc cf">
+      <div class="primary no-space-btm no-pad-btm">
+        <div class="primary-inner no-space-btm">
+
+          <section class="section content-modules">
+            {{# content-modules-1 }}
+              {{> molecules-block-thumb-headline }}
+            {{/ content-modules-1 }}
+          </section> <!-- /.content-modules -->
+
+          <hr class="space-and-half-btm no-space-top">
+
+          <section class="section video-promo cf">
+            <div class="video-module">
+              {{# video }}
+                {{> molecules-block-media }}
+              {{/ video }}
+            </div> <!-- /.video-module -->
+            <div class="video-blocks">
+              {{# video-blocks }}
+                {{> molecules-block-thumb-headline }}
+              {{/ video-blocks }}
+            </div> <!-- /.video-blocks -->
+          </section> <!-- /.video-promo -->
+
+          <hr class="space-half-top">
+
+          <section class="section content-modules">
+            {{# content-modules-2 }}
+              {{> molecules-block-thumb-headline }}
+            {{/ content-modules-2 }}
+          </section> <!-- /.content-modules -->
+
+        </div> <!-- /.primary-inner -->
+      </div> <!-- /.primary -->
+
+      <div class="secondary">
+        {{> organisms-sidebar }}
+      </div> <!-- /.secondary -->
+      <hr class="no-space-top space-double-btm clear lc-inner--l">
+    </div> <!-- /.lc -->
+
+    <div class="lc lc-inner space-double-btm pad-half-top">
+      <hr class="hr--s space-btm">
+      <div class="ad-blocks ad-responsive ad-instream">
+        <div class="ad-block ad-300x250 hide-larger hide-large"><a href=""><img src="http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg"></a></div>
+        <div class="ad-block ad-728x90 hide-larger hide-med hide-small"><a href=""><img src="http://s1.2mdn.net/viewad/3340030/clx_clb_e40024_value-oxi_rev_728x90.jpg"></a></div>
+        <div class="ad-block ad-970x90 hide-large hide-med hide-small"><a href=""><img src="http://d.pr/i/10NZe+"></a></div>
+      </div> <!-- /.ad-responsive -->
+      <hr class="hr--l space-half-top">
+    </div> <!-- /.lc-inner -->
+
+  </div><!-- /role=main -->
+  {{> organisms-footer }}
+</div> <!-- /.page -->

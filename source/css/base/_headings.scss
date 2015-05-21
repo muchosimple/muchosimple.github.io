@@ -70,3 +70,17 @@ h6, .zeta {
   color: $pink;
   margin-bottom: 0;
 }
+
+// Page titles typically used for Channel page headers.
+.page-title {
+  font-size: rem(40);
+  color: $pink;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  @include mq($micro-break) {
+    font-size: rem(50);
+  }
+  @include mq($medium-break) {
+    font-size: rem(60);
+  }
+}

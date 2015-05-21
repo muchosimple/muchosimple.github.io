@@ -7,6 +7,15 @@
   margin-bottom: rem(16);
   text-align: center;
 }
+.page-header {
+  padding: $pad-half $pad $pad;
+  border-bottom: $border-style;
+  margin-bottom: $space;
+  @include mq($medium-break) {
+    padding: $pad-and-half;
+    margin-bottom: $space-and-half;
+  }
+}
 
 // Featured Stories
 .featured-stories {
@@ -606,6 +615,77 @@
       height: $icon-large;
       margin-left: -$icon-large / 2;
       margin-top: -$icon-large / 2;
+    }
+  }
+}
+.channel--feature {
+  @include mq($larger-break) {
+    padding-left: $pad-half;
+    padding-right: $pad-half;
+  }
+}
+// Top section for promotion blocks. Typically used on Channel landing pages.
+.promo-blocks-w-hero {
+  @include mq($medium-break) {
+    margin-bottom: $space-double;
+  }
+  .block {
+    margin-bottom: $space-and-half;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col1--hero {
+    @include mq($px550) {
+      width: 54%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include mq($px750) {
+      width: 50%;
+    }
+    .block {
+      max-width: rem(435);
+    }
+    .b-title {
+      padding-top: rem(6);
+      font-size: rem(24);
+    }
+  }
+  .col2,
+  .col3 {
+    float: left;
+    width: 49%;
+    @include mq($px550) {
+      width: 23%;
+      position: absolute;
+      top: 0;
+    }
+    @include mq($px750) {
+      width: 25%;
+    }
+    .block {
+      max-width: rem(224);
+    }
+    .b-title {
+      @include mq($px550, max) {
+        font-size: rem(18);
+      }
+      @media (min-width: $px550) and (max-width: $medium-break) {
+        font-size: rem(16);
+      }
+    }
+  }
+  .col2 {
+    @include mq($px550) {
+      padding-right: $pad;
+      left: 0;
+    }
+  }
+  .col3 {
+    float: right;
+    @include mq($px550) {
+      padding-left: $pad;
+      right: 0;
     }
   }
 }
