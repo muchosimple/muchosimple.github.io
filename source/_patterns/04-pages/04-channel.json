@@ -1,5 +1,5 @@
 {
-	"title" : "Home | Real Simple",
+	"title" : "Home",
 	"bodyClass": "channel-page main--half-pad main--no-pad",
 	"content-type" : "Channel",
 	"has-featured-stories" : false,
@@ -82,19 +82,6 @@
 			"dek" : "Take our survey and share your ideas for planning a stress-free celebration."
 		},
 		{
-			"block-class" : "is-sponsored content-module",
-			"dek-class" : "alt-dek",
-			"kicker-btm" : true,
-			"is_sponsored" : true,
-			"sponsor" : "Ford",
-			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/1413Dc/abc/10Xuv4/1413Dc-wZS-320x215.jpg",
-				"alt" : "7 Smart Organizing Tricks You Probably Haven’t Tried (but Should!)"
-			},
-			"title" : "7 Smart Organizing Tricks You Probably Haven’t Tried (but Should!)",
-			"dek" : "It’s true: closets, desks, drawers, and countertops overflowing with clutter can cause stress and guilt."
-		},
-		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
@@ -121,16 +108,54 @@
 			"dek" : "Before you spend time or money on a hair-brained scheme, get to the root of the problem by learning these six follicular fallacies."
 		},
 		{
+			"block-class" : "is-sponsored content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"is_sponsored" : true,
+			"sponsor" : "Kraft",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/1413Dc/abc/10Xuv4/1413Dc-wZS-320x215.jpg",
+				"alt" : "7 Smart Organizing Tricks You Probably Haven’t Tried (but Should!)"
+			},
+			"title" : "7 Smart Organizing Tricks You Probably Haven’t Tried (but Should!)",
+			"dek" : "It’s true: closets, desks, drawers, and countertops overflowing with clutter can cause stress and guilt."
+		},
+		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
-			"kicker" : "Recipes",
+			"kicker" : "Gifts",
 			"img" : {
 				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/udcLc/abc/10YVXE/udcLc-wZS-320x215.jpg",
 				"alt" : "15 Low Carb Breakfast Ideas"
 			},
 			"title" : "15 Low Carb Breakfast Ideas",
 			"dek" : "Start the day with protein-packed recipes that will leave you satiated and energized for hours."
+		},
+		{
+			"block-class" : "is-sponsored content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Home Organizing",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/wuUYy/abc/rJa7Z/wuUYy-wZS-320x215.jpg",
+				"alt" : "All About Appliances"
+			},
+			"title" : "All About Appliances",
+			"dek" : "Learn how to buy (and clean) home and kitchen appliances, avoid expensive appliance repairs, and reuse your existing appliances in clever ways."
+		},
+		{
+			"block-class" : "content-module has-video",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"is-video" : true,
+			"kicker" : "Decorating",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/11nm8U/abc/10Y7jl/11nm8U-wZS-320x215.jpg",
+				"alt" : "8 Ways to Create a Sleep Sanctuary"
+			},
+			"title" : "8 Ways to Create a Sleep Sanctuary",
+			"dek" : "To make your bedroom an (ultra-functional) picture of bliss, follow the decorating pros' M.O.’s."
 		},
 		{
 			"block-class" : "is-sponsored content-module",
@@ -171,37 +196,24 @@
 	],
 	"video-blocks" : [
 		{
-			"block-class" : "block-flipped center has-video",
-			"no-lazy" : true,
-			"is-lazy" : false,
+			"block-class" : "block-flipped has-video",
 			"is-video" : true,
 			"img" : {
-				"src": "http://images.outbrain.com/imageserver/v2/s/372x/n/wqPcg/abc/y6ZwH/wqPcg-wZS-225x150.jpg",
-				"alt" : "Creating a Comfy Home"
+				"src": "http://images.outbrain.com/imageserver/v2/s/3731/n/wtUez/abc/rIm0M/wtUez-wZS-275x155.jpg",
+				"alt" : "Chef's Way, Real Way"
 			},
-			"title" : "Creating a Comfy Home"
+			"title" : "Chef's Way, Real Way",
+			"runtime" : "2 min"
 		},
 		{
-			"block-class" : "block-flipped center has-video",
-			"no-lazy" : true,
-			"is-lazy" : false,
+			"block-class" : "block-flipped has-video",
 			"is-video" : true,
 			"img" : {
-				"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uaOLx/abc/ztMof/uaOLx-wZS-225x150.jpg",
-				"alt" : "14 Living-Room and Dining-Room Makeovers"
+				"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uaGzT/abc/wsFwH/uaGzT-wZS-275x155.jpg",
+				"alt" : "Design Your Own Wallpaper"
 			},
-			"title" : "14 Living-Room and Dining-Room Makeovers"
-		},
-		{
-			"block-class" : "block-flipped center has-video",
-			"no-lazy" : true,
-			"is-lazy" : false,
-			"is-video" : true,
-			"img" : {
-				"src": "http://images.outbrain.com/imageserver/v2/s/3731/n/x33c0/abc/rQcfI/x33c0-wZS-225x150.jpg",
-				"alt" : "How to: Cook Like a Real Simple Editor"
-			},
-			"title" : "How to: Cook Like a Real Simple Editor"
+			"title" : "Design Your Own Wallpaper",
+			"runtime" : "3 min"
 		}
 	]
 }

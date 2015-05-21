@@ -235,18 +235,6 @@ $GLOBAL CLASSES
 .space {
   margin: $space;
 }
-.pad-l-2x {
-  padding-left: $pad-double;
-}
-.pad-r-2x {
-  padding-right: $pad-double;
-}
-.pad-lr {
-  padding: 0 $pad;
-}
-.pad-lr-2x {
-  padding: 0 $pad-double;
-}
 .pad-btm {
   padding-bottom: $pad;
 }
@@ -260,16 +248,11 @@ $GLOBAL CLASSES
   padding-bottom: $pad;
   padding-top: $pad;
 }
-.pad-btm-2x {
+.pad-double-btm {
   padding-bottom: $pad-double;
 }
-.space-tb-2x {
-  margin-top: $space-double;
-  margin-bottom: $space-double;
-}
-.space-t-2x-b {
-  margin-top: $space-double;
-  margin-bottom: $space;
+.pad-double-top {
+  padding-top: $pad-double;
 }
 .space-r {
   margin-right: $space;

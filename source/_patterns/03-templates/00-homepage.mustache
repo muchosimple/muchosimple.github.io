@@ -112,16 +112,18 @@
     </div> <!-- /.lc -->
 
     <div class="lc lc-inner--l cf page--btm">
-      <div class="video-module">
-        {{# video }}
-          {{> molecules-block-media }}
-        {{/ video }}
-      </div> <!-- /.video-module -->
-      <div class="video-blocks">
-        {{# video-blocks }}
-          {{> molecules-block-thumb-headline }}
-        {{/ video-blocks }}
-      </div> <!-- /.video-blocks -->
+      <section class="section video-promo cf v-blocks--3">
+        <div class="video-module">
+          {{# video }}
+            {{> molecules-block-media }}
+          {{/ video }}
+        </div> <!-- /.video-module -->
+        <div class="video-blocks">
+          {{# video-blocks }}
+            {{> molecules-block-thumb-headline }}
+          {{/ video-blocks }}
+        </div> <!-- /.video-blocks -->
+      </section> <!-- /.video-promo -->
     </div> <!-- /.lc-inner--l -->
 
     <div class="lc lc-inner space-double-btm pad-half-top">

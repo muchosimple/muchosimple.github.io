@@ -1,5 +1,4 @@
 {
-	"title" : "Real Simple",
 	"bodyClass": "home-page main--half-pad main--no-pad",
 	"content-type" : "Home",
 	"has-featured-stories" : false,
@@ -318,17 +317,17 @@
 			"block-class" : "block-flipped center has-video",
 			"is-video" : true,
 			"img" : {
-				"src": "http://images.outbrain.com/imageserver/v2/s/3731/n/x33c0/abc/rQcfI/x33c0-wZS-225x150.jpg",
-				"alt" : "How to Cook Pasta 101"
+				"src": "http://images.outbrain.com/imageserver/v2/s/MG5u/a/qvWPH/2ZjxV/2gk3/qvWPH-wZS-275x155.jpg",
+				"alt" : "DIY Kitchen Cabinets"
 			},
-			"title" : "How to Cook Pasta 101",
-			"runtime" : "4 min"
+			"title" : "DIY Beautiful Kitchen Cabinets",
+			"runtime" : "3 min"
 		},
 		{
 			"block-class" : "block-flipped center has-video",
 			"is-video" : true,
 			"img" : {
-				"src": "http://images.outbrain.com/imageserver/v2/s/3731/n/wtUez/abc/rIm0M/wtUez-wZS-225x150.jpg",
+				"src": "http://images.outbrain.com/imageserver/v2/s/3731/n/wtUez/abc/rIm0M/wtUez-wZS-275x155.jpg",
 				"alt" : "Chef's Way, Real Way"
 			},
 			"title" : "Chef's Way, Real Way",
@@ -338,7 +337,7 @@
 			"block-class" : "block-flipped center has-video",
 			"is-video" : true,
 			"img" : {
-				"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uaGzT/abc/wsFwH/uaGzT-wZS-225x150.jpg",
+				"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uaGzT/abc/wsFwH/uaGzT-wZS-275x155.jpg",
 				"alt" : "Design Your Own Wallpaper"
 			},
 			"title" : "Design Your Own Wallpaper",

@@ -542,14 +542,9 @@
   }
 }
 
-// Video module section (currently on the home page)
+// Video module section (currently on the home page & channel pages)
 .video-module {
   margin-bottom: rem(10);
-  @include mq($medium-break) {
-    float: left;
-    width: 80%;
-    padding-right: $pad-double;
-  }
 }
 .video-blocks {
   text-align: center;
@@ -558,30 +553,17 @@
     display: inline-block;
     width: 49%;
     vertical-align: top;
-    @include mq($px500, max) {
-      &:first-child {
-        float: left;
-      }
-      &:nth-child(even) {
-        float: right;
-      }
-      &:nth-child(3) {
-        clear: both;
-        display: block;
-        margin: 0 auto;
-      }
-    }
-    @media (min-width: $px500) and (max-width: $medium-break) {
+    max-width: rem(275);
+    &:first-child {
       float: left;
-      width: 32%;
-      margin-right: 2%;
-      &:last-child {
-        margin-right: 0;
-      }
     }
-    @include mq($medium-break) {
-      width: 100%;
+    &:nth-child(even) {
+      float: right;
+    }
+    &:nth-child(3) {
+      clear: both;
       display: block;
+      margin: 0 auto;
     }
   }
   .icon-play {
@@ -595,9 +577,67 @@
   .b-title {
     font-size: rem(16);
   }
+}
+.v-blocks--3 {
+  // If there's 3 video thumbnal blocks, shift to 2 columns.
+  .video-module {
+    @include mq($medium-break) {
+      float: left;
+      width: 80%;
+      padding-right: $pad-double;
+    }
+  }
+  .video-blocks {
+    .block {
+      @media (min-width: $px500) and (max-width: $medium-break) {
+        float: left;
+        width: 32%;
+        margin-right: 2%;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      @include mq($px500) {
+        &:nth-child(even) {
+          float: left;
+        }
+        &:nth-child(3) {
+          clear: none;
+        }
+      }
+      @include mq($medium-break) {
+        width: 100%;
+        display: block;
+      }
+    }
+    @include mq($medium-break) {
+      float: right;
+      width: 20%;
+    }
+  }
+}
+.v-blocks--2 {
   @include mq($medium-break) {
-    float: right;
-    width: 20%;
+    margin-bottom: $space-double;
+  }
+  .video-module {
+    @include mq($medium-break) {
+      margin-bottom: $space-double;
+    }
+  }
+  .video-blocks {
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+    .b-text {
+      text-align: left;
+    }
+    .b-title {
+      font-size: rem(18);
+      @include mq($medium-break) {
+        font-size: rem(20);
+      }
+    }
   }
 }
 
@@ -624,7 +664,7 @@
     padding-right: $pad-half;
   }
 }
-// Top section for promotion blocks. Typically used on Channel landing pages.
+// Top section for promotion blocks. Typically used on channel landing pages.
 .promo-blocks-w-hero {
   @include mq($medium-break) {
     margin-bottom: $space-double;
