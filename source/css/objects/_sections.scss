@@ -785,6 +785,9 @@
       text-align: center;
       display: inline-block;
       vertical-align: top;
+      @include mq($large-break) {
+        margin-bottom: rem(40);
+      }
       &:first-child,
       &:nth-child(2) {
         .b-inner {
