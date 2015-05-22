@@ -523,6 +523,26 @@
     max-width: rem(800);
   }
 }
+// Right section of the home page containing a block and 300x250 ad.
+.home-right-blocks {
+  @media (min-width: $px600) and (max-width: $medium-break) {
+    text-align: center;
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: $pad;
+  }
+  .block {
+    @media (min-width: $px600) and (max-width: $medium-break) {
+      float: left;
+    }
+  }
+  .ad-block {
+    @media (min-width: $px600) and (max-width: $medium-break) {
+      float: right;
+    }
+  }
+}
 .page--btm {
   clear: both;
   padding-left: $pad-double;
