@@ -2,35 +2,64 @@
   {{> organisms-header }}
 
   <div class="main cf" role="main" aria-live="polite">
-    <div class="page-header lc">
-      <h1 class="page-title center">{{ page-title }}</h1>
-    </div> <!-- /.page-header -->
-    <div class="lc lc-inner cf space-btm channel--feature">
-      <section class="section promo-blocks-w-hero cf">
-        {{# top-promo-blocks }}
-          <div class="col1 col1--hero">
-            {{# col1-hero }}
-              {{> molecules-block-thumb-headline }}
-            {{/ col1-hero }}
-          </div> <!-- /.col1--hero -->
-          <div class="col2 cf">
-            {{# col2-promo-blocks }}
-              {{> molecules-block-thumb-headline }}
-            {{/ col2-promo-blocks }}
-          </div> <!-- .col2 -->
-          <div class="col3 cf">
-            {{# col3-promo-blocks }}
-              {{> molecules-block-thumb-headline }}
-            {{/ col3-promo-blocks }}
-          </div> <!-- .col3 -->
-        {{/ top-promo-blocks }}
-      </section> <!-- /.promo-blocks-w-hero -->
-      <hr class="hr--xl space-double-btm no-space-top">
-    </div> <!-- /.lc-inner -->
+    <div class="lc">
+      <div class="page-header">
+        <h1 class="page-title center">{{ page-title }}</h1>
+      </div> <!-- /.page-header -->
+    </div> <!-- /.lc -->
+
+    {{# is-channel-narrow }}
+
+      <div class="lc lc-inner cf space-btm channel--feature">
+        <section class="section blocks-w-hero col3-blocks-w-hero cf">
+          {{# top-promo-blocks }}
+            <div class="col1 col--hero">
+              {{# col-hero }}
+                {{> molecules-block-thumb-headline }}
+              {{/ col-hero }}
+            </div> <!-- /.col1 -->
+            <div class="col2 cf">
+              {{# col2-promo-blocks }}
+                {{> molecules-block-thumb-headline }}
+              {{/ col2-promo-blocks }}
+            </div> <!-- .col2 -->
+            <div class="col3 cf">
+              {{# col3-promo-blocks }}
+                {{> molecules-block-thumb-headline }}
+              {{/ col3-promo-blocks }}
+            </div> <!-- .col3 -->
+          {{/ top-promo-blocks }}
+        </section> <!-- /.promo-blocks-w-hero -->
+        <hr class="hr--xl space-double-btm no-space-top">
+      </div> <!-- /.lc-inner -->
+
+    {{/ is-channel-narrow }}
 
     <div class="lc cf">
       <div class="primary no-space-btm no-pad-btm">
         <div class="primary-inner no-space-btm">
+
+          {{# is-channel-wide }}
+
+            <div class="cf space-btm channel--feature">
+              <section class="section blocks-w-hero col2-blocks-w-hero cf">
+                {{# top-promo-blocks }}
+                  <div class="col1 col--hero">
+                    {{# col-hero }}
+                      {{> molecules-block-thumb-headline }}
+                    {{/ col-hero }}
+                  </div> <!-- .col1 -->
+                  <div class="col2 cf">
+                    {{# col2-promo-blocks }}
+                      {{> molecules-block-thumb-headline }}
+                    {{/ col2-promo-blocks }}
+                  </div> <!-- /.col2 -->
+                {{/ top-promo-blocks }}
+              </section> <!-- /.promo-blocks-w-hero -->
+              <hr class="space-double-btm no-space-top">
+            </div> <!-- /.channel--feature -->
+
+          {{/ is-channel-wide }}
 
           <section class="section content-modules">
             {{# content-modules-1 }}
@@ -64,7 +93,7 @@
         </div> <!-- /.primary-inner -->
       </div> <!-- /.primary -->
 
-      <div class="secondary">
+      <div class="secondary no-pad-top">
         {{> organisms-sidebar }}
       </div> <!-- /.secondary -->
     </div> <!-- /.lc -->

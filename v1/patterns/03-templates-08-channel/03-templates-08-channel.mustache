@@ -2,35 +2,64 @@
   {{&gt; organisms-header }}
 
   &lt;div class=&quot;main cf&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
-    &lt;div class=&quot;page-header lc&quot;&gt;
-      &lt;h1 class=&quot;page-title center&quot;&gt;{{ page-title }}&lt;/h1&gt;
-    &lt;/div&gt; &lt;!-- /.page-header --&gt;
-    &lt;div class=&quot;lc lc-inner cf space-btm channel--feature&quot;&gt;
-      &lt;section class=&quot;section promo-blocks-w-hero cf&quot;&gt;
-        {{# top-promo-blocks }}
-          &lt;div class=&quot;col1 col1--hero&quot;&gt;
-            {{# col1-hero }}
-              {{&gt; molecules-block-thumb-headline }}
-            {{/ col1-hero }}
-          &lt;/div&gt; &lt;!-- /.col1--hero --&gt;
-          &lt;div class=&quot;col2 cf&quot;&gt;
-            {{# col2-promo-blocks }}
-              {{&gt; molecules-block-thumb-headline }}
-            {{/ col2-promo-blocks }}
-          &lt;/div&gt; &lt;!-- .col2 --&gt;
-          &lt;div class=&quot;col3 cf&quot;&gt;
-            {{# col3-promo-blocks }}
-              {{&gt; molecules-block-thumb-headline }}
-            {{/ col3-promo-blocks }}
-          &lt;/div&gt; &lt;!-- .col3 --&gt;
-        {{/ top-promo-blocks }}
-      &lt;/section&gt; &lt;!-- /.promo-blocks-w-hero --&gt;
-      &lt;hr class=&quot;hr--xl space-double-btm no-space-top&quot;&gt;
-    &lt;/div&gt; &lt;!-- /.lc-inner --&gt;
+    &lt;div class=&quot;lc&quot;&gt;
+      &lt;div class=&quot;page-header&quot;&gt;
+        &lt;h1 class=&quot;page-title center&quot;&gt;{{ page-title }}&lt;/h1&gt;
+      &lt;/div&gt; &lt;!-- /.page-header --&gt;
+    &lt;/div&gt; &lt;!-- /.lc --&gt;
+
+    {{# is-channel-narrow }}
+
+      &lt;div class=&quot;lc lc-inner cf space-btm channel--feature&quot;&gt;
+        &lt;section class=&quot;section blocks-w-hero col3-blocks-w-hero cf&quot;&gt;
+          {{# top-promo-blocks }}
+            &lt;div class=&quot;col1 col--hero&quot;&gt;
+              {{# col-hero }}
+                {{&gt; molecules-block-thumb-headline }}
+              {{/ col-hero }}
+            &lt;/div&gt; &lt;!-- /.col1 --&gt;
+            &lt;div class=&quot;col2 cf&quot;&gt;
+              {{# col2-promo-blocks }}
+                {{&gt; molecules-block-thumb-headline }}
+              {{/ col2-promo-blocks }}
+            &lt;/div&gt; &lt;!-- .col2 --&gt;
+            &lt;div class=&quot;col3 cf&quot;&gt;
+              {{# col3-promo-blocks }}
+                {{&gt; molecules-block-thumb-headline }}
+              {{/ col3-promo-blocks }}
+            &lt;/div&gt; &lt;!-- .col3 --&gt;
+          {{/ top-promo-blocks }}
+        &lt;/section&gt; &lt;!-- /.promo-blocks-w-hero --&gt;
+        &lt;hr class=&quot;hr--xl space-double-btm no-space-top&quot;&gt;
+      &lt;/div&gt; &lt;!-- /.lc-inner --&gt;
+
+    {{/ is-channel-narrow }}
 
     &lt;div class=&quot;lc cf&quot;&gt;
       &lt;div class=&quot;primary no-space-btm no-pad-btm&quot;&gt;
         &lt;div class=&quot;primary-inner no-space-btm&quot;&gt;
+
+          {{# is-channel-wide }}
+
+            &lt;div class=&quot;cf space-btm channel--feature&quot;&gt;
+              &lt;section class=&quot;section blocks-w-hero col2-blocks-w-hero cf&quot;&gt;
+                {{# top-promo-blocks }}
+                  &lt;div class=&quot;col1 col--hero&quot;&gt;
+                    {{# col-hero }}
+                      {{&gt; molecules-block-thumb-headline }}
+                    {{/ col-hero }}
+                  &lt;/div&gt; &lt;!-- .col1 --&gt;
+                  &lt;div class=&quot;col2 cf&quot;&gt;
+                    {{# col2-promo-blocks }}
+                      {{&gt; molecules-block-thumb-headline }}
+                    {{/ col2-promo-blocks }}
+                  &lt;/div&gt; &lt;!-- /.col2 --&gt;
+                {{/ top-promo-blocks }}
+              &lt;/section&gt; &lt;!-- /.promo-blocks-w-hero --&gt;
+              &lt;hr class=&quot;space-double-btm no-space-top&quot;&gt;
+            &lt;/div&gt; &lt;!-- /.channel--feature --&gt;
+
+          {{/ is-channel-wide }}
 
           &lt;section class=&quot;section content-modules&quot;&gt;
             {{# content-modules-1 }}
@@ -64,7 +93,7 @@
         &lt;/div&gt; &lt;!-- /.primary-inner --&gt;
       &lt;/div&gt; &lt;!-- /.primary --&gt;
 
-      &lt;div class=&quot;secondary&quot;&gt;
+      &lt;div class=&quot;secondary no-pad-top&quot;&gt;
         {{&gt; organisms-sidebar }}
       &lt;/div&gt; &lt;!-- /.secondary --&gt;
     &lt;/div&gt; &lt;!-- /.lc --&gt;

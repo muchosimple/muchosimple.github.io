@@ -9,50 +9,56 @@
 			"social-tools" : false
 		}
 	],
-	"col2-promo-blocks" : [
+	"is-channel-narrow" : [
 		{
-			"block-class" : "center",
-			"img" : {
-				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_daily_finds_tout/public/korres-sun-veil_0.jpg?itok=VSkbq9ZP",
-				"alt" : "8 Standout Sunscreens"
-			},
-			"title" : "8 Standout Sunscreens"
-		},
-		{
-			"block-class" : "center",
-			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/wpixm/abc/rFZ4k/wpixm-wZS-225x150.jpg",
-				"alt" : ""
-			},
-			"title" : "Easy Home Decorating DIY Ideas"
-		}
-	],
-	"col1-hero" : [
-		{
-			"block-class" : "center",
-			"img" : {
-				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/corner-mudroom.jpg?itok=bb2Pyqdb",
-				"alt" : "5 Ways to Fake a Mudroom"
-			},
-			"title" : "5 Ways to Fake a Mudroom"
-		}
-	],
-	"col3-promo-blocks" : [
-		{
-			"block-class" : "center",
-			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/wpr3J/abc/10YXgc/wpr3J-wZS-225x150.jpg",
-				"alt" : "Best Ways to Organize Your Kitchen"
-			},
-			"title" : "Best Ways to Organize Your Kitchen"
-		},
-		{
-			"block-class" : "center",
-			"img" : {
-				"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_daily_finds_tout/public/lucy-triangle-bra.jpg?itok=UXEykSeb",
-				"alt" : "9 Comfortable Bras for Every Shape"
-			},
-			"title" : "9 Comfortable Bras for Every Shape"
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"col2-promo-blocks" : [
+				{
+					"block-class" : "center",
+					"img" : {
+						"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_daily_finds_tout/public/korres-sun-veil_0.jpg?itok=VSkbq9ZP",
+						"alt" : "8 Standout Sunscreens"
+					},
+					"title" : "8 Standout Sunscreens"
+				},
+				{
+					"block-class" : "center",
+					"img" : {
+						"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/wpixm/abc/rFZ4k/wpixm-wZS-225x150.jpg",
+						"alt" : ""
+					},
+					"title" : "Easy Home Decorating DIY Ideas"
+				}
+			],
+			"col-hero" : [
+				{
+					"block-class" : "center",
+					"img" : {
+						"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/corner-mudroom.jpg?itok=bb2Pyqdb",
+						"alt" : "5 Ways to Fake a Mudroom"
+					},
+					"title" : "5 Ways to Fake a Mudroom"
+				}
+			],
+			"col3-promo-blocks" : [
+				{
+					"block-class" : "center",
+					"img" : {
+						"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/wpr3J/abc/10YXgc/wpr3J-wZS-225x150.jpg",
+						"alt" : "Best Ways to Organize Your Kitchen"
+					},
+					"title" : "Best Ways to Organize Your Kitchen"
+				},
+				{
+					"block-class" : "center",
+					"img" : {
+						"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_daily_finds_tout/public/lucy-triangle-bra.jpg?itok=UXEykSeb",
+						"alt" : "9 Comfortable Bras for Every Shape"
+					},
+					"title" : "9 Comfortable Bras for Every Shape"
+				}
+			]
 		}
 	],
 	"content-modules-1" : [

@@ -90,12 +90,11 @@
 		margin-right: rem(-$sidebar-width - 80);
 	}
 	@include mq($larger-break) {
-		margin-right: rem(-$sidebar-width - 100);
+		margin-right: rem(-$sidebar-width - 94);
 	}
 }
 .primary-inner {
 	padding-bottom: $pad;
-	//border-bottom: $border-style-light;
 	@include mq($medium-break) {
 		margin-right: rem($sidebar-width + 50);
 	}
@@ -103,7 +102,7 @@
 		margin-right: rem($sidebar-width + 80);
 	}
 	@include mq($larger-break) {
-		margin-right: rem($sidebar-width + 100);
+		margin-right: rem($sidebar-width + 94);
 	}
 }
 .secondary {
