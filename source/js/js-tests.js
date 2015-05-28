@@ -184,6 +184,11 @@
     $slideGrid.find('.lazy').lazyload();
   });
 
+  // Disable click event.
+  $('.owl-buttons').on('click', 'a', function(e){
+    e.preventDefault();
+  });
+
   // Move the carousel depending on which slide is active.
   function centerCarousel(number){
     var carouselVisible = $carousel.data('owlCarousel').owl.visibleItems;
