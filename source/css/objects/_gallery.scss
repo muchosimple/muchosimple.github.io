@@ -106,6 +106,7 @@
   }
   .slide-text .icon-arrow-left {
     @extend .icon--disabled;
+    cursor: default;
   }
 }
 .slide--end {
@@ -113,8 +114,9 @@
     display: none;
   }
   .slide-text .icon-arrow-right,
-  .slide--end .icon-arrow-right {
+  .icon-arrow-right {
     @extend .icon--disabled;
+    cursor: default;
   }
 }
 
