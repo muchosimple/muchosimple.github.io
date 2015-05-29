@@ -8,25 +8,29 @@
 			"title" : "Clothing"
 		}
 	],
-	"dd-title" : "Topics",
-	"dd-list" : [
+	"dropdown" : [
 		{
-			"title" : "Blouses"
-		},
-		{
-			"title" : "Coats"
-		},
-		{
-			"title" : "Dresses"
-		},
-		{
-			"title" : "Hosiery"
-		},
-		{
-			"title" : "Jeans"
-		},
-		{
-			"title" : "Lingerie"
+			"dd-title" : "Topics",
+			"dd-list" : [
+				{
+					"title" : "Blouses"
+				},
+				{
+					"title" : "Coats"
+				},
+				{
+					"title" : "Dresses"
+				},
+				{
+					"title" : "Hosiery"
+				},
+				{
+					"title" : "Jeans"
+				},
+				{
+					"title" : "Lingerie"
+				}
+			]
 		}
 	],
 	"content-modules-1" : [

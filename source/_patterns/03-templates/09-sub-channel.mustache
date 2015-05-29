@@ -6,13 +6,17 @@
 
           {{# sub-channel-head }}
             <header class="article-header sub-channel-header cf pad-btm b-btm space-and-half-btm">
-              <div class="left-side">
+              {{# dropdown }}
+                <div class="left-side">
+              {{/ dropdown }}
                 {{> molecules-kicker }}
                 <h1 class="lead-headline space-half-btm" itemprop="headline">{{ title }}</h1>
+              {{# dropdown }}
               </div> <!-- /.left-side -->
-              <div class="right-side">
-                {{> molecules-dropdown }}
-              </div> <!-- /.right-side -->
+                <div class="right-side">
+                  {{> molecules-dropdown }}
+                </div> <!-- /.right-side -->
+              {{/ dropdown }}
             </header> <!-- /.sub-channel-header -->
           {{/ sub-channel-head }}
 
