@@ -1,0 +1,49 @@
+<div class="page">
+  {{> organisms-header }}
+    <div class="main cf lc" role="main" aria-live="polite">
+      <div class="primary no-space-btm no-pad-btm">
+        <div class="primary-inner no-space-btm">
+
+          {{# sub-channel-head }}
+            <header class="article-header sub-channel-header cf pad-btm b-btm space-and-half-btm">
+              <div class="left-side">
+                {{> molecules-kicker }}
+                <h1 class="lead-headline space-half-btm" itemprop="headline">{{ title }}</h1>
+              </div> <!-- /.left-side -->
+              <div class="right-side">
+                {{> molecules-dropdown }}
+              </div> <!-- /.right-side -->
+            </header> <!-- /.sub-channel-header -->
+          {{/ sub-channel-head }}
+
+          <section class="section content-modules">
+            {{# content-modules-1 }}
+              {{> molecules-block-thumb-headline }}
+            {{/ content-modules-1 }}
+          </section> <!-- /.content-modules -->
+
+          <div class="pager center pad-double-btm pad-top space-double-btm">
+            <a href="" class="btn load-more">Load More</a>
+          </div> <!-- /.pager -->
+
+        </div> <!-- /.primary-inner -->
+      </div> <!-- /.primary -->
+
+      <div class="secondary no-pad-top">
+        {{> organisms-sidebar }}
+      </div> <!-- /.secondary -->
+    </div><!-- /role=main -->
+
+    <div class="lc lc-inner space-double-btm pad-half-top">
+      <hr class="hr--s no-space-top space-btm">
+      <div class="ad-blocks ad-responsive ad-instream">
+        <div class="ad-block ad-300x250 hide-larger hide-large"><a href=""><img src="http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg"></a></div>
+        <div class="ad-block ad-728x90 hide-larger hide-med hide-small"><a href=""><img src="http://s1.2mdn.net/viewad/3340030/clx_clb_e40024_value-oxi_rev_728x90.jpg"></a></div>
+        <div class="ad-block ad-970x90 hide-large hide-med hide-small"><a href=""><img src="http://d.pr/i/10NZe+"></a></div>
+      </div> <!-- /.ad-responsive -->
+      <hr class="hr--l space-half-top no-space-btm">
+    </div> <!-- /.lc-inner -->
+
+  {{> organisms-footer }}
+</div> <!-- /.page -->
+

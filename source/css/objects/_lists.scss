@@ -41,12 +41,14 @@
   h4 {
     font-weight: normal;
   }
-  a {
-    display: block;
-    font-size: rem(18);
-    color: $black;
-    &:hover {
-      color: $pink;
+  &:not(.dd-list) {
+    a {
+      display: block;
+      font-size: rem(18);
+      color: $black;
+      &:hover {
+        color: $pink;
+      }
     }
   }
 }

@@ -1,0 +1,158 @@
+{
+	"title" : "Style - Clothing",
+	"bodyClass": "sub-channel-page",
+	"content-type" : "Sub Channel",
+	"sub-channel-head" : [
+		{
+			"kicker" : "Style",
+			"title" : "Clothing"
+		}
+	],
+	"dd-title" : "Topics",
+	"dd-list" : [
+		{
+			"title" : "Blouses"
+		},
+		{
+			"title" : "Coats"
+		},
+		{
+			"title" : "Dresses"
+		},
+		{
+			"title" : "Hosiery"
+		},
+		{
+			"title" : "Jeans"
+		},
+		{
+			"title" : "Lingerie"
+		}
+	],
+	"content-modules-1" : [
+		{
+			"block-class" : "content-module has-video",
+			"dek-class" : "alt-dek",
+			"is-video" : true,
+			"kicker-btm" : true,
+			"kicker" : "Home",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uaGQC/abc/vjSrj/uaGQC-wZS-320x215.jpg",
+				"alt" : "33 Modern Living Room Design Ideas"
+			},
+			"title" : "33 Modern Living Room Design Ideas",
+			"dek" : "If you could only choose one room in your home to put your heart and soul into designing, the living room would top the list."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Weddings",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGs/n/ubUkv/abc/ztNhj/ubUkv-wZS-320x215.jpg",
+				"alt" : "How to Simplify Wedding Planning"
+			},
+			"title" : "How to Simplify Wedding Planning",
+			"dek" : "Take our survey and share your ideas for planning a stress-free celebration."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Fashion",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGs/n/uc6lJ/abc/10YVXI/uc6lJ-wZS-320x215.jpg",
+				"alt" : "The 9 New Rules of Plus-Size Dressing"
+			},
+			"title" : "The 9 New Rules of Plus-Size Dressing",
+			"dek" : "Convinced that you’re bound by certain style guidelines if you’re over a size 14? Get ready to change your mind."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Style",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/372r/n/13ogGI/abc/10Xt35/13ogGI-wZS-320x215.jpg",
+				"alt" : "6 Hair Growth Myths You (Probably) Believe"
+			},
+			"title" : "6 Hair Growth Myths You (Probably) Believe",
+			"dek" : "Before you spend time or money on a hair-brained scheme, get to the root of the problem by learning these six follicular fallacies."
+		},
+		{
+			"block-class" : "is-sponsored content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"is_sponsored" : true,
+			"sponsor" : "Kraft",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/1413Dc/abc/10Xuv4/1413Dc-wZS-320x215.jpg",
+				"alt" : "7 Smart Organizing Tricks You Probably Haven’t Tried (but Should!)"
+			},
+			"title" : "7 Smart Organizing Tricks You Probably Haven’t Tried (but Should!)",
+			"dek" : "It’s true: closets, desks, drawers, and countertops overflowing with clutter can cause stress and guilt."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Gifts",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/udcLc/abc/10YVXE/udcLc-wZS-320x215.jpg",
+				"alt" : "15 Low Carb Breakfast Ideas"
+			},
+			"title" : "15 Low Carb Breakfast Ideas",
+			"dek" : "Start the day with protein-packed recipes that will leave you satiated and energized for hours."
+		},
+		{
+			"block-class" : "is-sponsored content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Home Organizing",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/wuUYy/abc/rJa7Z/wuUYy-wZS-320x215.jpg",
+				"alt" : "All About Appliances"
+			},
+			"title" : "All About Appliances",
+			"dek" : "Learn how to buy (and clean) home and kitchen appliances, avoid expensive appliance repairs, and reuse your existing appliances in clever ways."
+		},
+		{
+			"block-class" : "content-module has-video",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"is-video" : true,
+			"kicker" : "Decorating",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/11nm8U/abc/10Y7jl/11nm8U-wZS-320x215.jpg",
+				"alt" : "8 Ways to Create a Sleep Sanctuary"
+			},
+			"title" : "8 Ways to Create a Sleep Sanctuary",
+			"dek" : "To make your bedroom an (ultra-functional) picture of bliss, follow the decorating pros' M.O.’s."
+		},
+		{
+			"block-class" : "is-sponsored content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Simple Guides",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uabng/abc/10YVVm/uabng-wZS-320x215.jpg",
+				"alt" : "10 Cheap Organizing Hacks for a Clutter-Free Home"
+			},
+			"title" : "10 Cheap Organizing Hacks for a Clutter-Free Home",
+			"dek" : "Create order out of chaos with creative, low-cost—or, even better, no-cost!—DIY ideas."
+		},
+		{
+			"block-class" : "content-module has-video",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"is-video" : true,
+			"kicker" : "Home & Organizing",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGs/n/14cWKI/abc/10BjhK/14cWKI-wZS-320x215.jpg",
+				"alt" : "How to Clean Your Apartment With Minimal Effort"
+			},
+			"title" : "How to Clean Your Apartment With Minimal Effort",
+			"dek" : "We know you're not going to deep-clean the bathroom every week, so here are the areas you need to hit (and ones you can avoid)."
+		}
+	]
+}
