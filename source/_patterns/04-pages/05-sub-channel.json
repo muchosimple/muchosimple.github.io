@@ -31,128 +31,175 @@
 	],
 	"content-modules-1" : [
 		{
-			"block-class" : "content-module has-video",
+			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
-			"is-video" : true,
 			"kicker-btm" : true,
-			"kicker" : "Home",
+			"kicker" : "Wardrobe Basics",
 			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uaGQC/abc/vjSrj/uaGQC-wZS-320x215.jpg",
-				"alt" : "33 Modern Living Room Design Ideas"
+				"src" : "http://d.pr/i/19NIp+",
+				"alt" : "How to Nail the Classic American Look"
 			},
-			"title" : "33 Modern Living Room Design Ideas",
-			"dek" : "If you could only choose one room in your home to put your heart and soul into designing, the living room would top the list."
+			"title" : "How to Nail the Classic American Look",
+			"dek" : "Timeless picks (chambray, stripes, espadrilles), retro-priced for your wallet."
 		},
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
-			"kicker" : "Weddings",
+			"kicker" : "Bathing Suits",
 			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGs/n/ubUkv/abc/ztNhj/ubUkv-wZS-320x215.jpg",
-				"alt" : "How to Simplify Wedding Planning"
+				"src" : "http://d.pr/i/14eFH+",
+				"alt" : "Bathing Suits for 2015 You'll Actually Want to Wear"
 			},
-			"title" : "How to Simplify Wedding Planning",
-			"dek" : "Take our survey and share your ideas for planning a stress-free celebration."
+			"title" : "Bathing Suits for 2015 You'll Actually Want to Wear",
+			"dek" : "Real Simple helped nine real women with nine real bodies find an on-trend swimsuit they love."
 		},
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
-			"kicker" : "Fashion",
+			"kicker" : "Shoes",
 			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGs/n/uc6lJ/abc/10YVXI/uc6lJ-wZS-320x215.jpg",
-				"alt" : "The 9 New Rules of Plus-Size Dressing"
+				"src" : "http://d.pr/i/10kvu+",
+				"alt" : "9 Weekend Getaway Essentials"
 			},
-			"title" : "The 9 New Rules of Plus-Size Dressing",
-			"dek" : "Convinced that you’re bound by certain style guidelines if you’re over a size 14? Get ready to change your mind."
+			"title" : "9 Weekend Getaway Essentials",
+			"dek" : "Think of these ultra-comfortable espadrilles as the summertime alternative to your ballet flats."
 		},
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
-			"kicker" : "Style",
+			"kicker" : "Swimwear",
 			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/372r/n/13ogGI/abc/10Xt35/13ogGI-wZS-320x215.jpg",
-				"alt" : "6 Hair Growth Myths You (Probably) Believe"
+				"src" : "http://d.pr/i/1bhyU+",
+				"alt" : "A Brief History of the Bathing Suit"
 			},
-			"title" : "6 Hair Growth Myths You (Probably) Believe",
-			"dek" : "Before you spend time or money on a hair-brained scheme, get to the root of the problem by learning these six follicular fallacies."
+			"title" : "A Brief History of the Bathing Suit",
+			"dek" : "From head-to-toe Victorian bathing costumes to the iconic two-piece, here’s how women’s swimwear has evolved over the years."
 		},
 		{
 			"block-class" : "is-sponsored content-module",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"is_sponsored" : true,
-			"sponsor" : "Kraft",
+			"sponsor" : "Clothing",
 			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/1413Dc/abc/10Xuv4/1413Dc-wZS-320x215.jpg",
-				"alt" : "7 Smart Organizing Tricks You Probably Haven’t Tried (but Should!)"
+				"src" : "http://d.pr/i/1bFft+",
+				"alt" : "8 Spring Essentials Under $50"
 			},
-			"title" : "7 Smart Organizing Tricks You Probably Haven’t Tried (but Should!)",
-			"dek" : "It’s true: closets, desks, drawers, and countertops overflowing with clutter can cause stress and guilt."
+			"title" : "8 Spring Essentials Under $50",
+			"dek" : "It may not be summer yet, but you can still get a head start on your warm-weather wardrobe with these well-priced buys."
 		},
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
-			"kicker" : "Gifts",
+			"kicker" : "Trends",
 			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/udcLc/abc/10YVXE/udcLc-wZS-320x215.jpg",
-				"alt" : "15 Low Carb Breakfast Ideas"
+				"src" : "http://d.pr/i/1j6zq+",
+				"alt" : "Spring Fashion Trends"
 			},
-			"title" : "15 Low Carb Breakfast Ideas",
-			"dek" : "Start the day with protein-packed recipes that will leave you satiated and energized for hours."
+			"title" : "Spring Fashion Trends",
+			"dek" : "Seasonal looks you’ll love, come rain or come shine."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Runway",
+			"img" : {
+				"src" : "http://d.pr/i/141UW+",
+				"alt" : "One Spring Trend You Have to Try"
+			},
+			"title" : "One Spring Trend You Have to Try",
+			"dek" : "Transition this runway-inspired style into your everyday life."
+		},
+		{
+			"block-class" : "content-module has-video",
+			"dek-class" : "alt-dek",
+			"is-video" : true,
+			"kicker-btm" : true,
+			"kicker" : "Wardrobe Basics",
+			"img" : {
+				"src" : "http://d.pr/i/19NIp+",
+				"alt" : "How to Nail the Classic American Look"
+			},
+			"title" : "How to Nail the Classic American Look",
+			"dek" : "Timeless picks (chambray, stripes, espadrilles), retro-priced for your wallet."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Bathing Suits",
+			"img" : {
+				"src" : "http://d.pr/i/14eFH+",
+				"alt" : "Bathing Suits for 2015 You'll Actually Want to Wear"
+			},
+			"title" : "Bathing Suits for 2015 You'll Actually Want to Wear",
+			"dek" : "Real Simple helped nine real women with nine real bodies find an on-trend swimsuit they love."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Shoes",
+			"img" : {
+				"src" : "http://d.pr/i/10kvu+",
+				"alt" : "9 Weekend Getaway Essentials"
+			},
+			"title" : "9 Weekend Getaway Essentials",
+			"dek" : "Think of these ultra-comfortable espadrilles as the summertime alternative to your ballet flats."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Swimwear",
+			"img" : {
+				"src" : "http://d.pr/i/1bhyU+",
+				"alt" : "A Brief History of the Bathing Suit"
+			},
+			"title" : "A Brief History of the Bathing Suit",
+			"dek" : "From head-to-toe Victorian bathing costumes to the iconic two-piece, here’s how women’s swimwear has evolved over the years. (Good news: Those teeny-weeny bikinis actually aren’t getting teenier!)"
 		},
 		{
 			"block-class" : "is-sponsored content-module",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
-			"kicker" : "Home Organizing",
+			"is_sponsored" : true,
+			"sponsor" : "Clothing",
 			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/wuUYy/abc/rJa7Z/wuUYy-wZS-320x215.jpg",
-				"alt" : "All About Appliances"
+				"src" : "http://d.pr/i/1bFft+",
+				"alt" : "8 Spring Essentials Under $50"
 			},
-			"title" : "All About Appliances",
-			"dek" : "Learn how to buy (and clean) home and kitchen appliances, avoid expensive appliance repairs, and reuse your existing appliances in clever ways."
+			"title" : "8 Spring Essentials Under $50",
+			"dek" : "It may not be summer yet, but you can still get a head start on your warm-weather wardrobe with these well-priced buys."
 		},
 		{
-			"block-class" : "content-module has-video",
+			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
-			"is-video" : true,
-			"kicker" : "Decorating",
+			"kicker" : "Trends",
 			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/11nm8U/abc/10Y7jl/11nm8U-wZS-320x215.jpg",
-				"alt" : "8 Ways to Create a Sleep Sanctuary"
+				"src" : "http://d.pr/i/1j6zq+",
+				"alt" : "Spring Fashion Trends"
 			},
-			"title" : "8 Ways to Create a Sleep Sanctuary",
-			"dek" : "To make your bedroom an (ultra-functional) picture of bliss, follow the decorating pros' M.O.’s."
+			"title" : "Spring Fashion Trends",
+			"dek" : "Seasonal looks you’ll love, come rain or come shine."
 		},
 		{
-			"block-class" : "is-sponsored content-module",
+			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
-			"kicker" : "Simple Guides",
+			"kicker" : "Runway",
 			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uabng/abc/10YVVm/uabng-wZS-320x215.jpg",
-				"alt" : "10 Cheap Organizing Hacks for a Clutter-Free Home"
+				"src" : "http://d.pr/i/141UW+",
+				"alt" : "One Spring Trend You Have to Try"
 			},
-			"title" : "10 Cheap Organizing Hacks for a Clutter-Free Home",
-			"dek" : "Create order out of chaos with creative, low-cost—or, even better, no-cost!—DIY ideas."
-		},
-		{
-			"block-class" : "content-module has-video",
-			"dek-class" : "alt-dek",
-			"kicker-btm" : true,
-			"is-video" : true,
-			"kicker" : "Home & Organizing",
-			"img" : {
-				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGs/n/14cWKI/abc/10BjhK/14cWKI-wZS-320x215.jpg",
-				"alt" : "How to Clean Your Apartment With Minimal Effort"
-			},
-			"title" : "How to Clean Your Apartment With Minimal Effort",
-			"dek" : "We know you're not going to deep-clean the bathroom every week, so here are the areas you need to hit (and ones you can avoid)."
+			"title" : "One Spring Trend You Have to Try",
+			"dek" : "Transition this runway-inspired style into your everyday life."
 		}
 	]
 }
