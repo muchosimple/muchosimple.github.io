@@ -42,7 +42,7 @@
 }
 // Block title hover styles
 // Blocks that are wrapped in an <a>
-.b-inner:hover {
+a.b-inner:hover {
   .b-title {
     color: $pink;
     span {
