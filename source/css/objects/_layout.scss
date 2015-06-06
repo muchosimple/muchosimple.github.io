@@ -183,6 +183,7 @@
 
 /* Grid Half (Always displayed side by side) */
 .g-half {
+	// Layout: [][]
 	> .gi {
 		float: left;
 		width: 50%;
@@ -194,15 +195,52 @@
 
 /* Grid 3up */
 .g-3up {
+	// Layout:
+	// []
+	// []
+	// []
 	.b-title {
 		@include mq($px600, max) {
 			font-size: rem(18);
 		}
 	}
 	@media all and (min-width: $px400) {
+		// Layout: [][][]
 		> .gi {
 			float: left;
 			width: 50%;
+			width: 33.3333333%;
+		}
+	}
+}
+
+// Grid 3up version 2 - instead of going from i column to 2 columns, this adds
+// a middle breakpoint for 2 at top and one below centered.
+.g-3up-v2 {
+	// Layout:
+	// []
+	// []
+	// []
+	text-align: center;
+	.b-title {
+		@media (max-width: $px600), (min-width: $medium-break) and (max-width: $px900), (min-width: $large-break)  {
+			font-size: rem(25);
+		}
+	}
+	@media (min-width: $px400) and (max-width: $px600), (min-width: $medium-break) and (max-width: $px900) {
+		// Layout:
+		// [][]
+		//  []
+		> .gi {
+			display: inline-block;
+			width: 49%;
+			float: none;
+		}
+	}
+	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px900)  {
+		// Layout: [][][]
+		> .gi {
+			float: left;
 			width: 33.3333333%;
 		}
 	}
@@ -213,7 +251,7 @@
 	@include g-4up;
 }
 
-// Grid 4up with
+// Grid 4up with custom breakpoints
 .g-4up-v2 {
 	@include g-4up($micro-break, $larger-break);
 }

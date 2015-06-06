@@ -513,11 +513,13 @@ a.b-inner:hover {
 // Content Modules (Home & Channel stacked blocks)
 .content-module {
   margin-bottom: rem(30);
-  max-width: rem(320);
   @include center-block;
-  @include mq($px450) {
-    @include table-layout(40%, 60%);
-    max-width: none;
+  &:not(.stacked) {
+    max-width: rem(320);
+    @include mq($px450) {
+      @include table-layout(40%, 60%);
+      max-width: none;
+    }
   }
   .kicker {
     margin-top: 0;

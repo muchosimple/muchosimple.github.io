@@ -1,0 +1,61 @@
+<div class="page">
+  {{> organisms-header }}
+    <div class="main cf lc" role="main" aria-live="polite">
+      <div class="primary">
+        <div class="primary-inner">
+
+          {{# package-head }}
+            <header class="article-header package-header cf center">
+              <h1 class="lead-headline upper pink" itemprop="headline">{{ title }}</h1>
+              <h2 class="lead-subtitle narrow" itemprop="alternativeHeadline">{{ subtitle }}</h2>
+            </header> <!-- /.package-header -->
+          {{/ package-head }}
+
+          <section class="section package-featured space-double-btm pad-btm">
+            <div class="g g-3up-v2">
+              {{# package-featured }}
+                <div class="gi">{{> molecules-block-thumb-headline }}</div>
+              {{/ package-featured }}
+            </div> <!-- /.g-3up-v2 -->
+          </section> <!-- /.package-featured -->
+
+          <section class="section content-modules">
+            <header class="s-header space-double-btm">
+              <h3 class="s-title heading with-wings"><span>Snack Chat</span></h3>
+            </header> <!-- /.s-header -->
+            {{# content-modules-1 }}
+              {{> molecules-block-thumb-headline }}
+            {{/ content-modules-1 }}
+          </section> <!-- /.content-modules -->
+
+          {{# checklist-section }}
+            <section class="section checklist-promo center space-double-btm">
+              <header class="s-header space-double-btm">
+                <h3 class="s-title heading with-wings"><span>Checklist</span></h3>
+              </header> <!-- /.s-header -->
+              <div class="narrow">
+                {{> molecules-block-thumb-headline }}
+              </div> <!-- /.narrow -->
+            </section> <!-- /.checklist-promo -->
+          {{/ checklist-section }}
+
+          <section class="section content-modules">
+            <header class="s-header space-double-btm">
+              <h3 class="s-title heading with-wings"><span>Ingredient Guide</span></h3>
+            </header> <!-- /.s-header -->
+            {{# content-modules-2 }}
+              {{> molecules-block-thumb-headline }}
+            {{/ content-modules-2 }}
+          </section> <!-- /.content-modules -->
+
+        </div> <!-- /.primary-inner -->
+      </div> <!-- /.primary -->
+
+      <div class="secondary no-pad-top">
+        {{> organisms-sidebar }}
+      </div> <!-- /.secondary -->
+    </div><!-- /role=main -->
+
+  {{> organisms-footer }}
+</div> <!-- /.page -->
+

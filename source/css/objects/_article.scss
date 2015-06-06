@@ -15,6 +15,14 @@
 			margin-bottom: rem(24);
 		}
 	}
+	&.package-header {
+		.lead-subtitle {
+			margin-bottom: 0;
+		}
+		.lead-headline {
+			margin-bottom: rem(15);
+		}
+	}
 }
 .header-img {
 	margin: $space 0 $space-half;

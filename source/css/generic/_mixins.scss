@@ -395,7 +395,15 @@ $supported: true !default;
 
 // Grid with 4 items with custom breakpoints
 @mixin g-4up($bp1: $bp-med, $bp2: $bp-large) {
+  // Layout:
+  // []
+  // []
+  // []
+  // []
   @include mq($bp1) {
+    // Layout:
+    // [][]
+    // [][]
     > .gi {
       float: left;
       width: 50%;
@@ -405,6 +413,7 @@ $supported: true !default;
     }
   }
   @include mq($bp2) {
+    // Layout: [][][][]
     > .gi {
       width: 25%;
       &:nth-of-type(2n+1) {
@@ -420,6 +429,9 @@ $supported: true !default;
 // 4-up for shifting to 4 across early. Works best with vertical images.
 @mixin g-4up-early-break($bp1: $micro-break, $bp2: $large-break) {
   > .gi {
+    // Layout:
+    // [][]
+    // [][]
     float: left;
     width: 50%;
     margin-bottom: $space;
@@ -434,6 +446,7 @@ $supported: true !default;
     font-size: rem(18);
   }
   @include mq($bp1) {
+    // Layout: [][][][]
     > .gi {
       width: 25%;
       margin-bottom: 0;

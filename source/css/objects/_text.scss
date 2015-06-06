@@ -276,3 +276,30 @@
 		}
 	}
 }
+
+// Section header with colored background and left and right rules
+.with-wings {
+	text-align: center;
+	position: relative;
+	padding: $pad-half 0;
+	margin-bottom: $space;
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: 0;
+		border-bottom: $border-style;
+		top: rem(20);
+		left: 0;
+		width: 100%;
+	}
+	span {
+		display: inline-block;
+		padding: rem(2) rem(4) rem(1);
+		background-color: $pink;
+		position: relative;
+		z-index: 10;
+		line-height: 1;
+		color: $white;
+		font-size: rem(20);
+	}
+}
