@@ -467,6 +467,9 @@
       &:nth-child(3n+3) {
         margin-right: 5.333%;
       }
+      &:nth-child(4n+4) {
+        margin-right: 0;
+      }
     }
   }
   .b-inner {
