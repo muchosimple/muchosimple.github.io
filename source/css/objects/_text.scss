@@ -275,6 +275,13 @@
 			margin-bottom: 0;
 		}
 	}
+	table,
+	td {
+		border: none;
+	}
+	table {
+		margin-bottom: rem(22);
+	}
 }
 
 // Section header with colored background and left and right rules

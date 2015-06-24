@@ -1,0 +1,48 @@
+{
+  "title" : "Featured Videos | What to Do If Your Wine Cork Breaks",
+  "bodyClass": "video-hub",
+  "more-links" : true,
+  "has-featured-stories" : false,
+  "content-type" : "Video",
+  "has-social-count" : "true",
+  "video-head" : [
+    {
+      "title" : "What to Do If Your Wine Cork Breaks",
+      "subtitle" : "The cork broke off while you were trying to open a bottle of wine? Here’s how to rescue the wine inside."
+    }
+  ],
+  "more-videos" : [
+    {
+      "block-class" : "",
+      "img" : {
+        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/0906/din-chicken-quesadillas_300.jpg?itok=gBgZgcXb"
+      },
+      "byline" : false,
+      "title" : "Grilled Chicken and Spinach Quesadillas"
+    },
+    {
+      "block-class" : "",
+      "img" : {
+        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0409/chicken-beans_300.jpg?itok=uzC5Hqdo"
+      },
+      "byline" : false,
+      "title" : "Pan-Roasted Chicken With Lemon-Garlic Green Beans"
+    },
+    {
+      "block-class" : "",
+      "img" : {
+        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0805/chicken-cashew_300.jpg?itok=0UUBaNgv"
+      },
+      "byline" : false,
+      "title" : "Chicken and Cashews in Lettuce Wraps"
+    },
+    {
+      "block-class" : "",
+      "img" : {
+        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0506/chicken-stroganoff-b_300.jpg?itok=Mn-MNrkg"
+      },
+      "byline" : false,
+      "title" : "Chicken Stroganoff"
+    }
+  ]
+}
