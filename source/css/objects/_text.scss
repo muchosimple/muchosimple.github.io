@@ -282,6 +282,9 @@
 	table {
 		margin-bottom: rem(22);
 	}
+	td > a:hover {
+		background: none;
+	}
 }
 
 // Section header with colored background and left and right rules
