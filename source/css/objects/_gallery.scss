@@ -142,7 +142,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-color: lighten($beige, 10);
+    background-color: $white;
     &:hover { // For images that are too small to fit within the large slide dimension.
       .img-overlay {
         bottom: 0;
