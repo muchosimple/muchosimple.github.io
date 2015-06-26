@@ -1,11 +1,16 @@
 &lt;div class=&quot;h-hide&quot;&gt;
-  &lt;nav class=&quot;util-nav js-hover&quot; data-prefix=&quot;util&quot;&gt;
+  &lt;nav class=&quot;util-nav js-hover {{# is-logged-in }} logged-in {{/ is-logged-in }}&quot; data-prefix=&quot;util&quot;&gt;
     &lt;ul class=&quot;util-nav-list&quot;&gt;
-      &lt;li class=&quot;li-vis&quot;&gt;&lt;a href=&quot;&quot;&gt;Welcome, Michelle&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Subscriptions&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Preferences&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Favorites&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Log Out&lt;/a&gt;&lt;/li&gt;
+      {{# is-logged-in }}
+        &lt;li class=&quot;li-vis&quot;&gt;&lt;a href=&quot;&quot;&gt;Welcome, Michelle&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Subscriptions&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Preferences&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Favorites&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Log Out&lt;/a&gt;&lt;/li&gt;
+      {{/ is-logged-in }}
+      {{^ is-logged-in }}
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Sign in&lt;/a&gt; &lt;span class=&quot;divider&quot;&gt;&lt;/span&gt; &lt;a href=&quot;&quot;&gt;Register&lt;/a&gt;&lt;/li&gt;
+      {{/ is-logged-in  }}
     &lt;/ul&gt; &lt;!-- /.util-nav-list --&gt;
   &lt;/nav&gt; &lt;!-- .util-nav --&gt;
 &lt;/div&gt; &lt;!-- /.h-hide --&gt;

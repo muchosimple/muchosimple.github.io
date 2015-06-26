@@ -13,6 +13,7 @@
   "has-994x250" : false,
   "has-link" : false,
   "has-top-ad" : true,
+  "is-logged-in" : true,
   "img": {
     "landscape-4x3": {
       "src": "../../images/fpo_4x3.png",

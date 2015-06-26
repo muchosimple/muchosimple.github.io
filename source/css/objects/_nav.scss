@@ -241,6 +241,7 @@
 	padding-top: rem(17);
 	padding-bottom: rem(17);
 	margin: rem(6) 0;
+	height: auto;
 }
 .l-alt a {
 	color: $gray-med-2;
@@ -338,13 +339,26 @@
 	width: rem(170);
 	z-index: 50000135;
 	border: 1px solid transparent;
+	.divider {
+		width: 1px;
+		display: inline-block;
+		background-color: $gray;
+		height: rem(15);
+		margin-bottom: rem(-3);
+	}
+	a {
+		display: inline-block;
+		line-height: 1;
+		padding: rem(10) 0 rem(9);
+		font-size: rem(14);
+	}
 	@include mq($medium-break) {
 		display: block;
 	}
 	@include mq($large-break) {
 		right: rem(10);
 	}
-	&.util-is-active {
+	&.util-is-active.logged-in {
 		border: $border-style;
 		li {
 			display: block;
@@ -353,29 +367,28 @@
 			border-bottom: $border-style;
 		}
 	}
-	li {
-		display: none;
-	}
-	.li-vis {
-		display: block;
+	&.logged-in {
+		li {
+			display: none;
+		}
+		.li-vis {
+			display: block;
+			a {
+				background-color: $white;
+				color: $pink;
+			}
+		}
 		a {
-			background-color: $white;
-			color: $pink;
+			display: block;
+			background-color: $gray-very-light;
+			color: $black;
+			&:hover {
+				color: $pink;
+			}
 		}
-	}
-	a {
-		display: block;
-		line-height: 1;
-		padding: rem(10) 0 rem(9);
-		font-size: rem(14);
-		background-color: $gray-very-light;
-		color: $black;
-		&:hover {
-			color: $pink;
+		li:last-child a {
+			border-bottom: none;
 		}
-	}
-	li:last-child a {
-		border-bottom: none;
 	}
 }
 
