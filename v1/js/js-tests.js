@@ -181,7 +181,16 @@
 
   // Load the images when the grid is present.
   $('.see-all--grid.js-toggle').on('click', function(){
-    $slideGrid.find('.lazy').lazyload();
+    if ($slideGrid.find('.fadein').length === 0) {
+      $slideGrid.find('.lazy').lazyload({
+        threshold: 800
+      });
+      $slideGrid.find('.gi').each(function(i){
+        $(this).delay(i * 300).queue(function() {
+          $(this).addClass('fadein').dequeue();
+        });
+      });
+    }
   });
 
   // Disable click event.
