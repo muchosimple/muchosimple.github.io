@@ -186,7 +186,7 @@
         threshold: 800
       });
       $slideGrid.find('.gi').each(function(i){
-        $(this).delay(i * 300).queue(function() {
+        $(this).delay(i * 200).queue(function() {
           $(this).addClass('fadein').dequeue();
         });
       });
