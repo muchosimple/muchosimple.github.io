@@ -77,14 +77,6 @@ $GLOBAL CLASSES
   text-align: left;
 }
 
-.v-align {
-  @include vh-center;
-}
-
-.mw-300 {
-  max-width: rem(300);
-}
-
 // Display Classes
 .hide-small {
   @include mq($medium-break, max) {
@@ -105,6 +97,9 @@ $GLOBAL CLASSES
   @media all and (min-width: $larger-break) {
     display: none;
   }
+}
+.show-all-vp {
+  display: block;
 }
 
 // States
@@ -186,6 +181,9 @@ $GLOBAL CLASSES
 .b-btm {
   border-bottom: $border-style;
 }
+.b-top {
+  border-top: $border-style;
+}
 
 // Number Colors Palette Classes
 .strong-blue .number--large {
@@ -205,6 +203,20 @@ $GLOBAL CLASSES
 }
 .dark-gray .number--large {
   color: $dark-gray;
+}
+
+// Color Classes
+.white {
+  color: $white;
+}
+.black {
+  color: $black;
+}
+.gray {
+  color: $gray;
+}
+.gray--dark {
+  color: $gray-dark;
 }
 
 // Absolute Positioning Elements
@@ -248,16 +260,24 @@ $GLOBAL CLASSES
   padding-bottom: $pad;
   padding-top: $pad;
 }
+.pad-and-half-top {
+  padding-top: $pad-and-half;
+}
+.pad-and-half-btm {
+  padding-bottom: $pad-and-half;
+}
 .pad-double-btm {
   padding-bottom: $pad-double;
 }
 .pad-double-top {
   padding-top: $pad-double;
 }
-.space-r {
+.space-r,
+.space-right {
   margin-right: $space;
 }
-.space-half-r {
+.space-half-r,
+.space-half-right {
   margin-right: $space-half;
 }
 .space-and-half-btm {
@@ -290,7 +310,8 @@ $GLOBAL CLASSES
 .no-pad {
   padding: 0;
 }
-.no-pad-l {
+.no-pad-l,
+.no-pad-left {
   padding-left: 0;
 }
 .no-pad-top {
@@ -298,5 +319,14 @@ $GLOBAL CLASSES
 }
 .no-pad-btm {
   padding-bottom: 0;
+}
+
+// Unsorted
+.v-align {
+  @include vh-center;
+}
+
+.mw-300 {
+  max-width: rem(300);
 }
 

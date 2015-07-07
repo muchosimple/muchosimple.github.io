@@ -851,5 +851,21 @@
     }
   }
 }
-// Package
-
+// Search
+.article-header.search-header {
+  border-bottom: $border-style;
+  @include mq($px600) {
+    padding-bottom: $pad-half;
+    margin-bottom: $space-and-half;
+  }
+  @include mq($px1050) {
+    margin-bottom: $space-double;
+  }
+}
+.search-results {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  @include mq($px600) {
+    margin-bottom: $space;
+  }
+}

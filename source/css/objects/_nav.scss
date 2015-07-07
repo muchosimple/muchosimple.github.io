@@ -403,6 +403,13 @@
 	}
 	.icon {
 		vertical-align: middle;
+		&:hover {
+			border: 1px solid $blue-light;
+			background-color: $blue-light;
+			path {
+				fill: $white;
+			}
+		}
 	}
 	li {
 		float: left;
@@ -413,7 +420,7 @@
 		width: $icon-medium;
 		height: $icon-medium;
 		padding: rem(6) rem(6) rem(4);
-		color: $gray-med;
+		color: $black;
 		display: block;
 		font-family: $font;
 		text-align: center;
@@ -424,8 +431,14 @@
 			color: $white;
 		}
 	}
+	.page-item.ellip {
+		margin: rem(13) rem(10) 0 rem(-10);
+	}
 	.current {
-		color: $black;
+		color: $gray-med;
+		background-color: $white;
+		border: $border-style;
+		line-height: 1.1;
 	}
 }
 
@@ -480,6 +493,85 @@
 	}
 	&:last-child {
 		margin-bottom: 0;
+	}
+}
+
+// Checklist Navigation (currently used on Search)
+.nav-check-list {
+	margin-bottom: $space-double;
+	label {
+		font-weight: 700;
+		font-family: $font;
+	}
+}
+.cl-item-amt {
+	font-weight: normal;
+	color: $gray-med-2;
+}
+.nav-check-list-title {
+	margin-bottom: $space-half;
+}
+.search-filters {
+	position: relative;
+	.arrow {
+		display: none;
+	}
+	label {
+		font-size: rem(16);
+	}
+	.check-list {
+		padding-left: 0;
+	}
+	@media (max-width: $px600), (min-width: $medium-break) and (max-width: $px1050) {
+		padding-bottom: rem(64);
+		label {
+			font-size: rem(15);
+		}
+		.nav-check-list-title {
+			cursor: pointer;
+			margin-bottom: 0;
+		}
+		.arrow {
+			display: inline-block;
+			border-width: rem(6);
+			padding-bottom: rem(3);
+			margin-left: rem(3);
+			@include trans;
+		}
+		.nav-check-list {
+			position: absolute;
+			width: 49%;
+			left: 0;
+			z-index: 100;
+			background-color: $white;
+			padding: rem(8) rem(8) rem(7);
+			border: $border-style;
+			&:hover {
+				.nav-check-list-title {
+					color: $pink-dark;
+				}
+			}
+			&:nth-child(even) {
+				left: auto;
+				right: 0;
+			}
+			&.is-active {
+				.nav-check-list-title {
+					color: $pink-dark;
+				}
+				.arrow {
+					margin-bottom: rem(3);
+					@include transform(rotate(180deg));
+				}
+				.check-list {
+					display: block;
+				}
+			}
+		}
+		.check-list {
+			display: none;
+			padding-top: rem(8);
+		}
 	}
 }
 

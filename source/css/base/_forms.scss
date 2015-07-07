@@ -138,7 +138,7 @@ input[type="search"]::-webkit-search-decoration {
   input[type="checkbox"] {
     display: none;
   }
-  input[type="checkbox"] + label span,
+  input[type="checkbox"] + label span:not(.cl-item-amt),
   .cb {
     width: rem(17);
     height: rem(17);
@@ -166,14 +166,14 @@ input[type="search"]::-webkit-search-decoration {
     top: 50%;
     margin-top: rem(-14);
   }
-  input[type="checkbox"] + label:hover span,
+  input[type="checkbox"] + label:hover span:not(.cl-item-amt),
   &:hover .cb {
     background-color: $gray;
     svg {
       visibility: visible;
     }
   }
-  input[type="checkbox"]:checked + label span,
+  input[type="checkbox"]:checked + label span:not(.cl-item-amt),
   &.this-is-active .cb {
     svg {
       visibility: visible;

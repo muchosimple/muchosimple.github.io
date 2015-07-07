@@ -55,7 +55,6 @@
 /* Two Column Layout */
 .l-two-col {
 	@extend .cf;
-
 	.l-main {
 		@media all and (min-width: $bp-large) {
 			float: left;
@@ -63,12 +62,10 @@
 			padding-right: $pad;
 		}
 	}
-
 	.l-sidebar {
 		@media all and (max-width: $bp-large) {
 			clear: both;
 		}
-
 		@media all and (min-width: $bp-large) {
 			float: left;
 			width: 30%;
@@ -136,6 +133,37 @@
 	@include mq($medium-break) {
 		float: right;
 		width: rem($sidebar-width);
+	}
+}
+
+// Short static width left column, and fluid width right column.
+.shift-right--slim {
+	width: 100%;
+	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px1050) {
+		float: right;
+		margin-left: rem(-$sidebar-width-slim - 20);
+	}
+	@include mq($px1200) {
+		margin-left: rem(-$sidebar-width-slim - 60);
+	}
+}
+.shift-right--slim-inner {
+	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px1050) {
+		margin-left: rem($sidebar-width-slim + 20);
+	}
+	@include mq($px1200) {
+		margin-left: rem($sidebar-width-slim + 60);
+	}
+}
+.shift-left--slim {
+	position: relative;
+	z-index: 10;
+	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px1050) {
+		float: left;
+		width: rem($sidebar-width-slim);
+	}
+	@include mq($px1200) {
+		width: rem($sidebar-width-slim + 40);
 	}
 }
 

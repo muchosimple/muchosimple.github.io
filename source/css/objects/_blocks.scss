@@ -71,6 +71,9 @@ a.b-inner:hover {
   &.table-layout {
     @include table-layout(50%, 50%);
   }
+  &.table-layout--more-text {
+    @include table-layout(35%, 65%);
+  }
 }
 
 .block-thumb-dek {
@@ -215,7 +218,6 @@ a.b-inner:hover {
     margin-bottom: $space-half;
     display: table-cell;
     vertical-align: middle;
-    //padding-top: rem(4);
     @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
       margin-top: rem(10);
       margin-bottom: rem(4);
@@ -549,5 +551,26 @@ a.b-inner:hover {
   .b-title {
     font-size: rem(26);
     margin-bottom: rem(8);
+  }
+}
+
+// Search Result
+.block-search-result {
+  margin-bottom: $space;
+  @include mq($px450) {
+    margin-bottom: rem(24);
+  }
+  .b-title {
+    margin-bottom: rem(4);
+    @media (min-width: $px1050) {
+      font-size: rem(26);
+    }
+  }
+  p {
+    color: $gray-med-2;
+    line-height: 1.35;
+    @media (max-width: $px1050) {
+      font-size: rem(16);
+    }
   }
 }

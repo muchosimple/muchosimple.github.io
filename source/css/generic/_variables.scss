@@ -50,6 +50,7 @@ $red: #e31e30;
 $pink: #ef4e74;
 $pink-light: #f06793;
 $pink-light-2: #FEF8FA;
+$pink-dark: darken($pink, 16);
 $blue-dark: #264770;
 $blue: #0074bc;
 $blue-light: #479cd6;
@@ -178,6 +179,7 @@ $nav-breakout-med: $px800;
 $nav-breakout-large: $px1050;
 
 $sidebar-width: 300;
+$sidebar-width-slim: 180;
 
 // Horizontal Rule Width
 $hr-width: 75%;

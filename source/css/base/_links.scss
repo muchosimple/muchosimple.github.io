@@ -3,7 +3,7 @@ a {
   text-decoration: none;
   color: $pink;
   &:hover, &:focus {
-    color: darken($pink, 10);
+    color: $pink-dark;
   }
   p {
     color: $gray-dark-2;

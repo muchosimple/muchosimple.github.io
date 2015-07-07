@@ -1,0 +1,92 @@
+{
+	"title" : "Gardening",
+	"has-featured-stories" : false,
+	"search-head" : [
+		{
+			"title" : "Gardening"
+		}
+	],
+	"content-modules-1" : [
+		{
+			"block-class" : "table-layout--more-text block-search-result",
+			"img" : {
+				"src" : "http://d.pr/i/18qnJ+",
+				"alt" : "Garden Pointers"
+			},
+			"title" : "Garden Pointers",
+			"dek" : "A glossary of gardening lingo."
+		},
+		{
+			"block-class" : "table-layout--more-text block-search-result",
+			"img" : {
+				"src" : "http://d.pr/i/14Pwx+",
+				"alt" : "Easy Gardens for Small Spaces"
+			},
+			"title" : "Easy Gardens for Small Spaces",
+			"dek" : "A few extra square feet is more than enough room for one of these."
+		},
+		{
+			"block-class" : "table-layout--more-text block-search-result",
+			"img" : {
+				"src" : "http://d.pr/i/dCjR+",
+				"alt" : "Planters for Any Garden"
+			},
+			"title" : "Planters for Any Garden",
+			"dek" : "Picking the right container is the first step toward helping your garden."
+		},
+		{
+			"block-class" : "table-layout--more-text block-search-result",
+			"img" : {
+				"src" : "http://d.pr/i/131LL+",
+				"alt" : "Vase as Herb Garden Container"
+			},
+			"title" : "Vase as Herb Garden Container",
+			"dek" : "Assemble an herb garden."
+		},
+		{
+			"block-class" : "table-layout--more-text block-search-result",
+			"img" : {
+				"src" : "http://d.pr/i/Vs3x+",
+				"alt" : "22 Container Gardens in Bloom"
+			},
+			"title" : "22 Container Gardens in Bloom",
+			"dek" : "As these photos show, a garden can call for nothing more than a pot."
+		},
+		{
+			"block-class" : "table-layout--more-text block-search-result",
+			"img" : {
+				"src" : "http://d.pr/i/18qnJ+",
+				"alt" : "How to Plant an Indoor Herb Garden"
+			},
+			"title" : "How to Plant an Indoor Herb Garden",
+			"dek" : "Turn a sunny kitchen windowsill into a fragrant herb garden."
+		},
+		{
+			"block-class" : "table-layout--more-text block-search-result",
+			"img" : {
+				"src" : "http://d.pr/i/13P3o+",
+				"alt" : "Golf Bag as Garden Caddy"
+			},
+			"title" : "Golf Bag as Garden Caddy",
+			"dek" : "A clever way to repurpose an everyday item."
+		},
+		{
+			"block-class" : "table-layout--more-text block-search-result",
+			"img" : {
+				"src" : "http://d.pr/i/1aH4F+",
+				"alt" : "Car Wax as Garden Shear Lubricant"
+			},
+			"title" : "Car Wax as Garden Shear Lubricant",
+			"dek" : "A clever way to repurpose an everyday item."
+		},
+		{
+			"block-class" : "table-layout--more-text block-search-result",
+			"img" : {
+				"src" : "http://d.pr/i/RIfx+",
+				"alt" : "Flower Pot as Garden Tool Holder"
+			},
+			"title" : "Flower Pot as Garden Tool Holder",
+			"dek" : "The mixture will clean the tools and prevent corrosion and rust."
+		}
+	]
+}
