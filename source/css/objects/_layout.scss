@@ -139,17 +139,28 @@
 // Short static width left column, and fluid width right column.
 .shift-right--slim {
 	width: 100%;
-	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px1050) {
+	@media (min-width: $px600) {
 		float: right;
 		margin-left: rem(-$sidebar-width-slim - 20);
+		&.revert-to-origin {
+			@media (min-width: $medium-break) and (max-width: $px1050) {
+				float: none;
+				margin-left: 0;
+			}
+		}
 	}
 	@include mq($px1200) {
 		margin-left: rem(-$sidebar-width-slim - 60);
 	}
 }
 .shift-right--slim-inner {
-	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px1050) {
+	@media (min-width: $px600) {
 		margin-left: rem($sidebar-width-slim + 20);
+	}
+	&.revert-to-origin {
+		@media (min-width: $medium-break) and (max-width: $px1050) {
+			margin-left: 0;
+		}
 	}
 	@include mq($px1200) {
 		margin-left: rem($sidebar-width-slim + 60);
@@ -158,9 +169,15 @@
 .shift-left--slim {
 	position: relative;
 	z-index: 10;
-	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px1050) {
+	@media (min-width: $px600) {
 		float: left;
 		width: rem($sidebar-width-slim);
+	}
+	&.revert-to-origin {
+		@media (min-width: $medium-break) and (max-width: $px1050) {
+			float: none;
+			width: auto;
+		}
 	}
 	@include mq($px1200) {
 		width: rem($sidebar-width-slim + 40);

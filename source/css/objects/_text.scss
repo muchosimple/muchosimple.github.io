@@ -37,7 +37,7 @@
 		@include underline;
 	}
 }
-// Sponsor
+// Sponsor/Presented By
 .sponsor {
 	a {
 		font-size: rem(15);
@@ -48,6 +48,11 @@
 .sponsor span {
 	color: $blue;
 }
+.presented-by {
+	width: rem(88);
+}
+
+
 // Divides kicker links
 .divider {
 	margin: 0 rem(4);
@@ -187,6 +192,18 @@
 }
 .pink {
 	color: $pink;
+}
+.white {
+	color: $white;
+}
+.black {
+	color: $black;
+}
+.gray {
+	color: $gray;
+}
+.gray--dark {
+	color: $gray-dark;
 }
 
 .more-links {

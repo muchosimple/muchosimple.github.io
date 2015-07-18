@@ -10,13 +10,15 @@ $GLOBAL CLASSES
   content: " "; // 1
   display: table; // 2
 }
-
 .cf:after {
   clear: both;
 }
-
 .clear {
   clear: both;
+}
+
+.rel {
+  position: relative;
 }
 
 // Completely remove from the flow and screen readers.
@@ -51,7 +53,7 @@ $GLOBAL CLASSES
   display: inline-block;
 }
 
-// Floats
+// Alignment
 .right {
   float: right;
   padding: 0 0 $pad $pad;
@@ -63,6 +65,9 @@ $GLOBAL CLASSES
 .left {
   float: left;
   padding: 0 $pad $pad 0;
+}
+.center-block {
+  @include center-block;
 }
 
 // Text-Align
@@ -205,18 +210,22 @@ $GLOBAL CLASSES
   color: $dark-gray;
 }
 
-// Color Classes
-.white {
-  color: $white;
+// Background Color Classes
+.bg--pink {
+  background-color: $pink;
 }
-.black {
-  color: $black;
+.bg--aqua {
+  background-color: $aqua;
 }
-.gray {
-  color: $gray;
+.bg--teal {
+  background-color: $teal;
 }
-.gray--dark {
-  color: $gray-dark;
+
+// SVG Path Colors
+.path--white {
+  path {
+    fill: $white;
+  }
 }
 
 // Absolute Positioning Elements

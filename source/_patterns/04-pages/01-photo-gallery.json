@@ -3,6 +3,7 @@
 	"bodyClass": "photo-gallery",
 	"more-links" : true,
 	"has-featured-stories" : false,
+	"is-gallery" : true,
 	"article-head" : [
 		{
 			"has-head-meta" : true,
@@ -390,6 +391,26 @@
 				"alt" : "Slow-Cooker Spaghetti Bolognese"
 			},
 			"title" : "Slow-Cooker Spaghetti Bolognese"
+		}
+	],
+	"sponsored" : [
+		{
+			"sponsor-title" : "Holiday Entertaining",
+			"img": {
+				"src": "../../images/sponsor_tinyprints.png",
+				"alt": "Tinyprints"
+			},
+			"sponsor-list" : [
+				{
+					"title" : "4 Recipes for a Family-Friendly Taco Night"
+				},
+				{
+					"title" : "6 Ways to Entertain on a Budget."
+				},
+				{
+					"title" : "Send Something Spectacular™ with Tinyprints"
+				}
+			]
 		}
 	]
 }

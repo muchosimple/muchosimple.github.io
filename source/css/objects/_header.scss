@@ -49,6 +49,12 @@
     }
   }
 }
+.logo--small {
+  width: rem(120);
+  @include mq($medium-break) {
+    width: rem(150);
+  }
+}
 
 .header-inner.sticky-is-active {
   top: 0;

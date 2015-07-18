@@ -496,6 +496,58 @@
 	}
 }
 
+@mixin search-filter-dropdown {
+	padding-bottom: rem(64);
+	label {
+		font-size: rem(15);
+	}
+	.nav-check-list-title {
+		cursor: pointer;
+		margin-bottom: 0;
+	}
+	.arrow {
+		display: inline-block;
+		border-width: rem(6);
+		padding-bottom: rem(3);
+		margin-left: rem(3);
+		@include trans;
+	}
+	.nav-check-list {
+		position: absolute;
+		width: 49%;
+		left: 0;
+		z-index: 100;
+		background-color: $white;
+		padding: rem(8) rem(8) rem(7);
+		border: $border-style;
+		&:hover {
+			.nav-check-list-title {
+				color: $pink-dark;
+			}
+		}
+		&:nth-child(even) {
+			left: auto;
+			right: 0;
+		}
+		&.is-active {
+			.nav-check-list-title {
+				color: $pink-dark;
+			}
+			.arrow {
+				margin-bottom: rem(3);
+				@include transform(rotate(180deg));
+			}
+			.check-list {
+				display: block;
+			}
+		}
+	}
+	.check-list {
+		display: none;
+		padding-top: rem(8);
+	}
+}
+
 // Checklist Navigation (currently used on Search)
 .nav-check-list {
 	margin-bottom: $space-double;
@@ -518,59 +570,17 @@
 	}
 	label {
 		font-size: rem(16);
+		cursor: pointer;
 	}
 	.check-list {
 		padding-left: 0;
 	}
-	@media (max-width: $px600), (min-width: $medium-break) and (max-width: $px1050) {
-		padding-bottom: rem(64);
-		label {
-			font-size: rem(15);
-		}
-		.nav-check-list-title {
-			cursor: pointer;
-			margin-bottom: 0;
-		}
-		.arrow {
-			display: inline-block;
-			border-width: rem(6);
-			padding-bottom: rem(3);
-			margin-left: rem(3);
-			@include trans;
-		}
-		.nav-check-list {
-			position: absolute;
-			width: 49%;
-			left: 0;
-			z-index: 100;
-			background-color: $white;
-			padding: rem(8) rem(8) rem(7);
-			border: $border-style;
-			&:hover {
-				.nav-check-list-title {
-					color: $pink-dark;
-				}
-			}
-			&:nth-child(even) {
-				left: auto;
-				right: 0;
-			}
-			&.is-active {
-				.nav-check-list-title {
-					color: $pink-dark;
-				}
-				.arrow {
-					margin-bottom: rem(3);
-					@include transform(rotate(180deg));
-				}
-				.check-list {
-					display: block;
-				}
-			}
-		}
-		.check-list {
-			display: none;
-			padding-top: rem(8);
+	@media (max-width: $px600) {
+		@include search-filter-dropdown;
+	}
+	&.revert-to-origin {
+		@media (min-width: $medium-break) and (max-width: $px1050) {
+			@include search-filter-dropdown;
 		}
 	}
 }

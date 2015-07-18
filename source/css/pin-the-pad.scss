@@ -1,0 +1,176 @@
+@import "bourbon/bourbon";
+@import "generic/variables";
+@import "generic/mixins";
+@import "generic/flex";
+@import "neat/neat";
+
+/*------------------------------------*\
+    $PIN THE PERFECT PAD CSS
+\*------------------------------------*/
+
+/**
+ * Pin the Perfect Pad is a sales initiative that will use the Pinterest API.
+ * This stylesheet contains styles specific to this promotion and should only
+ * be included on the Pin the Perfect Pad template.
+ */
+
+// Pin Colors
+$pin-brown: #604103;
+$pin-beige: #D0BCA3;
+$pin-orange: #FB8C01;
+$pin-blue: #13B3F1;
+$pin-green: #02A650;
+
+.page-pin-the-pad {
+  .main {
+    padding-top: rem(12);
+  }
+  .page-header {
+    padding: rem(12) rem(20) rem(10);
+    @include mq($medium-break) {
+      padding: rem(24) $pad $pad;
+    }
+  }
+  .logo-eyebrow {
+    margin-bottom: rem(8);
+  }
+  .page-title {
+    margin-bottom: rem(6);
+    font-size: rem(36);
+    @include mq($medium-break) {
+      font-size: rem(48);
+    }
+  }
+  .pin-head {
+    padding-bottom: 0;
+    max-width: rem(886);
+    @include mq($px600) {
+      margin-bottom: 0;
+      border-bottom: $border-style;
+    }
+    @include mq($medium-break) {
+      padding-bottom: $pad;
+    }
+  }
+  .lead-subtitle {
+    font-size: rem(24);
+    line-height: 1.35;
+    @include mq($medium-break) {
+      font-size: rem(30);
+    }
+  }
+  .presented-by {
+    @include center-block;
+    @include mq($medium-break) {
+      position: absolute;
+      right: rem(40);
+      bottom: 0;
+    }
+    @include mq($px1340) {
+      right: rem(28);
+    }
+  }
+  .powered-by {
+    width: rem(120);
+  }
+  .pin-content {
+    clear: both;
+  }
+  .search-filters label {
+    padding-top: rem(2);
+    padding-left: rem(30);
+    font-weight: normal;
+    @include mq($px400) {
+      font-size: rem(18);
+    }
+  }
+  .cl-item input[type="checkbox"] {
+    &:checked + label {
+      color: $gray-med;
+    }
+    + label span {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .ad-block .text--tiny {
+    display: none;
+  }
+  .grid {
+    margin-right: -$space-half;
+    @include mq($px600) {
+      margin-right: -$space;
+    }
+  }
+  .grid-sizer {
+    //width: 50%;
+  }
+  .grid-item {
+    width: 50%;
+    float: left;
+    line-height: 0;
+    margin-bottom: $space-half;
+    padding-right: $pad-half;
+    max-width: 323.5px;
+    img {
+      //width: 100%;
+    }
+    @include mq($px600) {
+      margin-bottom: $space;
+      padding-right: $pad;
+    }
+    @include mq($medium-break) {
+      width: 33.333%;
+    }
+  }
+  .stamp {
+    position: absolute;
+    right: 24px;
+    top: -180px;
+    z-index: 10;
+    height: 250px;
+    width: 300px;
+    margin-bottom: $space;
+  }
+  .shift-left--slim {
+    @include mq($px600) {
+      padding-top: $pad-double;
+    }
+  }
+  .shift-right--slim-inner {
+    @include mq($px600) {
+      border-left: $border-style;
+      padding: $pad 0 $pad $pad;
+    }
+    @include mq($px1000) {
+      padding: rem(22) 0 rem(22) rem(22);
+    }
+  }
+}
+
+.nav-check-list--color .cl-item input[type="checkbox"] {
+  + label span {
+    border: none;
+    svg {
+      padding: 4px;
+    }
+  }
+  &:checked + label span svg path {
+    fill: $white;
+  }
+}
+.pin-brown {
+  background-color: $pin-brown !important;
+}
+.pin-beige {
+  background-color: $pin-beige !important;
+}
+.pin-orange {
+  background-color: $pin-orange !important;
+}
+.pin-blue {
+  background-color: $pin-blue !important;
+}
+.pin-green {
+  background-color: $pin-green !important;
+}
