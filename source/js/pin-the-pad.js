@@ -8,8 +8,7 @@
  * be included on the Pin the Perfect Pad template.
  */
 
-// Set up isotope
-// layout Isotope after each image loads
+// Layout Isotope after each image loads
 var $grid = $('.grid').imagesLoaded(function() {
   $grid.isotope({
     itemSelector: '.grid-item',

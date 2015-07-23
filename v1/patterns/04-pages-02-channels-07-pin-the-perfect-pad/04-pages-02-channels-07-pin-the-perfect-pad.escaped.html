@@ -1,3 +1,18 @@
+&lt;?php
+  $url = 'http://www.worldweatheronline.com/feed/weather.ashx?q=schruns,austria&amp;format=json&amp;num_of_days=5&amp;key=8f2d1ea151085304102710%22';
+  $content = file_get_contents($url);
+  $json = json_decode($content, true);
+
+  foreach($json['data']['weather'] as $item) {
+    print $item['date'];
+    print ' - ';
+    print $item['weatherDesc'][0]['value'];
+    print ' - ';
+    print '&lt;img src=&quot;' . $item['weatherIconUrl'][0]['value'] . '&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;';
+    print '&lt;br&gt;';
+  }
+?&gt;
+
 &lt;div class=&quot;page&quot;&gt;
   &lt;div class=&quot;top-hat&quot;&gt;&lt;!-- HAT Implementation--&gt;
 &lt;div id=&quot;hatmain&quot; class=&quot;hatmain&quot;&gt;
