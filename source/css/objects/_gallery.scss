@@ -506,7 +506,7 @@
 }
 .js .gallery-grid .gi {
   opacity: 0;
-  @include transition(opacity .3s $cubic-bezier);
+  @include transition(opacity .5s $cubic-bezier);
   &.fadein {
     opacity: 1;
   }
