@@ -565,7 +565,7 @@
   <![endif]-->
 </svg>
 </span> Dining Room</label></li>
-                <li class="cl-item"><input id="checkbox3" name="checkbox" type="checkbox" value=".paint, .space, .gallery, .chest"><label for="checkbox3"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+                <li class="cl-item"><input id="checkbox3" name="checkbox" type="checkbox" value=".paint, .space, .the, .chest"><label for="checkbox3"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
   <title>Check</title>
   <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
   <!--[if lte IE 8]>
@@ -575,7 +575,7 @@
   <![endif]-->
 </svg>
 </span> Living Room</label></li>
-                <li class="cl-item"><input id="checkbox4" name="checkbox" type="checkbox" value=".design, .gallery, .wall"><label for="checkbox4"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+                <li class="cl-item"><input id="checkbox4" name="checkbox" type="checkbox" value=".design, .the, .wall"><label for="checkbox4"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
   <title>Check</title>
   <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
   <!--[if lte IE 8]>
@@ -610,7 +610,7 @@
   <![endif]-->
 </svg>
 </span> Brown</label></li>
-                <li class="cl-item"><input id="checkbox7" name="checkbox" type="checkbox" value=".gallery, .wall"><label for="checkbox7"><span class="path--white rounded pin-beige"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+                <li class="cl-item"><input id="checkbox7" name="checkbox" type="checkbox" value=".the, .wall"><label for="checkbox7"><span class="path--white rounded pin-beige"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
   <title>Check</title>
   <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
   <!--[if lte IE 8]>
@@ -640,7 +640,7 @@
   <![endif]-->
 </svg>
 </span> Blue</label></li>
-                <li class="cl-item"><input id="checkbox10" name="checkbox" type="checkbox" value=".walls, .gallery"><label for="checkbox10"><span class="path--white rounded pin-green"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+                <li class="cl-item"><input id="checkbox10" name="checkbox" type="checkbox" value=".walls, .the"><label for="checkbox10"><span class="path--white rounded pin-green"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
   <title>Check</title>
   <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
   <!--[if lte IE 8]>
@@ -673,7 +673,7 @@
 
                   $note_words = preg_split('/\s+/', $pin_note);
 
-                  $pin_tags = array('walls', 'wall', 'photos', 'gallery', 'chest', 'cart', 'design', 'paint', 'picture', 'space');
+                  $pin_tags = array('walls', 'wall', 'photos', 'the', 'chest', 'cart', 'design', 'paint', 'picture', 'space');
                   $selected_tags = "";
 
                   foreach($note_words as $word) {
