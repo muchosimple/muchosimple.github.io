@@ -79,6 +79,9 @@ a.b-inner:hover {
 .block-thumb-dek {
   .alt-heading {
     margin-bottom: $space-half;
+    @include mq($px450, max) {
+      font-size: rem(23);
+    }
   }
 }
 

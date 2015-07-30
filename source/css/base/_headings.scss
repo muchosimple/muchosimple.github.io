@@ -64,11 +64,14 @@ h6, .zeta {
 
 // Large pink headers. Ex. Checklist section titles
 .alt-heading--pink {
-  font-size: rem(32);
+  font-size: rem(30);
   font-weight: 300;
   font-family: $font-secondary;
   color: $pink;
   margin-bottom: 0;
+  @include mq($large-break) {
+    font-size: rem(35);
+  }
 }
 
 // Page titles typically used for Channel page headers

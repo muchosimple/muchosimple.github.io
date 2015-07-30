@@ -549,7 +549,9 @@
 }
 
 .content-utilities {
-	text-align: center;
 	padding-top: rem(30);
 	margin-bottom: rem(48);
+	@include mq($large-break) {
+		margin-bottom: rem(60);
+	}
 }
