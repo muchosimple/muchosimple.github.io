@@ -72,3 +72,18 @@
   line-height: 0;
   margin-bottom: rem(20);
 }
+
+// Home Page specific for ad positioning
+.home-right-blocks {
+  @include mq($medium-break) {
+    position: relative;
+    height: rem(600);
+    .ad-block {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: rem(600);
+      background-color: red;
+    }
+  }
+}
