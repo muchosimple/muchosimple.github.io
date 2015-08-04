@@ -81,9 +81,8 @@
     .ad-block {
       position: absolute;
       right: 0;
-      top: 0;
-      height: rem(600);
-      background-color: red;
+      bottom: 0;
+      z-index: 100;
     }
   }
 }
