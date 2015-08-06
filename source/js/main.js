@@ -183,15 +183,27 @@ window.onresize = function() {
   });
 
   // Sticky right rail ad
-  if (getWidth() >= 801) {
-    $(window).load(function() {
+  $(window).load(function() {
+    if (getWidth() >= 800) {
+      var mindElement = '.header-inner';
+      // If leaderboard is sticky, mind that instead.
+      if ($('.ad-sticky--leaderboard').length) {
+        mindElement = '.header';
+      }
       $('.ad-sticky').fixTo('.main', {
         className: 'sticky-is-active',
-        mind: '.header-inner',
+        mind: mindElement,
         useNativeSticky: false
       });
-    });
-  }
+      if ($(window).height() >= 650) {
+        $('.ad-sticky--leaderboard').fixTo('.page', {
+          className: 'sticky-is-active',
+          mind: '.header-inner',
+          useNativeSticky: false
+        });
+      }
+    }
+  });
 
   // Alternate Sticky Methods
   // Sticky header

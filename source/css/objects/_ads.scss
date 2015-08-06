@@ -10,9 +10,16 @@
   }
 }
 .ad-leaderboard {
-  margin-top: $space;
-  margin-bottom: $space-half;
+  padding-top: $pad;
+  padding-bottom: $pad-half;
   text-align: center;
+  background-color: rgba($white, 0);
+  @include transition(all .3s ease-out);
+  &.sticky-is-active {
+    padding-top: $pad-half;
+    background-color: rgba($white, .85);
+    z-index: 50000000; // Appear over ads;
+  }
   div {
     text-align: center;
   }

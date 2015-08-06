@@ -1,9 +1,10 @@
 {
 	"title" : "Best Slow-Cooker Soup and Stew Recipes",
-	"bodyClass": "photo-gallery",
+	"bodyClass": "photo-gallery has-sticky-leaderboard",
 	"more-links" : true,
 	"has-featured-stories" : false,
 	"is-gallery" : true,
+	"has-sticky-leaderboard" : true,
 	"article-head" : [
 		{
 			"has-head-meta" : true,
