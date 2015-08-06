@@ -209,7 +209,9 @@ window.onresize = function() {
 
   // FitVids
   if ($.fn.fitVids) {
-    $('.block-video, .article, .fitvid').fitVids();
+    $('.block-video, .article, .fitvid, .video-player').fitVids({
+      maxWidth: true
+    });
   }
 
   // 5-star Rating
