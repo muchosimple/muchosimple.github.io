@@ -221,9 +221,7 @@ window.onresize = function() {
 
   // FitVids
   if ($.fn.fitVids) {
-    $('.block-video, .article, .fitvid, .video-player').fitVids({
-      maxWidth: true
-    });
+    $('.block-video, .article, .fitvid, .video-player').fitVids();
   }
 
   // 5-star Rating
@@ -279,26 +277,28 @@ window.onresize = function() {
     });
   }
 
-  // Init the carousel.
-  if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
-    initHomeCarouselSmall();
-  }
-  else {
-    initHomeCarouselWide();
-  }
-
-  // Update carousel functionality on window resize.
-  $(window).resize(function(){
+  if ($tabbedCarousel.length) {
+    // Init the carousel.
     if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
-      // Start the Owl carousel.
       initHomeCarouselSmall();
     }
     else {
-      // Start the tabbed carousel and destroy the Owl carousel.
-      $tabbedCarousel.data('owlCarousel').destroy();
       initHomeCarouselWide();
     }
-  });
+
+    // Update carousel functionality on window resize.
+    $(window).resize(function(){
+      if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
+        // Start the Owl carousel.
+        initHomeCarouselSmall();
+      }
+      else {
+        // Start the tabbed carousel and destroy the Owl carousel.
+        $tabbedCarousel.data('owlCarousel').destroy();
+        initHomeCarouselWide();
+      }
+    });
+  }
 
   // Smooth scroll to anchor
   // $('a[href*=#]:not([href=#])').click(function() {
