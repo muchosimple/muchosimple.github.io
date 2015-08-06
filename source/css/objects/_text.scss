@@ -8,8 +8,13 @@
 .alt-dek p {
 	font-family: $font-secondary;
 	font-size: rem(18);
-	line-height: 1.25;
 	color: $gray-med-2;
+	a {
+		color: $pink;
+	}
+	a:hover {
+		color: $pink-dark;
+	}
 	@include mq($medium-break) {
 		font-size: rem(20);
 	}
