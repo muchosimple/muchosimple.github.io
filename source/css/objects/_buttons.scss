@@ -75,6 +75,13 @@ input.btn {
 	}
 }
 
+// Active State
+.btn--active {
+	background-color: $gray-med;
+	border-color: $gray;
+	color: $gray-light-3;
+}
+
 // Big utility buttons (Save Recipe)
 .btn--util {
 	background-color: $pink;
