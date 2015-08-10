@@ -65,20 +65,21 @@
 }
 .comment {
 	position: relative;
-	padding-left: rem(85);
+	padding-left: rem(55);
 	margin-bottom: $space-and-half;
 	padding-bottom: $pad-and-half;
 	border-bottom: $border-style-light;
-	// &:last-child {
-	// 	border-bottom: none;
-	// 	margin-bottom: 0;
-	// 	padding-bottom: 0;
-	// }
+	@include mq($px500) {
+		padding-left: rem(85);
+	}
 }
 .comment_author {
 	position: absolute;
 	top: 0;
 	left: 0;
+	@include mq($px500, max) {
+		width: rem(40);
+	}
 }
 .comment_txt {
 	margin-bottom: $space-half;
@@ -98,9 +99,11 @@
 .comment_reply_tb {
 	font-size: rem(14);
 }
-.comment_delete,
-.expand_replies_link {
+.comment_delete {
 	display: none;
+}
+.expand_replies_link {
+	margin-right: $space-half;
 }
 // Nested Reply comment form
 .form {
@@ -120,6 +123,20 @@
 	}
 	.your_profile_icon {
 		position: relative;
+	}
+}
+.replies {
+	padding-top: $pad-and-half;
+	margin-top: $space-and-half;
+	border-top: $border-style-light;
+	&:empty {
+		padding-top: 0;
+		margin-top: 0;
+		border-top: none;
+	}
+	li:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
 	}
 }
 

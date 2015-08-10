@@ -13,6 +13,7 @@ button {
 	text-transform: uppercase;
 	font-family: $font;
 	cursor: pointer;
+	font-style: normal;
 	@include rem(padding, 13 30 11);
 	background-color: $white;
 	&:hover,
@@ -35,6 +36,10 @@ button {
 			fill: $blue-light;
 		}
 	}
+}
+input.btn {
+	font-size: rem(14);
+	font-style: normal;
 }
 
 .btn--small {
