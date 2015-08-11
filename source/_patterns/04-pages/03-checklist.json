@@ -20,6 +20,7 @@
 	"checklist" : [
 		{
 			"cl-title" : "Sixteen to Nine Months Before",
+			"ad-instream" : true,
 			"cl-items" : [
 				{
 					"cl-item-class" : "has-desc",
@@ -50,6 +51,7 @@
 		},
 		{
 			"cl-title" : "Eight Months Before",
+			"ad-instream" : false,
 			"cl-items" : [
 				{
 					"cl-item-class" : "has-desc",
@@ -75,6 +77,7 @@
 		},
 		{
 			"cl-title" : "Seven to Six Months Before",
+			"ad-instream" : false,
 			"cl-items" : [
 				{
 					"cl-item-class" : "has-desc",
