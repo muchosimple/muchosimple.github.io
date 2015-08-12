@@ -83,6 +83,15 @@ $GLOBAL CLASSES
 }
 
 // Display Classes
+.dib {
+  display: inline-block;
+}
+.db {
+  display: block;
+}
+.dtc {
+  display: table-cell;
+}
 .hide-small {
   @include mq($medium-break, max) {
     display: none;

@@ -300,6 +300,16 @@ window.onresize = function() {
     });
   }
 
+  $(window).scroll(function() {
+    // Pop up element from footer.
+    if ($(window).scrollTop() > 250 && getWidth() < 800) {
+      $('.peeky-ad').addClass('active');
+    }
+    if ($('.main').height() < $(window).scrollTop() || $(window).scrollTop() < 250) {
+      $('.peeky-ad').removeClass('active');
+    }
+  });
+
   // Smooth scroll to anchor
   // $('a[href*=#]:not([href=#])').click(function() {
   //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

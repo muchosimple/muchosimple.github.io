@@ -73,6 +73,31 @@
   width: rem(728);
 }
 
+// Slide up ad from footer
+// .peeky-ad {
+//   @include mq($medium-break, max) {
+//     &.move--btm {
+//       bottom: rem(-55);
+//       left: 0;
+//       text-align: center;
+//       padding: rem(2);
+//       height: rem(54);
+//       position: fixed;
+//       width: 100%;
+//       z-index: 50000020; // Appear over ads;
+//       background-color: rgba($white, .85);
+//       @include trans;
+//       > div {
+//         margin-left: auto;
+//         margin-right: auto;
+//       }
+//     }
+//     &.active {
+//       bottom: 0;
+//     }
+//   }
+// }
+
 // Ads that appear within article list-types
 .ad-instream {
   position: relative;
@@ -91,5 +116,14 @@
       bottom: 0;
       z-index: 100;
     }
+  }
+}
+
+// Little Sponsored Ad
+.sponsored-by {
+  @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
