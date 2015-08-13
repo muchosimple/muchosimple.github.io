@@ -4,7 +4,8 @@
 	"more-links" : true,
 	"has-featured-stories" : false,
 	"is-gallery" : true,
-	"has-sticky-leaderboard" : true,
+	"is-sticky-leaderboard" : true,
+	"is-anchored-ad" : true,
 	"article-head" : [
 		{
 			"has-head-meta" : true,
