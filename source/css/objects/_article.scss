@@ -492,9 +492,6 @@
 			fill: $gray-med;
 		}
 	}
-	.title {
-		margin-bottom: $space;
-	}
 }
 .recipe-info-inner {
 	@include mq($large-break) {
