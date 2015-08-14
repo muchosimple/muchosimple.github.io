@@ -17,6 +17,7 @@
 			}
 		}
 	],
+	"is-cl-item" : true,
 	"checklist" : [
 		{
 			"cl-title" : "Sixteen to Nine Months Before",
@@ -41,6 +42,9 @@
 					"cl-item-class" : "has-desc",
 					"cl-task" : "Start the guest list.",
 					"cl-desc" : "Make a head count database to use throughout your planning process, with columns for contact info, RSVPs, gifts, and any other relevant information. (Want to keep costs low? It may be brutal, but the best way to do it is to reduce your guest list.)"
+				},
+				{
+					"is-cl-item" : false
 				},
 				{
 					"cl-item-class" : "has-desc",
