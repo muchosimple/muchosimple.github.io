@@ -236,15 +236,6 @@
 }
 
 // Fivestar Ratings
-//
-// Through CSS, there is no way to select a preceding child element. However,
-// there is a way to select succeeding child elements, through the adjacent or
-// general sibling combinators. If we literally reverse the order of the
-// characters, then we can make use of the general sibling combinator to select
-// all the stars that appear before the hovered star visually, but after the
-// hovered star in the HTML.
-//
-// This method is defined here: https://css-tricks.com/star-ratings/
 .five-star {
 	margin-bottom: $space-half;
 	@include mq($medium-break) {
