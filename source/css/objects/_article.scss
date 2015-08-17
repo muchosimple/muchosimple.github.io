@@ -275,7 +275,6 @@
 }
 .rating {
 	unicode-bidi: bidi-override;
-	direction: rtl;
 	display: inline-block;
 	vertical-align: bottom;
 }
@@ -291,62 +290,73 @@
 .star {
 	color: $gray-light-4;
 }
-.star--active {
-	color: $blue-light;
-}
 .star--inactive {
 	color: $gray-light-4;
 }
+.star--active {
+	color: $blue-light;
+}
 .active-rating {
-	.rating .star:hover,
-	.rating .star:hover ~ .star {
-		 @extend .star--active;
-	}
-}
-// Rating: 1 Star
-.inactive-stars-4 {
-	.star {
-		@extend .star--inactive;
-	}
-	.star:nth-child(5) {
-		@extend .star--active;
-	}
-}
-// Rating: 2 Stars
-.inactive-stars-3 {
-	.star {
-		@extend .star--inactive;
-	}
-	.star:nth-child(5),
-	.star:nth-child(4) {
-		@extend .star--active;
-	}
-}
-// Rating: 3 Stars
-.inactive-stars-2 {
-	.star {
-		@extend .star--active;
-	}
-	.star:nth-child(1),
-	.star:nth-child(2) {
-		@extend .star--inactive;
-	}
-}
-// Rating: 4 Stars
-.inactive-stars-1 {
-	.star {
-		@extend .star--active;
-	}
-	.star:nth-child(1) {
-		@extend .star--inactive;
+	.rating {
+		&:hover .star {
+			@extend .star--active;
+		}
+		.star:hover {
+			+ .star,
+			+ .star + .star,
+			+ .star + .star + .star,
+			+ .star + .star + .star + .star,
+			+ .star + .star + .star + .star + .star {
+				@extend .star--inactive;
+			}
+		}
 	}
 }
 // Rating: 5 Stars
-.inactive-stars-0 {
+.active-stars-5 {
 	.star {
 		@extend .star--active;
 	}
 }
+// Rating: 4 Stars
+.active-stars-4 {
+	.star {
+		@extend .star--active;
+	}
+	.star:nth-child(5) {
+		@extend .star--inactive;
+	}
+}
+// Rating: 3 Stars
+.active-stars-3 {
+	.star {
+		@extend .star--active;
+	}
+	.star:nth-child(5),
+	.star:nth-child(4) {
+		@extend .star--inactive;
+	}
+}
+// Rating: 2 Stars
+.active-stars-2 {
+	.star {
+		@extend .star--inactive;
+	}
+	.star:nth-child(1),
+	.star:nth-child(2) {
+		@extend .star--active;
+	}
+}
+// Rating: 1 Star
+.active-stars-1 {
+	.star {
+		@extend .star--inactive;
+	}
+	.star:nth-child(1) {
+		@extend .star--active;
+	}
+}
+
 .five-star-wrap {
 	padding-bottom: $pad;
 }
