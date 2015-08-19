@@ -287,7 +287,7 @@
 .star--active {
 	color: $blue-light;
 }
-.active-rating {
+.active-rating:not(.rated) {
 	.rating {
 		&:hover .star {
 			@extend .star--active;
