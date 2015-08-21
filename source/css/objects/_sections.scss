@@ -17,29 +17,6 @@
   }
 }
 
-// Featured Stories
-.featured-stories {
-  display: none;
-  margin-bottom: 0;
-  .gi {
-    padding-left: 0;
-    &:last-child {
-      padding-right: 0;
-    }
-  }
-  @include mq($px950) {
-    display: block;
-  }
-  .b-title {
-    font-size: rem(16);
-    color: $pink;
-    line-height: 1.2;
-    @include mq($large-break) {
-      font-size: rem(17);
-    }
-  }
-}
-
 // Daily Finds
 .daily-finds {
   text-align: center;
