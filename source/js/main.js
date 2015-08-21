@@ -226,9 +226,11 @@ window.onresize = function() {
 
   // 5-star Rating
   if ($('.five-star').length) {
-    $('.five-star').find('.star').click(function(){
-      $(this).parent().removeClass().addClass('active-stars-' + parseInt($(this).index() + 1));
-      $(this).parents('.five-star').addClass('rated');
+    $('.five-star').find('.star').click(function() {
+      if (!$(this).parents('.five-star').hasClass('rated')) {
+        $(this).parent().removeClass().addClass('active-stars-' + parseInt($(this).index() + 1));
+        $(this).parents('.five-star').addClass('rated');
+      }
     });
   }
 

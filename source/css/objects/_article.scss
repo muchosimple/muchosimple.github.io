@@ -278,6 +278,9 @@
 	cursor: pointer;
 	text-align: center;
 }
+.rated .star {
+	cursor: default;
+}
 .star {
 	color: $gray-light-4;
 }
