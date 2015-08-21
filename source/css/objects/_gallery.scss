@@ -400,6 +400,9 @@
     padding-top: $pad-double;
     clear: both;
   }
+  .ad-300x250 {
+    width: auto; // Because sometimes it's not a 300x250 (may be a 500x250).
+  }
 }
 // "See All"  Grid View
 .all-slides {
