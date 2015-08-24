@@ -120,7 +120,7 @@
 .ad__presented-by {
   margin-bottom: $space;
   @include mq($medium-break) {
-    margin-bottom: $space-and-half;
+    margin-bottom: rem(25);
   }
 }
 .ad__presented-by-text {
