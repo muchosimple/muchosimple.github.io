@@ -117,3 +117,12 @@
     top: 0;
   }
 }
+.ad__presented-by {
+  margin-bottom: $space;
+  @include mq($medium-break) {
+    margin-bottom: $space-and-half;
+  }
+}
+.ad__presented-by-text {
+  margin-right: 3px;
+}
