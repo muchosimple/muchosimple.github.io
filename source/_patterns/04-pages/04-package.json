@@ -36,16 +36,18 @@
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
 			"img" : {
 				"src" : "http://d.pr/i/1aSBt+",
 				"alt" : "Easy Grilled Chicken Recipes"
 			},
 			"title" : "Easy Grilled Chicken Recipes",
-			"dek" : "Everyone’s favorite bird gets a summertime spin with these deliciously simple recipes."
+			"dek" : "Everyone’s favorite <a href=\"\">bird gets a summertime</a> spin with these deliciously simple recipes."
 		},
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
 			"img" : {
 				"src" : "http://d.pr/i/13bXl+",
 				"alt" : "20 Easy Asparagus Recipes"
@@ -56,6 +58,7 @@
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
 			"img" : {
 				"src" : "http://d.pr/i/18Aom+",
 				"alt" : "11 Easy Bacon Recipes"
@@ -66,6 +69,7 @@
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
 			"img" : {
 				"src" : "http://d.pr/i/1bZ5W+",
 				"alt" : "9 Ways Science Justifies Your Coffee Addiction"
@@ -90,6 +94,7 @@
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
 			"img" : {
 				"src" : "http://d.pr/i/kD5r+",
 				"alt" : "10 Fun Cocktails for Your Next Party"
@@ -100,6 +105,7 @@
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
 			"img" : {
 				"src" : "http://d.pr/i/13bXl+",
 				"alt" : "20 Easy Asparagus Recipes"
@@ -110,6 +116,7 @@
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
 			"img" : {
 				"src" : "http://d.pr/i/18Aom+",
 				"alt" : "11 Easy Bacon Recipes"
@@ -120,6 +127,7 @@
 		{
 			"block-class" : "content-module",
 			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
 			"img" : {
 				"src" : "http://d.pr/i/1bZ5W+",
 				"alt" : "9 Ways Science Justifies Your Coffee Addiction"
