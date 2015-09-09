@@ -542,10 +542,10 @@
 
         <div class="shift-left--slim">
           <div class="search-filters">
-            <nav class="nav-check-list nav-check-list--room check-group" data-filter-group="rooms">
-              <h4 class="upper nav-check-list-title js-toggle-parent text--l">Room <span class="arrow arrow--down"></span></h4>
+            <nav class="nav-check-list nav-check-list--design-style check-group" data-filter-group="design-style">
+              <h4 class="upper nav-check-list-title js-toggle-parent text--l">Design Style <span class="arrow arrow--down"></span></h4>
               <ul class="check-list">
-                <li class="cl-item"><input id="checkbox1" name="checkbox" type="checkbox" value=".walls, .picture, .chest, .space"><label for="checkbox1"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+                <li class="cl-item"><input id="filter--eclecticcool" name="filter--eclecticcool" type="checkbox" value=".filter--eclecticcool"><label for="filter--eclecticcool"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
   <title>Check</title>
   <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
   <!--[if lte IE 8]>
@@ -554,8 +554,8 @@
   </foreignObject>
   <![endif]-->
 </svg>
-</span> Bedroom</label></li>
-                <li class="cl-item"><input id="checkbox2" name="checkbox" type="checkbox" value=".picture, .space"><label for="checkbox2"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+</span> Eclectic Cool</label></li>
+                <li class="cl-item"><input id="filter--moderncomfort" name="filter--moderncomfort" type="checkbox" value=".filter--moderncomfort"><label for="filter--moderncomfort"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
   <title>Check</title>
   <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
   <!--[if lte IE 8]>
@@ -564,8 +564,8 @@
   </foreignObject>
   <![endif]-->
 </svg>
-</span> Dining Room</label></li>
-                <li class="cl-item"><input id="checkbox3" name="checkbox" type="checkbox" value=".paint, .space, .the, .chest"><label for="checkbox3"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+</span> Modern Comfort</label></li>
+                <li class="cl-item"><input id="filter--sheerelegance" name="filter--sheerelegance" type="checkbox" value=".filter--sheerelegance"><label for="filter--sheerelegance"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
   <title>Check</title>
   <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
   <!--[if lte IE 8]>
@@ -574,8 +574,8 @@
   </foreignObject>
   <![endif]-->
 </svg>
-</span> Living Room</label></li>
-                <li class="cl-item"><input id="checkbox4" name="checkbox" type="checkbox" value=".design, .the, .wall"><label for="checkbox4"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+</span> Sheer Elegance</label></li>
+                <li class="cl-item"><input id="filter--everydayglam" name="filter--everydayglam" type="checkbox" value=".filter--everydayglam"><label for="filter--everydayglam"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
   <title>Check</title>
   <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
   <!--[if lte IE 8]>
@@ -584,74 +584,55 @@
   </foreignObject>
   <![endif]-->
 </svg>
-</span> Den</label></li>
-                <li class="cl-item"><input id="checkbox5" name="checkbox" type="checkbox" value=".cart, .picture, .chest, .space"><label for="checkbox5"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
-  <title>Check</title>
-  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
-  <!--[if lte IE 8]>
-  <foreignObject>
-    <img src="source/images/svg/output/png/check.png" alt="Check" class="no-svg-png">
-  </foreignObject>
-  <![endif]-->
-</svg>
-</span> Office</label></li>
+</span> Everyday Glam</label></li>
               </ul> <!-- /.check-list -->
             </nav> <!-- /.nav-check-list -->
-            <nav class="nav-check-list nav-check-list--color check-group" data-filter-group="colors">
-              <h4 class="upper nav-check-list-title js-toggle-parent text--l">Color <span class="arrow arrow--down"></span></h4>
-              <ul class="check-list">
-                <li class="cl-item"><input id="checkbox6" name="checkbox" type="checkbox" value=".chest, .photos, .design, .walls"><label for="checkbox6"><span class="path--white rounded pin-brown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
-  <title>Check</title>
-  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
-  <!--[if lte IE 8]>
-  <foreignObject>
-    <img src="source/images/svg/output/png/check.png" alt="Check" class="no-svg-png">
-  </foreignObject>
-  <![endif]-->
-</svg>
-</span> Brown</label></li>
-                <li class="cl-item"><input id="checkbox7" name="checkbox" type="checkbox" value=".the, .wall"><label for="checkbox7"><span class="path--white rounded pin-beige"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
-  <title>Check</title>
-  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
-  <!--[if lte IE 8]>
-  <foreignObject>
-    <img src="source/images/svg/output/png/check.png" alt="Check" class="no-svg-png">
-  </foreignObject>
-  <![endif]-->
-</svg>
-</span> Beige</label></li>
-                <li class="cl-item"><input id="checkbox8" name="checkbox" type="checkbox" value=".photos, .photos, .design"><label for="checkbox8"><span class="path--white rounded pin-orange"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
-  <title>Check</title>
-  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
-  <!--[if lte IE 8]>
-  <foreignObject>
-    <img src="source/images/svg/output/png/check.png" alt="Check" class="no-svg-png">
-  </foreignObject>
-  <![endif]-->
-</svg>
-</span> Orange</label></li>
-                <li class="cl-item"><input id="checkbox9" name="checkbox" type="checkbox" value=".wall, .paint"><label for="checkbox9"><span class="path--white rounded pin-blue"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
-  <title>Check</title>
-  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
-  <!--[if lte IE 8]>
-  <foreignObject>
-    <img src="source/images/svg/output/png/check.png" alt="Check" class="no-svg-png">
-  </foreignObject>
-  <![endif]-->
-</svg>
-</span> Blue</label></li>
-                <li class="cl-item"><input id="checkbox10" name="checkbox" type="checkbox" value=".walls, .the"><label for="checkbox10"><span class="path--white rounded pin-green"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
-  <title>Check</title>
-  <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
-  <!--[if lte IE 8]>
-  <foreignObject>
-    <img src="source/images/svg/output/png/check.png" alt="Check" class="no-svg-png">
-  </foreignObject>
-  <![endif]-->
-</svg>
-</span> Green</label></li>
-              </ul> <!-- /.check-list -->
-            </nav> <!-- /.nav-check-list -->
+
+            <nav class="nav-check-list nav-check-list--rooms check-group" data-filter-group="rooms">
+                          <h4 class="upper nav-check-list-title js-toggle-parent text--l">Rooms <span class="arrow arrow--down"></span></h4>
+                          <ul class="check-list">
+                            <li class="cl-item"><input id="filter--livingroom" name="filter--livingroom" type="checkbox" value=".filter--livingroom"><label for="filter--livingroom"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+              <title>Check</title>
+              <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
+              <!--[if lte IE 8]>
+              <foreignObject>
+                <img src="source/images/svg/output/png/check.png" alt="Check" class="no-svg-png">
+              </foreignObject>
+              <![endif]-->
+            </svg>
+            </span> Living Room</label></li>
+                            <li class="cl-item"><input id="filter--diningroom" name="filter--diningroom" type="checkbox" value=".filter--diningroom"><label for="filter--diningroom"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+              <title>Check</title>
+              <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
+              <!--[if lte IE 8]>
+              <foreignObject>
+                <img src="source/images/svg/output/png/check.png" alt="Check" class="no-svg-png">
+              </foreignObject>
+              <![endif]-->
+            </svg>
+            </span> Dining Room</label></li>
+                            <li class="cl-item"><input id="filter--homeoffice" name="filter--homeoffice" type="checkbox" value=".filter--homeoffice"><label for="filter--homeoffice"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+              <title>Check</title>
+              <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
+              <!--[if lte IE 8]>
+              <foreignObject>
+                <img src="source/images/svg/output/png/check.png" alt="Check" class="no-svg-png">
+              </foreignObject>
+              <![endif]-->
+            </svg>
+            </span> Home Office</label></li>
+                            <li class="cl-item"><input id="filter--storagespace" name="filter--storagespace" type="checkbox" value=".filter--storagespace"><label for="filter--storagespace"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+              <title>Check</title>
+              <path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/>
+              <!--[if lte IE 8]>
+              <foreignObject>
+                <img src="source/images/svg/output/png/check.png" alt="Check" class="no-svg-png">
+              </foreignObject>
+              <![endif]-->
+            </svg>
+            </span> Storage Space</label></li>
+                          </ul> <!-- /.check-list -->
+                        </nav> <!-- /.nav-check-list -->
           </div> <!-- /.search-filters -->
         </div> <!-- /.search-left--slim -->
 
@@ -659,7 +640,7 @@
           <div class="shift-right--slim-inner">
 
           <?php
-            $request_board = 'https://api.pinterest.com/v1/boards/346003252560651353/pins/?access_token=AZ1t-Nb0yUV7e24V0Q1Tq9a2_c_VE_Ir-reDVD9CVf4N1WAa5QAAAAA&fields=id,url,note,image[500x]';
+            $request_board = 'https://api.pinterest.com/v1/boards/346003252560854074/pins/?access_token=AZ1t-Nb0yUV7e24V0Q1Tq9a2_c_VE_Ir-reDVD9CVf4N1WAa5QAAAAA&fields=id,url,note,image[500x]';
             $board_content = file_get_contents($request_board);
             $board_json = json_decode($board_content, true);
           ?>
@@ -673,12 +654,12 @@
 
                   $note_words = preg_split('/\s+/', $pin_note);
 
-                  $pin_tags = array('walls', 'wall', 'photos', 'the', 'chest', 'cart', 'design', 'paint', 'picture', 'space');
+                  $pin_tags = array('#eclecticcool', '#moderncomfort', '#sheerelegance', '#livingroom', '#diningroom', '#storagespace', '#everydayglam', '#homeoffice');
                   $selected_tags = "";
 
                   foreach($note_words as $word) {
                     if (in_array(strtolower($word), $pin_tags)) {
-                      $selected_tags .= strtolower($word) . " ";
+                      $selected_tags .= strtolower(str_replace('#', 'filter--', $word)) . " ";
                     }
                   }
               ?>
