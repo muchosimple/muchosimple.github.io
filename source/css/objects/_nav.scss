@@ -543,6 +543,7 @@
 		background-color: $white;
 		padding: rem(8) rem(8) rem(7);
 		border: $border-style;
+		z-index: 100;
 		&:hover {
 			.nav-check-list-title {
 				color: $pink-dark;

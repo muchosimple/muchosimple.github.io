@@ -26,33 +26,16 @@ var filters = {};
 $('.nav-check-list').on('click', '.cl-item', function() {
   var $this = $(this);
 
-  // Get group key
-  var $checkGroup = $this.parents('.check-group');
-  var filterGroup = $checkGroup.attr('data-filter-group');
-
   // Set filter for group
-  filters[filterGroup] = $this.find('input').val();
-
-  // Combine filters
-  var filterValue = concatValues(filters);
+  filterValue = $this.find('input').val();
 
   $grid.isotope({ filter: filterValue });
 
   // Change checked attribute on inputs
-  $('.check-group').each(function(i, checkGroup) {
-    var $checkGroup = $(checkGroup);
-    $checkGroup.on('click', 'input', function() {
-      $checkGroup.find(':checked').prop('checked', false);
-      $(this).prop('checked', true);
-    });
+  var $checkGroup = $('.search-filters');
+  $checkGroup.on('click', 'input', function() {
+    $checkGroup.find(':checked').prop('checked', false);
+    $(this).prop('checked', true);
   });
 });
 
-// Flatten object by concatting values
-function concatValues(obj) {
-  var value = '';
-  for (var prop in obj) {
-    value += obj[prop];
-  }
-  return value;
-}
