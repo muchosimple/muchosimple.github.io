@@ -626,7 +626,7 @@
           <div class="shift-right--slim-inner">
 
           <?php
-            $request_board = 'https://api.pinterest.com/v1/boards/346003252560854074/pins/?access_token=AZ1t-Nb0yUV7e24V0Q1Tq9a2_c_VE_Ir-reDVD9CVf4N1WAa5QAAAAA&fields=id,url,note,image[500x]';
+            $request_board = 'https://api.pinterest.com/v1/boards/346003252560854074/pins/?access_token=AZ1t-Nb0yUV7e24V0Q1Tq9a2_c_VE_Ir-reDVD9CVf4N1WAa5QAAAAA&fields=id,url,note,image[500x]&limit=100';
             $board_content = file_get_contents($request_board);
             $board_json = json_decode($board_content, true);
           ?>
