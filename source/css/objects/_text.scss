@@ -198,6 +198,9 @@
 .pink {
 	color: $pink;
 }
+.red {
+	color: $red;
+}
 .white {
 	color: $white;
 }
@@ -327,7 +330,7 @@
 	span {
 		display: inline-block;
 		padding: rem(2) rem(4) rem(1);
-		background-color: $pink;
+		background-color: $red;
 		position: relative;
 		z-index: 10;
 		line-height: 1;
