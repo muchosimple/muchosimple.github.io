@@ -346,9 +346,9 @@
 .spons-title {
   text-transform: uppercase;
   color: $white;
-  background-color: $red;
+  background-color: $pink;
   font-size: rem(17);
-  padding: rem(5) rem(10) rem(4);
+  padding: rem(6) rem(10) rem(5);
   margin: 0;
   line-height: 1;
   text-align: center;
@@ -367,8 +367,8 @@
   text-align: center;
   margin-bottom: rem(4);
   display: inline-block;
+  margin-left: rem(6);
   span {
-    font-family: $sans;
     color: $gray-dark;
     display: inline-block;
     vertical-align: middle;

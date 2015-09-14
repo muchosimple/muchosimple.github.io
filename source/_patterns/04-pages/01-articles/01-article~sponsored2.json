@@ -1,0 +1,16 @@
+{
+	"article-head" : [
+		{
+			"has-head-meta" : true,
+			"has-social-count" : "true",
+			"kicker" : "Sponsored Content",
+			"sub-kicker" : false
+		}
+	],
+	"sponsor-label" : {
+		"img": {
+			"src": "../../images/sponsor_tinyprints.png",
+			"alt": "Tinyprints"
+		}
+	}
+}
