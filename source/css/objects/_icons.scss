@@ -78,14 +78,22 @@
 .icon-play {
   position: absolute;
   left: 50%;
-  margin-left: -$icon-big / 2;
   top: 50%;
+  margin-left: -$icon-big / 2;
   margin-top: -$icon-big / 2;
   z-index: 10;
   opacity: .8;
   padding: 0;
   box-shadow: 0 0 3px rgba($black, .5);
   @include trans;
+  &.icon--large {
+    margin-left: -$icon-large / 2;
+    margin-top: -$icon-large / 2;
+  }
+  &.icon--medium {
+    margin-left: -$icon-medium / 2;
+    margin-top: -$icon-medium / 2;
+  }
 }
 
 // Fixed upper right button (usually a close button)

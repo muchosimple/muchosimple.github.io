@@ -1,3 +1,7 @@
+/*------------------------------------*\
+    $SECTIONS
+\*------------------------------------*/
+
 .section {
   position: relative;
   margin-bottom: $space;
@@ -17,7 +21,9 @@
   }
 }
 
-// Daily Finds
+/**
+ * Daily Finds
+ */
 .daily-finds {
   text-align: center;
   .block {
@@ -27,7 +33,9 @@
   }
 }
 
-// Most Shared
+/**
+ * Most Shared
+ */
 .most-shared {
   .bi {
     padding-left: rem(50);
@@ -45,7 +53,9 @@
   }
 }
 
-// You Might Like (Outbrain)
+/**
+ * You Might Like (Outbrain)
+ */
 .you-might-like,
 .you-may-also-like {
   .OUTBRAIN {
@@ -143,7 +153,9 @@
   }
 }
 
-// From our Partners
+/**
+ * From our Partners
+ */
 .from-partners {
   .text--s {
     color: $gray-med;
@@ -151,7 +163,9 @@
   }
 }
 
-// Content Footer
+/**
+ * Content Footer
+ */
 .content-footer {
   margin-bottom: $space-double;
   @include mq($medium-break) {
@@ -182,7 +196,10 @@
 .newsletter-form {
   margin-bottom: rem(45);
 }
-// Block Layout for Content Footer Blocks
+
+/**
+ * Block Layout for Content Footer Blocks
+ */
 @mixin cf-blocks {
   text-align: center;
   .block,
@@ -216,7 +233,10 @@
 .cf-blocks {
   @include cf-blocks;
 }
-// You Might Like in Content Footer (Outbrain)
+
+/**
+ * You Might Like in Content Footer (Outbrain)
+ */
 .you-might-like-footer {
   clear: both;
   .s-title {
@@ -331,7 +351,9 @@
   }
 }
 
-// Sponsor Header Section
+/**
+ * Sponsor Header Section
+ */
 .sponsor-header {
   @include mq($medium-break) {
     margin-top: -$space;
@@ -407,7 +429,9 @@
   box-shadow: 0 0 4px rgba($black, .5);
 }
 
-// Checklist Sections
+/**
+ * Checklist Sections
+ */
 .checklist-items {
   padding-top: $pad;
   margin-bottom: rem(60);
@@ -501,6 +525,12 @@
 .page--top {
   margin-bottom: rem(3);
 }
+
+
+/*------------------------------------*\
+    $HOME & CHANNEL (mostly)
+\*------------------------------------*/
+
 // Right section of the home page containing a block and 300x250 ad.
 .home-right-blocks {
   @media (min-width: $px600) and (max-width: $medium-break) {
@@ -540,7 +570,9 @@
   }
 }
 
-// Video module section (currently on the home page & channel pages)
+/**
+ * Video module section (currently on the home page & channel pages)
+ */
 .video-module {
   margin-bottom: rem(10);
 }
@@ -639,7 +671,9 @@
   }
 }
 
-// Video horizontal strip
+/**
+ * Video horizontal strip
+ */
 .video-strip {
   .dek p {
     font-size: rem(18);
@@ -656,7 +690,10 @@
     }
   }
 }
-// Top section for promotion blocks. Typically used on channel landing pages.
+
+/**
+ * Top section for promotion blocks. Typically used on channel landing pages.
+ */
 .blocks-w-hero {
   @include mq($medium-break) {
     margin-bottom: $space-double;
@@ -690,7 +727,10 @@
     }
   }
 }
-// Featured section with 3 columns: col1 = 2 block thumbs, col2 = hero image, col3 = 2 block thumbs
+
+/**
+ * Featured section with 3 columns: col1 = 2 block thumbs, col2 = hero image, col3 = 2 block thumbs
+ */
 .col3-blocks-w-hero {
   @include mq($larger-break) {
     padding-left: $pad-half;
@@ -739,7 +779,10 @@
     }
   }
 }
-// Featured section with 2 columns: col1 = 3 block thumbs, col2 = hero image
+
+/**
+ * Featured section with 2 columns: col1 = 3 block thumbs, col2 = hero image
+ */
 .col2-blocks-w-hero {
   .col2 {
     text-align: center;
@@ -803,7 +846,10 @@
     }
   }
 }
-// Sub-Channel
+
+/**
+ * Sub-Channel
+ */
 .sub-channel-header {
   @include mq($px600) {
     display: table;
@@ -829,7 +875,10 @@
     }
   }
 }
-// Search
+
+/**
+ * Search
+ */
 .article-header.search-header {
   border-bottom: $border-style;
   @include mq($px600) {
@@ -847,3 +896,97 @@
     margin-bottom: $space;
   }
 }
+
+
+/*------------------------------------*\
+    $VIDEO HUB & STAND-ALONE
+\*------------------------------------*/
+
+/**
+ * Video
+ */
+.section__feat-videos {
+  @include mq($px700, max) {
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-left: -$space;
+    margin-right: -$space;
+    padding-left: $pad-half;
+    padding-right: $pad-half;
+    scroll-snap-points-x: repeat(100%);
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 50% 50%;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .block {
+    @include mq($px700, max) {
+      display: inline-block;
+      max-width: rem(250);
+      white-space: normal;
+      vertical-align: top;
+      padding-left: $pad-half;
+      padding-right: $pad-half;
+    }
+    @include mq($px1100) {
+      margin-bottom: rem(25);
+    }
+  }
+  .b-title {
+    font-size: rem(18);
+    @media (min-width: $px700) and (max-width: $px1000) {
+      font-size: rem(16);
+    }
+    @include mq($px1100) {
+      font-size: rem(20);
+    }
+  }
+}
+
+/**
+ * Video Recirc Thumbs
+ */
+.section__video-recirc {
+  border-top: $border-style;
+  padding-top: $pad-and-half;
+  height: rem(450);
+  overflow: hidden;
+  position: relative;
+  @include trans;
+  @include bg-gradient(150, auto, 0, rgba($white, 0), $white);
+  @include mq($px700) {
+    height: rem(650);
+    border-top: none;
+  }
+  @include mq($px700) {
+    height: auto;
+    &:before {
+      display: none;
+    }
+  }
+  .gi {
+    margin-bottom: 0;
+    @include mq($px700) {
+      margin-bottom: $space-half;
+    }
+  }
+  .block {
+    margin-bottom: 0;
+  }
+  .b-title {
+    font-size: rem(14);
+    @include mq($px700) {
+      font-size: rem(16);
+    }
+  }
+  &.more-thumbs-is-active {
+    height: auto;
+    &:before {
+      display: none;
+    }
+  }
+}
+

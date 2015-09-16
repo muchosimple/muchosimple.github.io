@@ -25,7 +25,7 @@
         {{/ picturefill }}
 
         {{# is-video }}
-          <span class="icon icon-play icon--big rounded">{{> atoms-play }}</span>
+          <span class="icon icon-play {{ video-icon-class }} rounded">{{> atoms-play }}</span>
         {{/ is-video}}
 
       </div> <!-- /.img-wrap -->
@@ -73,7 +73,7 @@
       {{/ cta }}
 
       {{# runtime }}
-        <span class="light text--r runtime">({{ runtime }})</span>
+        <span class="light runtime {{ runtime-class }}">({{ runtime }})</span>
       {{/ runtime }}
     </div> <!-- /.b-text -->
 

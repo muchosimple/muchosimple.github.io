@@ -11,38 +11,147 @@
       "subtitle" : "The cork broke off while you were trying to open a bottle of wine? Here’s how to rescue the wine inside."
     }
   ],
-  "more-videos" : [
+  "feat-videos" : [
     {
-      "block-class" : "",
+      "block-class" : "has-video space-btm",
+      "is-video" : true,
       "img" : {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/0906/din-chicken-quesadillas_300.jpg?itok=gBgZgcXb"
+        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/carrot-cake-pancakes_896.jpg?itok=fOFl-ee3"
       },
       "byline" : false,
       "title" : "Grilled Chicken and Spinach Quesadillas"
     },
     {
-      "block-class" : "",
+      "block-class" : "has-video space-btm",
+      "is-video" : true,
       "img" : {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0409/chicken-beans_300.jpg?itok=uzC5Hqdo"
+        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/image/images/1304/woman-meditating_300.jpg?itok=xeIcRuQ-"
       },
       "byline" : false,
       "title" : "Pan-Roasted Chicken With Lemon-Garlic Green Beans"
     },
     {
-      "block-class" : "",
+      "block-class" : "has-video space-btm",
+      "is-video" : true,
       "img" : {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0805/chicken-cashew_300.jpg?itok=0UUBaNgv"
+        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
       },
       "byline" : false,
       "title" : "Chicken and Cashews in Lettuce Wraps"
-    },
-    {
-      "block-class" : "",
-      "img" : {
-        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0506/chicken-stroganoff-b_300.jpg?itok=Mn-MNrkg"
-      },
-      "byline" : false,
-      "title" : "Chicken Stroganoff"
     }
-  ]
+  ],
+  "video-recirc" : {
+    "block-class" : "has-video",
+    "is-video" : true,
+    "byline" : false,
+    "video-icon-class" : "icon--large",
+    "runtime-class" : "text--s-m",
+    "videos" : [
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "4 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/carrot-cake-pancakes_896.jpg?itok=fOFl-ee3"
+        },
+        "title" : "Grilled Chicken and Spinach Quesadillas",
+        "runtime" : "2 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/image/images/1304/woman-meditating_300.jpg?itok=xeIcRuQ-"
+        },
+        "title" : "Pan-Roasted Chicken With Lemon-Garlic Green Beans",
+        "runtime" : "5 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "3 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/carrot-cake-pancakes_896.jpg?itok=fOFl-ee3"
+        },
+        "title" : "Grilled Chicken and Spinach Quesadillas",
+        "runtime" : "4 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/image/images/1304/woman-meditating_300.jpg?itok=xeIcRuQ-"
+        },
+        "title" : "Pan-Roasted Chicken With Lemon-Garlic Green Beans",
+        "runtime" : "5 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "1 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/carrot-cake-pancakes_896.jpg?itok=fOFl-ee3"
+        },
+        "title" : "Grilled Chicken and Spinach Quesadillas",
+        "runtime" : "4 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/image/images/1304/woman-meditating_300.jpg?itok=xeIcRuQ-"
+        },
+        "title" : "Pan-Roasted Chicken With Lemon-Garlic Green Beans",
+        "runtime" : "5 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "4 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/image/images/1304/woman-meditating_300.jpg?itok=xeIcRuQ-"
+        },
+        "title" : "Pan-Roasted Chicken With Lemon-Garlic Green Beans",
+        "runtime" : "5 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "1 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/carrot-cake-pancakes_896.jpg?itok=fOFl-ee3"
+        },
+        "title" : "Grilled Chicken and Spinach Quesadillas",
+        "runtime" : "4 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/image/images/1304/woman-meditating_300.jpg?itok=xeIcRuQ-"
+        },
+        "title" : "Pan-Roasted Chicken With Lemon-Garlic Green Beans",
+        "runtime" : "5 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "4 min"
+      }
+    ]
+  }
 }

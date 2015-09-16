@@ -111,7 +111,9 @@
 	}
 }
 
-// Wide left column, and static width right column.
+/**
+ * Wide left column, and static width right column.
+ */
 .shift-left {
 	width: 100%;
 	@include mq($medium-break) {
@@ -136,7 +138,43 @@
 	}
 }
 
-// Short static width left column, and fluid width right column.
+/**
+ * Shift at 700
+ */
+.shift-left--700 {
+	width: 100%;
+	@include mq($px700) {
+		float: left;
+		margin-right: rem(-200);
+	}
+	@include mq($px900) {
+		margin-right: rem(-250);
+	}
+}
+.shift-left--inner--700 {
+	@include mq($px700) {
+		margin-right: rem(225);
+	}
+	@include mq($px900) {
+		margin-right: rem(280);
+	}
+	@include mq($px1100) {
+		margin-right: rem(300);
+	}
+}
+.shift-right--700 {
+	@include mq($px700) {
+		float: right;
+		width: rem(200);
+	}
+	@include mq($px900) {
+		width: rem(250);
+	}
+}
+
+/**
+ * Short static width left column, and fluid width right column.
+ */
 .shift-right--slim {
 	width: 100%;
 	@media (min-width: $px600) {
@@ -304,6 +342,48 @@
 // Used for grid items that break into 4 across at smaller widths.
 .g-4up-early-break {
 	@include g-4up-early-break;
+}
+
+/**
+ * Grid 4 up starting with 2 columns
+ */
+.g-4up-2col-start {
+	> .gi {
+		// Layout:
+		// [][]
+		// [][]
+		float: left;
+		width: 50%;
+		margin-bottom: $space;
+		&:nth-of-type(2n+1) {
+			clear: both;
+		}
+	}
+	@include mq($px600) {
+		// Layout: [][][]
+		// 				 []
+		> .gi {
+			width: 33.333%;
+			&:nth-of-type(2n+1) {
+				clear: none;
+			}
+			&:nth-of-type(3n+1) {
+				clear: left;
+			}
+		}
+	}
+	@include mq($large-break) {
+		// Layout: [][][][]
+		> .gi {
+			width: 25%;
+			&:nth-of-type(3n+1) {
+				clear: none;
+			}
+			&:nth-of-type(4n+1) {
+				clear: left;
+			}
+		}
+	}
 }
 
 /* Grid 5up */

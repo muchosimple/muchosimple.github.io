@@ -10,11 +10,14 @@
   }
 }
 .ad-leaderboard {
-  padding-top: $pad;
+  padding-top: $pad-half;
   padding-bottom: $pad-half;
   text-align: center;
   background-color: rgba($white, 0);
   @include transition(all .3s ease-out);
+  @include mq($medium-break) {
+    padding-top: $pad;
+  }
   &.sticky-is-active {
     padding-top: $pad-half;
     background-color: rgba($white, .85);
@@ -71,6 +74,15 @@
 }
 .ad-728x90 {
   width: rem(728);
+}
+.ad-300x250,
+.ad-300x600 {
+  @include mq($px350, max) {
+    overflow: visible;
+    margin-left: -20px;
+    margin-right: -20px;
+    width: auto;
+  }
 }
 
 // Anchored to bottom for < 800px viewports

@@ -25,7 +25,7 @@
         {{/ picturefill }}
 
         {{# is-video }}
-          &lt;span class=&quot;icon icon-play icon--big rounded&quot;&gt;{{&gt; atoms-play }}&lt;/span&gt;
+          &lt;span class=&quot;icon icon-play {{ video-icon-class }} rounded&quot;&gt;{{&gt; atoms-play }}&lt;/span&gt;
         {{/ is-video}}
 
       &lt;/div&gt; &lt;!-- /.img-wrap --&gt;
@@ -73,7 +73,7 @@
       {{/ cta }}
 
       {{# runtime }}
-        &lt;span class=&quot;light text--r runtime&quot;&gt;({{ runtime }})&lt;/span&gt;
+        &lt;span class=&quot;light runtime {{ runtime-class }}&quot;&gt;({{ runtime }})&lt;/span&gt;
       {{/ runtime }}
     &lt;/div&gt; &lt;!-- /.b-text --&gt;
 

@@ -1,4 +1,10 @@
-// Article
+/*------------------------------------*\
+		$ARTICLES
+\*------------------------------------*/
+
+/**
+ * Article Header
+ */
 .article-header {
 	margin-bottom: $space;
 	position: relative;
@@ -60,6 +66,10 @@
 		margin-bottom: $space-half;
 	}
 }
+
+/**
+ * Article bylines
+ */
 .byline {
 	font-size: rem(18);
 	font-weight: bold;
@@ -74,46 +84,9 @@
 	margin-bottom: rem(14);
 }
 
-// Figures within Articles
-.figure {
-	padding-top: rem(6);
-	@include center-block;
-	.caption,
-	.credit {
-		line-height: 1.2;
-	}
-	.caption {
-		//padding-top: rem(2)
-	}
-}
-// Figure Placement
-.figure--right {
-	@include mq($micro-break) {
-		float: right;
-		width: 50%;
-		margin-left: $space;
-	}
-	@include mq($medium-break) {
-		// Negative indent the right aligned article images to extend beyonf the
-		// article content column to allow for more room for text.
-		margin-right: rem(-25);
-	}
-}
-// Figure Sizing
-.figure--l {
-	max-width: rem(436);
-	@include mq($large-break) {
-		width: 60%;
-	}
-}
-.figure--m {
-	max-width: rem(300);
-	@include mq($large-break) {
-		width: 37%;
-	}
-}
-
-// Article byline and date format
+/**
+ * Article byline and date format
+ */
 .article-meta {
 	margin-bottom: rem(12);
 	@include mq($micro-break) {
@@ -128,13 +101,62 @@
 	}
 }
 
-// Intro text
+/**
+ * Figures within Articles
+ */
+.figure {
+	padding-top: rem(6);
+	@include center-block;
+	.caption,
+	.credit {
+		line-height: 1.2;
+	}
+	.caption {
+		//padding-top: rem(2)
+	}
+}
+/**
+ * Figure Placement
+ */
+.figure--right {
+	@include mq($micro-break) {
+		float: right;
+		width: 50%;
+		margin-left: $space;
+	}
+	@include mq($medium-break) {
+		// Negative indent the right aligned article images to extend beyonf the
+		// article content column to allow for more room for text.
+		margin-right: rem(-25);
+	}
+}
+/**
+ * Figure Sizing
+ */
+.figure--l {
+	max-width: rem(436);
+	@include mq($large-break) {
+		width: 60%;
+	}
+}
+.figure--m {
+	max-width: rem(300);
+	@include mq($large-break) {
+		width: 37%;
+	}
+}
+
+/**
+ * Intro text
+ */
 .intro {
 	font-size: rem(18);
 	margin-bottom: rem(8);
 }
 
-// Social Share & Content Utilities
+/**
+ * Social Share & Content Utilities
+ */
 .social-share,
 .content-utility {
 	display: inline-block;
@@ -146,7 +168,7 @@
 	}
 	li {
 		display: inline-block;
-		margin-right: rem(10);
+		margin-right: rem(5);
 		vertical-align: bottom;
 		padding-top: rem(2);
 		@include mq($micro-break) {
@@ -162,10 +184,7 @@
 	}
 }
 .social-share {
-	//margin-right: rem(14);
-	@include mq($micro-break) {
-		//margin-right: rem(20);
-	}
+	margin-right: rem(8);
 }
 .ss-link .icon {
 	display: block;
@@ -186,7 +205,11 @@
 	vertical-align: top;
 }
 
-// Image List Articles (Listicles)
+
+ /*------------------------------------*\
+		 $IMAGE LISTS
+ \*------------------------------------*/
+
 .article-list-type  {
 	padding-top: $pad-half;
 	hr {
@@ -203,7 +226,9 @@
 	}
 }
 
-// Social Sharing Image Overlay
+/**
+ * Social Sharing Image Overlay
+ */
 .has-social {
 	position: relative;
 	overflow: hidden;
@@ -235,7 +260,11 @@
 	right: 0;
 }
 
-// Fivestar Ratings
+
+/*------------------------------------*\
+		$FIVE STAR RATINGS
+\*------------------------------------*/
+
 .five-star {
 	margin-bottom: $space-half;
 	@include mq($medium-break) {
@@ -383,7 +412,10 @@
 	}
 }
 
-// Headline/Image halved sections
+
+/**
+ * Headline/Image halved sections
+ */
 .left-halved {
 	@media (min-width: $px500) and (max-width: $medium-break), (min-width: $px900) {
 		float: left;
@@ -409,7 +441,12 @@
 		width: 55%;
 	}
 }
-// Recipe
+
+
+/*------------------------------------*\
+		$ARTICLE RECIPES
+\*------------------------------------*/
+
 .article-recipe {
 	// All of the text links on Recipes are blue.
 	a {
@@ -534,7 +571,9 @@
 	}
 }
 
-// Tips
+/**
+ * Tips
+ */
 .tip {
 	border: $border-style-light;
 	padding: rem(16) $pad 0;
@@ -559,5 +598,23 @@
 	margin-bottom: rem(48);
 	@include mq($large-break) {
 		margin-bottom: rem(60);
+	}
+}
+
+
+/*------------------------------------*\
+		$VIDEO ARTICLE
+\*------------------------------------*/
+
+.article__video {
+	.lead-headline {
+		@media (min-width: $px450) and (max-width: $px1000) {
+			font-size: rem(30);
+		}
+	}
+	.lead-subtitle {
+		@media (min-width: $px450) and (max-width: $px1000) {
+			font-size: rem(20);
+		}
 	}
 }

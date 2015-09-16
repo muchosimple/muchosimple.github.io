@@ -267,17 +267,19 @@ $supported: true !default;
   @return $target / $context + 0em;
 }
 
-@mixin bg-gradient($height: 150) {
+@mixin bg-gradient($height: 150, $top: auto, $bottom: 0, $color1: rgba(black, 0), $color2: black) {
+  position: relative;
   &:before {
     display: block;
     content: "";
     width: 100%;
-    z-index: 0;
+    z-index: 100;
     position: absolute;
-    bottom: 0;
+    top: $top;
+    bottom: $bottom;
     left: 0;
     @include rem(height, $height);
-    @include background-image(linear-gradient(rgba(black, 0), black 100%));
+    @include background-image(linear-gradient($color1, $color2 100%));
   }
 }
 
