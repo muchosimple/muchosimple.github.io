@@ -412,7 +412,7 @@
 
   <div class="main cf" role="main" aria-live="polite">
 
-    <div class="page-header bg--teal">
+    <div class="page-header">
       <div class="lc rel">
         <span class="path--white logo--small center-block logo-eyebrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 88.1" enable-background="new 0 0 800 88.1">
   <title>Real Simple</title>

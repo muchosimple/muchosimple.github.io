@@ -966,6 +966,12 @@
     &:before {
       display: none;
     }
+    .icon-play {
+      width: $icon-big;
+      height: $icon-big;
+      margin-left: -$icon-big / 2;
+      margin-top: -$icon-big / 2;
+    }
   }
   .gi {
     margin-bottom: 0;
