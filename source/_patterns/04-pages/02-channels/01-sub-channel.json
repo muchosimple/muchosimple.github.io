@@ -35,171 +35,171 @@
 	],
 	"content-modules-1" : [
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"kicker" : "Wardrobe Basics",
 			"img" : {
-				"src" : "http://d.pr/i/19NIp+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "How to Nail the Classic American Look"
 			},
 			"title" : "How to Nail the Classic American Look",
 			"dek" : "Timeless picks (chambray, stripes, espadrilles), retro-priced for your wallet."
 		},
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"kicker" : "Bathing Suits",
 			"img" : {
-				"src" : "http://d.pr/i/14eFH+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "Bathing Suits for 2015 You'll Actually Want to Wear"
 			},
 			"title" : "Bathing Suits for 2015 You'll Actually Want to Wear",
 			"dek" : "Real Simple helped nine real women with nine real bodies find an on-trend swimsuit they love."
 		},
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"kicker" : "Shoes",
 			"img" : {
-				"src" : "http://d.pr/i/10kvu+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "9 Weekend Getaway Essentials"
 			},
 			"title" : "9 Weekend Getaway Essentials",
 			"dek" : "Think of these ultra-comfortable espadrilles as the summertime alternative to your ballet flats."
 		},
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"kicker" : "Swimwear",
 			"img" : {
-				"src" : "http://d.pr/i/1bhyU+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "A Brief History of the Bathing Suit"
 			},
 			"title" : "A Brief History of the Bathing Suit",
 			"dek" : "From head-to-toe Victorian bathing costumes to the iconic two-piece, here’s how women’s swimwear has evolved over the years."
 		},
 		{
-			"block-class" : "is-sponsored content-module",
+			"block-class" : "is-sponsored content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"is_sponsored" : true,
 			"sponsor" : "Clothing",
 			"img" : {
-				"src" : "http://d.pr/i/1bFft+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "8 Spring Essentials Under $50"
 			},
 			"title" : "8 Spring Essentials Under $50",
 			"dek" : "It may not be summer yet, but you can still get a head start on your warm-weather wardrobe with these well-priced buys."
 		},
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"kicker" : "Trends",
 			"img" : {
-				"src" : "http://d.pr/i/1j6zq+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "Spring Fashion Trends"
 			},
 			"title" : "Spring Fashion Trends",
 			"dek" : "Seasonal looks you’ll love, come rain or come shine."
 		},
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"kicker" : "Runway",
 			"img" : {
-				"src" : "http://d.pr/i/141UW+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "One Spring Trend You Have to Try"
 			},
 			"title" : "One Spring Trend You Have to Try",
 			"dek" : "Transition this runway-inspired style into your everyday life."
 		},
 		{
-			"block-class" : "content-module has-video",
+			"block-class" : "content-module has-video table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"is-video" : true,
 			"kicker-btm" : true,
 			"kicker" : "Wardrobe Basics",
 			"img" : {
-				"src" : "http://d.pr/i/19NIp+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "How to Nail the Classic American Look"
 			},
 			"title" : "How to Nail the Classic American Look",
 			"dek" : "Timeless picks (chambray, stripes, espadrilles), retro-priced for your wallet."
 		},
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"kicker" : "Bathing Suits",
 			"img" : {
-				"src" : "http://d.pr/i/14eFH+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "Bathing Suits for 2015 You'll Actually Want to Wear"
 			},
 			"title" : "Bathing Suits for 2015 You'll Actually Want to Wear",
 			"dek" : "Real Simple helped nine real women with nine real bodies find an on-trend swimsuit they love."
 		},
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"kicker" : "Shoes",
 			"img" : {
-				"src" : "http://d.pr/i/10kvu+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "9 Weekend Getaway Essentials"
 			},
 			"title" : "9 Weekend Getaway Essentials",
 			"dek" : "Think of these ultra-comfortable espadrilles as the summertime alternative to your ballet flats."
 		},
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"kicker" : "Swimwear",
 			"img" : {
-				"src" : "http://d.pr/i/1bhyU+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "A Brief History of the Bathing Suit"
 			},
 			"title" : "A Brief History of the Bathing Suit",
 			"dek" : "From head-to-toe Victorian bathing costumes to the iconic two-piece, here’s how women’s swimwear has evolved over the years. (Good news: Those teeny-weeny bikinis actually aren’t getting teenier!)"
 		},
 		{
-			"block-class" : "is-sponsored content-module",
+			"block-class" : "is-sponsored content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"is_sponsored" : true,
 			"sponsor" : "Clothing",
 			"img" : {
-				"src" : "http://d.pr/i/1bFft+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "8 Spring Essentials Under $50"
 			},
 			"title" : "8 Spring Essentials Under $50",
 			"dek" : "It may not be summer yet, but you can still get a head start on your warm-weather wardrobe with these well-priced buys."
 		},
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"kicker" : "Trends",
 			"img" : {
-				"src" : "http://d.pr/i/1j6zq+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "Spring Fashion Trends"
 			},
 			"title" : "Spring Fashion Trends",
 			"dek" : "Seasonal looks you’ll love, come rain or come shine."
 		},
 		{
-			"block-class" : "content-module",
+			"block-class" : "content-module table-layout--more-text",
 			"dek-class" : "alt-dek",
 			"kicker-btm" : true,
 			"kicker" : "Runway",
 			"img" : {
-				"src" : "http://d.pr/i/141UW+",
+				"src" : "http://placehold.it/160x160",
 				"alt" : "One Spring Trend You Have to Try"
 			},
 			"title" : "One Spring Trend You Have to Try",

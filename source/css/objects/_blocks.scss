@@ -526,6 +526,24 @@
       max-width: none;
     }
   }
+  &.table-layout--more-text {
+    max-width: none;
+    @media (max-width: $px450), (min-width: $px800) {
+      @include table-layout(35%, 65%);
+    }
+    @media (min-width: $px450) {
+      @include table-layout(30%, 70%);
+    }
+    @media (min-width: $px600) and (max-width: $px700), (min-width: $px900) {
+      @include table-layout(25%, 75%);
+    }
+    @media (min-width: $px700) and (max-width: $px800), (min-width: $px1100) {
+      @include table-layout(22%, 78%);
+    }
+    @media (min-width: $px1200) {
+      @include table-layout(20%, 80%);
+    }
+  }
   .kicker {
     margin-top: 0;
   }
