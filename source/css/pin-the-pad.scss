@@ -42,6 +42,7 @@ $pin-green: #02A650;
   }
   .logo-eyebrow {
     margin-bottom: rem(8);
+    height: rem(20);
   }
   .page-title {
     margin-bottom: rem(6);
@@ -93,9 +94,12 @@ $pin-green: #02A650;
   }
   .powered-by {
     width: rem(120);
+    height: rem(30);
+    padding-top: rem(14);
   }
   .pin-content {
     clear: both;
+    padding-bottom: $pad-double;
   }
   .nav-check-list-title {
     font-size: rem(15);

@@ -542,13 +542,7 @@
 
         <div class="shift-left--slim">
           <div class="search-filters">
-            <nav class="nav-check-list space-btm">
-              <ul class="check-list">
-                <li class="cl-item"><input id="filter--all" checked name="filter--all" type="checkbox" value=".filter--eclecticcool, .filter--moderncomfort, .filter--everydayglam, .filter--livingroom, .filter--diningroom, .filter--homeoffice"><label for="filter--all"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Check</title><path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/></svg>
-                </span> See All</label></li>
-              </ul>
-            </nav>
-            <nav class="nav-check-list nav-check-list--design-style check-group">
+            <nav class="nav-check-list nav-check-list--design-style check-group" data-filter-group="design-style">
               <h4 class="upper nav-check-list-title js-toggle-parent">Design Style <span class="arrow arrow--down"></span></h4>
               <ul class="check-list">
                 <li class="cl-item"><input id="filter--eclecticcool" name="filter--eclecticcool" type="checkbox" value=".filter--eclecticcool"><label for="filter--eclecticcool"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
@@ -581,10 +575,12 @@
   <![endif]-->
 </svg>
 </span> Everyday Glam</label></li>
+<li class="cl-item"><input id="filter--all-styles" checked name="filter--all-styles" type="checkbox" value=""><label for="filter--all-styles"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Check</title><path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/></svg>
+</span> See All</label></li>
               </ul> <!-- /.check-list -->
             </nav> <!-- /.nav-check-list -->
 
-            <nav class="nav-check-list nav-check-list--rooms check-group">
+            <nav class="nav-check-list nav-check-list--rooms check-group" data-filter-group="rooms">
                           <h4 class="upper nav-check-list-title js-toggle-parent">Rooms <span class="arrow arrow--down"></span></h4>
                           <ul class="check-list">
                             <li class="cl-item"><input id="filter--livingroom" name="filter--livingroom" type="checkbox" value=".filter--livingroom"><label for="filter--livingroom"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
@@ -617,6 +613,8 @@
               <![endif]-->
             </svg>
             </span> Home Office</label></li>
+            <li class="cl-item"><input id="filter--all-rooms" checked name="filter--all-rooms" type="checkbox" value=""><label for="filter--all-rooms"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Check</title><path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/></svg>
+            </span> See All</label></li>
                           </ul> <!-- /.check-list -->
                         </nav> <!-- /.nav-check-list -->
           </div> <!-- /.search-filters -->
