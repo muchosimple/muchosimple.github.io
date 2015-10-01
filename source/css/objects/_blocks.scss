@@ -72,7 +72,10 @@
     @include table-layout(50%, 50%);
   }
   &.table-layout--more-text {
-    @include table-layout(35%, 65%);
+    @include table-layout(26%, 74%);
+    @media (min-width: $px600) and (max-width: $px900) {
+      @include table-layout(30%, 70%);
+    }
   }
 }
 
