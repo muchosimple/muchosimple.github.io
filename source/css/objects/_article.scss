@@ -6,10 +6,9 @@
  * Article Header
  */
 .article-header {
-	margin-bottom: $space;
+	margin-bottom: $space-double;
 	position: relative;
 	&.center {
-		margin-bottom: $space-double;
 		.kicker {
 			margin-bottom: $space;
 		}
