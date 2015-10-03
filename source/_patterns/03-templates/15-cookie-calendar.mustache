@@ -1,0 +1,67 @@
+<div class="page">
+	{{> organisms-header }}
+	<div class="main cf lc" role="main" aria-live="polite">
+
+		<div class="cookie-calendar cc--pink">
+			<header class="cc__header article-header cf center">
+				<h1 class="cc__headline lead-headline pink ls-1" itemprop="headline">A Cookie A Day&hellip;</h1>
+				<div class="article-tools">
+					{{> molecules-social-share }}
+				</div> <!-- /.article-tools -->
+				<div class="cc__months">
+					<a href="" class="cc__month cc__month--active">November</a> <a href="" class="cc__month">December</a>
+				</div> <!-- /.cc__months -->
+			</header> <!-- /.cc__header -->
+
+			<div class="cc__cookies">
+				<ul class="cc__cookie-list">
+					{{# cookies }}
+					<li class="cc__block">
+						<div class="cc__block-inner rel">
+							<a href="#" class="cc__number js-toggle-parent">{{ number }}</a>
+							{{> atoms-image }}
+							<a href="#" class="cc__corner cc__corner--more js-toggle-parent"><span class="cc__corner-label">See More</span></a>
+							<div class="cc__block-text">
+								<div class="cc__block-text-inner rel">
+									<span class="cc__kicker">November 2, 2015</span>
+									<h2 class="cc__title">Chocolate Chip</h2>
+									<div class="cc__dek">
+										<p>Nullam massa ex, aliquet ac lectus at, fringilla facilisis risus. Sed eleifend velit ut posuere pulvinar. Vestibulum ullamcorper urna id ante ornare, et facilisis velit dictum.</p>
+										<a href="" class="cc__cta">Get the recipe</a>
+									</div> <!-- /.cc__dek -->
+									<span class="cc__credit">Photos by Michelle Smith</span>
+									<div class="cc__social social-share">
+										<ul class="ss-list">
+											<li class="ss-item">
+												<a class="ss-link" href="{{ url }}">
+													<span class="no-bg icon rounded icon-facebook icon--small">{{> atoms-facebook }}</span>
+												</a> <!-- /.ss-link -->
+											</li> <!-- /.ss-item -->
+											<li class="ss-item">
+												<a class="ss-link" href="{{ url }}">
+													<span class="no-bg icon rounded icon-twitter icon--small">{{> atoms-twitter }}</span>
+												</a> <!-- /.ss-link -->
+											</li> <!-- /.ss-item -->
+											<li class="ss-item">
+												<a class="ss-link" href="{{ url }}">
+													<span class="no-bg icon rounded icon-pinterest icon--small">{{> atoms-pinterest }}</span>
+												</a> <!-- /.ss-link -->
+											</li> <!-- /.ss-item -->
+										</ul> <!-- /.ss-list -->
+									</div> <!-- /.social-share -->
+								</div> <!-- /.cc__block-text-inner -->
+							</div> <!-- /.cc__block-text -->
+							<a href="#" class="cc__corner cc__corner--less js-toggle-parent"><span class="cc__corner-label">Back</span></a>
+						</div> <!-- /.cc__block-inner -->
+					</li> <!-- .cc__block -->
+					{{/ cookies }}
+				</ul> <!-- /.cc__cookie-list -->
+			</div> <!-- /.cc__cookies -->
+			<span class="pad-top black text--s">Photos by Michelle Smith</span>
+		</div> <!-- /.cookie-calendar -->
+
+		{{> organisms-content-footer }}
+
+	</div><!-- /role=main -->
+	{{> organisms-footer }}
+</div> <!-- /.page -->

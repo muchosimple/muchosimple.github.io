@@ -1,0 +1,228 @@
+{
+  "bodyClass": "cookie-calendar-page main--half-pad main--no-pad",
+  "content-type" : "Cookie Calendar",
+  "has-featured-stories" : false,
+  "has-print" : false,
+  "has-social-count" : true,
+  "cookie-calendar" : true,
+
+  "cookies" : [
+    {
+      "number" : "1",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "2",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "3",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "4",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "5",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "6",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "7",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "8",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "9",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "10",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "11",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "12",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "13",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "14",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "15",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "16",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "17",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "18",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "19",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "20",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "21",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "22",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "23",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "24",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "25",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "26",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "27",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "28",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "29",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "30",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    },
+    {
+      "number" : "31",
+      "img": {
+        "src": "http://placehold.it/300x357",
+        "alt": "Cookie Item"
+      }
+    }
+  ]
+}

@@ -14,7 +14,10 @@
 		}
 		.lead-headline {
 			padding-top: $pad-half;
-			margin-bottom: rem(20);
+			margin-bottom: rem(12);
+			@include mq($micro-break) {
+				margin-bottom: rem(20);
+			}
 		}
 		.lead-subtitle {
 			margin-bottom: rem(24);

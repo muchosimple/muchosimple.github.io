@@ -1,10 +1,12 @@
 &lt;div class=&quot;content-utility&quot;&gt;
   &lt;ul class=&quot;cu-list&quot;&gt;
-    &lt;li class=&quot;cu-item&quot;&gt;
-      &lt;a class=&quot;cu-link&quot; href=&quot;{{ url }}&quot;&gt;
-        &lt;span class=&quot;no-bg icon rounded icon--standard icon-print icon--medium&quot;&gt;{{&gt; atoms-print }}&lt;/span&gt;
-      &lt;/a&gt; &lt;!-- /.cu-link --&gt;
-    &lt;/li&gt; &lt;!-- /.cu-item --&gt;
+    {{# has-print }}
+      &lt;li class=&quot;cu-item&quot;&gt;
+        &lt;a class=&quot;cu-link&quot; href=&quot;{{ url }}&quot;&gt;
+          &lt;span class=&quot;no-bg icon rounded icon--standard icon-print icon--medium&quot;&gt;{{&gt; atoms-print }}&lt;/span&gt;
+        &lt;/a&gt; &lt;!-- /.cu-link --&gt;
+      &lt;/li&gt; &lt;!-- /.cu-item --&gt;
+    {{/ has-print }}
     &lt;li class=&quot;cu-item&quot;&gt;
       &lt;a class=&quot;cu-link&quot; href=&quot;{{ url }}&quot;&gt;
         &lt;span class=&quot;no-bg icon rounded icon--standard icon-mail icon--medium js-open-mail&quot;&gt;{{&gt; atoms-mail }}&lt;/span&gt;
