@@ -13,6 +13,34 @@ $pink-lighter: rgba($pink, .3);
 .cc__cookies {
   padding-left: $pad-half;
   padding-right: $pad-half;
+  overflow: hidden;
+  @include mq($px400) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include mq($px800) {
+    margin-bottom: $space-double;
+  }
+}
+.cc__headline {
+  font-weight: bold;
+  @include mq($px700) {
+    padding-bottom: $pad-and-half;
+    margin-top: $space-and-half;
+  }
+  @include mq($px800) {
+    font-size: rem(54);
+  }
+}
+.cc__article-tools {
+  @include mq($px700) {
+    position: absolute;
+    left: rem(5);
+    bottom: rem(-8);
+    .social-share {
+      margin-bottom: 0;
+    }
+  }
 }
 .cc__month {
   text-transform: uppercase;
@@ -20,6 +48,10 @@ $pink-lighter: rgba($pink, .3);
   border: 1px solid $pink-lighter;
   font-size: rem(13);
   padding: rem(6) rem(13);
+  @include mq($px700) {
+    font-size: rem(17);
+    padding: rem(8) rem(18);
+  }
 }
 
 .cc__month--active {
@@ -27,6 +59,23 @@ $pink-lighter: rgba($pink, .3);
   color: $white;
   &:hover {
     color: $white;
+  }
+}
+.cc__cookie-list-item {
+  @include mq($px400) {
+    width: 50%;
+    float: left;
+    padding-left: rem(5);
+    padding-right: rem(5);
+  }
+  @include mq($px600) {
+    width: 33.3333%;
+  }
+  @include mq($px800) {
+    width: 25%;
+  }
+  @include mq($px1100) {
+    width: 14.2857143%;
   }
 }
 
@@ -39,6 +88,16 @@ $pink-lighter: rgba($pink, .3);
   overflow: hidden;
   img {
     display: block;
+    width: 100%;
+  }
+  @include mq($px600) {
+    &:hover,
+    &.is-active {
+      border-width: 5px;
+      .cc__block-inner{
+        margin: -4px;
+      }
+    }
   }
 }
 .cc__block-text-inner {
@@ -55,6 +114,9 @@ $pink-lighter: rgba($pink, .3);
   color: $red;
   z-index: 10;
   text-align: right;
+  @include mq($px400) {
+    font-size: rem(70);
+  }
 }
 .cc__corner {
   border-bottom: 75px solid $red;
@@ -69,6 +131,9 @@ $pink-lighter: rgba($pink, .3);
     .cc__corner-label {
       color: $white;
     }
+  }
+  @include mq($px600) {
+    display: none;
   }
 }
 .cc__corner--more {
@@ -123,6 +188,9 @@ $pink-lighter: rgba($pink, .3);
   .is-active & {
     bottom: 0;
   }
+  @include mq($px600) {
+    display: none;
+  }
 }
 .cc__kicker {
   text-transform: uppercase;
@@ -162,6 +230,11 @@ $pink-lighter: rgba($pink, .3);
     border: 1px solid $white;
   }
 }
+.cc__credit--btm {
+  @include mq($px400) {
+    padding-left: rem(5);
+  }
+}
 
 /*------------------------------------*\
     $THEMES
@@ -176,6 +249,9 @@ $pink-lighter: rgba($pink, .3);
   .cc__month,
   .cc__block {
     border-color: rgba($theme-color, .3);
+    @include mq($px600) {
+      border-color: $theme-color;
+    }
   }
   .cc__month--active,
   .cc__block-text {
