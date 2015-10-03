@@ -24,6 +24,7 @@ $pink-lighter: rgba($pink, .3);
 }
 .cc__headline {
   font-weight: bold;
+  letter-spacing: 2px;
   @include mq($px700) {
     padding-bottom: $pad-and-half;
     margin-top: $space-and-half;
@@ -76,6 +77,11 @@ $pink-lighter: rgba($pink, .3);
   }
   @include mq($px1100) {
     width: 14.2857143%;
+    opacity: 0;
+    @include transition(opacity .4s $cubic-bezier);
+    &.fadein {
+      opacity: 1;
+    }
   }
 }
 
@@ -116,6 +122,9 @@ $pink-lighter: rgba($pink, .3);
   text-align: right;
   @include mq($px400) {
     font-size: rem(70);
+  }
+  @include mq($px1100) {
+    font-size: rem(60);
   }
 }
 .cc__corner {
