@@ -28,9 +28,13 @@
       </div> <!-- /.has-social -->
     {{/ social-tools }}
   </div> <!-- /.img-inner -->
-  {{# credit }}
-    <span class="credit">Photo by {{ credit }}</span>
-  {{/ credit }}
+
+  {{^ has-side-credit }}
+    {{# credit }}
+      <span class="credit">Photo by {{ credit }}</span>
+    {{/ credit }}
+  {{/ has-side-credit }}
+
   {{# caption }}
     <figcaption class="caption">{{ caption }}</figcaption>
   {{/ caption }}

@@ -2,7 +2,7 @@
   <div class="slide-inner cf">
 
     {{^ is-ad-slide }}
-      <div class="slide-img">
+      <div class="slide-img {{ slide-img-class }}">
         <div class="hover-slide-navigation">
           <a href="" class="icon no-bg icon-arrow-left js-slide-hover-prev">{{> atoms-arrow-left }}</a>
           <a href="" class="icon no-bg icon-arrow-right js-slide-hover-next">{{> atoms-arrow-right }}</a>
@@ -13,6 +13,7 @@
 
     {{# is-welcome-slide }}
       <div class="slide-intro slide-text">
+        {{# kicker }}<div class="kicker">{{ kicker }}</div>{{/ kicker }}
         <p class="dek">{{ slide-intro }}</p>
         {{> molecules-byline }}
         <a href="{{ url }}" class="btn btn--gallery-start js-btn--gallery-start">Start <span class="icon icon-arrow-right no-bg">{{> atoms-arrow-right }}</span></a>
@@ -20,15 +21,20 @@
     {{/ is-welcome-slide }}
 
     {{# is-normal-slide }}
-      <div class="slide-text">
+      <div class="slide-text {{ slide-text-class }}">
         <div class="slide-controls">
           {{> molecules-slide-counter }}
-          <a href="{{ url }}" class="see-all--grid js-toggle" data-toggled="gallery-container" data-prefix="see-all-grid"><span class="icon icon-grid icon--small">{{> atoms-grid }}</span> <span class="light">See All</span></a>
+          {{# has-see-all }}
+            <a href="{{ url }}" class="see-all--grid js-toggle" data-toggled="gallery-container" data-prefix="see-all-grid"><span class="icon icon-grid icon--small">{{> atoms-grid }}</span> <span class="light">See All</span></a>
+          {{/ has-see-all }}
         </div> <!-- /.slide-controls -->
         <div class="text">
+          {{# kicker }}<div class="kicker space-btm black">{{ kicker }}</div>{{/ kicker }}
           <h2 class="slide-title">{{ slide-title }}</h2>
           <p>{{{ slide-dek }}}</p>
-        </div>
+          {{# has-cta }}<a class="slide__cta {{ slide-cta-class }}" href=""><strong>Get the recipe</strong></a>{{/ has-cta }}
+          {{# has-side-credit }}<span class="credit">Photo by {{ credit }}</span>{{/ has-side-credit }}
+        </div> <!-- /.text -->
       </div> <!-- /.slide-text -->
     {{/ is-normal-slide }}
 

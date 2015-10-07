@@ -1,4 +1,5 @@
 {
+  "title" : "A Cookie A Day Cookie Recipes",
   "bodyClass": "cookie-calendar-page main--half-pad main--no-pad",
   "content-type" : "Cookie Calendar",
   "has-featured-stories" : false,
@@ -254,6 +255,152 @@
         "src2": "http://placehold.it/160x160",
         "alt": "Cookie Item"
       }
+    }
+  ],
+
+  "gallery" : {
+    "is-normal-slide" : true,
+    "is-lazy" : false,
+    "lazy-slide" : true,
+    "slide-img-class" : "cc__slide-img",
+    "slide-text-class" : "cc__slide-text",
+    "has-cta" : true,
+    "slide-cta-class" : "cc__slide-cta",
+    "has-side-credit" : true
+  },
+  "slides" : [
+    {
+      "data-url" : "?day-1",
+      "img" : {
+        "src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1409/espresso-brownies_gal.jpg?itok=MNxYwVgA",
+        "alt" : "Espresso Brownies"
+      },
+      "kicker" : "November 1, 2015",
+      "credit" : "Marcus Nilsson",
+      "slide-title" : "Espresso Brownies",
+      "slide-dek" : "With just 15 minutes of hands-on prep, you can have 50 of these sweet, biscuit-like cookies."
+    },
+    {
+      "data-url" : "?day-2",
+      "img" : {
+        "src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1105/oreo-cake_gal.jpg?itok=ZWWZnSQf",
+        "alt" : "Oreo Cake"
+      },
+      "kicker" : "November 2, 2015",
+      "credit" : "Marcus Nilsson",
+      "slide-title" : "Oreo Cake",
+      "slide-dek" : "Sure to be a hit at any bake sale, these brownies get extra flavor from sweetened coconut and almonds."
+    },
+    {
+      "data-url" : "?day-3",
+      "img" : {
+        "src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/photo-gallery/Meringues_gal.jpg?itok=s23llVse",
+        "alt" : "Meringues"
+      },
+      "kicker" : "November 3, 2015",
+      "credit" : "Susie Cushner",
+      "slide-title" : "Meringues",
+      "slide-dek" : "Nothing says \"holidays\" like having your kitchen fill up with the smell of cinnamon-and these cookies will do the trick."
+    },
+    {
+      "data-url" : "?day-4",
+      "img" : {
+        "src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/image/images/1112/mochachocolate-chip_gal.jpg?itok=wiEIYk_1",
+        "alt" : "Mocha Chocolate Chip"
+      },
+      "kicker" : "November 4, 2015",
+      "credit" : "Romulo Yanes",
+      "slide-title" : "Mocha Chocolate Chip",
+      "slide-dek" : "To achieve pretty crimped edges, you don't need a fancy baking tool-you can use a fork."
+    },
+    {
+      "data-url" : "",
+      "is-ad-slide" : true,
+      "is-normal-slide" : false,
+      "slide-class" : "slide--ad slide--alt"
+    },
+    {
+      "data-url" : "?day-5",
+      "img" : {
+        "src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1202/chicken-biscuit_gal.jpg?itok=ZMT_tEzC",
+        "alt" : "Chicken Biscuit"
+      },
+      "kicker" : "November 5, 2015",
+      "credit" : "Anson Smart",
+      "slide-title" : "Chicken Biscuit",
+      "slide-dek" : "Give simple sugar cookies a seasonal twist with cinnamon, nutmeg, and ginger."
+    },
+    {
+      "data-url" : "?day-6",
+      "img" : {
+        "src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1202/soy-chicken-vegetables_gal.jpg?itok=D8Mda1AP",
+        "alt" : "Peanut Butter Chocolate Chip"
+      },
+      "kicker" : "November 6, 2015",
+      "credit" : "José Picayo",
+      "slide-title" : "Peanut Butter Chocolate Chip",
+      "slide-dek" : "If peanut butter and chocolate is your favorite flavor combo, these cookies will be your dream come true."
+    },
+    {
+      "data-url" : "?day-7",
+      "img" : {
+        "src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1202/chicken-past-soup_gal.jpg?itok=Z_Tdg0-4",
+        "alt" : "Sugar Cookie"
+      },
+      "kicker" : "November 7, 2015",
+      "credit" : "Susie Cushner",
+      "slide-title" : "Sugar Cookie",
+      "slide-dek" : "This childhood favorite will be a hit amongst the kids and the grown-ups."
+    },
+    {
+      "data-url" : "?day-8",
+      "img" : {
+        "src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1202/chicken-potpie_gal.jpg?itok=wVHdoO5d",
+        "alt" : "Peppermint Stick"
+      },
+      "kicker" : "November 8, 2015",
+      "credit" : "Sang An",
+      "slide-title" : "Peppermint Stick",
+      "slide-dek" : "Put peppermint sticks to good use atop these holiday cookies."
+    },
+    {
+      "data-url" : "?day-9",
+      "img" : {
+        "src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/food-recipes/recipe-collections/0403/seafood-gumbo_300.jpg?itok=CtRbmHh6",
+        "alt" : "Fig Neuton"
+      },
+      "kicker" : "November 9, 2015",
+      "credit" : "Susie Cushner",
+      "slide-title" : "Fig Neuton",
+      "slide-dek" : "One cup of dried figs adds a unique seasonal flavor to this treat."
+    },
+    {
+      "data-url" : "",
+      "is-ad-slide" : true,
+      "is-normal-slide" : false,
+      "slide-class" : "slide--ad slide--alt"
+    },
+    {
+      "data-url" : "?day-10",
+      "img" : {
+        "src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1202/curried-chicken-ginger_gal.jpg?itok=2vGowZcF",
+        "alt" : "Mint Butter Drops"
+      },
+      "kicker" : "November 10, 2015",
+      "credit" : "Marcus Nilsson",
+      "slide-title" : "Mint Butter Drops",
+      "slide-dek" : "Holly jolly chocolate and SKIPPY® Peanut Butter—with a crunch!"
+    },
+    {
+      "data-url" : "?day-11",
+      "img" : {
+        "src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1202/chicken-bacon_gal.jpg?itok=_OkMXfH5",
+        "alt" : "Pretzel Chip"
+      },
+      "kicker" : "November 11, 2015",
+      "credit" : "Ann Cushner",
+      "slide-title" : "Pretzel Chip",
+      "slide-dek" : "There's something for everyone in these cookies-from sweet chocolate chips to salty pretzels."
     }
   ]
 }

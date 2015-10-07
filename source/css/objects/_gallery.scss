@@ -514,3 +514,21 @@
     opacity: 1;
   }
 }
+
+
+/*------------------------------------*\
+    $MODAL GALLERY
+\*------------------------------------*/
+
+.gallery__modal {
+  max-width: rem(1224);
+  background-color: $white;
+  border: 1px solid $pink;
+  padding: $pad;
+  @include mq($px1200) {
+    padding: rem(32);
+  }
+  .slide-controls {
+    margin-bottom: $space-and-half;
+  }
+}

@@ -2,7 +2,7 @@
   &lt;div class=&quot;slide-inner cf&quot;&gt;
 
     {{^ is-ad-slide }}
-      &lt;div class=&quot;slide-img&quot;&gt;
+      &lt;div class=&quot;slide-img {{ slide-img-class }}&quot;&gt;
         &lt;div class=&quot;hover-slide-navigation&quot;&gt;
           &lt;a href=&quot;&quot; class=&quot;icon no-bg icon-arrow-left js-slide-hover-prev&quot;&gt;{{&gt; atoms-arrow-left }}&lt;/a&gt;
           &lt;a href=&quot;&quot; class=&quot;icon no-bg icon-arrow-right js-slide-hover-next&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/a&gt;
@@ -13,6 +13,7 @@
 
     {{# is-welcome-slide }}
       &lt;div class=&quot;slide-intro slide-text&quot;&gt;
+        {{# kicker }}&lt;div class=&quot;kicker&quot;&gt;{{ kicker }}&lt;/div&gt;{{/ kicker }}
         &lt;p class=&quot;dek&quot;&gt;{{ slide-intro }}&lt;/p&gt;
         {{&gt; molecules-byline }}
         &lt;a href=&quot;{{ url }}&quot; class=&quot;btn btn--gallery-start js-btn--gallery-start&quot;&gt;Start &lt;span class=&quot;icon icon-arrow-right no-bg&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/span&gt;&lt;/a&gt;
@@ -20,15 +21,20 @@
     {{/ is-welcome-slide }}
 
     {{# is-normal-slide }}
-      &lt;div class=&quot;slide-text&quot;&gt;
+      &lt;div class=&quot;slide-text {{ slide-text-class }}&quot;&gt;
         &lt;div class=&quot;slide-controls&quot;&gt;
           {{&gt; molecules-slide-counter }}
-          &lt;a href=&quot;{{ url }}&quot; class=&quot;see-all--grid js-toggle&quot; data-toggled=&quot;gallery-container&quot; data-prefix=&quot;see-all-grid&quot;&gt;&lt;span class=&quot;icon icon-grid icon--small&quot;&gt;{{&gt; atoms-grid }}&lt;/span&gt; &lt;span class=&quot;light&quot;&gt;See All&lt;/span&gt;&lt;/a&gt;
+          {{# has-see-all }}
+            &lt;a href=&quot;{{ url }}&quot; class=&quot;see-all--grid js-toggle&quot; data-toggled=&quot;gallery-container&quot; data-prefix=&quot;see-all-grid&quot;&gt;&lt;span class=&quot;icon icon-grid icon--small&quot;&gt;{{&gt; atoms-grid }}&lt;/span&gt; &lt;span class=&quot;light&quot;&gt;See All&lt;/span&gt;&lt;/a&gt;
+          {{/ has-see-all }}
         &lt;/div&gt; &lt;!-- /.slide-controls --&gt;
         &lt;div class=&quot;text&quot;&gt;
+          {{# kicker }}&lt;div class=&quot;kicker space-btm black&quot;&gt;{{ kicker }}&lt;/div&gt;{{/ kicker }}
           &lt;h2 class=&quot;slide-title&quot;&gt;{{ slide-title }}&lt;/h2&gt;
           &lt;p&gt;{{{ slide-dek }}}&lt;/p&gt;
-        &lt;/div&gt;
+          {{# has-cta }}&lt;a class=&quot;slide__cta {{ slide-cta-class }}&quot; href=&quot;&quot;&gt;&lt;strong&gt;Get the recipe&lt;/strong&gt;&lt;/a&gt;{{/ has-cta }}
+          {{# has-side-credit }}&lt;span class=&quot;credit&quot;&gt;Photo by {{ credit }}&lt;/span&gt;{{/ has-side-credit }}
+        &lt;/div&gt; &lt;!-- /.text --&gt;
       &lt;/div&gt; &lt;!-- /.slide-text --&gt;
     {{/ is-normal-slide }}
 

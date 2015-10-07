@@ -178,7 +178,7 @@ $GLOBAL CLASSES
 }
 .overlay-active {
   background-color: rgba($black, .8);
-  z-index: 50000010; // Appear over ads and Time Hat
+  z-index: 50000500; // Appear over ads and Time Hat
 }
 .load {
   display: none;
@@ -192,6 +192,15 @@ $GLOBAL CLASSES
   -ms-touch-action: none;
   touch-action: none;
   box-shadow: 0 0 20px rgba($black, .4);
+}
+
+// Modal overlay
+.modal {
+  position: fixed;
+  z-index: 60000000; // Get over the ehader and ads.
+  left: 50%;
+  top: 50%;
+  @include transform(translate(-50%, -50%));
 }
 
 // Borders

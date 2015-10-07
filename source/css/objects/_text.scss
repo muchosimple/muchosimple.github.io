@@ -31,13 +31,17 @@
 .sponsor {
 	margin-bottom: rem(6);
 }
+.kicker,
 .kicker a {
 	font-size: rem(15);
 	text-transform: uppercase;
 	color: $gray-med;
+	font-family: $font;
 	&:last-child {
 		color: $pink;
 	}
+}
+.kicker a {
 	&:hover {
 		@include underline;
 	}

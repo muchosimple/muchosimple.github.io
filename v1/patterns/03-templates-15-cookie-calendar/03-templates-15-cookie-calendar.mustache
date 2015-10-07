@@ -65,6 +65,7 @@
 				&lt;/ul&gt; &lt;!-- /.cc__cookie-list --&gt;
 				&lt;span class=&quot;cc__credit--btm pad-top black text--s&quot;&gt;Photos by Michelle Smith&lt;/span&gt;
 			&lt;/div&gt; &lt;!-- /.cc__cookies --&gt;
+
 		&lt;/div&gt; &lt;!-- /.cookie-calendar --&gt;
 
 		&lt;div class=&quot;lc-inner--m&quot;&gt;
@@ -74,3 +75,22 @@
 	&lt;/div&gt;&lt;!-- /role=main --&gt;
 	{{&gt; organisms-footer }}
 &lt;/div&gt; &lt;!-- /.page --&gt;
+
+{{# gallery }}
+	&lt;div class=&quot;cc__gallery gallery gallery__modal cc--pink&quot;&gt;
+		&lt;div class=&quot;shift-left&quot;&gt;
+			&lt;div class=&quot;shift-left-inner&quot;&gt;
+				&lt;div class=&quot;cc__slides slides js-slides&quot;&gt;
+					{{# slides }}
+						{{&gt; molecules-gallery-slide }}
+					{{/ slides }}
+				&lt;/div&gt; &lt;!-- /.cc__slides --&gt;
+			&lt;/div&gt; &lt;!-- /.shift-left-inner --&gt;
+		&lt;/div&gt; &lt;!-- /.shift-left --&gt;
+		&lt;div class=&quot;shift-right&quot;&gt;
+			&lt;div class=&quot;ad-block ad-300x250 block js-ad-refresh&quot;&gt;
+				&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://s1.2mdn.net/viewad/3521978/SINS_WebBanner_300x250.jpg&quot;&gt;&lt;/a&gt;
+			&lt;/div&gt; &lt;!-- /.ad-300x250 --&gt;
+		&lt;/div&gt; &lt;!-- /.shift-right --&gt;
+	&lt;/div&gt; &lt;!-- /.cc__gallery --&gt;
+{{/ gallery }}

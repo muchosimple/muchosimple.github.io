@@ -245,6 +245,62 @@ $pink-lighter: rgba($pink, .3);
   }
 }
 
+
+/*------------------------------------*\
+    $MODAL GALLERY
+\*------------------------------------*/
+
+.cc__slide-img {
+  border: 1px solid $pink;
+  .hover-slide-navigation {
+    opacity: 1;
+  }
+  .icon {
+    background-color: $white;
+    border: 1px solid $pink;
+    path {
+      fill: $pink;
+    }
+    &:hover {
+      path {
+        fill: $white;
+      }
+    }
+  }
+  .icon-arrow-left {
+    border-left: none;
+  }
+  .icon-arrow-right {
+    border-right: none;
+  }
+}
+.cc__gallery {
+  .slide-title {
+    font-size: rem(32);
+    margin-bottom: $space-half;
+  }
+}
+.cc__slide-text {
+  p {
+    font-family: $font-secondary;
+    color: $gray-dark;
+  }
+  .credit {
+    text-align: left;
+    font-family: $font-secondary;
+    font-style: normal;
+  }
+}
+.cc__slide-cta {
+  font-family: $font;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  margin-bottom: $space-double;
+  display: inline-block;
+}
+
+
+
 /*------------------------------------*\
     $THEMES
 \*------------------------------------*/
@@ -252,11 +308,15 @@ $pink-lighter: rgba($pink, .3);
 // Theme specific color palettes
 @mixin theme-color($theme-color) {
   .cc__headline,
-  .cc__number {
+  .cc__number,
+  .cc__slide-text .cc__slide-cta {
     color: $theme-color;
   }
   .cc__month,
-  .cc__block {
+  .cc__block,
+  .cc__gallery,
+  .cc__slide-img,
+  .cc__slide-img .icon {
     border-color: rgba($theme-color, .3);
     @include mq($px600) {
       border-color: $theme-color;
@@ -277,6 +337,17 @@ $pink-lighter: rgba($pink, .3);
     &:hover {
       .cc__corner-label {
         color: $theme-color;
+      }
+    }
+  }
+  .cc__slide-img .icon {
+    path {
+      fill: $theme-color;
+    }
+    &:hover {
+      background-color: $theme-color;
+      path {
+        fill: $white;
       }
     }
   }
