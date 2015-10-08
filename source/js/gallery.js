@@ -256,13 +256,4 @@ function refreshAds(ad) {
     var adSrc = $(this).attr('src');
     $(this).attr('src', adSrc).css({'border-width' : '5px', 'border-style' : 'solid', 'border-color' : '#' + randomColor});
   });
-
-  /**
-   * Gallery Modal
-   */
-  if ($('.gallery__modal').length) {
-    var $galleryModal = $('.gallery__modal');
-
-    $('.gallery').addClass('modal');
-  }
 }

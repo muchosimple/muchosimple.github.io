@@ -210,6 +210,9 @@ $GLOBAL CLASSES
   z-index: 60000000; // Get over the ehader and ads.
   left: 50%;
   top: 50%;
+  width: 100%;
+  padding-left: rem(20);
+  padding-right: rem(20);
   @include transform(translate(-50%, -50%));
 }
 

@@ -16,7 +16,7 @@
 			&lt;div class=&quot;cc__cookies&quot;&gt;
 				&lt;ul class=&quot;cc__cookie-list cf js-gallery-grid&quot;&gt;
 					{{# cookies }}
-					&lt;li class=&quot;cc__cookie-list-item js-gi js-open-modal&quot;&gt;
+					&lt;li class=&quot;cc__cookie-list-item js-gi js-open-modal js-open-cc-modal&quot;&gt;
 						&lt;div class=&quot;cc__block&quot;&gt;
 							&lt;div class=&quot;cc__block-inner rel&quot;&gt;
 								&lt;a href=&quot;#&quot; class=&quot;cc__number js-toggle-parent&quot;&gt;{{ number }}&lt;/a&gt;
@@ -77,23 +77,25 @@
 &lt;/div&gt; &lt;!-- /.page --&gt;
 
 {{# gallery }}
-	&lt;div class=&quot;cc__gallery gallery gallery__modal cc--pink hide&quot;&gt;
-		&lt;div class=&quot;rel&quot;&gt;
-			&lt;span class=&quot;overlay-close icon icon--medium icon__x js-close&quot; title=&quot;Close&quot;&gt;{{&gt; atoms-x }}&lt;/span&gt;
-			&lt;div class=&quot;shift-left&quot;&gt;
-				&lt;div class=&quot;shift-left-inner&quot;&gt;
-					&lt;div class=&quot;cc__slides slides js-slides&quot;&gt;
-						{{# slides }}
-							{{&gt; molecules-gallery-slide }}
-						{{/ slides }}
-					&lt;/div&gt; &lt;!-- /.cc__slides --&gt;
-				&lt;/div&gt; &lt;!-- /.shift-left-inner --&gt;
-			&lt;/div&gt; &lt;!-- /.shift-left --&gt;
-			&lt;div class=&quot;shift-right space-double-top&quot;&gt;
-				&lt;div class=&quot;ad-block ad-300x250 block js-ad-refresh&quot;&gt;
-					&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://s1.2mdn.net/viewad/3521978/SINS_WebBanner_300x250.jpg&quot;&gt;&lt;/a&gt;
-				&lt;/div&gt; &lt;!-- /.ad-300x250 --&gt;
-			&lt;/div&gt; &lt;!-- /.shift-right --&gt;
-		&lt;/div&gt; &lt;!-- /.rel --&gt;
+	&lt;div class=&quot;cc__gallery gallery cc--pink hide modal&quot;&gt;
+		&lt;div class=&quot;gallery__modal&quot;&gt;
+			&lt;div class=&quot;rel cf&quot;&gt;
+				&lt;span class=&quot;overlay-close icon icon--medium icon__x js-close&quot; title=&quot;Close&quot;&gt;{{&gt; atoms-x }}&lt;/span&gt;
+				&lt;div class=&quot;shift-left--900&quot;&gt;
+					&lt;div class=&quot;shift-left-inner--900&quot;&gt;
+						&lt;div class=&quot;cc__slides slides js-slides&quot;&gt;
+							{{# slides }}
+								{{&gt; molecules-gallery-slide }}
+							{{/ slides }}
+						&lt;/div&gt; &lt;!-- /.cc__slides --&gt;
+					&lt;/div&gt; &lt;!-- /.shift-left-inner--900 --&gt;
+				&lt;/div&gt; &lt;!-- /.shift-left--900 --&gt;
+				&lt;div class=&quot;shift-right--900 gm__aside&quot;&gt;
+					&lt;div class=&quot;ad-block ad-300x250 block js-ad-refresh&quot;&gt;
+						&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://s1.2mdn.net/viewad/3521978/SINS_WebBanner_300x250.jpg&quot;&gt;&lt;/a&gt;
+					&lt;/div&gt; &lt;!-- /.ad-300x250 --&gt;
+				&lt;/div&gt; &lt;!-- /.shift-right--900 --&gt;
+			&lt;/div&gt; &lt;!-- /.rel --&gt;
+		&lt;/div&gt; &lt;!-- /.gallery__modal --&gt;
 	&lt;/div&gt; &lt;!-- /.cc__gallery --&gt;
 {{/ gallery }}

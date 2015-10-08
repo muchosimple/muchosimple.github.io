@@ -173,6 +173,33 @@
 }
 
 /**
+ * Shift at 900
+ */
+.shift-left--900 {
+	width: 100%;
+	@include mq($px900) {
+		float: left;
+		margin-right: rem(-$sidebar-width);
+	}
+}
+.shift-left-inner--900 {
+	@include mq($px900) {
+		margin-right: rem($sidebar-width + 20);
+	}
+	@include mq($px1200) {
+		margin-right: rem($sidebar-width + 40);
+	}
+}
+.shift-right--900 {
+	position: relative;
+	z-index: 10;
+	@include mq($px900) {
+		float: right;
+		width: rem($sidebar-width);
+	}
+}
+
+/**
  * Short static width left column, and fluid width right column.
  */
 .shift-right--slim {

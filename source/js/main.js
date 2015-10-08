@@ -154,6 +154,30 @@ window.onresize = function() {
     });
   });
 
+  // Basic activate overlay
+  var overlayOn = function() {
+    $('.overlay').addClass('overlay-active');
+  };
+  var overlayOff = function() {
+    $('.overlay').removeClass('overlay-active');
+  };
+
+  if (getWidth() >= 700) {
+    // Open overlay
+    $('.js-open-modal').on('click', function(e) {
+      e.preventDefault();
+      $('.modal').fadeIn();
+      overlayOn();
+    });
+
+    // Close overlay
+    $('.js-close').on('click', function(e) {
+      e.preventDefault();
+      $('.modal').fadeOut();
+      overlayOff();
+    });
+  }
+
   // Anytime the overlay is active, click on it or an element with '.js-close'
   // to close it.
   var closeOverlay = function() {

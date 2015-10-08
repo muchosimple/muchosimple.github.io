@@ -3,29 +3,14 @@
 \*------------------------------------*/
 
 (function() {
-
   /**
-   * Activate overlay
+   * Gallery Modal
    */
-  var overlayOn = function() {
-    $('.overlay').addClass('overlay-active');
-  };
-  var overlayOff = function() {
-    $('.overlay').removeClass('overlay-active');
-  };
+  // if ($('.gallery__modal').length) {
+  //   var $galleryModal = $('.gallery__modal');
 
-  // Close button
-  var closeButtonOn = function(instance) {
-    $('<span class="overlay-close icon icon--s round icon__x" title="Close"></span>').appendTo('body').on('click', function(){
-      $(this).remove();
-      return false;
-    });
-  };
-  var closeButtonOff = function() {
-    $('.overlay-close').fadeOut(300, function() {
-      $(this).remove();
-    });
-  };
+  //   $('.gallery').addClass('modal');
+  // }
 
   // Load the images when the grid is present.
   if ($('.cc__cookie-list').length) {
@@ -42,18 +27,9 @@
   var cc_slides = $('.owl-carousel').data('owlCarousel');
 
   // init
-  $('.js-open-modal').on('click', function(e) {
-    e.preventDefault();
+  $('.js-open-cc-modal').on('click', function() {
     var $this = $(this);
-    $('.modal').fadeIn();
-    overlayOn();
     cc_slides.jumpTo($this.index());
-  });
-
-  $('.js-close').on('click', function(e) {
-    e.preventDefault();
-    $('.modal').fadeOut();
-    overlayOff();
   });
 
 })();

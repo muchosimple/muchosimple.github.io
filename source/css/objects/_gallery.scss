@@ -529,6 +529,15 @@
     padding: rem(32);
   }
   .slide-controls {
-    margin-bottom: $space-and-half;
+    @media (min-width: $px700) and (max-width: $px900), (min-width: $px1200) {
+      margin-bottom: $space-and-half;
+    }
+  }
+}
+.gm__aside {
+  margin-top: rem(30);
+  margin-bottom: rem(20);
+  @include mq($px900) {
+    margin-top: rem(60);
   }
 }

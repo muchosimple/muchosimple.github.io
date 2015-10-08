@@ -281,6 +281,10 @@ $pink-lighter: rgba($pink, .3);
   }
 }
 .cc__slide-text {
+  .slide-controls {
+    max-width: none;
+    float: none;
+  }
   p {
     font-family: $font-secondary;
     color: $gray-dark;
@@ -295,8 +299,11 @@ $pink-lighter: rgba($pink, .3);
   font-family: $font;
   text-decoration: underline;
   letter-spacing: 1px;
-  margin-bottom: $space-double;
+  margin-bottom: $space;
   display: inline-block;
+  @include mq($px1200) {
+    margin-bottom: $space-double;
+  }
 }
 
 
