@@ -2,9 +2,9 @@
   <div class="slide-navigation cf">
     <a href="{{ url }}" class="see-all--back js-toggle" data-toggled="gallery-container" data-prefix="see-all-grid"><span class="icon icon-arrow-left-stem icon--small">{{> atoms-arrow-left-stem }}</span> <span class="light">Back</span></a>
   </div> <!-- /.slide-navigation -->
-  <div class="g gallery-grid cf">
+  <div class="g gallery-grid js-gallery-grid cf">
     {{# gallery-grid }}
-      <div class="block block-gi gi {{ gi-class }}" data-slide="{{ slide-num }}">
+      <div class="block block-gi gi js-gi {{ gi-class }}" data-slide="{{ slide-num }}">
         <a href="{{ url }}" class="b-inner">
           <div class="b-thumb">
             {{> atoms-image }}

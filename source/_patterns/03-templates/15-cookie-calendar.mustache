@@ -14,9 +14,9 @@
 			</header> <!-- /.cc__header -->
 
 			<div class="cc__cookies">
-				<ul class="cc__cookie-list cf">
+				<ul class="cc__cookie-list cf js-gallery-grid">
 					{{# cookies }}
-					<li class="cc__cookie-list-item">
+					<li class="cc__cookie-list-item js-gi js-open-modal">
 						<div class="cc__block">
 							<div class="cc__block-inner rel">
 								<a href="#" class="cc__number js-toggle-parent">{{ number }}</a>
@@ -77,20 +77,23 @@
 </div> <!-- /.page -->
 
 {{# gallery }}
-	<div class="cc__gallery gallery gallery__modal cc--pink">
-		<div class="shift-left">
-			<div class="shift-left-inner">
-				<div class="cc__slides slides js-slides">
-					{{# slides }}
-						{{> molecules-gallery-slide }}
-					{{/ slides }}
-				</div> <!-- /.cc__slides -->
-			</div> <!-- /.shift-left-inner -->
-		</div> <!-- /.shift-left -->
-		<div class="shift-right">
-			<div class="ad-block ad-300x250 block js-ad-refresh">
-				<a href=""><img src="http://s1.2mdn.net/viewad/3521978/SINS_WebBanner_300x250.jpg"></a>
-			</div> <!-- /.ad-300x250 -->
-		</div> <!-- /.shift-right -->
+	<div class="cc__gallery gallery gallery__modal cc--pink hide">
+		<div class="rel">
+			<span class="overlay-close icon icon--medium icon__x js-close" title="Close">{{> atoms-x }}</span>
+			<div class="shift-left">
+				<div class="shift-left-inner">
+					<div class="cc__slides slides js-slides">
+						{{# slides }}
+							{{> molecules-gallery-slide }}
+						{{/ slides }}
+					</div> <!-- /.cc__slides -->
+				</div> <!-- /.shift-left-inner -->
+			</div> <!-- /.shift-left -->
+			<div class="shift-right space-double-top">
+				<div class="ad-block ad-300x250 block js-ad-refresh">
+					<a href=""><img src="http://s1.2mdn.net/viewad/3521978/SINS_WebBanner_300x250.jpg"></a>
+				</div> <!-- /.ad-300x250 -->
+			</div> <!-- /.shift-right -->
+		</div> <!-- /.rel -->
 	</div> <!-- /.cc__gallery -->
 {{/ gallery }}

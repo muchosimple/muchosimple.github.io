@@ -86,6 +86,9 @@ $GLOBAL CLASSES
 }
 
 // Display Classes
+.hide {
+  display: none;
+}
 .dib {
   display: inline-block;
 }
@@ -179,6 +182,13 @@ $GLOBAL CLASSES
 .overlay-active {
   background-color: rgba($black, .8);
   z-index: 50000500; // Appear over ads and Time Hat
+}
+.overlay-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  cursor: pointer;
 }
 .load {
   display: none;
@@ -310,14 +320,17 @@ $GLOBAL CLASSES
 .space-half-right {
   margin-right: $space-half;
 }
+.space-double-btm {
+  margin-bottom: $space-double;
+}
+.space-double-top {
+  margin-top: $space-double;
+}
 .space-and-half-btm {
   margin-bottom: $space-and-half;
 }
 .space-and-half-top {
   margin-top: $space-and-half;
-}
-.space-double-btm {
-  margin-bottom: $space-double;
 }
 .space-half-btm {
   margin-bottom: $space-half;

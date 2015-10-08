@@ -98,7 +98,7 @@ $pink-lighter: rgba($pink, .3);
   }
   @include mq($px600) {
     &:hover,
-    &.is-active {
+    .active-item & {
       border-width: 5px;
       .cc__block-inner{
         margin: -4px;

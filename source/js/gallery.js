@@ -33,7 +33,7 @@
 
   var $slides = $('.js-slides');
   var $carousel = $('.js-carousel');
-  var $slideGrid = $('.gallery-grid');
+  var $slideGrid = $('.js-gallery-grid');
 
   // Gallery init
   $slides.show().owlCarousel({
@@ -93,7 +93,7 @@
     // Update active item class.
     $carousel.find('.owl-item').removeClass('active-item').eq(current).addClass('active-item');
     // Subtract one from the current slide to account for the start slide.
-    $slideGrid.find('.gi').removeClass('active-item').eq(current-1).addClass('active-item');
+    $slideGrid.find('.js-gi').removeClass('active-item').eq(current-1).addClass('active-item');
     if ($carousel.data('owlCarousel') !== undefined){
       centerCarousel(current);
     }

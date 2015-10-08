@@ -266,7 +266,9 @@
     "slide-text-class" : "cc__slide-text",
     "has-cta" : true,
     "slide-cta-class" : "cc__slide-cta",
-    "has-side-credit" : true
+    "has-side-credit" : true,
+    "social-tools" : true,
+    "has-social-count" : false
   },
   "slides" : [
     {
@@ -312,12 +314,6 @@
       "credit" : "Romulo Yanes",
       "slide-title" : "Mocha Chocolate Chip",
       "slide-dek" : "To achieve pretty crimped edges, you don't need a fancy baking tool-you can use a fork."
-    },
-    {
-      "data-url" : "",
-      "is-ad-slide" : true,
-      "is-normal-slide" : false,
-      "slide-class" : "slide--ad slide--alt"
     },
     {
       "data-url" : "?day-5",
@@ -373,12 +369,6 @@
       "credit" : "Susie Cushner",
       "slide-title" : "Fig Neuton",
       "slide-dek" : "One cup of dried figs adds a unique seasonal flavor to this treat."
-    },
-    {
-      "data-url" : "",
-      "is-ad-slide" : true,
-      "is-normal-slide" : false,
-      "slide-class" : "slide--ad slide--alt"
     },
     {
       "data-url" : "?day-10",

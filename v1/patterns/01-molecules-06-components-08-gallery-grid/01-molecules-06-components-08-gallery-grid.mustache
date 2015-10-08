@@ -2,9 +2,9 @@
   &lt;div class=&quot;slide-navigation cf&quot;&gt;
     &lt;a href=&quot;{{ url }}&quot; class=&quot;see-all--back js-toggle&quot; data-toggled=&quot;gallery-container&quot; data-prefix=&quot;see-all-grid&quot;&gt;&lt;span class=&quot;icon icon-arrow-left-stem icon--small&quot;&gt;{{&gt; atoms-arrow-left-stem }}&lt;/span&gt; &lt;span class=&quot;light&quot;&gt;Back&lt;/span&gt;&lt;/a&gt;
   &lt;/div&gt; &lt;!-- /.slide-navigation --&gt;
-  &lt;div class=&quot;g gallery-grid cf&quot;&gt;
+  &lt;div class=&quot;g gallery-grid js-gallery-grid cf&quot;&gt;
     {{# gallery-grid }}
-      &lt;div class=&quot;block block-gi gi {{ gi-class }}&quot; data-slide=&quot;{{ slide-num }}&quot;&gt;
+      &lt;div class=&quot;block block-gi gi js-gi {{ gi-class }}&quot; data-slide=&quot;{{ slide-num }}&quot;&gt;
         &lt;a href=&quot;{{ url }}&quot; class=&quot;b-inner&quot;&gt;
           &lt;div class=&quot;b-thumb&quot;&gt;
             {{&gt; atoms-image }}

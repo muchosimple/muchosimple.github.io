@@ -11,9 +11,7 @@
     $('.overlay').addClass('overlay-active');
   };
   var overlayOff = function() {
-    $('.overlay').fadeOut(300, function() {
-      $(this).remove();
-    });
+    $('.overlay').removeClass('overlay-active');
   };
 
   // Close button
@@ -38,11 +36,24 @@
         });
       });
     }
-    $('.cc__cookie-list-item').click(function(){
-      overlayOn();
-    });
   }
 
-  overlayOn();
+  // Get carousel instance data and store it in variable cc_slides.
+  var cc_slides = $('.owl-carousel').data('owlCarousel');
+
+  // init
+  $('.js-open-modal').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    $('.modal').fadeIn();
+    overlayOn();
+    cc_slides.jumpTo($this.index());
+  });
+
+  $('.js-close').on('click', function(e) {
+    e.preventDefault();
+    $('.modal').fadeOut();
+    overlayOff();
+  });
 
 })();
