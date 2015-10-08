@@ -525,6 +525,8 @@
   background-color: $white;
   border: 1px solid $pink;
   padding: $pad;
+  margin-left: auto;
+  margin-right: auto;
   @include mq($px1200) {
     padding: rem(32);
   }
