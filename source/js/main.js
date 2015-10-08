@@ -94,6 +94,10 @@ window.onresize = function() {
     e.stopPropagation();
     toggleClasses($(this));
   });
+  // Allow links inside elements with .js-toggle to be clicked.
+  $('.js-toggle a').on('click', function(e) {
+    e.stopPropagation();
+  });
 
   // Toggle parent class
   $('.js-toggle-parent').on('click', function(e) {
