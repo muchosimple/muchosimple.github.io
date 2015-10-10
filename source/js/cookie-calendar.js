@@ -32,4 +32,14 @@
     cc_slides.jumpTo($this.index());
   });
 
+  // Is Ssnap scrolling supported? If not, use the plugin.
+  // var isScrollSnapSupported = 'scrollSnapType' in document.documentElement.style ||
+  //     'webkitScrollSnapType' in document.documentElement.style;
+
+  // if (!isScrollSnapSupported) {
+  //   $.scrollify({
+  //     section: '.cc__cookie-list-item'
+  //   });
+  // }
+
 })();

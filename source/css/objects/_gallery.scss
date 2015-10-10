@@ -531,9 +531,12 @@
     padding: rem(32);
   }
   .slide-controls {
-    @media (min-width: $px700) and (max-width: $px900), (min-width: $px1200) {
+    @media (min-width: $px800) and (max-width: $px900), (min-width: $px1200) {
       margin-bottom: $space-and-half;
     }
+  }
+  .owl-carousel .owl-item {
+    padding: 2px;
   }
 }
 .gm__aside {
