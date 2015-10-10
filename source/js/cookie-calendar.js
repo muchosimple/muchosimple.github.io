@@ -33,11 +33,14 @@
   });
 
   // Is Ssnap scrolling supported? If not, use the plugin.
-  // var isScrollSnapSupported = 'scrollSnapType' in document.documentElement.style ||
-  //     'webkitScrollSnapType' in document.documentElement.style;
+  var isScrollSnapSupported = 'scrollSnapType' in document.documentElement.style ||
+      'webkitScrollSnapType' in document.documentElement.style;
 
-  // if (!isScrollSnapSupported) {
-  //   var snapGallery = Flipsnap('.cc__cookie-list');
-  // }
+  if (!isScrollSnapSupported) {
+    // $.scrollify({
+    //   section: '.cc__cookie-list-item',
+    //   axis: 'x'
+    // });
+  }
 
 })();
