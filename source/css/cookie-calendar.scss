@@ -64,16 +64,27 @@ $pink-lighter: rgba($pink, .3);
   overflow-y: hidden;
   white-space: nowrap;
   width: 100%;
-  //@include css3(scroll-snap-type, mandatory);
-  //@include css3(scroll-snap-points-x, repeat(100%));
+  .owl-buttons {
+    text-align: center;
+    div {
+      display: inline-block;
+      margin-left: rem(5);
+      margin-right: rem(5);
+    }
+  }
+}
+.js .cc__cookie-list {
+  display: none;
+  @include mq($px700) {
+    display: block;
+  }
 }
 .cc__cookie-list-item {
-  display: inline-block;
-  vertical-align: top;
   height: 100%;
   width: 100%;
   padding-left: rem(5);
   padding-right: rem(5);
+  float: left;
   @include mq($px700) {
     width: 14.2857143%;
     opacity: 0;
@@ -95,7 +106,7 @@ $pink-lighter: rgba($pink, .3);
     display: block;
     width: 100%;
   }
-  @include mq($px600) {
+  @include mq($px700) {
     &:hover,
     .active-item & {
       border-width: 5px;
@@ -145,7 +156,7 @@ $pink-lighter: rgba($pink, .3);
       color: $white;
     }
   }
-  @include mq($px600) {
+  @include mq($px700) {
     display: none;
   }
 }
@@ -201,7 +212,7 @@ $pink-lighter: rgba($pink, .3);
   .is-active & {
     bottom: 0;
   }
-  @include mq($px600) {
+  @include mq($px700) {
     display: none;
   }
 }
@@ -238,12 +249,12 @@ $pink-lighter: rgba($pink, .3);
   position: absolute;
   left: 0;
   width: 100%;
-  bottom: -30px;
+  bottom: -50px;
   margin-bottom: 0;
   background-color: $pink;
   padding: rem(6) rem(27) rem(8);
   box-shadow: 0 0 10px rgba($black, .2);
-  @include transition(bottom .3s ease-out .4s);
+  @include transition(bottom .25s ease-out .4s);
   .is-active & {
     bottom: 0;
   }
