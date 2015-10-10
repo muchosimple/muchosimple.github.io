@@ -11,27 +11,10 @@
 $pink-lighter: rgba($pink, .3);
 
 .cc__cookies {
-  padding-left: $pad-half;
-  padding-right: $pad-half;
   overflow: hidden;
-  @include mq($px400) {
-    padding-left: 0;
-    padding-right: 0;
-  }
   @include mq($px800) {
     margin-bottom: $space-double;
   }
-}
-.cc__cookie-list {
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  @include css3(scroll-snap-points-x, repeat(100%));
-}
-.cc__cookie-list-item {
-  @include css3(scroll-snap-coordinate, 50% 50%);
-  display: inline-block;
-  vertical-align: top;
 }
 .cc__headline {
   font-weight: bold;
@@ -76,13 +59,21 @@ $pink-lighter: rgba($pink, .3);
     color: $white;
   }
 }
+.cc__cookie-list {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  @include css3(scroll-snap-type, mandatory);
+  @include css3(scroll-snap-points-x, repeat(100%));
+}
 .cc__cookie-list-item {
-  @include mq($px400) {
-    width: 50%;
-    float: left;
-    padding-left: rem(5);
-    padding-right: rem(5);
-  }
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  padding-left: rem(5);
+  padding-right: rem(5);
   @include mq($px700) {
     width: 14.2857143%;
     opacity: 0;
