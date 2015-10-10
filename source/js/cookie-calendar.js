@@ -37,9 +37,7 @@
   //     'webkitScrollSnapType' in document.documentElement.style;
 
   // if (!isScrollSnapSupported) {
-  //   $.scrollify({
-  //     section: '.cc__cookie-list-item'
-  //   });
+  //   var snapGallery = Flipsnap('.cc__cookie-list');
   // }
 
 })();
