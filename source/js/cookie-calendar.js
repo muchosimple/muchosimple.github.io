@@ -34,8 +34,8 @@
   });
 
   // Prev and Next buttons for narrow width carousel.
-  var galleryPrev = '<a href="" class="icon no-bg rounded icon-arrow-left icon--alt icon--large"><span class="is-vishidden">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M344.5 5.3l31.7 31.6L163.1 250l213.1 213.1-31.7 31.6L99.8 250z"/></svg></a>';
-  var galleryNext = '<a href="" class="icon no-bg rounded icon-arrow-right icon--alt icon--large"><span class="is-vishidden">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z"/></svg></a>';
+  var galleryPrev = '<span class="icon no-bg rounded icon-arrow-left icon--alt icon--large"><span class="is-vishidden">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M344.5 5.3l31.7 31.6L163.1 250l213.1 213.1-31.7 31.6L99.8 250z"/></svg></span>';
+  var galleryNext = '<span class="icon no-bg rounded icon-arrow-right icon--alt icon--large"><span class="is-vishidden">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z"/></svg></span>';
 
   // Carousel init for one item scroll.
   function cookieScrollOne() {

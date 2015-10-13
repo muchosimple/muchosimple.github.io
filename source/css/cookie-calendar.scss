@@ -134,6 +134,7 @@ $pink-lighter: rgba($pink, .3);
   color: $red;
   z-index: 10;
   text-align: right;
+  //text-shadow: 0 0 5px rgba($black, .4);
   @include mq($px700) {
     font-size: rem(40);
   }
@@ -225,6 +226,9 @@ $pink-lighter: rgba($pink, .3);
   font-family: $font-secondary;
   margin-bottom: rem(10);
   font-weight: 400;
+  a {
+    color: $white;
+  }
 }
 .cc__dek p {
   color: $white;
@@ -235,11 +239,15 @@ $pink-lighter: rgba($pink, .3);
 }
 .cc__cta {
   color: $white;
-  font-size: rem(14);
+  font-size: rem(16);
   font-weight: bold;
   text-decoration: underline;
   display: inline-block;
   margin-bottom: rem(6);
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
 }
 .cc__credit {
   font-size: rem(11);
@@ -384,6 +392,10 @@ $pink-lighter: rgba($pink, .3);
         fill: $white;
       }
     }
+  }
+  // Override color with white for contrast
+  .cc__number.white {
+    color: $white;
   }
 }
 

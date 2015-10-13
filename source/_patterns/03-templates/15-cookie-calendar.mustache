@@ -18,7 +18,7 @@
 					{{# cookies }}<li class="cc__cookie-list-item js-gi js-open-modal js-open-cc-modal">
 						<div class="cc__block">
 							<div class="cc__block-inner rel">
-								<a href="#" class="cc__number js-toggle-parent">{{ number }}</a>
+								<a href="#" class="cc__number js-toggle-parent {{ cc-number-class }}">{{ number }}</a>
 								<picture>
 									<!--[if IE 9]><video style="display: none;"><![endif]-->
 									<source srcset="{{ img.src2 }}" media="(min-width: 700px)">
@@ -28,10 +28,10 @@
 								<a href="#" class="cc__corner cc__corner--more js-toggle-parent"><span class="cc__corner-label">See More</span></a>
 								<div class="cc__block-text">
 									<div class="cc__block-text-inner rel">
-										<span class="cc__kicker">November 2, 2015</span>
-										<h2 class="cc__title">Chocolate Chip</h2>
+										<span class="cc__kicker">{{ cc-date }}</span>
+										<h2 class="cc__title"><a href="#">{{ cc-name }}</a></h2>
 										<div class="cc__dek">
-											<p>Nullam massa ex, aliquet ac lectus at, fringilla facilisis risus. Sed eleifend velit ut posuere pulvinar. Vestibulum ullamcorper urna id ante ornare, et facilisis velit dictum. Nullam massa ex, aliquet ac lectus at, fringilla facilisis risus. Sed eleifend velit ut posuere pulvinar. Vestibulum ullamcorper urna id ante ornare, et facilisis velit dictum.</p>
+											<p>{{ cc-desc }}</p>
 											<a href="" class="cc__cta">Get the recipe</a>
 										</div> <!-- /.cc__dek -->
 										<span class="cc__credit">Photos by Michelle Smith</span>

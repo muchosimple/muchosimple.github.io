@@ -18,7 +18,7 @@
 					{{# cookies }}&lt;li class=&quot;cc__cookie-list-item js-gi js-open-modal js-open-cc-modal&quot;&gt;
 						&lt;div class=&quot;cc__block&quot;&gt;
 							&lt;div class=&quot;cc__block-inner rel&quot;&gt;
-								&lt;a href=&quot;#&quot; class=&quot;cc__number js-toggle-parent&quot;&gt;{{ number }}&lt;/a&gt;
+								&lt;a href=&quot;#&quot; class=&quot;cc__number js-toggle-parent {{ cc-number-class }}&quot;&gt;{{ number }}&lt;/a&gt;
 								&lt;picture&gt;
 									&lt;!--[if IE 9]&gt;&lt;video style=&quot;display: none;&quot;&gt;&lt;![endif]--&gt;
 									&lt;source srcset=&quot;{{ img.src2 }}&quot; media=&quot;(min-width: 700px)&quot;&gt;
@@ -28,10 +28,10 @@
 								&lt;a href=&quot;#&quot; class=&quot;cc__corner cc__corner--more js-toggle-parent&quot;&gt;&lt;span class=&quot;cc__corner-label&quot;&gt;See More&lt;/span&gt;&lt;/a&gt;
 								&lt;div class=&quot;cc__block-text&quot;&gt;
 									&lt;div class=&quot;cc__block-text-inner rel&quot;&gt;
-										&lt;span class=&quot;cc__kicker&quot;&gt;November 2, 2015&lt;/span&gt;
-										&lt;h2 class=&quot;cc__title&quot;&gt;Chocolate Chip&lt;/h2&gt;
+										&lt;span class=&quot;cc__kicker&quot;&gt;{{ cc-date }}&lt;/span&gt;
+										&lt;h2 class=&quot;cc__title&quot;&gt;&lt;a href=&quot;#&quot;&gt;{{ cc-name }}&lt;/a&gt;&lt;/h2&gt;
 										&lt;div class=&quot;cc__dek&quot;&gt;
-											&lt;p&gt;Nullam massa ex, aliquet ac lectus at, fringilla facilisis risus. Sed eleifend velit ut posuere pulvinar. Vestibulum ullamcorper urna id ante ornare, et facilisis velit dictum. Nullam massa ex, aliquet ac lectus at, fringilla facilisis risus. Sed eleifend velit ut posuere pulvinar. Vestibulum ullamcorper urna id ante ornare, et facilisis velit dictum.&lt;/p&gt;
+											&lt;p&gt;{{ cc-desc }}&lt;/p&gt;
 											&lt;a href=&quot;&quot; class=&quot;cc__cta&quot;&gt;Get the recipe&lt;/a&gt;
 										&lt;/div&gt; &lt;!-- /.cc__dek --&gt;
 										&lt;span class=&quot;cc__credit&quot;&gt;Photos by Michelle Smith&lt;/span&gt;
