@@ -16,7 +16,7 @@
   if ($('.cc__cookie-list').length) {
     if ($('.cc__cookie-list').find('.fadein').length === 0) {
       $('.cc__cookie-list').find('.cc__cookie-list-item').each(function(i){
-        $(this).delay(i * 150).queue(function() {
+        $(this).delay(i * 120).queue(function() {
           $(this).addClass('fadein').dequeue();
         });
       });
