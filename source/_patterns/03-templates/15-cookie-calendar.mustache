@@ -19,12 +19,8 @@
 						<div class="cc__block">
 							<div class="cc__block-inner rel">
 								<a href="#" class="cc__number js-toggle-parent {{ cc-number-class }}">{{ number }}</a>
-								<picture>
-									<!--[if IE 9]><video style="display: none;"><![endif]-->
-									<source srcset="{{ img.src2 }}" media="(min-width: 700px)">
-									<!--[if IE 9]></video><![endif]-->
-									<img srcset="{{ img.src1 }}" alt="{{ img.alt }}">
-								</picture>
+								<img class="lazy--hidden" data-original="{{ img.src2 }}" alt="{{ img.alt }}">
+								<img class="lazyOwl" data-src="{{ img.src1 }}" itemprop="image" alt="{{ img.alt }}" />
 								<a href="#" class="cc__corner cc__corner--more js-toggle-parent"><span class="cc__corner-label">See More</span></a>
 								<div class="cc__block-text">
 									<div class="cc__block-text-inner rel">

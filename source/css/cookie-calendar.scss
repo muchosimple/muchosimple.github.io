@@ -106,7 +106,15 @@ $pink-lighter: rgba($pink, .3);
     display: block;
     width: 100%;
   }
+  .lazy--hidden {
+    @include mq($px700, max) {
+      display: none;
+    }
+  }
   @include mq($px700) {
+    .lazyOwl {
+      display: none;
+    }
     &:hover,
     .active-item & {
       border-width: 5px;

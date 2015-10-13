@@ -3,14 +3,12 @@
 \*------------------------------------*/
 
 (function() {
-  /**
-   * Gallery Modal
-   */
-  // if ($('.gallery__modal').length) {
-  //   var $galleryModal = $('.gallery__modal');
 
-  //   $('.gallery').addClass('modal');
-  // }
+  // Lazy load images.
+  $('img.lazy--hidden').lazyload({
+    threshold: 300,
+    skip_invisible: true
+  });
 
   // Load the images when the grid is present.
   if ($('.cc__cookie-list').length) {
@@ -41,6 +39,7 @@
   function cookieScrollOne() {
     $('.js-cc__cookie-list').show().owlCarousel({
       navigation: true,
+      lazyLoad: true,
       navigationText: [galleryPrev, galleryNext],
       pagination: false,
       slideSpeed: 300,
@@ -52,6 +51,7 @@
   function cookieScrollTwo() {
     $('.js-cc__cookie-list').show().owlCarousel({
       navigation: true,
+      lazyLoad: true,
       navigationText: [galleryPrev, galleryNext],
       pagination: false,
       slideSpeed: 300,
