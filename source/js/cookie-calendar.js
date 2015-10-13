@@ -4,7 +4,7 @@
 
 (function() {
 
-  // Lazy load images.
+  // Lazy load non-hidden images.
   $('img.lazy--hidden').lazyload({
     threshold: 300,
     skip_invisible: true
