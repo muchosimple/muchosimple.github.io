@@ -40,15 +40,49 @@ $pink-lighter: rgba($pink, .3);
     }
   }
 }
+.cc__months {
+  position: relative;
+  @include mq($px700, max) {
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 20px;
+      z-index: 10;
+      box-shadow: inset -25px 0px 15px -8px $white;
+    }
+  }
+}
+.cc__months-inner {
+  @include mq($px700, max) {
+    white-space: nowrap;
+    overflow: auto;
+    margin: 0 5px;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  @include mq($px700) {
+    padding-left: rem(140);
+    padding-right: rem(140);
+  }
+}
 .cc__month {
   text-transform: uppercase;
   color: $black;
   border: 1px solid $pink-lighter;
   font-size: rem(13);
   padding: rem(6) rem(13);
+  background-color: $white;
+  display: inline-block;
   @include mq($px700) {
     font-size: rem(17);
     padding: rem(8) rem(18);
+    margin-bottom: rem(5);
   }
 }
 
