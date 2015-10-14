@@ -23,18 +23,21 @@ $pink-lighter: rgba($pink, .3);
     letter-spacing: 2px;
   }
   @include mq($px700) {
-    padding-bottom: $pad-and-half;
-    margin-top: $space-and-half;
+    font-size: rem(45);
   }
   @include mq($px800) {
     font-size: rem(54);
+  }
+  @include mq($px1000) {
+    margin-top: $space-and-half;
+    padding-bottom: $pad;
   }
 }
 .cc__article-tools {
   @include mq($px700) {
     position: absolute;
     left: rem(5);
-    bottom: rem(-8);
+    bottom: rem(5);
     .social-share {
       margin-bottom: 0;
     }
@@ -42,21 +45,28 @@ $pink-lighter: rgba($pink, .3);
 }
 .cc__months {
   position: relative;
-  @include mq($px700, max) {
-    &:after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      height: 100%;
-      width: 20px;
-      z-index: 10;
-      box-shadow: inset -25px 0px 15px -8px $white;
+  overflow: hidden;
+  @include mq($px700) {
+    margin-left: rem(140);
+    margin-right: rem(140);
+  }
+  @include mq($px1000, max) {
+    .touch & {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 20px;
+        z-index: 10;
+        right: 0;
+        box-shadow: inset -25px 0px 15px -8px $white;
+      }
     }
   }
 }
-.cc__months-inner {
-  @include mq($px700, max) {
+.touch .cc__months-inner {
+  @include mq($px1000, max) {
     white-space: nowrap;
     overflow: auto;
     margin: 0 5px;
@@ -65,10 +75,6 @@ $pink-lighter: rgba($pink, .3);
     &::-webkit-scrollbar {
       display: none;
     }
-  }
-  @include mq($px700) {
-    padding-left: rem(140);
-    padding-right: rem(140);
   }
 }
 .cc__month {
