@@ -7,80 +7,100 @@
   "has-social-count" : true,
   "cookie-calendar" : true,
 
+  "filler-days" : [
+    {},
+    {}
+  ],
+
   "cookies" : [
     {
+      "cc-item-class" : "push-day-2",
       "number" : "1",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 1, 2015",
       "cc-name" : "Peach French Toast",
       "cc-desc" : "With just 15 minutes of hands-on prep, you can have 50 of these sweet, biscuit-like cookies.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/food-recipes/recipe-collections/0705/peach-french-toast_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/food-recipes/recipe-collections/0705/peach-french-toast_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/food-recipes/recipe-collections/0507/peach-french-toast-1_300.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "2",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 2, 2015",
       "cc-name" : "Plum Upside-Down Cake",
       "cc-desc" : "Sure to be a hit at any bake sale, these brownies get extra flavor from sweetened coconut and almonds.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/0908/ripe-upside-down-plum2_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/0908/ripe-upside-down-plum2_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/0908/ripe-upside-down-plum2_300.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "3",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 3, 2015",
       "cc-name" : "Beef and Broccoli Stir-Fry",
       "cc-desc" : "Nothing says \"holidays\" like having your kitchen fill up with the smell of cinnamon-and these cookies will do the trick.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/image/images/1303/beef-broccoli-stirfry_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/image/images/1303/beef-broccoli-stirfry_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1303/beef-broccoli-stirfry_300.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "4",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 4, 2015",
       "cc-name" : "Vietnamese Pork Chops",
       "cc-desc" : "To achieve pretty crimped edges, you don't need a fancy baking tool-you can use a fork.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/pork-chop-cantaloupe.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/pork-chop-cantaloupe.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/pork-chop-cantaloupe.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "5",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 5, 2015",
       "cc-name" : "Chipotle Shrimp",
       "cc-desc" : "Give simple sugar cookies a seasonal twist with cinnamon, nutmeg, and ginger.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/0905/shrimp-radish-jicama-ictcrop_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/0905/shrimp-radish-jicama-ictcrop_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/0905/shrimp-radish-jicama_300.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "6",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 6, 2015",
       "cc-name" : "Broccoli Galette",
       "cc-desc" : "If peanut butter and chocolate is your favorite flavor combo, these cookies will be your dream come true.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/broccoli-galette.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/broccoli-galette.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/broccoli-galette.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "7",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 7, 2015",
       "cc-name" : "Almond Butter and Fruit Parfait",
       "cc-desc" : "This childhood favorite will be a hit amongst the kids and the grown-ups.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1409/fruit-parfait_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1409/fruit-parfait_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1409/fruit-parfait_300.jpg",
         "alt": "Cookie Item"
       }
@@ -88,55 +108,65 @@
     {
       "number" : "8",
       "cc-number-class" : "white",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 8, 2015",
       "cc-name" : "Glazed Wings",
       "cc-desc" : "With pieces of gooey chocolate and crunchy almonds, these are way better than plain ol' chocolate chip cookies.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/tips/chicken-tangy-wings_300.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/tips/chicken-tangy-wings_300.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/tips/chicken-tangy-wings_300.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "9",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 9, 2015",
       "cc-name" : "Marbled Chocolate Zucchini Bread",
       "cc-desc" : "Put peppermint sticks to good use atop these holiday cookies.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1407/zucchini-chocolate_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1407/zucchini-chocolate_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1407/zucchini-chocolate_300.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "10",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 10, 2015",
       "cc-name" : "Shrimp and Broccoli Stir-Fry",
       "cc-desc" : "One cup of dried figs adds a unique seasonal flavor to this treat.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1409/shrimp-bacon-stirfry_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1409/shrimp-bacon-stirfry_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1409/shrimp-bacon-stirfry_300.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "11",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 11, 2015",
       "cc-name" : "Panko-Crusted Pork Chops",
       "cc-desc" : "Holly jolly chocolate and SKIPPY® Peanut Butter—with a crunch!",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1405/panko-pork-chop_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1405/panko-pork-chop_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1405/panko-pork-chop_300.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "12",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 12, 2015",
       "cc-name" : "Turkey Sloppy Joes",
       "cc-desc" : "Channel much warmer weather by baking a batch of these zesty cookies.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1202/turkey-sloppy-joes_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/1202/turkey-sloppy-joes_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1202/turkey-sloppy-joes_300.jpg",
         "alt": "Cookie Item"
       }
@@ -144,11 +174,13 @@
     {
       "number" : "13",
       "cc-number-class" : "white",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 13, 2015",
       "cc-name" : "Summery Greek Salad",
       "cc-desc" : "There's something for everyone in these cookies-from sweet chocolate chips to salty pretzels.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/image/images/1406/greek-salad-bulgur_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/image/images/1406/greek-salad-bulgur_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1406/greek-salad-bulgur_300.jpg",
         "alt": "Cookie Item"
       }
@@ -156,33 +188,39 @@
     {
       "number" : "14",
       "cc-number-class" : "white",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 14, 2015",
       "cc-name" : "Pop Rocks “Fireworks” Cupcakes",
       "cc-desc" : "Fun fact: Fennel grows from anise seeds. If you like licorice, then you'll love the anise flavor.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/poprocks-cupcakes.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/poprocks-cupcakes.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/poprocks-cupcakes.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "15",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 15, 2015",
       "cc-name" : "Orange Blossom Cantaloupe",
       "cc-desc" : "For the most delicious cookie, use the best-quality Parmesan you can-we love Parmigiano-Reggiano.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/cantaloupe-yogurt.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/cantaloupe-yogurt.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/cantaloupe-yogurt.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "16",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 16, 2015",
       "cc-name" : "Zucchini Melts",
       "cc-desc" : "The longer these citrus bars are chilled, the stiffer and easier they will be to cut.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/image/images/1307/zucchini-melts_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/image/images/1307/zucchini-melts_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1307/zucchini-melts_300.jpg",
         "alt": "Cookie Item"
       }
@@ -190,66 +228,78 @@
     {
       "number" : "17",
       "cc-number-class" : "white",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 17, 2015",
       "cc-name" : "Strawberry-Rhubarb Compote",
       "cc-desc" : "You can chill these for up to three days before serving-and can substitute nuts and dried fruits to fit your preferences.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/straw-rhubarb-yogurt.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/straw-rhubarb-yogurt.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/straw-rhubarb-yogurt.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "18",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 18, 2015",
       "cc-name" : "Burnt Sugar-Apricot Halves",
       "cc-desc" : "These doily-thin cookies will essentially melt on your tongue.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/burnt-sugar-apricot.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/burnt-sugar-apricot.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/burnt-sugar-apricot.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "19",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 19, 2015",
       "cc-name" : "Tomato and Cucumber Salad",
       "cc-desc" : "Everyone loves this classic cookie made with SKIPPY® Peanut Butter.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/tomato-avo-cuke_0.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/tomato-avo-cuke_0.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/tomato-avo-cuke_0.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "20",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 20, 2015",
       "cc-name" : "Cantaloupe-Berry Vanilla Ice Cream",
       "cc-desc" : "This decadent cheesecake is the perfect combination of salty and sweet.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/cantaloupe-berry-vanilla.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/cantaloupe-berry-vanilla.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/cantaloupe-berry-vanilla.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "21",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 21, 2015",
       "cc-name" : "Cantaloupe Cooler",
       "cc-desc" : "No holiday is complete without a few of these little guys-extra points for creative decorating.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/cantaloupe-cooler.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/cantaloupe-cooler.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/cantaloupe-cooler.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "22",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 22, 2015",
       "cc-name" : "Spaghetti With Asparagus",
       "cc-desc" : "Ground ginger and ground nutmeg add a little extra holiday spice to the dough.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/spaghetti-scallops.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/spaghetti-scallops.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/spaghetti-scallops.jpg",
         "alt": "Cookie Item"
       }
@@ -257,55 +307,65 @@
     {
       "number" : "23",
       "cc-number-class" : "white",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 23, 2015",
       "cc-name" : "Peach Old Fashioned Ice Pops",
       "cc-desc" : "Channel the deliciousness of carrot cake by sandwiching cream cheese frosting between two cookies.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/1434727404/peach-old-fashioned-pop.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/1434727404/peach-old-fashioned-pop.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/1434727404/peach-old-fashioned-pop.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "24",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 24, 2015",
       "cc-name" : "Cantaloupe Prosciutto Plate",
       "cc-desc" : "Your morning roast meets your snowy-day drink of choice to make an indulgent batch of cookies.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/cantaloupe-prosciutto.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/cantaloupe-prosciutto.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/cantaloupe-prosciutto.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "25",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 25, 2015",
       "cc-name" : "Pasta Salad With Cantaloupe",
       "cc-desc" : "Inspired by the s'more, the filling is made with marshmallow fluff.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/pasta-salad-cantaloupe.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/pasta-salad-cantaloupe.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/pasta-salad-cantaloupe.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "26",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 26, 2015",
       "cc-name" : "Cantaloupe Skewers",
       "cc-desc" : "These delicious nutty cookies are perfect for any special occasion.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/cantaloupe-skewers.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/cantaloupe-skewers.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/cantaloupe-skewers.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "27",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 27, 2015",
       "cc-name" : "Seared Salmon Tacos",
       "cc-desc" : "Creamy peanut butter bites dipped in bittersweet chocolate are an irresistible indulgence.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/seared-salmon-tacos.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/seared-salmon-tacos.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/seared-salmon-tacos.jpg",
         "alt": "Cookie Item"
       }
@@ -313,44 +373,52 @@
     {
       "number" : "28",
       "cc-number-class" : "white",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 28, 2015",
       "cc-name" : "Blueberry Cobbler",
       "cc-desc" : "These cookies could not be easier to make-just 10 minutes of prep, and your work is done.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/food-recipes/recipe-collections/0807/blueberry-cobbler-ictcrop_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/image/images/food-recipes/recipe-collections/0807/blueberry-cobbler-ictcrop_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/food-recipes/recipe-collections/0807/blueberry-cobbler_300.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "29",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 29, 2015",
       "cc-name" : "Barbecue Pork Sandwiches",
       "cc-desc" : "Tip: Store the bars in the pan and refrigerate for up to two days-then, cut just before serving.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/1012/pork-sandwich_300.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/1012/pork-sandwich_300.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1012/pork-sandwich_300.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "30",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 30, 2015",
       "cc-name" : "Spinach-Stuffed Steak Roulades",
       "cc-desc" : "The simple, zesty glaze comes together with just three ingredients.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/image/images/food-recipes/recipe-collections/0613/steak-roulades_gal.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_photo_gallery_horz/public/image/images/food-recipes/recipe-collections/0613/steak-roulades_gal.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/1007/steak-roulades_300.jpg",
         "alt": "Cookie Item"
       }
     },
     {
       "number" : "31",
+      "is-lazy" : false,
+      "lazy-slide" : true,
       "cc-date" : "November 31, 2015",
       "cc-name" : "Roast Chicken",
       "cc-desc" : "These sweet, nutty cookies will be the hit of any holiday party.",
       "img": {
-        "src1": "http://www.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/food-recipes/recipe-collections/0610/roasted-chicken-peaches_300.jpg",
+        "src": "http://www.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/food-recipes/recipe-collections/0610/roasted-chicken-peaches_300.jpg",
         "src2": "http://www.realsimple.com/sites/default/files/styles/rs_medium_image/public/image/images/food-recipes/recipe-collections/0610/roasted-chicken-peaches_300.jpg",
         "alt": "Cookie Item"
       }
@@ -359,6 +427,7 @@
 
   "gallery" : {
     "is-normal-slide" : true,
+    "is-lazy" : false,
     "is-lazy" : false,
     "lazy-slide" : true,
     "slide-img-class" : "cc__slide-img",

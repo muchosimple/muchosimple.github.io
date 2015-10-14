@@ -15,12 +15,15 @@
 
 			&lt;div class=&quot;cc__cookies&quot;&gt;
 				&lt;ul class=&quot;cc__cookie-list js-cc__cookie-list cf js-gallery-grid&quot;&gt;
-					{{# cookies }}&lt;li class=&quot;cc__cookie-list-item js-gi js-open-modal js-open-cc-modal&quot;&gt;
+					&lt;!-- {{# filler-days }}
+						&lt;li class=&quot;cc__filler-day&quot;&gt;&lt;/li&gt;
+					{{/ filler-days }} --&gt;
+					{{# cookies }}&lt;li class=&quot;cc__cookie-list-item js-gi js-open-modal js-open-cc-modal {{ cc-item-class }}&quot;&gt;
 						&lt;div class=&quot;cc__block&quot;&gt;
 							&lt;div class=&quot;cc__block-inner rel&quot;&gt;
 								&lt;a href=&quot;#&quot; class=&quot;cc__number js-toggle-parent {{ cc-number-class }}&quot;&gt;{{ number }}&lt;/a&gt;
 								&lt;img class=&quot;lazy--hidden&quot; data-original=&quot;{{ img.src2 }}&quot; alt=&quot;{{ img.alt }}&quot;&gt;
-								&lt;img class=&quot;lazyOwl&quot; data-src=&quot;{{ img.src1 }}&quot; itemprop=&quot;image&quot; alt=&quot;{{ img.alt }}&quot; /&gt;
+								{{&gt; atoms-image }}
 								&lt;a href=&quot;#&quot; class=&quot;cc__corner cc__corner--more js-toggle-parent&quot;&gt;&lt;span class=&quot;cc__corner-label&quot;&gt;See More&lt;/span&gt;&lt;/a&gt;
 								&lt;div class=&quot;cc__block-text&quot;&gt;
 									&lt;div class=&quot;cc__block-text-inner rel&quot;&gt;

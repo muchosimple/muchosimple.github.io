@@ -15,12 +15,15 @@
 
 			<div class="cc__cookies">
 				<ul class="cc__cookie-list js-cc__cookie-list cf js-gallery-grid">
-					{{# cookies }}<li class="cc__cookie-list-item js-gi js-open-modal js-open-cc-modal">
+					<!-- {{# filler-days }}
+						<li class="cc__filler-day"></li>
+					{{/ filler-days }} -->
+					{{# cookies }}<li class="cc__cookie-list-item js-gi js-open-modal js-open-cc-modal {{ cc-item-class }}">
 						<div class="cc__block">
 							<div class="cc__block-inner rel">
 								<a href="#" class="cc__number js-toggle-parent {{ cc-number-class }}">{{ number }}</a>
 								<img class="lazy--hidden" data-original="{{ img.src2 }}" alt="{{ img.alt }}">
-								<img class="lazyOwl" data-src="{{ img.src1 }}" itemprop="image" alt="{{ img.alt }}" />
+								{{> atoms-image }}
 								<a href="#" class="cc__corner cc__corner--more js-toggle-parent"><span class="cc__corner-label">See More</span></a>
 								<div class="cc__block-text">
 									<div class="cc__block-text-inner rel">
