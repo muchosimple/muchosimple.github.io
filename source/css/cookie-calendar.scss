@@ -82,12 +82,12 @@ $pink-lighter: rgba($pink, .3);
   color: $black;
   border: 1px solid $pink-lighter;
   font-size: rem(13);
-  padding: rem(6) rem(13);
+  padding: 11px 14px 9px;
   background-color: $white;
   display: inline-block;
+  line-height: 1;
   @include mq($px700) {
     font-size: rem(17);
-    padding: rem(8) rem(18);
     margin-bottom: rem(5);
   }
 }
