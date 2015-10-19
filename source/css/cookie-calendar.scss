@@ -92,7 +92,8 @@ $pink-lighter: rgba($pink, .3);
   }
 }
 
-.cc__month--active {
+.cc__month--active,
+.cc__month--active:focus {
   background-color: $red;
   color: $white;
   &:hover {
@@ -111,6 +112,21 @@ $pink-lighter: rgba($pink, .3);
       margin-left: rem(5);
       margin-right: rem(5);
     }
+  }
+  @include mq($px700) {
+    min-height: rem(530);
+  }
+  @include mq($px900) {
+    min-height: rem(650);
+  }
+  @include mq($px1000) {
+    min-height: rem(720);
+  }
+  @include mq($px1100) {
+    min-height: rem(800);
+  }
+  @include mq($px1300) {
+    min-height: rem(900);
   }
 }
 .js .cc__cookie-list {
@@ -434,8 +450,14 @@ $pink-lighter: rgba($pink, .3);
       border-color: $theme-color;
     }
   }
-  .cc__month--active {
+  .cc__month:hover,
+  .cc__month:focus {
+    color: $theme-color;
+  }
+  .cc__month--active,
+  .cc__month--active:focus {
     background-color: $theme-color;
+    color: $white;
   }
   .cc__block-text {
     background-color: rgba($theme-color, .85);
