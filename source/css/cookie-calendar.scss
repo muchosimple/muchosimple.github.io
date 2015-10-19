@@ -202,6 +202,12 @@ $pink-lighter: rgba($pink, .3);
   //text-shadow: 0 0 5px rgba($black, .4);
   @include mq($px700) {
     font-size: rem(40);
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    padding-top: $pad-half;
+    padding-right: rem(12);
   }
   @include mq($px1200) {
     font-size: rem(60);
