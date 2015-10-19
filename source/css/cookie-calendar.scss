@@ -444,7 +444,8 @@ $pink-lighter: rgba($pink, .3);
   .cc__block,
   .cc__gallery,
   .cc__slide-img,
-  .cc__slide-img .hover-slide-navigation .icon {
+  .cc__slide-img .hover-slide-navigation .icon,
+  .gallery__modal {
     border-color: rgba($theme-color, .3);
     @include mq($px600) {
       border-color: $theme-color;
