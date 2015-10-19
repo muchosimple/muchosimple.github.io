@@ -1,7 +1,11 @@
 /* Text-Related Elements */
-p {
+p,
+.p {
   margin-bottom: $space;
   @include text-styles;
+}
+.p p {
+  margin-bottom: 0;
 }
 
 /* Blockquote */
