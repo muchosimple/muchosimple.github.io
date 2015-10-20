@@ -162,7 +162,10 @@ window.onresize = function() {
     $('.overlay').removeClass('overlay-active');
   };
 
-  if (getWidth() >= 700) {
+  var viewportWidth = $(window).width();
+  var viewportHeight = $(window).height();
+
+  if (viewportWidth >= 700 && viewportHeight >= 750) {
     // Open overlay
     $('.js-open-modal').on('click', function(e) {
       e.preventDefault();

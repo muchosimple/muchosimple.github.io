@@ -47,8 +47,8 @@
       singleItem: true
     });
   }
-  // Carousel init for two item scroll.
-  function cookieScrollTwo() {
+  // Carousel init for more than one item scroll.
+  function cookieScrollMore(num) {
     $('.js-cc__cookie-list').show().owlCarousel({
       navigation: true,
       lazyLoad: true,
@@ -56,20 +56,25 @@
       pagination: false,
       slideSpeed: 300,
       paginationSpeed: 400,
-      items: 2
+      items: num,
+      itemsCustom: [[0,2], [700,3]]
     });
   }
   var viewportWidth = $(window).width();
+  var viewportHeight = $(window).height();
 
   // Carousel init for to determine if one or two items will be visible.
   function initCookieCarousel() {
-    if (viewportWidth < 500) {
+    if (viewportWidth < 450) {
       cookieScrollOne();
     }
-    if (viewportWidth > 500 && viewportWidth < 700) {
-      cookieScrollTwo();
+    else if (viewportWidth > 450 && viewportWidth < 700 && viewportHeight < 750) {
+      cookieScrollMore(2);
     }
-    if (viewportWidth >= 700) {
+    else if (viewportWidth >= 700 && viewportHeight < 750) {
+      cookieScrollMore(3);
+    }
+    else if (viewportWidth >= 700 && viewportHeight >= 750) {
       cc_carousel.destroy();
     }
   }
@@ -79,6 +84,7 @@
   // On resize, fire the init carousel function.
   $(window).resize(function() {
     viewportWidth = $(window).width();
+    viewportHeight = $(window).height();
     initCookieCarousel();
   });
 

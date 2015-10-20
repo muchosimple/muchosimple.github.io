@@ -22,7 +22,7 @@ $pink-lighter: rgba($pink, .3);
   @include mq($px500) {
     letter-spacing: 2px;
   }
-  @include mq($px700) {
+  @media (min-width: $px700) and (min-height: $px750) {
     font-size: rem(45);
   }
   @include mq($px800) {
@@ -34,7 +34,7 @@ $pink-lighter: rgba($pink, .3);
   }
 }
 .cc__article-tools {
-  @include mq($px700) {
+  @media (min-width: $px700) and (min-height: $px750) {
     position: absolute;
     left: rem(5);
     bottom: rem(5);
@@ -46,7 +46,7 @@ $pink-lighter: rgba($pink, .3);
 .cc__months {
   position: relative;
   overflow: hidden;
-  @include mq($px700) {
+  @media (min-width: $px700) and (min-height: $px750) {
     margin-left: rem(140);
     margin-right: rem(140);
   }
@@ -86,7 +86,7 @@ $pink-lighter: rgba($pink, .3);
   background-color: $white;
   display: inline-block;
   line-height: 1;
-  @include mq($px700) {
+  @media (min-width: $px700) and (min-height: $px750) {
     font-size: rem(17);
     margin-bottom: rem(5);
   }
@@ -113,7 +113,7 @@ $pink-lighter: rgba($pink, .3);
       margin-right: rem(5);
     }
   }
-  @include mq($px700) {
+  @media (min-width: $px700) and (min-height: $px750) {
     min-height: rem(530);
   }
   @include mq($px900) {
@@ -131,7 +131,7 @@ $pink-lighter: rgba($pink, .3);
 }
 .js .cc__cookie-list {
   display: none;
-  @include mq($px700) {
+  @media (min-width: $px700) and (min-height: $px750) {
     display: block;
   }
 }
@@ -141,7 +141,7 @@ $pink-lighter: rgba($pink, .3);
   padding-left: rem(5);
   padding-right: rem(5);
   float: left;
-  @include mq($px700) {
+  @media (min-width: $px700) and (min-height: $px750) {
     width: 14.2857143%;
     opacity: 0;
     @include transition(opacity .4s $cubic-bezier);
@@ -164,11 +164,11 @@ $pink-lighter: rgba($pink, .3);
     width: 100%;
   }
   .lazy--hidden {
-    @include mq($px700, max) {
+    @media (max-height: $px750) {
       display: none;
     }
   }
-  @include mq($px700) {
+  @media (min-height: $px750) {
     .lazyOwl {
       display: none;
     }
@@ -200,7 +200,7 @@ $pink-lighter: rgba($pink, .3);
   z-index: 10;
   text-align: right;
   //text-shadow: 0 0 5px rgba($black, .4);
-  @include mq($px700) {
+  @media (min-width: $px700) and (min-height: $px750) {
     font-size: rem(40);
     width: 100%;
     height: 100%;
@@ -227,7 +227,7 @@ $pink-lighter: rgba($pink, .3);
       color: $white;
     }
   }
-  @include mq($px700) {
+  @media (min-width: $px700) and (min-height: $px750) {
     display: none;
   }
 }
@@ -283,7 +283,7 @@ $pink-lighter: rgba($pink, .3);
   .is-active & {
     bottom: 0;
   }
-  @include mq($px700) {
+  @media (min-width: $px700) and (min-height: $px750) {
     display: none;
   }
 }
@@ -413,7 +413,7 @@ $pink-lighter: rgba($pink, .3);
 /**
  * Push Days
  */
-@include mq($px700) {
+@media (min-width: $px700) and (min-height: $px750) {
   .push-day-1 {
     margin-left: 14.2857143%;
   }
@@ -462,7 +462,8 @@ $pink-lighter: rgba($pink, .3);
     color: $theme-color;
   }
   .cc__month--active,
-  .cc__month--active:focus {
+  .cc__month--active:focus,
+  .cc__social-wrap {
     background-color: $theme-color;
     color: $white;
   }
