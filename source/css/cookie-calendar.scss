@@ -33,6 +33,18 @@ $pink-lighter: rgba($pink, .3);
     padding-bottom: $pad;
   }
 }
+.cc__sponsored-by {
+  @include mq($px500) {
+    margin-top: rem(-6);
+  }
+  @include mq($px1000) {
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: rem(30);
+    text-align: left;
+  }
+}
 .cc__article-tools {
   @media (min-width: $px700) and (min-height: $px750) {
     position: absolute;
