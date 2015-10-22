@@ -340,9 +340,10 @@ $pink-lighter: rgba($pink, .3);
   background-color: $pink;
   padding: rem(6) rem(27) rem(8);
   box-shadow: 0 0 10px rgba($black, .2);
-  @include transition(bottom .25s ease-out .4s);
+  @include transition(bottom .25s ease-out);
   .is-active & {
     bottom: 0;
+    @include transition(bottom .25s ease-out .4s);
   }
   .icon {
     border: 1px solid $white;
@@ -449,7 +450,10 @@ $pink-lighter: rgba($pink, .3);
 @mixin theme-color($theme-color) {
   .cc__headline,
   .cc__number,
-  .cc__slide-text .cc__slide-cta {
+  .cc__slide-text .cc__slide-cta,
+  .cc__month:hover,
+  .cc__month:focus,
+  .slide-title a {
     color: $theme-color;
   }
   .cc__month,
@@ -462,10 +466,6 @@ $pink-lighter: rgba($pink, .3);
     @include mq($px600) {
       border-color: $theme-color;
     }
-  }
-  .cc__month:hover,
-  .cc__month:focus {
-    color: $theme-color;
   }
   .cc__month--active,
   .cc__month--active:focus,
