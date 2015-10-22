@@ -22,7 +22,32 @@
 							<div class="cc__block-inner rel">
 								<a href="#" class="cc__number js-toggle-parent {{ cc-number-class }}">{{ number }}</a>
 								<img class="lazy--hidden" data-original="{{ img.src2 }}" alt="{{ img.alt }}">
-								{{> atoms-image }}
+								<div class="img-wrap">
+									{{> atoms-image }}
+									<div class="has-social">
+										<div class="cc__social-wrap">
+											<div class="cc__social social-share">
+												<ul class="ss-list">
+													<li class="ss-item">
+														<a class="ss-link" href="{{ url }}">
+															<span class="no-bg icon rounded icon-facebook icon--medium">{{> atoms-facebook }}</span>
+														</a> <!-- /.ss-link -->
+													</li> <!-- /.ss-item -->
+													<li class="ss-item">
+														<a class="ss-link" href="{{ url }}">
+															<span class="no-bg icon rounded icon-twitter icon--medium">{{> atoms-twitter }}</span>
+														</a> <!-- /.ss-link -->
+													</li> <!-- /.ss-item -->
+													<li class="ss-item">
+														<a class="ss-link" href="{{ url }}">
+															<span class="no-bg icon rounded icon-pinterest icon--medium">{{> atoms-pinterest }}</span>
+														</a> <!-- /.ss-link -->
+													</li> <!-- /.ss-item -->
+												</ul> <!-- /.ss-list -->
+											</div> <!-- /.social-share -->
+										</div> <!-- /.cc__social-wrap -->
+									</div> <!-- /.has-social -->
+								</div> <!-- /.img-wrap -->
 								<a href="#" class="cc__corner cc__corner--more js-toggle-parent"><span class="cc__corner-label">See More</span></a>
 								<div class="cc__block-text">
 									<div class="cc__block-text-inner rel">
@@ -34,27 +59,6 @@
 										</div> <!-- /.cc__dek -->
 										<span class="cc__credit">Photos by Michelle Smith</span>
 									</div> <!-- /.cc__block-text-inner -->
-									<div class="cc__social-wrap">
-										<div class="cc__social social-share">
-											<ul class="ss-list">
-												<li class="ss-item">
-													<a class="ss-link" href="{{ url }}">
-														<span class="no-bg icon rounded icon-facebook icon--medium">{{> atoms-facebook }}</span>
-													</a> <!-- /.ss-link -->
-												</li> <!-- /.ss-item -->
-												<li class="ss-item">
-													<a class="ss-link" href="{{ url }}">
-														<span class="no-bg icon rounded icon-twitter icon--medium">{{> atoms-twitter }}</span>
-													</a> <!-- /.ss-link -->
-												</li> <!-- /.ss-item -->
-												<li class="ss-item">
-													<a class="ss-link" href="{{ url }}">
-														<span class="no-bg icon rounded icon-pinterest icon--medium">{{> atoms-pinterest }}</span>
-													</a> <!-- /.ss-link -->
-												</li> <!-- /.ss-item -->
-											</ul> <!-- /.ss-list -->
-										</div> <!-- /.social-share -->
-									</div> <!-- /.cc__social-wrap -->
 								</div> <!-- /.cc__block-text -->
 								<a href="#" class="cc__corner cc__corner--less js-toggle-parent"><span class="cc__corner-label">Back</span></a>
 							</div> <!-- /.cc__block-inner -->

@@ -169,7 +169,8 @@ $pink-lighter: rgba($pink, .3);
     }
   }
   @media (min-height: $px750) {
-    .lazyOwl {
+    .lazyOwl,
+    .img-wrap {
       display: none;
     }
     &:hover,
@@ -179,6 +180,10 @@ $pink-lighter: rgba($pink, .3);
         margin: -4px;
       }
     }
+  }
+  .has-social {
+    position: static;
+    overflow: visible;
   }
 }
 .cc__block-text {
@@ -327,6 +332,7 @@ $pink-lighter: rgba($pink, .3);
 }
 .cc__social-wrap {
   position: absolute;
+  z-index: 22;
   left: 0;
   width: 100%;
   bottom: -50px;
