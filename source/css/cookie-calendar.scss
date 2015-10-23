@@ -481,6 +481,7 @@ $pink-lighter: rgba($pink, .3);
   }
   .cc__month--active,
   .cc__month--active:focus,
+  .cc__month--active:hover,
   .cc__social-wrap {
     background-color: $theme-color;
     color: $white;
