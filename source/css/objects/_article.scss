@@ -127,7 +127,7 @@
 		margin-left: $space;
 	}
 	@include mq($medium-break) {
-		// Negative indent the right aligned article images to extend beyonf the
+		// Negative indent the right aligned article images to extend beyond the
 		// article content column to allow for more room for text.
 		margin-right: rem(-25);
 	}

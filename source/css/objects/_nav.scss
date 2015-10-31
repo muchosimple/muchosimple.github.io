@@ -115,16 +115,24 @@
 	}
 	.l-top {
 		display: inline-block;
-		padding-left: 1.4%;
-		padding-right: 1.4%;
+		padding-left: .75%;
+		padding-right: .75%;
 		vertical-align: top;
+		@include mq($px850) {
+			padding-left: 1%;
+			padding-right: 1%;
+		}
 		@include mq($px900) {
-			padding-left: 2%;
-			padding-right: 2%;
+			padding-left: 1.2%;
+			padding-right: 1.2%;
+		}
+		@include mq($px1100) {
+			padding-left: 1.5%;
+			padding-right: 1.5%;
 		}
 		@include mq($larger-break) {
-			padding-left: 2.45%;
-			padding-right: 2.45%;
+			padding-left: 2%;
+			padding-right: 2%;
 		}
 		> a {
 			background-color: transparent;
@@ -212,6 +220,14 @@
 			}
 		}
 	}
+}
+/**
+ * Special "Give a Gift" link addition
+ */
+.l-give-a-gift {
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-image: url(../../source/images/give-a-gift-bow.png);
 }
 
 // Hide elements with .h-hide class when hovering over the "Follow" nav link.
