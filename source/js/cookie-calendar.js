@@ -68,13 +68,13 @@
     if (viewportWidth < 450) {
       cookieScrollOne();
     }
-    else if (viewportWidth > 450 && viewportWidth < 700 && viewportHeight < 750) {
+    else if (viewportWidth > 450 && viewportWidth < 750) {
       cookieScrollMore(2);
     }
-    else if (viewportWidth >= 700 && viewportHeight < 750) {
+    else if (viewportWidth >= 750 && viewportHeight < 750) {
       cookieScrollMore(3);
     }
-    else if (viewportWidth >= 700 && viewportHeight >= 750) {
+    else if (viewportWidth >= 750 && viewportHeight >= 750) {
       cc_carousel.destroy();
     }
   }
