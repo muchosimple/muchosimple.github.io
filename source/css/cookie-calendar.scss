@@ -382,6 +382,11 @@ $pink-lighter: rgba($pink, .3);
 
 .cc__slide-img {
   border: 1px solid $pink;
+  @media (min-width: $px700) {
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+  }
   .hover-slide-navigation {
     opacity: 1;
     .icon {
@@ -402,6 +407,13 @@ $pink-lighter: rgba($pink, .3);
     .icon-arrow-right {
       border-right: none;
     }
+  }
+}
+.cc__slide-text {
+  @media (min-width: $px700) {
+    width: 50%;
+    float: left;
+    padding-left: $pad-and-half;
   }
 }
 .cc__gallery {
