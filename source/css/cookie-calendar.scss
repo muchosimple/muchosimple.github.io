@@ -30,6 +30,13 @@ $pink-lighter: rgba($pink, .3);
   }
   @include mq($px1000) {
     margin-top: $space-and-half;
+  }
+}
+.cc__lead-subtitle {
+  max-width: rem(650);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq($px1000) {
     padding-bottom: $pad;
   }
 }
