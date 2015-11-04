@@ -17,7 +17,7 @@ $pink-lighter: rgba($pink, .3);
   }
 }
 .cc__headline {
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: 1px;
   @include mq($px500) {
     letter-spacing: 2px;
