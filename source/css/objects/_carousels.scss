@@ -113,8 +113,8 @@
 	padding: $pad;
 	@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 		padding: 0;
-		@include flexbox;
-		@include align-items(center);
+		// @include flexbox;
+		// @include align-items(center);
 	}
 	@media (min-width: $px700) and (max-width: $medium-break), (min-width: $large-break) {
 		font-size: rem(22);
