@@ -386,6 +386,14 @@ $pink-lighter: rgba($pink, .3);
     width: 50%;
     float: left;
     margin-bottom: 0;
+    .img-wrap {
+      overflow: hidden;
+    }
+    .img-inner {
+      padding-top: 117%;
+      width: 101%;
+      margin-left: -.5%;
+    }
   }
   .hover-slide-navigation {
     opacity: 1;
