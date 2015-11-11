@@ -101,10 +101,17 @@
 }
 .nt-inner {
   position: relative;
+  left: 0;
+  top: 0;
   @include mq($large-break) {
     position: absolute;
+  }
+}
+// FireFox hack :(
+body:not(:-moz-handler-blocked) .nt-inner {
+  top: rem(10);
+  @include mq($large-break) {
     top: 0;
-    left: 0;
   }
 }
 .nt-inner span,
@@ -117,14 +124,14 @@
   position: absolute;
   display: block;
   content: '';
-  top: rem(12);
+  margin-top: rem(12);
   @include trans;
 }
 .nt-inner span:before {
-  top: rem(-7);
+  margin-top: rem(-7);
 }
 .nt-inner span:after {
-  top: rem(7);
+  margin-top: rem(7);
 }
 .csstransforms {
   .main-nav-is-active .nt-inner {
@@ -132,7 +139,7 @@
       background-color: transparent;
       &:before,
       &:after {
-        top: 0;
+        margin-top: 0;
         left: 0;
         display: block;
         @include transform(rotate(45deg));
