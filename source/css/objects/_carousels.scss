@@ -111,6 +111,7 @@
 	font-weight: 300;
 	font-size: rem(18);
 	padding: $pad;
+	width: 100%;
 	@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 		padding: 0;
 		// @include flexbox;
