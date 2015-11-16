@@ -952,25 +952,28 @@
 .section__video-recirc {
   border-top: $border-style;
   padding-top: $pad-and-half;
-  height: rem(450);
+  height: rem(500);
   overflow: hidden;
   position: relative;
   @include trans;
   @include bg-gradient(150, auto, 0, rgba($white, 0), $white);
   @include mq($px700) {
-    height: rem(650);
     border-top: none;
-  }
-  @include mq($px700) {
     height: auto;
     &:before {
       display: none;
     }
     .icon-play {
-      width: $icon-big;
-      height: $icon-big;
-      margin-left: -$icon-big / 2;
-      margin-top: -$icon-big / 2;
+      width: 55px;
+      height: 55px;
+      margin-left: -55 / 2 + 0px;
+      margin-top: -55 / 2 + 0px;
+    }
+  }
+  .video__thumbs {
+    position: relative;
+    @include mq($medium-break) {
+      padding-right: rem(320);
     }
   }
   .gi {
@@ -981,6 +984,14 @@
   }
   .block {
     margin-bottom: 0;
+    .img-wrap {
+      width: 100%;
+    }
+  }
+  .b-thumb {
+    img {
+      width: 100%;
+    }
   }
   .b-title {
     font-size: rem(14);
@@ -993,6 +1004,39 @@
     &:before {
       display: none;
     }
+  }
+  .ad-block {
+    display: none;
+    @include mq($medium-break) {
+      right: 0;
+      top: 0;
+      position: absolute;
+      display: block;
+      margin-top: $space-half;
+      margin-bottom: $space;
+    }
+  }
+}
+.video__filters-count {
+  margin-right: rem(24);
+}
+.video__filters-label {
+  margin-right: rem(12);
+}
+.video__filters {
+  .check-list {
+    display: inline-block;
+    padding: 0;
+  }
+  .cl-item {
+    margin-right: $space;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  label {
+    font-family: $font;
+    font-weight: bold;
   }
 }
 

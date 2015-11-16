@@ -40,13 +40,34 @@
 		</div> <!-- /.shift-right--700 -->
 
 		<section class="section section__video-recirc clear">
-			<div class="g g-4up-2col-start">
-				{{# video-recirc }}
-					{{# videos }}
-						<div class="gi">{{> molecules-block-thumb-headline }}</div>
-					{{/ videos }}
-				{{/ video-recirc }}
-			</div> <!-- /.g-4up-2col-start -->
+
+			<div class="video__filters space-btm">
+				<span class="video__filters-count upper"><strong>22 of 326</strong></span>
+				<span class="video__filters-label upper pink"><strong>Filter By:</strong></span>
+				<ul class="check-list inline-list font-">
+					<li class="cl-item"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"><label for="checkbox1"><span>{{> atoms-check }}</span> Food <span class="cl-item-amt">(186)</span></label></li>
+					<li class="cl-item"><input id="checkbox2" name="checkbox" type="checkbox"><label for="checkbox2"><span>{{> atoms-check }}</span> Home <span class="cl-item-amt">(25)</span></label></li>
+					<li class="cl-item"><input id="checkbox3" name="checkbox" type="checkbox"><label for="checkbox3"><span>{{> atoms-check }}</span> Style <span class="cl-item-amt">(2)</span></label></li>
+					<li class="cl-item"><input id="checkbox4" name="checkbox" type="checkbox"><label for="checkbox4"><span>{{> atoms-check }}</span> Life <span class="cl-item-amt">(6)</span></label></li>
+					<li class="cl-item"><input id="checkbox5" name="checkbox" type="checkbox"><label for="checkbox5"><span>{{> atoms-check }}</span> Shop <span class="cl-item-amt">(23)</span></label></li>
+					<li class="cl-item"><input id="checkbox6" name="checkbox" type="checkbox"><label for="checkbox6"><span>{{> atoms-check }}</span> Holidays <span class="cl-item-amt">(32)</span></label></li>
+				</ul>
+			</div> <!-- /.video__filters -->
+
+			<div class="video__thumbs">
+				<div class="ad-block">
+					<!-- <a href="" class="hide-larger hide-large"><img src="http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg"></a> -->
+					<a href=""><img src="http://placehold.it/300x600"></a>
+				</div>
+				<div class="g g-4up-2col-start">
+					{{# video-recirc }}
+						{{# videos }}
+							<div class="gi">{{> molecules-block-thumb-headline }}</div>
+						{{/ videos }}
+					{{/ video-recirc }}
+				</div> <!-- /.g-4up-2col-start -->
+			</div> <!-- /.video__thumbs -->
+
 		</section> <!-- /.section__video-recirc -->
 
 		<div class="lc lc-inner space-double-btm pad-double-top">

@@ -382,16 +382,16 @@
 		float: left;
 		width: 50%;
 		margin-bottom: $space;
-		&:nth-of-type(2n+1) {
-			clear: both;
+		&:nth-of-type(odd) {
+			clear: left;
 		}
 	}
-	@include mq($px600) {
+	@media (min-width: $px600) and (max-width: $medium-break), (min-width: $px1000) {
 		// Layout: [][][]
 		// 				 []
 		> .gi {
 			width: 33.333%;
-			&:nth-of-type(2n+1) {
+			&:nth-of-type(odd) {
 				clear: none;
 			}
 			&:nth-of-type(3n+1) {
@@ -399,7 +399,7 @@
 			}
 		}
 	}
-	@include mq($large-break) {
+	@include mq($px1200) {
 		// Layout: [][][][]
 		> .gi {
 			width: 25%;
