@@ -1022,6 +1022,11 @@
 }
 .video__filters-label {
   margin-right: rem(12);
+  @media (max-width: $medium-break) {
+    padding-top: $pad-half;
+    display: block;
+    margin-bottom: rem(4);
+  }
 }
 .video__filters {
   .check-list {
@@ -1040,3 +1045,14 @@
   }
 }
 
+/**
+ * Single Video
+ */
+.article__video--single {
+  max-width: rem(1010);
+  margin-left: auto;
+  margin-right: auto;
+  .article-header {
+    max-width: rem(750);
+  }
+}

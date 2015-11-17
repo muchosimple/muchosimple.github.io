@@ -6,7 +6,7 @@
   padding-top: $pad;
   -webkit-transform: translate(0);
   @include mq($medium-break) {
-    padding-top: $pad-double;
+    padding-top: $pad;
     .main--no-pad & {
       padding-top: 0;
     }

@@ -1,0 +1,12 @@
+{
+  "title" : "Featured Videos | Here's How Giving Up Facebook Could Make You Happier",
+  "is-single-video" : true,
+  "article-class" : "article__video--single",
+  "video-head" : [
+    {
+      "title" : "Here's How Giving Up Facebook Could Make You Happier",
+      "subtitle" : "All the social comparisons might be causing more harm than good."
+    }
+  ],
+  "feat-videos" : false
+}
