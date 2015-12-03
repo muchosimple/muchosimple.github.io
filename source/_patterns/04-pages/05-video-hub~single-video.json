@@ -2,6 +2,8 @@
   "title" : "Featured Videos | Here's How Giving Up Facebook Could Make You Happier",
   "is-single-video" : true,
   "article-class" : "article__video--single",
+  "has-print" : true,
+  "has-social" : true,
   "video-head" : [
     {
       "title" : "Here's How Giving Up Facebook Could Make You Happier",

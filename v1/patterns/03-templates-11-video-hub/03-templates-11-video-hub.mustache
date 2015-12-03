@@ -24,7 +24,9 @@
 						{{/ video-head }}
 
 						&lt;div class=&quot;article-tools&quot;&gt;
-							{{!&gt; molecules-social-share }}
+							{{# has-social }}
+								{{&gt; molecules-social-share }}
+							{{/ has-social }}
 							{{&gt; molecules-content-utility }}
 						&lt;/div&gt; &lt;!-- /.article-tools --&gt;
 					&lt;/div&gt; &lt;!-- /.video-player --&gt;
