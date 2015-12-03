@@ -131,9 +131,9 @@
 }
 .ad__presented-by {
   margin-bottom: $space;
-  @include mq($medium-break) {
-    margin-bottom: rem(25);
-  }
+  // @include mq($medium-break) {
+  //   margin-bottom: rem(25);
+  // }
 }
 .ad__presented-by-text {
   margin-right: 3px;

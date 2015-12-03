@@ -6,6 +6,8 @@
   "content-type" : "Video",
   "has-print" : false,
   "has-social" : false,
+  "has-presented-by" : true,
+  "sponsored" : false,
   "has-social-count" : "true",
   "video-head" : [
     {
