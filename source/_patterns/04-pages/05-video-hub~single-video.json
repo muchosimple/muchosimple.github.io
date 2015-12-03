@@ -4,6 +4,7 @@
   "article-class" : "article__video--single",
   "has-print" : true,
   "has-social" : true,
+  "has-email" : true,
   "has-presented-by" : false,
   "sponsored" : [
     {

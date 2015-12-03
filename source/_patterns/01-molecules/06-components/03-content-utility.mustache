@@ -7,11 +7,13 @@
         </a> <!-- /.cu-link -->
       </li> <!-- /.cu-item -->
     {{/ has-print }}
+    {{# has-email }}
     <li class="cu-item">
       <a class="cu-link" href="{{ url }}">
         <span class="no-bg icon rounded icon--standard icon-mail icon--medium js-open-mail">{{> atoms-mail }}</span>
       </a> <!-- /.cu-link -->
     </li> <!-- /.cu-item -->
+    {{/ has-email }}
     <li class="cu-item cu-save">
       <a class="cu-link" href="{{ url }}">
         <span class="btn--rounded btn-save">Save</span>

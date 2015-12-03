@@ -4,6 +4,7 @@
   "bodyClass": "body",
   "has-featured-stories" : true,
   "has-print" : true,
+  "has-email" : true,
   "is-welcome-slide" : false,
   "is-lazy" : true,
   "no-lazy" : false,

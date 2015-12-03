@@ -5,6 +5,7 @@
   "has-featured-stories" : false,
   "content-type" : "Video",
   "has-print" : false,
+  "has-email" : false,
   "has-social" : false,
   "has-presented-by" : true,
   "sponsored" : false,
