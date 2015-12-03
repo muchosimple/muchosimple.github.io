@@ -5,6 +5,7 @@
   "has-featured-stories" : false,
   "content-type" : "Video",
   "has-social-count" : "true",
+  "has-print" : false,
   "video-head" : [
     {
       "title" : "What to Do If Your Wine Cork Breaks",
