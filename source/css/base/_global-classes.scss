@@ -66,6 +66,9 @@ $GLOBAL CLASSES
   float: left;
   padding: 0 $pad $pad 0;
 }
+.no-float {
+  float: none;
+}
 .center-block {
   @include center-block;
 }

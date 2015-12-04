@@ -161,12 +161,18 @@
 	padding-top: rem(5);
 }
 
-// Make text a serif font
+// Font Families
 .t-serif {
 	font-family: $serif;
 }
 .t-sans {
 	font-family: $sans;
+}
+.font--primary {
+	font-family: $font;
+}
+.font--secondary {
+	font-family: $font-secondary;
 }
 
 // Text Sizing

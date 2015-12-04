@@ -39,9 +39,25 @@
 	@include center-block;
 	max-width: $inner-max-width-medium;
 }
+
+/**
+ * Wrapping element to keep content contained and centered at narrower widths.
+ */
 .narrow {
 	max-width: rem(600);
 	@include center-block;
+	&.narrow--s {
+		max-width: rem(700);
+	}
+	&.narrow--m {
+		max-width: rem(800);
+	}
+	&.narrow--l {
+		max-width: rem(1000);
+	}
+	&.narrow--xl {
+		max-width: rem(1250);
+	}
 }
 
 .pad {
