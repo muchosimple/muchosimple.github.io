@@ -200,6 +200,39 @@
 }
 
 /**
+ * Shift at 700 with smaller column on the left
+ */
+.shift-right-flipped--700 {
+	width: 100%;
+	@media (min-width: $px700) {
+		float: right;
+		margin-left: rem(-265);
+	}
+	@include mq($px1200) {
+		margin-left: rem(-310);
+	}
+}
+.shift-right-flipped-inner--700 {
+	@media (min-width: $px700) {
+		margin-left: rem(265);
+	}
+	@include mq($px1200) {
+		margin-left: rem(310);
+	}
+}
+.shift-left-flipped--700 {
+	position: relative;
+	z-index: 10;
+	@media (min-width: $px700) {
+		float: left;
+		width: rem(240);
+	}
+	@include mq($px1200) {
+		width: rem(280);
+	}
+}
+
+/**
  * Short static width left column, and fluid width right column.
  */
 .shift-right--slim {

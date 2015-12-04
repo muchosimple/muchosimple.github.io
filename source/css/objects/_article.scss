@@ -555,6 +555,9 @@
 	padding-left: rem(70);
 	cursor: pointer;
 }
+.ingredient--no-amt {
+	padding-left: rem(32);
+}
 .step-list {
 	counter-reset: item;
 }

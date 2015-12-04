@@ -35,6 +35,19 @@
 							{{> molecules-content-utility }}
 						</div> <!-- /.article-tools -->
 					</div> <!-- /.video-player -->
+
+					{{# has-steps }}
+						<section class="section article-body article-body__video cf pad-half-top" itemprop="articleBody">
+							{{> organisms-article-body-steps }}
+						</section> <!-- /.article-body -->
+					{{/ has-steps }}
+
+					{{# has-body }}
+						<section class="section article-body article-body__video text pad-half-top" itemprop="articleBody">
+							{{> organisms-article-body-medium }}
+						</section> <!-- /.article-body -->
+					{{/ has-body }}
+
 				</article> <!-- /.article-standard -->
 
 		{{^ is-single-video }}

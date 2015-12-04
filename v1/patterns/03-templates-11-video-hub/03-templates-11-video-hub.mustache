@@ -35,6 +35,19 @@
 							{{&gt; molecules-content-utility }}
 						&lt;/div&gt; &lt;!-- /.article-tools --&gt;
 					&lt;/div&gt; &lt;!-- /.video-player --&gt;
+
+					{{# has-steps }}
+						&lt;section class=&quot;section article-body article-body__video cf pad-half-top&quot; itemprop=&quot;articleBody&quot;&gt;
+							{{&gt; organisms-article-body-steps }}
+						&lt;/section&gt; &lt;!-- /.article-body --&gt;
+					{{/ has-steps }}
+
+					{{# has-body }}
+						&lt;section class=&quot;section article-body article-body__video text pad-half-top&quot; itemprop=&quot;articleBody&quot;&gt;
+							{{&gt; organisms-article-body-medium }}
+						&lt;/section&gt; &lt;!-- /.article-body --&gt;
+					{{/ has-body }}
+
 				&lt;/article&gt; &lt;!-- /.article-standard --&gt;
 
 		{{^ is-single-video }}
