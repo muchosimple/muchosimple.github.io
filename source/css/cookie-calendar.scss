@@ -325,12 +325,17 @@ $pink-lighter: rgba($pink, .3);
     color: $white;
   }
 }
-.cc__dek .p {
+.cc__dek .p,
+.cc__dek p {
   color: $white;
   font-size: rem(15);
-  font-family: $font-secondary;
+  font-family: $font;
   margin-bottom: rem(6);
   line-height: 1.45;
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
 }
 .cc__cta {
   color: $white;
