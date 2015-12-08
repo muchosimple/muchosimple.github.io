@@ -440,7 +440,7 @@ $pink-lighter: rgba($pink, .3);
     max-width: none;
     float: none;
   }
-  p {
+  .p, p {
     font-family: $font-secondary;
     color: $gray-dark;
   }
