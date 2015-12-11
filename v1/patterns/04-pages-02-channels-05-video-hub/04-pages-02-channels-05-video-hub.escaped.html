@@ -384,9 +384,97 @@
 
 					&lt;div class=&quot;video-player space-btm&quot;&gt;
 						&lt;div class=&quot;space-btm&quot;&gt;
-							&lt;!-- &lt;img src=&quot;http://placehold.it/1600x900&quot;&gt; --&gt;
-							&lt;object type=&quot;application/x-shockwave-flash&quot; data=&quot;http://c.brightcove.com/services/viewer/federated_f9?&amp;amp;width=896&amp;amp;height=504&amp;amp;flashID=myExperience2766873672001&amp;amp;bgcolor=%23FFFFFF&amp;amp;playerID=25622962200001&amp;amp;%40videoPlayer=2766873672001&amp;amp;playerKey=AQ~~%2CAAAAAB5GgGI~%2C09B9o2u-r5uA_rio1DHNnQDV7Vopn6Hd&amp;amp;dynamicStreaming=true&amp;amp;isVid=true&amp;amp;isUI=true&amp;amp;includeAPI=true&amp;amp;templateLoadHandler=myTemplateLoaded&amp;amp;templateReady=myTemplateReady&amp;amp;allowFullScreen=true&amp;amp;autoStart=true&amp;amp;allowScriptAccess=always&amp;amp;seamlessTabbing=false&amp;amp;swliveconnect=true&amp;amp;wmode=window&amp;amp;quality=high&amp;amp;adServerURL=http%3A%2F%2Fpubads.g.doubleclick.net%2Fgampad%2Fads%3Fenv%3Dvp%26gdfp_req%3D1%26impl%3Ds%26output%3Dvast%26iu%3D8484%2Frsm%2Fvideo_bc%2Fvideo_hub_bc%26sz%3D1000x1%26cust_params%3Dfrnch%253Dvotd%2526ctype%253Dhow-to%26unviewed_position_start%3D1%26url%3D%5Breferrer_url%5D%26correlator%3D%5Btimestamp%5D%26ctype%3Dhow-to&amp;amp;debuggerID=&amp;amp;startTime=1435006688820&quot; id=&quot;myExperience2766873672001&quot; width=&quot;896&quot; height=&quot;504&quot; class=&quot;BrightcoveExperience brightcove-field-embed&quot; seamlesstabbing=&quot;undefined&quot;&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;param name=&quot;seamlessTabbing&quot; value=&quot;false&quot;&gt;&lt;param name=&quot;swliveconnect&quot; value=&quot;true&quot;&gt;&lt;param name=&quot;wmode&quot; value=&quot;window&quot;&gt;&lt;param name=&quot;quality&quot; value=&quot;high&quot;&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot;&gt;&lt;/object&gt;
-								&lt;script type=&quot;text/javascript&quot; src=&quot;http://admin.brightcove.com/js/api/SmartPlayerAPI.js&quot;&gt;&lt;/script&gt;
+							&lt;div id=&quot;video__container&quot; class=&quot;video__outer-container&quot;&gt;
+
+								&lt;!-- Start of Brightcove Player --&gt;
+
+								&lt;div style=&quot;display:none&quot;&gt;&lt;/div&gt;
+
+									&lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot; src=&quot;http://admin.brightcove.com/js/BrightcoveExperiences.js&quot;&gt;&lt;/script&gt;
+
+									&lt;object id=&quot;myExperience1754276205001&quot; class=&quot;BrightcoveExperience&quot;&gt;
+										&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;
+										&lt;param name=&quot;width&quot; value=&quot;480&quot; /&gt;
+										&lt;param name=&quot;height&quot; value=&quot;270&quot; /&gt;
+										&lt;param name=&quot;playerID&quot; value=&quot;1756040703001&quot; /&gt;
+										&lt;param name=&quot;playerKey&quot; value=&quot;AQ~~,AAABmA9XpXk~,-Kp7jNgisrc05QYSNxkzqM1X9GtvaqWM&quot; /&gt;
+										&lt;param name=&quot;isVid&quot; value=&quot;true&quot; /&gt;
+										&lt;param name=&quot;isUI&quot; value=&quot;true&quot; /&gt;
+										&lt;param name=&quot;dynamicStreaming&quot; value=&quot;true&quot; /&gt;
+										&lt;param name=&quot;@videoPlayer&quot; value=&quot;1754276205001&quot; /&gt;
+											&lt;!-- &lt;param name=&quot;forceHTML&quot; value=&quot;true&quot; /&gt; --&gt;
+										&lt;!-- smart player api params --&gt;
+										&lt;param name=&quot;includeAPI&quot; value=&quot;true&quot; /&gt;
+										&lt;param name=&quot;templateLoadHandler&quot; value=&quot;onTemplateLoad&quot; /&gt;
+										&lt;param name=&quot;templateReadyHandler&quot; value=&quot;onTemplateReady&quot; /&gt;
+									&lt;/object&gt;
+									&lt;script type=&quot;text/javascript&quot;&gt;brightcove.createExperiences();&lt;/script&gt;
+
+									&lt;!-- End of Brightcove Player --&gt;
+
+								&lt;/div&gt; &lt;!-- /.video__outer-container --&gt;
+
+							&lt;script type=&quot;text/javascript&quot;&gt;
+								var player,
+										APIModules,
+										videoPlayer,
+										experienceModule;
+
+								// utility
+								logit = function (context, message) {
+									if (console) {
+										console.log(context, message);
+									}
+								};
+
+								function onTemplateLoad(experienceID) {
+									logit(&quot;EVENT&quot;, &quot;onTemplateLoad&quot;);
+									player = brightcove.api.getExperience(experienceID);
+									APIModules = brightcove.api.modules.APIModules;
+								}
+
+								function onTemplateReady(evt) {
+									logit(&quot;EVENT&quot;, &quot;onTemplateReady&quot;);
+									videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
+									experienceModule = player.getModule(APIModules.EXPERIENCE);
+
+									videoPlayer.getCurrentRendition(function(renditionDTO) {
+
+										if (renditionDTO) {
+											logit(&quot;condition&quot;, &quot;renditionDTO found&quot;);
+											calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
+										} else {
+											logit(&quot;condition&quot;, &quot;renditionDTO NOT found&quot;);
+											videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(event) {
+												calulateNewPercentage(event.media.renditions[0].frameWidth, event.media.renditions[0].frameHeight);
+											});
+										}
+									});
+
+									var evt = document.createEvent('UIEvents');
+									evt.initUIEvent('resize',true,false,0);
+									window.dispatchEvent(evt);
+
+									videoPlayer.play();
+								}
+
+								function calulateNewPercentage(width,height) {
+									logit(&quot;function&quot;, &quot;calulateNewPercentage&quot;);
+									var newPercentage = ((height / width) * 100) + &quot;%&quot;;
+									logit(&quot;Video Width = &quot;, width);
+									logit(&quot;Video Height = &quot;, height);
+									logit(&quot;New Percentage = &quot;, newPercentage);
+									document.getElementById(&quot;video__container&quot;).style.paddingBottom = newPercentage;
+								}
+
+								window.onresize = function(evt) {
+									var resizeWidth = $(&quot;.BrightcoveExperience&quot;).width(),
+									resizeHeight = $(&quot;.BrightcoveExperience&quot;).height();
+									if (experienceModule.experience.type == &quot;html&quot;){
+										experienceModule.setSize(resizeWidth, resizeHeight)
+									}
+								}
+							&lt;/script&gt;
 						&lt;/div&gt; &lt;!-- /.space-btm --&gt;
 
 							&lt;div class=&quot;ad__presented-by align-right&quot;&gt;
