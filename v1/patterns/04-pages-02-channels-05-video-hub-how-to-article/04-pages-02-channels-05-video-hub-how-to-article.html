@@ -454,6 +454,7 @@
 											<!-- <param name="forceHTML" value="true" /> -->
 										<!-- smart player api params -->
 										<param name="includeAPI" value="true" />
+										<param name="showNoContentMessage" value="true" />
 										<param name="templateLoadHandler" value="onTemplateLoad" />
 										<param name="templateReadyHandler" value="onTemplateReady" />
 									</object>
@@ -488,7 +489,6 @@
 									experienceModule = player.getModule(APIModules.EXPERIENCE);
 
 									videoPlayer.getCurrentRendition(function(renditionDTO) {
-
 										if (renditionDTO) {
 											logit("condition", "renditionDTO found");
 											calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
