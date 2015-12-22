@@ -127,6 +127,11 @@
 }
 
 // Sponsored Carousel
+.carousel__wrap--sponsored {
+	@include mq($px700) {
+		padding-top: $pad-half;
+	}
+}
 .carousel--sponsored {
 	margin-bottom: $space-double;
 	margin-top: $space-double;
@@ -138,7 +143,7 @@
 	@include mq($px700) {
 		padding: 0 $pad;
 		border: 1px solid $pink;
-		margin-top: $space;
+		margin-top: 0;
 	}
 	.carousel__inner {
 		background-color: transparent;
@@ -158,7 +163,9 @@
 		}
 	}
 	.img-wrap {
-		border: 1px solid $pink;
+		@include mq($px700, max) {
+			border: 1px solid $pink;
+		}
 	}
 	.owl-buttons {
 		 div {

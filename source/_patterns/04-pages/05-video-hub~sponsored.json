@@ -81,7 +81,7 @@
 
     "sponsored-videos" : [
       {
-        "lazy-slide" : true,
+        "no-lazy" : true,
         "is-lazy" : false,
         "img" : {
           "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
@@ -90,8 +90,9 @@
         "runtime" : "4 min"
       },
       {
-        "lazy-slide" : true,
+        "no-lazy" : true,
         "is-lazy" : false,
+        "block-class" : "has-video is-playing",
         "img" : {
           "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
         },
@@ -99,7 +100,7 @@
         "runtime" : "3 min"
       },
       {
-        "lazy-slide" : true,
+        "no-lazy" : true,
         "is-lazy" : false,
         "img" : {
           "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/image/images/1304/woman-meditating_300.jpg?itok=xeIcRuQ-"
@@ -108,7 +109,7 @@
         "runtime" : "5 min"
       },
       {
-        "lazy-slide" : true,
+        "no-lazy" : true,
         "is-lazy" : false,
         "img" : {
           "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/carrot-cake-pancakes_896.jpg?itok=fOFl-ee3"
@@ -117,7 +118,7 @@
         "runtime" : "2 min"
       },
       {
-        "lazy-slide" : true,
+        "no-lazy" : true,
         "is-lazy" : false,
         "img" : {
           "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
@@ -126,7 +127,7 @@
         "runtime" : "4 min"
       },
       {
-        "lazy-slide" : true,
+        "no-lazy" : true,
         "is-lazy" : false,
         "img" : {
           "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"

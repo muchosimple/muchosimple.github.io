@@ -183,20 +183,24 @@
 
 				{{# video-is-sponsored }}
 					{{# video-recirc-top }}
+						{{# nope }}
 						&lt;div class=&quot;g g-4up-2col-start&quot;&gt;
 							{{# videos }}
 								&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-block-thumb-headline }}&lt;/div&gt;
 							{{/ videos }}
 						&lt;/div&gt; &lt;!-- /.g-4up-2col-start --&gt;
+						{{/ nope }}
 
-						&lt;div class=&quot;carousel--sponsored&quot;&gt;
-							&lt;div class=&quot;sponsored-bar upper align-center&quot;&gt;Presented by Kraft&lt;/div&gt;
-								&lt;div class=&quot;carousel carousel__inner js-carousel--3up g g-4up-2col-start cf&quot;&gt;
-								{{# sponsored-videos }}
-									&lt;div class=&quot;gi gi--sponsored-item&quot;&gt;{{&gt; molecules-block-thumb-headline }}&lt;/div&gt;
-								{{/ sponsored-videos }}
-							&lt;/div&gt; &lt;!-- /.carousel__inner --&gt;
-						&lt;/div&gt; &lt;!-- /.carousel --&gt;
+						&lt;div class=&quot;carousel__wrap carousel__wrap--sponsored&quot;&gt;
+							&lt;div class=&quot;carousel--sponsored&quot;&gt;
+								&lt;div class=&quot;sponsored-bar upper align-center&quot;&gt;Presented by Kraft&lt;/div&gt;
+									&lt;div class=&quot;carousel carousel__inner js-carousel--3up g g-4up-2col-start cf&quot;&gt;
+									{{# sponsored-videos }}
+										&lt;div class=&quot;gi gi--sponsored-item&quot;&gt;{{&gt; molecules-block-thumb-headline }}&lt;/div&gt;
+									{{/ sponsored-videos }}
+								&lt;/div&gt; &lt;!-- /.carousel__inner --&gt;
+							&lt;/div&gt; &lt;!-- /.carousel--sponsored --&gt;
+						&lt;/div&gt; &lt;!-- /.carousel__wrap --&gt;
 					{{/ video-recirc-top }}
 				{{/ video-is-sponsored }}
 

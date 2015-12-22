@@ -53,6 +53,7 @@
     "runtime-class" : "text--s-m",
     "videos" : [
       {
+        "block-class" : "has-video is-playing",
         "img" : {
           "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
         },

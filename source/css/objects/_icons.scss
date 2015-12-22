@@ -95,6 +95,17 @@
     margin-top: -$icon-medium / 2;
   }
 }
+.is-playing {
+  .icon-play {
+    opacity: 1;
+    padding: 2px;
+    background-color: $white;
+    box-shadow: none;
+  }
+  path {
+    fill: $pink;
+  }
+}
 
 // Fixed upper right button (usually a close button)
 .icon--fixed {
