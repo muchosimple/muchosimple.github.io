@@ -180,6 +180,26 @@
 			</div> <!-- /.video__filters -->
 
 			<div class="video__thumbs">
+
+				{{# video-is-sponsored }}
+					{{# video-recirc-top }}
+						<div class="g g-4up-2col-start">
+							{{# videos }}
+								<div class="gi">{{> molecules-block-thumb-headline }}</div>
+							{{/ videos }}
+						</div> <!-- /.g-4up-2col-start -->
+
+						<div class="carousel--sponsored">
+							<div class="sponsored-bar upper align-center">Presented by Kraft</div>
+								<div class="carousel carousel__inner js-carousel--3up g g-4up-2col-start cf">
+								{{# sponsored-videos }}
+									<div class="gi gi--sponsored-item">{{> molecules-block-thumb-headline }}</div>
+								{{/ sponsored-videos }}
+							</div> <!-- /.carousel__inner -->
+						</div> <!-- /.carousel -->
+					{{/ video-recirc-top }}
+				{{/ video-is-sponsored }}
+
 				<div class="ad-block">
 					<!-- <a href="" class="hide-larger hide-large"><img src="http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg"></a> -->
 					<a href=""><img src="http://placehold.it/300x600"></a>

@@ -333,6 +333,42 @@ window.onresize = function() {
     });
   }
 
+  // 3 Up Carousel
+  var $carousel3up = $('.js-carousel--3up');
+
+  // Owl gallery for 3up carousel
+  function initCarousel3up() {
+    var galleryPrev = '<a href="" class="icon icon-arrow-left no-bg"><span class="is-vishidden">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M344.5 5.3l31.7 31.6L163.1 250l213.1 213.1-31.7 31.6L99.8 250z"/></svg></a>';
+    var galleryNext = '<a href="" class="icon icon-arrow-right no-bg"><span class="is-vishidden">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z"/></svg></a>';
+
+    $carousel3up.show().owlCarousel({
+      autoPlay: 4000,
+      slideSpeed: 300,
+      lazyLoad: true,
+      paginationSpeed: 400,
+      pagination: false,
+      navigation: true,
+      stopOnHover: true,
+      navigationText: [galleryPrev, galleryNext],
+      itemsCustom: [[0,2], [730,3], [800,2], [930,3]]
+    });
+  }
+  if ($carousel3up.length && getWidth() > 700) {
+    initCarousel3up();
+    // Update carousel functionality on window resize.
+    $(window).resize(function(){
+      if (getWidth() > 700) {
+        // Start the Owl carousel.
+        initCarousel3up();
+      }
+      else {
+        // Start the tabbed carousel and destroy the Owl carousel.
+        $carousel3up.data('owlCarousel').destroy();
+        initHomeCarouselWide();
+      }
+    });
+  }
+
   $(window).scroll(function() {
     // Pop up element from footer.
     if ($(window).scrollTop() > 250 && getWidth() < 800) {

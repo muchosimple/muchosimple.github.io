@@ -72,6 +72,10 @@
         &lt;span class=&quot;cta&quot;&gt;{{ cta }}&lt;/span&gt;
       {{/ cta }}
 
+      {{# has-presented-by }}
+        {{&gt; atoms-presented-by }}
+      {{/ has-presented-by }}
+
       {{# runtime }}
         &lt;span class=&quot;light runtime {{ runtime-class }}&quot;&gt;({{ runtime }})&lt;/span&gt;
       {{/ runtime }}

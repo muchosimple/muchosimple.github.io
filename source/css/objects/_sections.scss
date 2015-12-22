@@ -928,8 +928,7 @@
       max-width: rem(250);
       white-space: normal;
       vertical-align: top;
-      padding-left: $pad-half;
-      padding-right: $pad-half;
+      padding: $pad-half;
     }
     @include mq($px1100) {
       margin-bottom: rem(25);

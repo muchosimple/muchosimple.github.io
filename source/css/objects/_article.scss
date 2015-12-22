@@ -613,13 +613,19 @@
 
 .article__video {
 	.lead-headline {
-		@media (min-width: $px450) and (max-width: $px1000) {
-			font-size: rem(30);
+		@media (min-width: $px450) and (max-width: $px800) {
+			font-size: rem(32);
+		}
+		@media (min-width: $px800) and (max-width: $px1000) {
+			font-size: rem(35);
 		}
 	}
 	.lead-subtitle {
-		@media (min-width: $px450) and (max-width: $px1000) {
-			font-size: rem(20);
+		@media (min-width: $px450) and (max-width: $px800) {
+			font-size: rem(22);
+		}
+		@media (min-width: $px800) and (max-width: $px1000) {
+			font-size: rem(26);
 		}
 	}
 }

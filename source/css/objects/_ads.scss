@@ -138,3 +138,15 @@
 .ad__presented-by-text {
   margin-right: 3px;
 }
+
+.sponsored-bar {
+  max-width: rem(490);
+  margin-left: auto;
+  margin-right: auto;
+  color: $pink;
+  @include mq($px700) {
+    padding: rem(4);
+    color: $white;
+    background-color: $pink;
+  }
+}

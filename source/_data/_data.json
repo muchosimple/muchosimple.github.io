@@ -18,6 +18,7 @@
   "is-logged-in" : true,
   "runtime-class" : "text--r",
   "video-icon-class" : "icon--big",
+  "ad-presented-class" : "align-right",
   "img": {
     "landscape-4x3": {
       "src": "../../images/fpo_4x3.png",

@@ -114,8 +114,6 @@
 	width: 100%;
 	@media (min-width: $px500) and (max-width: $medium-break), (min-width: $large-break) {
 		padding: 0;
-		// @include flexbox;
-		// @include align-items(center);
 	}
 	@media (min-width: $px700) and (max-width: $medium-break), (min-width: $large-break) {
 		font-size: rem(22);
@@ -125,5 +123,76 @@
 	}
 	@include mq($larger-break) {
 		font-size: rem(24);
+	}
+}
+
+// Sponsored Carousel
+.carousel--sponsored {
+	margin-bottom: $space-double;
+	margin-top: $space-double;
+	position: relative;
+	border-top: $border-style;
+	border-bottom: $border-style;
+	padding-top: $pad-and-half;
+	padding-bottom: $pad;
+	@include mq($px700) {
+		padding: 0 $pad;
+		border: 1px solid $pink;
+		margin-top: $space;
+	}
+	.carousel__inner {
+		background-color: transparent;
+		max-width: rem(740);
+		position: static;
+		padding: 0;
+		@media (max-width: $px700) {
+			display: block;
+		}
+		@include mq($px700) {
+			padding: $pad-half $pad;
+		}
+		.gi--sponsored {
+			@include mq($px700) {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.img-wrap {
+		border: 1px solid $pink;
+	}
+	.owl-buttons {
+		 div {
+			margin-top: rem(-30);
+		}
+		.icon {
+			background-color: transparent;
+			height: rem(40);
+			width: rem(40);
+			cursor: pointer;
+			@include mq($px1000) {
+				height: rem(50);
+				width: rem(50);
+			}
+			path {
+				fill: $pink;
+			}
+			&:hover {
+				path {
+					fill: $red;
+				}
+			}
+		}
+		.owl-prev {
+			left: 0;
+			@include mq($px1200) {
+				left: rem(20);
+			}
+		}
+		.owl-next {
+			right: 0;
+			@include mq($px1200) {
+				right: rem(20);
+			}
+		}
 	}
 }

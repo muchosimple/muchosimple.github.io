@@ -180,6 +180,26 @@
 			&lt;/div&gt; &lt;!-- /.video__filters --&gt;
 
 			&lt;div class=&quot;video__thumbs&quot;&gt;
+
+				{{# video-is-sponsored }}
+					{{# video-recirc-top }}
+						&lt;div class=&quot;g g-4up-2col-start&quot;&gt;
+							{{# videos }}
+								&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-block-thumb-headline }}&lt;/div&gt;
+							{{/ videos }}
+						&lt;/div&gt; &lt;!-- /.g-4up-2col-start --&gt;
+
+						&lt;div class=&quot;carousel--sponsored&quot;&gt;
+							&lt;div class=&quot;sponsored-bar upper align-center&quot;&gt;Presented by Kraft&lt;/div&gt;
+								&lt;div class=&quot;carousel carousel__inner js-carousel--3up g g-4up-2col-start cf&quot;&gt;
+								{{# sponsored-videos }}
+									&lt;div class=&quot;gi gi--sponsored-item&quot;&gt;{{&gt; molecules-block-thumb-headline }}&lt;/div&gt;
+								{{/ sponsored-videos }}
+							&lt;/div&gt; &lt;!-- /.carousel__inner --&gt;
+						&lt;/div&gt; &lt;!-- /.carousel --&gt;
+					{{/ video-recirc-top }}
+				{{/ video-is-sponsored }}
+
 				&lt;div class=&quot;ad-block&quot;&gt;
 					&lt;!-- &lt;a href=&quot;&quot; class=&quot;hide-larger hide-large&quot;&gt;&lt;img src=&quot;http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg&quot;&gt;&lt;/a&gt; --&gt;
 					&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://placehold.it/300x600&quot;&gt;&lt;/a&gt;

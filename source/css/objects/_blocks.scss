@@ -599,3 +599,16 @@
     }
   }
 }
+
+// Sponsored Block (currently being used on Video blocks)
+.block__sponsored {
+  padding: rem(15);
+  border: 1px solid $pink;
+  @include mq($large-break) {
+    width: calc(100% + 30px);
+    margin-left: rem(-15);
+  }
+  .ad__presented-by {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "bodyClass": "video-hub",
+  "more-links" : true,
+  "has-featured-stories" : false,
+  "content-type" : "Video",
+  "has-print" : false,
+  "has-email" : false,
+  "has-social" : false,
+  "sponsored" : false,
+  "has-presented-by" : false,
+  "has-social-count" : "true",
+  "video-is-sponsored" : true,
+
+  "feat-videos" : [
+    {
+      "block-class" : "has-video space-btm",
+      "is-video" : true,
+      "img" : {
+        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/carrot-cake-pancakes_896.jpg?itok=fOFl-ee3"
+      },
+      "byline" : false,
+      "title" : "Grilled Chicken and Spinach Quesadillas"
+    },
+    {
+      "block-class" : "has-video space-btm",
+      "is-video" : true,
+      "img" : {
+        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/image/images/1304/woman-meditating_300.jpg?itok=xeIcRuQ-"
+      },
+      "byline" : false,
+      "title" : "Pan-Roasted Chicken With Lemon-Garlic Green Beans"
+    },
+    {
+      "block-class" : "has-video space-btm block__sponsored",
+      "has-presented-by" : true,
+      "ad-presented-class" : "space-half-top",
+      "img" : {
+        "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+      },
+      "byline" : false,
+      "title" : "How to Organize Clutter"
+    }
+  ],
+
+  "video-recirc-top" : {
+    "block-class" : "has-video",
+    "is-video" : true,
+    "byline" : false,
+    "video-icon-class" : "icon--large",
+    "runtime-class" : "text--s-m",
+    "videos" : [
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/carrot-cake-pancakes_896.jpg?itok=fOFl-ee3"
+        },
+        "title" : "Grilled Chicken and Spinach Quesadillas",
+        "runtime" : "2 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "4 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "3 min"
+      },
+      {
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/image/images/1304/woman-meditating_300.jpg?itok=xeIcRuQ-"
+        },
+        "title" : "Pan-Roasted Chicken With Lemon-Garlic Green Beans",
+        "runtime" : "5 min"
+      }
+    ],
+
+    "sponsored-videos" : [
+      {
+        "lazy-slide" : true,
+        "is-lazy" : false,
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "4 min"
+      },
+      {
+        "lazy-slide" : true,
+        "is-lazy" : false,
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "3 min"
+      },
+      {
+        "lazy-slide" : true,
+        "is-lazy" : false,
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/image/images/1304/woman-meditating_300.jpg?itok=xeIcRuQ-"
+        },
+        "title" : "Pan-Roasted Chicken With Lemon-Garlic Green Beans",
+        "runtime" : "5 min"
+      },
+      {
+        "lazy-slide" : true,
+        "is-lazy" : false,
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/carrot-cake-pancakes_896.jpg?itok=fOFl-ee3"
+        },
+        "title" : "Grilled Chicken and Spinach Quesadillas",
+        "runtime" : "2 min"
+      },
+      {
+        "lazy-slide" : true,
+        "is-lazy" : false,
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "4 min"
+      },
+      {
+        "lazy-slide" : true,
+        "is-lazy" : false,
+        "img" : {
+          "src": "http://cdn-image.realsimple.com/sites/default/files/styles/video_image_2/public/elsie-emma-beautiful-mess.jpg?itok=0FZqJDzQ"
+        },
+        "title" : "Chicken and Cashews in Lettuce Wraps",
+        "runtime" : "3 min"
+      }
+    ]
+  }
+}
