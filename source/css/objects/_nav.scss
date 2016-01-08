@@ -475,9 +475,9 @@ hsjfe06Eyc3dIdN3cUxrgNTla/Cfmf0xwgIiiFkVBe+2Ps87fAgwADtO0b5W70UwAAAAASUVORK
 		vertical-align: middle;
 		&:hover {
 			border: 1px solid $blue-light;
-			background-color: $blue-light;
+			background-color: $white;
 			path {
-				fill: $white;
+				fill: $blue-light;
 			}
 		}
 	}
@@ -502,7 +502,7 @@ hsjfe06Eyc3dIdN3cUxrgNTla/Cfmf0xwgIiiFkVBe+2Ps87fAgwADtO0b5W70UwAAAAASUVORK
 		}
 	}
 	.page-item.ellip {
-		margin: rem(13) rem(10) 0 rem(-10);
+		margin: rem(13) rem(10) 0 rem(-4);
 	}
 	.current {
 		color: $gray-med;
