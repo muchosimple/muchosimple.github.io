@@ -617,6 +617,11 @@
 		$VIDEO ARTICLE
 \*------------------------------------*/
 
+.video-player {
+	.article-header {
+		margin-bottom: 0;
+	}
+}
 .article__video {
 	.lead-headline {
 		@media (min-width: $px450) and (max-width: $px800) {
