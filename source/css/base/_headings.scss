@@ -1,0 +1,89 @@
+/* Headings */
+/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
+h1, h3, h4, h5 {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+h1, .alpha {
+  font-weight: 100;
+  font-size: rem(30);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  @include mq($micro-break) {
+    font-size: rem(38);
+  }
+  @include mq($small-break) {
+    font-size: rem(44);
+  }
+}
+
+h2, .beta {
+  font-size: rem(24);
+  line-height: 1.2;
+}
+
+h3, .gamma {
+  font-size: rem(18);
+  line-height: 1.2;
+}
+
+h4, .delta {
+  line-height: 1.2;
+  font-size: rem(16);
+}
+
+h5, .epsilon {
+  font-size: rem(14);
+}
+
+h6, .zeta {
+
+}
+
+// Subheadings
+.subheading {
+  font-family: $font-secondary;
+  font-weight: normal;
+}
+
+// Standard promo/recirc tout title. Ex. Sidebar block titles
+.heading {
+  text-transform: uppercase;
+  font-size: rem(18);
+  margin-bottom: $space;
+}
+
+// Large blue section titles. Ex. Content footer newsletter or Follow headers
+.alt-heading {
+  font-size: rem(26);
+  font-weight: 100;
+  color: $blue-light;
+  text-transform: uppercase;
+}
+
+// Large pink headers. Ex. Checklist section titles
+.alt-heading--pink {
+  font-size: rem(30);
+  font-weight: 300;
+  font-family: $font-secondary;
+  color: $pink;
+  margin-bottom: 0;
+  @include mq($large-break) {
+    font-size: rem(35);
+  }
+}
+
+// Page titles typically used for Channel page headers
+.page-title {
+  font-size: rem(40);
+  color: $pink;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  @include mq($micro-break) {
+    font-size: rem(50);
+  }
+  @include mq($medium-break) {
+    font-size: rem(60);
+  }
+}

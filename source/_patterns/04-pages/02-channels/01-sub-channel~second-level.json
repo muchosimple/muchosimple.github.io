@@ -1,0 +1,163 @@
+{
+	"title" : "Style - Coats",
+	"sub-channel-head" : [
+		{
+			"kicker" : "Style",
+			"sub-kicker" : "Clothing",
+			"title" : "Coats"
+		}
+	],
+	"dropdown" : false,
+	"content-modules-1" : [
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/18qaM+",
+				"alt" : "6 Trendy Motorcycle Jackets"
+			},
+			"title" : "6 Trendy Motorcycle Jackets",
+			"dek" : "Ease into this edgy style with candy-colored shades that are perfect for spring."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/wL9S+",
+				"alt" : "12 Affordable Down Jackets"
+			},
+			"title" : "12 Affordable Down Jackets",
+			"dek" : "Classic for good reason, the down jacket is unparalleled for warmth. Now, you can enjoy the benefits at a fraction of the cost."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/10XoQ+",
+				"alt" : "5 Cozy Capes and Ponchos"
+			},
+			"title" : "5 Cozy Capes and Ponchos",
+			"dek" : "Wrap up in the cold-weather essential you didn’t know you needed."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/1aIV7+",
+				"alt" : "6 Brilliant Buys for Your Holiday Wardrobe"
+			},
+			"title" : "6 Brilliant Buys for Your Holiday Wardrobe",
+			"dek" : "These two-tone sandals are anything but ordinary, yet they’re completely versatile when worn with tights or on their own."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/14X11+",
+				"alt" : "They Mean Business: 8 Fall Pieces for the Office"
+			},
+			"title" : "They Mean Business: 8 Fall Pieces for the Office",
+			"dek" : "Eight powerful pieces that add up to one seriously stylish (and versatile) office wardrobe."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/18qaM+",
+				"alt" : "6 Trendy Motorcycle Jackets"
+			},
+			"title" : "6 Trendy Motorcycle Jackets",
+			"dek" : "Ease into this edgy style with candy-colored shades that are perfect for spring."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/wL9S+",
+				"alt" : "12 Affordable Down Jackets"
+			},
+			"title" : "12 Affordable Down Jackets",
+			"dek" : "Classic for good reason, the down jacket is unparalleled for warmth. Now, you can enjoy the benefits at a fraction of the cost."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/10XoQ+",
+				"alt" : "5 Cozy Capes and Ponchos"
+			},
+			"title" : "5 Cozy Capes and Ponchos",
+			"dek" : "Wrap up in the cold-weather essential you didn’t know you needed."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/1aIV7+",
+				"alt" : "6 Brilliant Buys for Your Holiday Wardrobe"
+			},
+			"title" : "6 Brilliant Buys for Your Holiday Wardrobe",
+			"dek" : "These two-tone sandals are anything but ordinary, yet they’re completely versatile when worn with tights or on their own."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/14X11+",
+				"alt" : "They Mean Business: 8 Fall Pieces for the Office"
+			},
+			"title" : "They Mean Business: 8 Fall Pieces for the Office",
+			"dek" : "Eight powerful pieces that add up to one seriously stylish (and versatile) office wardrobe."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/18qaM+",
+				"alt" : "6 Trendy Motorcycle Jackets"
+			},
+			"title" : "6 Trendy Motorcycle Jackets",
+			"dek" : "Ease into this edgy style with candy-colored shades that are perfect for spring."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/wL9S+",
+				"alt" : "12 Affordable Down Jackets"
+			},
+			"title" : "12 Affordable Down Jackets",
+			"dek" : "Classic for good reason, the down jacket is unparalleled for warmth. Now, you can enjoy the benefits at a fraction of the cost."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/10XoQ+",
+				"alt" : "5 Cozy Capes and Ponchos"
+			},
+			"title" : "5 Cozy Capes and Ponchos",
+			"dek" : "Wrap up in the cold-weather essential you didn’t know you needed."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/1aIV7+",
+				"alt" : "6 Brilliant Buys for Your Holiday Wardrobe"
+			},
+			"title" : "6 Brilliant Buys for Your Holiday Wardrobe",
+			"dek" : "These two-tone sandals are anything but ordinary, yet they’re completely versatile when worn with tights or on their own."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"img" : {
+				"src" : "http://d.pr/i/14X11+",
+				"alt" : "They Mean Business: 8 Fall Pieces for the Office"
+			},
+			"title" : "They Mean Business: 8 Fall Pieces for the Office",
+			"dek" : "Eight powerful pieces that add up to one seriously stylish (and versatile) office wardrobe."
+		}
+	]
+}

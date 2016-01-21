@@ -1,10 +1,18 @@
-&lt;div class=&quot;img-wrap&quot;&gt;
+&lt;div class=&quot;img-wrap {{# credit }} has-credit {{/ credit }}&quot;&gt;
   &lt;div class=&quot;img-inner&quot;&gt;
     {{# social-tools }}
       &lt;div class=&quot;has-social&quot;&gt;
     {{/ social-tools }}
 
+    {{# has-link }}
+      &lt;a href=&quot;{{ url }}&quot; class=&quot;img-link&quot;&gt;
+    {{/ has-link }}
+
     {{&gt; atoms-image }}
+
+    {{# has-link }}
+      &lt;/a&gt;
+    {{/ has-link }}
 
     {{# social-tools }}
       &lt;div class=&quot;img-overlay o-social&quot;&gt;{{&gt; molecules-social-share }}&lt;/div&gt;
@@ -20,9 +28,13 @@
       &lt;/div&gt; &lt;!-- /.has-social --&gt;
     {{/ social-tools }}
   &lt;/div&gt; &lt;!-- /.img-inner --&gt;
-  {{# credit }}
-    &lt;span class=&quot;credit&quot;&gt;Photo by {{ credit }}&lt;/span&gt;
-  {{/ credit }}
+
+  {{^ has-side-credit }}
+    {{# credit }}
+      &lt;span class=&quot;credit&quot;&gt;Photo by {{ credit }}&lt;/span&gt;
+    {{/ credit }}
+  {{/ has-side-credit }}
+
   {{# caption }}
     &lt;figcaption class=&quot;caption&quot;&gt;{{ caption }}&lt;/figcaption&gt;
   {{/ caption }}

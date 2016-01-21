@@ -1,0 +1,83 @@
+<div class="page">
+  {{> organisms-header }}
+    <div class="main cf lc" role="main" aria-live="polite">
+
+      {{# search-head }}
+        <header class="article-header search-header cf">
+          <div class="shift-right--slim">
+            <div class="shift-right--slim-inner">
+              <div class="kicker gray--dark">Search results for</div>
+              <h1 class="lead-headline" itemprop="headline">{{ title }}</h1>
+            </div> <!-- /.shift-right--slim-inner -->
+          </div> <!-- /.shift-right--slim -->
+        </header> <!-- /.search-header -->
+      {{/ search-head }}
+
+      <div class="primary">
+        <div class="primary-inner">
+
+          <div class="shift-left--slim revert-to-origin">
+            <div class="search-filters revert-to-origin">
+              <nav class="nav-check-list">
+                <h4 class="upper pink nav-check-list-title js-toggle-parent">Narrow By <span class="arrow arrow--down"></span></h4>
+                <ul class="check-list">
+                  <li class="cl-item"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"><label for="checkbox1"><span>{{> atoms-check }}</span> Article <span class="cl-item-amt">(186)</span></label></li>
+                  <li class="cl-item"><input id="checkbox2" name="checkbox" type="checkbox"><label for="checkbox2"><span>{{> atoms-check }}</span> Daily Find <span class="cl-item-amt">(25)</span></label></li>
+                  <li class="cl-item"><input id="checkbox3" name="checkbox" type="checkbox"><label for="checkbox3"><span>{{> atoms-check }}</span> Checklist <span class="cl-item-amt">(2)</span></label></li>
+                  <li class="cl-item"><input id="checkbox4" name="checkbox" type="checkbox"><label for="checkbox4"><span>{{> atoms-check }}</span> Generic Page <span class="cl-item-amt">(6)</span></label></li>
+                  <li class="cl-item"><input id="checkbox5" name="checkbox" type="checkbox"><label for="checkbox5"><span>{{> atoms-check }}</span> List <span class="cl-item-amt">(13)</span></label></li>
+                  <li class="cl-item"><input id="checkbox6" name="checkbox" type="checkbox"><label for="checkbox6"><span>{{> atoms-check }}</span> Package <span class="cl-item-amt">(65)</span></label></li>
+                  <li class="cl-item"><input id="checkbox7" name="checkbox" type="checkbox"><label for="checkbox7"><span>{{> atoms-check }}</span> Slideshows <span class="cl-item-amt">(3)</span></label></li>
+                  <li class="cl-item"><input id="checkbox8" name="checkbox" type="checkbox"><label for="checkbox8"><span>{{> atoms-check }}</span> Video <span class="cl-item-amt">(22)</span></label></li>
+                </ul> <!-- /.check-list -->
+              </nav> <!-- /.nav-check-list -->
+              <nav class="nav-check-list">
+                <h4 class="upper pink nav-check-list-title js-toggle-parent">Category <span class="arrow arrow--down"></span></h4>
+                <ul class="check-list">
+                  <li class="cl-item"><input id="checkbox9" name="checkbox" type="checkbox" checked="checked"><label for="checkbox9"><span>{{> atoms-check }}</span> Food <span class="cl-item-amt">(121)</span></label></li>
+                  <li class="cl-item"><input id="checkbox10" name="checkbox" type="checkbox"><label for="checkbox10"><span>{{> atoms-check }}</span> Home <span class="cl-item-amt">(136)</span></label></li>
+                  <li class="cl-item"><input id="checkbox11" name="checkbox" type="checkbox"><label for="checkbox11"><span>{{> atoms-check }}</span> Style <span class="cl-item-amt">(43)</span></label></li>
+                  <li class="cl-item"><input id="checkbox12" name="checkbox" type="checkbox"><label for="checkbox12"><span>{{> atoms-check }}</span> Life <span class="cl-item-amt">(36)</span></label></li>
+                  <li class="cl-item"><input id="checkbox13" name="checkbox" type="checkbox"><label for="checkbox13"><span>{{> atoms-check }}</span> Holidays <span class="cl-item-amt">(65)</span></label></li>
+                  <li class="cl-item"><input id="checkbox14" name="checkbox" type="checkbox"><label for="checkbox14"><span>{{> atoms-check }}</span> Sponsored <span class="cl-item-amt">(2)</span></label></li>
+                </ul> <!-- /.check-list -->
+              </nav> <!-- /.nav-check-list -->
+            </div> <!-- /.search-filters -->
+          </div> <!-- /.search-left--slim -->
+
+          <div class="shift-right--slim revert-to-origin">
+            <div class="shift-right--slim-inner revert-to-origin">
+              <section class="section search-results">
+                <h4 class="gray--dark space-double-btm">Showing 15 of 324 results</h4>
+                {{# content-modules-1 }}
+                  {{> molecules-block-thumb-headline }}
+                {{/ content-modules-1 }}
+              </section> <!-- /.search-results -->
+            </div> <!-- /.shift-right--slim-inner -->
+          </div> <!-- /.shift-right--slim -->
+
+        </div> <!-- /.primary-inner -->
+      </div> <!-- /.primary -->
+
+      <div class="secondary pad-double-top">
+        <aside class="sidebar pad-top" role="complementary">
+          <div class="ad-block ad-300x250 block ad-sticky">
+            <a href=""><img src="http://pagead2.googlesyndication.com/simgad/8242591116261255559"></a>
+          </div> <!-- /.ad-300x250 -->
+        </aside> <!-- /.sidebar -->
+      </div> <!-- /.secondary -->
+
+      <div class="primary b-top pad-and-half-top clear">
+        <div class="primary-inner">
+          <div class="shift-right--slim">
+            <div class="shift-right--slim-inner">
+              {{> molecules-pagination }}
+            </div> <!-- /.shift-right--slim-inner -->
+          </div> <!-- /.shift-right--slim -->
+        </div> <!-- /.primary-inner -->
+      </div> <!-- /.primary -->
+
+    </div><!-- /role=main -->
+
+  {{> organisms-footer }}
+</div> <!-- /.page -->

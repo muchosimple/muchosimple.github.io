@@ -1,0 +1,398 @@
+/*------------------------------------*\
+$GLOBAL CLASSES
+\*------------------------------------*/
+
+// Clearfix
+.cf {
+  *zoom: 1;
+}
+.cf:before, .cf:after {
+  content: " "; // 1
+  display: table; // 2
+}
+.cf:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+}
+
+.rel {
+  position: relative;
+}
+
+// Completely remove from the flow and screen readers.
+.is-hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// Completely remove from the flow but leave available to screen readers.
+.is-vishidden {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Inner wrapper for images to adjust off line-height.
+.img-inner {
+  line-height: 0;
+  display: block;
+  //margin-bottom: rem(4);
+}
+.img-wrap {
+  line-height: 1.2;
+}
+
+// Wrap the text I want to be kept together.
+.avoid-wrap {
+  display: inline-block;
+}
+
+// Alignment
+.right {
+  float: right;
+  padding: 0 0 $pad $pad;
+}
+.right-search {
+  float: right;
+  padding: 0 0 $pad 0;
+}
+.left {
+  float: left;
+  padding: 0 $pad $pad 0;
+}
+.no-float {
+  float: none;
+}
+.center-block {
+  @include center-block;
+}
+.va--middle {
+  vertical-align: middle;
+}
+
+// Text-Align
+.align-right {
+  text-align: right;
+}
+.align-center,
+.center {
+  text-align: center;
+}
+.align-left {
+  text-align: left;
+}
+
+// Display Classes
+.hide {
+  display: none;
+}
+.dib {
+  display: inline-block;
+}
+.db {
+  display: block;
+}
+.dtc {
+  display: table-cell;
+}
+.hide-small {
+  @include mq($medium-break, max) {
+    display: none;
+  }
+}
+.hide-med {
+  @media all and (min-width: $medium-break) and (max-width: $large-break) {
+    display: none;
+  }
+}
+.hide-large {
+  @media all and (min-width: $large-break) and (max-width: $larger-break) {
+    display: none;
+  }
+}
+.hide-larger {
+  @media all and (min-width: $larger-break) {
+    display: none;
+  }
+}
+.show-all-vp {
+  display: block;
+}
+
+// States
+.valid {
+  color: $valid;
+}
+.error {
+  color: $error;
+}
+.warning {
+  color: $warning;
+}
+.information {
+  color: $information;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}
+
+.rounded {
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+// Arrows
+.arrow {
+  width: 0;
+  height: 0;
+  display: inline-block;
+}
+.arrow--up {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid;
+}
+.arrow--down {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid;
+}
+.arrow--right {
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid;
+}
+.arrow--left {
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid;
+}
+.arrow--small {
+  border-width: 5px;
+}
+
+// Overlay
+.overlay {
+  @include overlay;
+}
+.overlay-active {
+  background-color: rgba($black, .8);
+  z-index: 50000500; // Appear over ads and Time Hat
+}
+.overlay-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.load {
+  display: none;
+  //z-index: 100005;
+}
+
+// Image lightbox
+.image-lightbox {
+  position: fixed;
+  z-index: 9999;
+  -ms-touch-action: none;
+  touch-action: none;
+  box-shadow: 0 0 20px rgba($black, .4);
+}
+
+// Modal overlay
+.modal {
+  position: fixed;
+  z-index: 60000000; // Get over the ehader and ads.
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  margin-top: -25%;
+  margin-left: -50%;
+  padding-left: rem(20);
+  padding-right: rem(20);
+  // @include transform(translate(-50%, -50%));
+  // -webkit-backface-visibility: hidden;
+  // -webkit-filter: blur(0);
+}
+
+// Borders
+.b-btm {
+  border-bottom: $border-style;
+}
+.b-top {
+  border-top: $border-style;
+}
+
+// Number Colors Palette Classes
+.strong-blue .number--large {
+  color: $strong-blue;
+}
+.soft-red .number--large {
+  color: $soft-red;
+}
+.vivid-red .number--large {
+  color: $vivid-red;
+}
+.bright-orange .number--large {
+  color: $bright-orange;
+}
+.grayish-cyan .number--large {
+  color: $grayish-cyan;
+}
+.dark-gray .number--large {
+  color: $dark-gray;
+}
+
+// Background Color Classes
+.bg--pink {
+  background-color: $pink;
+}
+.bg--aqua {
+  background-color: $aqua;
+}
+.bg--teal {
+  background-color: $teal;
+}
+
+// SVG Path Colors
+.path--white {
+  path {
+    fill: $white;
+  }
+}
+
+// Absolute Positioning Elements
+.p-abs {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  background-color: $white;
+}
+.p-btm {
+  top: auto;
+  bottom: 0;
+}
+
+// Centered <hr> styles
+.h-center {
+  width: $hr-width;
+  background-color: lighten($gray-light-4, 4);
+  @include center-block;
+  max-width: rem(600);
+}
+
+// Spacing/Padding
+.pad {
+  padding: $pad;
+}
+.space {
+  margin: $space;
+}
+.pad-btm {
+  padding-bottom: $pad;
+}
+.pad-top {
+  padding-top: $pad;
+}
+.pad-half-top {
+  padding-top: $pad-half;
+}
+.pad-tb {
+  padding-bottom: $pad;
+  padding-top: $pad;
+}
+.pad-and-half-top {
+  padding-top: $pad-and-half;
+}
+.pad-and-half-btm {
+  padding-bottom: $pad-and-half;
+}
+.pad-double-btm {
+  padding-bottom: $pad-double;
+}
+.pad-double-top {
+  padding-top: $pad-double;
+}
+.space-r,
+.space-right {
+  margin-right: $space;
+}
+.space-half-r,
+.space-half-right {
+  margin-right: $space-half;
+}
+.space-double-btm {
+  margin-bottom: $space-double;
+}
+.space-double-top {
+  margin-top: $space-double;
+}
+.space-and-half-btm {
+  margin-bottom: $space-and-half;
+}
+.space-and-half-top {
+  margin-top: $space-and-half;
+}
+.space-half-btm {
+  margin-bottom: $space-half;
+}
+.space-half-top {
+  margin-top: $space-half;
+}
+.space-btm {
+  margin-bottom: $space;
+}
+.space-top {
+  margin-top: $space;
+}
+.no-space {
+  margin: 0;
+}
+.no-space-btm {
+  margin-bottom: 0;
+}
+.no-space-top {
+  margin-top: 0;
+}
+.no-space-left {
+  margin-left: 0;
+}
+.no-space-right {
+  margin-right: 0;
+}
+.no-pad {
+  padding: 0;
+}
+.no-pad-l,
+.no-pad-left {
+  padding-left: 0;
+}
+.no-pad-top {
+  padding-top: 0;
+}
+.no-pad-btm {
+  padding-bottom: 0;
+}
+
+// Unsorted
+.v-align {
+  @include vh-center;
+}
+
+.mw-300 {
+  max-width: rem(300);
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+

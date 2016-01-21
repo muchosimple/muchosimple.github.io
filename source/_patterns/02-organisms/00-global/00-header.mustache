@@ -8,7 +8,7 @@
           <span></span>
         </span> <!-- /.nt-inner -->
       </a> <!-- /.nav-toggler -->
-      {{> atoms-logo }}
+      <a class="logo-link" itemscope itemtype="http://schema.org/Organization" href="/">{{> atoms-logo }}</a>
       {{> molecules-util-nav }}
       <div class="horiz-nav">
         {{# wide-nav }}
@@ -17,7 +17,7 @@
       </div> <!-- /.horiz-nav -->
       <span class="h-hide">
         <a href="#search" class="search-toggler js-toggle" data-toggled="header" data-prefix="search" data-remove="main-nav-is-active">
-          <span class="icon icon--small icon-magnifying-glass"></span>
+          <span class="icon icon--small icon-magnifying-glass">{{> atoms-magnifying-glass }}</span>
         </a> <!-- /.search-toggler -->
       </span> <!-- /.h-hide -->
     </div> <!-- /.lc -->
@@ -37,8 +37,17 @@
     </a> <!-- /.search-toggler -->
     {{> molecules-search }}
   </div> <!-- /.search-overlay -->
-  <div class="advertisement advertisement-responsive-leaderboard ad-blocks ad-leaderboard">
-    <div class="ad-block ad-300x50"><a href=""><img src="http://cdn.creative.medialytics.com/raw_assets/servo_prod/campaigns/CA-KS2PC8D/creatives/CR-CDTH2C5/versions/1/MBAN%20UnstopablesTargetiMedia%20FreshScentspiration%20xxxx%20320x50%201415%203%20Static.jpg.jpg"></a></div>
-    <div class="ad-block ad-728x90"><a href=""><img src="http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKDjt-P9LBABGAEyCHdr0udyiur2"></a></div>
-  </div> <!-- /.ad-leaderboard -->
+
+  {{# has-top-ad }}
+    <div class="advertisement advertisement-responsive-leaderboard ad-blocks ad-leaderboard {{# has-994x250 }} has-994x250 {{/ has-994x250 }} {{# is-sticky-leaderboard }} ad-sticky--leaderboard {{/ is-sticky-leaderboard }} {{# is-anchored-ad }} anchor-ad {{/ is-anchored-ad }}">
+      <div class="ad-block ad-300x50 js-ad-refresh"><a href=""><img src="http://cdn.creative.medialytics.com/raw_assets/servo_prod/campaigns/CA-KS2PC8D/creatives/CR-CDTH2C5/versions/1/MBAN%20UnstopablesTargetiMedia%20FreshScentspiration%20xxxx%20320x50%201415%203%20Static.jpg.jpg"></a></div>
+      {{# has-994x250 }}
+        <div class="ad-block ad-994x250"><a href=""><img src="http://s0.2mdn.net/4764406/994x250_OWO_OpeningMay29-UPDATED.jpg" width="994" height="250" border="0"></a></div>
+      {{/ has-994x250 }}
+      {{^ has-994x250 }}
+        <div class="ad-block ad-728x90 js-ad-refresh"><a href=""><img src="http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKDjt-P9LBABGAEyCHdr0udyiur2"></a></div>
+      {{/ has-994x250 }}
+    </div> <!-- /.ad-leaderboard -->
+  {{/ has-top-ad }}
+
 </header> <!-- .header -->

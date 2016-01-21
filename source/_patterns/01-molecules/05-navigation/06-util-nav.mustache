@@ -1,11 +1,16 @@
 <div class="h-hide">
-  <nav class="util-nav js-hover" data-prefix="util">
+  <nav class="util-nav js-hover {{# is-logged-in }} logged-in {{/ is-logged-in }}" data-prefix="util">
     <ul class="util-nav-list">
-      <li class="li-vis"><a href="">Welcome, Michelle</a></li>
-      <li><a href="">Subscriptions</a></li>
-      <li><a href="">Preferences</a></li>
-      <li><a href="">Favorites</a></li>
-      <li><a href="">Log Out</a></li>
+      {{# is-logged-in }}
+        <li class="li-vis"><a href="">Welcome, Michelle</a></li>
+        <li><a href="">Subscriptions</a></li>
+        <li><a href="">Preferences</a></li>
+        <li><a href="">Favorites</a></li>
+        <li><a href="">Log Out</a></li>
+      {{/ is-logged-in }}
+      {{^ is-logged-in }}
+        <li><a href="">Log In</a> <span class="divider"></span> <a href="">Register</a></li>
+      {{/ is-logged-in  }}
     </ul> <!-- /.util-nav-list -->
   </nav> <!-- .util-nav -->
 </div> <!-- /.h-hide -->

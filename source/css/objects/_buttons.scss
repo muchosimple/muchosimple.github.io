@@ -1,0 +1,153 @@
+/*------------------------------------*\
+		$BUTTONS
+\*------------------------------------*/
+
+.btn,
+button {
+	display: inline-block;
+	color: $blue-light;
+	line-height: 1.4;
+	border: 2px solid $blue-light;
+	text-align: center;
+	font-size: rem(14);
+	text-transform: uppercase;
+	font-family: $font;
+	cursor: pointer;
+	font-style: normal;
+	@include rem(padding, 13 30 11);
+	background-color: $white;
+	&:hover,
+	&:focus {
+		color: $white;
+		background-color: $blue-light;
+		.icon path {
+			fill: $white;
+		}
+	}
+	&.disabled {
+		background: $gray-light-2;
+		color: $gray;
+	}
+	.icon {
+		vertical-align: text-top;
+		height: rem(16);
+		width: rem(16);
+		path {
+			fill: $blue-light;
+		}
+	}
+}
+input.btn {
+	font-size: rem(14);
+	font-style: normal;
+}
+
+.btn--small {
+	padding: $pad-half;
+}
+
+.btn--large {
+	padding: $pad-half;
+	text-transform: uppercase;
+	background: $gray;
+	font-size: 1.4rem;
+	font-weight: normal;
+}
+
+.text-btn {
+	font-style: italic;
+}
+
+.btn--rounded {
+	border-radius: rem(7);
+	border: 1px solid $blue-light;
+	background-color: $blue-light;
+	color: $white;
+	line-height: 1.1;
+	padding: rem(7) $pad-half rem(6);
+	text-transform: uppercase;
+	font-size: rem(14);
+	font-weight: 400;
+	display: inline-block;
+	&:hover {
+		background-color: $white;
+		color: $blue-light;
+	}
+}
+
+// Active State
+.btn--active {
+	background-color: $gray-med;
+	border-color: $gray;
+	color: $gray-light-3;
+}
+
+// Big utility buttons (Save Recipe)
+.btn--util {
+	background-color: $pink;
+	width: rem(80);
+	height: rem(84);
+	text-align: center;
+	color: $white;
+	display: inline-block;
+	margin: rem(2);
+	vertical-align: top;
+	padding: rem(8) rem(3);
+	@include mq($px450) {
+		width: rem(120);
+		height: rem(120);
+		padding: $pad;
+		margin: rem(6);
+	}
+	&:hover {
+		color: $white;
+		path.c {
+			fill: $white;
+		}
+	}
+	.icon {
+		@include center-block;
+		padding: rem(2);
+		width: rem(42);
+		height: rem(40);
+		margin-bottom: $space-half;
+		@include mq($px450, max) {
+			width: rem(35);
+			height: rem(33);
+			margin-bottom: rem(5);
+		}
+	}
+	.btn-text {
+		display: block;
+		color: $white;
+		text-transform: uppercase;
+		@include mq($px450, max) {
+			font-size: rem(12);
+		}
+	}
+	&:first-child {
+		margin-left: 0;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.btn--util-save {
+	background-color: $red;
+	&:hover {
+		path {
+			fill: $red;
+		}
+	}
+}
+.btn--util-all {
+	background-color: $pink-light;
+	&:hover {
+		path {
+			fill: $pink-light;
+		}
+	}
+}
+.btn--util-print {
+	background-color: $pink;
+}

@@ -1,0 +1,7 @@
+&lt;picture&gt;
+  {{# src-l }}
+    &lt;source srcset=&quot;{{ img.src-l }}&quot; media=&quot;(min-width: {{ img-break-l }}px)&quot;&gt;
+  {{/ src-l }}
+  &lt;source srcset=&quot;{{ img.src-m }}&quot; media=&quot;(min-width: {{ img-break-m }}px)&quot;&gt;
+  &lt;img itemprop=&quot;image&quot; srcset=&quot;{{ img.src-s }}&quot; alt=&quot;{{ img.alt }}&quot;&gt;
+&lt;/picture&gt;

@@ -1,21 +1,23 @@
 &lt;div class=&quot;content-utility&quot;&gt;
   &lt;ul class=&quot;cu-list&quot;&gt;
-    &lt;li class=&quot;cu-item&quot;&gt;
-      &lt;a class=&quot;cu-link&quot; href=&quot;{{ url }}&quot;&gt;
-        &lt;span class=&quot;no-bg icon rounded icon--standard icon-print icon--medium&quot;&gt;{{&gt; atoms-print }}&lt;/span&gt;
-      &lt;/a&gt; &lt;!-- /.cu-link --&gt;
-    &lt;/li&gt; &lt;!-- /.cu-item --&gt;
-    {{# nope }}
+    {{# has-print }}
+      &lt;li class=&quot;cu-item&quot;&gt;
+        &lt;a class=&quot;cu-link&quot; href=&quot;{{ url }}&quot;&gt;
+          &lt;span class=&quot;no-bg icon rounded icon--standard icon-print icon--medium&quot;&gt;{{&gt; atoms-print }}&lt;/span&gt;
+        &lt;/a&gt; &lt;!-- /.cu-link --&gt;
+      &lt;/li&gt; &lt;!-- /.cu-item --&gt;
+    {{/ has-print }}
+    {{# has-email }}
     &lt;li class=&quot;cu-item&quot;&gt;
       &lt;a class=&quot;cu-link&quot; href=&quot;{{ url }}&quot;&gt;
         &lt;span class=&quot;no-bg icon rounded icon--standard icon-mail icon--medium js-open-mail&quot;&gt;{{&gt; atoms-mail }}&lt;/span&gt;
       &lt;/a&gt; &lt;!-- /.cu-link --&gt;
     &lt;/li&gt; &lt;!-- /.cu-item --&gt;
+    {{/ has-email }}
     &lt;li class=&quot;cu-item cu-save&quot;&gt;
       &lt;a class=&quot;cu-link&quot; href=&quot;{{ url }}&quot;&gt;
         &lt;span class=&quot;btn--rounded btn-save&quot;&gt;Save&lt;/span&gt;
       &lt;/a&gt; &lt;!-- /.cu-link --&gt;
     &lt;/li&gt; &lt;!-- /.cu-item --&gt;
-    {{/ nope }}
   &lt;/ul&gt; &lt;!-- /.cu-list --&gt;
 &lt;/div&gt; &lt;!-- /.content-utility --&gt;

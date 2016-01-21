@@ -1,0 +1,111 @@
+&lt;div class=&quot;page&quot;&gt;
+	{{&gt; organisms-header }}
+	&lt;div class=&quot;main cf lc&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
+
+		&lt;div class=&quot;cookie-calendar cc--blue&quot;&gt;
+			&lt;header class=&quot;cc__header article-header cf center&quot;&gt;
+				&lt;h1 class=&quot;cc__headline lead-headline pink&quot; itemprop=&quot;headline&quot;&gt;A Cookie A Day&amp;hellip;&lt;/h1&gt;
+				&lt;h2 class=&quot;cc__lead-subtitle lead-subtitle&quot; itemprop=&quot;alternativeHeadline&quot;&gt;Channel the deliciousness of carrot cake by sandwiching cream cheese frosting between two cookies.&lt;/h2&gt;
+				&lt;div class=&quot;center cc__sponsored-by space-btm&quot;&gt;
+					&lt;a href=&quot;&quot;&gt;
+						&lt;span class=&quot;text--s gray lower&quot;&gt;Sponsored by&lt;/span&gt; &lt;br&gt;
+						&lt;img src=&quot;http://placehold.it/170x30&quot; alt=&quot;Sponsor ad&quot;&gt;
+					&lt;/a&gt;
+				&lt;/div&gt; &lt;!-- /.cc__sponsored-by --&gt;
+				&lt;div class=&quot;cc__article-tools article-tools&quot;&gt;
+					{{&gt; molecules-social-share }}
+				&lt;/div&gt; &lt;!-- /.article-tools --&gt;
+				&lt;div class=&quot;cc__months&quot;&gt;
+					&lt;div class=&quot;cc__months-inner&quot;&gt;
+						&lt;a href=&quot;&quot; class=&quot;cc__month cc__month--active&quot;&gt;November&lt;/a&gt; &lt;a href=&quot;#December&quot; class=&quot;cc__month&quot;&gt;December&lt;/a&gt;
+					&lt;/div&gt; &lt;!-- /.cc__months-inner --&gt;
+				&lt;/div&gt; &lt;!-- /.cc__months --&gt;
+			&lt;/header&gt; &lt;!-- /.cc__header --&gt;
+
+			&lt;div class=&quot;cc__cookies&quot;&gt;
+				&lt;ul class=&quot;cc__cookie-list js-cc__cookie-list cf js-gallery-grid&quot;&gt;
+					{{# cookies }}&lt;li class=&quot;cc__cookie-list-item js-gi js-open-modal js-open-cc-modal {{ cc-item-class }}&quot;&gt;
+						&lt;div class=&quot;cc__block&quot;&gt;
+							&lt;div class=&quot;cc__block-inner rel&quot;&gt;
+								&lt;a href=&quot;#&quot; class=&quot;cc__number js-toggle-parent {{ cc-number-class }}&quot;&gt;{{ number }}&lt;/a&gt;
+								&lt;img class=&quot;lazy--hidden&quot; data-original=&quot;{{ img.src2 }}&quot; alt=&quot;{{ img.alt }}&quot;&gt;
+								&lt;div class=&quot;img-wrap&quot;&gt;
+									&lt;div class=&quot;has-social&quot;&gt;
+										{{&gt; atoms-image }}
+										&lt;div class=&quot;cc__social-wrap&quot;&gt;
+											&lt;div class=&quot;cc__social social-share&quot;&gt;
+												&lt;ul class=&quot;ss-list&quot;&gt;
+													&lt;li class=&quot;ss-item&quot;&gt;
+														&lt;a class=&quot;ss-link&quot; href=&quot;{{ url }}&quot;&gt;
+															&lt;span class=&quot;no-bg icon rounded icon-facebook icon--medium&quot;&gt;{{&gt; atoms-facebook }}&lt;/span&gt;
+														&lt;/a&gt; &lt;!-- /.ss-link --&gt;
+													&lt;/li&gt; &lt;!-- /.ss-item --&gt;
+													&lt;li class=&quot;ss-item&quot;&gt;
+														&lt;a class=&quot;ss-link&quot; href=&quot;{{ url }}&quot;&gt;
+															&lt;span class=&quot;no-bg icon rounded icon-twitter icon--medium&quot;&gt;{{&gt; atoms-twitter }}&lt;/span&gt;
+														&lt;/a&gt; &lt;!-- /.ss-link --&gt;
+													&lt;/li&gt; &lt;!-- /.ss-item --&gt;
+													&lt;li class=&quot;ss-item&quot;&gt;
+														&lt;a class=&quot;ss-link&quot; href=&quot;{{ url }}&quot;&gt;
+															&lt;span class=&quot;no-bg icon rounded icon-pinterest icon--medium&quot;&gt;{{&gt; atoms-pinterest }}&lt;/span&gt;
+														&lt;/a&gt; &lt;!-- /.ss-link --&gt;
+													&lt;/li&gt; &lt;!-- /.ss-item --&gt;
+												&lt;/ul&gt; &lt;!-- /.ss-list --&gt;
+											&lt;/div&gt; &lt;!-- /.social-share --&gt;
+										&lt;/div&gt; &lt;!-- /.cc__social-wrap --&gt;
+									&lt;/div&gt; &lt;!-- /.has-social --&gt;
+								&lt;/div&gt; &lt;!-- /.img-wrap --&gt;
+								&lt;a href=&quot;#&quot; class=&quot;cc__corner cc__corner--more js-toggle-parent&quot;&gt;&lt;span class=&quot;cc__corner-label&quot;&gt;See More&lt;/span&gt;&lt;/a&gt;
+								&lt;div class=&quot;cc__block-text&quot;&gt;
+									&lt;div class=&quot;cc__block-text-inner rel&quot;&gt;
+										&lt;span class=&quot;cc__kicker&quot;&gt;{{ cc-date }}&lt;/span&gt;
+										&lt;h2 class=&quot;cc__title&quot;&gt;&lt;a href=&quot;#&quot;&gt;{{ cc-name }}&lt;/a&gt;&lt;/h2&gt;
+										&lt;div class=&quot;cc__dek&quot;&gt;
+											&lt;div class=&quot;p&quot;&gt;&lt;p&gt;{{{ cc-desc }}}&lt;/p&gt;&lt;/div&gt;
+											&lt;a href=&quot;&quot; class=&quot;cc__cta&quot;&gt;Get the recipe&lt;/a&gt;
+										&lt;/div&gt; &lt;!-- /.cc__dek --&gt;
+										&lt;span class=&quot;cc__credit&quot;&gt;Photos by Michelle Smith&lt;/span&gt;
+									&lt;/div&gt; &lt;!-- /.cc__block-text-inner --&gt;
+								&lt;/div&gt; &lt;!-- /.cc__block-text --&gt;
+								&lt;a href=&quot;#&quot; class=&quot;cc__corner cc__corner--less js-toggle-parent&quot;&gt;&lt;span class=&quot;cc__corner-label&quot;&gt;Back&lt;/span&gt;&lt;/a&gt;
+							&lt;/div&gt; &lt;!-- /.cc__block-inner --&gt;
+						&lt;/div&gt; &lt;!-- /.cc__block --&gt;
+					&lt;/li&gt;{{/ cookies }}
+
+				&lt;/ul&gt; &lt;!-- /.cc__cookie-list --&gt;
+				&lt;span class=&quot;cc__credit--btm pad-top black text--s&quot;&gt;Photos by Michelle Smith&lt;/span&gt;
+			&lt;/div&gt; &lt;!-- /.cc__cookies --&gt;
+
+		&lt;/div&gt; &lt;!-- /.cookie-calendar --&gt;
+
+		&lt;div class=&quot;lc-inner--m&quot;&gt;
+			{{&gt; organisms-content-footer }}
+		&lt;/div&gt; &lt;!-- /.lc-inner--m --&gt;
+
+	&lt;/div&gt;&lt;!-- /role=main --&gt;
+	{{&gt; organisms-footer }}
+&lt;/div&gt; &lt;!-- /.page --&gt;
+
+{{# gallery }}
+	&lt;div class=&quot;cc__gallery gallery cc--blue hide modal&quot;&gt;
+		&lt;div class=&quot;gallery__modal&quot;&gt;
+			&lt;div class=&quot;rel cf&quot;&gt;
+				&lt;span class=&quot;overlay-close icon icon--medium icon__x js-close&quot; title=&quot;Close&quot;&gt;{{&gt; atoms-x }}&lt;/span&gt;
+				&lt;div class=&quot;shift-left--900&quot;&gt;
+					&lt;div class=&quot;shift-left-inner--900&quot;&gt;
+						&lt;div class=&quot;cc__slides js-cc__slides slides js-slides&quot;&gt;
+							{{# slides }}
+								{{&gt; molecules-gallery-slide }}
+							{{/ slides }}
+						&lt;/div&gt; &lt;!-- /.cc__slides --&gt;
+					&lt;/div&gt; &lt;!-- /.shift-left-inner--900 --&gt;
+				&lt;/div&gt; &lt;!-- /.shift-left--900 --&gt;
+				&lt;div class=&quot;shift-right--900 gm__aside&quot;&gt;
+					&lt;div class=&quot;ad-block ad-300x6000 block js-ad-refresh&quot;&gt;
+						&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://placehold.it/300x250&quot;&gt;&lt;/a&gt;
+					&lt;/div&gt; &lt;!-- /.ad-300x600 --&gt;
+				&lt;/div&gt; &lt;!-- /.shift-right--900 --&gt;
+			&lt;/div&gt; &lt;!-- /.rel --&gt;
+		&lt;/div&gt; &lt;!-- /.gallery__modal --&gt;
+	&lt;/div&gt; &lt;!-- /.cc__gallery --&gt;
+{{/ gallery }}

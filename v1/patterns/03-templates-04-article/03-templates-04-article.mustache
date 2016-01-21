@@ -10,7 +10,7 @@
 
 					{{# article-head }}
 						&lt;header class=&quot;article-header {{ header-class }} cf&quot;&gt;
-							{{&gt; molecules-kicker }}
+							{{&gt; molecules-kicker }} {{# sponsor-label }}&lt;div class=&quot;spons-by dib&quot;&gt;&lt;span class=&quot;text--s-m&quot;&gt;presented by&lt;/span&gt; {{&gt; atoms-image }}&lt;/div&gt;{{/ sponsor-label }}
 							&lt;h1 class=&quot;lead-headline&quot; itemprop=&quot;headline&quot;&gt;{{ title }}&lt;/h1&gt;
 							{{# has-head-meta }}
 								&lt;h2 class=&quot;lead-subtitle&quot; itemprop=&quot;alternativeHeadline&quot;&gt;{{ subtitle }}&lt;/h2&gt;

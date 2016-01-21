@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+[role=main] {
+  overflow: hidden;
+  padding-top: $pad;
+  -webkit-transform: translate(0);
+  @include mq($medium-break) {
+    padding-top: $pad;
+    .main--no-pad & {
+      padding-top: 0;
+    }
+  }
+}
+.main--half-pad .main {
+  padding-top: $pad-half;
+  @include mq($medium-break) {
+    padding-top: 0;
+  }
+}

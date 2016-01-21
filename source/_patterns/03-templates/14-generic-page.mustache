@@ -1,0 +1,47 @@
+<div class="page">
+	{{> organisms-header }}
+	<div class="main cf lc" role="main" aria-live="polite">
+
+		{{# has-sidebar }}
+		<div class="primary">
+			<section class="primary-inner">
+		{{/ has-sidebar }}
+				<article class="article article-standard {{ article-class }} {{^ has-sidebar }}pad-double-btm{{/ has-sidebar }}">
+
+					<header class="article-header {{ header-class }} cf">
+						<h1 class="lead-headline">Generic Page Title</h1>
+						{{# has-social }}
+						<div class="article-tools">
+							{{> molecules-social-share }}
+						</div> <!-- /.article-tools -->
+						{{/ has-social }}
+					</header> <!-- /.article-header -->
+
+					<section class="section article-body text">
+
+						{{^ has-generic-content }}
+							<p>Generic Page content.</p>
+						{{/ has-generic-content }}
+
+						{{# has-generic-content }}
+							{{> organisms-generic-content }}
+						{{/ has-generic-content }}
+
+					</section> <!-- /.article-body -->
+
+				</article> <!-- /.article-standard -->
+
+			{{# has-sidebar }}
+			</section> <!-- /.primary-inner -->
+		</div> <!-- /.primary -->
+		{{/ has-sidebar }}
+
+		{{# has-sidebar }}
+			<div class="secondary">
+				{{> organisms-sidebar }}
+			</div> <!-- /.secondary -->
+		{{/ has-sidebar }}
+
+	</div><!-- /role=main -->
+	{{> organisms-footer }}
+</div> <!-- /.page -->

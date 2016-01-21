@@ -1,6 +1,7 @@
 {
   "title" : "5 Ways to Stay Cool Under Pressure",
   "bodyClass" : "article-list",
+  "is-logged-in" : false,
   "article-list-head" : [
     {
       "has-social-count" : "true",
@@ -14,18 +15,18 @@
   ],
   "listicle-items-1" : [
     {
-      "number" : "1",
-      "number-class" : "listicle-number",
+      "number" : "30",
+      "number-class" : "listicle-number double-digit",
       "block-class" : "block-article-list-item",
       "title" : "Before a Stressful Event, Stage a Mental Dress Rehearsal",
-      "dek" : "<p>In surgery, you don’t have the luxury of wondering, What if this doesn’t work? It has to work. That’s why, the night before a big procedure, I run through the entire thing like a movie in my head. I also visualize what I’ll do in the event of major complications—which can make a huge difference. During a recent operation, my team encountered a problem when a hole opened in the vena cava, the largest vein in the body, during the removal of an attached tumor. It’s a terrifying situation: The person could bleed to death in minutes. But I had considered this possibility beforehand. So when the vein ruptured, I knew exactly what to do and quickly restored control. And I’m happy to report, the patient is doing fine.</p><p>Thomas Heffernan is a cancer surgeon in Dallas.</p>",
+      "dek" : "<p>In surgery, you don’t have the luxury of wondering, <a href=''>What if this doesn’t work?</a> It has to work. That’s why, the night before a big procedure, I run through the entire thing like a movie in my head. I also visualize what I’ll do in the event of major complications—which can make a huge difference. During a recent operation, my team encountered a problem when a hole opened in the vena cava, the largest vein in the body, during the removal of an attached tumor. It’s a terrifying situation: The person could bleed to death in minutes. But I had considered this possibility beforehand. So when the vein ruptured, I knew exactly what to do and quickly restored control. And I’m happy to report, the patient is doing fine.</p><p>Thomas Heffernan is a cancer surgeon in Dallas.</p>",
       "b-thumb" : [
         {
           "img": {
             "src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/0111/airplane-sunset_300.jpg?itok=ypMO-5N0",
             "alt": "Before a Stressful Event, Stage a Mental Dress Rehearsal"
           },
-          "credit" : "Getty Images/ Martin Harvey",
+          "credit" : "Getty Images/ Martin Harvey of the WikiCommons and Google Images",
           "social-tools" : "true"
         }
       ]

@@ -1,7 +1,147 @@
-&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
-	{{&gt; organisms-header }}
-	&lt;div class=&quot;main cf lc&quot; role=&quot;main&quot;&gt;
-    {{&gt; organisms-sidebar }}
-	&lt;/div&gt;&lt;!-- /role=main --&gt;
-	{{&gt; organisms-footer }}
+&lt;div class=&quot;page&quot;&gt;
+  {{&gt; organisms-header }}
+
+  {{# has-top-ad }}
+    &lt;!-- &lt;hr class=&quot;no-space&quot;&gt; --&gt;
+  {{/ has-top-ad }}
+
+  &lt;div class=&quot;main cf&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
+    &lt;div class=&quot;lc lc-inner--l cf page--top&quot;&gt;
+      &lt;div class=&quot;shift-left&quot;&gt;
+        &lt;div class=&quot;shift-left-inner&quot;&gt;
+          &lt;div class=&quot;carousel--tabbed js-carousel--tabbed&quot;&gt;
+            {{# home-carousel }}
+              &lt;div class=&quot;c-item c-tabbed c-item-{{ item-num }}&quot;&gt;
+                {{&gt; molecules-image-with-social }}
+                &lt;a href=&quot;{{ url }}&quot; class=&quot;c-tab&quot;&gt;
+                  &lt;h2 class=&quot;c-title&quot;&gt;{{{ tab-title }}}&lt;/h2&gt;
+                &lt;/a&gt; &lt;!-- /.c-tab --&gt;
+              &lt;/div&gt; &lt;!-- /.c-item --&gt;
+            {{/ home-carousel }}
+          &lt;/div&gt; &lt;!-- /.carousel--tabbed --&gt;
+        &lt;/div&gt; &lt;!-- /.shift-left-inner --&gt;
+      &lt;/div&gt; &lt;!-- /.shift-left --&gt;
+
+      &lt;div class=&quot;shift-right home-right-blocks cf&quot;&gt;
+        {{# tip }}
+          {{&gt; molecules-block-thumb-headline }}
+        {{/ tip }}
+        {{&gt; atoms-ad-300x250 }}
+      &lt;/div&gt; &lt;!-- /.shift-right --&gt;
+    &lt;/div&gt; &lt;!-- /.lc-inner--l --&gt;
+
+    &lt;section class=&quot;section promo-strip&quot;&gt;
+      &lt;div class=&quot;lc-inner--m&quot;&gt;
+        &lt;div class=&quot;g g-3up&quot;&gt;
+          {{# promo-strip }}
+            &lt;div class=&quot;gi&quot;&gt;
+              {{&gt; molecules-block-thumb-headline }}
+            &lt;/div&gt; &lt;!-- /.gi --&gt;
+          {{/ promo-strip }}
+        &lt;/div&gt; &lt;!-- /.g-3up --&gt;
+      &lt;/div&gt; &lt;!-- /.lc-inner--m --&gt;
+    &lt;/section&gt; &lt;!-- /.promo-strip --&gt;
+
+    {{# has-btm-ad }}
+      &lt;div class=&quot;lc-inner--m&quot;&gt;
+        &lt;div class=&quot;advertisement advertisement-responsive-leaderboard ad-blocks ad-leaderboard {{# has-994x250 }} has-994x250 {{/ has-994x250 }}&quot;&gt;
+          &lt;div class=&quot;ad-block ad-300x50 js-ad-refresh&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://cdn.creative.medialytics.com/raw_assets/servo_prod/campaigns/CA-KS2PC8D/creatives/CR-CDTH2C5/versions/1/MBAN%20UnstopablesTargetiMedia%20FreshScentspiration%20xxxx%20320x50%201415%203%20Static.jpg.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+          {{# has-994x250 }}
+            &lt;div class=&quot;ad-block ad-994x250&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://s0.2mdn.net/4764406/994x250_OWO_OpeningMay29-UPDATED.jpg&quot; width=&quot;994&quot; height=&quot;250&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+          {{/ has-994x250 }}
+          {{^ has-994x250 }}
+            &lt;div class=&quot;ad-block ad-728x90 js-ad-refresh&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKDjt-P9LBABGAEyCHdr0udyiur2&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+          {{/ has-994x250 }}
+        &lt;/div&gt; &lt;!-- /.ad-leaderboard --&gt;
+        &lt;hr class=&quot;space-and-half-btm space-and-half-top&quot;&gt;
+      &lt;/div&gt; &lt;!-- /.lc-inner--m --&gt;
+    {{/ has-btm-ad }}
+
+    &lt;div class=&quot;lc cf&quot;&gt;
+      &lt;div class=&quot;primary no-space-btm no-pad-btm&quot;&gt;
+        &lt;div class=&quot;primary-inner no-space-btm&quot;&gt;
+          &lt;section class=&quot;section content-modules&quot;&gt;
+            {{# content-modules-1 }}
+              {{&gt; molecules-block-thumb-headline }}
+            {{/ content-modules-1 }}
+          &lt;/section&gt; &lt;!-- /.content-modules --&gt;
+
+          {{# has-follow }}
+            &lt;hr class=&quot;space-btm no-space-top&quot;&gt;
+            {{&gt; organisms-follow-footer }}
+            &lt;hr class=&quot;space-half-top&quot;&gt;
+          {{/ has-follow }}
+
+          {{# has-video-strip }}
+            &lt;hr class=&quot;space-and-half-btm no-space-top&quot;&gt;
+            &lt;section class=&quot;section video-strip&quot;&gt;
+              &lt;header class=&quot;s-header rel&quot;&gt;
+                &lt;h3 class=&quot;s-title heading&quot;&gt;Featured Videos&lt;/h3&gt;
+                &lt;div class=&quot;sponsored-by center&quot;&gt;
+                  &lt;div class=&quot;dib&quot;&gt;
+                    &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://placehold.it/170x30&quot;&gt;&lt;/a&gt;
+                  &lt;/div&gt; &lt;!-- /.dib --&gt;
+                &lt;/div&gt; &lt;!-- /.sponsored-by --&gt;
+              &lt;/header&gt; &lt;!-- /.s-header --&gt;
+              &lt;div class=&quot;g g-3up&quot;&gt;
+                {{# video-strip }}
+                  &lt;div class=&quot;gi&quot;&gt;
+                    {{&gt; molecules-block-thumb-headline }}
+                  &lt;/div&gt; &lt;!-- /.gi --&gt;
+                {{/ video-strip }}
+              &lt;/div&gt; &lt;!-- /.g-3up --&gt;
+            &lt;/section&gt; &lt;!-- /.video-strip --&gt;
+            &lt;hr class=&quot;space-half-top&quot;&gt;
+          {{/ has-video-strip }}
+
+          &lt;section class=&quot;section content-modules&quot;&gt;
+            {{# content-modules-2 }}
+              {{&gt; molecules-block-thumb-headline }}
+            {{/ content-modules-2 }}
+          &lt;/section&gt; &lt;!-- /.content-modules --&gt;
+        &lt;/div&gt; &lt;!-- /.primary-inner --&gt;
+      &lt;/div&gt; &lt;!-- /.primary --&gt;
+
+      &lt;div class=&quot;secondary no-pad-top&quot;&gt;
+        &lt;aside class=&quot;sidebar sidebar--alt&quot; role=&quot;complementary&quot;&gt;
+          {{# subscription-promo }}
+            {{&gt; molecules-block-thumb-headline }}
+          {{/ subscription-promo }}
+          {{&gt; organisms-daily-finds }}
+          &lt;div class=&quot;ad-block ad-300x600 block&quot;&gt;
+            &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://s1.2mdn.net/viewad/3521978/SINS_WebBanner_300x600.jpg&quot;&gt;&lt;/a&gt;
+          &lt;/div&gt; &lt;!-- /.ad-300x250 --&gt;
+        &lt;/aside&gt; &lt;!-- /.sidebar --&gt;
+      &lt;/div&gt; &lt;!-- /.secondary --&gt;
+      &lt;hr class=&quot;no-space-top space-double-btm clear lc-inner--l&quot;&gt;
+    &lt;/div&gt; &lt;!-- /.lc --&gt;
+
+    &lt;div class=&quot;lc lc-inner--l cf page--btm&quot;&gt;
+      &lt;section class=&quot;section video-promo cf v-blocks--3&quot;&gt;
+        &lt;div class=&quot;video-module&quot;&gt;
+          {{# video }}
+            {{&gt; molecules-block-media }}
+          {{/ video }}
+        &lt;/div&gt; &lt;!-- /.video-module --&gt;
+        &lt;div class=&quot;video-blocks&quot;&gt;
+          {{# video-blocks }}
+            {{&gt; molecules-block-thumb-headline }}
+          {{/ video-blocks }}
+        &lt;/div&gt; &lt;!-- /.video-blocks --&gt;
+      &lt;/section&gt; &lt;!-- /.video-promo --&gt;
+    &lt;/div&gt; &lt;!-- /.lc-inner--l --&gt;
+
+  &lt;/div&gt;&lt;!-- /role=main --&gt;
+
+  &lt;div class=&quot;lc lc-inner space-double-btm pad-half-top&quot;&gt;
+    &lt;hr class=&quot;hr--s no-space-top space-btm&quot;&gt;
+    &lt;div class=&quot;ad-blocks ad-responsive ad-instream&quot;&gt;
+      &lt;div class=&quot;ad-block ad-300x250 hide-larger hide-large&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;div class=&quot;ad-block ad-728x90 hide-larger hide-med hide-small&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://s1.2mdn.net/viewad/3340030/clx_clb_e40024_value-oxi_rev_728x90.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;div class=&quot;ad-block ad-970x90 hide-large hide-med hide-small&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://d.pr/i/10NZe+&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt; &lt;!-- /.ad-responsive --&gt;
+    &lt;hr class=&quot;hr--l space-half-top&quot;&gt;
+  &lt;/div&gt; &lt;!-- /.lc-inner --&gt;
+
+  {{&gt; organisms-footer }}
 &lt;/div&gt; &lt;!-- /.page --&gt;

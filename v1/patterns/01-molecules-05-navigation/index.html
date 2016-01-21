@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--><html class="pl"><!--<![endif]-->
 	<head>
-		<title>Pattern Lab | Real Simple</title>
+		<title>Real Simple | Pattern Lab | Real Simple</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,14 +12,6 @@
 		<script src="//fonts.timeinc.net/yeq7mvh.js"></script>
 		<!-- <script src="//use.typekit.net/fgx3tqo.js"></script> -->
 		<script>try{Typekit.load();}catch(e){}</script>
-		<script>
-			/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
-			window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var a=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];a.rel="stylesheet",a.href=e[o&&n?0:o?1:2],a.media="only x",r.parentNode.insertBefore(a,r),setTimeout(function(){a.media="all"})},a=new t.Image;a.onerror=function(){o(!1)},a.onload=function(){o(1===a.width&&1===a.height)},a.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
-				var iconpath = '../../../source/images/svg/output/';
-			grunticon([iconpath+"icons.data.svg.css", iconpath+"icons.data.png.css", iconpath+"icons.fallback.css"]);
-		</script>
-
-		<noscript><link href="../../../source/images/svg/output/icons.fallback.css" rel="stylesheet"></noscript>
 
 		<!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!-->
 			<link rel="stylesheet" href="../../../source/css/style.css?0" media="all" />
@@ -28,6 +20,8 @@
 		<!--[if lt IE 9]>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" type="text/javascript"></script>
 		<![endif]-->
+
+
 
 		<link rel="stylesheet" href="http://img5.timeinc.net/hat/css/style.css">
 		<script src="http://img5.timeinc.net/hat/js/time-hat.js"></script>
@@ -49,11 +43,11 @@
 	<body class="body body-body">
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=185394191650949&version=v2.0";
-		  fjs.parentNode.insertBefore(js, fjs);
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=185394191650949&version=v2.0";
+			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 		
 		<!-- View All Patterns in a Pattern Sub-Type -->
@@ -64,7 +58,7 @@
 					<div id="molecules-primary-nav" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-navigation-00-primary-nav/01-molecules-05-navigation-00-primary-nav.html" class="patternLink" data-patternpartial="molecules-primary-nav">Primary Nav</a></h2>
 						<div class="sg-pattern-body">
-							<nav class="primary-nav" role="navigation">
+							<nav class="primary-nav" role="navigation" id="rs-hamburger-primary-nav">
   <ul class="nav-list">
     <li class="l-top ">
       <a href="#" aria-controls="primary-inner">Food</a> <span class="aw js-toggle-parent"><span class="arrow arrow--right"></span></span>
@@ -115,14 +109,7 @@
       </ul> <!-- /.nav-sub -->
     </li> <!-- /.l-top  -->
     <li class="l-top ">
-      <a href="#" aria-controls="primary-inner">Shop</a> <span class="aw js-toggle-parent"><span class="arrow arrow--right"></span></span>
-      <ul class="nav-sub">
-        <li class="l-sub"><a href="" aria-controls="primary-inner">Makeup</a></li>
-        <li class="l-sub"><a href="" aria-controls="primary-inner">Skincare</a></li>
-        <li class="l-sub"><a href="" aria-controls="primary-inner">Fragrance</a></li>
-        <li class="l-sub"><a href="" aria-controls="primary-inner">Makeovers</a></li>
-        <li class="l-sub"><a href="" aria-controls="primary-inner">Timesavers</a></li>
-      </ul> <!-- /.nav-sub -->
+      <a href="#" aria-controls="primary-inner">Shop</a>
     </li> <!-- /.l-top  -->
     <li class="l-top ">
       <a href="#" aria-controls="primary-inner">Holidays</a> <span class="aw js-toggle-parent"><span class="arrow arrow--right"></span></span>
@@ -182,6 +169,9 @@
 </span></a></li>
       </ul> <!-- /.nav-sub -->
     </li> <!-- /.l-top  -->
+    <li class="l-top l-give-a-gift ">
+      <a href="#" aria-controls="primary-inner">Give a Gift</a>
+    </li> <!-- /.l-top  -->
     <li class="l-top  l-subscribe ">
       <a href="#">
         <span>Subscribe</span>
@@ -201,7 +191,7 @@
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;nav class=&quot;primary-nav&quot; role=&quot;navigation&quot;&gt;
+										&lt;nav class=&quot;primary-nav&quot; role=&quot;navigation&quot; id=&quot;rs-hamburger-primary-nav&quot;&gt;
   &lt;ul class=&quot;nav-list&quot;&gt;
     &lt;li class=&quot;l-top &quot;&gt;
       &lt;a href=&quot;#&quot; aria-controls=&quot;primary-inner&quot;&gt;Food&lt;/a&gt; &lt;span class=&quot;aw js-toggle-parent&quot;&gt;&lt;span class=&quot;arrow arrow--right&quot;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -252,14 +242,7 @@
       &lt;/ul&gt; &lt;!-- /.nav-sub --&gt;
     &lt;/li&gt; &lt;!-- /.l-top  --&gt;
     &lt;li class=&quot;l-top &quot;&gt;
-      &lt;a href=&quot;#&quot; aria-controls=&quot;primary-inner&quot;&gt;Shop&lt;/a&gt; &lt;span class=&quot;aw js-toggle-parent&quot;&gt;&lt;span class=&quot;arrow arrow--right&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-      &lt;ul class=&quot;nav-sub&quot;&gt;
-        &lt;li class=&quot;l-sub&quot;&gt;&lt;a href=&quot;&quot; aria-controls=&quot;primary-inner&quot;&gt;Makeup&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;l-sub&quot;&gt;&lt;a href=&quot;&quot; aria-controls=&quot;primary-inner&quot;&gt;Skincare&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;l-sub&quot;&gt;&lt;a href=&quot;&quot; aria-controls=&quot;primary-inner&quot;&gt;Fragrance&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;l-sub&quot;&gt;&lt;a href=&quot;&quot; aria-controls=&quot;primary-inner&quot;&gt;Makeovers&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;l-sub&quot;&gt;&lt;a href=&quot;&quot; aria-controls=&quot;primary-inner&quot;&gt;Timesavers&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt; &lt;!-- /.nav-sub --&gt;
+      &lt;a href=&quot;#&quot; aria-controls=&quot;primary-inner&quot;&gt;Shop&lt;/a&gt;
     &lt;/li&gt; &lt;!-- /.l-top  --&gt;
     &lt;li class=&quot;l-top &quot;&gt;
       &lt;a href=&quot;#&quot; aria-controls=&quot;primary-inner&quot;&gt;Holidays&lt;/a&gt; &lt;span class=&quot;aw js-toggle-parent&quot;&gt;&lt;span class=&quot;arrow arrow--right&quot;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -319,6 +302,9 @@
 &lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt; &lt;!-- /.nav-sub --&gt;
     &lt;/li&gt; &lt;!-- /.l-top  --&gt;
+    &lt;li class=&quot;l-top l-give-a-gift &quot;&gt;
+      &lt;a href=&quot;#&quot; aria-controls=&quot;primary-inner&quot;&gt;Give a Gift&lt;/a&gt;
+    &lt;/li&gt; &lt;!-- /.l-top  --&gt;
     &lt;li class=&quot;l-top  l-subscribe &quot;&gt;
       &lt;a href=&quot;#&quot;&gt;
         &lt;span&gt;Subscribe&lt;/span&gt;
@@ -359,13 +345,13 @@
 					<div id="molecules-secondary-nav" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-navigation-02-secondary-nav/01-molecules-05-navigation-02-secondary-nav.html" class="patternLink" data-patternpartial="molecules-secondary-nav">Secondary Nav</a></h2>
 						<div class="sg-pattern-body">
-							<nav class="secondary-nav">
+							<nav class="secondary-nav" role="navigation" id="rs-hamburger-secondary-nav">
   <ul>
-  	<li><a href="#">Weddings</a></li>
-  	<li><a href="#">Checklists</a></li>
-  	<li><a href="#">Games</a></li>
-  	<li><a href="#">Makeover in Minutes</a></li>
-  	<li><a href="#">No-Obligation Book Club</a></li>
+    <li><a href="#">Weddings</a></li>
+    <li><a href="#">Checklists</a></li>
+    <li><a href="#">Games</a></li>
+    <li><a href="#">Makeover in Minutes</a></li>
+    <li><a href="#">No-Obligation Book Club</a></li>
     <li><a href="#">RS Lifestylers</a></li>
     <li><a href="#">Real Simple Rewards</a></li>
     <li><a href="#">Real Simple Products</a></li>
@@ -380,13 +366,13 @@
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;nav class=&quot;secondary-nav&quot;&gt;
+										&lt;nav class=&quot;secondary-nav&quot; role=&quot;navigation&quot; id=&quot;rs-hamburger-secondary-nav&quot;&gt;
   &lt;ul&gt;
-  	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Weddings&lt;/a&gt;&lt;/li&gt;
-  	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Checklists&lt;/a&gt;&lt;/li&gt;
-  	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Games&lt;/a&gt;&lt;/li&gt;
-  	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Makeover in Minutes&lt;/a&gt;&lt;/li&gt;
-  	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;No-Obligation Book Club&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Weddings&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Checklists&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Games&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Makeover in Minutes&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;No-Obligation Book Club&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;RS Lifestylers&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Real Simple Rewards&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Real Simple Products&lt;/a&gt;&lt;/li&gt;
@@ -406,7 +392,7 @@
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-navigation-03-pagination/01-molecules-05-navigation-03-pagination.html" class="patternLink" data-patternpartial="molecules-pagination">Pagination</a></h2>
 						<div class="sg-pattern-body">
 							<div class="pagination">
-  <a href="#" class="no-bg no-bdr icon rounded icon-arrow-left icon--standard icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+  <a href="#" class="no-bg no-bdr icon rounded icon-arrow-left icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
   <title>Left Arrow</title>
   <path d="M344.5 5.3l31.7 31.6L163.1 250l213.1 213.1-31.7 31.6L99.8 250z"/>
   <!--[if lte IE 8]>
@@ -417,11 +403,13 @@
 </svg>
 </a>
   <ol class="page-list">
-    <li class="page-item"><a class="rounded" href="#">1</a></li>
+    <li class="page-item current rounded">1</li>
     <li class="page-item"><a class="rounded" href="#">2</a></li>
-    <li class="page-item current">3</li>
+    <li class="page-item"><a class="rounded" href="#">3</a></li>
+    <li class="page-item ellip">&hellip;</li>
+    <li class="page-item"><a class="rounded" href="#">12</a></li>
   </ol> <!-- /.page-list -->
-  <a href="#" class="no-bg no-bdr icon rounded icon-arrow-right icon--standard icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+  <a href="#" class="no-bg no-bdr icon rounded icon-arrow-right icon--medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
   <title>Right Arrow</title>
   <path d="M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z"/>
   <!--[if lte IE 8]>
@@ -443,7 +431,7 @@
 								<pre class="sg-code-html">
 									<code>
 										&lt;div class=&quot;pagination&quot;&gt;
-  &lt;a href=&quot;#&quot; class=&quot;no-bg no-bdr icon rounded icon-arrow-left icon--standard icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 500 500&quot; enable-background=&quot;new 0 0 500 500&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;no-bg no-bdr icon rounded icon-arrow-left icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 500 500&quot; enable-background=&quot;new 0 0 500 500&quot;&gt;
   &lt;title&gt;Left Arrow&lt;/title&gt;
   &lt;path d=&quot;M344.5 5.3l31.7 31.6L163.1 250l213.1 213.1-31.7 31.6L99.8 250z&quot;/&gt;
   &lt;!--[if lte IE 8]&gt;
@@ -454,11 +442,13 @@
 &lt;/svg&gt;
 &lt;/a&gt;
   &lt;ol class=&quot;page-list&quot;&gt;
-    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;rounded&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item current rounded&quot;&gt;1&lt;/li&gt;
     &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;rounded&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;page-item current&quot;&gt;3&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;rounded&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item ellip&quot;&gt;&amp;hellip;&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;rounded&quot; href=&quot;#&quot;&gt;12&lt;/a&gt;&lt;/li&gt;
   &lt;/ol&gt; &lt;!-- /.page-list --&gt;
-  &lt;a href=&quot;#&quot; class=&quot;no-bg no-bdr icon rounded icon-arrow-right icon--standard icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 500 500&quot; enable-background=&quot;new 0 0 500 500&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;no-bg no-bdr icon rounded icon-arrow-right icon--medium&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 500 500&quot; enable-background=&quot;new 0 0 500 500&quot;&gt;
   &lt;title&gt;Right Arrow&lt;/title&gt;
   &lt;path d=&quot;M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z&quot;/&gt;
   &lt;!--[if lte IE 8]&gt;
@@ -555,13 +545,13 @@
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-navigation-06-util-nav/01-molecules-05-navigation-06-util-nav.html" class="patternLink" data-patternpartial="molecules-util-nav">Util Nav</a></h2>
 						<div class="sg-pattern-body">
 							<div class="h-hide">
-  <nav class="util-nav js-hover" data-prefix="util">
+  <nav class="util-nav js-hover  logged-in " data-prefix="util">
     <ul class="util-nav-list">
-      <li class="li-vis"><a href="">Welcome, Michelle</a></li>
-      <li><a href="">Subscriptions</a></li>
-      <li><a href="">Preferences</a></li>
-      <li><a href="">Favorites</a></li>
-      <li><a href="">Log Out</a></li>
+        <li class="li-vis"><a href="">Welcome, Michelle</a></li>
+        <li><a href="">Subscriptions</a></li>
+        <li><a href="">Preferences</a></li>
+        <li><a href="">Favorites</a></li>
+        <li><a href="">Log Out</a></li>
     </ul> <!-- /.util-nav-list -->
   </nav> <!-- .util-nav -->
 </div> <!-- /.h-hide -->
@@ -571,13 +561,13 @@
 								<pre class="sg-code-html">
 									<code>
 										&lt;div class=&quot;h-hide&quot;&gt;
-  &lt;nav class=&quot;util-nav js-hover&quot; data-prefix=&quot;util&quot;&gt;
+  &lt;nav class=&quot;util-nav js-hover  logged-in &quot; data-prefix=&quot;util&quot;&gt;
     &lt;ul class=&quot;util-nav-list&quot;&gt;
-      &lt;li class=&quot;li-vis&quot;&gt;&lt;a href=&quot;&quot;&gt;Welcome, Michelle&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Subscriptions&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Preferences&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Favorites&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Log Out&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;li-vis&quot;&gt;&lt;a href=&quot;&quot;&gt;Welcome, Michelle&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Subscriptions&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Preferences&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Favorites&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Log Out&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt; &lt;!-- /.util-nav-list --&gt;
   &lt;/nav&gt; &lt;!-- .util-nav --&gt;
 &lt;/div&gt; &lt;!-- /.h-hide --&gt;
@@ -618,16 +608,17 @@
 			var lineage = "";
 		</script>
 		
-
-  <!-- <script src="../../js/source/global.js" type="text/javascript"></script> -->
-  <script src="../../js/jquery-2.0.0b2.js" type="text/javascript"></script>
-  <script src="../../js/owl.carousel.min.js" type="text/javascript"></script>
-  <script src="../../js/plugins.js" type="text/javascript"></script>
-  <script src="../../js/main.js" type="text/javascript"></script>
-  <script src="../../js/js-tests.js" type="text/javascript"></script>
-
   <div class="load"></div>
   <div class="overlay"></div>
+
+  <!-- <script src="../../../source/js/source/global.js" type="text/javascript"></script> -->
+  <!-- <script src="../../../source/js/jquery-2.0.0b2.js" type="text/javascript"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="../../../source/js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="../../../source/js/plugins.js" type="text/javascript"></script>
+  <script src="../../../source/js/main.js" type="text/javascript"></script>
+  <script src="../../../source/js/gallery.js" type="text/javascript"></script>
+
   <!-- <a href="#close" class="icon no-bg rounded icon-x icon--standard icon--medium icon--fixed"></a> -->
 
   <!--DO NOT REMOVE-->

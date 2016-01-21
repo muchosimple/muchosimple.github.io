@@ -1,135 +1,347 @@
 {
-	"title" : "Home Page",
-	"bodyClass": "home",
-	"emergency" : false,
-	"hero" : [
+	"bodyClass": "home-page main--half-pad main--no-pad",
+	"content-type" : "Home",
+	"has-featured-stories" : false,
+	"has-994x250" : true,
+	"has-follow" : false,
+	"has-video-strip" : true,
+	"has-btm-ad" : true,
+	"has-top-ad" : false,
+	"home-carousel" : [
 		{
-			"img": {
-				"landscape-16x9": {
-					"src": "../../images/sample/landscape-16x9-mountains.jpg",
-					"alt": "Mountains"	
-				}
+			"item-num" : "1",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/work-life/entertainment/0603/collections-books_300.jpg?itok=EBnsMR7-",
+				"alt" : "40 Living Room Decorating Ideas"
 			},
-			"headline" : {
-				"medium" : "Top 10 mountain ranges for hiking"
-			}
+			"url" : "http://yahoo.com",
+			"social-tools" : false,
+			"tab-title" : "40 Living <em>Room</em> Decorating Ideas",
+			"has-link" : true,
+			"no-lazy" : true,
+			"is-lazy" : false
+		},
+		{
+			"item-num" : "2",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/muscovado-brownies.jpg?itok=r5CbD453",
+				"alt" : "5 Irresistibly Delicious (and Surprisingly Wholesome) Baked Treats"
+			},
+			"url" : "http://google.com",
+			"social-tools" : false,
+			"tab-title" : "5 Irresistibly Delicious Baked Treats",
+			"has-link" : true,
+			"no-lazy" : true,
+			"is-lazy" : false
+		},
+		{
+			"item-num" : "3",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery_vert/public/173160556.jpg?itok=TA4TCF_j",
+				"alt" : "7 Habits of People Who Don't Stress Over the Little Things"
+			},
+			"url" : "http://etsy.com",
+			"social-tools" : false,
+			"tab-title" : "7 Habits of People Who Don't Stress",
+			"has-link" : true,
+			"no-lazy" : true,
+			"is-lazy" : false
+		},
+		{
+			"item-num" : "4",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_photo_gallery/public/image/images/1104/spaghett_egg_300.jpg?itok=L1MaN6ud",
+				"alt" : "20-Minute Dinner Recipes"
+			},
+			"url" : "http://ebay.com",
+			"social-tools" : false,
+			"tab-title" : "20-Minute Dinner Recipes",
+			"has-link" : true,
+			"no-lazy" : true,
+			"is-lazy" : false
 		}
 	],
-	"touts" : [
+	"tip" : [
 		{
-			"img": {
-				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-climber.jpg",
-					"alt": "Climber"	
-				}
+			"block-class" : "center block-tip",
+			"kicker-top" : true,
+			"kicker" : "Cooking Tips",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/ucNBN/abc/pMw3Y/ucNBN-wZS-225x150.jpg",
+				"alt" : "You've Been Making Pasta All Wrong"
 			},
-			"headline" : {
-				"short" : "Extreme climbing tips"
-			}
-		},
-		{
-			"img": {
-				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-stream.jpg",
-					"alt": "Stream hiking"	
-				}
-			},
-			"headline" : {
-				"short" : "Stream hiking"
-			}
-		},
-		{
-			"img": {
-				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-climbers.jpg",
-					"alt": "Explore hiking trails"	
-				}
-			},
-			"headline" : {
-				"short" : "Explore hiking trails"
-			}
+			"title" : "You've Been Making Pasta All Wrong"
 		}
 	],
-	"latest-posts" : [
+	"promo-strip" : [
 		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-river.jpg",
-					"alt": "Post Thumbnail"	
-				}
+			"block-class" : "center mw-300",
+			"kicker-btm" : true,
+			"kicker" : "Skin Care",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/oily-tzone.jpg?itok=GKdSsDqL",
+				"alt" : "3 DIY Fixes for Shiny Skin"
 			},
-			"headline" : {
-				"short" : "Navigate the Allegheny River"
-			},
-			"exerpt" : {
-				"medium" : "The Allegheny River is a principal tributary of the Ohio River; it is located in the Eastern United States. The Allegheny River joins with the Monongahela River to form the Ohio River at the Point of Point State Park in Downtown Pittsburgh, Pennsylvania."
-			}
+			"title" : "3 DIY Fixes for Shiny Skin"
 		},
 		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-ivy.jpg",
-					"alt": "Ivy"	
-				}
+			"block-class" : "center mw-300",
+			"kicker-btm" : true,
+			"kicker" : "Home",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/image/images/home-organizing/decorating/0702/paint-colors_300.jpg?itok=ZKZ6e_U0",
+				"alt" : "When to Do It Yourself, When to Hire a Pro"
 			},
-			"headline" : {
-				"short" : "How to detect and avoid poison ivy"
-			},
-			"exerpt" : {
-				"medium" : "Toxicodendron radicans, commonly known as poison ivy is a poisonous North American plant that is well known for its production of urushiol"
-			}
+			"title" : "When to Do It Yourself, When to Hire a Pro"
 		},
 		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-yosemite.jpg",
-					"alt": "Yosemite"	
-				}
+			"block-class" : "center mw-300",
+			"kicker-btm" : true,
+			"kicker" : "Daily Finds",
+			"img" : {
+				"src" : "http://cdn-image.realsimple.com/sites/default/files/styles/rs_main_image/public/amys-mint-chocolate.jpg?itok=qIDFfu3w",
+				"alt" : "The Best Nondairy Frozen Treats"
 			},
-			"headline" : {
-				"short" : "Top 10 hiking mountains"
-			},
-			"exerpt" : {
-				"medium" : "Yosemite National Park is a United States National Park spanning eastern portions of Tuolumne, Mariposa and Madera counties in the central eastern portion of the U.S. state of California."
-			}
-		},
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-fire.jpg",
-					"alt": "Fire"	
-				}
-			},
-			"headline" : {
-				"short" : "How to build a campfire"
-			},
-			"exerpt" : {
-				"medium" : "A campfire is a fire lit at a campsite, to serve the following functions: light, warmth, a beacon, an insect and/or apex predator deterrent, to cook, and for a psychological sense of security. "
-			}
-		},
-		{
-			"img": {
-				"square": {
-					"src": "../../images/sample/thumb-square-gear.jpg",
-					"alt": "Camping Gear"	
-				}
-			},
-			"headline" : {
-				"short" : "Pick the right camping gear"
-			},
-			"exerpt" : {
-				"medium" : "The equipment used in camping varies with the particular type of camping. For instance, in survival camping the equipment consists of small items which have the purpose of helping the camper in providing food, heat and safety."
-			}
+			"title" : "The Best Nondairy Frozen Treats"
 		}
 	],
-	"inset-blocks" : [
+	"content-modules-1" : [
 		{
-			"headline" : "This is the headline for the inset block"
+			"block-class" : "content-module has-video",
+			"dek-class" : "alt-dek",
+			"is-video" : true,
+			"kicker-btm" : true,
+			"kicker" : "Home",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uaGQC/abc/vjSrj/uaGQC-wZS-320x215.jpg",
+				"alt" : "33 Modern Living Room Design Ideas"
+			},
+			"title" : "33 Modern Living Room Design Ideas",
+			"dek" : "If you <a href=''>could only choose one room in your home</a> to put your heart and soul into designing, the living room would top the list."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Weddings",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGs/n/ubUkv/abc/ztNhj/ubUkv-wZS-320x215.jpg",
+				"alt" : "How to Simplify Wedding Planning"
+			},
+			"title" : "How to Simplify Wedding Planning",
+			"dek" : "Take our survey and share your ideas for planning a stress-free celebration."
+		},
+		{
+			"block-class" : "is-sponsored content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"is_sponsored" : true,
+			"sponsor" : "Ford",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/372x/n/1413Dc/abc/10Xuv4/1413Dc-wZS-320x215.jpg",
+				"alt" : "7 Smart Organizing Tricks You Probably Haven’t Tried (but Should!)"
+			},
+			"title" : "7 Smart Organizing Tricks You Probably Haven’t Tried (but Should!)",
+			"dek" : "It’s true: closets, desks, drawers, and countertops overflowing with clutter can cause stress and guilt."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Fashion",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGs/n/uc6lJ/abc/10YVXI/uc6lJ-wZS-320x215.jpg",
+				"alt" : "The 9 New Rules of Plus-Size Dressing"
+			},
+			"title" : "The 9 New Rules of Plus-Size Dressing",
+			"dek" : "Convinced that you’re bound by certain style guidelines if you’re over a size 14? Get ready to change your mind."
 		}
 	],
-	"latest-block" : [
+	"content-modules-2" : [
 		{
-			"headline" : "This is the headline for the latest block"
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Style",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/372r/n/13ogGI/abc/10Xt35/13ogGI-wZS-320x215.jpg",
+				"alt" : "6 Hair Growth Myths You (Probably) Believe"
+			},
+			"title" : "6 Hair Growth Myths You (Probably) Believe",
+			"dek" : "Before you spend time or money on a hair-brained scheme, get to the root of the problem by learning these six follicular fallacies."
+		},
+		{
+			"block-class" : "content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Recipes",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/udcLc/abc/10YVXE/udcLc-wZS-320x215.jpg",
+				"alt" : "15 Low Carb Breakfast Ideas"
+			},
+			"title" : "15 Low Carb Breakfast Ideas",
+			"dek" : "Start the day with protein-packed recipes that will leave you satiated and energized for hours."
+		},
+		{
+			"block-class" : "is-sponsored content-module",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"kicker" : "Simple Guides",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uabng/abc/10YVVm/uabng-wZS-320x215.jpg",
+				"alt" : "10 Cheap Organizing Hacks for a Clutter-Free Home"
+			},
+			"title" : "10 Cheap Organizing Hacks for a Clutter-Free Home",
+			"dek" : "Create order out of chaos with creative, low-cost—or, even better, no-cost!—DIY ideas."
+		},
+		{
+			"block-class" : "content-module has-video",
+			"dek-class" : "alt-dek",
+			"kicker-btm" : true,
+			"is-video" : true,
+			"kicker" : "Home & Organizing",
+			"img" : {
+				"src" : "http://images.outbrain.com/imageserver/v2/s/MYGs/n/14cWKI/abc/10BjhK/14cWKI-wZS-320x215.jpg",
+				"alt" : "How to Clean Your Apartment With Minimal Effort"
+			},
+			"title" : "How to Clean Your Apartment With Minimal Effort",
+			"dek" : "We know you're not going to deep-clean the bathroom every week, so here are the areas you need to hit (and ones you can avoid)."
+		}
+	],
+	"subscription-promo" : [
+		{
+			"block-class" : "center mw-300 bigger-title subscribe-promo",
+			"kicker-btm" : true,
+			"kicker" : "Subscribe & Save",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"img" : {
+				"src" : "https://subscription-assets.timeinc.com/prod/assets/themes/magazines/SUBS/templates/velocity/site/sm-2trmdigonly1213/resources/images/rsim.jpg",
+				"alt" : "Subscribe to Real Simple"
+			},
+			"title" : "Real Simple for only $1.29 an issue"
+		}
+	],
+	"daily-finds" : [
+		{
+			"block-class" : "block-flipped",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"img" : {
+				"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_daily_finds_tout/public/lauren-fedora.jpg?itok=TjWe4UBd",
+				"alt" : "8 Spring Essentials Under $50"
+			},
+			"title" : "8 Spring Essentials Under $50"
+		},
+		{
+			"block-class" : "block-flipped",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"img" : {
+				"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_daily_finds_tout/public/yes-tomatoes.jpg?itok=XrlEtx0O",
+				"alt" : "7 Top Acne-Fighting Products"
+			},
+			"title" : "7 Top Acne-Fighting Products"
+		},
+		{
+			"block-class" : "block-flipped",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"img" : {
+				"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_daily_finds_tout/public/butter-goss-lacquer.jpg?itok=Qo4Wjjig",
+				"alt" : "Pink Polishes For Every Skin Tone"
+			},
+			"title" : "Pink Polishes For Every Skin Tone"
+		},
+		{
+			"block-class" : "block-flipped",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"img" : {
+				"src": "http://cdn-image.realsimple.com/sites/default/files/styles/rs_daily_finds_tout/public/forever21-collarless-jacket.jpg?itok=V-s7R3D7",
+				"alt" : "12 Pretty Floral-Printed Picks"
+			},
+			"title" : "12 Pretty Floral-Printed Picks"
+		}
+	],
+	"video" : [
+		{
+			"kicker" : "Entertaining",
+			"img" : {
+				"src" : "http://d.pr/i/16gNE+",
+				"alt" : "How to Entertain on a Budget"
+			},
+			"title" : "How to Entertain on a Budget",
+			"dek" : "Want to entertain friends without spending a fortune? These tips will save money without looking like you’re skimping."
+		}
+	],
+	"video-blocks" : [
+		{
+			"block-class" : "block-flipped center has-video",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/372x/n/wqPcg/abc/y6ZwH/wqPcg-wZS-225x150.jpg",
+				"alt" : "Creating a Comfy Home"
+			},
+			"title" : "Creating a Comfy Home"
+		},
+		{
+			"block-class" : "block-flipped center has-video",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uaOLx/abc/ztMof/uaOLx-wZS-225x150.jpg",
+				"alt" : "14 Living-Room and Dining-Room Makeovers"
+			},
+			"title" : "14 Living-Room and Dining-Room Makeovers"
+		},
+		{
+			"block-class" : "block-flipped center has-video",
+			"no-lazy" : true,
+			"is-lazy" : false,
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/3731/n/x33c0/abc/rQcfI/x33c0-wZS-225x150.jpg",
+				"alt" : "How to: Cook Like a Real Simple Editor"
+			},
+			"title" : "How to: Cook Like a Real Simple Editor"
+		}
+	],
+	"video-strip" : [
+		{
+			"block-class" : "block-flipped center has-video",
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/MG5u/a/qvWPH/2ZjxV/2gk3/qvWPH-wZS-275x155.jpg",
+				"alt" : "DIY Kitchen Cabinets"
+			},
+			"title" : "DIY Beautiful Kitchen Cabinets",
+			"runtime" : "3 min"
+		},
+		{
+			"block-class" : "block-flipped center has-video",
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/3731/n/wtUez/abc/rIm0M/wtUez-wZS-275x155.jpg",
+				"alt" : "Chef's Way, Real Way"
+			},
+			"title" : "Chef's Way, Real Way",
+			"runtime" : "2 min"
+		},
+		{
+			"block-class" : "block-flipped center has-video",
+			"is-video" : true,
+			"img" : {
+				"src": "http://images.outbrain.com/imageserver/v2/s/MYGt/n/uaGzT/abc/wsFwH/uaGzT-wZS-275x155.jpg",
+				"alt" : "Design Your Own Wallpaper"
+			},
+			"title" : "Design Your Own Wallpaper",
+			"runtime" : "3 min"
 		}
 	]
 }

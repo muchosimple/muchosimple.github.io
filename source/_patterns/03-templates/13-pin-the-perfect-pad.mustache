@@ -1,0 +1,89 @@
+<div class="page">
+  {{> organisms-header }}
+
+  <div class="main cf" role="main" aria-live="polite">
+
+    <div class="page-header bg--teal">
+      <div class="lc rel">
+        <span class="path--white logo--small center-block logo-eyebrow">{{> atoms-logo }}</span>
+        <h1 class="page-title center upper white">Pin the Perfect Pad</h1>
+        {{> molecules-presented-by }}
+      </div> <!-- /.lc -->
+    </div> <!-- /.page-header -->
+
+    <div class="lc cf">
+      <div class="pin-head">
+        <h2 class="lead-subtitle">Find inspiration for your home project. Everything you need to know, from stoves to floors, in one simple chart.</h2>
+        <div class="article-tools">
+          {{> molecules-social-share }}
+          {{> molecules-content-utility }}
+        </div> <!-- /.article-tools -->
+      </div> <!-- /.pin-head -->
+
+      <div class="pin-content rel">
+
+        <div class="shift-left--slim">
+          <div class="search-filters">
+            <nav class="nav-check-list nav-check-list--room check-group" data-filter-group="rooms">
+              <h4 class="upper nav-check-list-title js-toggle-parent text--l">Room <span class="arrow arrow--down"></span></h4>
+              <ul class="check-list">
+                <li class="cl-item"><input id="checkbox1" name="checkbox" type="checkbox" value=".bedroom"><label for="checkbox1"><span>{{> atoms-check }}</span> Bedroom</label></li>
+                <li class="cl-item"><input id="checkbox2" name="checkbox" type="checkbox" value=".dining-room"><label for="checkbox2"><span>{{> atoms-check }}</span> Dining Room</label></li>
+                <li class="cl-item"><input id="checkbox3" name="checkbox" type="checkbox" value=".living-room"><label for="checkbox3"><span>{{> atoms-check }}</span> Living Room</label></li>
+                <li class="cl-item"><input id="checkbox4" name="checkbox" type="checkbox" value=".den"><label for="checkbox4"><span>{{> atoms-check }}</span> Den</label></li>
+                <li class="cl-item"><input id="checkbox5" name="checkbox" type="checkbox" value=".office"><label for="checkbox5"><span>{{> atoms-check }}</span> Office</label></li>
+              </ul> <!-- /.check-list -->
+            </nav> <!-- /.nav-check-list -->
+            <nav class="nav-check-list nav-check-list--color check-group" data-filter-group="colors">
+              <h4 class="upper nav-check-list-title js-toggle-parent text--l">Color <span class="arrow arrow--down"></span></h4>
+              <ul class="check-list">
+                <li class="cl-item"><input id="checkbox6" name="checkbox" type="checkbox" value=".brown"><label for="checkbox6"><span class="path--white rounded pin-brown">{{> atoms-check }}</span> Brown</label></li>
+                <li class="cl-item"><input id="checkbox7" name="checkbox" type="checkbox" value=".beige"><label for="checkbox7"><span class="path--white rounded pin-beige">{{> atoms-check }}</span> Beige</label></li>
+                <li class="cl-item"><input id="checkbox8" name="checkbox" type="checkbox" value=".orange"><label for="checkbox8"><span class="path--white rounded pin-orange">{{> atoms-check }}</span> Orange</label></li>
+                <li class="cl-item"><input id="checkbox9" name="checkbox" type="checkbox" value=".blue"><label for="checkbox9"><span class="path--white rounded pin-blue">{{> atoms-check }}</span> Blue</label></li>
+                <li class="cl-item"><input id="checkbox10" name="checkbox" type="checkbox" value=".green"><label for="checkbox10"><span class="path--white rounded pin-green">{{> atoms-check }}</span> Green</label></li>
+              </ul> <!-- /.check-list -->
+            </nav> <!-- /.nav-check-list -->
+          </div> <!-- /.search-filters -->
+        </div> <!-- /.search-left--slim -->
+
+        <div class="shift-right--slim">
+          <div class="shift-right--slim-inner">
+            <div class="grid cf">
+              <div class="stamp">{{> atoms-ad-300x250 }}</div>
+              <div class="grid-item dining-room brown beige"><img src="http://placehold.it/300x450"></div>
+              <div class="grid-item den beige orange"><img src="http://placehold.it/300x300"></div>
+              <div class="grid-item office blue"><img src="http://placehold.it/300x400"></div>
+              <div class="grid-item dining-room orange"><img src="http://placehold.it/300x450"></div>
+              <div class="grid-item bedroom green beige"><img src="http://placehold.it/300x350"></div>
+              <div class="grid-item office orange blue"><img src="http://placehold.it/300x250"></div>
+              <div class="grid-item living-room brown"><img src="http://placehold.it/300x450"></div>
+              <div class="grid-item den blue"><img src="http://placehold.it/300x400"></div>
+              <div class="grid-item living-room orange green"><img src="http://placehold.it/300x450"></div>
+              <div class="grid-item den blue"><img src="http://placehold.it/300x450"></div>
+              <div class="grid-item office beige"><img src="http://placehold.it/300x350"></div>
+              <div class="grid-item dining-room green"><img src="http://placehold.it/300x500"></div>
+              <div class="grid-item bedroom brown beige green"><img src="http://placehold.it/300x400"></div>
+              <div class="grid-item den blue brown"><img src="http://placehold.it/300x450"></div>
+            </div> <!-- /.grid -->
+          </div> <!-- /.shift-right--slim-inner -->
+        </div> <!-- /.shift-right--slim -->
+
+        <div class="powered-by">
+          <a href="http://pinterest.com">
+            <span class="black text--s upper">Powered By</span><br>
+            <img src="../../images/svg/compressed/logo-pinterest.svg" alt="Pinterest logo">
+          </a>
+        </div> <!-- /.powered-by -->
+
+      </div> <!-- .pin-content -->
+
+    </div> <!-- /.lc -->
+  </div> <!-- /role=main -->
+
+  <!-- <div class="pager center pad-double-btm pad-top space-double-btm">
+    <a href="" class="btn load-more">Load More</a>
+  </div> --> <!-- /.pager -->
+
+  {{> organisms-footer }}
+</div> <!-- /.page -->

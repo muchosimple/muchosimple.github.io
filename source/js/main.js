@@ -1,6 +1,29 @@
 /* MAIN JS
 --------------------------------------------*/
 
+// check window width
+var getWidth = function() {
+  var width;
+  if (document.body && document.body.offsetWidth) {
+    width = document.body.offsetWidth;
+  }
+  if (document.compatMode === 'CSS1Compat' &&
+      document.documentElement &&
+      document.documentElement.offsetWidth ) {
+     width = document.documentElement.offsetWidth;
+  }
+  if (window.innerWidth) {
+     width = window.innerWidth;
+  }
+  return width;
+};
+window.onload = function() {
+  getWidth();
+};
+window.onresize = function() {
+  getWidth();
+};
+
 (function($){
 
   // BASE SETUP ------------------------------------//
@@ -17,30 +40,6 @@
       px900 = 900,
       px1000 = 1000,
       pxmax = 1320;
-
-  // check window width
-  var getWidth = function() {
-    var width;
-    if (document.body && document.body.offsetWidth) {
-      width = document.body.offsetWidth;
-    }
-    if (document.compatMode === 'CSS1Compat' &&
-        document.documentElement &&
-        document.documentElement.offsetWidth ) {
-       width = document.documentElement.offsetWidth;
-    }
-    if (window.innerWidth) {
-       width = window.innerWidth;
-    }
-    return width;
-  };
-  window.onload = function() {
-    getWidth();
-  }
-  window.onresize = function() {
-    getWidth();
-  }
-
 
   // SITE SPECIFIC JS ------------------------------//
 
@@ -63,6 +62,16 @@
     if ($this.data('remove')) {
       $('.' + $this.data('remove')).removeClass($this.data('remove'));
     }
+
+    // If the toggle element trigger is opening a modal, add the .has-close
+    // class to the trigger and the close icon will also toggle the target element.
+    if ($this.hasClass('has-close')) {
+      $toggled.addClass($togglePrefix + '-is-active--with-close');
+      $('.js-close').click(function(){
+        $this.removeClass($togglePrefix + '-is-active');
+        $toggled.removeClass($togglePrefix + '-is-active');
+      });
+    }
   };
 
   /*
@@ -84,6 +93,10 @@
     e.preventDefault();
     e.stopPropagation();
     toggleClasses($(this));
+  });
+  // Allow links inside elements with .js-toggle to be clicked.
+  $('.js-toggle a').on('click', function(e) {
+    e.stopPropagation();
   });
 
   // Toggle parent class
@@ -141,6 +154,33 @@
     });
   });
 
+  // Basic activate overlay
+  var overlayOn = function() {
+    $('.overlay').addClass('overlay-active');
+  };
+  var overlayOff = function() {
+    $('.overlay').removeClass('overlay-active');
+  };
+
+  var viewportWidth = $(window).width();
+  var viewportHeight = $(window).height();
+
+  if (viewportWidth >= 700 && viewportHeight >= 750) {
+    // Open overlay
+    $('.js-open-modal').on('click', function(e) {
+      e.preventDefault();
+      $('.modal').fadeIn();
+      overlayOn();
+    });
+
+    // Close overlay
+    $('.js-close').on('click', function(e) {
+      e.preventDefault();
+      $('.modal').fadeOut();
+      overlayOff();
+    });
+  }
+
   // Anytime the overlay is active, click on it or an element with '.js-close'
   // to close it.
   var closeOverlay = function() {
@@ -174,15 +214,27 @@
   });
 
   // Sticky right rail ad
-  if (getWidth() >= 801) {
-    $(window).load(function() {
+  $(window).load(function() {
+    if (getWidth() >= 800) {
+      var mindElement = '.header-inner';
+      // If leaderboard is sticky, mind that instead.
+      if ($('.ad-sticky--leaderboard').length) {
+        mindElement = '.header';
+      }
       $('.ad-sticky').fixTo('.main', {
         className: 'sticky-is-active',
-        mind: '.header-inner',
+        mind: mindElement,
         useNativeSticky: false
       });
-    });
-  }
+      if ($(window).height() >= 650) {
+        $('.ad-sticky--leaderboard').fixTo('.page', {
+          className: 'sticky-is-active',
+          mind: '.header-inner',
+          useNativeSticky: false
+        });
+      }
+    }
+  });
 
   // Alternate Sticky Methods
   // Sticky header
@@ -196,6 +248,135 @@
     $('.header').addClass('header-is-sticky');
   }).on('sticky_kit:unstick', function(e) {
     $('.header').removeClass('header-is-sticky');
+  });
+
+  // FitVids
+  if ($.fn.fitVids) {
+    $('.block-video, .article, .fitvid, .video-player').fitVids();
+  }
+
+  // 5-star Rating
+  if ($('.five-star').length) {
+    $('.five-star').find('.star').click(function() {
+      if (!$(this).parents('.five-star').hasClass('rated')) {
+        $(this).parent().removeClass().addClass('active-stars-' + parseInt($(this).index() + 1));
+        $(this).parents('.five-star').addClass('rated');
+      }
+    });
+  }
+
+  // Home Tabbed Carousel
+  var $tabbedCarousel = $('.js-carousel--tabbed');
+
+  // Owl gallery (smaller viewports)
+  function initHomeCarouselSmall() {
+    $tabbedCarousel.show().owlCarousel({
+      autoPlay: 4000,
+      slideSpeed: 300,
+      paginationSpeed: 400,
+      singleItem: true,
+      pagination: true,
+      stopOnHover: true,
+      beforeMove: function(el) {
+        //el.find('img.lazy').show().lazyload();
+      }
+    });
+  }
+
+  // Custom tabbed gallery (wider viewports)
+  function initHomeCarouselWide() {
+    var interval = 4000,
+        carouselTimer = setInterval(animateCarousel, interval);
+
+    $tabbedCarousel.find('.c-item:first').addClass('this-is-active');
+    function animateCarousel(){
+      $tabbedCarousel.find('.c-item').removeClass('this-is-active');
+      $tabbedCarousel.find('.c-item:first').removeClass('this-is-active').next('.c-item').addClass('this-is-active').end().appendTo('.js-carousel--tabbed');
+      //$tabbedCarousel.find('img.lazy').lazyload();
+    }
+    // Disable animation when tabs are interacted with.
+    $tabbedCarousel.find('.c-tab').hover(function(e){
+      clearInterval(carouselTimer);
+      $tabbedCarousel.find('.c-item').removeClass('this-is-active');
+      $(this).parents('.c-item').addClass('this-is-active');
+    });
+    // On resize, if the viewport is below 500px, clear the interval and
+    // remove active classes.
+    $(window).resize(function(){
+      if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
+        clearInterval(carouselTimer);
+        $tabbedCarousel.find('.c-item').removeClass('this-is-active');
+      }
+    });
+  }
+
+  if ($tabbedCarousel.length) {
+    // Init the carousel.
+    if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
+      initHomeCarouselSmall();
+    }
+    else {
+      initHomeCarouselWide();
+    }
+
+    // Update carousel functionality on window resize.
+    $(window).resize(function(){
+      if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
+        // Start the Owl carousel.
+        initHomeCarouselSmall();
+      }
+      else {
+        // Start the tabbed carousel and destroy the Owl carousel.
+        $tabbedCarousel.data('owlCarousel').destroy();
+        initHomeCarouselWide();
+      }
+    });
+  }
+
+  // 3 Up Carousel
+  var $carousel3up = $('.js-carousel--3up');
+
+  // Owl gallery for 3up carousel
+  function initCarousel3up() {
+    var galleryPrev = '<a href="" class="icon icon-arrow-left no-bg"><span class="is-vishidden">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M344.5 5.3l31.7 31.6L163.1 250l213.1 213.1-31.7 31.6L99.8 250z"/></svg></a>';
+    var galleryNext = '<a href="" class="icon icon-arrow-right no-bg"><span class="is-vishidden">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path d="M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z"/></svg></a>';
+
+    $carousel3up.show().owlCarousel({
+      autoPlay: 4000,
+      slideSpeed: 300,
+      lazyLoad: true,
+      paginationSpeed: 400,
+      pagination: false,
+      navigation: true,
+      stopOnHover: true,
+      navigationText: [galleryPrev, galleryNext],
+      itemsCustom: [[0,2], [730,3], [800,2], [930,3]]
+    });
+  }
+  if ($carousel3up.length && getWidth() > 700) {
+    initCarousel3up();
+    // Update carousel functionality on window resize.
+    $(window).resize(function(){
+      if (getWidth() > 700) {
+        // Start the Owl carousel.
+        initCarousel3up();
+      }
+      else {
+        // Start the tabbed carousel and destroy the Owl carousel.
+        $carousel3up.data('owlCarousel').destroy();
+        initHomeCarouselWide();
+      }
+    });
+  }
+
+  $(window).scroll(function() {
+    // Pop up element from footer.
+    if ($(window).scrollTop() > 250 && getWidth() < 800) {
+      $('.peeky-ad').addClass('active');
+    }
+    if ($('.main').height() < $(window).scrollTop() || $(window).scrollTop() < 250) {
+      $('.peeky-ad').removeClass('active');
+    }
   });
 
   // Smooth scroll to anchor

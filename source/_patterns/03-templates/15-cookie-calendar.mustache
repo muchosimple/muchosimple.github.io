@@ -1,0 +1,111 @@
+<div class="page">
+	{{> organisms-header }}
+	<div class="main cf lc" role="main" aria-live="polite">
+
+		<div class="cookie-calendar cc--blue">
+			<header class="cc__header article-header cf center">
+				<h1 class="cc__headline lead-headline pink" itemprop="headline">A Cookie A Day&hellip;</h1>
+				<h2 class="cc__lead-subtitle lead-subtitle" itemprop="alternativeHeadline">Channel the deliciousness of carrot cake by sandwiching cream cheese frosting between two cookies.</h2>
+				<div class="center cc__sponsored-by space-btm">
+					<a href="">
+						<span class="text--s gray lower">Sponsored by</span> <br>
+						<img src="http://placehold.it/170x30" alt="Sponsor ad">
+					</a>
+				</div> <!-- /.cc__sponsored-by -->
+				<div class="cc__article-tools article-tools">
+					{{> molecules-social-share }}
+				</div> <!-- /.article-tools -->
+				<div class="cc__months">
+					<div class="cc__months-inner">
+						<a href="" class="cc__month cc__month--active">November</a> <a href="#December" class="cc__month">December</a>
+					</div> <!-- /.cc__months-inner -->
+				</div> <!-- /.cc__months -->
+			</header> <!-- /.cc__header -->
+
+			<div class="cc__cookies">
+				<ul class="cc__cookie-list js-cc__cookie-list cf js-gallery-grid">
+					{{# cookies }}<li class="cc__cookie-list-item js-gi js-open-modal js-open-cc-modal {{ cc-item-class }}">
+						<div class="cc__block">
+							<div class="cc__block-inner rel">
+								<a href="#" class="cc__number js-toggle-parent {{ cc-number-class }}">{{ number }}</a>
+								<img class="lazy--hidden" data-original="{{ img.src2 }}" alt="{{ img.alt }}">
+								<div class="img-wrap">
+									<div class="has-social">
+										{{> atoms-image }}
+										<div class="cc__social-wrap">
+											<div class="cc__social social-share">
+												<ul class="ss-list">
+													<li class="ss-item">
+														<a class="ss-link" href="{{ url }}">
+															<span class="no-bg icon rounded icon-facebook icon--medium">{{> atoms-facebook }}</span>
+														</a> <!-- /.ss-link -->
+													</li> <!-- /.ss-item -->
+													<li class="ss-item">
+														<a class="ss-link" href="{{ url }}">
+															<span class="no-bg icon rounded icon-twitter icon--medium">{{> atoms-twitter }}</span>
+														</a> <!-- /.ss-link -->
+													</li> <!-- /.ss-item -->
+													<li class="ss-item">
+														<a class="ss-link" href="{{ url }}">
+															<span class="no-bg icon rounded icon-pinterest icon--medium">{{> atoms-pinterest }}</span>
+														</a> <!-- /.ss-link -->
+													</li> <!-- /.ss-item -->
+												</ul> <!-- /.ss-list -->
+											</div> <!-- /.social-share -->
+										</div> <!-- /.cc__social-wrap -->
+									</div> <!-- /.has-social -->
+								</div> <!-- /.img-wrap -->
+								<a href="#" class="cc__corner cc__corner--more js-toggle-parent"><span class="cc__corner-label">See More</span></a>
+								<div class="cc__block-text">
+									<div class="cc__block-text-inner rel">
+										<span class="cc__kicker">{{ cc-date }}</span>
+										<h2 class="cc__title"><a href="#">{{ cc-name }}</a></h2>
+										<div class="cc__dek">
+											<div class="p"><p>{{{ cc-desc }}}</p></div>
+											<a href="" class="cc__cta">Get the recipe</a>
+										</div> <!-- /.cc__dek -->
+										<span class="cc__credit">Photos by Michelle Smith</span>
+									</div> <!-- /.cc__block-text-inner -->
+								</div> <!-- /.cc__block-text -->
+								<a href="#" class="cc__corner cc__corner--less js-toggle-parent"><span class="cc__corner-label">Back</span></a>
+							</div> <!-- /.cc__block-inner -->
+						</div> <!-- /.cc__block -->
+					</li>{{/ cookies }}
+
+				</ul> <!-- /.cc__cookie-list -->
+				<span class="cc__credit--btm pad-top black text--s">Photos by Michelle Smith</span>
+			</div> <!-- /.cc__cookies -->
+
+		</div> <!-- /.cookie-calendar -->
+
+		<div class="lc-inner--m">
+			{{> organisms-content-footer }}
+		</div> <!-- /.lc-inner--m -->
+
+	</div><!-- /role=main -->
+	{{> organisms-footer }}
+</div> <!-- /.page -->
+
+{{# gallery }}
+	<div class="cc__gallery gallery cc--blue hide modal">
+		<div class="gallery__modal">
+			<div class="rel cf">
+				<span class="overlay-close icon icon--medium icon__x js-close" title="Close">{{> atoms-x }}</span>
+				<div class="shift-left--900">
+					<div class="shift-left-inner--900">
+						<div class="cc__slides js-cc__slides slides js-slides">
+							{{# slides }}
+								{{> molecules-gallery-slide }}
+							{{/ slides }}
+						</div> <!-- /.cc__slides -->
+					</div> <!-- /.shift-left-inner--900 -->
+				</div> <!-- /.shift-left--900 -->
+				<div class="shift-right--900 gm__aside">
+					<div class="ad-block ad-300x6000 block js-ad-refresh">
+						<a href=""><img src="http://placehold.it/300x250"></a>
+					</div> <!-- /.ad-300x600 -->
+				</div> <!-- /.shift-right--900 -->
+			</div> <!-- /.rel -->
+		</div> <!-- /.gallery__modal -->
+	</div> <!-- /.cc__gallery -->
+{{/ gallery }}

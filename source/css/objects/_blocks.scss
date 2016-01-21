@@ -1,0 +1,614 @@
+
+// Block
+.block {
+  overflow: hidden;
+  p:last-child {
+    margin-bottom: 0;
+  }
+  .byline {
+    span {
+      font-weight: bold;
+      font-size: rem(12);
+    }
+  }
+  .kicker {
+    display: block;
+    margin-bottom: rem(5);
+  }
+}
+.b-text {
+  .kicker {
+    margin-top: $space-half;
+  }
+}
+
+.has-video .img-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.b-title,
+.b-title a,
+.recirc-headline a {
+  color: $black;
+  font-weight: normal;
+  font-size: rem(21);
+}
+.bigger-title {
+  .b-title,
+  .b-title a {
+    font-size: rem(26);
+  }
+}
+// Block title hover styles
+// Blocks that are wrapped in an <a>
+.block a:hover {
+  .b-title {
+    color: $pink;
+    span {
+      @include underline;
+    }
+  }
+  .icon-play {
+    opacity: 1;
+  }
+}
+// Blocks where the <a> is inside the .b-title or .recirc-headline
+.b-title a:hover,
+.recirc-headline a:hover {
+  color: $pink;
+  span {
+    @include underline;
+  }
+}
+
+// Block Thumbnail with Headline
+.block-thumb {
+  width: 100%;
+  .b-inner {
+    overflow: hidden;
+  }
+  &.table-layout {
+    @include table-layout(50%, 50%);
+  }
+  &.table-layout--more-text {
+    @include table-layout(26%, 74%);
+    @media (min-width: $px600) and (max-width: $px900) {
+      @include table-layout(30%, 70%);
+    }
+  }
+}
+
+.block-thumb-dek {
+  .alt-heading {
+    margin-bottom: $space-half;
+    @include mq($px450, max) {
+      font-size: rem(23);
+    }
+  }
+}
+
+// Block with flipped copy and image
+.block--flipped {
+  .b-text {
+    float: right;
+  }
+  .b-thumb {
+    float: left;
+  }
+}
+// Featured Stories headband subscription block (at the end)
+.subscription-block {
+  &.table-layout {
+    .b-thumb {
+      max-width: rem(100);
+    }
+    @include table-layout(28%, 72%);
+  }
+}
+
+// Block Headline Summary
+.block-headline-summary {
+  a {
+    display: block;
+    padding: $pad-half;
+  }
+}
+
+// Block Inset
+.block-inset {
+  position: relative;
+  .headline {
+    font-size: rem(28);
+    @include rem(margin-bottom, 10);
+  }
+  .b-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba($black, .35);
+    color: $white;
+    padding: rem(20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .unify {
+    position: relative;
+  }
+  .byline {
+    color: $white;
+    font-size: rem(14);
+  }
+  .kicker {
+    opacity: .75;
+    @include rem(margin-bottom, 14);
+  }
+}
+
+// Block Headline
+.block-headline {
+  .b-title {
+    font-weight: bold;
+  }
+  .date-city {
+    color: $gray;
+    font-size: rem(13);
+  }
+}
+
+// Listicle Blocks
+.block-listicle-item {
+  position: relative;
+  margin-bottom: rem(45);
+  overflow: visible;
+  .has-credit {
+    position: relative;
+    .credit {
+      position: absolute;
+      right: 0;
+    }
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .b-thumb {
+    margin-bottom: rem(30);
+    text-align: center;
+    @include mq($micro-break) {
+      width: 50%;
+      float: right;
+      padding-top: $pad-half;
+      margin-bottom: 0;
+    }
+    @include mq($px700) {
+      padding-top: 0;
+    }
+    @include mq($large-break) {
+      width: 53%;
+    }
+  }
+  .img-wrap {
+    display: inline-block;
+    width: 100%;
+  }
+  .b-head {
+    display: table;
+    width: 100%;
+    margin-bottom: rem(6);
+    @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+      display: inline;
+    }
+  }
+  .number--large {
+    display: table-cell;
+    vertical-align: middle;
+    @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+      float: left;
+      margin-top: rem(10);
+    }
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      margin-top: rem(30);
+    }
+    @include mq($large-break) {
+      margin-top: rem(40);
+    }
+    @include mq($larger-break) {
+      margin-top: rem(80);
+    }
+  }
+  .b-title {
+    margin-bottom: $space-half;
+    display: table-cell;
+    vertical-align: middle;
+    @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+      margin-top: rem(10);
+      margin-bottom: rem(4);
+      padding-top: 0;
+      padding-bottom: 0;
+      display: block;
+      width: 50%;
+      float: left;
+      margin-right: rem(-100);
+      padding-right: rem(110);
+    }
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      margin-top: rem(30);
+    }
+    @include mq($large-break) {
+      width: 46%;
+      margin-top: rem(40);
+    }
+    @include mq($larger-break) {
+      margin-top: rem(80);
+    }
+  }
+  .b-title {
+    font-size: rem(26);
+    font-weight: bold;
+  }
+  .b-text {
+    @include mq($micro-break) {
+      padding-right: $pad;
+      width: 50%;
+    }
+    @include mq($large-break) {
+      padding-right: $pad-and-half;
+      width: 47%;
+    }
+  }
+  &.block--no-img {
+    .b-title {
+      width: auto;
+      float: none;
+    }
+    .b-text {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+}
+// Blocks of mostly text with some smaller images
+.block-article-list-item,
+.daily-finds-list-type {
+  margin-bottom: rem(70);
+  .b-title,
+  .number--large {
+    margin-top: 0;
+  }
+  .b-title {
+    @media (min-width: $px600) and (max-width: $medium-break), (min-width: $px950) {
+      width: 55%;
+    }
+    @include mq($large-break) {
+      width: 60%;
+    }
+    @include mq($larger-break) {
+      width: 65%;
+    }
+  }
+  .b-text {
+    @include mq($micro-break) {
+      width: 55%;
+    }
+    @include mq($large-break) {
+      width: 60%;
+    }
+    @include mq($larger-break) {
+      width: 65%;
+    }
+  }
+  .b-thumb {
+    @include mq($micro-break) {
+      width: 45%;
+    }
+    @include mq($large-break) {
+      width: 40%;
+    }
+    @include mq($larger-break) {
+      width: 35%;
+    }
+  }
+}
+// Daily Find list
+.daily-finds-list-type {
+  margin-bottom: 0;
+  .number--large {
+    display: block;
+    float: left;
+    margin-right: $space;
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      position: absolute;
+      left: 0;
+      top: rem(50);
+      z-index: 10;
+    }
+  }
+  .b-head {
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      display: inline;
+    }
+  }
+  .b-title {
+    display: block;
+    padding-left: rem(90);
+    @include mq($px600) {
+      width: auto;
+    }
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      float: right;
+      width: 50%;
+      padding-right: 0;
+      margin-right: 0;
+      margin-top: $space;
+      padding-left: $pad;
+      padding-top: $pad-and-half;
+    }
+    @include mq($large-break) {
+      padding-right: 0;
+      padding-left: $pad-and-half;
+    }
+  }
+  .b-thumb {
+    @include mq($micro-break) {
+      float: left;
+    }
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      width: 50%;
+      padding-left: rem(80);
+    }
+  }
+  .b-text {
+    @include mq($micro-break) {
+      float: right;
+      padding-right: 0;
+      padding-left: $pad;
+      padding-top: $pad-and-half;
+    }
+    @include mq($large-break) {
+      padding-right: 0;
+      padding-left: $pad-and-half;
+    }
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      padding-top: rem(6);
+      width: 50%;
+    }
+  }
+}
+// Use flexbox to align number and title.
+.flexbox {
+  .daily-finds-list-type {
+    .b-head {
+      @media (max-width: $px700), (min-width: $medium-break) and (max-width: $px950) {
+        @include flexbox;
+        @include align-items(center);
+      }
+    }
+    .b-title {
+      @media (max-width: $px700), (min-width: $medium-break) and (max-width: $px950) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+// Block Social Feed
+.block-social-feed {
+  width: rem(190);
+  height: rem(190);
+  overflow: hidden;
+  position: relative;
+  border: $border-style-light;
+  margin-top: rem(5);
+  @include center-block;
+  .b-content {
+
+  }
+  .b-text {
+    padding: $pad-half;
+  }
+  .b-link {
+    display: block;
+  }
+  p {
+    font-family: $serif;
+    font-size: rem(14);
+    line-height: 1.45;
+    margin: 0;
+    a {
+      color: $blue-light;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: $blue;
+      }
+    }
+  }
+}
+.feed-pinterest {
+  .pin-account {
+    display: table;
+    width: 100%;
+    margin-bottom: rem(6);
+  }
+  .pin-img {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+}
+.feed-facebook {
+  overflow: hidden;
+}
+
+// Block Videos
+.block-video {
+  margin-bottom: rem(45);
+  .b-vid {
+    margin-bottom: rem(6);
+  }
+}
+
+// Special Block: Meal Planner
+.block--meal-planner {
+  margin-bottom: rem(45);
+  @include mq($micro-break) {
+    @include table-layout(45%, 55%);
+  }
+  .b-inner {
+    &:hover {
+      .b-title {
+        color: $black;
+      }
+    }
+  }
+  .b-thumb {
+    text-align: center;
+    margin-bottom: rem(6);
+  }
+  .b-title {
+    text-transform: lowercase;
+    margin-bottom: rem(6);
+    font-size: rem(26);
+    line-height: 1.15;
+    span span {
+      color: $bright-orange;
+    }
+  }
+  p {
+    font-size: rem(15);
+    line-height: 1.4;
+  }
+}
+
+// Special Block: Checklist App
+.block--checklist-app {
+  margin-bottom: $space;
+  @include mq($micro-break) {
+    @include table-layout(25%, 75%);
+  }
+  .b-thumb {
+    text-align: center;
+    margin-bottom: $space-half;
+  }
+  p, li {
+    font-size: rem(16);
+    line-height: 1.4;
+  }
+  li {
+    margin-bottom: rem(6);
+  }
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+// Tip
+.block-tip {
+  max-width: rem(228);
+  @include center-block;
+  padding-top: $pad;
+  margin-bottom: rem(19);
+  .kicker {
+    margin-bottom: $space-half;
+  }
+}
+
+// Content Modules (Home & Channel stacked blocks)
+.content-module {
+  margin-bottom: rem(30);
+  @include center-block;
+  &:not(.stacked) {
+    max-width: rem(320);
+    @include mq($px450) {
+      @include table-layout(40%, 60%);
+      max-width: none;
+    }
+  }
+  &.table-layout--more-text {
+    max-width: none;
+    @media (max-width: $px450), (min-width: $px800) {
+      @include table-layout(35%, 65%);
+    }
+    @media (min-width: $px450) {
+      @include table-layout(30%, 70%);
+    }
+    @media (min-width: $px600) and (max-width: $px700), (min-width: $px900) {
+      @include table-layout(25%, 75%);
+    }
+    @media (min-width: $px700) and (max-width: $px800), (min-width: $px1100) {
+      @include table-layout(22%, 78%);
+    }
+    @media (min-width: $px1200) {
+      @include table-layout(20%, 80%);
+    }
+  }
+  .kicker {
+    margin-top: 0;
+  }
+  .dek p {
+    font-size: rem(18);
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      font-size: rem(20);
+    }
+  }
+  .b-title {
+    margin-bottom: $space-half;
+    @media (min-width: $px700) and (max-width: $medium-break), (min-width: $px950) {
+      font-size: rem(26);
+    }
+  }
+}
+
+// Media Block (with Video)
+.block-media {
+  text-align: center;
+  .b-text {
+    margin-bottom: rem(20);
+    max-width: rem(560);
+    padding-top: $pad-half;
+    @include center-block;
+  }
+  .b-title {
+    font-size: rem(26);
+    margin-bottom: rem(8);
+  }
+}
+
+// Search Result
+.block-search-result {
+  margin-bottom: $space;
+  @include mq($px450) {
+    margin-bottom: rem(24);
+  }
+  .b-title {
+    margin-bottom: rem(4);
+    @media (min-width: $px1050) {
+      font-size: rem(26);
+    }
+  }
+  p {
+    color: $gray-med-2;
+    line-height: 1.35;
+    @media (max-width: $px1050) {
+      font-size: rem(16);
+    }
+  }
+}
+
+// Sponsored Block (currently being used on Video blocks)
+.block__sponsored {
+  padding: rem(15);
+  border: 1px solid $pink;
+  @include mq($large-break) {
+    width: calc(100% + 30px);
+    margin-left: rem(-15);
+  }
+  .ad__presented-by {
+    margin-bottom: 0;
+  }
+}

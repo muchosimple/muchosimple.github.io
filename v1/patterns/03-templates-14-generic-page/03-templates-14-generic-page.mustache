@@ -1,0 +1,47 @@
+&lt;div class=&quot;page&quot;&gt;
+	{{&gt; organisms-header }}
+	&lt;div class=&quot;main cf lc&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
+
+		{{# has-sidebar }}
+		&lt;div class=&quot;primary&quot;&gt;
+			&lt;section class=&quot;primary-inner&quot;&gt;
+		{{/ has-sidebar }}
+				&lt;article class=&quot;article article-standard {{ article-class }} {{^ has-sidebar }}pad-double-btm{{/ has-sidebar }}&quot;&gt;
+
+					&lt;header class=&quot;article-header {{ header-class }} cf&quot;&gt;
+						&lt;h1 class=&quot;lead-headline&quot;&gt;Generic Page Title&lt;/h1&gt;
+						{{# has-social }}
+						&lt;div class=&quot;article-tools&quot;&gt;
+							{{&gt; molecules-social-share }}
+						&lt;/div&gt; &lt;!-- /.article-tools --&gt;
+						{{/ has-social }}
+					&lt;/header&gt; &lt;!-- /.article-header --&gt;
+
+					&lt;section class=&quot;section article-body text&quot;&gt;
+
+						{{^ has-generic-content }}
+							&lt;p&gt;Generic Page content.&lt;/p&gt;
+						{{/ has-generic-content }}
+
+						{{# has-generic-content }}
+							{{&gt; organisms-generic-content }}
+						{{/ has-generic-content }}
+
+					&lt;/section&gt; &lt;!-- /.article-body --&gt;
+
+				&lt;/article&gt; &lt;!-- /.article-standard --&gt;
+
+			{{# has-sidebar }}
+			&lt;/section&gt; &lt;!-- /.primary-inner --&gt;
+		&lt;/div&gt; &lt;!-- /.primary --&gt;
+		{{/ has-sidebar }}
+
+		{{# has-sidebar }}
+			&lt;div class=&quot;secondary&quot;&gt;
+				{{&gt; organisms-sidebar }}
+			&lt;/div&gt; &lt;!-- /.secondary --&gt;
+		{{/ has-sidebar }}
+
+	&lt;/div&gt;&lt;!-- /role=main --&gt;
+	{{&gt; organisms-footer }}
+&lt;/div&gt; &lt;!-- /.page --&gt;

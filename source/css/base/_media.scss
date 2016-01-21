@@ -1,0 +1,29 @@
+/*------------------------------------*\
+		$MEDIA ELEMENTS
+\*------------------------------------*/
+
+// Flexible Media
+img, video, object, svg {
+	max-width: 100%;
+	height: auto;
+}
+svg {
+	max-height: 100%;
+	width: 99.9% //FF cutting off fix.
+}
+iframe {
+	//margin-bottom: $space;
+}
+figure {
+	margin-bottom: $space;
+	img {
+		//margin-bottom: $space-half;
+	}
+}
+figcaption {
+	font-style: italic;
+}
+
+.lazy {
+	display: none;
+}

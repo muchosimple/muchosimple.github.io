@@ -1,27 +1,91 @@
 <div class="block block-thumb {{ block-class }}">
-	<a href="{{ url }}" class="b-inner">
-		<div class="b-thumb">
-			<div class="img-wrap">{{> atoms-image }}</div>
-		</div> <!-- /.b-thumb -->
-		<div class="b-text">
+  {{# kicker-top }}
+    {{> molecules-kicker }}
+  {{/ kicker-top }}
+
+  {{# kicker-btm }}
+  <div class="b-inner">
+  {{/ kicker-btm }}
+  {{^ kicker-btm }}
+  <a href="{{ url }}" class="b-inner">
+  {{/ kicker-btm }}
+
+    <div class="b-thumb">
+
+      {{# kicker-btm }}
+      <a href="{{ url }}">
+      {{/ kicker-btm }}
+
+      <div class="img-wrap">
+        {{# picturefill }}
+          {{> atoms-picturefill }}
+        {{/ picturefill }}
+        {{^ picturefill }}
+          {{> atoms-image }}
+        {{/ picturefill }}
+
+        {{# is-video }}
+          <span class="icon icon-play {{ video-icon-class }} rounded">{{> atoms-play }}</span>
+        {{/ is-video}}
+
+      </div> <!-- /.img-wrap -->
+
+      {{# kicker-btm }}
+      </a>
+      {{/ kicker-btm }}
+
+    </div> <!-- /.b-thumb -->
+    <div class="b-text">
       {{# date }}
         {{> atoms-time }}
       {{/ date }}
-      {{# kicker }}
-        {{> molecules-kicker }}
-      {{/ kicker }}
       {{# number }}
         <span class="rounded number">{{ number }}</span>
       {{/ number }}
-			<h3 class="b-title"><span>{{{ title }}}</span></h3>
+
+      {{# kicker-btm }}
+        {{> molecules-kicker }}
+        {{# is_sponsored }}
+          {{> molecules-sponsor }}
+        {{/ is_sponsored }}
+      {{/ kicker-btm }}
+
+      {{# kicker-btm }}
+      <a href="{{ url }}">
+      {{/ kicker-btm }}
+
+      <h3 class="b-title {{ title-class }}"><span>{{{ title }}}</span></h3>
+
+      {{# kicker-btm }}
+      </a>
+      {{/ kicker-btm }}
+
       {{# byline }}
         {{> molecules-byline }}
       {{/ byline }}
       {{# dek }}
-      <div class="dek">
-        <p>{{ dek }}</p>
+      <div class="dek {{ dek-class }}">
+        <p>{{{ dek }}}</p>
       </div> <!-- /.dek -->
       {{/ dek }}
-		</div> <!-- /.b-text -->
-	</a> <!-- /.b-inner -->
+      {{# cta }}
+        <span class="cta">{{ cta }}</span>
+      {{/ cta }}
+
+      {{# has-presented-by }}
+        {{> atoms-presented-by }}
+      {{/ has-presented-by }}
+
+      {{# runtime }}
+        <span class="light runtime {{ runtime-class }}">({{ runtime }})</span>
+      {{/ runtime }}
+    </div> <!-- /.b-text -->
+
+  {{# kicker-btm }}
+  </div> <!-- /.b-inner -->
+  {{/ kicker-btm }}
+  {{^ kicker-btm }}
+  </a> <!-- /.b-inner -->
+  {{/ kicker-btm }}
+
 </div> <!-- /.block-thumb -->

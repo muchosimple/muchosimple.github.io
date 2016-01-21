@@ -1,0 +1,240 @@
+&lt;div class=&quot;page&quot;&gt;
+	{{&gt; organisms-header }}
+	&lt;div class=&quot;main cf lc&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
+
+		{{^ is-single-video }}
+		&lt;div class=&quot;shift-left--700 no-pad-btm no-space-btm&quot;&gt;
+			&lt;section class=&quot;shift-left--inner--700 no-pad-btm&quot;&gt;
+		{{/ is-single-video }}
+
+				&lt;article class=&quot;article article-standard {{ article-class }} article__video&quot; itemscope itemtype=&quot;http://schema.org/Article&quot;&gt;
+
+					&lt;div class=&quot;video-player space-btm&quot;&gt;
+						&lt;div class=&quot;space-btm&quot;&gt;
+							&lt;div id=&quot;video__container&quot; class=&quot;video__outer-container&quot;&gt;
+
+								&lt;!-- Start of Brightcove Player --&gt;
+
+								&lt;div style=&quot;display:none&quot;&gt;&lt;/div&gt;
+
+									&lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot; src=&quot;http://admin.brightcove.com/js/BrightcoveExperiences.js&quot;&gt;&lt;/script&gt;
+
+									&lt;object id=&quot;myExperience1754276205001&quot; class=&quot;BrightcoveExperience&quot;&gt;
+										&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;
+										&lt;param name=&quot;width&quot; value=&quot;480&quot; /&gt;
+										&lt;param name=&quot;height&quot; value=&quot;270&quot; /&gt;
+										&lt;param name=&quot;playerID&quot; value=&quot;1756040703001&quot; /&gt;
+										&lt;param name=&quot;playerKey&quot; value=&quot;AQ~~,AAABmA9XpXk~,-Kp7jNgisrc05QYSNxkzqM1X9GtvaqWM&quot; /&gt;
+										&lt;param name=&quot;isVid&quot; value=&quot;true&quot; /&gt;
+										&lt;param name=&quot;isUI&quot; value=&quot;true&quot; /&gt;
+										&lt;param name=&quot;dynamicStreaming&quot; value=&quot;true&quot; /&gt;
+										&lt;param name=&quot;@videoPlayer&quot; value=&quot;1754276205001&quot; /&gt;
+											&lt;!-- &lt;param name=&quot;forceHTML&quot; value=&quot;true&quot; /&gt; --&gt;
+										&lt;!-- smart player api params --&gt;
+										&lt;param name=&quot;includeAPI&quot; value=&quot;true&quot; /&gt;
+										&lt;param name=&quot;showNoContentMessage&quot; value=&quot;true&quot; /&gt;
+										&lt;param name=&quot;templateLoadHandler&quot; value=&quot;onTemplateLoad&quot; /&gt;
+										&lt;param name=&quot;templateReadyHandler&quot; value=&quot;onTemplateReady&quot; /&gt;
+									&lt;/object&gt;
+									&lt;script type=&quot;text/javascript&quot;&gt;brightcove.createExperiences();&lt;/script&gt;
+
+									&lt;!-- End of Brightcove Player --&gt;
+
+								&lt;/div&gt; &lt;!-- /.video__outer-container --&gt;
+
+							&lt;script type=&quot;text/javascript&quot;&gt;
+								var player,
+										APIModules,
+										videoPlayer,
+										experienceModule;
+
+								// utility
+								logit = function (context, message) {
+									if (console) {
+										console.log(context, message);
+									}
+								};
+
+								function onTemplateLoad(experienceID) {
+									logit(&quot;EVENT&quot;, &quot;onTemplateLoad&quot;);
+									player = brightcove.api.getExperience(experienceID);
+									APIModules = brightcove.api.modules.APIModules;
+								}
+
+								function onTemplateReady(evt) {
+									logit(&quot;EVENT&quot;, &quot;onTemplateReady&quot;);
+									videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
+									experienceModule = player.getModule(APIModules.EXPERIENCE);
+
+									videoPlayer.getCurrentRendition(function(renditionDTO) {
+										if (renditionDTO) {
+											logit(&quot;condition&quot;, &quot;renditionDTO found&quot;);
+											calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
+										} else {
+											logit(&quot;condition&quot;, &quot;renditionDTO NOT found&quot;);
+											videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(event) {
+												calulateNewPercentage(event.media.renditions[0].frameWidth, event.media.renditions[0].frameHeight);
+											});
+										}
+									});
+
+									var evt = document.createEvent('UIEvents');
+									evt.initUIEvent('resize',true,false,0);
+									window.dispatchEvent(evt);
+
+									videoPlayer.play();
+								}
+
+								function calulateNewPercentage(width,height) {
+									logit(&quot;function&quot;, &quot;calulateNewPercentage&quot;);
+									var newPercentage = ((height / width) * 100) + &quot;%&quot;;
+									logit(&quot;Video Width = &quot;, width);
+									logit(&quot;Video Height = &quot;, height);
+									logit(&quot;New Percentage = &quot;, newPercentage);
+									document.getElementById(&quot;video__container&quot;).style.paddingBottom = newPercentage;
+								}
+
+								window.onresize = function(evt) {
+									var resizeWidth = $(&quot;.BrightcoveExperience&quot;).width(),
+									resizeHeight = $(&quot;.BrightcoveExperience&quot;).height();
+									if (experienceModule.experience.type == &quot;html&quot;){
+										experienceModule.setSize(resizeWidth, resizeHeight)
+									}
+								}
+							&lt;/script&gt;
+						&lt;/div&gt; &lt;!-- /.space-btm --&gt;
+
+						{{# has-presented-by }}
+							{{&gt; atoms-presented-by }}
+						{{/ has-presented-by }}
+
+						{{# sponsored }}
+							&lt;div class=&quot;pad-top&quot;&gt;{{&gt; molecules-sponsor-header }}&lt;/div&gt;
+						{{/ sponsored }}
+
+						{{# video-head }}
+							&lt;header class=&quot;article-header no-space-btm {{ header-class }} cf&quot;&gt;
+								&lt;h1 class=&quot;lead-headline&quot; itemprop=&quot;headline&quot;&gt;{{ title }}&lt;/h1&gt;
+								&lt;h2 class=&quot;lead-subtitle&quot; itemprop=&quot;alternativeHeadline&quot;&gt;{{ subtitle }}&lt;/h2&gt;
+							&lt;/header&gt; &lt;!-- /.article-header --&gt;
+						{{/ video-head }}
+
+						&lt;div class=&quot;article-tools&quot;&gt;
+							{{# has-social }}
+								{{&gt; molecules-social-share }}
+							{{/ has-social }}
+							{{&gt; molecules-content-utility }}
+						&lt;/div&gt; &lt;!-- /.article-tools --&gt;
+					&lt;/div&gt; &lt;!-- /.video-player --&gt;
+
+					{{# is-single-video }}
+						{{# has-steps }}
+							&lt;section class=&quot;article-body article-body__video space-and-half-btm cf pad-half-top narrow narrow--m no-space-left&quot; itemprop=&quot;articleBody&quot;&gt;
+								{{&gt; organisms-article-body-steps }}
+							&lt;/section&gt; &lt;!-- /.article-body --&gt;
+						{{/ has-steps }}
+
+						{{# has-ingredients-steps }}
+							&lt;section class=&quot;article-body article-body__video space-and-half-btm cf pad-half-top&quot; itemprop=&quot;articleBody&quot;&gt;
+								{{&gt; organisms-article-body-ingredients-steps }}
+							&lt;/section&gt; &lt;!-- /.article-body --&gt;
+						{{/ has-ingredients-steps }}
+
+						{{# has-body }}
+							&lt;section class=&quot;article-body article-body__video space-and-half-btm text pad-half-top narrow narrow--m no-space-left&quot; itemprop=&quot;articleBody&quot;&gt;
+								{{&gt; organisms-article-body-medium }}
+							&lt;/section&gt; &lt;!-- /.article-body --&gt;
+						{{/ has-body }}
+					{{/ is-single-video }}
+
+				&lt;/article&gt; &lt;!-- /.article-standard --&gt;
+
+		{{^ is-single-video }}
+			&lt;/section&gt; &lt;!-- /.shift-left--inner--700 --&gt;
+		&lt;/div&gt; &lt;!-- /.shift-left--700 --&gt;
+		{{/ is-single-video }}
+
+		{{^ is-single-video }}
+			&lt;div class=&quot;shift-right--700&quot;&gt;
+				&lt;section class=&quot;section section__feat-videos&quot;&gt;
+					{{# feat-videos }}
+						{{&gt; molecules-block-thumb-headline }}
+					{{/ feat-videos }}
+				&lt;/section&gt; &lt;!-- /.section__feat-videos --&gt;
+			&lt;/div&gt; &lt;!-- /.shift-right--700 --&gt;
+		{{/ is-single-video }}
+
+		&lt;section class=&quot;section section__video-recirc clear&quot;&gt;
+
+			&lt;div class=&quot;video__filters space-btm&quot;&gt;
+				&lt;span class=&quot;video__filters-count upper&quot;&gt;&lt;strong&gt;22 of 326&lt;/strong&gt;&lt;/span&gt;
+				&lt;span class=&quot;video__filters-label upper pink&quot;&gt;&lt;strong&gt;Filter By:&lt;/strong&gt;&lt;/span&gt;
+				&lt;ul class=&quot;check-list inline-list font-&quot;&gt;
+					&lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox1&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;&lt;label for=&quot;checkbox1&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Food &lt;span class=&quot;cl-item-amt&quot;&gt;(186)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+					&lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox2&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox2&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Home &lt;span class=&quot;cl-item-amt&quot;&gt;(25)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+					&lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox3&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox3&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Style &lt;span class=&quot;cl-item-amt&quot;&gt;(2)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+					&lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox4&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox4&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Life &lt;span class=&quot;cl-item-amt&quot;&gt;(6)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+					&lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox5&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox5&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Shop &lt;span class=&quot;cl-item-amt&quot;&gt;(23)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+					&lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox6&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox6&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Holidays &lt;span class=&quot;cl-item-amt&quot;&gt;(32)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt; &lt;!-- /.video__filters --&gt;
+
+			&lt;div class=&quot;video__thumbs&quot;&gt;
+
+				{{# video-is-sponsored }}
+					{{# video-recirc-top }}
+						{{# nope }}
+						&lt;div class=&quot;g g-4up-2col-start&quot;&gt;
+							{{# videos }}
+								&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-block-thumb-headline }}&lt;/div&gt;
+							{{/ videos }}
+						&lt;/div&gt; &lt;!-- /.g-4up-2col-start --&gt;
+						{{/ nope }}
+
+						&lt;div class=&quot;carousel__wrap carousel__wrap--sponsored&quot;&gt;
+							&lt;div class=&quot;carousel--sponsored&quot;&gt;
+								&lt;div class=&quot;sponsored-bar upper align-center&quot;&gt;Presented by Kraft&lt;/div&gt;
+									&lt;div class=&quot;carousel carousel__inner js-carousel--3up g g-4up-2col-start cf&quot;&gt;
+									{{# sponsored-videos }}
+										&lt;div class=&quot;gi gi--sponsored-item&quot;&gt;{{&gt; molecules-block-thumb-headline }}&lt;/div&gt;
+									{{/ sponsored-videos }}
+								&lt;/div&gt; &lt;!-- /.carousel__inner --&gt;
+							&lt;/div&gt; &lt;!-- /.carousel--sponsored --&gt;
+						&lt;/div&gt; &lt;!-- /.carousel__wrap --&gt;
+					{{/ video-recirc-top }}
+				{{/ video-is-sponsored }}
+
+				&lt;div class=&quot;ad-block&quot;&gt;
+					&lt;!-- &lt;a href=&quot;&quot; class=&quot;hide-larger hide-large&quot;&gt;&lt;img src=&quot;http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg&quot;&gt;&lt;/a&gt; --&gt;
+					&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://placehold.it/300x600&quot;&gt;&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;g g-4up-2col-start&quot;&gt;
+					{{# video-recirc }}
+						{{# videos }}
+							&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-block-thumb-headline }}&lt;/div&gt;
+						{{/ videos }}
+					{{/ video-recirc }}
+				&lt;/div&gt; &lt;!-- /.g-4up-2col-start --&gt;
+			&lt;/div&gt; &lt;!-- /.video__thumbs --&gt;
+
+		&lt;/section&gt; &lt;!-- /.section__video-recirc --&gt;
+
+		&lt;div class=&quot;lc lc-inner space-double-btm pad-double-top&quot;&gt;
+			&lt;div class=&quot;ad-blocks ad-responsive ad-instream&quot;&gt;
+				&lt;div class=&quot;ad-block ad-300x250 hide-larger hide-large&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+				&lt;div class=&quot;ad-block ad-728x90 hide-larger hide-med hide-small&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://s1.2mdn.net/viewad/3340030/clx_clb_e40024_value-oxi_rev_728x90.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+				&lt;div class=&quot;ad-block ad-970x90 hide-large hide-med hide-small&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://d.pr/i/10NZe+&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+			&lt;/div&gt; &lt;!-- /.ad-responsive --&gt;
+		&lt;/div&gt; &lt;!-- /.lc-inner --&gt;
+
+		&lt;div class=&quot;pager center pad-top&quot;&gt;
+			&lt;a href=&quot;&quot; class=&quot;btn load-more js-toggle&quot; data-toggled=&quot;section__video-recirc&quot; data-prefix=&quot;more-thumbs&quot;&gt;Load More&lt;/a&gt;
+		&lt;/div&gt; &lt;!-- /.pager --&gt;
+
+		{{&gt; organisms-content-footer }}
+
+	&lt;/div&gt; &lt;!-- /role=main --&gt;
+
+	{{&gt; organisms-footer }}
+
+&lt;/div&gt; &lt;!-- /.page --&gt;

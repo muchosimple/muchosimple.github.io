@@ -1,0 +1,19 @@
+<div class="all-slides">
+  <div class="slide-navigation cf">
+    <a href="{{ url }}" class="see-all--back js-toggle" data-toggled="gallery-container" data-prefix="see-all-grid"><span class="icon icon-arrow-left-stem icon--small">{{> atoms-arrow-left-stem }}</span> <span class="light">Back</span></a>
+  </div> <!-- /.slide-navigation -->
+  <div class="g gallery-grid js-gallery-grid cf">
+    {{# gallery-grid }}
+      <div class="block block-gi gi js-gi {{ gi-class }}" data-slide="{{ slide-num }}">
+        <a href="{{ url }}" class="b-inner">
+          <div class="b-thumb">
+            {{> atoms-image }}
+          </div> <!-- /.b-thumb -->
+          <div class="b-text">
+            <h3 class="b-title">{{ title }}</h3>
+          </div> <!-- /.b-text -->
+        </a> <!-- /.b-inner -->
+      </div> <!-- /.block -->
+    {{/ gallery-grid }}
+  </div> <!-- /.gallery-grid -->
+</div> <!-- /.all-slides -->

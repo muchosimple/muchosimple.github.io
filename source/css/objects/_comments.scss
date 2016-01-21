@@ -1,0 +1,148 @@
+/*-----------------------------------------------------------------------------*\
+		$COMMENTS
+
+		@note:
+		The class naming and syntax doesn't match the rest of the site's. This is
+		because the markup for the comment system is taken from the realsimple.com
+		production markup. To make it easier on development and since the new design
+		looks and performs the same as the current comment system, we're recycling
+		it and not creating new functionality.
+\*-----------------------------------------------------------------------------*/
+
+.rails-comments {
+	margin-bottom: $space-double;
+	a:hover {
+		@include underline;
+	}
+}
+.comment_form {
+	margin-bottom: $space;
+}
+.rails-comments__title {
+	display: none;
+}
+.your_comment_form {
+	position: relative;
+	padding-left: rem(36);
+	margin-bottom: rem(15);
+	div:first-child {
+		font-size: rem(14);
+		font-weight: 500;
+		margin-left: rem(-36);
+		margin-bottom: rem(12);
+	}
+}
+.your_profile_icon {
+	position: absolute;
+	left: 0;
+}
+.your_comment {
+	max-height: rem(100);
+	margin-bottom: rem(6);
+}
+.comment_submit_btn { // New class
+	width: auto;
+	padding: rem(2) rem(4) rem(1);
+	border: none;
+	color: $blue;
+	margin-right: rem(8);
+	background-color: $blue-light-2;
+	text-transform: none;
+	font-size: rem(16);
+}
+.disabled_link {
+	font-size: rem(14);
+}
+.disabled_link {
+	color: $gray-med;
+	font-weight: 100;
+	@include underline;
+}
+.commenting_action_bar {
+	margin-bottom: rem(23);
+	padding-bottom: rem(23);
+	border-bottom: $border-style;
+}
+.comment {
+	position: relative;
+	padding-left: rem(55);
+	margin-bottom: $space-and-half;
+	padding-bottom: $pad-and-half;
+	border-bottom: $border-style-light;
+	@include mq($px500) {
+		padding-left: rem(85);
+	}
+}
+.comment_author {
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include mq($px500, max) {
+		width: rem(40);
+	}
+}
+.comment_txt {
+	margin-bottom: $space-half;
+	font-size: rem(15);
+}
+.comment_ts {
+	font-size: rem(13);
+	color: $gray-med;
+	margin-bottom: $space-half;
+	.report_inappropriate_link {
+		color: $gray-med;
+		font-weight: 100;
+		margin-left: rem(4);
+		@include underline;
+	}
+}
+.comment_reply_tb {
+	font-size: rem(14);
+}
+.comment_delete {
+	display: none;
+}
+.expand_replies_link {
+	margin-right: $space-half;
+}
+// Nested Reply comment form
+.form {
+	.your_comment_form {
+		margin-bottom: 0;
+		margin-top: $space;
+		padding: rem(6);
+		background-color: $gray-light;
+		div:first-child {
+			margin-left: 0;
+		}
+		.commenting_action_bar {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+	.your_profile_icon {
+		position: relative;
+	}
+}
+.replies {
+	padding-top: $pad-and-half;
+	margin-top: $space-and-half;
+	border-top: $border-style-light;
+	&:empty {
+		padding-top: 0;
+		margin-top: 0;
+		border-top: none;
+	}
+	li:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	.comment_ts {
+		margin-bottom: 0;
+	}
+	.comment_reply_tb {
+		display: none;
+	}
+}
+

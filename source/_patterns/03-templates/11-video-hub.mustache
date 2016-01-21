@@ -1,0 +1,240 @@
+<div class="page">
+	{{> organisms-header }}
+	<div class="main cf lc" role="main" aria-live="polite">
+
+		{{^ is-single-video }}
+		<div class="shift-left--700 no-pad-btm no-space-btm">
+			<section class="shift-left--inner--700 no-pad-btm">
+		{{/ is-single-video }}
+
+				<article class="article article-standard {{ article-class }} article__video" itemscope itemtype="http://schema.org/Article">
+
+					<div class="video-player space-btm">
+						<div class="space-btm">
+							<div id="video__container" class="video__outer-container">
+
+								<!-- Start of Brightcove Player -->
+
+								<div style="display:none"></div>
+
+									<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+									<object id="myExperience1754276205001" class="BrightcoveExperience">
+										<param name="bgcolor" value="#FFFFFF" />
+										<param name="width" value="480" />
+										<param name="height" value="270" />
+										<param name="playerID" value="1756040703001" />
+										<param name="playerKey" value="AQ~~,AAABmA9XpXk~,-Kp7jNgisrc05QYSNxkzqM1X9GtvaqWM" />
+										<param name="isVid" value="true" />
+										<param name="isUI" value="true" />
+										<param name="dynamicStreaming" value="true" />
+										<param name="@videoPlayer" value="1754276205001" />
+											<!-- <param name="forceHTML" value="true" /> -->
+										<!-- smart player api params -->
+										<param name="includeAPI" value="true" />
+										<param name="showNoContentMessage" value="true" />
+										<param name="templateLoadHandler" value="onTemplateLoad" />
+										<param name="templateReadyHandler" value="onTemplateReady" />
+									</object>
+									<script type="text/javascript">brightcove.createExperiences();</script>
+
+									<!-- End of Brightcove Player -->
+
+								</div> <!-- /.video__outer-container -->
+
+							<script type="text/javascript">
+								var player,
+										APIModules,
+										videoPlayer,
+										experienceModule;
+
+								// utility
+								logit = function (context, message) {
+									if (console) {
+										console.log(context, message);
+									}
+								};
+
+								function onTemplateLoad(experienceID) {
+									logit("EVENT", "onTemplateLoad");
+									player = brightcove.api.getExperience(experienceID);
+									APIModules = brightcove.api.modules.APIModules;
+								}
+
+								function onTemplateReady(evt) {
+									logit("EVENT", "onTemplateReady");
+									videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
+									experienceModule = player.getModule(APIModules.EXPERIENCE);
+
+									videoPlayer.getCurrentRendition(function(renditionDTO) {
+										if (renditionDTO) {
+											logit("condition", "renditionDTO found");
+											calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
+										} else {
+											logit("condition", "renditionDTO NOT found");
+											videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(event) {
+												calulateNewPercentage(event.media.renditions[0].frameWidth, event.media.renditions[0].frameHeight);
+											});
+										}
+									});
+
+									var evt = document.createEvent('UIEvents');
+									evt.initUIEvent('resize',true,false,0);
+									window.dispatchEvent(evt);
+
+									videoPlayer.play();
+								}
+
+								function calulateNewPercentage(width,height) {
+									logit("function", "calulateNewPercentage");
+									var newPercentage = ((height / width) * 100) + "%";
+									logit("Video Width = ", width);
+									logit("Video Height = ", height);
+									logit("New Percentage = ", newPercentage);
+									document.getElementById("video__container").style.paddingBottom = newPercentage;
+								}
+
+								window.onresize = function(evt) {
+									var resizeWidth = $(".BrightcoveExperience").width(),
+									resizeHeight = $(".BrightcoveExperience").height();
+									if (experienceModule.experience.type == "html"){
+										experienceModule.setSize(resizeWidth, resizeHeight)
+									}
+								}
+							</script>
+						</div> <!-- /.space-btm -->
+
+						{{# has-presented-by }}
+							{{> atoms-presented-by }}
+						{{/ has-presented-by }}
+
+						{{# sponsored }}
+							<div class="pad-top">{{> molecules-sponsor-header }}</div>
+						{{/ sponsored }}
+
+						{{# video-head }}
+							<header class="article-header no-space-btm {{ header-class }} cf">
+								<h1 class="lead-headline" itemprop="headline">{{ title }}</h1>
+								<h2 class="lead-subtitle" itemprop="alternativeHeadline">{{ subtitle }}</h2>
+							</header> <!-- /.article-header -->
+						{{/ video-head }}
+
+						<div class="article-tools">
+							{{# has-social }}
+								{{> molecules-social-share }}
+							{{/ has-social }}
+							{{> molecules-content-utility }}
+						</div> <!-- /.article-tools -->
+					</div> <!-- /.video-player -->
+
+					{{# is-single-video }}
+						{{# has-steps }}
+							<section class="article-body article-body__video space-and-half-btm cf pad-half-top narrow narrow--m no-space-left" itemprop="articleBody">
+								{{> organisms-article-body-steps }}
+							</section> <!-- /.article-body -->
+						{{/ has-steps }}
+
+						{{# has-ingredients-steps }}
+							<section class="article-body article-body__video space-and-half-btm cf pad-half-top" itemprop="articleBody">
+								{{> organisms-article-body-ingredients-steps }}
+							</section> <!-- /.article-body -->
+						{{/ has-ingredients-steps }}
+
+						{{# has-body }}
+							<section class="article-body article-body__video space-and-half-btm text pad-half-top narrow narrow--m no-space-left" itemprop="articleBody">
+								{{> organisms-article-body-medium }}
+							</section> <!-- /.article-body -->
+						{{/ has-body }}
+					{{/ is-single-video }}
+
+				</article> <!-- /.article-standard -->
+
+		{{^ is-single-video }}
+			</section> <!-- /.shift-left--inner--700 -->
+		</div> <!-- /.shift-left--700 -->
+		{{/ is-single-video }}
+
+		{{^ is-single-video }}
+			<div class="shift-right--700">
+				<section class="section section__feat-videos">
+					{{# feat-videos }}
+						{{> molecules-block-thumb-headline }}
+					{{/ feat-videos }}
+				</section> <!-- /.section__feat-videos -->
+			</div> <!-- /.shift-right--700 -->
+		{{/ is-single-video }}
+
+		<section class="section section__video-recirc clear">
+
+			<div class="video__filters space-btm">
+				<span class="video__filters-count upper"><strong>22 of 326</strong></span>
+				<span class="video__filters-label upper pink"><strong>Filter By:</strong></span>
+				<ul class="check-list inline-list font-">
+					<li class="cl-item"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"><label for="checkbox1"><span>{{> atoms-check }}</span> Food <span class="cl-item-amt">(186)</span></label></li>
+					<li class="cl-item"><input id="checkbox2" name="checkbox" type="checkbox"><label for="checkbox2"><span>{{> atoms-check }}</span> Home <span class="cl-item-amt">(25)</span></label></li>
+					<li class="cl-item"><input id="checkbox3" name="checkbox" type="checkbox"><label for="checkbox3"><span>{{> atoms-check }}</span> Style <span class="cl-item-amt">(2)</span></label></li>
+					<li class="cl-item"><input id="checkbox4" name="checkbox" type="checkbox"><label for="checkbox4"><span>{{> atoms-check }}</span> Life <span class="cl-item-amt">(6)</span></label></li>
+					<li class="cl-item"><input id="checkbox5" name="checkbox" type="checkbox"><label for="checkbox5"><span>{{> atoms-check }}</span> Shop <span class="cl-item-amt">(23)</span></label></li>
+					<li class="cl-item"><input id="checkbox6" name="checkbox" type="checkbox"><label for="checkbox6"><span>{{> atoms-check }}</span> Holidays <span class="cl-item-amt">(32)</span></label></li>
+				</ul>
+			</div> <!-- /.video__filters -->
+
+			<div class="video__thumbs">
+
+				{{# video-is-sponsored }}
+					{{# video-recirc-top }}
+						{{# nope }}
+						<div class="g g-4up-2col-start">
+							{{# videos }}
+								<div class="gi">{{> molecules-block-thumb-headline }}</div>
+							{{/ videos }}
+						</div> <!-- /.g-4up-2col-start -->
+						{{/ nope }}
+
+						<div class="carousel__wrap carousel__wrap--sponsored">
+							<div class="carousel--sponsored">
+								<div class="sponsored-bar upper align-center">Presented by Kraft</div>
+									<div class="carousel carousel__inner js-carousel--3up g g-4up-2col-start cf">
+									{{# sponsored-videos }}
+										<div class="gi gi--sponsored-item">{{> molecules-block-thumb-headline }}</div>
+									{{/ sponsored-videos }}
+								</div> <!-- /.carousel__inner -->
+							</div> <!-- /.carousel--sponsored -->
+						</div> <!-- /.carousel__wrap -->
+					{{/ video-recirc-top }}
+				{{/ video-is-sponsored }}
+
+				<div class="ad-block">
+					<!-- <a href="" class="hide-larger hide-large"><img src="http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg"></a> -->
+					<a href=""><img src="http://placehold.it/300x600"></a>
+				</div>
+				<div class="g g-4up-2col-start">
+					{{# video-recirc }}
+						{{# videos }}
+							<div class="gi">{{> molecules-block-thumb-headline }}</div>
+						{{/ videos }}
+					{{/ video-recirc }}
+				</div> <!-- /.g-4up-2col-start -->
+			</div> <!-- /.video__thumbs -->
+
+		</section> <!-- /.section__video-recirc -->
+
+		<div class="lc lc-inner space-double-btm pad-double-top">
+			<div class="ad-blocks ad-responsive ad-instream">
+				<div class="ad-block ad-300x250 hide-larger hide-large"><a href=""><img src="http://dqckmuwjiytix.cloudfront.net/a/8933/img/300x250_Free%20Sample_static.jpg"></a></div>
+				<div class="ad-block ad-728x90 hide-larger hide-med hide-small"><a href=""><img src="http://s1.2mdn.net/viewad/3340030/clx_clb_e40024_value-oxi_rev_728x90.jpg"></a></div>
+				<div class="ad-block ad-970x90 hide-large hide-med hide-small"><a href=""><img src="http://d.pr/i/10NZe+"></a></div>
+			</div> <!-- /.ad-responsive -->
+		</div> <!-- /.lc-inner -->
+
+		<div class="pager center pad-top">
+			<a href="" class="btn load-more js-toggle" data-toggled="section__video-recirc" data-prefix="more-thumbs">Load More</a>
+		</div> <!-- /.pager -->
+
+		{{> organisms-content-footer }}
+
+	</div> <!-- /role=main -->
+
+	{{> organisms-footer }}
+
+</div> <!-- /.page -->

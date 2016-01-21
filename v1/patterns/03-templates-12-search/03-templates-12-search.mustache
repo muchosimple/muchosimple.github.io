@@ -1,0 +1,83 @@
+&lt;div class=&quot;page&quot;&gt;
+  {{&gt; organisms-header }}
+    &lt;div class=&quot;main cf lc&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
+
+      {{# search-head }}
+        &lt;header class=&quot;article-header search-header cf&quot;&gt;
+          &lt;div class=&quot;shift-right--slim&quot;&gt;
+            &lt;div class=&quot;shift-right--slim-inner&quot;&gt;
+              &lt;div class=&quot;kicker gray--dark&quot;&gt;Search results for&lt;/div&gt;
+              &lt;h1 class=&quot;lead-headline&quot; itemprop=&quot;headline&quot;&gt;{{ title }}&lt;/h1&gt;
+            &lt;/div&gt; &lt;!-- /.shift-right--slim-inner --&gt;
+          &lt;/div&gt; &lt;!-- /.shift-right--slim --&gt;
+        &lt;/header&gt; &lt;!-- /.search-header --&gt;
+      {{/ search-head }}
+
+      &lt;div class=&quot;primary&quot;&gt;
+        &lt;div class=&quot;primary-inner&quot;&gt;
+
+          &lt;div class=&quot;shift-left--slim revert-to-origin&quot;&gt;
+            &lt;div class=&quot;search-filters revert-to-origin&quot;&gt;
+              &lt;nav class=&quot;nav-check-list&quot;&gt;
+                &lt;h4 class=&quot;upper pink nav-check-list-title js-toggle-parent&quot;&gt;Narrow By &lt;span class=&quot;arrow arrow--down&quot;&gt;&lt;/span&gt;&lt;/h4&gt;
+                &lt;ul class=&quot;check-list&quot;&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox1&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;&lt;label for=&quot;checkbox1&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Article &lt;span class=&quot;cl-item-amt&quot;&gt;(186)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox2&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox2&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Daily Find &lt;span class=&quot;cl-item-amt&quot;&gt;(25)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox3&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox3&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Checklist &lt;span class=&quot;cl-item-amt&quot;&gt;(2)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox4&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox4&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Generic Page &lt;span class=&quot;cl-item-amt&quot;&gt;(6)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox5&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox5&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; List &lt;span class=&quot;cl-item-amt&quot;&gt;(13)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox6&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox6&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Package &lt;span class=&quot;cl-item-amt&quot;&gt;(65)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox7&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox7&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Slideshows &lt;span class=&quot;cl-item-amt&quot;&gt;(3)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox8&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox8&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Video &lt;span class=&quot;cl-item-amt&quot;&gt;(22)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                &lt;/ul&gt; &lt;!-- /.check-list --&gt;
+              &lt;/nav&gt; &lt;!-- /.nav-check-list --&gt;
+              &lt;nav class=&quot;nav-check-list&quot;&gt;
+                &lt;h4 class=&quot;upper pink nav-check-list-title js-toggle-parent&quot;&gt;Category &lt;span class=&quot;arrow arrow--down&quot;&gt;&lt;/span&gt;&lt;/h4&gt;
+                &lt;ul class=&quot;check-list&quot;&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox9&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;&lt;label for=&quot;checkbox9&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Food &lt;span class=&quot;cl-item-amt&quot;&gt;(121)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox10&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox10&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Home &lt;span class=&quot;cl-item-amt&quot;&gt;(136)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox11&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox11&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Style &lt;span class=&quot;cl-item-amt&quot;&gt;(43)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox12&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox12&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Life &lt;span class=&quot;cl-item-amt&quot;&gt;(36)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox13&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox13&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Holidays &lt;span class=&quot;cl-item-amt&quot;&gt;(65)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                  &lt;li class=&quot;cl-item&quot;&gt;&lt;input id=&quot;checkbox14&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox14&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Sponsored &lt;span class=&quot;cl-item-amt&quot;&gt;(2)&lt;/span&gt;&lt;/label&gt;&lt;/li&gt;
+                &lt;/ul&gt; &lt;!-- /.check-list --&gt;
+              &lt;/nav&gt; &lt;!-- /.nav-check-list --&gt;
+            &lt;/div&gt; &lt;!-- /.search-filters --&gt;
+          &lt;/div&gt; &lt;!-- /.search-left--slim --&gt;
+
+          &lt;div class=&quot;shift-right--slim revert-to-origin&quot;&gt;
+            &lt;div class=&quot;shift-right--slim-inner revert-to-origin&quot;&gt;
+              &lt;section class=&quot;section search-results&quot;&gt;
+                &lt;h4 class=&quot;gray--dark space-double-btm&quot;&gt;Showing 15 of 324 results&lt;/h4&gt;
+                {{# content-modules-1 }}
+                  {{&gt; molecules-block-thumb-headline }}
+                {{/ content-modules-1 }}
+              &lt;/section&gt; &lt;!-- /.search-results --&gt;
+            &lt;/div&gt; &lt;!-- /.shift-right--slim-inner --&gt;
+          &lt;/div&gt; &lt;!-- /.shift-right--slim --&gt;
+
+        &lt;/div&gt; &lt;!-- /.primary-inner --&gt;
+      &lt;/div&gt; &lt;!-- /.primary --&gt;
+
+      &lt;div class=&quot;secondary pad-double-top&quot;&gt;
+        &lt;aside class=&quot;sidebar pad-top&quot; role=&quot;complementary&quot;&gt;
+          &lt;div class=&quot;ad-block ad-300x250 block ad-sticky&quot;&gt;
+            &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://pagead2.googlesyndication.com/simgad/8242591116261255559&quot;&gt;&lt;/a&gt;
+          &lt;/div&gt; &lt;!-- /.ad-300x250 --&gt;
+        &lt;/aside&gt; &lt;!-- /.sidebar --&gt;
+      &lt;/div&gt; &lt;!-- /.secondary --&gt;
+
+      &lt;div class=&quot;primary b-top pad-and-half-top clear&quot;&gt;
+        &lt;div class=&quot;primary-inner&quot;&gt;
+          &lt;div class=&quot;shift-right--slim&quot;&gt;
+            &lt;div class=&quot;shift-right--slim-inner&quot;&gt;
+              {{&gt; molecules-pagination }}
+            &lt;/div&gt; &lt;!-- /.shift-right--slim-inner --&gt;
+          &lt;/div&gt; &lt;!-- /.shift-right--slim --&gt;
+        &lt;/div&gt; &lt;!-- /.primary-inner --&gt;
+      &lt;/div&gt; &lt;!-- /.primary --&gt;
+
+    &lt;/div&gt;&lt;!-- /role=main --&gt;
+
+  {{&gt; organisms-footer }}
+&lt;/div&gt; &lt;!-- /.page --&gt;

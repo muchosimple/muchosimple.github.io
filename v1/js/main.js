@@ -1,6 +1,29 @@
 /* MAIN JS
 --------------------------------------------*/
 
+// check window width
+var getWidth = function() {
+  var width;
+  if (document.body && document.body.offsetWidth) {
+    width = document.body.offsetWidth;
+  }
+  if (document.compatMode === 'CSS1Compat' &&
+      document.documentElement &&
+      document.documentElement.offsetWidth ) {
+     width = document.documentElement.offsetWidth;
+  }
+  if (window.innerWidth) {
+     width = window.innerWidth;
+  }
+  return width;
+};
+window.onload = function() {
+  getWidth();
+};
+window.onresize = function() {
+  getWidth();
+};
+
 (function($){
 
   // BASE SETUP ------------------------------------//
@@ -17,30 +40,6 @@
       px900 = 900,
       px1000 = 1000,
       pxmax = 1320;
-
-  // check window width
-  var getWidth = function() {
-    var width;
-    if (document.body && document.body.offsetWidth) {
-      width = document.body.offsetWidth;
-    }
-    if (document.compatMode === 'CSS1Compat' &&
-        document.documentElement &&
-        document.documentElement.offsetWidth ) {
-       width = document.documentElement.offsetWidth;
-    }
-    if (window.innerWidth) {
-       width = window.innerWidth;
-    }
-    return width;
-  };
-  window.onload = function() {
-    getWidth();
-  }
-  window.onresize = function() {
-    getWidth();
-  }
-
 
   // SITE SPECIFIC JS ------------------------------//
 
@@ -62,6 +61,16 @@
     // Remove a class on another element, if needed.
     if ($this.data('remove')) {
       $('.' + $this.data('remove')).removeClass($this.data('remove'));
+    }
+
+    // If the toggle element trigger is opening a modal, add the .has-close
+    // class to the trigger and the close icon will also toggle the target element.
+    if ($this.hasClass('has-close')) {
+      $toggled.addClass($togglePrefix + '-is-active--with-close');
+      $('.js-close').click(function(){
+        $this.removeClass($togglePrefix + '-is-active');
+        $toggled.removeClass($togglePrefix + '-is-active');
+      });
     }
   };
 
@@ -196,6 +205,85 @@
     $('.header').addClass('header-is-sticky');
   }).on('sticky_kit:unstick', function(e) {
     $('.header').removeClass('header-is-sticky');
+  });
+
+  // FitVids
+  if ($.fn.fitVids) {
+    $('.block-video, .article, .fitvid').fitVids();
+  }
+
+  // 5-star Rating
+  if ($('.five-star').length) {
+    $('.five-star').find('.star').click(function(){
+      $(this).parent().removeClass().addClass('inactive-stars-' + $(this).index());
+      $(this).parents('.five-star').addClass('rated');
+    });
+  }
+
+  // Home Tabbed Carousel
+  var $tabbedCarousel = $('.js-carousel--tabbed');
+
+  // Owl gallery (smaller viewports)
+  function initHomeCarouselSmall() {
+    $tabbedCarousel.show().owlCarousel({
+      autoPlay: 4000,
+      slideSpeed: 300,
+      paginationSpeed: 400,
+      singleItem: true,
+      pagination: true,
+      stopOnHover: true,
+      beforeMove: function(el) {
+        //el.find('img.lazy').show().lazyload();
+      }
+    });
+  }
+
+  // Custom tabbed gallery (wider viewports)
+  function initHomeCarouselWide() {
+    var interval = 4000,
+        carouselTimer = setInterval(animateCarousel, interval);
+
+    $tabbedCarousel.find('.c-item:first').addClass('this-is-active');
+    function animateCarousel(){
+      $tabbedCarousel.find('.c-item').removeClass('this-is-active');
+      $tabbedCarousel.find('.c-item:first').removeClass('this-is-active').next('.c-item').addClass('this-is-active').end().appendTo('.js-carousel--tabbed');
+      //$tabbedCarousel.find('img.lazy').lazyload();
+    }
+    // Disable animation when tabs are interacted with.
+    $tabbedCarousel.find('.c-tab').hover(function(e){
+      clearInterval(carouselTimer);
+      $tabbedCarousel.find('.c-item').removeClass('this-is-active');
+      $(this).parents('.c-item').addClass('this-is-active');
+    });
+    // On resize, if the viewport is below 500px, clear the interval and
+    // remove active classes.
+    $(window).resize(function(){
+      if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
+        clearInterval(carouselTimer);
+        $tabbedCarousel.find('.c-item').removeClass('this-is-active');
+      }
+    });
+  }
+
+  // Init the carousel.
+  if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
+    initHomeCarouselSmall();
+  }
+  else {
+    initHomeCarouselWide();
+  }
+
+  // Update carousel functionality on window resize.
+  $(window).resize(function(){
+    if (getWidth() < 500 || (getWidth() > 800 && getWidth() < 1024)) {
+      // Start the Owl carousel.
+      initHomeCarouselSmall();
+    }
+    else {
+      // Start the tabbed carousel and destroy the Owl carousel.
+      $tabbedCarousel.data('owlCarousel').destroy();
+      initHomeCarouselWide();
+    }
   });
 
   // Smooth scroll to anchor

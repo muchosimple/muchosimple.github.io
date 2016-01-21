@@ -1,4 +1,4 @@
-<nav class="primary-nav" role="navigation">
+<nav class="primary-nav" role="navigation" id="{{ rs-site-nav-id }}">
   <ul class="nav-list">
     <li class="l-top {{ hide-class }}">
       <a href="{{ url }}" aria-controls="primary-inner">Food</a> <span class="aw js-toggle-parent"><span class="arrow arrow--right"></span></span>
@@ -49,14 +49,7 @@
       </ul> <!-- /.nav-sub -->
     </li> <!-- /.l-top {{ hide-class }} -->
     <li class="l-top {{ hide-class }}">
-      <a href="{{ url }}" aria-controls="primary-inner">Shop</a> <span class="aw js-toggle-parent"><span class="arrow arrow--right"></span></span>
-      <ul class="nav-sub">
-        <li class="l-sub"><a href="" aria-controls="primary-inner">Makeup</a></li>
-        <li class="l-sub"><a href="" aria-controls="primary-inner">Skincare</a></li>
-        <li class="l-sub"><a href="" aria-controls="primary-inner">Fragrance</a></li>
-        <li class="l-sub"><a href="" aria-controls="primary-inner">Makeovers</a></li>
-        <li class="l-sub"><a href="" aria-controls="primary-inner">Timesavers</a></li>
-      </ul> <!-- /.nav-sub -->
+      <a href="{{ url }}" aria-controls="primary-inner">Shop</a>
     </li> <!-- /.l-top {{ hide-class }} -->
     <li class="l-top {{ hide-class }}">
       <a href="{{ url }}" aria-controls="primary-inner">Holidays</a> <span class="aw js-toggle-parent"><span class="arrow arrow--right"></span></span>
@@ -79,6 +72,9 @@
         <li class="l-sub"><a href="http://instagram.com/real_simple"><span class="no-bg icon rounded icon-instagram icon--large">{{> atoms-instagram }}</span></a></li>
         <li class="l-sub"><a href="http://www.pinterest.com/realsimple/"><span class="no-bg icon rounded icon-pinterest icon--large">{{> atoms-pinterest }}</span></a></li>
       </ul> <!-- /.nav-sub -->
+    </li> <!-- /.l-top {{ hide-class }} -->
+    <li class="l-top l-give-a-gift {{ hide-class }}">
+      <a href="{{ url }}" aria-controls="primary-inner">Give a Gift</a>
     </li> <!-- /.l-top {{ hide-class }} -->
     <li class="l-top {{ hide-class }} l-subscribe {{ subscribe-class }}">
       <a href="{{ url }}">
