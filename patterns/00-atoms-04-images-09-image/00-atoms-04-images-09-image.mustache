@@ -1,12 +1,12 @@
 {{# is-lazy }}
-  &lt;img class=&quot;lazy{{#classes}} {{.}}{{/classes}}&quot; data-original=&quot;{{ img.src }}&quot; itemprop=&quot;image&quot; alt=&quot;{{ img.alt }}&quot; /&gt;
+  &lt;img class=&quot;lazy&quot; data-original=&quot;{{ img.src }}&quot; itemprop=&quot;image&quot; alt=&quot;{{ img.alt }}&quot; /&gt;
   &lt;noscript&gt;&lt;img src=&quot;{{ img.src }}&quot; alt=&quot;{{ img.alt }}&quot;&gt;&lt;/noscript&gt;
 {{/ is-lazy }}
 
 {{# no-lazy }}
-  &lt;img class=&quot;{{#classes}} {{.}}{{/classes}}&quot; src=&quot;{{ img.src }}&quot; itemprop=&quot;image&quot; alt=&quot;{{ img.alt }}&quot; /&gt;
+  &lt;img src=&quot;{{ img.src }}&quot; itemprop=&quot;image&quot; alt=&quot;{{ img.alt }}&quot; /&gt;
 {{/ no-lazy }}
 
 {{# lazy-slide }}
-  &lt;img class=&quot;lazyOwl{{#classes}} {{.}}{{/classes}}&quot; data-src=&quot;{{ img.src }}&quot; itemprop=&quot;image&quot; alt=&quot;{{ img.alt }}&quot; /&gt;
+  &lt;img class=&quot;lazyOwl&quot; data-src=&quot;{{ img.src }}&quot; itemprop=&quot;image&quot; alt=&quot;{{ img.alt }}&quot; /&gt;
 {{/ lazy-slide }}
