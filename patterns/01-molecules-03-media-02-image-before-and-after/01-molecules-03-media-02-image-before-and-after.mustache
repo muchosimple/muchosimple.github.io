@@ -1,0 +1,52 @@
+&lt;div class=&quot;img-wrap before-after-img {{# credit }} has-credit {{/ credit }}&quot;&gt;
+  &lt;div class=&quot;img-inner&quot;&gt;
+    {{# img-large.0.social-tools }}
+      &lt;div class=&quot;has-social&quot;&gt;
+    {{/ img-large.0.social-tools }}
+
+    {{# img-large }}
+      {{&gt; atoms-image }}
+    {{/ img-large }}
+    &lt;div class=&quot;comparison-slider&quot;&gt;
+      &lt;div class=&quot;slider-label block&quot;&gt;
+        &lt;svg class=&quot;icon-arrow-left&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 500 500&quot; enable-background=&quot;new 0 0 500 500&quot;&gt;
+          &lt;title&gt;Left Arrow&lt;/title&gt;
+          &lt;path d=&quot;M344.5 5.3l31.7 31.6L163.1 250l213.1 213.1-31.7 31.6L99.8 250z&quot;/&gt;
+          &lt;!--[if lte IE 8]&gt;
+          &lt;foreignObject&gt;
+            &lt;img src=&quot;../../images/svg/output/png/arrow-left.png&quot; alt=&quot;Left Arrow&quot; class=&quot;no-svg-png&quot;&gt;
+          &lt;/foreignObject&gt;
+          &lt;![endif]--&gt;
+        &lt;/svg&gt;
+        SLIDE
+        &lt;svg class=&quot;icon-arrow-right&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 500 500&quot; enable-background=&quot;new 0 0 500 500&quot;&gt;
+          &lt;title&gt;Right Arrow&lt;/title&gt;
+          &lt;path d=&quot;M153.5 5.3l-31.7 31.6L334.9 250 121.8 463.1l31.7 31.6L398.2 250z&quot;/&gt;
+          &lt;!--[if lte IE 8]&gt;
+          &lt;foreignObject&gt;
+            &lt;img src=&quot;../../images/svg/output/png/arrow-right.png&quot; alt=&quot;Right Arrow&quot; class=&quot;no-svg-png&quot;&gt;
+          &lt;/foreignObject&gt;
+          &lt;![endif]--&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    {{# img-large.0.social-tools }}
+      &lt;div class=&quot;img-overlay o-social&quot;&gt;{{&gt; molecules-social-share }}&lt;/div&gt;
+    {{/ img-large.0.social-tools }}
+
+    {{# img-large.0.social-tools }}
+      &lt;/div&gt; &lt;!-- /.has-social --&gt;
+    {{/ img-large.0.social-tools }}
+  &lt;/div&gt; &lt;!-- /.img-inner --&gt;
+
+  {{^ has-side-credit }}
+    {{# img-large.0.credit }}
+      &lt;span class=&quot;credit&quot;&gt;Left photo by {{ img-large.0.credit }}, Right photo by {{ img-large.1.credit }}&lt;/span&gt;
+    {{/ img-large.0.credit }}
+  {{/ has-side-credit }}
+
+  {{# caption }}
+    &lt;figcaption class=&quot;caption&quot;&gt;{{ caption }}&lt;/figcaption&gt;
+  {{/ caption }}
+&lt;/div&gt; &lt;!-- /.img-wrap --&gt;
