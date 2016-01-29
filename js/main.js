@@ -401,7 +401,7 @@ window.onresize = function() {
         image_width;
     
     for (i = 0; i < after_images.length; i++) {
-      image_width = after_images[i].clientWidth;
+      image_width = after_images[i].parentNode.clientWidth;
       after_images[i].style.clip = 'rect(0px, auto, auto, ' + image_width/2 + 'px)';
     }
 
@@ -416,7 +416,7 @@ window.onresize = function() {
 
   // Reset the B&A images on browser resize.
   $(window).resize(function() {
-    resetBeforeAndAfterImages();
+    resetAllBeforeAndAfterImages();
   });
 
   $('.before-after-img').on('mousemove', function (e) {
