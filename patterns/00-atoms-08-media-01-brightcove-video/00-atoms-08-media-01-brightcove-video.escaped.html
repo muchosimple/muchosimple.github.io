@@ -1,0 +1,81 @@
+    &lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot; src=&quot;http://admin.brightcove.com/js/BrightcoveExperiences.js&quot;&gt;&lt;/script&gt;
+
+    &lt;object id=&quot;myExperience1754276205001&quot; class=&quot;BrightcoveExperience&quot;&gt;
+      &lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;
+      &lt;param name=&quot;width&quot; value=&quot;480&quot; /&gt;
+      &lt;param name=&quot;height&quot; value=&quot;270&quot; /&gt;
+      &lt;param name=&quot;playerID&quot; value=&quot;1756040703001&quot; /&gt;
+      &lt;param name=&quot;playerKey&quot; value=&quot;AQ~~,AAABmA9XpXk~,-Kp7jNgisrc05QYSNxkzqM1X9GtvaqWM&quot; /&gt;
+      &lt;param name=&quot;isVid&quot; value=&quot;true&quot; /&gt;
+      &lt;param name=&quot;isUI&quot; value=&quot;true&quot; /&gt;
+      &lt;param name=&quot;dynamicStreaming&quot; value=&quot;true&quot; /&gt;
+      &lt;param name=&quot;@videoPlayer&quot; value=&quot;1754276205001&quot; /&gt;
+        &lt;!-- &lt;param name=&quot;forceHTML&quot; value=&quot;true&quot; /&gt; --&gt;
+      &lt;!-- smart player api params --&gt;
+      &lt;param name=&quot;includeAPI&quot; value=&quot;true&quot; /&gt;
+      &lt;param name=&quot;showNoContentMessage&quot; value=&quot;true&quot; /&gt;
+      &lt;param name=&quot;templateLoadHandler&quot; value=&quot;onTemplateLoad&quot; /&gt;
+      &lt;param name=&quot;templateReadyHandler&quot; value=&quot;onTemplateReady&quot; /&gt;
+    &lt;/object&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;brightcove.createExperiences();&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var player,
+      APIModules,
+      videoPlayer,
+      experienceModule;
+
+  // utility
+  logit = function (context, message) {
+    if (console) {
+      console.log(context, message);
+    }
+  };
+
+  function onTemplateLoad(experienceID) {
+    logit(&quot;EVENT&quot;, &quot;onTemplateLoad&quot;);
+    player = brightcove.api.getExperience(experienceID);
+    APIModules = brightcove.api.modules.APIModules;
+  }
+
+  function onTemplateReady(evt) {
+    logit(&quot;EVENT&quot;, &quot;onTemplateReady&quot;);
+    videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
+    experienceModule = player.getModule(APIModules.EXPERIENCE);
+
+    videoPlayer.getCurrentRendition(function(renditionDTO) {
+      if (renditionDTO) {
+        logit(&quot;condition&quot;, &quot;renditionDTO found&quot;);
+        calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
+      } else {
+        logit(&quot;condition&quot;, &quot;renditionDTO NOT found&quot;);
+        videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(event) {
+          calulateNewPercentage(event.media.renditions[0].frameWidth, event.media.renditions[0].frameHeight);
+        });
+      }
+    });
+
+    var evt = document.createEvent('UIEvents');
+    evt.initUIEvent('resize',true,false,0);
+    window.dispatchEvent(evt);
+
+    videoPlayer.play();
+  }
+
+  function calulateNewPercentage(width,height) {
+    logit(&quot;function&quot;, &quot;calulateNewPercentage&quot;);
+    var newPercentage = ((height / width) * 100) + &quot;%&quot;;
+    logit(&quot;Video Width = &quot;, width);
+    logit(&quot;Video Height = &quot;, height);
+    logit(&quot;New Percentage = &quot;, newPercentage);
+    document.getElementById(&quot;video__container&quot;).style.paddingBottom = newPercentage;
+  }
+
+  window.onresize = function(evt) {
+    var resizeWidth = $(&quot;.BrightcoveExperience&quot;).width(),
+    resizeHeight = $(&quot;.BrightcoveExperience&quot;).height();
+    if (experienceModule.experience.type == &quot;html&quot;){
+      experienceModule.setSize(resizeWidth, resizeHeight)
+    }
+  }
+&lt;/script&gt;
