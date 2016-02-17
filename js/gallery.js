@@ -99,10 +99,10 @@
     }
 
     // Update pushstate with atomic url.
-    if (history && history.pushState) {
-      var hash = $slides.find('.owl-item').eq(this.currentItem).find('.slide').attr('data-url');
-      window.history.pushState(null, null, hash);
-    }
+    // if (history && history.pushState) {
+    //   var hash = $slides.find('.owl-item').eq(this.currentItem).find('.slide').attr('data-url');
+    //   window.history.pushState(null, null, hash);
+    // }
 
     // Refresh refreshable ads.
     refreshAds('.js-ad-refresh, .owl-item.active .ad-300x250');
