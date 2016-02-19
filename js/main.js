@@ -399,7 +399,7 @@ window.onresize = function() {
         baa_sliders = document.getElementsByClassName('comparison-slider'),
         i,
         image_width;
-    
+
     for (i = 0; i < after_images.length; i++) {
       image_width = after_images[i].parentNode.clientWidth;
       after_images[i].style.clip = 'rect(0px, auto, auto, ' + image_width/2 + 'px)';
@@ -445,6 +445,61 @@ window.onresize = function() {
     $after_image.css('clip', 'rect(0px, auto, auto, ' + touch_x + 'px)');
     $slider.css('left', x_percentage + '%');
     $slider_label.addClass('hide');
+  });
+
+  /**
+    * Form Validation
+    */
+   (function() {
+     if ($('.js-valididate-form').length) {
+       var $signupForm = $('.js-valididate-form');
+
+       // Submit validaton
+       $signupForm.submit(function(e) {
+         var email1 = $(this).find('.field-email1').val(),
+             email2 = $(this).find('.field-email2').val(),
+             zip1 = $(this).find('.field-zip1').val(),
+             zip2 = $(this).find('.field-zip2').val(),
+             emailInvalid = '<div class="invalid-message invalid--email">Please enter a valid email</div>',
+             zipInvalid = '<div class="invalid-message invalid--zip">Please enter a zip code</div>';
+
+         // Check valididty.
+         if ((email1 !== "" || email2 !== "") && (zip1 !== "" || zip2 !== "")) {
+           $(this).find('.invalid-message').remove();
+           $(this).find('.field-email').removeClass('invalid-field');
+           $(this).find('.field-zip').removeClass('invalid-field');
+         }
+         else {
+           if (email1 == "" && email2 == "") {
+             $(this).find('.field-email').addClass('invalid-field');
+             if ($(this).find('.invalid--email').length === 0) {
+               $(this).find('.field-email').after($(emailInvalid));
+             }
+           }
+           else {
+             $(this).find('.field-email').removeClass('invalid-field').end().find('.invalid--email').remove();
+           }
+
+           if (zip1 == "" && zip2 == "") {
+             $(this).find('.field-zip').addClass('invalid-field');
+             if ($(this).find('.invalid--zip').length === 0) {
+               $(this).find('.field-zip').after($(zipInvalid));
+             }
+           }
+           else {
+             $(this).find('.field-zip').removeClass('invalid-field').end().find('.invalid--zip').remove();
+           }
+           return false;
+         }
+       });
+     }
+   })();
+
+  /*
+   * Check all checkboxes
+   */
+  $('.js-check-all').change(function() {
+    $('input:checkbox').prop('checked', $(this).prop("checked"));
   });
 
 })(jQuery);
