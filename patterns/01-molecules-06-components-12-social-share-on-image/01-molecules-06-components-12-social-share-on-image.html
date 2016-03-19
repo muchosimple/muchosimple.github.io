@@ -50,88 +50,25 @@
 			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=185394191650949&version=v2.0";
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
-    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-
-    <object id="myExperience1754276205001" class="BrightcoveExperience">
-      <param name="bgcolor" value="#FFFFFF" />
-      <param name="width" value="480" />
-      <param name="height" value="270" />
-      <param name="playerID" value="1756040703001" />
-      <param name="playerKey" value="AQ~~,AAABmA9XpXk~,-Kp7jNgisrc05QYSNxkzqM1X9GtvaqWM" />
-      <param name="isVid" value="true" />
-      <param name="isUI" value="true" />
-      <param name="dynamicStreaming" value="true" />
-      <param name="@videoPlayer" value="1754276205001" />
-        <!-- <param name="forceHTML" value="true" /> -->
-      <!-- smart player api params -->
-      <param name="autoStart" value="false" />
-      <param name="includeAPI" value="true" />
-      <param name="showNoContentMessage" value="true" />
-      <param name="templateLoadHandler" value="onTemplateLoad" />
-      <param name="templateReadyHandler" value="onTemplateReady" />
-    </object>
-    <script type="text/javascript">brightcove.createExperiences();</script>
-
-<script type="text/javascript">
-  var player,
-      APIModules,
-      videoPlayer,
-      experienceModule;
-
-  // utility
-  logit = function (context, message) {
-    if (console) {
-      console.log(context, message);
-    }
-  };
-
-  function onTemplateLoad(experienceID) {
-    logit("EVENT", "onTemplateLoad");
-    player = brightcove.api.getExperience(experienceID);
-    APIModules = brightcove.api.modules.APIModules;
-  }
-
-  function onTemplateReady(evt) {
-    logit("EVENT", "onTemplateReady");
-    videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
-    experienceModule = player.getModule(APIModules.EXPERIENCE);
-
-    videoPlayer.getCurrentRendition(function(renditionDTO) {
-      if (renditionDTO) {
-        logit("condition", "renditionDTO found");
-        calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
-      } else {
-        logit("condition", "renditionDTO NOT found");
-        videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(event) {
-          calulateNewPercentage(event.media.renditions[0].frameWidth, event.media.renditions[0].frameHeight);
-        });
-      }
-    });
-
-    var evt = document.createEvent('UIEvents');
-    evt.initUIEvent('resize',true,false,0);
-    window.dispatchEvent(evt);
-
-    videoPlayer.play();
-  }
-
-  function calulateNewPercentage(width,height) {
-    logit("function", "calulateNewPercentage");
-    var newPercentage = ((height / width) * 100) + "%";
-    logit("Video Width = ", width);
-    logit("Video Height = ", height);
-    logit("New Percentage = ", newPercentage);
-    document.getElementById("video__container").style.paddingBottom = newPercentage;
-  }
-
-  window.onresize = function(evt) {
-    var resizeWidth = $(".BrightcoveExperience").width(),
-    resizeHeight = $(".BrightcoveExperience").height();
-    if (experienceModule.experience.type == "html"){
-      experienceModule.setSize(resizeWidth, resizeHeight)
-    }
-  }
-</script>
+<div class="social-share">
+  <ul class="ss-list">
+    <li class="ss-item">
+      <a class="ss-link" href="#">
+        
+        <span class="no-bg icon rounded icon-pinterest icon--big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="146 290 500 500" enable-background="new 146 290 500 500">
+  <title>Pinterest</title>
+  <path fill="#fff" d="M224.6 475.6c0 45.1 16.6 85.2 52.1 100.3 5.8 2.5 11.1.1 12.7-6.6 1.1-4.6 4-16.3 5.2-21.1 1.8-6.6 1-8.9-3.7-14.6-10.2-12.4-16.8-28.6-16.8-51.5 0-66.3 48-125.6 125.1-125.6 68.3 0 105.8 43 105.8 100.5 0 75.6-32.5 139.5-80.6 139.5-26.6 0-46.5-22.7-40.1-50.5 7.6-33.2 22.5-69.1 22.5-93 0-21.5-11.2-39.4-34.3-39.4-27.2 0-49 29-49 67.9 0 24.8 8.1 41.6 8.1 41.6S303.9 644.5 299 665.8c-9.7 42.4-1.5 94.4-.7 99.6.4 3.1 4.3 3.9 6.1 1.6 2.5-3.3 34.9-44.6 45.8-85.8 3.1-11.6 17.9-72.1 17.9-72.1 8.9 17.3 34.7 32.7 62.1 32.7 81.8 0 137.2-76.9 137.2-179.8 0-77.8-63.9-150.3-160.9-150.3-120.9 0-181.9 89.4-181.9 163.9z"/>
+  <!--[if lte IE 8]>
+  <foreignObject>
+    <img src="../../images/svg/output/png/pinterest.png" alt="Pinterest" class="no-svg-png">
+  </foreignObject>
+  <![endif]-->
+</svg>
+</span>
+      </a> <!-- /.ss-link -->
+    </li> <!-- /.ss-item -->
+  </ul> <!-- /.ss-list -->
+</div> <!-- /.social-share -->
   <div class="load"></div>
   <div class="overlay"></div>
 
@@ -147,9 +84,9 @@
   	
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "atoms-brightcove-video";
-		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"molecules-gallery-slide","lineagePath":"..\/..\/patterns\/01-molecules-06-components-05-gallery-slide\/01-molecules-06-components-05-gallery-slide.html"}];
+		var patternPartial = "molecules-social-share-on-image";
+		var lineage        = [{"lineagePattern":"atoms-pinterest","lineagePath":"..\/..\/patterns\/00-atoms-09-icons-11-pinterest\/00-atoms-09-icons-11-pinterest.html"}];
+		var lineageR       = [{"lineagePattern":"molecules-image-with-social","lineagePath":"..\/..\/patterns\/01-molecules-03-media-01-image-with-social\/01-molecules-03-media-01-image-with-social.html"},{"lineagePattern":"molecules-image-before-and-after","lineagePath":"..\/..\/patterns\/01-molecules-03-media-02-image-before-and-after\/01-molecules-03-media-02-image-before-and-after.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>
