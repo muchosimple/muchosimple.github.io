@@ -1,0 +1,97 @@
+&lt;div class=&quot;page&quot;&gt;
+	{{&gt; organisms-header }}
+	&lt;div class=&quot;main cf lc&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
+		{{# sponsored }}
+			{{&gt; molecules-sponsor-header }}
+		{{/ sponsored }}
+		&lt;div class=&quot;primary&quot;&gt;
+			&lt;section class=&quot;primary-inner&quot;&gt;
+				&lt;article class=&quot;article article-recipe&quot; itemscope itemtype=&quot;http://schema.org/Recipe&quot;&gt;
+
+					{{# recipe-head }}
+						{{&gt; organisms-recipe-header }}
+					{{/ recipe-head }}
+
+					&lt;div class=&quot;ad-block ad-300x250 block center hide-med hide-large hide-larger space-double-btm&quot;&gt;
+						&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;http://s1.2mdn.net/viewad/4579100/300x250_Brand_Banner.jpg&quot;&gt;&lt;/a&gt;
+					&lt;/div&gt; &lt;!-- /.ad-300x250 --&gt;
+
+					&lt;section class=&quot;section recipe-body cf&quot;&gt;
+						{{&gt; organisms-recipe-body }}
+					&lt;/section&gt; &lt;!-- /.recipe-body --&gt;
+
+					{{# recipe-footer }}
+						&lt;footer class=&quot;article-footer&quot;&gt;
+							&lt;div class=&quot;byline byline--s&quot; itemprop=&quot;author&quot;&gt;By &lt;span&gt;Sarah Robbins&lt;/span&gt;&lt;/div&gt;
+							&lt;div class=&quot;more-links&quot;&gt;
+								&lt;span class=&quot;upper space-half-r&quot;&gt;More:&lt;/span&gt; &lt;a class=&quot;alt&quot; href=&quot;&quot;&gt;Health&lt;/a&gt;, &lt;a class=&quot;alt&quot; href=&quot;&quot;&gt;Nutrition&lt;/a&gt;, &lt;a class=&quot;alt&quot; href=&quot;&quot;&gt;Cooking&lt;/a&gt;
+							&lt;/div&gt; &lt;!-- /.more-links --&gt;
+
+							&lt;div class=&quot;center&quot;&gt;
+								{{&gt; molecules-content-utilities }}
+							&lt;/div&gt; &lt;!-- /.center --&gt;
+
+							&lt;div class=&quot;narrow&quot;&gt;
+								&lt;div class=&quot;five-star-wrap&quot;&gt;
+									&lt;div class=&quot;five-star recipe-five-star active-rating&quot;&gt;
+										&lt;span class=&quot;title text--l&quot;&gt;Rate this recipe:&lt;/span&gt;
+										&lt;div class=&quot;rating&quot;&gt;
+											&lt;div&gt;
+												&lt;span class=&quot;star&quot;&gt;&amp;#9733;&lt;/span&gt;
+												&lt;span class=&quot;star&quot;&gt;&amp;#9733;&lt;/span&gt;
+												&lt;span class=&quot;star&quot;&gt;&amp;#9733;&lt;/span&gt;
+												&lt;span class=&quot;star&quot;&gt;&amp;#9733;&lt;/span&gt;
+												&lt;span class=&quot;star&quot;&gt;&amp;#9733;&lt;/span&gt;
+											&lt;/div&gt;
+										&lt;/div&gt; &lt;!-- /.rating --&gt;
+										&lt;span class=&quot;response&quot;&gt;Thanks!&lt;/span&gt;
+									&lt;/div&gt; &lt;!-- /.five-star --&gt;
+								&lt;/div&gt; &lt;!-- /.five-star-wrap --&gt;
+
+								&lt;div class=&quot;rails-comments&quot; id=&quot;commenting_module&quot;&gt;
+									&lt;h3 class=&quot;rails-comments__title&quot; id=&quot;comments_question&quot;&gt;What did you think about this recipe?&lt;/h3&gt;
+									{{&gt; organisms-comments }}
+								&lt;/div&gt; &lt;!-- /.rails-comments --&gt;
+
+								{{&gt; molecules-newsletters }}
+
+								{{# meal-planner }}
+									{{&gt; molecules-block-thumb-headline }}
+								{{/ meal-planner }}
+
+								&lt;div class=&quot;block block-video&quot;&gt;
+									&lt;div class=&quot;b-vid&quot;&gt;
+										{{&gt; atoms-video }}
+									&lt;/div&gt; &lt;!-- /.b-vid --&gt;
+									&lt;h3 class=&quot;b-title&quot;&gt;How to peel garlic cloves quickly&lt;/h3&gt;
+								&lt;/div&gt; &lt;!-- /.block-video --&gt;
+
+								&lt;section class=&quot;section more-recipes&quot;&gt;
+									&lt;header class=&quot;s-header&quot;&gt;
+										&lt;h3 class=&quot;s-title heading&quot;&gt;More Recipes&lt;/h3&gt;
+									&lt;/header&gt; &lt;!-- /.s-header --&gt;
+									&lt;div class=&quot;g g-4up-early-break&quot;&gt;
+										{{# more-recipes }}
+											&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-block-thumb-headline }}&lt;/div&gt;
+										{{/ more-recipes }}
+									&lt;/div&gt; &lt;!-- /.g-4up-early-break --&gt;
+								&lt;/section&gt; &lt;!-- /.more-recipes --&gt;
+
+							&lt;/div&gt; &lt;!-- /.narrow --&gt;
+
+						&lt;/footer&gt; &lt;!-- /.article-footer --&gt;
+					{{/ recipe-footer }}
+
+				&lt;/article&gt; &lt;!-- /.article-standard --&gt;
+
+				{{&gt; organisms-content-footer }}
+			&lt;/section&gt; &lt;!-- /.primary-inner --&gt;
+		&lt;/div&gt; &lt;!-- /.primary --&gt;
+
+		&lt;div class=&quot;secondary&quot;&gt;
+			{{&gt; organisms-sidebar }}
+		&lt;/div&gt; &lt;!-- /.secondary --&gt;
+
+	&lt;/div&gt;&lt;!-- /role=main --&gt;
+	{{&gt; organisms-footer }}
+&lt;/div&gt; &lt;!-- /.page --&gt;

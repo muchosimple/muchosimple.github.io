@@ -1,0 +1,87 @@
+&lt;article class=&quot;slide {{ slide-class }}&quot; data-url=&quot;{{ data-url }}&quot;&gt;
+  &lt;div class=&quot;slide-inner cf&quot;&gt;
+
+    {{^ is-ad-slide }}
+    {{^ is-video-slide }}
+      &lt;div class=&quot;slide-img {{ slide-img-class }}&quot;&gt;
+        &lt;div class=&quot;hover-slide-navigation&quot;&gt;
+          &lt;a href=&quot;&quot; class=&quot;icon no-bg icon-arrow-left js-slide-hover-prev&quot;&gt;{{&gt; atoms-arrow-left }}&lt;/a&gt;
+          &lt;a href=&quot;&quot; class=&quot;icon no-bg icon-arrow-right js-slide-hover-next&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/a&gt;
+        &lt;/div&gt; &lt;!-- /.hover-slide-navigation --&gt;
+        {{&gt; molecules-image-with-social }}
+      &lt;/div&gt; &lt;!-- /.slide-img --&gt;
+    {{/ is-video-slide }}
+    {{/ is-ad-slide }}
+
+    {{# is-welcome-slide }}
+      &lt;div class=&quot;slide-intro slide-text&quot;&gt;
+        {{# kicker }}&lt;div class=&quot;kicker&quot;&gt;{{ kicker }}&lt;/div&gt;{{/ kicker }}
+        &lt;p class=&quot;dek&quot;&gt;{{ slide-intro }}&lt;/p&gt;
+        {{&gt; molecules-byline }}
+        &lt;a href=&quot;{{ url }}&quot; class=&quot;btn btn--gallery-start js-btn--gallery-start&quot;&gt;Start &lt;span class=&quot;icon icon-arrow-right no-bg&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/span&gt;&lt;/a&gt;
+      &lt;/div&gt; &lt;!-- /.slide-intro --&gt;
+    {{/ is-welcome-slide }}
+
+    {{# is-normal-slide }}
+      &lt;div class=&quot;slide-text {{ slide-text-class }}&quot;&gt;
+        &lt;div class=&quot;slide-controls&quot;&gt;
+          {{&gt; molecules-slide-counter }}
+          {{# has-see-all }}
+            &lt;a href=&quot;{{ url }}&quot; class=&quot;see-all--grid js-toggle&quot; data-toggled=&quot;gallery-container&quot; data-prefix=&quot;see-all-grid&quot;&gt;&lt;span class=&quot;icon icon-grid icon--small&quot;&gt;{{&gt; atoms-grid }}&lt;/span&gt; &lt;span class=&quot;light&quot;&gt;See All&lt;/span&gt;&lt;/a&gt;
+          {{/ has-see-all }}
+        &lt;/div&gt; &lt;!-- /.slide-controls --&gt;
+        &lt;div class=&quot;text&quot;&gt;
+          {{# kicker }}&lt;div class=&quot;kicker space-btm black&quot;&gt;{{ kicker }}&lt;/div&gt;{{/ kicker }}
+          &lt;h2 class=&quot;slide-title&quot;&gt;&lt;a href=&quot;&quot;&gt;{{ slide-title }}&lt;/a&gt;&lt;/h2&gt;
+          &lt;div class=&quot;p&quot;&gt;{{{ slide-dek }}}&lt;/div&gt;
+          {{# has-cta }}&lt;a class=&quot;slide__cta {{ slide-cta-class }}&quot; href=&quot;&quot;&gt;&lt;strong&gt;Get the recipe&lt;/strong&gt;&lt;/a&gt;{{/ has-cta }}
+          {{# has-side-credit }}&lt;span class=&quot;credit&quot;&gt;Photo by {{ credit }}&lt;/span&gt;{{/ has-side-credit }}
+        &lt;/div&gt; &lt;!-- /.text --&gt;
+      &lt;/div&gt; &lt;!-- /.slide-text --&gt;
+    {{/ is-normal-slide }}
+
+    {{# is-ad-slide }}
+      &lt;div class=&quot;slide-controls&quot;&gt;
+        &lt;div class=&quot;slide-navigation&quot;&gt;
+          &lt;a href=&quot;{{ url }}&quot; class=&quot;icon no-bg rounded icon-arrow-left icon--alt icon--medium js-slide-hover-prev&quot;&gt;{{&gt; atoms-arrow-left }}&lt;/a&gt;
+          &lt;a href=&quot;{{ url }}&quot; class=&quot;icon no-bg rounded icon-arrow-right icon--alt icon--medium js-slide-hover-next&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/a&gt;
+          &lt;div class=&quot;slide-count&quot;&gt;Skip Ad&lt;/div&gt;
+        &lt;/div&gt; &lt;!-- /.slide-navigation --&gt;
+      &lt;/div&gt; &lt;!-- /.slide-controls --&gt;
+      &lt;div class=&quot;ad-block-wrap&quot;&gt;
+        {{&gt; atoms-ad-slide-500x250 }}
+      &lt;/div&gt; &lt;!-- /.ad-block-wrap --&gt;
+    {{/ is-ad-slide }}
+
+    {{# is-video-slide }}
+      &lt;div class=&quot;slide-text {{ slide-text-class }}&quot;&gt;
+        &lt;div class=&quot;slide-controls&quot;&gt;
+          {{&gt; molecules-slide-counter }}
+          {{# has-see-all }}
+            &lt;a href=&quot;{{ url }}&quot; class=&quot;see-all--grid js-toggle&quot; data-toggled=&quot;gallery-container&quot; data-prefix=&quot;see-all-grid&quot;&gt;&lt;span class=&quot;icon icon-grid icon--small&quot;&gt;{{&gt; atoms-grid }}&lt;/span&gt; &lt;span class=&quot;light&quot;&gt;See All&lt;/span&gt;&lt;/a&gt;
+          {{/ has-see-all }}
+        &lt;/div&gt; &lt;!-- /.slide-controls --&gt;
+        &lt;div class=&quot;video-player space-btm&quot;&gt;
+          &lt;div class=&quot;hover-slide-navigation&quot;&gt;
+            &lt;a href=&quot;&quot; class=&quot;icon no-bg icon-arrow-left js-slide-hover-prev&quot;&gt;{{&gt; atoms-arrow-left }}&lt;/a&gt;
+            &lt;a href=&quot;&quot; class=&quot;icon no-bg icon-arrow-right js-slide-hover-next&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/a&gt;
+          &lt;/div&gt; &lt;!-- /.hover-slide-navigation --&gt;
+          &lt;div class=&quot;space-btm&quot;&gt;
+            &lt;div id=&quot;video__container&quot; class=&quot;video__outer-container&quot;&gt;
+              &lt;div style=&quot;display:none&quot;&gt;&lt;/div&gt;
+              {{&gt; atoms-brightcove-video }}
+            &lt;/div&gt; &lt;!-- /.video__outer-container --&gt;
+          &lt;/div&gt; &lt;!-- /.space-btm --&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;text&quot;&gt;
+          {{# kicker }}&lt;div class=&quot;kicker space-btm black&quot;&gt;{{ kicker }}&lt;/div&gt;{{/ kicker }}
+          &lt;h2 class=&quot;slide-title&quot;&gt;{{ slide-title }}&lt;/h2&gt;
+          &lt;div class=&quot;p&quot;&gt;{{{ slide-dek }}}&lt;/div&gt;
+          {{# has-cta }}&lt;a class=&quot;slide__cta {{ slide-cta-class }}&quot; href=&quot;&quot;&gt;&lt;strong&gt;Get the recipe&lt;/strong&gt;&lt;/a&gt;{{/ has-cta }}
+          {{# has-side-credit }}&lt;span class=&quot;credit&quot;&gt;Photo by {{ credit }}&lt;/span&gt;{{/ has-side-credit }}
+        &lt;/div&gt; &lt;!-- /.text --&gt;
+      &lt;/div&gt; &lt;!-- /.slide-text --&gt;
+    {{/ is-video-slide }}
+
+  &lt;/div&gt; &lt;!-- /.slide-inner --&gt;
+&lt;/article&gt; &lt;!-- /.slide --&gt;

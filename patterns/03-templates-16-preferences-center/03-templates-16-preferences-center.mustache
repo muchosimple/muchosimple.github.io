@@ -1,0 +1,52 @@
+&lt;div class=&quot;page&quot;&gt;
+	{{&gt; organisms-header }}
+	&lt;div class=&quot;main cf lc&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
+
+		&lt;article class=&quot;article article-standard&quot;&gt;
+			&lt;form action=&quot;{{ url }}&quot; method=&quot;post&quot; class=&quot;inline-form prefc__newsletter-form valididate-form js-valididate-form&quot;&gt;
+				&lt;fieldset&gt;
+					&lt;legend class=&quot;is-vishidden&quot;&gt;Free E-mail Newsletters&lt;/legend&gt;
+
+					&lt;header class=&quot;prefc__article-header article-header center narrow narrow--l cf&quot;&gt;
+						&lt;h1 class=&quot;lead-headline&quot;&gt;Free E-mail Newsletters&lt;/h1&gt;
+						&lt;h2 class=&quot;prefc__lead-subtitle lead-subtitle gray--dark&quot;&gt;Get the best of realsimple.com, from daily inspirational quotes to time-saving tips, plus special offers. Select any, or all, of the e-mail newsletters that you'd like to start receiving.&lt;/h2&gt;
+
+						&lt;div class=&quot;prefc__field-group inline-container cf narrow narrow--m&quot;&gt;
+							&lt;div class=&quot;prefc__newsletter-field-wrap rel field-wrap&quot;&gt;
+								&lt;input type=&quot;email&quot; placeholder=&quot;Enter Your E-mail&quot; name=&quot;email&quot; id=&quot;newsletter-field1&quot; class=&quot;roomy input-field prefc__newsletter-field newsletter-field field-email field-email1&quot; /&gt;
+							&lt;/div&gt; &lt;!-- /.prefc__newsletter-field-wrap --&gt;
+							&lt;div class=&quot;prefc__zip-field-wrap rel field-wrap&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Zip Code&quot; pattern=&quot;[0-9]*&quot; name=&quot;zip&quot; id=&quot;zip&quot; class=&quot;roomy input-field prefc__zip-field field-zip field-zip1&quot; /&gt;
+							&lt;/div&gt; &lt;!-- /.prefc__zip-field-wrap --&gt;
+							&lt;button class=&quot;prefc__submit submit roomy&quot;&gt;Sign Up&lt;/button&gt;&lt;/span&gt;
+						&lt;/div&gt; &lt;!-- /.inline-container --&gt;
+
+						&lt;span class=&quot;prefc__cl-item cl-item center dib&quot;&gt;&lt;input id=&quot;prefc__select-all&quot; class=&quot;prefc__select-all js-check-all&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;prefc__select-all&quot; class=&quot;font--secondary gray--dark pointer&quot;&gt;&lt;span&gt;{{&gt; atoms-check }}&lt;/span&gt; Select All E-Mail Newsletters&lt;/label&gt;&lt;/span&gt;
+
+					&lt;/header&gt; &lt;!-- /.article-header --&gt;
+
+					&lt;section class=&quot;section prefc__newletters narrow narrow--l&quot;&gt;
+						&lt;div class=&quot;g g-4up--500-700-1000 prefc__newsletter-grid&quot;&gt;
+							{{# pref-newsletters }}
+								&lt;div class=&quot;gi&quot;&gt;{{&gt; molecules-block-select-option }}&lt;/div&gt;
+							{{/ pref-newsletters }}
+						&lt;/div&gt; &lt;!-- /.g-4up--500-700-1000 --&gt;
+					&lt;/section&gt; &lt;!-- /.prefc__newletters --&gt;
+
+					&lt;div class=&quot;prefc__field-group inline-container cf narrow narrow--m&quot;&gt;
+						&lt;div class=&quot;prefc__newsletter-field-wrap rel field-wrap&quot;&gt;
+							&lt;input type=&quot;email&quot; placeholder=&quot;Enter Your E-mail&quot; name=&quot;email&quot; id=&quot;newsletter-field2&quot; class=&quot;roomy input-field prefc__newsletter-field newsletter-field field-email field-email2&quot; /&gt;
+						&lt;/div&gt; &lt;!-- /.prefc__newsletter-field-wrap --&gt;
+						&lt;div class=&quot;prefc__zip-field-wrap rel field-wrap&quot;&gt;
+							&lt;input type=&quot;text&quot; placeholder=&quot;Zip Code&quot; pattern=&quot;[0-9]*&quot; name=&quot;zip&quot; id=&quot;zip2&quot; class=&quot;roomy input-field prefc__zip-field field-zip field-zip2&quot; /&gt;
+						&lt;/div&gt; &lt;!-- /.prefc__zip-field-wrap --&gt;
+						&lt;button class=&quot;prefc__submit submit roomy&quot;&gt;Sign Up&lt;/button&gt;&lt;/span&gt;
+					&lt;/div&gt; &lt;!-- /.inline-container --&gt;
+
+				&lt;/fieldset&gt;
+			&lt;/form&gt; &lt;!-- /.newsletter-form --&gt;
+
+		&lt;/article&gt; &lt;!-- /.article-standard --&gt;
+	&lt;/div&gt;&lt;!-- /role=main --&gt;
+	{{&gt; organisms-footer }}
+&lt;/div&gt; &lt;!-- /.page --&gt;
