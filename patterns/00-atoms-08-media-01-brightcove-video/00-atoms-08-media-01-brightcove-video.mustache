@@ -1,10 +1,10 @@
   &lt;div id=&quot;video__container&quot; class=&quot;video__outer-container&quot;&gt;
 
-    &lt;!-- Start of Brightcove Player --&gt;
+      {{&gt; atoms-loading }}
+
+      &lt;!-- Start of Brightcove Player --&gt;
 
     &lt;div style=&quot;display:none&quot;&gt;&lt;/div&gt;
-
-    &lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot; src=&quot;http://admin.brightcove.com/js/BrightcoveExperiences.js&quot;&gt;&lt;/script&gt;
 
     &lt;object id=&quot;myExperience1754276205001&quot; class=&quot;BrightcoveExperience&quot;&gt;
       &lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;
@@ -23,7 +23,8 @@
       &lt;param name=&quot;templateLoadHandler&quot; value=&quot;onTemplateLoad&quot; /&gt;
       &lt;param name=&quot;templateReadyHandler&quot; value=&quot;onTemplateReady&quot; /&gt;
     &lt;/object&gt;
-    &lt;script type=&quot;text/javascript&quot;&gt;brightcove.createExperiences();&lt;/script&gt;
+
+    &lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot; src=&quot;http://admin.brightcove.com/js/BrightcoveExperiences.js&quot;&gt;&lt;/script&gt;
 
     &lt;!-- End of Brightcove Player --&gt;
 
@@ -41,6 +42,8 @@
         console.log(context, message);
       }
     };
+
+    brightcove.createExperiences();
 
     function onTemplateLoad(experienceID) {
       logit(&quot;EVENT&quot;, &quot;onTemplateLoad&quot;);

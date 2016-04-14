@@ -1117,11 +1117,47 @@ p q r s t u v w x y z { | } ~
 						<div class="sg-pattern-body">
 							  <div id="video__container" class="video__outer-container">
 
-    <!-- Start of Brightcove Player -->
+      <svg class="icon-loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+          <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+          <g transform="translate(50 50)">
+              <g transform="rotate(0) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(45) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(90) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(135) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(180) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(225) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(270) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(315) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+          </g>
+      </svg>
+
+      <!-- Start of Brightcove Player -->
 
     <div style="display:none"></div>
-
-    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 
     <object id="myExperience1754276205001" class="BrightcoveExperience">
       <param name="bgcolor" value="#FFFFFF" />
@@ -1140,7 +1176,8 @@ p q r s t u v w x y z { | } ~
       <param name="templateLoadHandler" value="onTemplateLoad" />
       <param name="templateReadyHandler" value="onTemplateReady" />
     </object>
-    <script type="text/javascript">brightcove.createExperiences();</script>
+
+    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 
     <!-- End of Brightcove Player -->
 
@@ -1158,6 +1195,8 @@ p q r s t u v w x y z { | } ~
         console.log(context, message);
       }
     };
+
+    brightcove.createExperiences();
 
     function onTemplateLoad(experienceID) {
       logit("EVENT", "onTemplateLoad");
@@ -1216,16 +1255,56 @@ p q r s t u v w x y z { | } ~
   </script>
 
 							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/00-atoms-09-icons-26-loading/00-atoms-09-icons-26-loading.html"><code>atoms-loading</code></a>
+									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
 										  &lt;div id=&quot;video__container&quot; class=&quot;video__outer-container&quot;&gt;
 
-    &lt;!-- Start of Brightcove Player --&gt;
+      &lt;svg class=&quot;icon-loading&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot; preserveAspectRatio=&quot;xMidYMid&quot;&gt;
+          &lt;rect x=&quot;0&quot; y=&quot;0&quot; width=&quot;100&quot; height=&quot;100&quot; fill=&quot;none&quot; class=&quot;bk&quot;&gt;&lt;/rect&gt;
+          &lt;g transform=&quot;translate(50 50)&quot;&gt;
+              &lt;g transform=&quot;rotate(0) translate(34 0)&quot;&gt;
+                  &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+                  &lt;/circle&gt;
+              &lt;/g&gt;
+              &lt;g transform=&quot;rotate(45) translate(34 0)&quot;&gt;
+                  &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+                  &lt;/circle&gt;
+              &lt;/g&gt;
+              &lt;g transform=&quot;rotate(90) translate(34 0)&quot;&gt;
+                  &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+                  &lt;/circle&gt;
+              &lt;/g&gt;
+              &lt;g transform=&quot;rotate(135) translate(34 0)&quot;&gt;
+                  &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+                  &lt;/circle&gt;
+              &lt;/g&gt;
+              &lt;g transform=&quot;rotate(180) translate(34 0)&quot;&gt;
+                  &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+                  &lt;/circle&gt;
+              &lt;/g&gt;
+              &lt;g transform=&quot;rotate(225) translate(34 0)&quot;&gt;
+                  &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+                  &lt;/circle&gt;
+              &lt;/g&gt;
+              &lt;g transform=&quot;rotate(270) translate(34 0)&quot;&gt;
+                  &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+                  &lt;/circle&gt;
+              &lt;/g&gt;
+              &lt;g transform=&quot;rotate(315) translate(34 0)&quot;&gt;
+                  &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+                  &lt;/circle&gt;
+              &lt;/g&gt;
+          &lt;/g&gt;
+      &lt;/svg&gt;
+
+      &lt;!-- Start of Brightcove Player --&gt;
 
     &lt;div style=&quot;display:none&quot;&gt;&lt;/div&gt;
-
-    &lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot; src=&quot;http://admin.brightcove.com/js/BrightcoveExperiences.js&quot;&gt;&lt;/script&gt;
 
     &lt;object id=&quot;myExperience1754276205001&quot; class=&quot;BrightcoveExperience&quot;&gt;
       &lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;
@@ -1244,7 +1323,8 @@ p q r s t u v w x y z { | } ~
       &lt;param name=&quot;templateLoadHandler&quot; value=&quot;onTemplateLoad&quot; /&gt;
       &lt;param name=&quot;templateReadyHandler&quot; value=&quot;onTemplateReady&quot; /&gt;
     &lt;/object&gt;
-    &lt;script type=&quot;text/javascript&quot;&gt;brightcove.createExperiences();&lt;/script&gt;
+
+    &lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot; src=&quot;http://admin.brightcove.com/js/BrightcoveExperiences.js&quot;&gt;&lt;/script&gt;
 
     &lt;!-- End of Brightcove Player --&gt;
 
@@ -1262,6 +1342,8 @@ p q r s t u v w x y z { | } ~
         console.log(context, message);
       }
     };
+
+    brightcove.createExperiences();
 
     function onTemplateLoad(experienceID) {
       logit(&quot;EVENT&quot;, &quot;onTemplateLoad&quot;);
@@ -2036,6 +2118,94 @@ p q r s t u v w x y z { | } ~
 								<pre class="sg-code-html">
 									<code>
 										&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 500 500&quot; enable-background=&quot;new 0 0 500 500&quot;&gt;&lt;title&gt;Play Video&lt;/title&gt;&lt;path fill=&quot;#fff&quot; d=&quot;M249.9 8.3C114 8.3 3.9 116.8 3.9 250.6s110.1 242.3 246 242.3 246-108.5 246-242.3S385.8 8.3 249.9 8.3zm-67.7 365.4V125.1l167.1 124.3-167.1 124.3z&quot;/&gt;&lt;/svg&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="atoms-loading" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-09-icons-26-loading/00-atoms-09-icons-26-loading.html" class="patternLink" data-patternpartial="atoms-loading">Loading</a></h2>
+						<div class="sg-pattern-body">
+							<svg class="icon-loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+    <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+    <g transform="translate(50 50)">
+        <g transform="rotate(0) translate(34 0)">
+            <circle cx="0" cy="0" r="8" fill="#f58e96">
+            </circle>
+        </g>
+        <g transform="rotate(45) translate(34 0)">
+            <circle cx="0" cy="0" r="8" fill="#f58e96">
+            </circle>
+        </g>
+        <g transform="rotate(90) translate(34 0)">
+            <circle cx="0" cy="0" r="8" fill="#f58e96">
+            </circle>
+        </g>
+        <g transform="rotate(135) translate(34 0)">
+            <circle cx="0" cy="0" r="8" fill="#f58e96">
+            </circle>
+        </g>
+        <g transform="rotate(180) translate(34 0)">
+            <circle cx="0" cy="0" r="8" fill="#f58e96">
+            </circle>
+        </g>
+        <g transform="rotate(225) translate(34 0)">
+            <circle cx="0" cy="0" r="8" fill="#f58e96">
+            </circle>
+        </g>
+        <g transform="rotate(270) translate(34 0)">
+            <circle cx="0" cy="0" r="8" fill="#f58e96">
+            </circle>
+        </g>
+        <g transform="rotate(315) translate(34 0)">
+            <circle cx="0" cy="0" r="8" fill="#f58e96">
+            </circle>
+        </g>
+    </g>
+</svg>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;svg class=&quot;icon-loading&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot; preserveAspectRatio=&quot;xMidYMid&quot;&gt;
+    &lt;rect x=&quot;0&quot; y=&quot;0&quot; width=&quot;100&quot; height=&quot;100&quot; fill=&quot;none&quot; class=&quot;bk&quot;&gt;&lt;/rect&gt;
+    &lt;g transform=&quot;translate(50 50)&quot;&gt;
+        &lt;g transform=&quot;rotate(0) translate(34 0)&quot;&gt;
+            &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+            &lt;/circle&gt;
+        &lt;/g&gt;
+        &lt;g transform=&quot;rotate(45) translate(34 0)&quot;&gt;
+            &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+            &lt;/circle&gt;
+        &lt;/g&gt;
+        &lt;g transform=&quot;rotate(90) translate(34 0)&quot;&gt;
+            &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+            &lt;/circle&gt;
+        &lt;/g&gt;
+        &lt;g transform=&quot;rotate(135) translate(34 0)&quot;&gt;
+            &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+            &lt;/circle&gt;
+        &lt;/g&gt;
+        &lt;g transform=&quot;rotate(180) translate(34 0)&quot;&gt;
+            &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+            &lt;/circle&gt;
+        &lt;/g&gt;
+        &lt;g transform=&quot;rotate(225) translate(34 0)&quot;&gt;
+            &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+            &lt;/circle&gt;
+        &lt;/g&gt;
+        &lt;g transform=&quot;rotate(270) translate(34 0)&quot;&gt;
+            &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+            &lt;/circle&gt;
+        &lt;/g&gt;
+        &lt;g transform=&quot;rotate(315) translate(34 0)&quot;&gt;
+            &lt;circle cx=&quot;0&quot; cy=&quot;0&quot; r=&quot;8&quot; fill=&quot;#f58e96&quot;&gt;
+            &lt;/circle&gt;
+        &lt;/g&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
 
 									</code>
 								</pre>

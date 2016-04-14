@@ -255,6 +255,9 @@ window.onresize = function() {
     $('.block-video, .article, .fitvid, .video-player').fitVids();
   }
 
+  // Unhide the BC player when it's ready.
+  $('.BrightcoveExperience').attr('data-loaded', 'true');
+
   // 5-star Rating
   if ($('.five-star').length) {
     $('.five-star').find('.star').click(function() {

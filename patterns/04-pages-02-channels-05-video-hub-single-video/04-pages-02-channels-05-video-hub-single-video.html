@@ -415,97 +415,146 @@
 
 					<div class="video-player space-btm">
 						<div class="space-btm">
-							<div id="video__container" class="video__outer-container">
 
-								<!-- Start of Brightcove Player -->
+                <div id="video__container" class="video__outer-container">
 
-								<div style="display:none"></div>
+      <svg class="icon-loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+          <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+          <g transform="translate(50 50)">
+              <g transform="rotate(0) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(45) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(90) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(135) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(180) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(225) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(270) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(315) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+          </g>
+      </svg>
 
-									<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+                    <!-- Start of Brightcove Player -->
 
-									<object id="myExperience1754276205001" class="BrightcoveExperience">
-										<param name="bgcolor" value="#FFFFFF" />
-										<param name="width" value="480" />
-										<param name="height" value="270" />
-										<param name="playerID" value="1756040703001" />
-										<param name="playerKey" value="AQ~~,AAABmA9XpXk~,-Kp7jNgisrc05QYSNxkzqM1X9GtvaqWM" />
-										<param name="isVid" value="true" />
-										<param name="isUI" value="true" />
-										<param name="dynamicStreaming" value="true" />
-										<param name="@videoPlayer" value="1754276205001" />
-											<!-- <param name="forceHTML" value="true" /> -->
-										<!-- smart player api params -->
-										<param name="includeAPI" value="true" />
-										<param name="showNoContentMessage" value="true" />
-										<param name="templateLoadHandler" value="onTemplateLoad" />
-										<param name="templateReadyHandler" value="onTemplateReady" />
-									</object>
-									<script type="text/javascript">brightcove.createExperiences();</script>
+                  <div style="display:none"></div>
 
-									<!-- End of Brightcove Player -->
+                  <object id="myExperience1754276205001" class="BrightcoveExperience">
+                    <param name="bgcolor" value="#FFFFFF" />
+                    <param name="width" value="480" />
+                    <param name="height" value="270" />
+                    <param name="playerID" value="1756040703001" />
+                    <param name="playerKey" value="AQ~~,AAABmA9XpXk~,-Kp7jNgisrc05QYSNxkzqM1X9GtvaqWM" />
+                    <param name="isVid" value="true" />
+                    <param name="isUI" value="true" />
+                    <param name="dynamicStreaming" value="true" />
+                    <param name="@videoPlayer" value="1754276205001" />
+                      <!-- <param name="forceHTML" value="true" /> -->
+                    <!-- smart player api params -->
+                    <param name="includeAPI" value="true" />
+                    <param name="showNoContentMessage" value="true" />
+                    <param name="templateLoadHandler" value="onTemplateLoad" />
+                    <param name="templateReadyHandler" value="onTemplateReady" />
+                  </object>
 
-								</div> <!-- /.video__outer-container -->
+                  <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 
-							<script type="text/javascript">
-								var player,
-										APIModules,
-										videoPlayer,
-										experienceModule;
+                  <!-- End of Brightcove Player -->
 
-								// utility
-								logit = function (context, message) {
-									if (console) {
-										console.log(context, message);
-									}
-								};
+                </div> <!-- /.video__outer-container -->
 
-								function onTemplateLoad(experienceID) {
-									logit("EVENT", "onTemplateLoad");
-									player = brightcove.api.getExperience(experienceID);
-									APIModules = brightcove.api.modules.APIModules;
-								}
+                <script type="text/javascript">
+                  var player,
+                      APIModules,
+                      videoPlayer,
+                      experienceModule;
 
-								function onTemplateReady(evt) {
-									logit("EVENT", "onTemplateReady");
-									videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
-									experienceModule = player.getModule(APIModules.EXPERIENCE);
+                  // utility
+                  logit = function (context, message) {
+                    if (console) {
+                      console.log(context, message);
+                    }
+                  };
 
-									videoPlayer.getCurrentRendition(function(renditionDTO) {
-										if (renditionDTO) {
-											logit("condition", "renditionDTO found");
-											calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
-										} else {
-											logit("condition", "renditionDTO NOT found");
-											videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(event) {
-												calulateNewPercentage(event.media.renditions[0].frameWidth, event.media.renditions[0].frameHeight);
-											});
-										}
-									});
+                  brightcove.createExperiences();
 
-									var evt = document.createEvent('UIEvents');
-									evt.initUIEvent('resize',true,false,0);
-									window.dispatchEvent(evt);
+                  function onTemplateLoad(experienceID) {
+                    logit("EVENT", "onTemplateLoad");
+                    player = brightcove.api.getExperience(experienceID);
+                    APIModules = brightcove.api.modules.APIModules;
+                  }
 
-									videoPlayer.play();
-								}
+                  function onTemplateReady(evt) {
+                    logit("EVENT", "onTemplateReady");
+                    videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
+                    experienceModule = player.getModule(APIModules.EXPERIENCE);
 
-								function calulateNewPercentage(width,height) {
-									logit("function", "calulateNewPercentage");
-									var newPercentage = ((height / width) * 100) + "%";
-									logit("Video Width = ", width);
-									logit("Video Height = ", height);
-									logit("New Percentage = ", newPercentage);
-									document.getElementById("video__container").style.paddingBottom = newPercentage;
-								}
+                    videoPlayer.getCurrentRendition(function(renditionDTO) {
+                      if (renditionDTO) {
+                        logit("condition", "renditionDTO found");
+                        calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
+                      } else {
+                        logit("condition", "renditionDTO NOT found");
+                        videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(event) {
+                          calulateNewPercentage(event.media.renditions[0].frameWidth, event.media.renditions[0].frameHeight);
+                        });
+                      }
+                    });
 
-								window.onresize = function(evt) {
-									var resizeWidth = $(".BrightcoveExperience").width(),
-									resizeHeight = $(".BrightcoveExperience").height();
-									if (experienceModule.experience.type == "html"){
-										experienceModule.setSize(resizeWidth, resizeHeight)
-									}
-								}
-							</script>
+                    // Play video.
+                    $(".js-play-video").on("click", function(){
+                      videoPlayer.play();
+                    });
+                    // Pause video.
+                    $(".js-stop-video").on("click", function(){
+                      videoPlayer.pause();
+                    });
+
+                    var evt = document.createEvent('UIEvents');
+                    evt.initUIEvent('resize',true,false,0);
+                    window.dispatchEvent(evt);
+
+                  }
+
+                  function calulateNewPercentage(width,height) {
+                    logit("function", "calulateNewPercentage");
+                    var newPercentage = ((height / width) * 100) + "%";
+                    logit("Video Width = ", width);
+                    logit("Video Height = ", height);
+                    logit("New Percentage = ", newPercentage);
+                    document.getElementById("video__container").style.paddingBottom = newPercentage;
+                  }
+
+                  window.onresize = function(evt) {
+                    var resizeWidth = $(".BrightcoveExperience").width(),
+                    resizeHeight = $(".BrightcoveExperience").height();
+                    if (experienceModule.experience.type == "html"){
+                      experienceModule.setSize(resizeWidth, resizeHeight)
+                    }
+                  }
+                </script>
+
 						</div> <!-- /.space-btm -->
 
 

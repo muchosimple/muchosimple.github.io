@@ -52,11 +52,47 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
   <div id="video__container" class="video__outer-container">
 
-    <!-- Start of Brightcove Player -->
+      <svg class="icon-loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+          <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+          <g transform="translate(50 50)">
+              <g transform="rotate(0) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(45) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(90) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(135) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(180) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(225) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(270) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(315) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+          </g>
+      </svg>
+
+      <!-- Start of Brightcove Player -->
 
     <div style="display:none"></div>
-
-    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 
     <object id="myExperience1754276205001" class="BrightcoveExperience">
       <param name="bgcolor" value="#FFFFFF" />
@@ -75,7 +111,8 @@
       <param name="templateLoadHandler" value="onTemplateLoad" />
       <param name="templateReadyHandler" value="onTemplateReady" />
     </object>
-    <script type="text/javascript">brightcove.createExperiences();</script>
+
+    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 
     <!-- End of Brightcove Player -->
 
@@ -93,6 +130,8 @@
         console.log(context, message);
       }
     };
+
+    brightcove.createExperiences();
 
     function onTemplateLoad(experienceID) {
       logit("EVENT", "onTemplateLoad");
@@ -165,8 +204,8 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "atoms-brightcove-video";
-		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"molecules-gallery-slide","lineagePath":"..\/..\/patterns\/01-molecules-06-components-05-gallery-slide\/01-molecules-06-components-05-gallery-slide.html"},{"lineagePattern":"organisms-recipe-header","lineagePath":"..\/..\/patterns\/02-organisms-01-article-06-recipe-header\/02-organisms-01-article-06-recipe-header.html"}];
+		var lineage        = [{"lineagePattern":"atoms-loading","lineagePath":"..\/..\/patterns\/00-atoms-09-icons-26-loading\/00-atoms-09-icons-26-loading.html"}];
+		var lineageR       = [{"lineagePattern":"molecules-gallery-slide","lineagePath":"..\/..\/patterns\/01-molecules-06-components-05-gallery-slide\/01-molecules-06-components-05-gallery-slide.html"},{"lineagePattern":"organisms-recipe-header","lineagePath":"..\/..\/patterns\/02-organisms-01-article-06-recipe-header\/02-organisms-01-article-06-recipe-header.html"},{"lineagePattern":"templates-video-hub","lineagePath":"..\/..\/patterns\/03-templates-11-video-hub\/03-templates-11-video-hub.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>
