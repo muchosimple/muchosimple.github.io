@@ -102,9 +102,14 @@ window.onresize = function() {
   // Toggle parent class
   $('.js-toggle-parent').on('click', function(e) {
     e.preventDefault();
-    var $this = $(this);
-
-    $this.parent().toggleClass('is-active');
+    var $this = $(this),
+      // If the ancestor you want to toggle isn't the parent, set this data attr, on the child, to the class of the ancestor.
+      toggleParentClass = $this.attr('data-js-toggle-parent-class');
+    if (typeof toggleParentClass !== typeof undefined && toggleParentClass !== false) {
+      $this.closest('.' + toggleParentClass).toggleClass('is-active');
+    } else {
+      $this.parent().toggleClass('is-active');
+    }
   });
 
   // Reset subnav when main menu is reopened.
