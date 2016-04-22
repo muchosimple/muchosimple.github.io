@@ -1,22 +1,22 @@
 &lt;header class=&quot;article-header cf&quot;&gt;
   &lt;div&gt;{{&gt; molecules-kicker }}&lt;/div&gt;
-  {{^ recipe-with-video }}
+  {{^ has-video }}
     &lt;h1 class=&quot;lead-headline left-halved&quot; itemprop=&quot;name&quot;&gt;{{ title }}&lt;/h1&gt;
     &lt;div class=&quot;primary-image right-halved&quot;&gt;
       {{&gt; molecules-image-with-social }}
     &lt;/div&gt; &lt;!-- /.primary-image --&gt;
-  {{/ recipe-with-video }}
-  {{# recipe-with-video }}
+  {{/ has-video }}
+  {{# has-video }}
     &lt;div class=&quot;unify__headline-media rel&quot;&gt;
       &lt;div class=&quot;js-stop-video pointer js-toggle-parent icon-close-wrap&quot;&gt;&lt;span class=&quot;icon icon-x icon--small icon-close&quot;&gt;{{&gt; atoms-x }}&lt;/span&gt;&lt;/div&gt;
       &lt;div class=&quot;video-hero&quot;&gt;
         {{&gt; atoms-brightcove-video }}
       &lt;/div&gt; &lt;!-- /.video-hero --&gt;
       &lt;h1 class=&quot;lead-headline left-halved&quot; itemprop=&quot;name&quot;&gt;{{ title }}&lt;/h1&gt;
-      &lt;div class=&quot;primary-image right-halved js-toggle-parent&quot;&gt;
+      &lt;div class=&quot;primary-image right-halved&quot;&gt;
         &lt;div class=&quot;pointer js-play-video&quot;&gt;{{&gt; molecules-image-with-social }}&lt;/div&gt;
       &lt;/div&gt; &lt;!-- /.primary-image --&gt;
-  {{/ recipe-with-video }}
+  {{/ has-video }}
   &lt;div class=&quot;recipe-meta left-halved&quot;&gt;
     &lt;div class=&quot;five-star-wrap&quot;&gt;
       &lt;div class=&quot;five-star-rated recipe-five-star&quot;&gt;
@@ -64,9 +64,9 @@
       &lt;/ul&gt; &lt;!-- /.dl --&gt;
     &lt;/div&gt; &lt;!-- /.recipe-data --&gt;
   &lt;/div&gt; &lt;!-- /.recipe-meta --&gt;
-  {{# recipe-with-video }}
+  {{# has-video }}
     &lt;/div&gt; &lt;!-- /.unify__headline-media --&gt;
-  {{/ recipe-with-video }}
+  {{/ has-video }}
   &lt;div class=&quot;article-tools&quot;&gt;
     {{&gt; molecules-social-share }}
     {{&gt; molecules-content-utility }}
