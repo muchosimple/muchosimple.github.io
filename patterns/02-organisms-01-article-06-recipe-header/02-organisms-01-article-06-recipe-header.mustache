@@ -1,4 +1,4 @@
-&lt;header class=&quot;article-header cf no-space-btm&quot;&gt;
+&lt;header class=&quot;article-header cf space-btm&quot;&gt;
   &lt;div&gt;{{&gt; molecules-kicker }}&lt;/div&gt;
   {{^ has-video }}
     &lt;h1 class=&quot;lead-headline left-halved&quot; itemprop=&quot;name&quot;&gt;{{ title }}&lt;/h1&gt;
@@ -17,6 +17,10 @@
         &lt;div class=&quot;pointer js-play-video&quot;&gt;{{&gt; molecules-image-with-social }}&lt;/div&gt;
       &lt;/div&gt; &lt;!-- /.primary-image --&gt;
   {{/ has-video }}
+  &lt;div class=&quot;article-tools&quot;&gt;
+    {{&gt; molecules-social-share }}
+    {{&gt; molecules-content-utility }}
+  &lt;/div&gt; &lt;!-- /.article-tools --&gt;
   &lt;div class=&quot;recipe-meta left-halved&quot;&gt;
     &lt;div class=&quot;five-star-wrap&quot;&gt;
       &lt;div class=&quot;five-star-rated recipe-five-star&quot;&gt;
@@ -67,9 +71,5 @@
   {{# has-video }}
     &lt;/div&gt; &lt;!-- /.unify__headline-media --&gt;
   {{/ has-video }}
-  &lt;div class=&quot;article-tools&quot;&gt;
-    {{&gt; molecules-social-share }}
-    {{&gt; molecules-content-utility }}
-  &lt;/div&gt; &lt;!-- /.article-tools --&gt;
   {{{ description }}}
 &lt;/header&gt; &lt;!-- /.article-header --&gt;

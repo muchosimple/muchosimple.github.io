@@ -1,16 +1,29 @@
 &lt;div class=&quot;page&quot;&gt;
   {{&gt; organisms-header }}
+  {{# package-image-head }}
+    &lt;header class=&quot;article-header-image package-header cf center&quot;&gt;
+      &lt;div class=&quot;image-header-section&quot;&gt;
+        &lt;img src=&quot;{{ img.src }}&quot; alt=&quot;{{ img.alt }}&quot;/&gt;
+        &lt;section class=&quot;package-image-headline&quot;&gt;
+          &lt;h1 class=&quot;lead-headline upper red&quot; itemprop=&quot;headline&quot;&gt;{{ title }}&lt;/h1&gt;
+          &lt;h2 class=&quot;lead-subtitle narrow&quot; itemprop=&quot;alternativeHeadline&quot;&gt;{{ subtitle }}&lt;/h2&gt;
+          {{&gt; atoms-presented-by }}
+        &lt;/section&gt;
+      &lt;/div&gt;
+   &lt;/header&gt; 
+  {{/ package-image-head }}
     &lt;div class=&quot;main cf lc&quot; role=&quot;main&quot; aria-live=&quot;polite&quot;&gt;
       &lt;div class=&quot;primary&quot;&gt;
         &lt;div class=&quot;primary-inner&quot;&gt;
-          {{&gt; atoms-presented-by }}
-          {{# package-head }}
-            &lt;header class=&quot;article-header package-header cf center&quot;&gt;
-              &lt;h1 class=&quot;lead-headline upper red&quot; itemprop=&quot;headline&quot;&gt;{{ title }}&lt;/h1&gt;
-              &lt;h2 class=&quot;lead-subtitle narrow&quot; itemprop=&quot;alternativeHeadline&quot;&gt;{{ subtitle }}&lt;/h2&gt;
-            &lt;/header&gt; &lt;!-- /.package-header --&gt;
-          {{/ package-head }}
-
+          {{^ has-image-header }}
+            {{&gt; atoms-presented-by }}
+            {{# package-head }}
+              &lt;header class=&quot;article-header package-header cf center&quot;&gt;
+                &lt;h1 class=&quot;lead-headline upper red&quot; itemprop=&quot;headline&quot;&gt;{{ title }}&lt;/h1&gt;
+                &lt;h2 class=&quot;lead-subtitle narrow&quot; itemprop=&quot;alternativeHeadline&quot;&gt;{{ subtitle }}&lt;/h2&gt;
+              &lt;/header&gt; &lt;!-- /.package-header --&gt;
+            {{/ package-head }}
+          {{/ has-image-header }}
           &lt;section class=&quot;section package-featured space-double-btm pad-btm&quot;&gt;
             &lt;div class=&quot;g g-3up-v2&quot;&gt;
               {{# package-featured }}
