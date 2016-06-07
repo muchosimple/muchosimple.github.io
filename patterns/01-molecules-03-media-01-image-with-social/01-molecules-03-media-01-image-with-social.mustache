@@ -1,7 +1,7 @@
 &lt;div class=&quot;img-wrap {{# credit }} has-credit {{/ credit }}&quot;&gt;
-  &lt;div class=&quot;img-inner&quot;&gt;
+  &lt;div class=&quot;img-inner rel&quot;&gt;
     {{# social-tools }}
-      &lt;div class=&quot;has-social&quot;&gt;
+      &lt;div class=&quot;has-social {{ social-class }}&quot;&gt;
     {{/ social-tools }}
 
     {{# has-link }}
@@ -15,7 +15,7 @@
     {{/ has-link }}
 
     {{# social-tools }}
-      &lt;div class=&quot;img-overlay o-social&quot;&gt;{{&gt; molecules-social-share }}&lt;/div&gt;
+      &lt;div class=&quot;img-overlay o-social&quot;&gt;{{&gt; molecules-social-share-on-image }}&lt;/div&gt;
     {{/ social-tools }}
 
     {{# large-image }}
@@ -27,6 +27,10 @@
     {{# social-tools }}
       &lt;/div&gt; &lt;!-- /.has-social --&gt;
     {{/ social-tools }}
+
+    {{# has-video }}
+      &lt;span class=&quot;icon icon-play icon--big rounded js-toggle-parent&quot; data-js-toggle-parent-class=&quot;unify__headline-media&quot;&gt;{{&gt; atoms-play }}&lt;/span&gt;
+    {{/ has-video }}
   &lt;/div&gt; &lt;!-- /.img-inner --&gt;
 
   {{^ has-side-credit }}

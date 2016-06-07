@@ -1,24 +1,40 @@
 &lt;div class=&quot;block block-listicle-item {{ block-class }}&quot;&gt;
-	&lt;div class=&quot;b-inner cf&quot;&gt;
-    &lt;div class=&quot;b-head&quot;&gt;
-      &lt;span class=&quot;number--large {{ number-class }}&quot;&gt;{{ number }}&lt;/span&gt;
-      &lt;h2 class=&quot;b-title&quot;&gt;{{{ title }}}&lt;/h2&gt;
-    &lt;/div&gt; &lt;!-- /.b-head --&gt;
-    {{# b-thumb }}
-      &lt;div class=&quot;b-thumb&quot;&gt;
-        {{&gt; molecules-image-with-social }}
-      &lt;/div&gt; &lt;!-- /.b-thumb --&gt;
-    {{/ b-thumb }}
-    &lt;div class=&quot;b-text&quot;&gt;
-      &lt;div class=&quot;dek text&quot;&gt;
-        {{{ dek }}}
-        {{# cta }}
-          &lt;p&gt;Get the {{{ cta }}}&lt;/p&gt;
-        {{/ cta }}
-        {{# alt-credit }}
-          &lt;span class=&quot;credit align-left&quot;&gt;Photo by {{ alt-credit }}&lt;/span&gt;
-        {{/ alt-credit }}
-      &lt;/div&gt; &lt;!-- /.dek --&gt;
-		&lt;/div&gt; &lt;!-- /.b-text --&gt;
-	&lt;/div&gt; &lt;!-- /.b-inner --&gt;
+  {{# has-video }}
+    &lt;div class=&quot;unify__headline-media rel&quot;&gt;
+      &lt;div class=&quot;js-stop-video pointer js-toggle-parent icon-close-wrap&quot;&gt;&lt;span class=&quot;icon icon-x icon--small icon-close&quot;&gt;{{&gt; atoms-x }}&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;video-hero&quot;&gt;
+        {{&gt; atoms-brightcove-video }}
+      &lt;/div&gt; &lt;!-- /.video-hero --&gt;
+  {{/ has-video }}
+      &lt;div class=&quot;b-inner cf&quot;&gt;
+        &lt;div class=&quot;b-head&quot;&gt;
+          &lt;span class=&quot;number--large {{ number-class }}&quot;&gt;{{ number }}&lt;/span&gt;
+          &lt;h2 class=&quot;b-title&quot;&gt;{{{ title }}}&lt;/h2&gt;
+        &lt;/div&gt; &lt;!-- /.b-head --&gt;
+          {{# b-thumb }}
+            &lt;div class=&quot;b-thumb primary-image&quot;&gt;
+              {{# has-video }}
+                &lt;div class=&quot;pointer js-play-video&quot;&gt;
+              {{/ has-video }}
+                  {{&gt; molecules-image-with-social }}
+              {{# has-video }}
+                &lt;/div&gt;
+              {{/ has-video }}
+            &lt;/div&gt; &lt;!-- /.b-thumb --&gt;
+          {{/ b-thumb }}
+        &lt;div class=&quot;b-text&quot;&gt;
+          &lt;div class=&quot;dek text&quot;&gt;
+            {{{ dek }}}
+            {{# cta }}
+              &lt;p&gt;Get the {{{ cta }}}&lt;/p&gt;
+            {{/ cta }}
+            {{# alt-credit }}
+              &lt;span class=&quot;credit align-left&quot;&gt;Photo by {{ alt-credit }}&lt;/span&gt;
+            {{/ alt-credit }}
+          &lt;/div&gt; &lt;!-- /.dek --&gt;
+        &lt;/div&gt; &lt;!-- /.b-text --&gt;
+      &lt;/div&gt; &lt;!-- /.b-inner --&gt;
+  {{# has-video }}
+    &lt;/div&gt;
+  {{/ has-video }}
 &lt;/div&gt; &lt;!-- /.block-listicle-item --&gt;

@@ -1,5 +1,5 @@
 {{# is-lazy }}
-  &lt;img class=&quot;lazy{{#classes}} {{.}}{{/classes}}&quot; data-original=&quot;{{ img.src }}&quot; itemprop=&quot;image&quot; alt=&quot;{{ img.alt }}&quot; /&gt;
+  &lt;img class=&quot;lazy{{#classes}} {{.}}{{/classes}}{{# has-video }} js-toggle-parent{{/has-video}}&quot; data-original=&quot;{{ img.src }}&quot; itemprop=&quot;image&quot; alt=&quot;{{ img.alt }}&quot; {{# has-video }}data-js-toggle-parent-class=&quot;unify__headline-media&quot;{{/has-video}} /&gt;
   &lt;noscript&gt;&lt;img src=&quot;{{ img.src }}&quot; alt=&quot;{{ img.alt }}&quot;&gt;&lt;/noscript&gt;
 {{/ is-lazy }}
 
