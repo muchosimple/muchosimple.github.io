@@ -234,15 +234,6 @@ window.onresize = function() {
         });
       }
     }
-    if (getWidth() >= 1024) {
-      // Vertical sticky social.
-      $('.js-sticky-social').fixTo('.article-body', {
-        className: 'sticky-is-active',
-        mind: '.header-inner',
-        useNativeSticky: false,
-        top: 20
-      });
-    }
   });
 
   // Alternate Sticky Methods
