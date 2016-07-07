@@ -428,9 +428,9 @@
 </span>
         <h1 class="page-title center upper">Pin Your Party Hack</h1>
         <div class="presented-by">
-          <a href="#">
+          <a href="https://www.mychinet.com/">
             <span class="text--s upper">Presented By</span><br>
-            <img src="../../images/chinet_logo.png" alt="Chinet Logo">
+            <img src="../../images/chinet_logo--small.png" alt="Chinet Logo">
           </a>
         </div> <!-- /.presented-by -->
       </div> <!-- /.lc -->
@@ -542,8 +542,8 @@
 
         <div class="shift-left--slim">
           <div class="search-filters">
-            <nav class="nav-check-list nav-check-list--filters check-group" data-filter-group="filters">
-              <h4 class="upper nav-check-list-title js-toggle-parent">Filters <span class="arrow arrow--down"></span></h4>
+            <nav class="nav-check-list nav-check-list--filters check-group" data-filter-group="occasion">
+              <h4 class="upper nav-check-list-title js-toggle-parent">Occasion <span class="arrow arrow--down"></span></h4>
               <ul class="check-list">
                 <li class="cl-item"><input id="filter--birthday" name="filter--birthday" type="checkbox" value=".filter--birthday"><label for="filter--birthday"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Check</title><path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/></svg>
                   </span> Birthday</label>
@@ -554,6 +554,14 @@
                 <li class="cl-item"><input id="filter--justforfun" name="filter--justforfun" type="checkbox" value=".filter--justforfun"><label for="filter--justforfun"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Check</title><path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/></svg>
                 </span> Just for Fun</label>
                 </li>
+                <li class="cl-item"><input id="filter--all-occasions" checked name="filter--all-occasions" type="checkbox" value=""><label for="filter--all-occasions"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Check</title><path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/></svg>
+                  </span> See All</label>
+                </li>
+              </ul>
+            </nav>
+            <nav class="nav-check-list nav-check-list--rooms check-group" data-filter-group="party-pieces">
+              <h4 class="upper nav-check-list-title js-toggle-parent">Party Pieces <span class="arrow arrow--down"></span></h4>
+              <ul class="check-list">
                 <li class="cl-item"><input id="filter--partydecorations" name="filter--partydecorations" type="checkbox" value=".filter--partydecorations"><label for="filter--partydecorations"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Check</title><path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/></svg>
                 </span> Party Decorations</label>
                 </li>
@@ -563,7 +571,7 @@
                 <li class="cl-item"><input id="filter--partyfavors" name="filter--partyfavors" type="checkbox" value=".filter--partyfavors"><label for="filter--partyfavors"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Check</title><path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/></svg>
                 </span> Party Favors</label>
                 </li>
-                <li class="cl-item"><input id="filter--all" checked name="filter--all" type="checkbox" value=""><label for="filter--all"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Check</title><path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/></svg>
+                <li class="cl-item"><input id="filter--all-party-peices" checked name="filter--all-party-peices" type="checkbox" value=""><label for="filter--all-party-peices"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Check</title><path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z"/></svg>
                   </span> See All</label>
                 </li>
               </ul> <!-- /.check-list -->
