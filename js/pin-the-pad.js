@@ -59,3 +59,4 @@ function concatValues(obj) {
   }
   return value;
 }
+

@@ -14,7 +14,7 @@
 		<script>try{Typekit.load();}catch(e){}</script>
 
 		<!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!-->
-			<link rel="stylesheet" href="../../css/style.css?1467919113" media="all" />
+			<link rel="stylesheet" href="../../css/style.css?1467989454" media="all" />
 		<!--<![endif]-->
 
 		<!--[if lt IE 9]>
@@ -35,8 +35,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1467919113" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1467919113" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1467989454" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1467989454" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -50,9 +50,51 @@
 			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=185394191650949&version=v2.0";
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
-    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+  <div id="video__container" class="video__outer-container">
 
-    <object id="myExperience1754276205001" class="BrightcoveExperience">
+      <svg class="icon-loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+          <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+          <g transform="translate(50 50)">
+              <g transform="rotate(0) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(45) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(90) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(135) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(180) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(225) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(270) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+              <g transform="rotate(315) translate(34 0)">
+                  <circle cx="0" cy="0" r="8" fill="#f58e96">
+                  </circle>
+              </g>
+          </g>
+      </svg>
+
+      <!-- Start of Brightcove Player -->
+
+    <div style="display:none"></div>
+
+    <object id="myExperience1754276205001" class="BrightcoveExperience" data-loaded="true">
       <param name="bgcolor" value="#FFFFFF" />
       <param name="width" value="480" />
       <param name="height" value="270" />
@@ -69,68 +111,83 @@
       <param name="templateLoadHandler" value="onTemplateLoad" />
       <param name="templateReadyHandler" value="onTemplateReady" />
     </object>
-    <script type="text/javascript">brightcove.createExperiences();</script>
 
-<script type="text/javascript">
-  var player,
-      APIModules,
-      videoPlayer,
-      experienceModule;
+    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 
-  // utility
-  logit = function (context, message) {
-    if (console) {
-      console.log(context, message);
-    }
-  };
+    <!-- End of Brightcove Player -->
 
-  function onTemplateLoad(experienceID) {
-    logit("EVENT", "onTemplateLoad");
-    player = brightcove.api.getExperience(experienceID);
-    APIModules = brightcove.api.modules.APIModules;
-  }
+  </div> <!-- /.video__outer-container -->
 
-  function onTemplateReady(evt) {
-    logit("EVENT", "onTemplateReady");
-    videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
-    experienceModule = player.getModule(APIModules.EXPERIENCE);
+  <script type="text/javascript">
+    var player,
+        APIModules,
+        videoPlayer,
+        experienceModule;
 
-    videoPlayer.getCurrentRendition(function(renditionDTO) {
-      if (renditionDTO) {
-        logit("condition", "renditionDTO found");
-        calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
-      } else {
-        logit("condition", "renditionDTO NOT found");
-        videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(event) {
-          calulateNewPercentage(event.media.renditions[0].frameWidth, event.media.renditions[0].frameHeight);
-        });
+    // utility
+    logit = function (context, message) {
+      if (console) {
+        console.log(context, message);
       }
-    });
+    };
 
-    var evt = document.createEvent('UIEvents');
-    evt.initUIEvent('resize',true,false,0);
-    window.dispatchEvent(evt);
+    brightcove.createExperiences();
 
-    videoPlayer.play();
-  }
-
-  function calulateNewPercentage(width,height) {
-    logit("function", "calulateNewPercentage");
-    var newPercentage = ((height / width) * 100) + "%";
-    logit("Video Width = ", width);
-    logit("Video Height = ", height);
-    logit("New Percentage = ", newPercentage);
-    document.getElementById("video__container").style.paddingBottom = newPercentage;
-  }
-
-  window.onresize = function(evt) {
-    var resizeWidth = $(".BrightcoveExperience").width(),
-    resizeHeight = $(".BrightcoveExperience").height();
-    if (experienceModule.experience.type == "html"){
-      experienceModule.setSize(resizeWidth, resizeHeight)
+    function onTemplateLoad(experienceID) {
+      logit("EVENT", "onTemplateLoad");
+      player = brightcove.api.getExperience(experienceID);
+      APIModules = brightcove.api.modules.APIModules;
     }
-  }
-</script>
+
+    function onTemplateReady(evt) {
+      logit("EVENT", "onTemplateReady");
+      videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
+      experienceModule = player.getModule(APIModules.EXPERIENCE);
+
+      videoPlayer.getCurrentRendition(function(renditionDTO) {
+        if (renditionDTO) {
+          logit("condition", "renditionDTO found");
+          calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
+        } else {
+          logit("condition", "renditionDTO NOT found");
+          videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(event) {
+            calulateNewPercentage(event.media.renditions[0].frameWidth, event.media.renditions[0].frameHeight);
+          });
+        }
+      });
+
+      // Play video.
+      $(".js-play-video").on("click", function(){
+        videoPlayer.play();
+      });
+      // Pause video.
+      $(".js-stop-video").on("click", function(){
+        videoPlayer.pause();
+      });
+
+      var evt = document.createEvent('UIEvents');
+      evt.initUIEvent('resize',true,false,0);
+      window.dispatchEvent(evt);
+
+    }
+
+    function calulateNewPercentage(width,height) {
+      logit("function", "calulateNewPercentage");
+      var newPercentage = ((height / width) * 100) + "%";
+      logit("Video Width = ", width);
+      logit("Video Height = ", height);
+      logit("New Percentage = ", newPercentage);
+      document.getElementById("video__container").style.paddingBottom = newPercentage;
+    }
+
+    window.onresize = function(evt) {
+      var resizeWidth = $(".BrightcoveExperience").width(),
+      resizeHeight = $(".BrightcoveExperience").height();
+      if (experienceModule.experience.type == "html"){
+        experienceModule.setSize(resizeWidth, resizeHeight)
+      }
+    }
+  </script>
   <div class="load"></div>
   <div class="overlay"></div>
 
@@ -147,8 +204,8 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "atoms-brightcove-video";
-		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"molecules-gallery-slide","lineagePath":"..\/..\/patterns\/01-molecules-06-components-05-gallery-slide\/01-molecules-06-components-05-gallery-slide.html"}];
+		var lineage        = [{"lineagePattern":"atoms-loading","lineagePath":"..\/..\/patterns\/00-atoms-09-icons-26-loading\/00-atoms-09-icons-26-loading.html"}];
+		var lineageR       = [{"lineagePattern":"molecules-block-listicle-item","lineagePath":"..\/..\/patterns\/01-molecules-02-blocks-06-block-listicle-item\/01-molecules-02-blocks-06-block-listicle-item.html"},{"lineagePattern":"molecules-gallery-slide","lineagePath":"..\/..\/patterns\/01-molecules-06-components-05-gallery-slide\/01-molecules-06-components-05-gallery-slide.html"},{"lineagePattern":"organisms-recipe-header","lineagePath":"..\/..\/patterns\/02-organisms-01-article-06-recipe-header\/02-organisms-01-article-06-recipe-header.html"},{"lineagePattern":"templates-video-hub","lineagePath":"..\/..\/patterns\/03-templates-11-video-hub\/03-templates-11-video-hub.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>
@@ -184,10 +241,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1467919113">
+	<script id="pl-js-polyfill-insert-1467989454">
 		(function() {
 			if (self != top) {
-				var cb = '1467919113';
+				var cb = '1467989454';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -196,10 +253,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1467919113">
+	<script id="pl-js-insert-1467989454">
 		(function() {
 			if (self != top) {
-				var cb = '1467919113';
+				var cb = '1467989454';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
