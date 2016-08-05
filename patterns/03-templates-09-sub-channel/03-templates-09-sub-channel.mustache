@@ -11,10 +11,14 @@
               {{/ dropdown }}
                 {{&gt; molecules-kicker }}
                 &lt;h1 class=&quot;lead-headline space-half-btm&quot; itemprop=&quot;headline&quot;&gt;{{ title }}&lt;/h1&gt;
+                &lt;div class=&quot;readmore has-more&quot; itemprop=&quot;description&quot;&gt;
+                  &lt;p&gt;{{ description }}&lt;/p&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;action&quot; data-js-toggle-parent-class=&quot;readmore&quot;&gt;&lt;/a&gt;
+                &lt;/div&gt;
               {{# dropdown }}
               &lt;/div&gt; &lt;!-- /.left-side --&gt;
                 &lt;div class=&quot;right-side&quot;&gt;
-                  {{&gt; molecules-dropdown }}
+                  {{&gt; molecules-interlinking-module }}
                 &lt;/div&gt; &lt;!-- /.right-side --&gt;
               {{/ dropdown }}
             &lt;/header&gt; &lt;!-- /.sub-channel-header --&gt;
@@ -50,4 +54,3 @@
 
   {{&gt; organisms-footer }}
 &lt;/div&gt; &lt;!-- /.page --&gt;
-
