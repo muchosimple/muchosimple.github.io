@@ -112,7 +112,7 @@ window.onresize = function() {
     }
   });
 
-  // Toggle parent class - readmore
+  // Toggle parent class - read-more
   $('.action').on('click', function(e) {
     e.preventDefault();
     var $this = $(this),
