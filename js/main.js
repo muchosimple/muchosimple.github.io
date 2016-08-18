@@ -112,25 +112,6 @@ window.onresize = function() {
     }
   });
 
-  // Toggle parent class - read-more
-  $('.action').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this),
-      // If the ancestor you want to toggle isn't the parent, set this data attr, on the child, to the class of the ancestor.
-      toggleParentClass = $this.attr('data-js-toggle-parent-class');
-    if (typeof toggleParentClass !== typeof undefined && toggleParentClass !== false) {
-      if (!$this.closest('.' + toggleParentClass).hasClass("has-more")) {
-        $this.closest('.' + toggleParentClass).addClass("has-more");
-      }
-      else {
-        $this.closest('.' + toggleParentClass).removeClass("has-more");
-      }
-      $this.closest('.' + toggleParentClass).toggleClass("has-less");
-    } else {
-      $this.parent().toggleClass('has-less');
-    }
-  });
-
   // Reset subnav when main menu is reopened.
   $('.nav-toggler').on('click', function() {
     $('.l-top').delay(300).queue(function() {

@@ -14,7 +14,7 @@
 		<script>try{Typekit.load();}catch(e){}</script>
 
 		<!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!-->
-			<link rel="stylesheet" href="../../css/style.css?1471349799" media="all" />
+			<link rel="stylesheet" href="../../css/style.css?1471504256" media="all" />
 		<!--<![endif]-->
 
 		<!--[if lt IE 9]>
@@ -35,8 +35,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1471349799" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1471349799" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1471504256" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1471504256" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -567,102 +567,25 @@
 
               <!-- Start of Brightcove Player -->
 
-            <div style="display:none"></div>
+              <div style="display: block; position: relative;">
+                <div class="sixteen-nine">
+                  <video data-video-id="3431438767001"
+                         data-account="507936866"
+                         data-player="HyByeUad"
+                         data-embed="default"
+                         class="video-js aspect-ratio-content"
+                         controls>
+                         <!--autoplay-->
+                  </video>
 
-            <object id="myExperience1754276205001" class="BrightcoveExperience" data-loaded="true">
-              <param name="bgcolor" value="#FFFFFF" />
-              <param name="width" value="480" />
-              <param name="height" value="270" />
-              <param name="playerID" value="1756040703001" />
-              <param name="playerKey" value="AQ~~,AAABmA9XpXk~,-Kp7jNgisrc05QYSNxkzqM1X9GtvaqWM" />
-              <param name="isVid" value="true" />
-              <param name="isUI" value="true" />
-              <param name="dynamicStreaming" value="true" />
-              <param name="@videoPlayer" value="1754276205001" />
-                <!-- <param name="forceHTML" value="true" /> -->
-              <!-- smart player api params -->
-              <param name="includeAPI" value="true" />
-              <param name="showNoContentMessage" value="true" />
-              <param name="templateLoadHandler" value="onTemplateLoad" />
-              <param name="templateReadyHandler" value="onTemplateReady" />
-            </object>
-
-            <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+                  <script src="//players.brightcove.net/507936866/HyByeUad_default/index.min.js"></script>
+                </div>
+              </div>
 
             <!-- End of Brightcove Player -->
 
           </div> <!-- /.video__outer-container -->
 
-          <script type="text/javascript">
-            var player,
-                APIModules,
-                videoPlayer,
-                experienceModule;
-
-            // utility
-            logit = function (context, message) {
-              if (console) {
-                console.log(context, message);
-              }
-            };
-
-            brightcove.createExperiences();
-
-            function onTemplateLoad(experienceID) {
-              logit("EVENT", "onTemplateLoad");
-              player = brightcove.api.getExperience(experienceID);
-              APIModules = brightcove.api.modules.APIModules;
-            }
-
-            function onTemplateReady(evt) {
-              logit("EVENT", "onTemplateReady");
-              videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
-              experienceModule = player.getModule(APIModules.EXPERIENCE);
-
-              videoPlayer.getCurrentRendition(function(renditionDTO) {
-                if (renditionDTO) {
-                  logit("condition", "renditionDTO found");
-                  calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
-                } else {
-                  logit("condition", "renditionDTO NOT found");
-                  videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(event) {
-                    calulateNewPercentage(event.media.renditions[0].frameWidth, event.media.renditions[0].frameHeight);
-                  });
-                }
-              });
-
-              // Play video.
-              $(".js-play-video").on("click", function(){
-                videoPlayer.play();
-              });
-              // Pause video.
-              $(".js-stop-video").on("click", function(){
-                videoPlayer.pause();
-              });
-
-              var evt = document.createEvent('UIEvents');
-              evt.initUIEvent('resize',true,false,0);
-              window.dispatchEvent(evt);
-
-            }
-
-            function calulateNewPercentage(width,height) {
-              logit("function", "calulateNewPercentage");
-              var newPercentage = ((height / width) * 100) + "%";
-              logit("Video Width = ", width);
-              logit("Video Height = ", height);
-              logit("New Percentage = ", newPercentage);
-              document.getElementById("video__container").style.paddingBottom = newPercentage;
-            }
-
-            window.onresize = function(evt) {
-              var resizeWidth = $(".BrightcoveExperience").width(),
-              resizeHeight = $(".BrightcoveExperience").height();
-              if (experienceModule.experience.type == "html"){
-                experienceModule.setSize(resizeWidth, resizeHeight)
-              }
-            }
-          </script>
 								      </div> <!-- /.video-hero -->
 								      <div class="b-inner cf">
 								        <div class="b-head">
@@ -836,102 +759,25 @@
 
               <!-- Start of Brightcove Player -->
 
-            <div style="display:none"></div>
+              <div style="display: block; position: relative;">
+                <div class="sixteen-nine">
+                  <video data-video-id="3431438767001"
+                         data-account="507936866"
+                         data-player="HyByeUad"
+                         data-embed="default"
+                         class="video-js aspect-ratio-content"
+                         controls>
+                         <!--autoplay-->
+                  </video>
 
-            <object id="myExperience1754276205001" class="BrightcoveExperience" data-loaded="true">
-              <param name="bgcolor" value="#FFFFFF" />
-              <param name="width" value="480" />
-              <param name="height" value="270" />
-              <param name="playerID" value="1756040703001" />
-              <param name="playerKey" value="AQ~~,AAABmA9XpXk~,-Kp7jNgisrc05QYSNxkzqM1X9GtvaqWM" />
-              <param name="isVid" value="true" />
-              <param name="isUI" value="true" />
-              <param name="dynamicStreaming" value="true" />
-              <param name="@videoPlayer" value="1754276205001" />
-                <!-- <param name="forceHTML" value="true" /> -->
-              <!-- smart player api params -->
-              <param name="includeAPI" value="true" />
-              <param name="showNoContentMessage" value="true" />
-              <param name="templateLoadHandler" value="onTemplateLoad" />
-              <param name="templateReadyHandler" value="onTemplateReady" />
-            </object>
-
-            <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+                  <script src="//players.brightcove.net/507936866/HyByeUad_default/index.min.js"></script>
+                </div>
+              </div>
 
             <!-- End of Brightcove Player -->
 
           </div> <!-- /.video__outer-container -->
 
-          <script type="text/javascript">
-            var player,
-                APIModules,
-                videoPlayer,
-                experienceModule;
-
-            // utility
-            logit = function (context, message) {
-              if (console) {
-                console.log(context, message);
-              }
-            };
-
-            brightcove.createExperiences();
-
-            function onTemplateLoad(experienceID) {
-              logit("EVENT", "onTemplateLoad");
-              player = brightcove.api.getExperience(experienceID);
-              APIModules = brightcove.api.modules.APIModules;
-            }
-
-            function onTemplateReady(evt) {
-              logit("EVENT", "onTemplateReady");
-              videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
-              experienceModule = player.getModule(APIModules.EXPERIENCE);
-
-              videoPlayer.getCurrentRendition(function(renditionDTO) {
-                if (renditionDTO) {
-                  logit("condition", "renditionDTO found");
-                  calulateNewPercentage(renditionDTO.frameWidth, renditionDTO.frameHeight);
-                } else {
-                  logit("condition", "renditionDTO NOT found");
-                  videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(event) {
-                    calulateNewPercentage(event.media.renditions[0].frameWidth, event.media.renditions[0].frameHeight);
-                  });
-                }
-              });
-
-              // Play video.
-              $(".js-play-video").on("click", function(){
-                videoPlayer.play();
-              });
-              // Pause video.
-              $(".js-stop-video").on("click", function(){
-                videoPlayer.pause();
-              });
-
-              var evt = document.createEvent('UIEvents');
-              evt.initUIEvent('resize',true,false,0);
-              window.dispatchEvent(evt);
-
-            }
-
-            function calulateNewPercentage(width,height) {
-              logit("function", "calulateNewPercentage");
-              var newPercentage = ((height / width) * 100) + "%";
-              logit("Video Width = ", width);
-              logit("Video Height = ", height);
-              logit("New Percentage = ", newPercentage);
-              document.getElementById("video__container").style.paddingBottom = newPercentage;
-            }
-
-            window.onresize = function(evt) {
-              var resizeWidth = $(".BrightcoveExperience").width(),
-              resizeHeight = $(".BrightcoveExperience").height();
-              if (experienceModule.experience.type == "html"){
-                experienceModule.setSize(resizeWidth, resizeHeight)
-              }
-            }
-          </script>
 								      </div> <!-- /.video-hero -->
 								      <div class="b-inner cf">
 								        <div class="b-head">
@@ -2206,10 +2052,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1471349799">
+	<script id="pl-js-polyfill-insert-1471504256">
 		(function() {
 			if (self != top) {
-				var cb = '1471349799';
+				var cb = '1471504256';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -2218,10 +2064,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1471349799">
+	<script id="pl-js-insert-1471504256">
 		(function() {
 			if (self != top) {
-				var cb = '1471349799';
+				var cb = '1471504256';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
