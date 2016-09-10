@@ -510,18 +510,4 @@ window.onresize = function() {
     $('input:checkbox').prop('checked', $(this).prop("checked"));
   });
 
-  // Read-More / Read less
-  $('.readmore-summary .readmore-link').click(function(e) {
-    e.preventDefault();
-    var summary = $(this).closest('.readmore-summary');
-    summary.hide();
-    summary.next('.readmore-text').slideDown(300).css('display','inline');
-  });
-  $('.readmore-text .readless-link').click(function(e) {
-    e.preventDefault();
-    var text = $(this).closest('.readmore-text');
-    text.slideUp(300);
-    text.prev('.readmore-summary').slideDown(300);
-  });
-
 })(jQuery);
