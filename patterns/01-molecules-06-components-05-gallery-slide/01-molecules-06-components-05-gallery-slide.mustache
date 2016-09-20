@@ -16,7 +16,14 @@
     {{# is-welcome-slide }}
       &lt;div class=&quot;slide-intro slide-text&quot;&gt;
         {{# kicker }}&lt;div class=&quot;kicker&quot;&gt;{{ kicker }}&lt;/div&gt;{{/ kicker }}
-          &lt;div class=&quot;dek is-truncated js-toggle&quot;&gt;&lt;p&gt;{{ slide-intro }}&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;readmore-summary dek&quot;&gt;
+          {{ slide-intro-summary }}
+          &lt;span class=&quot;ellipsis&quot;&gt; ...&lt;a href=&quot;# &quot; class=&quot;readmore-link&quot;&gt; See More&lt;/a&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;readmore-text dek&quot; style=&quot;display:none;&quot;&gt;
+          {{ slide-intro-text }}
+          &lt;a href=&quot;# &quot; class=&quot;readless-link&quot;&gt;See Less&lt;/a&gt;
+        &lt;/div&gt;
         {{&gt; molecules-byline }}
         &lt;a href=&quot;{{ url }}&quot; class=&quot;btn btn--gallery-start js-btn--gallery-start&quot;&gt;Start &lt;span class=&quot;icon icon-arrow-right no-bg&quot;&gt;{{&gt; atoms-arrow-right }}&lt;/span&gt;&lt;/a&gt;
       &lt;/div&gt; &lt;!-- /.slide-intro --&gt;
