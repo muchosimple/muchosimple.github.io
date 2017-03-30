@@ -754,6 +754,7 @@
 </span></a>
     </div> <!-- /.f-social -->
     <div class="legal">
+      <p class="disclaimer">All products and services featured are selected by our editors. RealSimple.com may receive compensation for some links to products and services in this email.</p>
       <p class="copyright">Copyright &copy; 2015 Time Inc. Lifestyle Group. All rights reserved. Reproduction in whole or in part without permission is prohibited.</p>
     </div> <!-- /.legal -->
   </footer> <!-- /.footer -->
