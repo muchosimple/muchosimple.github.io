@@ -21,7 +21,12 @@
 								{{&gt; molecules-social-share }}
 								{{&gt; molecules-content-utility }}
 							&lt;/div&gt; &lt;!-- /.article-tools --&gt;
-							{{&gt; molecules-listicle-intro-text }}
+							{{# has-embedded-video-intro }}
+							  {{&gt; molecules-listicle-intro-embedded }}
+							{{/ has-embedded-video-intro }}
+							{{# has-normal-intro }}
+							  {{&gt; molecules-listicle-intro-text }}
+							{{/ has-normal-intro }}
 						&lt;/header&gt; &lt;!-- /.article-header --&gt;
 					{{/ image-list-head }}
 
